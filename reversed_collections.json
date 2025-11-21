@@ -2698,5 +2698,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_03a155bf-33f4-4ee6-877c-db309978b2fd",
     "timestamp": "2025-11-21 16:17:17.229627",
     "report_generated": false
+  },
+  {
+    "question": "Batch Ciphertext Reordering: If an attacker reorders the cts vector in BatchCiphertextV0Inner mod.rs:35 after signature generation but before storage, would the signature still verify, causing guardians to receive the wrong shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_67174e60-b726-4376-a835-bba58969f2ff",
+    "timestamp": "2025-11-21 16:18:38.091646",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Verification Bypass: In decrypt_batch() mod.rs:104 , if signature verification fails but returns Ok(()) due to a bug in the signature module, could guardians decrypt batch ciphertexts without proper authentication?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a2dfba7f-b862-4626-b72a-e9843a52974e",
+    "timestamp": "2025-11-21 16:18:51.125128",
+    "report_generated": false
+  },
+  {
+    "question": "Context Deserialization Failure Handling: If the context A fails to deserialize during decrypt() mod.rs:78-94 , does the function return a clear error, or could it silently fall back to a default context?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_45b58e44-ea13-4f4e-aad0-94e4e388e7f4",
+    "timestamp": "2025-11-21 16:19:05.411692",
+    "report_generated": false
+  },
+  {
+    "question": "Context Binding to Signing Key: In batch_encrypt() mod.rs:160-161 , the signing key is ephemeral. Could an attacker precompute verification keys and cause context collisions across different batch operations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d629499c-e6d1-450b-b3b2-e3bde88e1219",
+    "timestamp": "2025-11-21 16:19:19.388546",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Context in v0 Encryption: In the v0 encrypt() implementation v0.rs:99-131 , the context is passed to sym::seal(). If the symmetric layer doesn't enforce context presence, could encryptions succeed with null contexts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fdc2b645-3100-4ad4-a6f1-cde4d221ecf3",
+    "timestamp": "2025-11-21 16:19:34.041202",
+    "report_generated": false
+  },
+  {
+    "question": "Context Length Extension: Could an attacker append extra data to a legitimate context without breaking serialization, causing the PKE layer to accept an extended context while the application expects the original?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9b71e798-664d-47bd-be77-36752d085680",
+    "timestamp": "2025-11-21 16:19:50.042226",
+    "report_generated": false
+  },
+  {
+    "question": "Context Padding Attacks: If bincode serialization of contexts includes padding bytes that aren't canonicalized encode.rs:29-36 , could an attacker create distinct contexts that serialize identically?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_14ff74ec-385d-4831-8abd-de9fe6537ccd",
+    "timestamp": "2025-11-21 16:20:08.229676",
+    "report_generated": false
+  },
+  {
+    "question": "Verification Key as Context: Since vk is part of BatchCtx mod.rs:46 , could an attacker use the verification key itself as the context, creating circular dependencies in binding?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_303f68c4-4103-4491-8461-4b2ff0204d66",
+    "timestamp": "2025-11-21 16:20:26.999125",
+    "report_generated": false
+  },
+  {
+    "question": "Context Type Downgrade: If decrypt() is called with a more generic context type than intended mod.rs:78-94 , would the symmetric layer's context validation catch this, or could it silently succeed?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a1fd1fc8-0b0b-42ac-9dd3-a2b38897e574",
+    "timestamp": "2025-11-21 16:20:47.828775",
+    "report_generated": false
+  },
+  {
+    "question": "Batch Context Separator Ordering: The BatchCtx uses (A::SEPARATOR, ctx) mod.rs:47 . Could reversing the order to (ctx, A::SEPARATOR) produce the same encoding for certain context types, breaking separation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_477ea1a0-0180-4170-b92b-b109530e01fc",
+    "timestamp": "2025-11-21 16:21:09.195534",
+    "report_generated": false
+  },
+  {
+    "question": "Context Truncation Attack: If the context serialization is truncated before the signature check in symmetric encryption symmetric.rs:112-129 , could the PKE layer still decrypt successfully, bypassing intended context validation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_422b4819-14af-45a0-9c7d-e9fef0568e6b",
+    "timestamp": "2025-11-21 16:21:31.555824",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Context Freshness: Does the context include a timestamp or nonce to prevent replay attacks mod.rs:78-82 ? Could an attacker replay old contexts to decrypt shares from a previous recovery session?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_27ec03e1-af6a-485a-a908-a0573bb2010a",
+    "timestamp": "2025-11-21 16:21:55.361955",
+    "report_generated": false
+  },
+  {
+    "question": "Context Binding Across Accounts: If guardian shares for different accounts are encrypted with similar contexts (differing only in account ID), could an off-chain node correlate these to link accounts, violating privacy?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8897f1a4-e45f-4e4a-80f0-3fc62542c4f6",
+    "timestamp": "2025-11-21 16:22:20.137564",
+    "report_generated": false
+  },
+  {
+    "question": "Context Verification Key Mismatch: In batch operations, if the verification key in BatchCtx mod.rs:46-47 doesn't match the one in BatchCiphertextV0Inner mod.rs:34 , would decryption silently fail or succeed with the wrong key?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4f38e709-c3c4-4140-8d51-2f1669e8d270",
+    "timestamp": "2025-11-21 16:22:44.881439",
+    "report_generated": false
+  },
+  {
+    "question": "Separator Injection via Context Fields: If the context type A has fields that can contain the separator string mod.rs:51 , could an attacker craft a context that injects additional separators, causing domain separation bypass?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c4be9318-563e-4758-aa51-9dd7b62dfac5",
+    "timestamp": "2025-11-21 16:23:12.735404",
+    "report_generated": false
+  },
+  {
+    "question": "Batch Context Downgrade: In decrypt_batch() mod.rs:111-114 , if an attacker downgrades the nested BatchCtx to a simpler context type, could the decryption succeed with weaker binding?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_75e0d6cc-eb59-4f89-a5dc-5637f0d4f2cd",
+    "timestamp": "2025-11-21 16:23:41.335599",
+    "report_generated": false
+  },
+  {
+    "question": "Context Binding to Account ID: If the context should include the account ID to prevent cross-account decryption, does the PKE module enforce this, or is it the caller's responsibility? Could a malicious node omit the account ID from the context?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c5b6f9b2-9b83-48b4-8219-fcf1cd6c787d",
+    "timestamp": "2025-11-21 16:24:11.275836",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Version Context Migration: When migrating from V0 to a future version, could the context binding format change such that V0 ciphertexts become decryptable under V1 contexts mod.rs:86-92 , breaking isolation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7c569854-81bd-4189-9ed8-96bc08e14c81",
+    "timestamp": "2025-11-21 16:24:41.813333",
+    "report_generated": false
+  },
+  {
+    "question": "Context Modification After Signature: In batch_encrypt() mod.rs:179-180 , the signature is computed over inn. If an attacker modifies the context after signature generation but before transmission, would the verification fail or silently succeed?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d002af3e-53ce-4105-bc76-7dfa4aec73cd",
+    "timestamp": "2025-11-21 16:25:13.997543",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Context in Batch Inner: The BatchCiphertextV0Inner mod.rs:33-36 stores vk and cts, but does not include the outer context A. Could guardians decrypt batch ciphertexts without verifying the original context binding?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_99ab59e2-c803-4b67-90e8-713f03159508",
+    "timestamp": "2025-11-21 16:25:46.435246",
+    "report_generated": false
+  },
+  {
+    "question": "Context Serialization Ambiguity: In the Tagged::encode() implementation used for contexts encode.rs:20-37 , could two different context values produce the same byte encoding if bincode serialization is not canonical?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7f42d3a0-1fc1-4d28-948c-18aab30f59cd",
+    "timestamp": "2025-11-21 16:26:18.870447",
+    "report_generated": false
+  },
+  {
+    "question": "Separator Prefix Collision: If BatchCtx::SEPARATOR mod.rs:51 and another type's separator share a common prefix, could the domain separation mechanism fail, allowing type confusion between batch and non-batch contexts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_960df0b7-d8b0-42ca-9eb2-ace15f0c300c",
+    "timestamp": "2025-11-21 16:26:51.508626",
+    "report_generated": false
+  },
+  {
+    "question": "Context Binding in v0 DH: The v0 implementation binds context to the DH shared secret via KDF v0.rs:82-88 . If the DiffieHellmanCtx includes both tp and pk, could an attacker swap these values to create a ciphertext that decrypts under a different key?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_aadc82f5-0fcd-4b6a-9607-7f06d04bc796",
+    "timestamp": "2025-11-21 16:27:25.251604",
+    "report_generated": false
+  },
+  {
+    "question": "Verification Key Forging: In decrypt_batch() mod.rs:104 , if signature verification is skipped or bypassed due to a bug, could an attacker replace ct.inn.vk with their own verification key and cause guardians to decrypt shares under the wrong context?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_07755e9c-b49b-4753-8f60-098cfcae5932",
+    "timestamp": "2025-11-21 16:27:57.960104",
+    "report_generated": false
+  },
+  {
+    "question": "Context Replay Across Backups: Could an attacker record the context used for one backup's guardian share encryption and replay it to decrypt shares from a different backup mod.rs:78-94 , violating per-backup isolation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bd6d74a3-19fe-4b3d-8ee6-4628f72a855f",
+    "timestamp": "2025-11-21 16:28:30.643969",
+    "report_generated": false
   }
 ]
