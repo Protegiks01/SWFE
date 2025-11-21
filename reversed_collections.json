@@ -1348,5 +1348,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5b69be00-19fc-495f-b81f-eeadfa07f835",
     "timestamp": "2025-11-21 14:37:06.883136",
     "report_generated": false
+  },
+  {
+    "question": "Hash Function Collision Resistance: The re-exported hash function uses SHA3-256. Is this sufficient for collision resistance in scenarios where guardians could grind for hash collisions to create duplicate backup IDs? mod.rs:31",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_aa6d1f04-5a65-4269-8761-54a84e338b82",
+    "timestamp": "2025-11-21 14:38:19.227414",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Scheme Security: Does the re-exported Signature type use Schnorr signatures over BLS12-381? Could this choice introduce vulnerabilities related to pairing-friendly curve properties that don't exist in ECDSA? mod.rs:32",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_55ef96b2-06b8-48e2-be10-c0e6a8992d10",
+    "timestamp": "2025-11-21 14:38:32.229225",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Threshold Correctness: Do the re-exported VDRF types (Vdrf, VdrfEvaluation, VdrfPublicKey, VdrfSecretKeyShare) enforce that exactly t shares are needed for evaluation? Could an attacker combine fewer shares to break email anonymity? mod.rs:33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1570d319-094e-4185-8ee1-34f302ac0f9c",
+    "timestamp": "2025-11-21 14:38:45.505251",
+    "report_generated": false
+  },
+  {
+    "question": "BLS12-381 Curve Choice: The module uses BLS12-381 throughout instead of secp256r1 mentioned in the specification. Does this curve choice affect security assumptions for VDRF threshold properties or pairing-based operations? mod.rs:14-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fcef307a-57fb-495d-9ce2-bc242f37f252",
+    "timestamp": "2025-11-21 14:38:59.144241",
+    "report_generated": false
+  },
+  {
+    "question": "Trailing Data Handling: Does bincode reject or ignore trailing data after deserialization? Could attackers append malicious data to signatures or ciphertexts that gets processed later? mod.rs:12",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9a56fcdc-6b62-4211-94a5-7f9a17b689ef",
+    "timestamp": "2025-11-21 14:39:13.662071",
+    "report_generated": false
+  },
+  {
+    "question": "Option Encoding Ambiguity: How does BINCODE_CONFIG encode Option<T> types? Could Some(None) and None serialize to the same bytes, causing confusion in guardian share storage? mod.rs:12",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d8fc77e1-8ff1-400d-9586-eb5fb23e0c2a",
+    "timestamp": "2025-11-21 14:39:29.490958",
+    "report_generated": false
+  },
+  {
+    "question": "Struct Field Ordering: Does bincode serialize struct fields in declaration order? Could field reordering in future versions break backward compatibility for stored ciphertexts or shares? mod.rs:12",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2d82ced1-0f63-4de5-af80-21b9c66ef0b0",
+    "timestamp": "2025-11-21 14:39:46.893378",
+    "report_generated": false
+  },
+  {
+    "question": "String Encoding Format: Does BINCODE_CONFIG enforce UTF-8 validation for strings? Could invalid UTF-8 in email addresses or node IDs cause panics or bypass validation checks? mod.rs:12",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_695c2546-6726-4e52-aafe-cb6850594197",
+    "timestamp": "2025-11-21 14:40:05.789370",
+    "report_generated": false
+  },
+  {
+    "question": "Float Serialization Determinism: If any cryptographic structures contain floating-point values, does BINCODE_CONFIG handle them deterministically? Could NaN or infinity values break signature verification? mod.rs:12",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_08487193-923e-4b49-9c0e-d7585b65f976",
+    "timestamp": "2025-11-21 14:40:26.308748",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization Size Attacks: Does the bincode configuration limit maximum serialization size? Could attackers craft malicious structures that consume excessive memory during serialization? mod.rs:12",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_536ac23f-412d-4f14-9838-7b5807e8dd4d",
+    "timestamp": "2025-11-21 14:40:47.673352",
+    "report_generated": false
+  },
+  {
+    "question": "Tagged Encoding Consistency: Do all Tagged implementations use the same bincode configuration when calling .encode()? Could mixing configurations break domain separation and allow type confusion attacks? mod.rs:12",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_811ff964-1b04-464b-aa83-2f58717b37e9",
+    "timestamp": "2025-11-21 14:41:10.664718",
+    "report_generated": false
+  },
+  {
+    "question": "Unused Constant Attack Surface: Since BINCODE_CONFIG is defined but unused in this file, could its presence mislead developers into using it instead of the correct configuration from encode.rs, introducing serialization bugs? mod.rs:12",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0ecaa72a-8f33-4163-a549-14179970122c",
+    "timestamp": "2025-11-21 14:41:34.567665",
+    "report_generated": false
+  },
+  {
+    "question": "Configuration Version Locking: Is the bincode configuration version locked? Could future bincode updates change serialization format, causing old signatures or commitments to become invalid? mod.rs:12",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2ab108c5-9625-4f4a-80f3-0d7fb976ec8e",
+    "timestamp": "2025-11-21 14:41:58.834931",
+    "report_generated": false
+  },
+  {
+    "question": "Endianness Consistency: Does BINCODE_CONFIG enforce consistent endianness across platforms? Could cross-platform serialization differences allow attackers to create valid signatures on one platform that fail verification on another? mod.rs:12",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ecb5ab9b-2577-4847-a380-6320c1eb74fc",
+    "timestamp": "2025-11-21 14:42:23.934106",
+    "report_generated": false
+  },
+  {
+    "question": "Variable-Length Encoding: Does the standard() bincode configuration use variable-length encoding for integers? Could this allow attackers to craft values that serialize to the same byte representation but have different semantic meanings? mod.rs:12",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8a31d4be-d91c-4ada-a088-66a00c5804a4",
+    "timestamp": "2025-11-21 14:42:50.613962",
+    "report_generated": false
+  },
+  {
+    "question": "Configuration Mutability: Is the BINCODE_CONFIG constant truly immutable, or could it be modified at runtime through unsafe code, allowing attackers to change serialization behavior mid-execution to forge signatures? mod.rs:12",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_80cd8516-8018-4463-a33f-0cb6f47468ab",
+    "timestamp": "2025-11-21 14:43:18.600635",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Module Direct Usage: The hash module directly imports BINCODE_CONFIG from its own scope but uses it for serializing IKM in KDF functions. Could inconsistent configuration between modules lead to different KDF outputs for the same input? mod.rs:12",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f5d11f97-e15a-408b-8cc7-7645daaa6563",
+    "timestamp": "2025-11-21 14:43:47.523986",
+    "report_generated": false
+  },
+  {
+    "question": "Configuration Divergence: If BINCODE_CONFIG in lib/src/crypto/mod.rs differs from the one in lib/src/encode.rs, could this cause tagged values to serialize differently when hashed versus when stored, allowing signature forgery? mod.rs:12",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_25c4db21-19c7-49d7-866c-ca6602259f79",
+    "timestamp": "2025-11-21 14:44:17.148014",
+    "report_generated": false
+  },
+  {
+    "question": "BINCODE_CONFIG Inconsistency: The BINCODE_CONFIG constant is defined but unused in this file, while a duplicate definition exists in lib/src/encode.rs. Could this inconsistency lead to different serialization formats being used across modules, breaking deterministic encoding required for signatures and hashes? mod.rs:12",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a689aa08-5855-454a-a661-f520d2129221",
+    "timestamp": "2025-11-21 14:44:48.557991",
+    "report_generated": false
+  },
+  {
+    "question": "Test-Only Exports: Could test-only functions or types accidentally be included in the public or pub(crate) exports, allowing attackers to use deterministic test RNGs or bypass security checks in production? mod.rs:14-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2f7bbd5a-c362-45f2-ae63-5b4dc11ac53e",
+    "timestamp": "2025-11-21 14:45:20.625850",
+    "report_generated": false
+  },
+  {
+    "question": "Module Visibility Inconsistency: Are there inconsistencies in visibility modifiers across the crypto module that could allow attackers to access sensitive functions through re-exported trait implementations? mod.rs:14-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_39e4bc92-63c6-47c5-9530-79ace6b7f864",
+    "timestamp": "2025-11-21 14:45:54.668705",
+    "report_generated": false
+  },
+  {
+    "question": "Email Certificate Module Trust Boundary: Could the public email_cert module's re-exports allow attackers to forge email certificates by directly accessing underlying signature primitives without going through Swafe-io's trusted issuance? mod.rs:24",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2458a576-377e-48ed-be6c-1f7fe13b85d1",
+    "timestamp": "2025-11-21 14:46:28.043386",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Module State Isolation: Does the public vdrf module properly protect VDRF secret key shares from being accessed or modified by malicious nodes during evaluation operations? mod.rs:27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e443f99f-a177-42da-a146-dcc6000195fa",
+    "timestamp": "2025-11-21 14:47:01.623058",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Module Domain Separation: Could the public hash module's re-exported functions be used without proper domain separation tags, allowing attackers to create hash collisions across different contexts (signatures vs commitments)? mod.rs:25",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ca1b5d23-1527-4bb4-9f08-79567d3f3698",
+    "timestamp": "2025-11-21 14:47:32.075018",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Module Isolation: Does the public sig module properly isolate signing operations from verification operations to prevent a malicious guardian from extracting signing keys through verification API abuse? mod.rs:26",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dfeebd66-8494-4f02-94f1-5c5845c66b72",
+    "timestamp": "2025-11-21 14:48:03.174353",
+    "report_generated": false
   }
 ]
