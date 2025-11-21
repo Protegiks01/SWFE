@@ -8698,5 +8698,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ed34ae82-3706-499c-a8ed-e341aceec8d9",
     "timestamp": "2025-11-21 23:42:56.639082",
     "report_generated": false
+  },
+  {
+    "question": "When lagrange computes the basis polynomial, could the order of roots in the slice affect the computation due to non-associativity of operations, leading to different results in different contexts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_58915c00-cbd8-476a-aca6-44f5d9c930b5",
+    "timestamp": "2025-11-21 23:44:10.330721",
+    "report_generated": false
+  },
+  {
+    "question": "The lagrange function does not validate that px is distinct from all elements in roots. Could a programming error in the calling code lead to including px in roots, causing a panic during critical backup reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_561a66a3-ff78-4ff2-8e07-15dcaee16ad0",
+    "timestamp": "2025-11-21 23:44:23.713617",
+    "report_generated": false
+  },
+  {
+    "question": "If lagrange is called with px being F::ZERO, and F::ZERO is also in roots, does this create a division by zero that could be exploited to DoS the reconstruction process?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_739b31ca-03b2-4833-a293-7fb63dc505da",
+    "timestamp": "2025-11-21 23:44:37.268628",
+    "report_generated": false
+  },
+  {
+    "question": "When computing norm = vanish(roots.iter().cloned(), px), if px is very close to (but not equal to) one of the roots due to field element representation issues, could the denominator be very small, causing numerical instability?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8fbb206b-0bc2-4948-89b0-1236d9a72054",
+    "timestamp": "2025-11-21 23:44:51.346645",
+    "report_generated": false
+  },
+  {
+    "question": "The Lagrange basis should satisfy L_i(x_i) = 1 and L_i(x_j) = 0 for i ≠ j. If lagrange is called with roots that don't represent all other interpolation points, could this violate the basis property and corrupt secret reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7cb15f14-e3cf-4fd7-af3e-8a86dfaa27ab",
+    "timestamp": "2025-11-21 23:45:06.911104",
+    "report_generated": false
+  },
+  {
+    "question": "If the roots slice contains duplicate values, does lagrange compute an incorrect basis polynomial that could allow unauthorized secret reconstruction with manipulated shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a6b1e140-ba1b-4e3d-8d89-6068f68e4766",
+    "timestamp": "2025-11-21 23:45:23.794756",
+    "report_generated": false
+  },
+  {
+    "question": "When lagrange evaluates the vanishing polynomial, it clones the iterator twice. poly.rs:17-18 Could iterator cloning introduce subtle bugs where the two evaluations use different root sets, breaking Lagrange basis properties?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f24c7bea-0d97-495e-b455-cbeecd428b0a",
+    "timestamp": "2025-11-21 23:45:43.162430",
+    "report_generated": false
+  },
+  {
+    "question": "The lagrange function computes the vanishing polynomial at x and px. poly.rs:17-18 If an attacker can make x == px, the result would be 0/0 (undefined). Could this be triggered during reconstruction to cause protocol failure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b61a1f69-e708-44eb-8d4b-063e30329b3d",
+    "timestamp": "2025-11-21 23:46:02.320051",
+    "report_generated": false
+  },
+  {
+    "question": "In lagrange, if roots is empty, both zero and norm would be F::ONE, returning 1. poly.rs:16-20 Could this trivial Lagrange basis be exploited in single-share reconstruction to bypass the threshold requirement?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_02257464-01e2-4931-8e00-6194cddf251f",
+    "timestamp": "2025-11-21 23:46:22.524070",
+    "report_generated": false
+  },
+  {
+    "question": "The lagrange function divides zero / norm without checking if norm is zero. poly.rs:16-20 If px is included in the roots array, division by zero will panic. Could a malicious guardian inject px into the roots during backup reconstruction to cause a DoS?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6420a75f-ba0a-47ab-96d1-0e1ae016bdd3",
+    "timestamp": "2025-11-21 23:46:43.970952",
+    "report_generated": false
+  },
+  {
+    "question": "When vanish computes x - root, if x and root are equal but represented differently in memory (e.g., normalized vs. non-normalized forms), could the subtraction fail to produce exactly zero, causing incorrect Lagrange basis computation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cb73e34e-3bb3-49fd-9890-ba661dfc48bb",
+    "timestamp": "2025-11-21 23:47:06.105046",
+    "report_generated": false
+  },
+  {
+    "question": "If the root iterator passed to vanish is lazily evaluated and has side effects, could multiple evaluations of the same vanishing polynomial produce different results, breaking interpolation determinism?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9cb4c2ba-80f4-4a98-8e33-a65e904e1518",
+    "timestamp": "2025-11-21 23:47:30.410486",
+    "report_generated": false
+  },
+  {
+    "question": "The fold operation in vanish starts with F::ONE and multiplies iteratively. Could accumulated rounding errors (even in exact finite field arithmetic) due to implementation details cause different results when the same computation is performed in different orders?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8dfc48db-59c8-49df-8c5e-be9e5cf51791",
+    "timestamp": "2025-11-21 23:47:54.536404",
+    "report_generated": false
+  },
+  {
+    "question": "If vanish is called with roots that are not in canonical form (e.g., different representations of the same field element), could this lead to incorrect equality checks and wrong polynomial evaluation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f923037d-4820-4537-ae6f-24ed169841ef",
+    "timestamp": "2025-11-21 23:48:20.840329",
+    "report_generated": false
+  },
+  {
+    "question": "When vanish is used to compute the denominator in lagrange, if the denominator evaluates to zero (meaning px is in the roots), does this represent a catastrophic failure in the interpolation logic?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_da2a54a1-38fc-43d8-bc98-bd0130309506",
+    "timestamp": "2025-11-21 23:48:46.197445",
+    "report_generated": false
+  },
+  {
+    "question": "The vanish function evaluates at point x. Could evaluating at special field elements (like primitive roots of unity) create algebraic structures that a malicious minority of guardians could exploit to bypass threshold security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0f38c96e-7383-4a91-8e14-b3d0b308839c",
+    "timestamp": "2025-11-21 23:49:12.081505",
+    "report_generated": false
+  },
+  {
+    "question": "If an attacker can control the order of roots passed to vanish during VDRF evaluation, vdrf.rs:1-100 could they use timing side-channels to infer which roots are being used, leaking information about guardian participation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_aa8d7adf-6aa8-4e58-87fd-00893e4af263",
+    "timestamp": "2025-11-21 23:49:37.693883",
+    "report_generated": false
+  },
+  {
+    "question": "When vanish computes the product, could the order in which roots are processed affect the final result due to floating-point precision issues (even though we're in a finite field), or could iterator ordering affect side-channel timing?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1f5f2913-d708-485e-8c31-a41caf63438d",
+    "timestamp": "2025-11-21 23:50:03.515347",
+    "report_generated": false
+  },
+  {
+    "question": "If vanish is called with roots that are all equal to F::ZERO, does this create a vanishing polynomial of the form x^n that could have unexpected properties when used in Lagrange interpolation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_95fd0231-b4d3-45dd-9cbb-08a0924cdf0d",
+    "timestamp": "2025-11-21 23:50:31.377394",
+    "report_generated": false
+  },
+  {
+    "question": "The vanish function does not validate that all roots are distinct. Could duplicate roots in the input cause the Lagrange basis polynomial to be computed incorrectly, leading to wrong secret reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ea163f13-063f-45b9-83bf-ad9a4c5de036",
+    "timestamp": "2025-11-21 23:50:59.140944",
+    "report_generated": false
+  },
+  {
+    "question": "When vanish is used in lagrange to compute both numerator and denominator, poly.rs:17-19 could providing carefully crafted root sets cause the numerator and denominator to have common factors, reducing the degree and violating interpolation uniqueness?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2274a537-935f-4bdc-bc40-f9eb1fe5f06a",
+    "timestamp": "2025-11-21 23:51:26.094811",
+    "report_generated": false
+  },
+  {
+    "question": "If a malicious guardian provides a root set to vanish that includes very large field elements close to the field modulus, could overflow in the subtraction (x - root) lead to incorrect vanishing polynomial evaluation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d9fb4a8b-02f4-4fff-a6df-9ef48fc67755",
+    "timestamp": "2025-11-21 23:51:55.066202",
+    "report_generated": false
+  },
+  {
+    "question": "The vanish function iterates through roots and multiplies (x - root). If the iterator contains duplicate roots, does this change the multiplicity of zeros in a way that could break Lagrange interpolation correctness?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7aea37d5-74bf-4d5e-b345-1a8e22862f8b",
+    "timestamp": "2025-11-21 23:52:24.147009",
+    "report_generated": false
+  },
+  {
+    "question": "When vanish is called with roots containing x itself, the result is zero. poly.rs:11-13 If this zero value is used in a denominator in lagrange, could it cause a division by zero panic that leads to denial of service during backup reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f1604e8b-edde-4439-8c6f-3010989c4568",
+    "timestamp": "2025-11-21 23:52:51.916828",
+    "report_generated": false
+  },
+  {
+    "question": "The vanish function computes the product ∏(x - root) starting from F::ONE. poly.rs:11-13 If called with an empty iterator of roots, it returns F::ONE. Could this be exploited in Lagrange interpolation to create a trivial denominator that bypasses threshold security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d95ce712-fdc7-4a93-b4a7-b455848e3278",
+    "timestamp": "2025-11-21 23:53:19.295365",
+    "report_generated": false
   }
 ]
