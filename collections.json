@@ -1948,5 +1948,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_677f95e1-29ca-40dc-a2b6-1b4cbf36fb5d",
     "timestamp": "2025-11-21 15:42:06.361123",
     "report_generated": false
+  },
+  {
+    "question": "Request Size Validation: Missing size limit → memory issues?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_92db3e95-a9d5-4bd5-9e01-7bdd8418e37a",
+    "timestamp": "2025-11-21 15:43:36.305254",
+    "report_generated": false
+  },
+  {
+    "question": "Response Size Constraints: Big responses reveal high-value accounts.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7bdbdd87-29b2-4700-a5db-2d263f027029",
+    "timestamp": "2025-11-21 15:43:49.610466",
+    "report_generated": false
+  },
+  {
+    "question": "HTTP Method Validation: POST-only enforced?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c4471ade-a301-4c04-aec3-42e5e069e8ca",
+    "timestamp": "2025-11-21 15:44:03.962825",
+    "report_generated": false
+  },
+  {
+    "question": "URL Path Traversal: Can attacker bypass static path?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_24240aeb-cea5-4412-8e5b-591453fb2a48",
+    "timestamp": "2025-11-21 15:44:18.155706",
+    "report_generated": false
+  },
+  {
+    "question": "Request Header Injection: Cache poisoning or manipulation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4ef7dc67-582c-46fd-8919-f8ee7b8e03d8",
+    "timestamp": "2025-11-21 15:44:33.576409",
+    "report_generated": false
+  },
+  {
+    "question": "Response Header Injection: Reflection attacks possible?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8f2da03b-674a-46cd-b09e-c058aa3358de",
+    "timestamp": "2025-11-21 15:44:50.148840",
+    "report_generated": false
+  },
+  {
+    "question": "Error Stack Trace Exposure: Dev stack traces leak internal code.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7b40d338-6e70-4af8-b8cc-796d6bbb00e0",
+    "timestamp": "2025-11-21 15:45:07.559402",
+    "report_generated": false
+  },
+  {
+    "question": "Timing Attack on Account Existence: Time difference reveals validity.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_24ef1ff5-ac0a-496c-a3b4-4aef79f18a7c",
+    "timestamp": "2025-11-21 15:45:27.354857",
+    "report_generated": false
+  },
+  {
+    "question": "Request ID Tracking: No audit trail → stealth attacks.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_06e64b0e-09ea-475d-a05d-f2ba4a94f793",
+    "timestamp": "2025-11-21 15:45:48.026043",
+    "report_generated": false
+  },
+  {
+    "question": "Logging Sensitive Data: Logs leak AccountIds or states?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d6a46d24-1c6e-41cb-908d-d7979a42c675",
+    "timestamp": "2025-11-21 15:46:11.401446",
+    "report_generated": false
+  },
+  {
+    "question": "HTTP Version Vulnerabilities: HTTP/1.1 vs HTTP/2 inconsistencies?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b2eef564-28bb-4dec-b914-e55362187045",
+    "timestamp": "2025-11-21 15:46:34.478558",
+    "report_generated": false
+  },
+  {
+    "question": "Character Encoding Attacks: Non-standard encodings bypass validation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a63b9c60-b402-4c7c-a7cd-23b0d142d7c7",
+    "timestamp": "2025-11-21 15:46:59.159794",
+    "report_generated": false
+  },
+  {
+    "question": "Null Byte Injection: Truncation or parser confusion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_38c8e382-5ab0-4747-953d-6854c1f3fffd",
+    "timestamp": "2025-11-21 15:47:24.959121",
+    "report_generated": false
+  },
+  {
+    "question": "Owner-Only Backup Reconstruction Violation: Exposed AccountState allows offline reconstruction attempts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_483329b9-fdaa-4204-aa92-f3b48b15c355",
+    "timestamp": "2025-11-21 15:47:51.199686",
+    "report_generated": false
+  },
+  {
+    "question": "Email Ownership Recovery Bypass: State exposure enables fake recovery without certificates?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_65ec4817-2908-4d32-93a5-64a9a66b6f70",
+    "timestamp": "2025-11-21 15:48:18.972766",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Threshold Circumvention: Leaked states help identify weak guardian configurations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_711d9264-3280-4b53-b03c-769392a7e7d6",
+    "timestamp": "2025-11-21 15:48:48.693726",
+    "report_generated": false
+  },
+  {
+    "question": "Email-Account Uniqueness Violation: State reveals duplicate email associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_be75b7f1-c462-4646-a3c4-ce8b81732c07",
+    "timestamp": "2025-11-21 15:49:16.672065",
+    "report_generated": false
+  },
+  {
+    "question": "Multi-Email Association Privacy: Exposing association count violates expectations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_79f33172-2e36-4000-bfcf-fa622a0f38d8",
+    "timestamp": "2025-11-21 15:49:45.106441",
+    "report_generated": false
+  },
+  {
+    "question": "Email-Only Recovery Guarantee: State exposure forces extra info for recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6225de8e-a24f-4fcf-aed9-7576de1651cb",
+    "timestamp": "2025-11-21 15:50:14.735143",
+    "report_generated": false
+  },
+  {
+    "question": "Swafe-io Trust Assumption: State patterns help corrupted Swafe-io deanonymize users?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ceaed403-6d1a-4ecf-af39-6b838c5d310d",
+    "timestamp": "2025-11-21 15:50:45.290128",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Liveness Assumption: Exposed guardian patterns allow targeted DoS?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5e3c3306-c19d-4c6b-a37a-4e90b88fc9c6",
+    "timestamp": "2025-11-21 15:51:14.379373",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Secrecy Assumption: State leaks reduce secrecy threshold?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_444be909-9eba-481f-8939-b9950c47e014",
+    "timestamp": "2025-11-21 15:51:41.851993",
+    "report_generated": false
+  },
+  {
+    "question": "Honest Off-Chain Node Guarantee: Exposure breaks guarantees even with honest nodes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5e71c144-ffcc-4632-a60a-8e76b83ef47f",
+    "timestamp": "2025-11-21 15:52:08.157625",
+    "report_generated": false
+  },
+  {
+    "question": "Minority Corruption Resilience: Corrupted minority nodes correlate states with leaked info?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_624dbe94-2887-4204-ae61-7750d831c431",
+    "timestamp": "2025-11-21 15:52:36.675732",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian-Protected Secret Decryptability: State exposure facilitates offline brute force?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_334e0db0-6c0d-405f-adf6-3e778dcd26a7",
+    "timestamp": "2025-11-21 15:53:04.030242",
+    "report_generated": false
   }
 ]
