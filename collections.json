@@ -748,5 +748,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d61f5b44-38a4-4c52-a612-4472fe9b7284",
     "timestamp": "2025-11-21 14:00:18.536953",
     "report_generated": false
+  },
+  {
+    "question": "Can attackers bypass commitment verification with specially crafted OffchainSecret payloads?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7c9ef8b2-c669-417e-8924-5499f888992e",
+    "timestamp": "2025-11-21 14:01:30.319172",
+    "report_generated": false
+  },
+  {
+    "question": "Should initialization require multi-party authorization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c3e48fcc-4386-479f-8161-e5db11d5faf9",
+    "timestamp": "2025-11-21 14:01:43.334975",
+    "report_generated": false
+  },
+  {
+    "question": "Is there verification that the requestor owns the NodeId they claim?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d7addc0e-c909-4dc2-a623-ebcd7d937a2b",
+    "timestamp": "2025-11-21 14:01:57.241564",
+    "report_generated": false
+  },
+  {
+    "question": "Can Swafe-io maliciously initialize nodes with compromised secrets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9c1997a6-b09b-4fae-a46d-47398b8a7960",
+    "timestamp": "2025-11-21 14:02:11.078432",
+    "report_generated": false
+  },
+  {
+    "question": "Should guardians approve node initialization to strengthen trust?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e6454e41-6c41-484f-82f3-143de53776af",
+    "timestamp": "2025-11-21 14:02:25.593103",
+    "report_generated": false
+  },
+  {
+    "question": "Can contract owners bypass checks and inject malicious secrets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a8da69f1-834c-40cc-b2aa-b5681633b398",
+    "timestamp": "2025-11-21 14:02:41.078969",
+    "report_generated": false
+  },
+  {
+    "question": "Can operators of one node initialize another node without permission?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_67e2be3e-e70d-4cca-ad25-88f29ccd117b",
+    "timestamp": "2025-11-21 14:02:58.565737",
+    "report_generated": false
+  },
+  {
+    "question": "Should initialization requests be signed to prevent MITM?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5291ca0b-9abd-43d6-8178-02d91141ace3",
+    "timestamp": "2025-11-21 14:03:17.834944",
+    "report_generated": false
+  },
+  {
+    "question": "Should node initialization require t-of-n approvals?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6039939d-3e16-4d39-93fd-116cb8d5658e",
+    "timestamp": "2025-11-21 14:03:37.983038",
+    "report_generated": false
+  },
+  {
+    "question": "Who can revoke secrets, and can revocation be abused?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4a658bb5-638c-4743-bbf8-857c1d01c3f9",
+    "timestamp": "2025-11-21 14:03:59.954345",
+    "report_generated": false
+  },
+  {
+    "question": "Is there a hidden administrative backdoor enabling forced initialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fff0958f-3106-4c78-bd7b-5ff443393343",
+    "timestamp": "2025-11-21 14:04:22.010904",
+    "report_generated": false
+  },
+  {
+    "question": "Can corrupted off-chain nodes initialize themselves with malicious data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6a3f8d8a-956e-4d9f-b9ab-7145e1c4e0b1",
+    "timestamp": "2025-11-21 14:04:46.270302",
+    "report_generated": false
+  },
+  {
+    "question": "Is the initialization endpoint publicly accessible without controls?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d7485b95-c151-44d6-bee8-8eba6c8dc2e0",
+    "timestamp": "2025-11-21 14:05:10.940975",
+    "report_generated": false
+  },
+  {
+    "question": "Should initialization require an authentication token?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7c244076-b712-44db-9b1a-3df95b8860fc",
+    "timestamp": "2025-11-21 14:05:37.339948",
+    "report_generated": false
+  },
+  {
+    "question": "Should IP whitelisting restrict which hosts may initialize nodes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dc3ef49b-bf56-4288-9df3-ac7f64aaa79f",
+    "timestamp": "2025-11-21 14:06:04.336995",
+    "report_generated": false
+  },
+  {
+    "question": "Should initialization only occur during specific time windows?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_daf94b68-8354-42ca-851a-2276622b454b",
+    "timestamp": "2025-11-21 14:06:33.980225",
+    "report_generated": false
+  },
+  {
+    "question": "Should nodes prove possession of private keys before initialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_29f098f6-61ec-456c-9cd5-1df28568a896",
+    "timestamp": "2025-11-21 14:07:03.763965",
+    "report_generated": false
+  },
+  {
+    "question": "Can privileges in one Swafe contract affect initialization in another?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d9434039-1f46-4bcc-8695-84ff4cc9a810",
+    "timestamp": "2025-11-21 14:07:34.381939",
+    "report_generated": false
+  },
+  {
+    "question": "Can minority corrupted nodes collude to weaken threshold during initialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2eef4361-4292-471c-8d72-3f26b5a5783e",
+    "timestamp": "2025-11-21 14:08:06.460595",
+    "report_generated": false
+  },
+  {
+    "question": "Can Swafe-io manipulate setup ceremony to embed biased or weak shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_29d6487b-ca81-4a3b-9cb1-01faaca53ee0",
+    "timestamp": "2025-11-21 14:08:40.344991",
+    "report_generated": false
+  },
+  {
+    "question": "Does corruption of guardians after initialization affect stored secrets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1a04dd8c-e6d3-49b6-b9f5-810a83d91366",
+    "timestamp": "2025-11-21 14:09:14.611439",
+    "report_generated": false
+  },
+  {
+    "question": "Does initialization assume t-1 corrupted nodes, and are edge cases handled?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cf58c4ab-a6d0-4d3a-a8af-f9c24ac09512",
+    "timestamp": "2025-11-21 14:09:49.946740",
+    "report_generated": false
+  },
+  {
+    "question": "Is setup ceremony treated as trusted, and can compromise cause long-term risks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a90c2db3-4ad4-4920-a322-7252e40214d9",
+    "timestamp": "2025-11-21 14:10:26.876725",
+    "report_generated": false
+  },
+  {
+    "question": "If minority node snapshots leak, do secrets remain secure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2cd4da40-7c64-43ae-aedf-5c87ff7351b3",
+    "timestamp": "2025-11-21 14:11:02.474647",
+    "report_generated": false
+  },
+  {
+    "question": "Can Swafe-io correlate emails with accounts using initialization metadata?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1a9a7222-65a6-4bea-a3a1-fdf19f792a02",
+    "timestamp": "2025-11-21 14:11:36.150020",
+    "report_generated": false
   }
 ]
