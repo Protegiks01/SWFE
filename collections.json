@@ -6298,5 +6298,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_52113078-015b-4793-b033-91dc20e528d3",
     "timestamp": "2025-11-21 21:06:35.883166",
     "report_generated": false
+  },
+  {
+    "question": "EncapKeyKDF Domain Separator: 'v0:encap-key' collision?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5d6ae976-cee0-4748-b6ab-32f7f4f9fdfa",
+    "timestamp": "2025-11-21 21:08:01.822600",
+    "report_generated": false
+  },
+  {
+    "question": "Generator Multiplication: v0 = 0 case weak key?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_38f24c4a-0221-4f9a-8904-59e32588f76b",
+    "timestamp": "2025-11-21 21:08:15.298655",
+    "report_generated": false
+  },
+  {
+    "question": "Affine Conversion: Timing leak v0.rs:329 ?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_675d833e-2b2f-4aa6-b498-7635e0b43c41",
+    "timestamp": "2025-11-21 21:08:28.678211",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization Error Handling: DoS via encoding failures v0.rs:330-333 ?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_06f4ba96-6688-47bd-8d53-101830e206e1",
+    "timestamp": "2025-11-21 21:08:43.490290",
+    "report_generated": false
+  },
+  {
+    "question": "Key Derivation Collision: KDF collisions allow identical keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b4c21270-9410-4af8-909b-22101f9bd056",
+    "timestamp": "2025-11-21 21:09:00.330201",
+    "report_generated": false
+  },
+  {
+    "question": "V0_bytes Length: Variable-length input ambiguity?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ef55ce96-5689-4f85-9236-95dfac245c9a",
+    "timestamp": "2025-11-21 21:09:20.144033",
+    "report_generated": false
+  },
+  {
+    "question": "Reconstruction Key Consistency: Different serialization paths v0.rs:512-603 ?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fef13058-081d-4797-9cf8-2ebcd38d4ce6",
+    "timestamp": "2025-11-21 21:09:39.723774",
+    "report_generated": false
+  },
+  {
+    "question": "Encapsulation Key Storage: Key stored in EncapsulatedMsk v0.rs:136 leaked?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7a3c79e0-23dc-4697-8b7d-e6e3c324263a",
+    "timestamp": "2025-11-21 21:10:00.873058",
+    "report_generated": false
+  },
+  {
+    "question": "Generator Consistency: GProjective::generator misuse?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e4f2cc91-5ca6-4cad-ae04-170ad46d1e56",
+    "timestamp": "2025-11-21 21:10:22.812986",
+    "report_generated": false
+  },
+  {
+    "question": "In initiate_recovery, can a malicious actor with a compromised but invalid RIK bypass the verification at lines 186-192 by crafting a signature that matches a different association's verification key? v0.rs:171-193",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4fdd9bc1-5cf5-4fbc-9d86-1bf8408a50d7",
+    "timestamp": "2025-11-21 21:10:46.030428",
+    "report_generated": false
+  },
+  {
+    "question": "Does initiate_recovery verify that the account ID provided matches the actual account being recovered, preventing cross-account recovery attacks where an attacker provides their own account ID with another user's RIK? v0.rs:171-226",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_31e2cab2-f510-46ee-821b-b1508a9f59af",
+    "timestamp": "2025-11-21 21:11:10.330622",
+    "report_generated": false
+  },
+  {
+    "question": "In RecoverySecrets::complete, if multiple recovery attempts are in progress simultaneously, can an attacker reuse guardian shares from a previous recovery attempt for a different account? v0.rs:145-162",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_01a0f3a8-a1de-446b-94d4-ebb14c045a8a",
+    "timestamp": "2025-11-21 21:11:35.511650",
+    "report_generated": false
+  },
+  {
+    "question": "Does complete verify that the recovery PKE decryption key used matches the one set in rec.pke, preventing decryption with a different key if an attacker replaces the recovery state? v0.rs:145-162",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2267fe23-d6e8-420b-a2f0-601024244fd2",
+    "timestamp": "2025-11-21 21:12:02.382680",
+    "report_generated": false
+  },
+  {
+    "question": "In derive_msk_decryption_key, can an attacker who obtains msk_ss_rik from a corrupted minority of off-chain nodes and bruteforce/derive msk_ss_social from on-chain data reconstruct the MSK? v0.rs:329-358",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dd6d0e85-21df-40f5-80ee-9aa055a8ab02",
+    "timestamp": "2025-11-21 21:12:30.082408",
+    "report_generated": false
+  },
+  {
+    "question": "Does the KDF used in derive_msk_decryption_key provide sufficient domain separation to prevent key confusion attacks where the derived key could be valid for different contexts? v0.rs:329-358",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ce0d39b3-d27d-45a3-aa21-63c51e3ca6a7",
+    "timestamp": "2025-11-21 21:12:59.151954",
+    "report_generated": false
+  },
+  {
+    "question": "In initiate_recovery, when iterating through rec.assoc to find a valid RIK, can an attacker cause all associations to fail decryption and then exploit timing differences to identify which association was recently added? v0.rs:178-193",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7a6e9bc8-3b9d-49c3-9ca7-952998613f1e",
+    "timestamp": "2025-11-21 21:13:29.437832",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker replay an old AccountUpdateRecoveryV0 message to reset the recovery state to a previous PKE key, allowing them to intercept guardian shares meant for a newer recovery? v0.rs:802-832",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e9f8a215-e946-45c9-b92e-74d1252e15a7",
+    "timestamp": "2025-11-21 21:13:59.705169",
+    "report_generated": false
+  },
+  {
+    "question": "In verify_update for recovery messages, does the signature verification at lines 818-821 prevent a malicious actor from forging recovery requests if they compromise one association's signing key but not the RIK? v0.rs:802-832",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cc1d63ab-08a4-4c5d-86aa-578a26676c1c",
+    "timestamp": "2025-11-21 21:14:31.196765",
+    "report_generated": false
+  },
+  {
+    "question": "When rec.pke is set to Some(recovery.pke) during recovery initiation, can an attacker overwrite an existing recovery in progress, causing the original requester's guardian shares to be encrypted for the wrong key? v0.rs:829",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9437e03f-c809-452d-b876-8c171a5239e3",
+    "timestamp": "2025-11-21 21:15:01.889354",
+    "report_generated": false
+  },
+  {
+    "question": "Does check_for_recovery verify that the requesting account is actually authorized to receive shares from this guardian's backup, preventing unauthorized share distribution? v0.rs:727-755",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_38926518-121f-47dd-bb64-6b72db0e940d",
+    "timestamp": "2025-11-21 21:15:32.309217",
+    "report_generated": false
+  },
+  {
+    "question": "In check_for_recovery, can a malicious user trigger multiple recovery requests and exhaust a guardian's ability to respond by forcing them to generate shares for invalid requests? v0.rs:727-755",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_999b3861-cd90-40fb-916c-6cf64dcef083",
+    "timestamp": "2025-11-21 21:16:03.361143",
+    "report_generated": false
+  },
+  {
+    "question": "When calling decrypt_share_recovery at line 744, does the function verify that the backup belongs to the correct account to prevent cross-account share leakage? v0.rs:744-751",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_797b15fe-6611-46de-8488-0001ed847d7d",
+    "timestamp": "2025-11-21 21:16:34.993442",
+    "report_generated": false
+  },
+  {
+    "question": "In create_recovery, if threshold is set to 0, does this bypass guardian approval entirely, violating the invariant that recovery requires guardian approval? v0.rs:373-394",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c83d20f0-8230-48a6-8325-d1690b9f0cbb",
+    "timestamp": "2025-11-21 21:17:06.717472",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker manipulate the AADRecovery associated data to cause guardians to decrypt shares for the wrong account, enabling unauthorized recovery? v0.rs:361-367",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b197c739-8901-423d-8db8-10fd6bc65112",
+    "timestamp": "2025-11-21 21:17:37.563246",
+    "report_generated": false
+  },
+  {
+    "question": "In update_recovery, when regenerating the social secret share, are old guardian shares invalidated to prevent mix-and-match attacks combining old and new shares? v0.rs:532-554",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_85f4434e-581d-4f41-a03f-a7c44f630fc5",
+    "timestamp": "2025-11-21 21:18:11.117600",
+    "report_generated": false
   }
 ]
