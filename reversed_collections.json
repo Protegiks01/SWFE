@@ -2998,5 +2998,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7da841d0-ec8b-499e-a73d-e8a4b92d0e3c",
     "timestamp": "2025-11-21 16:39:47.667638",
     "report_generated": false
+  },
+  {
+    "question": "Weak Curve Parameters: If the curve::GAffine type v0.rs:17-18 is configured with a weak elliptic curve, could discrete log attacks break the PKE scheme and allow unauthorized decryption of all guardian shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c8df611e-7a1d-4917-a3ac-9dd995abca86",
+    "timestamp": "2025-11-21 16:40:59.036444",
+    "report_generated": false
+  },
+  {
+    "question": "Side-Channel in Scalar Multiplication: Could timing variations in the curve operations curve::GAffine::generator() * self.sk v0.rs:64-65 leak secret key bits through cache timing, enabling an attacker to recover guardian decryption keys from off-chain nodes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d2250791-4851-41f3-92b0-7d7a5304bbe4",
+    "timestamp": "2025-11-21 16:41:12.780392",
+    "report_generated": false
+  },
+  {
+    "question": "Insufficient Key Length: Does the v0 implementation enforce that the scalar field Fr v0.rs:30-31 has sufficient bit security (≥256 bits) to prevent brute-force attacks on guardian share decryption keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_38dda886-44ab-423e-895c-b0723ddcabce",
+    "timestamp": "2025-11-21 16:41:27.099664",
+    "report_generated": false
+  },
+  {
+    "question": "Key Export Without Protection: When DecryptionKey is serialized v0.rs:28-34 , are there any protections against exporting the secret key sk in plaintext over network channels, potentially exposing all encrypted guardian shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_df99d1ca-85cc-45d0-89a0-2ecea92ad41d",
+    "timestamp": "2025-11-21 16:41:41.096265",
+    "report_generated": false
+  },
+  {
+    "question": "Version Downgrade in Key Generation: If a malicious node forces key generation to use an older, vulnerable version by manipulating the DecryptionKey::gen() dispatch mod.rs:68-70 , could guardians' shares be encrypted with weaker cryptography?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_075471f9-694b-4bb9-bace-4238e485cabe",
+    "timestamp": "2025-11-21 16:41:55.647515",
+    "report_generated": false
+  },
+  {
+    "question": "Public Key Collision: Could two different DecryptionKey instances generate the same EncryptionKey mod.rs:72-76 due to insufficient randomness or point compression issues, causing guardian shares to be decryptable by unintended parties?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5271ab1e-65f1-4666-b182-63083772a545",
+    "timestamp": "2025-11-21 16:42:11.450984",
+    "report_generated": false
+  },
+  {
+    "question": "Key Rotation Vulnerability: When an account rotates PKE keys, could old DecryptionKey instances persisting in memory v0.rs:36-40 (with Drop trait) be accessed after zeroization if cloned before rotation, allowing unauthorized recovery with outdated keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bcf1e0e3-9286-4882-a941-e8685781231f",
+    "timestamp": "2025-11-21 16:42:29.239190",
+    "report_generated": false
+  },
+  {
+    "question": "Shared Secret Serialization: In v0's DH shared secret computation v0.rs:74-78 , could non-canonical serialization of the affine point lead to different shared secrets for the same keypair, causing legitimate decryption to fail and locking users out of their accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0b6f5e48-626f-4a40-855b-b373a174bc7a",
+    "timestamp": "2025-11-21 16:42:48.479055",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Point Validation: Does the v0 decryption logic v0.rs:68-92 validate that ct.tp is a valid curve point before performing scalar multiplication ct.tp * self.sk, potentially allowing small subgroup attacks that leak secret key bits?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0ec4721d-5ddb-41e7-a04a-1d87bd4f88f6",
+    "timestamp": "2025-11-21 16:43:09.313956",
+    "report_generated": false
+  },
+  {
+    "question": "Ephemeral Key Reuse in v0: In the v0 implementation's encrypt() function v0.rs:99-131 , if the RNG is compromised or predictable, could ephemeral Diffie-Hellman scalars (ts) repeat across encryptions, breaking IND-CCA2 security and allowing an attacker to link ciphertexts to accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d2beb7a7-0a1a-411e-91c8-c9313923501f",
+    "timestamp": "2025-11-21 16:43:30.962030",
+    "report_generated": false
+  },
+  {
+    "question": "Key Derivation Consistency: In DecryptionKey::encryption_key() mod.rs:72-76 , if multiple threads call this method concurrently, could the OnceCell initialization in v0 lead to inconsistent public key derivation that breaks the encryption/decryption relationship?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7a3a4eab-0b59-4300-9e58-fc364e058c5c",
+    "timestamp": "2025-11-21 16:43:54.087192",
+    "report_generated": false
+  },
+  {
+    "question": "Weak RNG in Key Generation: Does DecryptionKey::gen() mod.rs:68-70 properly validate that the provided RNG implements CryptoRng, or could a caller pass a weak PRNG leading to predictable decryption keys that would allow unauthorized backup reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_38a80092-9705-41bf-89f7-e7536e5ffa3b",
+    "timestamp": "2025-11-21 16:44:17.953545",
+    "report_generated": false
+  },
+  {
+    "question": "Reentrancy via Deserialization: Could custom Deserialize impls trigger callbacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c1af4b3c-f665-4e63-a9f6-3ab2f43965e3",
+    "timestamp": "2025-11-21 16:44:42.420642",
+    "report_generated": false
+  },
+  {
+    "question": "State Version Mismatch: Could old serialized state bypass new validation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5bb0cd1e-e86e-42c5-b04a-157b048a1c7b",
+    "timestamp": "2025-11-21 16:45:08.561429",
+    "report_generated": false
+  },
+  {
+    "question": "Idempotency Failure: Could non-deterministic parse results break idempotency?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d016a51e-2c6d-4972-b359-94e6294ca838",
+    "timestamp": "2025-11-21 16:45:35.924224",
+    "report_generated": false
+  },
+  {
+    "question": "Transaction Atomicity Violation: Could deserialization errors break atomicity?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_10a1bc94-bb9c-44ff-ac0b-e9bd8dcc73da",
+    "timestamp": "2025-11-21 16:46:04.660641",
+    "report_generated": false
+  },
+  {
+    "question": "Partial Deserialization Corruption: Could mid-parse failures corrupt state?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c39dd579-2981-4a50-b909-7d0442efc8b2",
+    "timestamp": "2025-11-21 16:46:34.029568",
+    "report_generated": false
+  },
+  {
+    "question": "Error Response Leakage: Could endpoints echo sensitive malformed input?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_96836275-230d-4239-9c21-d3d886a5ef91",
+    "timestamp": "2025-11-21 16:47:02.691896",
+    "report_generated": false
+  },
+  {
+    "question": "Concurrent Deserialization Race: Could concurrent requests cause race conditions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_56324459-0c27-4356-ae6e-c046db7c6368",
+    "timestamp": "2025-11-21 16:47:31.407797",
+    "report_generated": false
+  },
+  {
+    "question": "Content-Type Bypass: Could binary data masquerade as JSON?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4d438895-6cbc-4870-aa95-96b6021741b7",
+    "timestamp": "2025-11-21 16:48:01.690160",
+    "report_generated": false
+  },
+  {
+    "question": "Size Limit Enforcement: Do endpoints enforce size limits before decoding?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5579f548-8bb9-441c-8b32-8608f2f7f0e3",
+    "timestamp": "2025-11-21 16:48:33.291223",
+    "report_generated": false
+  },
+  {
+    "question": "Malformed JSON Attack: Could malformed JSON bypass StrEncoded validation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f3b1b4b8-a842-4b64-ab15-110713e8f51a",
+    "timestamp": "2025-11-21 16:49:04.416199",
+    "report_generated": false
+  },
+  {
+    "question": "Off-Chain Node Anonymity Leak: Could errors reveal which nodes processed data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9d925be0-f1bf-4b69-abe0-9c2ef9d8744b",
+    "timestamp": "2025-11-21 16:49:38.807195",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Identity Leak: Could serialized guardian IDs reveal trusted guardians?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b9197963-78a5-473d-a330-8f5141609ca1",
+    "timestamp": "2025-11-21 16:50:12.639223",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Output Linkability: Could non-canonical encodings reveal linkability?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ade9b795-1cbb-4162-990a-2a6df2f34ab2",
+    "timestamp": "2025-11-21 16:50:45.205200",
+    "report_generated": false
   }
 ]
