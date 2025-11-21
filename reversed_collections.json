@@ -4648,5 +4648,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9bd1ff66-4e4a-400c-a856-35f94dd9dcf6",
     "timestamp": "2025-11-21 18:42:07.246269",
     "report_generated": false
+  },
+  {
+    "question": "Tag Collision Attack: Can an attacker craft a serialized payload where the u8 tag value collides between different enum variants across multiple uses of versioned_enum! in the codebase (e.g., AccountState::V0 tag 0 vs BackupCiphertext::V0 tag 0), potentially causing type confusion during deserialization? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_25170a75-2acf-4310-a8ba-37260f29b84f",
+    "timestamp": "2025-11-21 18:43:16.916580",
+    "report_generated": false
+  },
+  {
+    "question": "Debug Trait Absence: Although SigningKey avoids deriving Debug, could surrounding types with Debug leak sensitive fields indirectly?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3754f1a4-542c-4fd0-96d3-29e7d9907e4c",
+    "timestamp": "2025-11-21 18:43:30.473987",
+    "report_generated": false
+  },
+  {
+    "question": "Clone on SigningKey: SigningKey derives Clone v0.rs:54 . Does cloning duplicate the secret key in memory before the original is zeroized?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_20230651-eeaa-49e9-8f6d-a29a24c2226b",
+    "timestamp": "2025-11-21 18:43:43.745220",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Trait on VerificationKey: VerificationKey derives Hash v0.rs:26 . If hash collisions occur, could HashMap-based storage corrupt verification key lookups?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d506ab74-201c-41bb-8b57-caaf2f36acc7",
+    "timestamp": "2025-11-21 18:43:58.014707",
+    "report_generated": false
+  },
+  {
+    "question": "ZeroizeOnDrop Bypass: The VerificationKey derives ZeroizeOnDrop v0.rs:26 , but it's a public key. Could unnecessary zeroization cause performance issues or hide bugs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_40a40d17-0129-405c-944d-e8421ea5aeee",
+    "timestamp": "2025-11-21 18:44:12.828970",
+    "report_generated": false
+  },
+  {
+    "question": "Serde Deserialization Assumptions: If serde's derive macros make assumptions about field ordering, could manual deserialization bypass security checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bbccac50-32bc-425a-9c09-d8b38de4e286",
+    "timestamp": "2025-11-21 18:44:29.332243",
+    "report_generated": false
+  },
+  {
+    "question": "Trait Bound Violations: If a type implements Tagged but produces non-injective encodings, could different values hash to the same challenge?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_842d6bde-5d10-45e6-a0cd-3693758ae408",
+    "timestamp": "2025-11-21 18:44:46.855640",
+    "report_generated": false
+  },
+  {
+    "question": "OnceCell Initialization Panic: If initializing the OnceCell panics v0.rs:109-111 , could the verification key be left in an inconsistent state?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_81766cd4-78e9-447a-901c-fee606e9d60f",
+    "timestamp": "2025-11-21 18:45:06.001117",
+    "report_generated": false
+  },
+  {
+    "question": "Modular Reduction Overflow: If from_le_bytes_mod_order overflows or wraps, could this produce invalid challenges?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0d2c033e-ab4e-46f8-9a9e-b0e3d470a643",
+    "timestamp": "2025-11-21 18:45:25.825202",
+    "report_generated": false
+  },
+  {
+    "question": "Affine Conversion Errors: If converting to affine form fails due to point-at-infinity, does the code handle this gracefully or panic?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9de1b9d6-38af-4239-aac3-e1ecade0ef27",
+    "timestamp": "2025-11-21 18:45:46.007919",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization Error Leakage: If serialization fails, do error messages leak information about the secret key structure or values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e39ea55d-6a2e-4d49-b365-0aad77226100",
+    "timestamp": "2025-11-21 18:46:07.395423",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Function Failure: If the hash function panics (e.g., due to resource exhaustion), could this leave the system in an inconsistent state?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1f40935a-ec79-41e8-aedd-63f11f2d5570",
+    "timestamp": "2025-11-21 18:46:30.463081",
+    "report_generated": false
+  },
+  {
+    "question": "RNG Failure Silent Propagation: If rng.gen() fails in sign(), the error might not propagate correctly. Could this lead to signatures with weak nonces?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e7dfba95-48b3-46c3-8e06-bfcd0c07f2c9",
+    "timestamp": "2025-11-21 18:46:53.254239",
+    "report_generated": false
+  },
+  {
+    "question": "Verification Panic on Edge Cases: Could edge cases like infinity points or zero scalars cause verify() to panic rather than return an error?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_59248b10-a830-4a44-8528-80ed3bdd5b4c",
+    "timestamp": "2025-11-21 18:47:17.855621",
+    "report_generated": false
+  },
+  {
+    "question": "Panic on Invalid Points: If r in a signature is an invalid curve point, could deserialization panic instead of returning an error, enabling DoS?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_03ce9b44-4a1f-421d-a749-7d52023cfc6c",
+    "timestamp": "2025-11-21 18:47:42.406395",
+    "report_generated": false
+  },
+  {
+    "question": "Silent Failure on Deserialization: If deserializing a SigningKey fails but error handling is missing, could partially deserialized keys be used, causing undefined behavior?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5eecdac6-8e39-4268-a6d0-1e42c2756d36",
+    "timestamp": "2025-11-21 18:48:08.780440",
+    "report_generated": false
+  },
+  {
+    "question": "Verification Error Ambiguity: The error SignatureVerificationFailed v0.rs:48 doesn't distinguish between malformed signatures and cryptographically invalid ones. Could this ambiguity be exploited?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1a61306a-3be4-4dbc-bbda-c0c84b94d8a2",
+    "timestamp": "2025-11-21 18:48:36.779051",
+    "report_generated": false
+  },
+  {
+    "question": "Speculative Execution Leaks: Could Spectre/Meltdown-style attacks leak secret key material from speculative execution of scalar multiplication operations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_86032d2d-0a32-48e2-90eb-a0aece15c03a",
+    "timestamp": "2025-11-21 18:49:05.797324",
+    "report_generated": false
+  },
+  {
+    "question": "Memory Duplication via Fork: If the process forks, child processes inherit memory. Could child processes access parent's signing keys before they're zeroized?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c3068424-593a-4cbe-95a0-639ca2501597",
+    "timestamp": "2025-11-21 18:49:35.460637",
+    "report_generated": false
+  },
+  {
+    "question": "Heap Fragmentation Leaks: If signing keys are allocated and deallocated repeatedly, heap fragmentation could leave copies in different memory locations. Could attackers scan heap for unzeroized copies?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f74ae135-2991-4c30-9290-2b2e0518804a",
+    "timestamp": "2025-11-21 18:50:05.706551",
+    "report_generated": false
+  },
+  {
+    "question": "Swap File Persistence: If secret keys are swapped to disk, zeroization doesn't affect swap files. Could attackers extract keys from hibernation files or swap partitions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c967ca4c-816e-4f55-a0e5-f451020cef69",
+    "timestamp": "2025-11-21 18:50:37.943974",
+    "report_generated": false
+  },
+  {
+    "question": "Memory Residue After Zeroization: Even after zeroize() v0.rs:65 , memory pages may retain residual magnetic traces. Could cold-boot attacks recover keys from DRAM?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0206afb5-e426-4910-851d-ea85ff87eb37",
+    "timestamp": "2025-11-21 18:51:10.470146",
+    "report_generated": false
+  },
+  {
+    "question": "Power-Based Nonce Recovery: If the nonce generation process leaks via power consumption, could attackers extract k from a single signature and derive the secret key?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a4f4b1f2-0441-4b7d-8bcb-f3f364801304",
+    "timestamp": "2025-11-21 18:51:41.753476",
+    "report_generated": false
+  },
+  {
+    "question": "EM Side-Channels on Cache: If the verification key cache is accessed, EM radiation from memory reads could distinguish cache hits from misses, leaking key usage.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_da381104-5360-4bb1-b88c-8dc1a79eddef",
+    "timestamp": "2025-11-21 18:52:11.969213",
+    "report_generated": false
+  },
+  {
+    "question": "Power Traces on Verification: Although verification is public-key operation, power traces could reveal which public keys are frequently verified, leaking usage patterns.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_39109f11-da11-4e59-8241-e366d575a9bd",
+    "timestamp": "2025-11-21 18:52:44.075969",
+    "report_generated": false
   }
 ]
