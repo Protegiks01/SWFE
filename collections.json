@@ -5098,5 +5098,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d3c42ac9-9a9e-46ad-a09d-4f64c03c62ad",
     "timestamp": "2025-11-21 19:37:15.312200",
     "report_generated": false
+  },
+  {
+    "question": "Can an attacker decrypt the BackupMetadata without knowing the master secret key by exploiting the key_meta derivation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d80db507-cbf0-42b3-947a-b4ae6d19766a",
+    "timestamp": "2025-11-21 19:38:35.178218",
+    "report_generated": false
+  },
+  {
+    "question": "Does the sym::seal() operation for encrypting metadata use a fresh nonce for each backup to prevent nonce reuse attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_58f32425-fda4-47c1-b302-c872f16945ed",
+    "timestamp": "2025-11-21 19:38:50.042329",
+    "report_generated": false
+  },
+  {
+    "question": "Can the same key_data be derived for different backups if the secret from Shamir sharing is identical?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b29f6c09-0686-4d16-8547-277f9c88c03e",
+    "timestamp": "2025-11-21 19:39:03.820907",
+    "report_generated": false
+  },
+  {
+    "question": "Does the encryption of BackupMetadata include a MAC that binds it to the specific backup instance?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_de9fe8e2-c371-49df-9b18-5be205307531",
+    "timestamp": "2025-11-21 19:39:17.871994",
+    "report_generated": false
+  },
+  {
+    "question": "In BackupKDFInput, does combining key and secret provide sufficient entropy mixing to prevent related-key attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cd9461ce-4aca-4207-8421-d4772593f8d2",
+    "timestamp": "2025-11-21 19:39:33.090131",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker with knowledge of one backup's key_meta compute the key_data without reconstructing the Shamir secret?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e14dc704-c1f3-4beb-aa72-6ba65f22ccae",
+    "timestamp": "2025-11-21 19:39:50.796329",
+    "report_generated": false
+  },
+  {
+    "question": "Does KDFMetakey using only comms as input provide sufficient randomness if the same guardian set is reused?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ac896796-16d0-440c-98a8-41856bcf2cd9",
+    "timestamp": "2025-11-21 19:40:08.382394",
+    "report_generated": false
+  },
+  {
+    "question": "Can two different users with the same master secret key derive identical encryption keys for their backups?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e8602e3e-8dd9-4fa0-b5f0-20e44a71e0f4",
+    "timestamp": "2025-11-21 19:40:27.725448",
+    "report_generated": false
+  },
+  {
+    "question": "Is the kdfn() function used for key derivation resistant to collision attacks that could reveal partial key information?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_547f0dc6-a85c-4a3c-ad95-0475b2a31170",
+    "timestamp": "2025-11-21 19:40:48.821293",
+    "report_generated": false
+  },
+  {
+    "question": "In ShareComm, does hashing the share via ShareHash provide hiding and binding properties, or can an attacker brute-force low-entropy shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2d0f0ced-09c9-4587-928f-ade7c9b6e658",
+    "timestamp": "2025-11-21 19:41:11.373708",
+    "report_generated": false
+  },
+  {
+    "question": "Can a malicious guardian create a ShareComm commitment before knowing the actual share, then find a share that matches the commitment?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e833508c-3143-418a-bb6f-7fd70540b1a4",
+    "timestamp": "2025-11-21 19:41:33.384049",
+    "report_generated": false
+  },
+  {
+    "question": "Does the commitment scheme prevent a guardian from changing their share after the backup is created but before recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8763a3ce-d8b7-47e1-a610-86cbcdf8fae9",
+    "timestamp": "2025-11-21 19:41:57.906801",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker learn information about the polynomial used in Shamir sharing by analyzing multiple share commitments?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e7f85134-518a-419c-9a3b-8d603c575ade",
+    "timestamp": "2025-11-21 19:42:23.553133",
+    "report_generated": false
+  },
+  {
+    "question": "If the hash function used for commitments has collisions, can this lead to accepting invalid shares during recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_72fa2eb4-fefa-46e1-b4ce-cf40d4b6f044",
+    "timestamp": "2025-11-21 19:42:49.691189",
+    "report_generated": false
+  },
+  {
+    "question": "In pke::EncryptionKey::batch_encrypt(), does the batch ciphertext properly authenticate the number and ordering of encrypted shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5265d8e2-d611-4e16-8468-fd1811fef755",
+    "timestamp": "2025-11-21 19:43:17.876226",
+    "report_generated": false
+  },
+  {
+    "question": "Can a malicious off-chain node remove or reorder ciphertexts in BatchCiphertextV0 without detection?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dbb64259-ee67-43b4-9b1a-aed587de1998",
+    "timestamp": "2025-11-21 19:43:46.716433",
+    "report_generated": false
+  },
+  {
+    "question": "Does the batch encryption include the guardian count to prevent truncation attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_24bbc467-511f-4c32-af40-5d88b6a6f563",
+    "timestamp": "2025-11-21 19:44:16.735470",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker substitute one guardian's encrypted share with another's if both use the same encryption key?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d8d49e85-50ba-4a7d-a806-61ab875e706f",
+    "timestamp": "2025-11-21 19:44:47.443963",
+    "report_generated": false
+  },
+  {
+    "question": "Is the vk in BatchCiphertextV0Inner properly bound to all ciphertexts to prevent mix-and-match attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a60ac1a3-bf6f-4f90-8e18-33ddda9935c6",
+    "timestamp": "2025-11-21 19:45:18.962103",
+    "report_generated": false
+  },
+  {
+    "question": "Does BackupCiphertextV0 include a mechanism to detect if any of its fields (data, comms, encap) have been tampered with?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1c71a5c2-f1bd-495c-bafa-7f2471622c17",
+    "timestamp": "2025-11-21 19:45:52.259512",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker modify the comms vector after backup creation to change which shares are considered valid during recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bec4d3d9-13ec-46c2-8954-3f2717e28206",
+    "timestamp": "2025-11-21 19:46:25.805860",
+    "report_generated": false
+  },
+  {
+    "question": "Is there a cryptographic binding between the data field and the encap field to prevent independent modification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_15c5fe06-6aca-4f9e-9a88-3533e1598077",
+    "timestamp": "2025-11-21 19:47:01.277045",
+    "report_generated": false
+  },
+  {
+    "question": "Can a malicious off-chain node serve different versions of a BackupCiphertext to different guardians?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_81f0f7aa-14bc-4a74-85b0-40d0aeeef288",
+    "timestamp": "2025-11-21 19:47:36.000169",
+    "report_generated": false
+  },
+  {
+    "question": "Does the recovery process verify that the BackupCiphertext hasn't been modified since creation using the BackupId?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8b21938c-64c7-49c3-a850-5d898bc23370",
+    "timestamp": "2025-11-21 19:48:10.281349",
+    "report_generated": false
+  },
+  {
+    "question": "In BackupMetadata, can an attacker modify the threshold field to lower the required guardian count for recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f0194473-4459-4df1-bae2-316ce20b7c98",
+    "timestamp": "2025-11-21 19:48:44.724786",
+    "report_generated": false
   }
 ]
