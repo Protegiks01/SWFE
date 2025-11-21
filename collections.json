@@ -6748,5 +6748,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_49606ea2-7cfa-4b38-b79b-dae702b04ee9",
     "timestamp": "2025-11-21 21:39:49.094394",
     "report_generated": false
+  },
+  {
+    "question": "Can an attacker cause guardians to decrypt the same backup multiple times by repeatedly marking and unmarking it for recovery? v0.rs:517-526",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8d279a4b-f16c-49af-af25-8bbd6690ec95",
+    "timestamp": "2025-11-21 21:40:57.773004",
+    "report_generated": false
+  },
+  {
+    "question": "Does update ensure that backups and recover vectors are properly serialized and deserialized without data loss? v0.rs:705-706",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7dc2e69c-a9ef-4cf9-8ae3-37d6bf5ede7a",
+    "timestamp": "2025-11-21 21:41:10.586647",
+    "report_generated": false
+  },
+  {
+    "question": "In decrypt_v0 helper function, can an attacker exploit the batch decryption mechanism to cause out-of-bounds errors if the index is manipulated? v0.rs:573-593",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dedc0176-572e-4634-8f29-bf833445a1e7",
+    "timestamp": "2025-11-21 21:41:23.799600",
+    "report_generated": false
+  },
+  {
+    "question": "Does the system prevent an attacker from cloning backups across multiple accounts by reusing the same BackupCiphertext? v0.rs:503-507",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_47ba7a01-aa42-4cb2-a446-57ceda0098c0",
+    "timestamp": "2025-11-21 21:41:37.251207",
+    "report_generated": false
+  },
+  {
+    "question": "In add_association, can an attacker add unlimited associations to cause the assoc vector to grow unboundedly, exhausting resources? v0.rs:605-619",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6e74d394-38bc-4dfa-8f40-7e75a51f577f",
+    "timestamp": "2025-11-21 21:41:51.766063",
+    "report_generated": false
+  },
+  {
+    "question": "Does revoke_association verify that the RIK being revoked actually exists before modifying the assoc vector? v0.rs:622-632",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_256dc89c-b517-4cfb-80ec-23df0967d479",
+    "timestamp": "2025-11-21 21:42:07.361567",
+    "report_generated": false
+  },
+  {
+    "question": "In update, when generating associations, does the function ensure that all RIKs are encrypted with fresh randomness to prevent ciphertext linking? v0.rs:640-666",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_48e2369b-faf1-4024-be1a-2f705d06c177",
+    "timestamp": "2025-11-21 21:42:23.854414",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit the comment at line 640 about hiding which association is being modified to perform differential analysis on multiple update transactions? v0.rs:639-641",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d3f884e1-dd2d-4c32-9c0d-aeb488e862ad",
+    "timestamp": "2025-11-21 21:42:42.729994",
+    "report_generated": false
+  },
+  {
+    "question": "Does add_association return the generated RIK through a secure channel, or can it be intercepted during transmission to compromise recovery? v0.rs:605-619",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9b864365-b203-4a39-820b-750eb59b78b3",
+    "timestamp": "2025-11-21 21:43:02.570223",
+    "report_generated": false
+  },
+  {
+    "question": "In revoke_association, can an attacker cause the function to fail silently by providing an invalid RIK, leaving the association active? v0.rs:622-632",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4f1249c7-558d-45f8-9dde-16fca4f98bb9",
+    "timestamp": "2025-11-21 21:43:24.179969",
+    "report_generated": false
+  },
+  {
+    "question": "When multiple associations exist, does initiate_recovery try all of them in a predictable order that could leak information about which association is actively used? v0.rs:178-193",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6a2c0893-8885-4f35-ae0b-d80681e4e954",
+    "timestamp": "2025-11-21 21:43:45.663703",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker who compromises one association's signing key generate valid recovery requests without knowing the RIK? v0.rs:647-665",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a34b7a6f-8d6e-467e-a2c4-ff7d84ef4f90",
+    "timestamp": "2025-11-21 21:44:09.105637",
+    "report_generated": false
+  },
+  {
+    "question": "Does update ensure that the generated signing keys for associations are unique across all associations to prevent signature confusion? v0.rs:647",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2b6a132b-a99a-47f8-b259-48a9bd91aac8",
+    "timestamp": "2025-11-21 21:44:33.769761",
+    "report_generated": false
+  },
+  {
+    "question": "In revoke_association, if the revoked RIK was stored by off-chain nodes, are those nodes notified to delete their shares? v0.rs:622-632",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2f518b1a-fc79-4c1c-92d3-6f5f70b4530c",
+    "timestamp": "2025-11-21 21:44:58.736469",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker determine the number of associations by analyzing the size of the assoc vector in the encrypted state? v0.rs:640-666",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_96dee07f-1a9e-4b9c-93ba-57bd69d2fc55",
+    "timestamp": "2025-11-21 21:45:25.688540",
+    "report_generated": false
+  },
+  {
+    "question": "Does add_association verify that the newly generated RIK is not accidentally reused from a previous association? v0.rs:612",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9d2d4f5f-ed6c-4f5e-9bbc-004f267fce6f",
+    "timestamp": "2025-11-21 21:45:52.790579",
+    "report_generated": false
+  },
+  {
+    "question": "In update, when encrypting EncapV0, does the function use proper domain separation to prevent key confusion between different associations? v0.rs:650-658",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_087ac2ef-afa8-414c-a01d-6666b95bcb24",
+    "timestamp": "2025-11-21 21:46:21.344069",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit the find_map operation in initiate_recovery to cause timing variations based on the position of the valid association in the vector? v0.rs:178-193",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2969942a-6ecc-4e75-85ca-8fe537f2ddc3",
+    "timestamp": "2025-11-21 21:46:50.183775",
+    "report_generated": false
+  },
+  {
+    "question": "Does revoke_association set the dirty flag before returning an error to prevent state inconsistencies? v0.rs:630-631",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f855c164-cca6-4670-874c-a4f99a71deda",
+    "timestamp": "2025-11-21 21:47:19.633714",
+    "report_generated": false
+  },
+  {
+    "question": "In decrypt, can an attacker provide a malicious AccountStateV0Ad with an incorrect version to bypass version checks? v0.rs:251-289",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3f6f23b2-9507-48fd-81e3-b00a0433155c",
+    "timestamp": "2025-11-21 21:47:49.989842",
+    "report_generated": false
+  },
+  {
+    "question": "Does update use proper associated data in AccountStateV0Ad to bind the ciphertext to the specific account and version? v0.rs:685-688",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d4649b44-5ed4-4c49-abbc-d2c27a306e97",
+    "timestamp": "2025-11-21 21:48:21.090690",
+    "report_generated": false
+  },
+  {
+    "question": "In decrypt, if the MSK is incorrect, does the error reveal whether the failure was due to MAC verification or deserialization? v0.rs:253-260",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_24ee058b-3252-47e2-bfa5-f3d2f4e0ecdc",
+    "timestamp": "2025-11-21 21:48:53.277140",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit the act field in AccountStateV0 to substitute encrypted state from another account? v0.rs:232",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_de8e0d33-037f-47b4-9069-a9fba03cb96f",
+    "timestamp": "2025-11-21 21:49:24.967196",
+    "report_generated": false
+  },
+  {
+    "question": "Does update ensure that the encrypted act ciphertext is properly bound to the account ID to prevent cross-account attacks? v0.rs:669-689",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1ee1c040-69c0-429f-bc18-8bc6c4d27fb6",
+    "timestamp": "2025-11-21 21:49:55.982328",
+    "report_generated": false
+  },
+  {
+    "question": "In decrypt, are old_msk and old_pke vectors properly validated to prevent unbounded growth attacks through repeated decryption attempts? v0.rs:261-287",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e95c37fe-86ec-44b9-9520-9d1e9f7434e4",
+    "timestamp": "2025-11-21 21:50:26.140909",
+    "report_generated": false
   }
 ]
