@@ -7198,5 +7198,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0938d676-ac6a-45e7-a694-bee91c32b2ed",
     "timestamp": "2025-11-21 21:53:24.011923",
     "report_generated": false
+  },
+  {
+    "question": "Scalar Validation on s Component: When deserializing a Signature, is the s component validated to be in the correct field range? v0.rs:18-24",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4e697dca-f16d-4b6d-a2ce-73fb2d8c4976",
+    "timestamp": "2025-11-21 21:54:40.358385",
+    "report_generated": false
+  },
+  {
+    "question": "Point Validation on R Component: When deserializing a Signature, is the r component validated to be a valid curve point in the correct subgroup? v0.rs:18-24",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_16a1a3b2-d402-4877-b36b-f0567b88cb66",
+    "timestamp": "2025-11-21 21:54:53.621799",
+    "report_generated": false
+  },
+  {
+    "question": "Challenge Hash Computation Mismatch: The signing process uses hash_to_fr() while verification uses Fr::from_le_bytes_mod_order(&hash()). Could this difference cause valid signatures to fail or invalid signatures to pass? v0.rs:35-39 v0.rs:96-100",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6b346430-4ee7-4097-a4f6-1cab01fbf17e",
+    "timestamp": "2025-11-21 21:55:06.825962",
+    "report_generated": false
+  },
+  {
+    "question": "Nonce Reuse Attack: In SigningKey::sign(), the nonce k is generated fresh each time. However, if the RNG fails silently or produces predictable output, could two signatures with the same nonce leak the private key? v0.rs:93-94",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e0ae65e8-9f97-4d5a-a4a4-11dbdebceb05",
+    "timestamp": "2025-11-21 21:55:20.583615",
+    "report_generated": false
+  },
+  {
+    "question": "Schnorr Signature Verification Equation: In VerificationKey::verify(), the verification checks [s]G = R + [e]PK. Could an attacker exploit any edge cases where this equation holds for invalid signatures (e.g., point at infinity, zero scalars)? v0.rs:41-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_aea009bf-972f-4cb5-ba49-845cd236d5fe",
+    "timestamp": "2025-11-21 21:55:35.099944",
+    "report_generated": false
+  },
+  {
+    "question": "NodeId VDRF Share Distribution: When NodeIds are used to deal VDRF shares via VdrfSecretKey::deal(), could an attacker register multiple NodeIds with nearby eval_point() values to learn information about the polynomial?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6e522d59-a6b0-4e3e-9a10-d40299e4a115",
+    "timestamp": "2025-11-21 21:55:51.075335",
+    "report_generated": false
+  },
+  {
+    "question": "NodeId Error Message Information Leakage: The error messages in from_str() reveal validation logic (e.g., \"node id must contain only letters, digits and hyphens\"). Could this help attackers craft malicious inputs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6d959b36-a037-4dfc-9e39-666280f71e61",
+    "timestamp": "2025-11-21 21:56:08.529491",
+    "report_generated": false
+  },
+  {
+    "question": "NodeId Reconstruction from Parts: After splitting on ':', the code reconstructs NodeId(s.to_owned()) with the original string. If the split logic has bugs, could this allow injection of invalid characters?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c8c50b33-6cb6-4c8b-aa14-54c69ae2aea0",
+    "timestamp": "2025-11-21 21:56:27.531204",
+    "report_generated": false
+  },
+  {
+    "question": "NodeId Character Set Restriction Bypass: The validation uses is_ascii_alphabetic() || is_ascii_digit() || c == '-'. Are there any ASCII characters in ranges 0x00-0x7F that could pass this check but cause issues in downstream parsing?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_235105d2-0943-475d-bdfb-713b14c7e261",
+    "timestamp": "2025-11-21 21:56:48.632541",
+    "report_generated": false
+  },
+  {
+    "question": "NodeId Prefix Validation Timing: The validation checks prefix equality with a simple != comparison. Could this introduce timing side-channels that leak information about valid NodeIds to remote attackers?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_64d8c94e-b36c-49b8-afc3-df29c91b50d6",
+    "timestamp": "2025-11-21 21:57:10.609778",
+    "report_generated": false
+  },
+  {
+    "question": "NodeId Serialization Format Change: If the NodeId serialization format changes (e.g., from \"node:id\" to a different scheme), could old NodeIds become invalid, breaking existing VDRF shares and causing permanent account lockout?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b7f0425e-205e-4a81-bff5-f4f2ce6daa52",
+    "timestamp": "2025-11-21 21:57:34.065694",
+    "report_generated": false
+  },
+  {
+    "question": "NodeId AsRef Implementations: The NodeId implements AsRef<str> and AsRef<String>. Could these expose internal string data in a way that bypasses access controls or allows modification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8a049c8e-446d-4902-84fa-abd03fbba971",
+    "timestamp": "2025-11-21 21:57:57.839473",
+    "report_generated": false
+  },
+  {
+    "question": "NodeId PartialEq Consistency: The NodeId derives PartialEq over the wrapped String. Is string comparison correct for cryptographic identity? Should it compare normalized forms or hashes instead?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4a843409-304f-415a-9571-a655ae498eed",
+    "timestamp": "2025-11-21 21:58:22.522657",
+    "report_generated": false
+  },
+  {
+    "question": "NodeId Injection in Tagged Encoding: The Tagged trait uses \"v0:node-id\" as a separator. If a NodeId contains the substring \"v0:node-id\", could it break domain separation in cryptographic operations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_211568dd-bc51-4839-9619-a099646c0587",
+    "timestamp": "2025-11-21 21:58:48.974181",
+    "report_generated": false
+  },
+  {
+    "question": "NodeId Type Confusion: The from_str() validation only checks the prefix \"node\". Could an attacker submit other prefixed strings (e.g., \"account:id\") that get stored as NodeIds, causing type confusion in smart contract logic?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a538c4f8-9608-4988-bd37-31878de0c737",
+    "timestamp": "2025-11-21 21:59:15.571818",
+    "report_generated": false
+  },
+  {
+    "question": "NodeId Clone Safety: The NodeId derives Clone, but it wraps a String. Could cloning a NodeId used in cryptographic operations lead to secret data being duplicated in memory without proper zeroization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2b3ea373-6a4c-4f67-9511-1f576ee047f0",
+    "timestamp": "2025-11-21 21:59:42.334388",
+    "report_generated": false
+  },
+  {
+    "question": "NodeId as HashMap Key: NodeIds are used as HashMap keys in VDRF operations. Does the Hash implementation produce consistent results across serialization boundaries? Could hash collisions lead to wrong shares being retrieved?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2afe1d5b-443b-4231-a031-401f4e03f925",
+    "timestamp": "2025-11-21 22:00:10.576867",
+    "report_generated": false
+  },
+  {
+    "question": "NodeId Homograph Attack: Could two visually identical but byte-different NodeIds (after ASCII validation) exist in the system? For example, could normalization differences create collisions in databases or smart contract storage?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5a87653a-cda4-4a41-9c22-f4b6431cb5a8",
+    "timestamp": "2025-11-21 22:00:40.198134",
+    "report_generated": false
+  },
+  {
+    "question": "NodeId Hash Collision with Account IDs: Are NodeIds and AccountIds hashed with different domain separators? Could an attacker craft a NodeId that produces the same hash as an AccountId, confusing authorization checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9a0d0a89-269c-4c79-8b27-f0604144c4de",
+    "timestamp": "2025-11-21 22:01:11.072188",
+    "report_generated": false
+  },
+  {
+    "question": "NodeId Extra Colons: The validation checks parts.next().is_some() for extra parts, but does it handle multiple colons correctly (e.g., \"node:id:extra:parts\")? Could this bypass validation or create parsing ambiguities?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_eb5ba753-a91e-4bce-8e7f-4f3c3ecdb5d6",
+    "timestamp": "2025-11-21 22:01:40.543081",
+    "report_generated": false
+  },
+  {
+    "question": "NodeId Display/FromStr Roundtrip: Does Display::fmt() produce output that FromStr::from_str() can parse? If not, could this cause inconsistencies where a NodeId serializes to a string that cannot be deserialized back?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d4611904-240e-4ac8-9623-856554b39816",
+    "timestamp": "2025-11-21 22:02:09.916285",
+    "report_generated": false
+  },
+  {
+    "question": "NodeId Deserialization Bypass: The NodeId struct derives Deserialize but also has from_str() validation. Could an attacker directly deserialize invalid NodeIds (e.g., via bincode) bypassing the FromStr validation, then use them in VDRF operations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f13f1d8b-1029-4608-89da-a9fc9cee30a9",
+    "timestamp": "2025-11-21 22:02:39.045929",
+    "report_generated": false
+  },
+  {
+    "question": "NodeId Zero Point Assertion: The eval_point() method asserts that the hash cannot be zero, but this uses assert_ne! which panics in release builds. Should this return a SwafeError instead to prevent DoS attacks where malicious nodes force crashes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a4849532-4c3f-49f6-b5f3-12c7afe401a3",
+    "timestamp": "2025-11-21 22:03:08.957844",
+    "report_generated": false
+  },
+  {
+    "question": "NodeId eval_point() Collision Risk: The eval_point() method uses Fr::from_le_bytes_mod_order() on a hash. Could an attacker deliberately search for NodeIds that produce the same field element, causing VDRF share collisions and breaking threshold security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cb75aa3a-1b40-4f7d-8270-4a6e42baeaec",
+    "timestamp": "2025-11-21 22:03:40.176852",
+    "report_generated": false
+  },
+  {
+    "question": "NodeId Consecutive Hyphens: Does the validation prevent multiple consecutive hyphens (e.g., \"node:valid--malicious\")? Could this create parsing ambiguities when NodeIds are concatenated or split?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_715cb57c-2973-40dc-aa0c-d7ff6443ae22",
+    "timestamp": "2025-11-21 22:04:12.077323",
+    "report_generated": false
   }
 ]
