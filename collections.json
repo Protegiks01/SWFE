@@ -1498,5 +1498,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_62c66a62-08c8-4923-8f85-cbb683ffe893",
     "timestamp": "2025-11-21 14:55:30.337052",
     "report_generated": false
+  },
+  {
+    "question": "Encrypted MSK Size Leakage: The enc_msk field v0.rs:105 is fixed-size AEAD. Can AEAD overhead leak entropy details?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4ca5a850-abc5-47cc-936f-099448541174",
+    "timestamp": "2025-11-21 14:56:43.491518",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Metadata Privacy: The BackupCiphertext includes metadata like name/description. Can attackers collect names (e.g., 'family vault')?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5d14b794-1ea2-4df9-940c-0af042acdd48",
+    "timestamp": "2025-11-21 14:56:56.832528",
+    "report_generated": false
+  },
+  {
+    "question": "Association Encapsulation Analysis: The number/size of encap ciphertexts v0.rs:94-98 may leak email count.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_839e8e29-7609-4310-a4fa-35dd002aeb21",
+    "timestamp": "2025-11-21 14:57:09.962862",
+    "report_generated": false
+  },
+  {
+    "question": "Version Counter Privacy: cnt v0.rs:231 increments with updates. Can polling build user activity timelines?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b259775a-4dc6-4e57-b142-3582ed7b880e",
+    "timestamp": "2025-11-21 14:57:24.913478",
+    "report_generated": false
+  },
+  {
+    "question": "PKE Encapsulation Pattern Analysis: Similar PKE patterns may reveal multi-account ownership.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dd86f84e-fa16-43de-8eb5-f2f32aa9aab8",
+    "timestamp": "2025-11-21 14:57:39.550361",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery Initiation Detection: rec.pke v0.rs:102 reveals active recovery. Can attackers detect distressed accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5cadd347-9775-4067-b58f-c73a8d31b7d0",
+    "timestamp": "2025-11-21 14:57:57.286621",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Count Correlation: Many backups => power users => prime targets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8ac36bf2-1e83-4a41-88bc-e204c060220b",
+    "timestamp": "2025-11-21 14:58:16.911853",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Threshold Estimation: BackupCiphertext structure v0.rs:237 may leak threshold t.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_beb4dedb-5bec-44e2-ae11-224481efcf73",
+    "timestamp": "2025-11-21 14:58:39.544472",
+    "report_generated": false
+  },
+  {
+    "question": "Email Domain Inference: Certificate patterns may reveal email provider (Gmail vs Proton).",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4518a57e-3e34-4027-a4ee-875647236a86",
+    "timestamp": "2025-11-21 14:59:02.077509",
+    "report_generated": false
+  },
+  {
+    "question": "Off-Chain State Snapshot Correlation: Corrupted nodes can correlate leaked off-chain data with on-chain state.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_55717091-72ae-423f-9da4-540747bb1077",
+    "timestamp": "2025-11-21 14:59:25.531918",
+    "report_generated": false
+  },
+  {
+    "question": "Timing Side-Channel on Deserialization: encode::deserialize lib.rs:37 data-dependent timing leaks state size.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_da1218ee-52aa-43f8-89c0-68047bfcd72c",
+    "timestamp": "2025-11-21 14:59:50.347361",
+    "report_generated": false
+  },
+  {
+    "question": "HTTP Response Header Leakage: Content-Length/ETag leak account state size.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_be17e7e3-58c6-462e-b740-06c07cde20da",
+    "timestamp": "2025-11-21 15:00:16.187011",
+    "report_generated": false
+  },
+  {
+    "question": "JSON Serialization Determinism: StrEncoded non-determinism may leak internal randomness.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_39f16703-fe52-4266-b77c-18f3afe43e17",
+    "timestamp": "2025-11-21 15:00:42.549942",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Ordering Information: backups vector v0.rs:236 ordered by time leaks user behavior.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_81dc2702-0203-4a3b-b7f2-5e1187757f63",
+    "timestamp": "2025-11-21 15:01:10.483512",
+    "report_generated": false
+  },
+  {
+    "question": "Association Reordering Attacks: Detect add/remove operations by diffing state.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_57cd9dd7-3f16-45c3-9fcc-f8eb1b1f6f53",
+    "timestamp": "2025-11-21 15:01:40.137517",
+    "report_generated": false
+  },
+  {
+    "question": "Pedersen Commitment Linkability: Collect commitments to link shared guardians.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_23fab831-73a1-414f-a748-a1f7cfa70e64",
+    "timestamp": "2025-11-21 15:02:09.477730",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Evaluation Timing: Query state before/after evaluations to link events.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3a12bcf1-8c5b-4827-b438-bcf7e8eea043",
+    "timestamp": "2025-11-21 15:02:40.003663",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Response Pattern Analysis: Monitor guardian network traffic to infer connections.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d15ac866-25ba-4326-ba23-930aa385bbac",
+    "timestamp": "2025-11-21 15:03:12.104248",
+    "report_generated": false
+  },
+  {
+    "question": "Backup ID Collision Analysis: BackupIds mod.rs:13-19 may show hash collisions.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_01c34445-ce13-4a43-87b5-cdd939d5dbde",
+    "timestamp": "2025-11-21 15:03:44.334007",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Authority Fingerprinting: AssociationsV0.sig patterns reveal Swafe-io key-generation behavior.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_df390699-ba39-4543-ac01-38fffd23f131",
+    "timestamp": "2025-11-21 15:04:15.711501",
+    "report_generated": false
+  },
+  {
+    "question": "State Transition Graph Reconstruction: Poll states to detect suspicious patterns.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_74aad1db-c3c8-463c-9d0b-6cc3eef2f46a",
+    "timestamp": "2025-11-21 15:04:46.122156",
+    "report_generated": false
+  },
+  {
+    "question": "Multi-Account Ownership Detection: Timing correlation across accounts reveals shared owner.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3d859646-5e31-4910-925b-bbe8cccbfe26",
+    "timestamp": "2025-11-21 15:05:19.890616",
+    "report_generated": false
+  },
+  {
+    "question": "Zero-Knowledge Proof Absence: No ZK proofs → attacker builds full account graph silently.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1bb09410-e2fa-4ab3-852c-ad31f54a679e",
+    "timestamp": "2025-11-21 15:05:48.525567",
+    "report_generated": false
+  },
+  {
+    "question": "Untrusted Deserialization of AccountId: request.account_id get.rs:26 deserializes user input. Can malformed StrEncoded<AccountId> trigger unexpected behavior?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b0b70f78-d9be-4ebe-9594-008976107981",
+    "timestamp": "2025-11-21 15:06:18.703770",
+    "report_generated": false
+  },
+  {
+    "question": "Base64 Decoding Vulnerabilities: StrEncoded::try_from encode.rs:116-134 uses BASE64_URL_SAFE_NO_PAD. Ambiguous encodings = padding oracle?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f390a8a9-3d90-4850-9ee1-cd856c5faeee",
+    "timestamp": "2025-11-21 15:06:48.128593",
+    "report_generated": false
   }
 ]
