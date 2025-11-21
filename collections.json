@@ -2248,5 +2248,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4de54acf-8caf-470a-801b-924978a9e397",
     "timestamp": "2025-11-21 16:04:26.981590",
     "report_generated": false
+  },
+  {
+    "question": "Timestamp Overflow: Could timestamps near u64::MAX cause overflow during expiration checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_14155076-812f-4243-a2b8-b19ce87d612c",
+    "timestamp": "2025-11-21 16:05:42.622701",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Freshness: Could network delay cause certificates to expire before token creation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a415ee74-8757-462f-95ce-b0aedca72cc3",
+    "timestamp": "2025-11-21 16:05:55.923809",
+    "report_generated": false
+  },
+  {
+    "question": "Validity Period Constant: Could a 5-minute window be insufficient for high-latency environments?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_16ad3448-70b8-45ee-841f-7929d856403e",
+    "timestamp": "2025-11-21 16:06:09.195355",
+    "report_generated": false
+  },
+  {
+    "question": "RNG Quality in Signing: Could weak RNG make signatures predictable?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8b79db89-a6de-4428-81d2-05d9b5aa9814",
+    "timestamp": "2025-11-21 16:06:24.139794",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Versioning: Could lack of versioning break compatibility in future upgrades?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d357f388-ff6c-4ace-9346-ade4d498d91f",
+    "timestamp": "2025-11-21 16:06:38.972568",
+    "report_generated": false
+  },
+  {
+    "question": "Email Case Sensitivity: Could case differences cause multiple associations for one logical email?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4bdb7004-b93e-4f76-983d-e15d75281004",
+    "timestamp": "2025-11-21 16:06:54.875329",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Serialization Format: Could incompatible serializers break verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_93eb221b-5be1-4166-9c90-539117c47e3a",
+    "timestamp": "2025-11-21 16:07:12.981408",
+    "report_generated": false
+  },
+  {
+    "question": "Message Field Ordering: Could field order changes break verification of older certificates?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0352a091-0717-4a6b-9d83-c9da32f98533",
+    "timestamp": "2025-11-21 16:07:31.896222",
+    "report_generated": false
+  },
+  {
+    "question": "Token Node ID Binding: Can intercepted tokens be reused on different nodes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e05b694b-84aa-4b4f-9a66-6b15d2c04eb6",
+    "timestamp": "2025-11-21 16:07:52.235785",
+    "report_generated": false
+  },
+  {
+    "question": "User Secret Key Exposure: Could compromised user devices create malicious tokens?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5e278645-a9aa-40c8-8656-c70ee0e258c6",
+    "timestamp": "2025-11-21 16:08:14.293456",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Cloning in Token: Could excessive cloning lead to memory exhaustion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7dedc4b0-525c-44b8-a6e0-4f7c92faa449",
+    "timestamp": "2025-11-21 16:08:38.497792",
+    "report_generated": false
+  },
+  {
+    "question": "RNG Quality in Token Signing: Could weak randomness make token signatures predictable?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ed7a62b4-0adf-4989-97e3-1f1de897b57b",
+    "timestamp": "2025-11-21 16:09:02.884662",
+    "report_generated": false
+  },
+  {
+    "question": "Node ID Serialization: Could non-canonical NodeId serialization enable cross-node token reuse?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_be8b8f34-2e21-4441-bf68-7fa0d4072c3d",
+    "timestamp": "2025-11-21 16:09:27.768871",
+    "report_generated": false
+  },
+  {
+    "question": "Token Timestamp Inheritance: Could near-expiration certificates produce immediately-expiring tokens?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1b007265-9cb2-43ed-a9a1-f1ce898331b7",
+    "timestamp": "2025-11-21 16:09:54.502401",
+    "report_generated": false
+  },
+  {
+    "question": "User Signature Verification: Could signature malleability allow token modification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_37c32fdd-7e20-4b72-a7f3-cde5705e90a0",
+    "timestamp": "2025-11-21 16:10:21.620778",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Ownership Mismatch: Could token creation use a secret key that doesn't match the certificate PK?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_356062f1-7d66-4ad8-9548-11c0bb57ce81",
+    "timestamp": "2025-11-21 16:10:49.371738",
+    "report_generated": false
+  },
+  {
+    "question": "Token Reuse Prevention: Can users create multiple identical tokens within the 5-minute window?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2e722c5e-cb8d-4a2d-b685-88a160907d29",
+    "timestamp": "2025-11-21 16:11:18.865905",
+    "report_generated": false
+  },
+  {
+    "question": "Private Token Fields: Can serialization bypass private field restrictions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1580ed16-15d6-4ec3-b307-4d8d460afe5a",
+    "timestamp": "2025-11-21 16:11:48.395135",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Validity at Token Creation: Can tokens be created from expired certificates?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_22ca2365-9161-4db5-911d-f459b4dbd6c2",
+    "timestamp": "2025-11-21 16:12:19.490857",
+    "report_generated": false
+  },
+  {
+    "question": "Node ID Type Safety: Could malformed NodeId values exploit parsing vulnerabilities?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ff974728-d6f8-43e8-81cb-c9290b578b25",
+    "timestamp": "2025-11-21 16:12:50.975697",
+    "report_generated": false
+  },
+  {
+    "question": "Token Cloning Security: Could cloned tokens cause unauthorized reuse?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cba02b77-5adc-4d11-9e82-93012e0af477",
+    "timestamp": "2025-11-21 16:13:22.225853",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Algorithm Consistency: Could signature version mismatches break verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_10059dd6-882f-4033-9a51-ef5d04872734",
+    "timestamp": "2025-11-21 16:13:53.139780",
+    "report_generated": false
+  },
+  {
+    "question": "Token Serialization Format: Can malformed token data cause DoS or code execution?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6719d82a-e022-433f-abe4-b712f8fd8fab",
+    "timestamp": "2025-11-21 16:14:23.983208",
+    "report_generated": false
+  },
+  {
+    "question": "Multiple Tokens Per Certificate: Can users bypass rate limiting via multiple tokens?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4c724685-733e-41cc-98fa-7c3d5650df08",
+    "timestamp": "2025-11-21 16:14:55.445685",
+    "report_generated": false
+  },
+  {
+    "question": "Token Transfer Security: Can tokens be transferred across users?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9d756b3e-7c1a-4e1b-9b0a-ffa8742d483b",
+    "timestamp": "2025-11-21 16:15:26.151210",
+    "report_generated": false
   }
 ]
