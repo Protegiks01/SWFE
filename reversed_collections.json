@@ -2098,5 +2098,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bac3270b-cf99-47c6-b82e-c5535df8148e",
     "timestamp": "2025-11-21 15:32:05.985734",
     "report_generated": false
+  },
+  {
+    "question": "Fr Deserialization All-Ones: What happens when deserializing 32 bytes of 0xFF? Is this handled correctly or could it cause field overflow?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_61669805-8100-481f-9b84-e8bd41a7f987",
+    "timestamp": "2025-11-21 15:33:13.905350",
+    "report_generated": false
+  },
+  {
+    "question": "Fr Zero Element Handling: How is Fr::ZERO serialized? Could an attacker substitute zero for valid VDRF secret shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4f1243c4-b4e8-4988-aa25-4bbb9e9631bd",
+    "timestamp": "2025-11-21 15:33:26.775442",
+    "report_generated": false
+  },
+  {
+    "question": "Fr Modular Reduction: In hash_to_fr, the function uses from_le_bytes_mod_order. Does this properly reduce inputs larger than the field modulus?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f0b337fb-b13f-4f9f-ae63-ca0a2948cfdc",
+    "timestamp": "2025-11-21 15:33:42.064538",
+    "report_generated": false
+  },
+  {
+    "question": "Fr Size Validation Bypass: The serialize::fr::serialize checks bytes.len() != 32. Could edge cases in field element representation produce different sizes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f567726a-21a7-4647-8e6e-ff8839269ebf",
+    "timestamp": "2025-11-21 15:33:55.756357",
+    "report_generated": false
+  },
+  {
+    "question": "G1 Version Compatibility: If the arkworks library updates its compressed point format, could old serialized G1 points fail to deserialize, causing account lockout?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_af006063-1eb8-423d-a411-382bebc8e829",
+    "timestamp": "2025-11-21 15:34:10.256604",
+    "report_generated": false
+  },
+  {
+    "question": "G1 Negation Serialization: If a G1 point is negated, does its serialization change appropriately? Could this affect VDRF verification where negated points are used?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_31d0ad50-fe12-4cbb-9748-589b495b5576",
+    "timestamp": "2025-11-21 15:34:25.784916",
+    "report_generated": false
+  },
+  {
+    "question": "G1 Serde Compatibility: Is the serialize_tuple approach compatible with all serde formats, or could some formats misinterpret the structure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_006ed1e1-513e-4e57-88d4-1be252fc05a1",
+    "timestamp": "2025-11-21 15:34:42.933981",
+    "report_generated": false
+  },
+  {
+    "question": "G1 Error Message Timing: Does formatting the error message in deserialization take variable time based on the invalid input, potentially leaking information?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5cbb1030-6ee8-4e31-a278-60a07a031ded",
+    "timestamp": "2025-11-21 15:35:02.347146",
+    "report_generated": false
+  },
+  {
+    "question": "G1 Compression Validation: Does the deserialization verify that the compressed form is valid according to BLS12-381 standards before decompression?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f327e62a-d295-4f52-90e4-faf57dc1f908",
+    "timestamp": "2025-11-21 15:35:23.541707",
+    "report_generated": false
+  },
+  {
+    "question": "G1 Serialization Buffer Overflow: Could data.serialize_compressed(&mut bytes) write more than 48 bytes if the implementation is buggy, causing buffer issues?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5612942d-afe2-4c0c-b07c-d4b77943b89d",
+    "timestamp": "2025-11-21 15:35:44.664536",
+    "report_generated": false
+  },
+  {
+    "question": "G1 Tuple vs Bytes Serialization: The code uses serialize_tuple(48) instead of serialize_bytes. Could this difference affect compatibility with other serialization formats?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_663d83cb-1bb3-4f9f-b8de-6fb6f54238cd",
+    "timestamp": "2025-11-21 15:36:06.121981",
+    "report_generated": false
+  },
+  {
+    "question": "G1 Memory Layout Assumptions: Does the 48-byte fixed array [0u8; 48] match the expected memory layout across all platforms?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_58e03cec-3e52-4f49-a486-0b08464435a7",
+    "timestamp": "2025-11-21 15:36:29.592232",
+    "report_generated": false
+  },
+  {
+    "question": "G1 Batch Deserialization: If multiple G1 points are deserialized in a vector, does one invalid point corrupt the entire batch or allow partial deserialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a0509e6a-8145-4125-9a8f-9014c96f69c3",
+    "timestamp": "2025-11-21 15:36:55.115169",
+    "report_generated": false
+  },
+  {
+    "question": "G1 Canonical Form Enforcement: Does deserialization enforce canonical form (e.g., choosing the smaller y-coordinate)? Could non-canonical forms break equality checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a6bf2b53-302c-4a4f-b10f-f84308a4de04",
+    "timestamp": "2025-11-21 15:37:21.432657",
+    "report_generated": false
+  },
+  {
+    "question": "G1 Point-at-Infinity Handling: Does the serialization correctly handle points at infinity used in VDRF evaluations? Could infinity points cause verification bypasses?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_da84a86d-2f05-4fb4-838c-230500c2ff9f",
+    "timestamp": "2025-11-21 15:37:48.308630",
+    "report_generated": false
+  },
+  {
+    "question": "G1 Serialization Consistency: If the same G1Affine point is serialized multiple times, are the outputs identical? Could non-determinism affect VDRF public key verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3f54dabb-3301-4753-a949-f1132b81f75b",
+    "timestamp": "2025-11-21 15:38:16.378837",
+    "report_generated": false
+  },
+  {
+    "question": "G1 Deserialization Error Leakage: Does the error message from G1Affine::deserialize_compressed leak information about why deserialization failed, potentially revealing secret point data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9ee158ce-e1a3-4d76-863d-b7c4c2aab419",
+    "timestamp": "2025-11-21 15:38:45.483154",
+    "report_generated": false
+  },
+  {
+    "question": "G1 Visitor Incomplete Bytes: In G1Visitor::visit_seq, if seq.next_element() returns None before 48 bytes, the error message is generic. Could this leak information about serialization state?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f6fc85c6-f60e-4012-b5ce-35f60d0a2bca",
+    "timestamp": "2025-11-21 15:39:15.672921",
+    "report_generated": false
+  },
+  {
+    "question": "G1 Tuple Serialization Order: serialize_tuple(48) serializes bytes sequentially. Is there any way to manipulate byte order during deserialization to change the point?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a21c0feb-cba3-4d8a-ab2d-82828caf5290",
+    "timestamp": "2025-11-21 15:39:47.329453",
+    "report_generated": false
+  },
+  {
+    "question": "G1 Compression Flag Manipulation: BLS12-381 compressed points use flag bits. Could an attacker flip these bits to change point properties while maintaining valid serialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5b11d9a7-bbe5-489b-a1b6-5c29d3361790",
+    "timestamp": "2025-11-21 15:40:20.172729",
+    "report_generated": false
+  },
+  {
+    "question": "G1 Deserialization from All-Zeros: What happens when deserializing 48 zero bytes? Is this the identity point, and could this be exploited in backup commitment verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9434d0c0-111c-4ef2-8a64-b92b90653d18",
+    "timestamp": "2025-11-21 15:40:52.995971",
+    "report_generated": false
+  },
+  {
+    "question": "G1 Identity Point Serialization: How does the identity point serialize? Could an attacker substitute identity points for valid commitments in Pedersen schemes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_08bd2693-500a-43bd-ad73-6776ca0c746d",
+    "timestamp": "2025-11-21 15:41:27.587329",
+    "report_generated": false
+  },
+  {
+    "question": "G1 Point Validation Missing: Does G1Affine::deserialize_compressed verify that the deserialized point is on the curve and in the correct subgroup before returning?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_66479aea-b8b3-48ae-85c6-010e6d3a5b94",
+    "timestamp": "2025-11-21 15:42:02.368285",
+    "report_generated": false
+  },
+  {
+    "question": "G1 Compressed Size Bypass: In serialize::g1::serialize, the code checks bytes.len() != 48. Could a malicious arkworks library or corrupted state produce different-sized outputs that bypass this check?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b3fb8364-b376-41f3-8dcd-dc7e1a36cab8",
+    "timestamp": "2025-11-21 15:42:35.485739",
+    "report_generated": false
+  },
+  {
+    "question": "Tag Encoding Ambiguity: The Tagged::encode() method prepends the separator. Could two different (separator, value) pairs produce the same encoding, breaking domain separation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8bed23d9-29e4-45f0-91f5-29492aa323de",
+    "timestamp": "2025-11-21 15:43:09.003776",
+    "report_generated": false
   }
 ]
