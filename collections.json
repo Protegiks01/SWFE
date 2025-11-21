@@ -1198,5 +1198,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_561f31ea-337f-4dea-b768-7abddfbbe187",
     "timestamp": "2025-11-21 14:34:08.963846",
     "report_generated": false
+  },
+  {
+    "question": "Can shares be uploaded for backups that are still in a 'dirty' or pending state, before finalization on-chain?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4ef80831-513b-4447-84cf-5103ec1709b4",
+    "timestamp": "2025-11-21 14:35:19.721535",
+    "report_generated": false
+  },
+  {
+    "question": "Does the API allow uploading shares when the backup threshold has already been met, potentially allowing late-arriving malicious shares to replace valid ones?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_87528e05-13fc-4b25-bc75-0860ec997594",
+    "timestamp": "2025-11-21 14:35:32.631428",
+    "report_generated": false
+  },
+  {
+    "question": "Is there validation that the share field actually corresponds to the provided backup_id, preventing mix-up attacks across different backups?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0c39acdd-fd92-46c5-ba27-ffb6c2b849f8",
+    "timestamp": "2025-11-21 14:35:46.328608",
+    "report_generated": false
+  },
+  {
+    "question": "Does the Response struct's message field leak information about the internal state (e.g., 'Share already exists for guardian ID X'), enabling privacy violations or guardian enumeration?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a6f98662-2a8b-4c5c-9c8d-98592489f561",
+    "timestamp": "2025-11-21 14:36:00.015468",
+    "report_generated": false
+  },
+  {
+    "question": "Can timing differences in processing valid vs. invalid shares leak information about whether a backup exists or how many shares have already been uploaded?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_74319c6b-4b1a-4908-8360-6ec831a84cd0",
+    "timestamp": "2025-11-21 14:36:14.477148",
+    "report_generated": false
+  },
+  {
+    "question": "Does the API layer log or expose the account_id and backup_id associations in plaintext, violating privacy guarantees about account linkability?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_632ee7c3-2d12-48ab-b6ad-5de7a59219a3",
+    "timestamp": "2025-11-21 14:36:30.436894",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker correlate upload patterns across multiple /reconstruction/upload-share requests to infer which guardians belong to the same backup group?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bbb6b312-c1cf-4081-a38e-83a3ec10ac0a",
+    "timestamp": "2025-11-21 14:36:47.547815",
+    "report_generated": false
+  },
+  {
+    "question": "Does the success: bool response combined with distinct error messages allow attackers to probe for valid account/backup combinations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_853f1bf1-f6a9-4468-bb02-a1877ebadde8",
+    "timestamp": "2025-11-21 14:37:06.812118",
+    "report_generated": false
+  },
+  {
+    "question": "If multiple guardians upload shares concurrently for the same backup, does the lack of ordering or sequencing in the Request struct lead to race conditions in the contract handler?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_28ee97fa-8b55-4c5f-b060-b70c1914c0b4",
+    "timestamp": "2025-11-21 14:37:27.274150",
+    "report_generated": false
+  },
+  {
+    "question": "Can the absence of a request ID or idempotency token cause duplicate share submissions if a guardian retries after a network timeout?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6697b24e-5c9f-41c5-b826-9327c0dbf7ab",
+    "timestamp": "2025-11-21 14:37:49.615895",
+    "report_generated": false
+  },
+  {
+    "question": "Does the API definition lack versioning metadata that would ensure consistent interpretation of Request fields across contract upgrades?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_79c367df-fa2a-478d-9bec-fedacc9441a7",
+    "timestamp": "2025-11-21 14:38:12.436377",
+    "report_generated": false
+  },
+  {
+    "question": "Since the API layer performs no validation, can a malicious HTTP proxy or compromised off-chain node modify the Request before it reaches the contract, undetected?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c91338a0-5899-414e-96eb-7eab6a0139ee",
+    "timestamp": "2025-11-21 14:38:36.544849",
+    "report_generated": false
+  },
+  {
+    "question": "Does the Response structure provide sufficient information for the client to verify that the share was actually stored, or do clients blindly trust the success flag?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2898791c-82f8-459e-9a84-a19ab889302d",
+    "timestamp": "2025-11-21 14:39:00.962589",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Authentication Check: The handler function get.rs:18-36 lacks any authentication mechanism. Can an unprivileged attacker enumerate all account IDs and retrieve complete account states, violating the invariant that 'only the owner of an account should be able to request the reconstruction of a backup'? README.md:136-145",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ddacb451-b99d-4447-80b0-346e6e7ba159",
+    "timestamp": "2025-11-21 14:39:26.625185",
+    "report_generated": false
+  },
+  {
+    "question": "Unrestricted Account State Access: The get_account call get.rs:25-27 retrieves full AccountState without verifying the requester owns the account. How can a malicious actor use this to extract recovery backup ciphertexts from accounts they don't own?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2ac0c376-f0e7-4902-b76f-d832d04b2d7d",
+    "timestamp": "2025-11-21 14:39:53.169789",
+    "report_generated": false
+  },
+  {
+    "question": "No Signature Verification: Unlike the update_account action lib.rs:107-134 , this endpoint doesn't verify any cryptographic signature. Can an attacker leverage this to perform reconnaissance before launching unauthorized recovery attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c81a464f-0c09-4bf1-87b4-b718451355d8",
+    "timestamp": "2025-11-21 14:40:20.142135",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Email Certificate Validation: The endpoint doesn't check for valid email certificates from Swafe-io README.md:148-158. How can this be exploited to access account states without proving email ownership, violating the recovery invariant?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_47d616ed-45c2-4d58-980a-271ca3f27d00",
+    "timestamp": "2025-11-21 14:40:46.931367",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Authorization Bypass: The handler doesn't verify if the requester is an authorized guardian for the account. Can a malicious guardian access states for accounts they're not supposed to guard, enabling collusion below the threshold t?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_41904aa5-f2ac-4efa-bc06-06aeb0736610",
+    "timestamp": "2025-11-21 14:41:14.961056",
+    "report_generated": false
+  },
+  {
+    "question": "Off-Chain Node Authentication: The OffChainContext parameter get.rs:19 is unused. Should the endpoint verify requests come from trusted off-chain nodes? README.md:182-201",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0357e79c-3250-45e5-94c3-87eda612be85",
+    "timestamp": "2025-11-21 14:41:44.065617",
+    "report_generated": false
+  },
+  {
+    "question": "Account Enumeration Attack: Can an attacker systematically probe the endpoint with incremental AccountId values to discover which accounts exist, violating privacy guarantees even with honest off-chain nodes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_51ed9551-1b79-4205-abd6-884d86662b34",
+    "timestamp": "2025-11-21 14:42:12.291952",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Account Information Leakage: If an attacker discovers one account's ID, can they use timing differences in the get_account operation get.rs:25-27 to infer relationships between accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c97482ed-623f-4379-848a-20681ec4ac5b",
+    "timestamp": "2025-11-21 14:42:39.542862",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery Key Exposure: The returned AccountState contains RecoveryStateV0 v0.rs:100-106 including encrypted RIK associations. Can an attacker use this information to prepare brute-force attacks on recovery keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_62cae7b9-88d6-4997-b0d9-78723b6fceb6",
+    "timestamp": "2025-11-21 14:43:07.580518",
+    "report_generated": false
+  },
+  {
+    "question": "PKE Key Extraction: The AccountState exposes the account's public encryption key v0.rs:230-238. Can a malicious guardian use this to prepare unauthorized backup encryptions before gaining threshold approval?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1411ecb5-4dcb-4c4f-b49c-2d4a172a6477",
+    "timestamp": "2025-11-21 14:43:36.174094",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Key Leakage: The verification key is publicly exposed v0.rs:234. Can an attacker use this with the VDRF system to link accounts to email addresses, breaking anonymity guarantees?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ef04942a-05c9-43dd-9d27-cbaffed2f7d8",
+    "timestamp": "2025-11-21 14:44:05.042427",
+    "report_generated": false
+  },
+  {
+    "question": "Session Management Absence: There's no session token or nonce verification. Can an attacker replay requests to detect state changes, inferring when recovery operations are initiated?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b05f44a1-d99b-41e1-8e6a-7b6fc6ec048b",
+    "timestamp": "2025-11-21 14:44:35.727205",
+    "report_generated": false
   }
 ]
