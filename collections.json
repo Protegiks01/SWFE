@@ -3448,5 +3448,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ae8d43a5-550f-4e19-aaa0-dc849f231479",
     "timestamp": "2025-11-21 17:34:25.181627",
     "report_generated": false
+  },
+  {
+    "question": "Message Binding Weakness: The message is hashed before inclusion in the SoK hash commitments.rs:182 . Could a pre-image attack on the inner hash allow an attacker to forge proofs for arbitrary messages while reusing the same Delta?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c6517055-10d3-49e2-9b3e-9b34daaa1e53",
+    "timestamp": "2025-11-21 17:35:36.533402",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Ordering: Commitments are included as a slice &[PedersenCommitment]. Does the order matter? Could an attacker permute commitments to create a valid proof for a different semantic meaning, like swapping which email is associated with which account?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9705671e-00a4-48b3-9df2-9a1593f5ace3",
+    "timestamp": "2025-11-21 17:35:49.898360",
+    "report_generated": false
+  },
+  {
+    "question": "Verify Delta Clone: Delta is cloned multiple times during verification commitments.rs:217-230 . Are these clones optimized away, or could excessive cloning create timing side channels that leak information about commitment values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f9b3040f-a718-41fd-afee-3de422782415",
+    "timestamp": "2025-11-21 17:36:03.353342",
+    "report_generated": false
+  },
+  {
+    "question": "Verification Equation Check: The verification checks self.delta.clone() + combine * alpha == gens.commit(&self.alpha) commitments.rs:230-236 . If the equality operator has implementation flaws (e.g., timing dependent), could an attacker use timing analysis to extract information about opening values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d20008f8-7b85-43b2-833a-a16faa9febf1",
+    "timestamp": "2025-11-21 17:36:17.385057",
+    "report_generated": false
+  },
+  {
+    "question": "Proof Replay: SoK proofs are not explicitly bound to a session, timestamp, or nonce. Could an attacker replay a valid proof in a different context (e.g., for a different account recovery attempt), bypassing email certificate freshness requirements?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_034e38bb-f059-4980-91e2-03c8775627dd",
+    "timestamp": "2025-11-21 17:36:32.285999",
+    "report_generated": false
+  },
+  {
+    "question": "Multi-Commitment Proof Soundness: Does proving knowledge of N commitments in a batch provide the same security as N individual proofs? Could the batched structure have weaknesses that allow proving knowledge of N-1 commitments while guessing the Nth?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4082ac81-93a5-4fa8-a1fd-195b25fe9a6c",
+    "timestamp": "2025-11-21 17:36:48.324932",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Subset Attack: If a proof verifies for commitments [C₀, C₁, C₂], could it also verify for a subset [C₀, C₂], allowing an attacker to selectively omit commitments and bypass checks that all required associations are present?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_08483c05-1bc4-4ba2-8908-cb8d269907a6",
+    "timestamp": "2025-11-21 17:37:06.407704",
+    "report_generated": false
+  },
+  {
+    "question": "Generator Mismatch: If prove and verify use different PedersenGenerators instances (which should be identical but may not be if separately initialized), could proofs fail to verify for legitimate users, causing permanent account lockout?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7e2461da-0731-48e3-8f17-d31413c9c7c0",
+    "timestamp": "2025-11-21 17:37:26.317906",
+    "report_generated": false
+  },
+  {
+    "question": "Proof Serialization Format: The proof serializes delta and alpha commitments.rs:133-137 . Are these serializations canonical? Could multiple representations of the same proof bypass deduplication checks or enable proof malleability attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cfdf542e-e79f-4e9b-a372-daabda84b34a",
+    "timestamp": "2025-11-21 17:37:47.068096",
+    "report_generated": false
+  },
+  {
+    "question": "Alpha Field Element Validity: Is the alpha opening validated to contain field elements within range? Invalid field elements could cause panics during commitment verification, enabling denial-of-service against account recovery flows.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_567ed484-5ad4-451c-85e8-6a939010c603",
+    "timestamp": "2025-11-21 17:38:10.030530",
+    "report_generated": false
+  },
+  {
+    "question": "Verification Commitment Order: During verification, commitment combining uses the same order as proving commitments.rs:222-227 . If an attacker can influence the order between proof generation and verification, could this create inconsistencies that allow invalid proofs to pass?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e663e203-82f9-40da-a508-40cfc3bc7685",
+    "timestamp": "2025-11-21 17:38:33.015688",
+    "report_generated": false
+  },
+  {
+    "question": "SoK Proof Forgery: Without knowledge of openings, could an attacker generate a valid-looking (delta, alpha) pair through brute force or cryptanalytic attacks, especially for small commitment sets, enabling unauthorized recovery of high-value accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d0b3694a-4e5d-49ed-8989-bcbbf700ef89",
+    "timestamp": "2025-11-21 17:38:57.103274",
+    "report_generated": false
+  },
+  {
+    "question": "Challenge Predictability: If the hash function used for challenge generation has weaknesses, could an attacker predict future challenges and pre-compute proofs, enabling front-running attacks on account recovery transactions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_772322b3-bbfd-4f12-beb2-f08d96e9956e",
+    "timestamp": "2025-11-21 17:39:23.230651",
+    "report_generated": false
+  },
+  {
+    "question": "Proof Knowledge Soundness: Does the SoK proof provide computational soundness or statistical soundness? If only computational, what is the concrete bit-security level, and could specialized hardware reduce it below 128 bits?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8d2d8ce4-26bd-4be2-b745-8de30a2b2be4",
+    "timestamp": "2025-11-21 17:39:49.859003",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Verification Gap: The verify function recomputes the challenge but doesn't verify that the commitments themselves are valid G1 points. Could an attacker submit off-curve points that bypass verification checks, creating fake associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1065afcb-e41d-4969-b311-f7336b2ccea8",
+    "timestamp": "2025-11-21 17:40:17.372639",
+    "report_generated": false
+  },
+  {
+    "question": "Proof Aggregation: Could an attacker aggregate multiple SoK proofs to create a \"proof of knowledge\" for a combined set of commitments without knowing all individual openings, bypassing the threshold guardian requirement?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c5e12681-7953-4482-9a41-9b8b68798d3b",
+    "timestamp": "2025-11-21 17:40:46.418732",
+    "report_generated": false
+  },
+  {
+    "question": "Zero-Knowledge Property: Does the SoK proof leak any information about the opening values beyond proving their existence? Could repeated proofs with overlapping commitment sets allow statistical analysis to recover values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_db69d4bb-d554-464a-ae7e-65fb34b43eba",
+    "timestamp": "2025-11-21 17:41:16.864012",
+    "report_generated": false
+  },
+  {
+    "question": "Soundness Under Chosen Message Attack: If an attacker can request proofs for chosen messages, could they extract information about openings through differential analysis, particularly if messages are related to email hashes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cb1c4f4c-054a-4ead-8379-97252a986d73",
+    "timestamp": "2025-11-21 17:41:48.254672",
+    "report_generated": false
+  },
+  {
+    "question": "Proof Non-Malleability: Given a proof for message M, could an attacker derive a related proof for message M' without knowing the openings, enabling message substitution attacks during account recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a91ff6bb-c4b1-4d34-aa7d-e08db65181e0",
+    "timestamp": "2025-11-21 17:42:20.155261",
+    "report_generated": false
+  },
+  {
+    "question": "Verification Failure Handling: When verification fails, the error message is generic commitments.rs:233-235 . Could timing differences between different failure modes leak information about which specific check failed, aiding cryptanalytic attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7b193eb0-eba3-46c5-9a79-9f0811650d6b",
+    "timestamp": "2025-11-21 17:42:52.479728",
+    "report_generated": false
+  },
+  {
+    "question": "Scalar Multiplication Constant Time: The Mul implementation for commitments commitments.rs:22-28 uses arkworks' scalar multiplication. Is this constant-time? Could timing variations leak scalar values (which might be derived from sensitive email data)?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_262db783-44bf-4037-b11c-34acf59e2846",
+    "timestamp": "2025-11-21 17:43:24.520643",
+    "report_generated": false
+  },
+  {
+    "question": "Point Addition Safety: The Add implementation commitments.rs:30-36 adds projective points then converts to affine. Could the conversion fail for points at infinity, causing panics that enable denial-of-service during account recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_39a94eee-783f-4d6a-9eb9-624a6e3d2ade",
+    "timestamp": "2025-11-21 17:43:58.228673",
+    "report_generated": false
+  },
+  {
+    "question": "Opening Addition Associativity: Opening addition is implemented commitments.rs:110-119 . Is field arithmetic associative in arkworks? Could rounding errors in non-associative scenarios break homomorphism, making combined commitments invalid?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cf97e330-49c9-4e7e-bc67-e5a0bf4aca48",
+    "timestamp": "2025-11-21 17:44:31.516520",
+    "report_generated": false
+  },
+  {
+    "question": "Scalar Multiplication by Negative Values: Fr field elements include negative values. Could multiplying a commitment by a negative scalar produce unexpected results that break proof verification, particularly if the implementation doesn't handle sign correctly?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_68f34573-8e9a-41e2-91a5-ffbf8bbd5852",
+    "timestamp": "2025-11-21 17:45:05.488674",
+    "report_generated": false
+  },
+  {
+    "question": "Homomorphic Property Consistency: Does commit(open1 + open2) == commit(open1) + commit(open2) always hold? If not, could attackers exploit inconsistencies to create \"Frankenstein\" commitments that combine parts of different associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_886e0c09-5439-4bcb-a720-b64c3cbd9010",
+    "timestamp": "2025-11-21 17:45:41.128569",
+    "report_generated": false
   }
 ]
