@@ -7498,5 +7498,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_20976644-38dd-402e-b599-60e9287909ba",
     "timestamp": "2025-11-21 22:33:46.856776",
     "report_generated": false
+  },
+  {
+    "question": "AccountState Encryption Context: Does the AAD include all required info to prevent ciphertext replay across accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5637e9af-1cae-43f3-99c1-f95f79dcaece",
+    "timestamp": "2025-11-21 22:34:59.017006",
+    "report_generated": false
+  },
+  {
+    "question": "Version-Based AAD Binding: Can attackers replay ciphertext with version N to version N+1 via dirty flag manipulation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a8b0bbf1-be36-4b39-bd3a-caba3449708b",
+    "timestamp": "2025-11-21 22:35:12.101092",
+    "report_generated": false
+  },
+  {
+    "question": "MSK Encryption Key Derivation: Is the KDF domain-separated to prevent key reuse?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f37e3b12-7888-4e58-9527-6b91de91a84d",
+    "timestamp": "2025-11-21 22:35:26.265851",
+    "report_generated": false
+  },
+  {
+    "question": "Encrypted MSK Binding: Does encryption bind MSK to account ID to prevent substitution?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a5fb5c22-ec91-4939-a986-812b3da986a3",
+    "timestamp": "2025-11-21 22:35:40.271788",
+    "report_generated": false
+  },
+  {
+    "question": "Association Encapsulation Security: Is RIK-based encryption bound to prevent reuse across accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_77fd6e10-2bf6-4516-8f4d-9d7cfdc65de7",
+    "timestamp": "2025-11-21 22:35:54.989573",
+    "report_generated": false
+  },
+  {
+    "question": "Decryption Version Mismatch: Can attackers exploit version mismatch in AAD?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ab2d3d6b-d7f5-4cd6-b86b-dd0f52cf1d98",
+    "timestamp": "2025-11-21 22:36:10.975378",
+    "report_generated": false
+  },
+  {
+    "question": "CombinedSecret Version Downgrade: Can downgrade attacks return older versions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c784f295-b017-461c-8855-bf07ed183d8e",
+    "timestamp": "2025-11-21 22:36:28.791230",
+    "report_generated": false
+  },
+  {
+    "question": "Old Key Restoration: Could discrepancies between decrypted old_sig and current sig bypass verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6f0d0976-5700-4b37-b36a-84176782d52f",
+    "timestamp": "2025-11-21 22:36:48.386234",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery State Clone: Could cloning desynchronize state if social backup changes later?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0ca8f9f7-327d-4951-a41f-c1144ab8841a",
+    "timestamp": "2025-11-21 22:37:09.495635",
+    "report_generated": false
+  },
+  {
+    "question": "Dirty Flag Not Reset: Could dirty=false after decryption cause update issues?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2afbbd69-8b73-43c8-84c2-cc9ce27c2750",
+    "timestamp": "2025-11-21 22:37:31.125781",
+    "report_generated": false
+  },
+  {
+    "question": "Share Combination Method: Could serialization order changes break key security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6da3469d-c6b3-4a49-82e3-1ab89b7ef463",
+    "timestamp": "2025-11-21 22:37:54.077954",
+    "report_generated": false
+  },
+  {
+    "question": "KDF Info Structure: Should more context be included to prevent key reuse?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_54acaef3-c666-4747-9eab-88e016f11aee",
+    "timestamp": "2025-11-21 22:38:18.199818",
+    "report_generated": false
+  },
+  {
+    "question": "Share Type Confusion: Can attackers swap RIK and social shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_973f461a-b2f7-436c-a291-0400325a0fbe",
+    "timestamp": "2025-11-21 22:38:43.454284",
+    "report_generated": false
+  },
+  {
+    "question": "Key Output Binding: Does decrypted MSK prove it matches original ciphertext?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5de8c106-e3d5-4fb3-9429-07c7a2969216",
+    "timestamp": "2025-11-21 22:39:09.156166",
+    "report_generated": false
+  },
+  {
+    "question": "Symmetric Key Extraction: Could aliasing cause reused key material?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1eb2e3ac-c98f-40fe-89a4-2c1a07e464d1",
+    "timestamp": "2025-11-21 22:39:36.797606",
+    "report_generated": false
+  },
+  {
+    "question": "Dirty State Increment Logic: Can attackers set dirty=false to bypass version increment?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1e84d9e6-56dd-4ffa-828d-f951d24614ad",
+    "timestamp": "2025-11-21 22:40:05.438086",
+    "report_generated": false
+  },
+  {
+    "question": "Association Regeneration: Does regeneration leak timing or linkability?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fef69739-18af-4bc5-bee7-ebc709ce6923",
+    "timestamp": "2025-11-21 22:40:35.893857",
+    "report_generated": false
+  },
+  {
+    "question": "Old Signature Key Usage: Using old_sig for updates—can compromised old key forge updates?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b4dd9d08-c447-4f0f-90b5-8c2707e1578b",
+    "timestamp": "2025-11-21 22:41:07.125580",
+    "report_generated": false
+  },
+  {
+    "question": "Backup List Cloning: Can attackers manipulate backup list client-side?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d4d7a1e8-4b61-4b18-be70-95c18a646073",
+    "timestamp": "2025-11-21 22:41:39.231406",
+    "report_generated": false
+  },
+  {
+    "question": "Social Backup Immutability: Reusing social backup—can stale data be exploited?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b2c9c01c-fb32-4af0-8a7f-80d5a6431605",
+    "timestamp": "2025-11-21 22:42:10.740484",
+    "report_generated": false
+  },
+  {
+    "question": "Zero Version Requirement: Could attacker craft version=0 update to reset state?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d41c6551-d583-43d1-9875-93048e0bd069",
+    "timestamp": "2025-11-21 22:42:43.417313",
+    "report_generated": false
+  },
+  {
+    "question": "AccountId Verification: Is hash collision-resistant enough?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b1b25339-f016-44af-8639-ba2407a0349b",
+    "timestamp": "2025-11-21 22:43:16.532538",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Verification Timing: Could early rejection leak account existence?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2f3bce10-a9da-4c5a-a3fb-2ce9ffbc265a",
+    "timestamp": "2025-11-21 22:43:49.051354",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery Message Rejection: Can message type confusion bypass rejection?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d8123ba2-f0ff-4b78-8e7e-a1af5852b670",
+    "timestamp": "2025-11-21 22:44:20.332316",
+    "report_generated": false
+  },
+  {
+    "question": "Initial State Constraints: Could malicious initial recovery state be allocated?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c31c0edc-e1d6-4cf6-882b-03edd0012413",
+    "timestamp": "2025-11-21 22:44:51.788191",
+    "report_generated": false
   }
 ]
