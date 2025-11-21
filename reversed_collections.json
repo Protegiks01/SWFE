@@ -7948,5 +7948,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7aa9dd2f-9d18-41e1-ab14-ecc40fc57fee",
     "timestamp": "2025-11-21 22:48:21.710510",
     "report_generated": false
+  },
+  {
+    "question": "In VdrfSecretKey::gen() vdrf.rs:92-97 , the function generates t coefficients total (c0 plus t-1 others). Is the degree of this polynomial t-1 or t? Can confusion about polynomial degree lead to threshold mismatch between key generation and reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1f263280-dc06-47b7-8863-2d4a1d5fd693",
+    "timestamp": "2025-11-21 22:49:40.560577",
+    "report_generated": false
+  },
+  {
+    "question": "The public key generation vdrf.rs:119-128 commits each coefficient independently. Can a malicious key generator create commitments that don't correspond to a valid polynomial, breaking the binding property?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ccc41b2c-d6a1-4483-99c4-a5ad58774c5b",
+    "timestamp": "2025-11-21 22:49:53.558319",
+    "report_generated": false
+  },
+  {
+    "question": "In share() vdrf.rs:106-116 , the function evaluates f(xi) = c0 + xi * (c1 + xi * (c2 + ...)). Can numerical instability in field operations for very large or very small xi values lead to incorrect share values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_aaefdcfd-d14d-4b88-be14-6af4783889ad",
+    "timestamp": "2025-11-21 22:50:07.900363",
+    "report_generated": false
+  },
+  {
+    "question": "The VdrfSecretKeyShare vdrf.rs:42-43 is a simple wrapper around a field element. Can an attacker forge a valid-looking share by directly constructing this struct with an arbitrary field element, bypassing proper dealing?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_061dc354-bc11-4d24-8654-85ebe629bc94",
+    "timestamp": "2025-11-21 22:50:22.017288",
+    "report_generated": false
+  },
+  {
+    "question": "In deal() vdrf.rs:100-103 , shares are dealt to nodes identified by NodeId. Can an attacker register multiple NodeIds that evaluate to evaluation points forming a malicious subset, allowing easier threshold bypass?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_26b5853b-d290-4a7f-8c52-cf0071df0400",
+    "timestamp": "2025-11-21 22:50:36.535531",
+    "report_generated": false
+  },
+  {
+    "question": "The VdrfSecretKey structure vdrf.rs:56-63 stores polynomial coefficients in 'most significant first' order. Can coefficient order confusion between key generation and evaluation lead to different shares being computed than expected?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b898ecaa-fd8b-4f8c-98a8-8e5beeef0303",
+    "timestamp": "2025-11-21 22:50:51.990061",
+    "report_generated": false
+  },
+  {
+    "question": "In VdrfPublicKey::threshold() vdrf.rs:36-38 , the threshold is computed as self.ci.len() + 1. Can an attacker provide an empty ci vector to create a threshold-1 system where only c0 is required, bypassing threshold security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4b2e146b-0b85-4ea8-9552-a04cca6c2ecb",
+    "timestamp": "2025-11-21 22:51:09.257935",
+    "report_generated": false
+  },
+  {
+    "question": "The VdrfPublicKey struct vdrf.rs:26-33 stores c0 and ci separately. If an attacker can craft mismatched lengths between these fields during deserialization, can they cause a mismatch between the claimed threshold and actual commitment count?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0a6e5222-133b-4896-a3b7-bfab2e73ac62",
+    "timestamp": "2025-11-21 22:51:28.674679",
+    "report_generated": false
+  },
+  {
+    "question": "In VdrfSecretKey::public_key() vdrf.rs:119-128 , commitments are computed as generator * coefficient. Can the conversion from G1Projective to G1Affine fail or produce the point at infinity for certain coefficients, breaking verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_89a5ffbf-ef91-45cd-b445-22a22410aa39",
+    "timestamp": "2025-11-21 22:51:49.424665",
+    "report_generated": false
+  },
+  {
+    "question": "The share() function vdrf.rs:106-116 uses Horner's method for polynomial evaluation. Can rounding errors or field arithmetic overflow cause share values to differ from expected results, breaking threshold reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1442e36e-1a05-4964-8a58-c0cf890b38bb",
+    "timestamp": "2025-11-21 22:52:12.286751",
+    "report_generated": false
+  },
+  {
+    "question": "In VdrfSecretKey::deal() vdrf.rs:100-103 , the function calls node_id.eval_point() which hashes the NodeId vdrf.rs:16-22 . Can a malicious node controller craft a NodeId that produces a zero eval_point despite the assertion, potentially through integer overflow in subsequent operations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f2307b21-b176-4f16-a166-f5ddedff1f72",
+    "timestamp": "2025-11-21 22:52:35.158471",
+    "report_generated": false
+  },
+  {
+    "question": "The deal() function vdrf.rs:100-103 evaluates the polynomial at node_id.eval_point(). If two different NodeId values hash to the same evaluation point (collision), could this allow share replay attacks across different nodes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2048dc45-f786-4be7-957b-5dd86f5fa066",
+    "timestamp": "2025-11-21 22:52:59.038054",
+    "report_generated": false
+  },
+  {
+    "question": "In VdrfSecretKey::gen() vdrf.rs:92-97 , there is no upper bound check on threshold t. Can an attacker provide an extremely large t value to cause resource exhaustion during key generation or later operations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_31e50907-9792-4fcd-8158-d5ebcbc716a7",
+    "timestamp": "2025-11-21 22:53:24.026370",
+    "report_generated": false
+  },
+  {
+    "question": "The threshold parameter t in VdrfSecretKey::gen() vdrf.rs:92-97 determines the polynomial degree. Can a malicious caller pass t=0 or t=1 to create a trivially reconstructable secret key, violating the security invariant that requires threshold honest nodes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ad63906d-23b6-4421-821f-9f76c5af65b1",
+    "timestamp": "2025-11-21 22:53:50.096101",
+    "report_generated": false
+  },
+  {
+    "question": "In VdrfSecretKey::gen() vdrf.rs:92-97 , the function generates random coefficients using rng.gen(). Can an attacker exploit weak randomness from a compromised RNG to predict the secret polynomial and break the VDRF's privacy guarantees for email-to-account associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c277a344-b45f-43ac-bca6-6f9d91927119",
+    "timestamp": "2025-11-21 22:54:17.471670",
+    "report_generated": false
+  },
+  {
+    "question": "In the threshold security model, if exactly t shares are provided to interpolate_eval, could numerical precision issues cause the reconstruction to occasionally fail, violating the availability guarantee that 'at least t honest guardians' ensure recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e9b86a3c-c426-4afc-846e-ff2c05adc14d",
+    "timestamp": "2025-11-21 22:54:45.616609",
+    "report_generated": false
+  },
+  {
+    "question": "If the backup system stores encrypted shares, and the encryption key is derived from polynomial evaluation, could incorrect evaluation in poly.rs cause the wrong key to be derived, making backups permanently irrecoverable?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_af2c7150-82e0-45bd-ad5f-6ed57320e266",
+    "timestamp": "2025-11-21 22:55:13.669768",
+    "report_generated": false
+  },
+  {
+    "question": "When shares are transmitted between nodes and stored before reconstruction, could serialization/deserialization of field elements cause subtle changes that make interpolation fail or produce incorrect results?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1f582019-f5e8-4981-b13b-b17178e1d80f",
+    "timestamp": "2025-11-21 22:55:41.693219",
+    "report_generated": false
+  },
+  {
+    "question": "If polynomial evaluation is used in zero-knowledge proofs or commitments elsewhere in the system, could incorrect evaluation in poly.rs cause proof verification to pass for invalid statements?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a547c286-96b9-4b03-883a-41f24549b438",
+    "timestamp": "2025-11-21 22:56:10.812459",
+    "report_generated": false
+  },
+  {
+    "question": "When interpolate_eval is used in account recovery, if the email-to-account association uses VDRF with Lagrange interpolation, could a malicious minority of nodes manipulate the association to link incorrect emails to accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cb348daa-2942-425d-9186-74def2ec6c84",
+    "timestamp": "2025-11-21 22:56:39.862705",
+    "report_generated": false
+  },
+  {
+    "question": "The polynomial functions don't verify that share indices correspond to the expected guardian identities. Could an attacker use shares from different backups with the same indices to forge reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bbf98019-4194-41fa-8c32-0ce10728dc34",
+    "timestamp": "2025-11-21 22:57:07.680849",
+    "report_generated": false
+  },
+  {
+    "question": "In backup ciphertext recovery, shares are collected from guardians and fed to interpolate_eval. If a malicious guardian provides shares for a different backup, could the interpolation still succeed but decrypt the wrong data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_62c1d407-d8f9-4006-b01c-d850f328c56f",
+    "timestamp": "2025-11-21 22:57:36.551459",
+    "report_generated": false
+  },
+  {
+    "question": "If the threshold t is set to zero, sss::share returns a zero secret and empty shares. sss.rs:37-40 Could this degenerate case be exploited to create 'backups' that are trivially recoverable, bypassing guardian requirements?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bea4fb21-08d7-4bcb-a72c-4cae3e9b6926",
+    "timestamp": "2025-11-21 22:58:04.845962",
+    "report_generated": false
+  },
+  {
+    "question": "When multiple secrets are shared and recovered in parallel, could interference between polynomial evaluations (through shared state or caches) cause one reconstruction to affect another?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e54dfbad-604e-46b6-9206-2846c38c88d2",
+    "timestamp": "2025-11-21 22:58:33.432934",
+    "report_generated": false
+  },
+  {
+    "question": "The sss::share function generates shares using eval with reversed coefficients. sss.rs:45 Could confusion about coefficient ordering between share generation and recovery lead to reconstructing incorrect secrets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5ec05620-a91d-411e-bdf7-40db10b134e0",
+    "timestamp": "2025-11-21 22:59:00.503690",
+    "report_generated": false
   }
 ]
