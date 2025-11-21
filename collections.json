@@ -3298,5 +3298,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2839aa1d-f533-489e-9c5c-3fac7fb810b2",
     "timestamp": "2025-11-21 17:23:20.760412",
     "report_generated": false
+  },
+  {
+    "question": "Zeroization on Drop: PedersenOpen derives ZeroizeOnDrop commitments.rs:77-83 . Are the underlying pp::Fr fields also zeroized? If not, could opening secrets persist in memory after drop, enabling memory disclosure attacks that reveal master secret keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e4404640-1381-4508-bf57-b3b08fa0e953",
+    "timestamp": "2025-11-21 17:24:34.466147",
+    "report_generated": false
+  },
+  {
+    "question": "Opening Serialization: Openings are serializable commitments.rs:78-83 . Could serialized openings be logged, cached, or stored insecurely by callers, violating the confidentiality required to prevent unauthorized backup reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f4efcbf7-87c8-4c8f-b84f-ce60b7d3aa2f",
+    "timestamp": "2025-11-21 17:24:48.114102",
+    "report_generated": false
+  },
+  {
+    "question": "Opening Clone Safety: PedersenOpen derives Clone. Each clone must be independently zeroized. If clones are created during proof generation and some escape zeroization, could leaked copies enable attackers to reconstruct backups without guardian approval?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f2ca17ae-8d63-4be4-9766-da5ef0959308",
+    "timestamp": "2025-11-21 17:25:01.498743",
+    "report_generated": false
+  },
+  {
+    "question": "Opening Arithmetic Side Channels: Addition and multiplication on openings commitments.rs:110-130 could have timing side channels. Could an attacker observing SoK proof generation timing distinguish between different email values, correlating them with on-chain accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_55d8e18f-1497-486b-97ff-03aef3d89829",
+    "timestamp": "2025-11-21 17:25:15.849022",
+    "report_generated": false
+  },
+  {
+    "question": "Zero Opening Exposure: PedersenOpen::zero() is public commitments.rs:98-103 . If used incorrectly in association records, does it create a \"null\" email binding that an attacker could exploit to register accounts without valid email certificates?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_20aaf99d-1c51-4a52-96a4-f6d6c7cd3069",
+    "timestamp": "2025-11-21 17:25:30.397530",
+    "report_generated": false
+  },
+  {
+    "question": "Opening Partial Disclosure: If only the value field is exposed but not randomness, does this weaken privacy? Could multiple observations of values from the same opening allow correlation attacks on email-account associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c47fe995-355d-48cb-865f-c5a0056216e7",
+    "timestamp": "2025-11-21 17:25:46.186617",
+    "report_generated": false
+  },
+  {
+    "question": "Opening Equality: PedersenOpen derives PartialEq and Hash commitments.rs:77 . Could putting openings in hash maps or comparing them in timing-sensitive contexts create side channels that leak secret information to compromised off-chain nodes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2c06ffda-931f-47da-b3a6-2a9e291896bc",
+    "timestamp": "2025-11-21 17:26:04.299779",
+    "report_generated": false
+  },
+  {
+    "question": "Opening Field Element Validity: Are the value and randomness fields validated to be within the field order? Invalid field elements could cause panics or undefined behavior during commitment computation, leading to denial-of-service against account recovery.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6d7af39d-6ff4-4f92-8e57-16141b942a7d",
+    "timestamp": "2025-11-21 17:26:23.653379",
+    "report_generated": false
+  },
+  {
+    "question": "Opening Deterministic Generation: For testing, PedersenOpen::new creates openings from specific values commitments.rs:93-96 . If production code accidentally uses this with predictable inputs, could it generate weak openings that enable brute-force attacks on backup encryption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_00e23ca6-68d8-40ef-b8c6-563105e09894",
+    "timestamp": "2025-11-21 17:26:43.323684",
+    "report_generated": false
+  },
+  {
+    "question": "Multi-Opening Proof Gaps: SoK proofs prove knowledge of multiple openings commitments.rs:155-200 . If openings are reused across different proofs, could an attacker correlate proofs to de-anonymize email-account associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_af236e17-99ec-4fad-a79e-8e6719658dff",
+    "timestamp": "2025-11-21 17:27:04.878365",
+    "report_generated": false
+  },
+  {
+    "question": "Opening Storage Duration: How long do openings remain in memory during proof generation? If they persist beyond necessary, could transient memory disclosure attacks (e.g., Spectre) leak openings to other processes on the same off-chain node?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cb6b35b2-a69e-4d54-aa3f-66d667ee9ecd",
+    "timestamp": "2025-11-21 17:27:27.179451",
+    "report_generated": false
+  },
+  {
+    "question": "Opening Batch Handling: When proving knowledge of multiple openings, are intermediate results properly zeroized? Could partial computation states leak information if proof generation is interrupted?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e1b0be20-7edf-4ac6-9d93-fab99bb4aa0a",
+    "timestamp": "2025-11-21 17:27:50.996686",
+    "report_generated": false
+  },
+  {
+    "question": "Opening Derivation: Are openings ever derived deterministically from user secrets (like email hashes)? If so, could an attacker with a leaked opening work backwards to determine the user's email, violating privacy guarantees?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_331941b3-7751-42cf-a5bb-4fe733c7d8f3",
+    "timestamp": "2025-11-21 17:28:16.659920",
+    "report_generated": false
+  },
+  {
+    "question": "Opening Export Functions: The value() method exposes the value field. Are there code paths where this is called unnecessarily, creating additional attack surface for information leakage?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_88907c8a-17b6-4cd8-8d04-f86a176a9c28",
+    "timestamp": "2025-11-21 17:28:43.398800",
+    "report_generated": false
+  },
+  {
+    "question": "Opening Lifetime Management: In concurrent proof generation scenarios (if applicable), could race conditions cause openings to be used after free or double-freed, leading to undefined behavior or memory corruption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f674f98b-451a-427e-b6ba-a3157db62f0c",
+    "timestamp": "2025-11-21 17:29:10.486099",
+    "report_generated": false
+  },
+  {
+    "question": "Fiat-Shamir Challenge Computation: The challenge α is computed as hash_to_fr of message, delta, and commitments commitments.rs:181-185 . Is the hash function collision-resistant enough to prevent an attacker from finding two different messages that produce the same challenge, enabling proof replay attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_313bf213-59cb-453c-8634-88ea8f7e76c9",
+    "timestamp": "2025-11-21 17:29:38.926359",
+    "report_generated": false
+  },
+  {
+    "question": "Empty Commitment Set Handling: The prove function rejects empty commitment sets commitments.rs:168-172 . Could an attacker bypass this check by providing a commitment set that becomes empty after some processing, creating an invalid proof that verifies due to degenerate arithmetic?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_18672479-a979-4da1-9b6e-82be8ee23c18",
+    "timestamp": "2025-11-21 17:30:08.445327",
+    "report_generated": false
+  },
+  {
+    "question": "Length Mismatch Validation: The function checks open.len() != coms.len() commitments.rs:162-166 . Is this check sufficient? Could an attacker provide equal-length but semantically mismatched arrays (e.g., openings for different commitments) that produce valid-looking but meaningless proofs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_18082d12-84a0-4339-9ba5-fc7ef7088b0c",
+    "timestamp": "2025-11-21 17:30:37.579872",
+    "report_generated": false
+  },
+  {
+    "question": "Random Mask Generation: The mask is generated as PedersenOpen::gen(rng) commitments.rs:175 . If the RNG is weak or unseeded, could an attacker predict mask values and extract opening secrets from observed proofs, enabling unauthorized backup reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5ea7830a-a0e3-40b7-a163-0e5f8e46435e",
+    "timestamp": "2025-11-21 17:31:07.616599",
+    "report_generated": false
+  },
+  {
+    "question": "Challenge Collision Attack: If two different (message, commitments) pairs hash to the same challenge α, could an attacker substitute one for the other during verification, bypassing the intended message binding and allowing account recovery without proper email verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0b97050a-8e03-49c6-9325-7e2f29276669",
+    "timestamp": "2025-11-21 17:31:39.119228",
+    "report_generated": false
+  },
+  {
+    "question": "Delta Commitment Binding: Delta is committed before challenge computation commitments.rs:178 . If Delta is not included in the hash, could a malicious verifier substitute a different Delta, making the proof verify for wrong commitments?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_213e6bd0-8f67-4c8a-aae4-4ad0e1860d00",
+    "timestamp": "2025-11-21 17:32:09.082953",
+    "report_generated": false
+  },
+  {
+    "question": "Power Sequence Accumulation: The proof combines openings using powers of α commitments.rs:188-193 . If α is small or zero (due to hash collision), could the power sequence degenerate, making all openings equivalent and breaking the proof's soundness?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2afc2305-3d84-4f1f-9a88-91e5fa72307b",
+    "timestamp": "2025-11-21 17:32:41.567241",
+    "report_generated": false
+  },
+  {
+    "question": "Alpha Power Overflow: Computing alpha_power *= alpha repeatedly commitments.rs:192 could theoretically overflow (though unlikely in a field). If overflow occurs, could it wrap to small values, reducing the proof's security to below the expected 128-bit level?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_378b6c93-d661-4a42-9f0e-5f265c5d3c1a",
+    "timestamp": "2025-11-21 17:33:14.915652",
+    "report_generated": false
+  },
+  {
+    "question": "Combine Zero Check: After combining openings, what if the result is zero? Could a zero combined opening with non-zero Delta create a proof that verifies but doesn't actually prove knowledge, allowing unauthorized account recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bb1bd4e3-875d-44cb-921a-22abf63bb689",
+    "timestamp": "2025-11-21 17:33:49.332375",
+    "report_generated": false
+  },
+  {
+    "question": "Proof Malleability: Given a valid proof (delta, alpha), could an attacker create a different proof (delta', alpha') that verifies for the same commitments but was generated without knowing the openings, bypassing guardian approval requirements?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ae8d43a5-550f-4e19-aaa0-dc849f231479",
+    "timestamp": "2025-11-21 17:34:25.181627",
+    "report_generated": false
   }
 ]
