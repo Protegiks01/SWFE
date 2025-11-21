@@ -148,5 +148,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ebf2a77c-8423-4daa-ae0e-d39e6275bb31",
     "timestamp": "2025-11-21 12:50:11.130941",
     "report_generated": false
+  },
+  {
+    "question": "PKE/VDRF/Backup Composition: Are domain separators disjoint across all layers?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3ea45d2e-cdd3-4ac3-8c47-0395cdd6ef5d",
+    "timestamp": "2025-11-21 13:06:11.646946",
+    "report_generated": false
+  },
+  {
+    "question": "Symmetric Ciphertext Integrity: Are authentication keys distinct from encryption keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0d469a8e-9595-446d-bfdf-e4b171b402e9",
+    "timestamp": "2025-11-21 13:06:26.431244",
+    "report_generated": false
+  },
+  {
+    "question": "Account Recovery Replay: Can attackers replay old KDF inputs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_075e2ea0-a01d-4f1b-8398-1d007e490a2b",
+    "timestamp": "2025-11-21 13:06:40.834120",
+    "report_generated": false
+  },
+  {
+    "question": "Association Encapsulation: Does KDF bind secrets to recipients?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_690d6bb2-100d-43a3-95cb-ec0a87e8e699",
+    "timestamp": "2025-11-21 13:06:56.176864",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Threshold Enforcement: Is threshold cryptographically enforced in keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_16454772-e453-4cff-b144-7ed00425374a",
+    "timestamp": "2025-11-21 13:07:12.446555",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Input Validation: Are malicious inputs prevented in evaluation → KDF pipeline?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a904e51a-4cbb-43c5-9dd8-a1f79de690d2",
+    "timestamp": "2025-11-21 13:07:30.063873",
+    "report_generated": false
+  },
+  {
+    "question": "PKE Public Key Binding: Is recipient public key bound in shared secret derivation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_69c7e1dd-e206-4505-bf07-d60d9bf5d840",
+    "timestamp": "2025-11-21 13:07:49.919356",
+    "report_generated": false
+  },
+  {
+    "question": "Symmetric Cipher Agility: Will algorithm migration remain secure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_95d9ceef-319f-4ef9-a43e-a3d8a127ee10",
+    "timestamp": "2025-11-21 13:08:10.993389",
+    "report_generated": false
+  },
+  {
+    "question": "Account Secret Lifecycle: Are old KDF keys securely erased?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c367a9f0-47e5-4d9e-8580-b7b8ec61e246",
+    "timestamp": "2025-11-21 13:08:32.887737",
+    "report_generated": false
+  },
+  {
+    "question": "Association Secret Share Distribution: Could deterministic RNG leak distribution patterns?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1110744a-c19f-4711-979a-3782ee8dae68",
+    "timestamp": "2025-11-21 13:08:58.040404",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Versioning: Is version included in KDF inputs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b3f043e3-d553-4b88-afdc-453b321edef9",
+    "timestamp": "2025-11-21 13:09:23.505320",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Threshold Composition: Does each evaluation use distinct separators?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bff53817-ad55-414a-b27c-65d3c1dfe2d4",
+    "timestamp": "2025-11-21 13:09:48.674959",
+    "report_generated": false
+  },
+  {
+    "question": "PKE Hybrid Encryption: Are ephemeral keys separated from long-term keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bf7ceae1-96e7-48c6-bd99-704d421c470a",
+    "timestamp": "2025-11-21 13:10:15.117444",
+    "report_generated": false
+  },
+  {
+    "question": "Symmetric Pad Length: Does pad generation leak plaintext length?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f71b79a0-7c01-4606-b8c2-8e28137cbad6",
+    "timestamp": "2025-11-21 13:10:42.292653",
+    "report_generated": false
+  },
+  {
+    "question": "Association Anonymity: Can timing of KDF reveal targeted emails?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_13597c1d-d4fa-47b7-bc55-821330d87271",
+    "timestamp": "2025-11-21 13:11:11.325539",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Share Encryption: Is pad reuse possible?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cea49d34-ad23-4bd7-b275-8e6d34ef960d",
+    "timestamp": "2025-11-21 13:11:41.447420",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Proof Verification: Can hash collisions enable fake VRF proofs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2fedb6d7-28bd-42ea-b99d-5ba0fd660d02",
+    "timestamp": "2025-11-21 13:12:11.567862",
+    "report_generated": false
+  },
+  {
+    "question": "PKE Encapsulation Key: Is public key included in KDF?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_42d98f6c-b954-4269-b0d5-4c0d8cbf6aa6",
+    "timestamp": "2025-11-21 13:12:44.178900",
+    "report_generated": false
+  },
+  {
+    "question": "Symmetric MAC Derivation: Are MAC/encryption keys domain-separated?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_57c1ce42-8b46-46e9-a1a4-3880b676859b",
+    "timestamp": "2025-11-21 13:13:16.858629",
+    "report_generated": false
+  },
+  {
+    "question": "Account MSK Decryption Key: Is MSK tied to recovery identity?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3ed45bb5-cc3b-453f-9275-82ce3a067b8b",
+    "timestamp": "2025-11-21 13:13:50.197776",
+    "report_generated": false
+  },
+  {
+    "question": "Association Recovery Key: Is account/email context bound in KDF?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b8f8ebf2-17f4-44fd-9e1d-66d8b41d5798",
+    "timestamp": "2025-11-21 13:14:24.115619",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Metadata Key Derivation: Are metadata/data keys separated by domain?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_88ef149c-5b63-4962-936f-cac68c5b7f76",
+    "timestamp": "2025-11-21 13:14:58.956533",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Output Derivation: Could manipulated evaluations produce predictable KDF outputs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_946668e4-f1cb-45e2-9d80-e4ee7281fe8a",
+    "timestamp": "2025-11-21 13:15:31.942336",
+    "report_generated": false
+  },
+  {
+    "question": "PKE Shared Secret KDF: Are shared secrets validated for low-order points?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_119c8b3f-aa41-4034-a949-f23d48ef63ad",
+    "timestamp": "2025-11-21 13:16:03.712708",
+    "report_generated": false
+  },
+  {
+    "question": "Symmetric Encryption Nonce Derivation: Does KDF-derived nonce avoid reuse?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4978e41a-87d2-4eac-b892-1859485393ca",
+    "timestamp": "2025-11-21 13:16:37.088355",
+    "report_generated": false
   }
 ]
