@@ -2848,5 +2848,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bd6d74a3-19fe-4b3d-8ee6-4628f72a855f",
     "timestamp": "2025-11-21 16:28:30.643969",
     "report_generated": false
+  },
+  {
+    "question": "Context Omission in Encryption: If a caller invokes encrypt() mod.rs:131-140 with a generic context (e.g., empty struct) instead of the intended account-specific context, could multiple accounts' shares be decryptable with the same context?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d5b7daa9-dc7f-4ae5-a3c9-102896b006c7",
+    "timestamp": "2025-11-21 16:29:44.427683",
+    "report_generated": false
+  },
+  {
+    "question": "Context Binding to Wrong Verification Key: In batch_encrypt() mod.rs:170-174 , each ciphertext is bound to vk. If the signing key is later changed, do old ciphertexts remain valid, or could guardians decrypt shares that should be invalidated?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c0a87b25-6c68-43d0-9d8f-2ef293c23e11",
+    "timestamp": "2025-11-21 16:29:57.887161",
+    "report_generated": false
+  },
+  {
+    "question": "Nested Context Injection: In BatchCtx mod.rs:45-52 , the inner context is a tuple (A::SEPARATOR, ctx). Could an attacker craft a malicious outer context that, when nested, produces the same encoding as a legitimate inner context, enabling cross-session decryption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_caf68f85-c156-4c9b-8548-89ee56269949",
+    "timestamp": "2025-11-21 16:30:11.239843",
+    "report_generated": false
+  },
+  {
+    "question": "Context Separator Collision: If two different context types have the same SEPARATOR constant mod.rs:51-52 , could ciphertexts encrypted for one context be decrypted using another, violating backup isolation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e16abc90-9af6-432d-860f-5710c18a1a5a",
+    "timestamp": "2025-11-21 16:30:26.141797",
+    "report_generated": false
+  },
+  {
+    "question": "BatchCtx Verification Key Substitution: In decrypt_batch() mod.rs:111-114 , if an attacker modifies ct.inn.vk before signature verification, could the verification pass but the context binding fail, causing guardians to decrypt shares for the wrong recovery request?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_614681c3-3c66-43bc-903e-a5f8d46edf6a",
+    "timestamp": "2025-11-21 16:30:40.776508",
+    "report_generated": false
+  },
+  {
+    "question": "Empty Context Bypass: Could an attacker pass an empty or default context mod.rs:81-82 (e.g., EmptyAD) to decrypt(), bypassing intended context binding and decrypting shares meant for a different recovery session?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7b2e47c5-34e0-43cb-bc4c-b3177ca1fc0c",
+    "timestamp": "2025-11-21 16:30:56.890399",
+    "report_generated": false
+  },
+  {
+    "question": "Context Type Confusion: In decrypt() mod.rs:78-94 , if the context type A is substituted with a different type that has the same serialized representation but different SEPARATOR, could it break the binding and allow cross-context decryption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1f30e5e4-9d46-4ee3-8fd4-7d16c9eb466e",
+    "timestamp": "2025-11-21 16:31:14.680623",
+    "report_generated": false
+  },
+  {
+    "question": "Key Backup Without Encryption: When guardian decryption keys are stored in off-chain nodes, are they encrypted at rest, or could an attacker with node access extract raw DecryptionKey values v0.rs:28-34 and decrypt all shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e068c321-f16d-4f4a-8d1d-d300d54df90e",
+    "timestamp": "2025-11-21 16:31:34.845488",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Protocol Key Reuse: If the same DecryptionKey is used for both PKE operations and other cryptographic protocols in Swafe, could key reuse enable cross-protocol attacks that break encryption security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9f50cebd-f664-48d4-8a07-891230372f28",
+    "timestamp": "2025-11-21 16:31:55.144856",
+    "report_generated": false
+  },
+  {
+    "question": "Key Generation Under Adversarial RNG: If an off-chain node's RNG is compromised (minority corruption scenario), could it force DecryptionKey::gen() mod.rs:68-70 to produce keys with low entropy, making guardian shares brute-forceable?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fdf40daa-b0d6-425f-9740-c596e530bc06",
+    "timestamp": "2025-11-21 16:32:17.251679",
+    "report_generated": false
+  },
+  {
+    "question": "Public Key Validation on Deserialization: When deserializing an EncryptionKey from network data, does the code verify the point is on the curve v0.rs:14-18 , preventing invalid curve attacks that could break the DH assumption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5fe021bf-932e-4005-8de1-eb29744efce1",
+    "timestamp": "2025-11-21 16:32:39.771722",
+    "report_generated": false
+  },
+  {
+    "question": "Ephemeral Key Leakage: After encrypt() generates the ephemeral scalar ts in v0 v0.rs:106-107 , is it properly zeroized from memory, or could it leak through stack dumps allowing IKM reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_31b32227-7992-4d1b-8cd5-d5e9d94a030d",
+    "timestamp": "2025-11-21 16:33:03.366518",
+    "report_generated": false
+  },
+  {
+    "question": "Key Substitution in Batch Context: In batch_encrypt() mod.rs:165-176 , could an attacker replace one guardian's EncryptionKey in the iterator with their own key, causing that guardian's share to be encrypted for the attacker instead?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_26e156ea-2b95-4610-9ebc-0d4dd71c867d",
+    "timestamp": "2025-11-21 16:33:28.094385",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Key Freshness Check: Does the system verify that newly generated DecryptionKey instances mod.rs:68-70 are unique and haven't been used before, preventing key reuse attacks that link multiple accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a9724890-33a4-4fd9-8e52-c65db73c1b2d",
+    "timestamp": "2025-11-21 16:33:53.708746",
+    "report_generated": false
+  },
+  {
+    "question": "Key Confusion Between Accounts: If multiple accounts accidentally use the same EncryptionKey mod.rs:54-56 (e.g., due to improper key derivation), could one account owner decrypt another's guardian shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3d5f8265-d788-4d08-a5be-1fc27a9d3953",
+    "timestamp": "2025-11-21 16:34:20.833585",
+    "report_generated": false
+  },
+  {
+    "question": "Malleability in Key Serialization: Could an attacker modify the serialized form of an EncryptionKey v0.rs:14-18 to create a variant key that encrypts to ciphertexts decryptable by the attacker, while still passing validation checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_85763181-a3f0-44bf-93d6-a4ba208d6f34",
+    "timestamp": "2025-11-21 16:34:49.268247",
+    "report_generated": false
+  },
+  {
+    "question": "Key Rotation Atomicity: When rotating PKE keys in account state, if the old key is deleted before confirming successful encryption with the new key, could a crash during rotation permanently lock out the account owner from backup reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7e78c5a9-d41c-4075-b245-4656671df10c",
+    "timestamp": "2025-11-21 16:35:18.765538",
+    "report_generated": false
+  },
+  {
+    "question": "Deterministic Key Generation: If DecryptionKey::gen() mod.rs:68-70 is called with a seeded RNG (for testing), could deterministic keys leak into production, allowing attackers to precompute guardian decryption keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8b179ef6-0075-40a0-be47-d4058f7ada16",
+    "timestamp": "2025-11-21 16:35:49.474519",
+    "report_generated": false
+  },
+  {
+    "question": "Key Pair Binding Failure: Is the relationship between a DecryptionKey and its derived EncryptionKey mod.rs:72-76 cryptographically bound such that an attacker cannot substitute a rogue public key while keeping the same private key?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9bc4123a-4034-4878-865e-06ec6051d033",
+    "timestamp": "2025-11-21 16:36:21.436317",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Version Key Incompatibility: Could a DecryptionKey::V0 successfully decrypt a Ciphertext::V1 (future version) without proper version checking mod.rs:86-92 , leading to silent type confusion that corrupts recovery data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c9b95349-af63-4fb7-9d67-61d12beeab31",
+    "timestamp": "2025-11-21 16:36:54.528878",
+    "report_generated": false
+  },
+  {
+    "question": "Batch Key Generation Weakness: In batch_encrypt() mod.rs:149-182 , if the signing key sk is generated with weak randomness (line 160), could an attacker forge batch signatures and cause selective decryption failures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1e205002-923e-4888-9a97-2a3c1ae61fff",
+    "timestamp": "2025-11-21 16:37:28.362470",
+    "report_generated": false
+  },
+  {
+    "question": "Public Key Cache Poisoning: If the OnceCell<curve::GAffine> in DecryptionKey v0.rs:32-33 is somehow poisoned with an incorrect public key, would all subsequent encryptions be decryptable by an attacker holding the corresponding private key?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f2b4e57b-431d-4af9-80ab-97ee06046bcc",
+    "timestamp": "2025-11-21 16:38:03.626898",
+    "report_generated": false
+  },
+  {
+    "question": "Key Deserialization Without Validation: When deserializing a DecryptionKey from JSON v0.rs:28-34 , does the code validate that the scalar sk is within the valid field range, or could out-of-range values cause cryptographic failures during recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d35831a6-87da-417a-92b0-de0c8dae8a51",
+    "timestamp": "2025-11-21 16:38:38.657220",
+    "report_generated": false
+  },
+  {
+    "question": "Zeroization Bypass: After DecryptionKey::drop() v0.rs:36-40 zeroizes the secret key, could compiler optimizations or memory swapping leave residual key material in memory/swap that an attacker with node access could recover?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c83d0c92-fe0c-45ec-be56-1cd9289bf2c0",
+    "timestamp": "2025-11-21 16:39:13.331963",
+    "report_generated": false
+  },
+  {
+    "question": "Generator Point Manipulation: Could an attacker substitute the generator point in curve::GAffine::generator() v0.rs:64 to create rogue public keys that appear valid but are decryptable with a known private key?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7da841d0-ec8b-499e-a73d-e8a4b92d0e3c",
+    "timestamp": "2025-11-21 16:39:47.667638",
+    "report_generated": false
   }
 ]
