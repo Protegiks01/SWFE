@@ -8248,5 +8248,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_998d121a-748a-49aa-a99a-659ddde6c1ae",
     "timestamp": "2025-11-21 23:09:35.667728",
     "report_generated": false
+  },
+  {
+    "question": "The polynomial operations assume associativity and commutativity of field operations. If the field implementation has bugs violating these properties, could this cause non-deterministic behavior in interpolation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8996d5c3-e017-4467-ad20-7c393780fb74",
+    "timestamp": "2025-11-21 23:10:45.075018",
+    "report_generated": false
+  },
+  {
+    "question": "If the field uses lazy reduction (computing modulo only when necessary), could intermediate values grow large enough to cause overflow before reduction, corrupting results?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f47dc833-8288-4d5b-bdd1-6b84f955d112",
+    "timestamp": "2025-11-21 23:10:57.978954",
+    "report_generated": false
+  },
+  {
+    "question": "The field inverse operation in division could fail if the divisor is zero, causing a panic. Are there any code paths where this panic could be triggered by malicious input during reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e821cf51-f512-4bec-a8a8-e64e92215e62",
+    "timestamp": "2025-11-21 23:11:11.754011",
+    "report_generated": false
+  },
+  {
+    "question": "When computing x - root in vanish, if both are at field boundaries, could modular reduction create unexpected results that violate vanishing polynomial properties?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e64dfaf3-dfb7-4db4-96cc-5b234dc2540d",
+    "timestamp": "2025-11-21 23:11:25.420385",
+    "report_generated": false
+  },
+  {
+    "question": "The Lagrange interpolation assumes the field has sufficient multiplicative subgroups. If the field structure is special (e.g., has small subgroups), could this enable attacks on the threshold property?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_edbaa26b-2e6f-4610-bc2c-b6fe548e307a",
+    "timestamp": "2025-11-21 23:11:40.074867",
+    "report_generated": false
+  },
+  {
+    "question": "If the field is an extension field (e.g., F_p^2), could the polynomial operations inadvertently leak information about the field extension structure that helps an attacker?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_89a26be1-ea84-4990-a48e-d5f17d452548",
+    "timestamp": "2025-11-21 23:11:57.882577",
+    "report_generated": false
+  },
+  {
+    "question": "The polynomial evaluation uses Horner's method implicitly in eval. poly.rs:7 Could this method accumulate errors differently than other evaluation methods, causing inconsistencies in different parts of the codebase?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_aca9068d-facc-44fe-b500-8593d1ac0a5a",
+    "timestamp": "2025-11-21 23:12:17.166841",
+    "report_generated": false
+  },
+  {
+    "question": "In finite fields, a * b = 0 does not imply a = 0 or b = 0 if the field is not an integral domain. Could this cause the vanishing polynomial to be zero at non-root points, breaking interpolation correctness?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7393bd4c-e4ba-4662-bcef-8c66b71693e2",
+    "timestamp": "2025-11-21 23:12:37.611152",
+    "report_generated": false
+  },
+  {
+    "question": "When dividing in lagrange, the function computes zero / norm. poly.rs:19 If the field implementation uses extended Euclidean algorithm for inversion, could timing variations leak information about the denominator's structure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c2b688eb-f18c-4f54-9538-b5001fee5c77",
+    "timestamp": "2025-11-21 23:12:58.714216",
+    "report_generated": false
+  },
+  {
+    "question": "The field arithmetic operations in poly.rs rely on the ark_ff::Field trait. If the field has characteristic 2, could XOR-based arithmetic create unexpected behaviors in polynomial evaluation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0aae8c50-6f98-484f-8a71-494a588893d3",
+    "timestamp": "2025-11-21 23:13:21.805873",
+    "report_generated": false
+  },
+  {
+    "question": "None of the functions validate that the polynomial degree is appropriate for the security level. Could low-degree polynomials be exploited to bypass threshold requirements through algebraic attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5c88f485-708b-47ed-a3dd-0d97b8649972",
+    "timestamp": "2025-11-21 23:13:45.819726",
+    "report_generated": false
+  },
+  {
+    "question": "If field elements are serialized and deserialized between function calls, could serialization format inconsistencies cause different representations of the same value, breaking equality checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c4ec8e1b-a74e-4df0-a6a8-3e783b8f6b4b",
+    "timestamp": "2025-11-21 23:14:10.721072",
+    "report_generated": false
+  },
+  {
+    "question": "The functions do not check if the field supports the required number of distinct evaluation points. Could insufficient field size limit the maximum number of shares, affecting availability?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_838c9763-c722-40b4-85ab-2694c6bb3c32",
+    "timestamp": "2025-11-21 23:14:36.223392",
+    "report_generated": false
+  },
+  {
+    "question": "If the points array in interpolate_eval is mutated during iteration (violating Rust's safety guarantees elsewhere), could this race condition lead to using inconsistent data for interpolation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_eebbbd32-3c57-44a1-a050-736b04b0a19f",
+    "timestamp": "2025-11-21 23:15:02.283175",
+    "report_generated": false
+  },
+  {
+    "question": "None of the functions validate that the x-coordinates in interpolation are within a valid range (e.g., 1..n for Shamir secret sharing). Could out-of-range coordinates cause incorrect reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_97d2d9f0-4744-42ed-8ee0-4cb926ba5361",
+    "timestamp": "2025-11-21 23:15:29.775161",
+    "report_generated": false
+  },
+  {
+    "question": "If the field has a small characteristic and polynomials have high degree, could coefficient wrapping cause the degree to reduce unexpectedly, weakening threshold security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f4d94243-4069-4161-9465-c60c4e133f9c",
+    "timestamp": "2025-11-21 23:15:57.557714",
+    "report_generated": false
+  },
+  {
+    "question": "The functions assume that field operations (addition, multiplication, subtraction, division) are correctly implemented in the ark_ff library. If the library has bugs, could this compromise the security of secret reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_892ced45-23e6-47f7-8f1a-ca7857c0cf66",
+    "timestamp": "2025-11-21 23:16:25.981680",
+    "report_generated": false
+  },
+  {
+    "question": "None of the functions perform bounds checking on field element magnitudes. Could extremely large or small values (near field boundaries) cause overflow or underflow in arithmetic operations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1248d8cc-c662-4659-b357-5f18083f826c",
+    "timestamp": "2025-11-21 23:16:55.659399",
+    "report_generated": false
+  },
+  {
+    "question": "If field elements are represented in Montgomery form or other optimized representations, could conversion bugs between representations cause incorrect polynomial operations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_91e8766d-e59b-4f75-b199-d16e52e73b26",
+    "timestamp": "2025-11-21 23:17:27.234450",
+    "report_generated": false
+  },
+  {
+    "question": "The lagrange function accepts a slice of roots but doesn't validate its length. Could an empty slice cause unexpected behavior when used in interpolation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_eea487b5-7d45-44ab-9cec-58d9c75b3452",
+    "timestamp": "2025-11-21 23:17:57.932258",
+    "report_generated": false
+  },
+  {
+    "question": "If the iterator passed to eval or vanish produces values that are not valid field elements (e.g., from unsafe deserialization), could this cause undefined behavior or security violations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_79298214-a0a0-4475-ab2f-968b5ea72b67",
+    "timestamp": "2025-11-21 23:18:28.999660",
+    "report_generated": false
+  },
+  {
+    "question": "The functions do not check if the field order is sufficient for the security level. Could using a small field (e.g., F_p with small p) allow brute-force attacks on the polynomial coefficients?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_66f1d280-b7d2-411c-becf-83da3266ec26",
+    "timestamp": "2025-11-21 23:19:01.325838",
+    "report_generated": false
+  },
+  {
+    "question": "None of the functions validate that the field characteristic is prime. Could using a composite field allow an attacker to exploit subfield structures to bypass threshold security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_edbbd0b0-2872-4e02-9333-d7e1b1c29564",
+    "timestamp": "2025-11-21 23:19:33.004406",
+    "report_generated": false
+  },
+  {
+    "question": "If negative values are used as field elements (in fields supporting negative representation), could sign handling bugs in arithmetic operations cause incorrect polynomial evaluation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9c7ed789-dcc4-4bd8-bd6c-bda6c3b165a9",
+    "timestamp": "2025-11-21 23:20:04.399103",
+    "report_generated": false
+  },
+  {
+    "question": "The interpolate_eval function does not limit the number of points that can be provided. Could an attacker provide an extremely large point set to cause memory exhaustion when collecting xs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5e3348e8-cdb2-4028-a4a6-0aa5766e4f93",
+    "timestamp": "2025-11-21 23:20:34.936956",
+    "report_generated": false
   }
 ]
