@@ -3148,5 +3148,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ade9b795-1cbb-4162-990a-2a6df2f34ab2",
     "timestamp": "2025-11-21 16:50:45.205200",
     "report_generated": false
+  },
+  {
+    "question": "Association Privacy Violation: Could serialization metadata leak email associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f2bbbe18-58e6-43e0-94af-e214ed00f39c",
+    "timestamp": "2025-11-21 16:51:49.946824",
+    "report_generated": false
+  },
+  {
+    "question": "Email Anonymity Leak: Could deserialize_str() errors leak email values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2dc0082c-aa43-468f-aa56-caa813fc1b0b",
+    "timestamp": "2025-11-21 16:52:02.840833",
+    "report_generated": false
+  },
+  {
+    "question": "Share Integrity Violation: Could malicious shares bypass hash commitments?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0b7a6336-873b-4403-b9c9-cf472527e03e",
+    "timestamp": "2025-11-21 16:52:16.268055",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Approval Bypass: Could serialized signatures from insufficient guardians be accepted?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6cd57224-3009-414c-86d3-e35f636856ed",
+    "timestamp": "2025-11-21 16:52:30.085719",
+    "report_generated": false
+  },
+  {
+    "question": "Ciphertext Binding Failure: Could ciphertext be rebound to wrong account?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dbaca45a-7b13-4f62-8a38-ac53e8b091e6",
+    "timestamp": "2025-11-21 16:52:44.520683",
+    "report_generated": false
+  },
+  {
+    "question": "Share Distribution Tampering: Could share metadata be deserialized maliciously?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_02979188-1403-4dcf-a024-d51da0071cac",
+    "timestamp": "2025-11-21 16:53:00.255458",
+    "report_generated": false
+  },
+  {
+    "question": "Unauthorized Backup Reconstruction: Could type confusion bypass owner checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_27df8976-677c-4f89-bab0-21c38aa62546",
+    "timestamp": "2025-11-21 16:53:17.997734",
+    "report_generated": false
+  },
+  {
+    "question": "Email-to-Account Binding Violation: Could encoding issues allow multi-binding?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f5c28c0b-7d52-42fb-9eb4-306c64cdb0b5",
+    "timestamp": "2025-11-21 16:53:37.109374",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery State Corruption: Could wrong-type deserialization skip states?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d61b46a9-a86f-4ca6-b135-803fe85897b5",
+    "timestamp": "2025-11-21 16:53:58.275970",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Threshold Manipulation: Could invalid t values bypass t ≤ n?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_13b6e207-e913-4508-870a-80d4a0c5cc0b",
+    "timestamp": "2025-11-21 16:54:19.804312",
+    "report_generated": false
+  },
+  {
+    "question": "Email Certificate Deserialization Bypass: Could malformed EmailCertToken bypass ownership checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fac58e82-6ffe-47d1-b1ae-f34b19897f38",
+    "timestamp": "2025-11-21 16:54:42.075493",
+    "report_generated": false
+  },
+  {
+    "question": "Unauthorized Recovery via Type Confusion: Could RecoveryRequest be deserialized as BackupReconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_11550416-8eb4-479a-b573-b3c8134d0703",
+    "timestamp": "2025-11-21 16:55:05.538709",
+    "report_generated": false
+  },
+  {
+    "question": "Pairing Group Type Confusion: Could G1/G2 confusion break VDRF security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3ef49622-fb7b-4f42-83d2-4b4e85fed2b8",
+    "timestamp": "2025-11-21 16:55:30.803602",
+    "report_generated": false
+  },
+  {
+    "question": "Prime Field Overflow: Could field elements exceed modulus?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_20e5d478-e552-4be1-a468-2f7b0edd5bbb",
+    "timestamp": "2025-11-21 16:55:56.743042",
+    "report_generated": false
+  },
+  {
+    "question": "Point Encoding Validation: Could invalid EC points bypass validation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_83b97edc-454e-48cd-992e-47523f1318f9",
+    "timestamp": "2025-11-21 16:56:24.480335",
+    "report_generated": false
+  },
+  {
+    "question": "Scalar Encoding Malleability: Could non-canonical scalars break signatures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3bf7f341-403a-4928-b91a-cecba7cebec5",
+    "timestamp": "2025-11-21 16:56:53.466307",
+    "report_generated": false
+  },
+  {
+    "question": "Random Nonce Serialization: Could serialization enable nonce reuse?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8850c749-fcbb-4a19-8f3f-d0ea70e97000",
+    "timestamp": "2025-11-21 16:57:23.120345",
+    "report_generated": false
+  },
+  {
+    "question": "Share Reconstruction Integrity: Could malicious shares bypass interpolation validation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e3d9145a-7c4e-438a-bd11-5ee8749ca8ff",
+    "timestamp": "2025-11-21 16:57:53.974457",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Opening Validation: Could deserialized openings bypass checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bbe661ee-1bb4-4e15-b8c7-adb8385a4071",
+    "timestamp": "2025-11-21 16:58:25.979585",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Verification Bypass: Could wrong-type deserialization bypass checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_30abf03b-11c0-4121-be4e-126eb77fb0c8",
+    "timestamp": "2025-11-21 16:58:58.556779",
+    "report_generated": false
+  },
+  {
+    "question": "MAC Tag Serialization: Could malleability bypass MAC verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7ff198e6-14e1-4155-8065-ce7a5673d001",
+    "timestamp": "2025-11-21 16:59:31.985608",
+    "report_generated": false
+  },
+  {
+    "question": "Authenticated Encryption Binding: Could encoding errors break AAD binding?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3b059dc2-f0b3-4ba2-a103-fd75bde55368",
+    "timestamp": "2025-11-21 17:00:04.806171",
+    "report_generated": false
+  },
+  {
+    "question": "Cache Timing Side Channel: Could cache patterns reveal type info?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a6cfb076-0014-456f-a363-4545dd725d70",
+    "timestamp": "2025-11-21 17:00:36.355689",
+    "report_generated": false
+  },
+  {
+    "question": "Branch Prediction Side Channel: Could branching leak patterns?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fc379744-1142-4a30-8f56-d2127e47a1dd",
+    "timestamp": "2025-11-21 17:01:11.223345",
+    "report_generated": false
+  },
+  {
+    "question": "Error Path Timing Differences: Base64 vs bincode timing oracle?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2e63e830-acda-4be4-bad9-25f5909c64e6",
+    "timestamp": "2025-11-21 17:01:46.145245",
+    "report_generated": false
   }
 ]
