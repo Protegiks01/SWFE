@@ -6898,5 +6898,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e95c37fe-86ec-44b9-9520-9d1e9f7434e4",
     "timestamp": "2025-11-21 21:50:26.140909",
     "report_generated": false
+  },
+  {
+    "question": "Can an attacker manipulate the cnt field during encryption to cause version confusion between multiple account states? v0.rs:637",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_87e1de8b-cbe2-4716-9ab2-8ae2b4acf12d",
+    "timestamp": "2025-11-21 21:51:36.357488",
+    "report_generated": false
+  },
+  {
+    "question": "Does decrypt verify that the decrypted CombinedSecret is of the expected version (V0) before processing? v0.rs:261-266",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1b90a0eb-1fd3-4e5e-839d-0e308e5588a8",
+    "timestamp": "2025-11-21 21:51:49.350175",
+    "report_generated": false
+  },
+  {
+    "question": "In update, when sealing the combined secret, is sufficient randomness used to prevent nonce reuse across multiple updates? v0.rs:669-689",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b1f4d3f0-59ea-4f4c-a774-315518f0305f",
+    "timestamp": "2025-11-21 21:52:03.197402",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker cause deserialization errors by crafting malformed CombinedSecretV0 that passes MAC verification but fails to parse? v0.rs:67-74",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_98dd1462-f171-4aa3-a85f-ae6790ec5a02",
+    "timestamp": "2025-11-21 21:52:17.185574",
+    "report_generated": false
+  },
+  {
+    "question": "Does the AccountCiphertext type provide sufficient abstraction to prevent direct ciphertext manipulation? v0.rs:316",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5c61d8e7-318d-44ba-8e07-eed10b9e6ab2",
+    "timestamp": "2025-11-21 21:52:32.783865",
+    "report_generated": false
+  },
+  {
+    "question": "In decrypt, are the signing and PKE keys from CombinedSecretV0 validated to match the public keys in the account state? v0.rs:261-287",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_79d01930-59f7-46d2-9be5-2c721db7bee1",
+    "timestamp": "2025-11-21 21:52:48.724932",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit race conditions between update calls to cause the cnt version to skip values or wrap around? v0.rs:637",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a4dd978b-87ab-4d9c-b421-305f23a79d53",
+    "timestamp": "2025-11-21 21:53:06.340585",
+    "report_generated": false
+  },
+  {
+    "question": "Does update properly handle the case where dirty is false, ensuring no state changes are committed? v0.rs:636-637",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fd8ca5d9-78b8-4b65-ac8f-d48e1bde307b",
+    "timestamp": "2025-11-21 21:53:25.539590",
+    "report_generated": false
+  },
+  {
+    "question": "In decrypt, if the old_sig field doesn't match the current signing key, does this indicate potential state corruption? v0.rs:269",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3fd0dbb4-8bbd-4054-9031-7eb34a6e0589",
+    "timestamp": "2025-11-21 21:53:45.825903",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker replay an old encrypted state with a lower cnt value to rollback account changes? v0.rs:637",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b61c0d59-4ef5-457f-b9dc-0296fde27161",
+    "timestamp": "2025-11-21 21:54:06.990999",
+    "report_generated": false
+  },
+  {
+    "question": "Does update ensure that the rec.enc_msk is re-encrypted whenever recovery parameters change? v0.rs:692-701",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_abee93bd-144d-48ed-b723-937da159606a",
+    "timestamp": "2025-11-21 21:54:29.599602",
+    "report_generated": false
+  },
+  {
+    "question": "In decrypt, are sensitive fields like msk and sig zeroized from memory after decryption failures? v0.rs:267-287",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a5b64f3d-0597-41f8-aaed-4a31f1240457",
+    "timestamp": "2025-11-21 21:54:53.661361",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker extract partial plaintext information by analyzing MAC verification failures for different ciphertexts? v0.rs:253-260",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b60bfdbc-ff27-471b-95fe-550ef6824e16",
+    "timestamp": "2025-11-21 21:55:18.326274",
+    "report_generated": false
+  },
+  {
+    "question": "Does AccountStateV0Ad provide sufficient domain separation to prevent the same ciphertext from being valid under different account IDs? v0.rs:318-322",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8eeedf29-0b92-4a43-a245-f677ae58bf12",
+    "timestamp": "2025-11-21 21:55:43.723058",
+    "report_generated": false
+  },
+  {
+    "question": "In verify_allocation, does checking st.cnt != 0 prevent attackers from submitting pre-allocated accounts with non-zero versions? v0.rs:765-767",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f0eb52e3-1f2b-4151-be5a-8d41f73764c4",
+    "timestamp": "2025-11-21 21:56:11.522534",
+    "report_generated": false
+  },
+  {
+    "question": "Does verify_allocation ensure that the account ID is derived correctly from the verification key to prevent ID spoofing? v0.rs:770-772",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_22a00e7c-c602-4a39-8cbf-33084c41801c",
+    "timestamp": "2025-11-21 21:56:39.533944",
+    "report_generated": false
+  },
+  {
+    "question": "In verify_update, can an attacker bypass version increment checks by exploiting integer overflow in checked_add(1)? v0.rs:792-794",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_33f4550c-364b-4d17-8fd7-3bd2d3739843",
+    "timestamp": "2025-11-21 21:57:09.455745",
+    "report_generated": false
+  },
+  {
+    "question": "Does verify_update use constant-time comparison for signature verification to prevent timing attacks? v0.rs:797",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3bbf1142-3b4a-4e55-ab94-32052aa63a92",
+    "timestamp": "2025-11-21 21:57:41.522957",
+    "report_generated": false
+  },
+  {
+    "question": "In update, when signing with old_sig, does this create a window where an attacker can forge updates using a compromised old key? v0.rs:719",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7db5ce5b-1afa-4812-b0d2-aa6340a0bbd1",
+    "timestamp": "2025-11-21 21:58:15.273563",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit the fact that verify_update accepts recovery messages to bypass normal signature verification? v0.rs:802-832",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_763a5e47-f830-47b1-8588-d951f3864b10",
+    "timestamp": "2025-11-21 21:58:49.748948",
+    "report_generated": false
+  },
+  {
+    "question": "Does verify_update prevent replay attacks where an old valid signature is reused with a different state? v0.rs:789-801",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3c9adb55-5ffd-49cb-ad92-7c06e80979c9",
+    "timestamp": "2025-11-21 21:59:25.920353",
+    "report_generated": false
+  },
+  {
+    "question": "In verify_update for recovery, when iterating through associations, does the function prevent timing attacks based on the number of iterations? v0.rs:815-822",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c22c3d09-37fc-4891-8fed-1f1f8814ddc7",
+    "timestamp": "2025-11-21 22:00:01.399853",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker provide a recovery signature that verifies against multiple associations, creating ambiguity about which association initiated recovery? v0.rs:815-822",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b1e35ac5-961b-4b4c-a8f0-34b0ad39a2ff",
+    "timestamp": "2025-11-21 22:00:34.905797",
+    "report_generated": false
+  },
+  {
+    "question": "Does verify_allocation validate that all fields in the initial state are properly initialized before accepting the allocation? v0.rs:760-783",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_496da2a7-4858-4387-907f-8ba0ff9c33ff",
+    "timestamp": "2025-11-21 22:01:07.135127",
+    "report_generated": false
+  },
+  {
+    "question": "In update, is the signature computed over the complete AccountStateV0 including all nested structures? v0.rs:719",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bde01d0a-923a-4a58-aa2c-139becf77a4b",
+    "timestamp": "2025-11-21 22:01:40.126798",
+    "report_generated": false
   }
 ]
