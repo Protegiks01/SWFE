@@ -6598,5 +6598,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cbb3cae2-4c1e-433e-a4f1-43cafc9771c2",
     "timestamp": "2025-11-21 21:09:05.856878",
     "report_generated": false
+  },
+  {
+    "question": "New Owner Signature Missing: Could missing signatures allow unauthorized ownership transfer?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dc87261d-a617-4436-8b60-493bf89560ab",
+    "timestamp": "2025-11-21 21:10:17.244935",
+    "report_generated": false
+  },
+  {
+    "question": "Account Deletion Replay: Could old deletion signatures be reused? mod.rs:45-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9b1e665a-94cd-4092-8038-37e064114b42",
+    "timestamp": "2025-11-21 21:10:30.220933",
+    "report_generated": false
+  },
+  {
+    "question": "AccountId Collision Possibility: Could duplicate VerificationKeys cause same AccountId? mod.rs:25-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_aa4ac16c-80d3-4c73-9b9c-86395db65963",
+    "timestamp": "2025-11-21 21:10:43.933594",
+    "report_generated": false
+  },
+  {
+    "question": "Account Linking Replay: Could linking signatures attach emails to wrong accounts? mod.rs:45-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_632b46be-1409-4c00-8865-0d4386fc7463",
+    "timestamp": "2025-11-21 21:10:57.847270",
+    "report_generated": false
+  },
+  {
+    "question": "Multiple Account Owners: Could multiple verification keys grant unilateral control? mod.rs:13-17",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_84a55151-81bd-48ec-a606-a43051f2dd1c",
+    "timestamp": "2025-11-21 21:11:12.404331",
+    "report_generated": false
+  },
+  {
+    "question": "Dirty Account State Signatures: Could stale signatures apply to dirty state? mod.rs:29-36",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b5fdfe89-c765-4491-a872-8af792298337",
+    "timestamp": "2025-11-21 21:11:28.800371",
+    "report_generated": false
+  },
+  {
+    "question": "Account Update Replay: Could old signatures be replayed without nonce checks? mod.rs:45-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_baf8f605-02fc-4566-ac31-18b432a45caf",
+    "timestamp": "2025-11-21 21:11:46.600706",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery Request Replay: Could RecoveryRequest signatures be replayed? mod.rs:45-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6b014130-f003-44c5-82fa-ed4f3a4d6a4c",
+    "timestamp": "2025-11-21 21:12:05.756488",
+    "report_generated": false
+  },
+  {
+    "question": "Account Recovery Signature Verification: Could silent failures allow unauthorized recovery? mod.rs:29-36",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e6330a6c-384e-42c1-9f1a-d8bbade84023",
+    "timestamp": "2025-11-21 21:12:25.777619",
+    "report_generated": false
+  },
+  {
+    "question": "AccountId Derivation Malleability: Could point malleability allow multiple AccountIds? mod.rs:25-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_318afcaa-69aa-4957-9965-12ae17961360",
+    "timestamp": "2025-11-21 21:12:46.884199",
+    "report_generated": false
+  },
+  {
+    "question": "Lack of HSM Integration: Could software-only key storage be scraped? mod.rs:38-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1e7d5959-cda1-46cc-8550-c4c317eeea49",
+    "timestamp": "2025-11-21 21:13:09.752405",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Encryption Binding: Could decrypted keys be used for wrong accounts? mod.rs:19-23",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3a2e0bb7-664d-4b99-931b-eef2083f9df5",
+    "timestamp": "2025-11-21 21:13:33.923937",
+    "report_generated": false
+  },
+  {
+    "question": "Allocator Security: Could freed but non-zeroed memory leak private keys? v0.rs:63-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8e61c997-7593-48ff-a4f0-71fc70819113",
+    "timestamp": "2025-11-21 21:14:01.347667",
+    "report_generated": false
+  },
+  {
+    "question": "Public Key Reconstruction: Could public keys be derived from signatures? v0.rs:93-104",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_38874a23-48af-4549-a2cc-cedc524d9526",
+    "timestamp": "2025-11-21 21:14:27.347447",
+    "report_generated": false
+  },
+  {
+    "question": "Key Export Without Zeroization: Could exported keys remain in memory? v0.rs:54-60",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1a01f456-adee-43e6-8019-5dfc9894adaf",
+    "timestamp": "2025-11-21 21:14:56.004093",
+    "report_generated": false
+  },
+  {
+    "question": "VerificationKey Immutability: Could inability to update vk cause issues after compromise? v0.rs:108-112",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_113553d1-0613-401c-89f0-b6d59a79b2e4",
+    "timestamp": "2025-11-21 21:15:25.103553",
+    "report_generated": false
+  },
+  {
+    "question": "SigningKey in RikSecretData: Could weak encryption leak keys? mod.rs:19-23",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cacf8f8d-1414-43f0-955b-db4bfb0fd706",
+    "timestamp": "2025-11-21 21:15:55.962217",
+    "report_generated": false
+  },
+  {
+    "question": "Multiple VerificationKeys per Account: Could outdated keys still verify? mod.rs:13-17",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fc92cfbb-f4af-4422-983d-b0fba1c3f995",
+    "timestamp": "2025-11-21 21:16:27.943865",
+    "report_generated": false
+  },
+  {
+    "question": "Weak KDF for Shared Secrets: Could weak derivation allow brute-forcing? mod.rs:38-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b913cfe3-616a-4b6f-8bb8-7cc65fb7bd1f",
+    "timestamp": "2025-11-21 21:17:01.393006",
+    "report_generated": false
+  },
+  {
+    "question": "Drop During Panic: Will Drop run on panic to zeroize secret key? v0.rs:63-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_058481be-04b1-4a68-8d03-9212eb61e6d1",
+    "timestamp": "2025-11-21 21:17:34.386094",
+    "report_generated": false
+  },
+  {
+    "question": "VerificationKey On-chain Mutability: Could malicious actors replace keys on-chain? mod.rs:13-17",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8967475f-3238-4b3c-b053-686297f9ea7d",
+    "timestamp": "2025-11-21 21:18:07.170914",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Key Rotation: Could long-lived keys become weak without rotation? mod.rs:38-57",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bbf4e390-1c31-4739-9c9a-227a4f989b7e",
+    "timestamp": "2025-11-21 21:18:38.941897",
+    "report_generated": false
+  },
+  {
+    "question": "SigningKey Memory Paging: Could OS page out secret data to disk? v0.rs:54-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_21387016-c234-4930-8d13-47647e1c5be5",
+    "timestamp": "2025-11-21 21:19:12.114507",
+    "report_generated": false
+  },
+  {
+    "question": "VerificationKey In-Memory Exposure: Could mass storage of keys allow correlation attacks? v0.rs:26-30",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b91ece2a-6d51-4720-a2f1-1af464b98eaf",
+    "timestamp": "2025-11-21 21:19:42.589781",
+    "report_generated": false
+  },
+  {
+    "question": "Key Generation RNG Weakness: Could weak RNG produce predictable keys? v0.rs:83-89",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_54ba1890-d7d6-47df-b5b4-51faa8421ab2",
+    "timestamp": "2025-11-21 21:20:14.228002",
+    "report_generated": false
   }
 ]
