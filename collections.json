@@ -7798,5 +7798,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b65e06d7-5467-4096-b91c-9f40c02ef9b1",
     "timestamp": "2025-11-21 22:56:04.708301",
     "report_generated": false
+  },
+  {
+    "question": "Guardian Share Generation DoS: Can compromised guardian flood invalid shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_353ba0cf-9565-434b-ac05-69f3c124c38b",
+    "timestamp": "2025-11-21 22:57:22.350072",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery PKE Manipulation: Can attacker manipulate pke field to influence recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_82ea3d08-234a-426c-adfd-8304e3f95862",
+    "timestamp": "2025-11-21 22:57:35.525082",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Authorization Check: Can non-guardian probe backup structure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_69c4510d-9a94-4e55-89cf-00ab22a7ad01",
+    "timestamp": "2025-11-21 22:57:48.875618",
+    "report_generated": false
+  },
+  {
+    "question": "Share Re-encryption Tampering: Can guardian tamper with re-encrypted shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d743260d-10fb-45ed-85ea-cefe2f90b71f",
+    "timestamp": "2025-11-21 22:58:03.376435",
+    "report_generated": false
+  },
+  {
+    "question": "Account State Mutability: Can attacker supply modified state to guardian?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3a3f1fae-1ea4-408d-8d11-7316aff815d7",
+    "timestamp": "2025-11-21 22:58:18.145983",
+    "report_generated": false
+  },
+  {
+    "question": "RIK Generation Entropy: Is RNG strong enough for RIK?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b7795eb5-0127-4926-a2cc-c760f05d6988",
+    "timestamp": "2025-11-21 22:58:33.924288",
+    "report_generated": false
+  },
+  {
+    "question": "Association Limit Missing: Could attacker bloat associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c9a4d99f-bca0-4072-9765-ca61c7fc4b63",
+    "timestamp": "2025-11-21 22:58:51.657383",
+    "report_generated": false
+  },
+  {
+    "question": "Dirty Flag Mismanagement: Could attacker bypass version increments?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a5af9492-4607-4599-a93e-a0b4060ee82a",
+    "timestamp": "2025-11-21 22:59:10.548710",
+    "report_generated": false
+  },
+  {
+    "question": "Association Ordering: Does order leak timing or metadata?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e69310a2-36c7-4fcd-ac67-32e814161866",
+    "timestamp": "2025-11-21 22:59:32.010886",
+    "report_generated": false
+  },
+  {
+    "question": "RIK Return Leakage: Is safe storage guaranteed?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1335e49b-a9f7-4027-af2a-cd257ee4d0e6",
+    "timestamp": "2025-11-21 22:59:54.189588",
+    "report_generated": false
+  },
+  {
+    "question": "Revocation by RIK Theft: Could attacker revoke associations with stolen RIK?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6a5bba78-ccb6-4e67-93c8-ac0717ddc587",
+    "timestamp": "2025-11-21 23:00:17.770190",
+    "report_generated": false
+  },
+  {
+    "question": "Revocation Without Confirmation: Can attacker revoke multiple associations silently?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bf590fa1-4dc3-4543-b150-d8ccee988785",
+    "timestamp": "2025-11-21 23:00:42.463077",
+    "report_generated": false
+  },
+  {
+    "question": "Dirty Flag After Revocation: Could attacker interrupt update to prevent revocation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ffce177d-d482-4f71-83b1-2f3218651d49",
+    "timestamp": "2025-11-21 23:01:06.770706",
+    "report_generated": false
+  },
+  {
+    "question": "Removing All Associations: Could attacker lock account permanently?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d426da30-df44-4674-a963-1c6fd254dd17",
+    "timestamp": "2025-11-21 23:01:32.302542",
+    "report_generated": false
+  },
+  {
+    "question": "Revocation Timing: Can revoked RIK still initiate recovery before update?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_018a42ae-f490-45b7-8355-8c7ebe8ebab3",
+    "timestamp": "2025-11-21 23:01:59.521805",
+    "report_generated": false
+  },
+  {
+    "question": "Association Regeneration Cost: Could regeneration create DoS?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4f86808c-d6ec-4344-a573-e4ffecf10ef6",
+    "timestamp": "2025-11-21 23:02:29.036544",
+    "report_generated": false
+  },
+  {
+    "question": "Signing Key Generation Safety: Is entropy sufficient?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f2f66a91-d70b-4153-adae-d35245732630",
+    "timestamp": "2025-11-21 23:02:58.345808",
+    "report_generated": false
+  },
+  {
+    "question": "Encapsulation Integrity: Can tampering with fields bypass decryption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a1ebd984-e03c-44bd-9500-7a7ba04bd4e2",
+    "timestamp": "2025-11-21 23:03:27.865659",
+    "report_generated": false
+  },
+  {
+    "question": "RIK Reuse Across Updates: Does reuse create linkability?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_61902876-a41c-4226-904e-ed38364d11f5",
+    "timestamp": "2025-11-21 23:03:57.966696",
+    "report_generated": false
+  },
+  {
+    "question": "Verification Key Storage: Could keys link associations across updates?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bd5192bb-71b0-4c7c-a22b-33a96abb3c15",
+    "timestamp": "2025-11-21 23:04:27.887656",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Addition Without Validation: Can attacker add malformed backups?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7db9a152-33c6-48ec-94b7-cf56a44557c5",
+    "timestamp": "2025-11-21 23:04:56.830643",
+    "report_generated": false
+  },
+  {
+    "question": "Duplicate Backup IDs: Could duplicates confuse recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6fde716d-7b95-441d-a716-157a15fc2d4a",
+    "timestamp": "2025-11-21 23:05:26.711413",
+    "report_generated": false
+  },
+  {
+    "question": "Backup List Size: Could attacker bloat backups (DoS)?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_368a1ef1-e092-4120-ba44-61d241fcd6ae",
+    "timestamp": "2025-11-21 23:05:55.050248",
+    "report_generated": false
+  },
+  {
+    "question": "Dirty Flag Management: Could inconsistent dirty state corrupt updates?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f0f6fca0-d1a6-49c2-9070-2fb5e41a1560",
+    "timestamp": "2025-11-21 23:06:25.396221",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Ordering Leakage: Does ordering leak creation time?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_043f80b2-b67b-4037-a36d-debb4c4f1b9d",
+    "timestamp": "2025-11-21 23:06:55.341820",
+    "report_generated": false
   }
 ]
