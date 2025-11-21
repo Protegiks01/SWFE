@@ -6748,5 +6748,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_54ba1890-d7d6-47df-b5b4-51faa8421ab2",
     "timestamp": "2025-11-21 21:20:14.228002",
     "report_generated": false
+  },
+  {
+    "question": "SigningKey File Persistence: Could disk copies escape zeroization? v0.rs:54-60",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4a0f0e2c-ce11-4c52-9663-4de54289882d",
+    "timestamp": "2025-11-21 21:21:33.421630",
+    "report_generated": false
+  },
+  {
+    "question": "VerificationKey Derivation Race: Could concurrent calls race in OnceCell? v0.rs:108-112",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_30397f65-e75a-4416-b9bb-2ee4535e5240",
+    "timestamp": "2025-11-21 21:21:46.498892",
+    "report_generated": false
+  },
+  {
+    "question": "SigningKey Clone Safety: Could cloning leave un-zeroized secret copies? v0.rs:54-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a81c5517-da77-473a-a243-2e94a8b2fa9d",
+    "timestamp": "2025-11-21 21:21:59.797309",
+    "report_generated": false
+  },
+  {
+    "question": "OnceCell Zeroization Absence: Could cached VerificationKey leak in memory? v0.rs:58-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b6215b6e-9740-4adc-87ff-a1d9a9efeca9",
+    "timestamp": "2025-11-21 21:22:14.246041",
+    "report_generated": false
+  },
+  {
+    "question": "Private Key Zeroization Timing: Could compiler optimizations remove zeroization? v0.rs:63-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_773d1fff-04f7-475a-ba07-74a3de6bb940",
+    "timestamp": "2025-11-21 21:22:28.720053",
+    "report_generated": false
+  },
+  {
+    "question": "VerificationKey Debug Output: Could debug printing leak info? mod.rs:13-17",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3772a956-627e-4078-9598-afca234a0780",
+    "timestamp": "2025-11-21 21:22:44.406638",
+    "report_generated": false
+  },
+  {
+    "question": "Tuple Length Validation: Can altered tuple lengths bypass checks? venum.rs:116-117",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fb5278cb-2394-4196-b33f-fca7135c42f1",
+    "timestamp": "2025-11-21 21:23:02.035988",
+    "report_generated": false
+  },
+  {
+    "question": "Arkworks Serialization Changes: Could upstream changes break signatures? pairing.rs:54-80",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_80bce95a-da00-4df4-b6c7-026e6e660ee8",
+    "timestamp": "2025-11-21 21:23:20.778150",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialize from Untrusted Sources: Could malformed input exploit deserializer? mod.rs:7-11",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_40b9583f-ce6a-4f44-94cf-73d63c5f70e8",
+    "timestamp": "2025-11-21 21:23:40.692159",
+    "report_generated": false
+  },
+  {
+    "question": "VerificationKey as HashMap Key: Could inconsistent hashing exist? mod.rs:13-17",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_141a4bb2-6038-4e6e-a5ed-10adedf0badf",
+    "timestamp": "2025-11-21 21:24:02.126987",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Clone Semantics: Could cloning duplicate sensitive cached values? mod.rs:7-11",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_952afa0e-5ece-4f1d-8cfe-fa422223471f",
+    "timestamp": "2025-11-21 21:24:24.588052",
+    "report_generated": false
+  },
+  {
+    "question": "Version Tag Exhaustion: Could >127 versions require breaking serialization? venum.rs:38-46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f296562f-0849-4056-ab54-b1ac876ea8ef",
+    "timestamp": "2025-11-21 21:24:47.866779",
+    "report_generated": false
+  },
+  {
+    "question": "StrEncoded Base64 Formatting: Could padding variants cause misinterpretation? encode.rs:88-154",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e9cac249-6980-47a8-b2d8-3d076e65747a",
+    "timestamp": "2025-11-21 21:25:12.712896",
+    "report_generated": false
+  },
+  {
+    "question": "JSON vs Bincode: Could format inconsistencies break verification? encode.rs:52-60",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_867e8e10-1b07-47b2-875b-0941f4a51853",
+    "timestamp": "2025-11-21 21:25:38.961417",
+    "report_generated": false
+  },
+  {
+    "question": "Version Removal Breaking: Could removing V0 break old signatures? venum.rs:275-324",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_589e7dbb-248e-4670-a12a-47919359aea6",
+    "timestamp": "2025-11-21 21:26:06.240896",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Platform Serialization: Could endianness differences break signatures? encode.rs:5-6",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_78584290-972c-435c-9167-008efab44831",
+    "timestamp": "2025-11-21 21:26:36.490332",
+    "report_generated": false
+  },
+  {
+    "question": "SigningKey Skipped Field Serialization: Could vk OnceCell remain uninitialized? v0.rs:58-60",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c699b05b-48dc-40df-a06a-23bef43e708f",
+    "timestamp": "2025-11-21 21:27:07.331146",
+    "report_generated": false
+  },
+  {
+    "question": "VerificationKey Hash Collisions: Could hash collisions affect HashMaps? mod.rs:13-17",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2ac278b2-7e2e-449b-886e-088e6a348814",
+    "timestamp": "2025-11-21 21:27:38.623891",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Panic DoS: Could repeated invalid tags cause DoS? venum.rs:103-113",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9b7a1e64-af05-4b02-8263-63cddea4e7da",
+    "timestamp": "2025-11-21 21:28:10.171856",
+    "report_generated": false
+  },
+  {
+    "question": "Tuple Serialization Mismatch: Could struct-vs-tuple encoding break compat? venum.rs:66-77",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d0cc247c-ca42-4a6d-b390-e7537741595a",
+    "timestamp": "2025-11-21 21:28:40.724843",
+    "report_generated": false
+  },
+  {
+    "question": "Version Enum Matching Failure: Could unhandled version variants be ignored? mod.rs:31-35",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e9961138-1537-4e3f-be0f-5bdd50c9205e",
+    "timestamp": "2025-11-21 21:29:10.390361",
+    "report_generated": false
+  },
+  {
+    "question": "Fr Serialization: Could oversized values break deserialization? pairing.rs:116-143",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_eaf44c59-7276-43a7-ba0c-c1b1235c8d57",
+    "timestamp": "2025-11-21 21:29:39.532503",
+    "report_generated": false
+  },
+  {
+    "question": "G1Affine Serialization: Could uncompressed G1 data bypass validation? pairing.rs:54-80",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f66cdab2-dce7-41b8-9cf3-b4fdf3a49b83",
+    "timestamp": "2025-11-21 21:30:08.940702",
+    "report_generated": false
+  },
+  {
+    "question": "Bincode Configuration Drift: Could mismatched configs break deserialization? encode.rs:5-6",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6cafc2b7-3c5e-4242-80eb-18f67af89114",
+    "timestamp": "2025-11-21 21:30:38.497029",
+    "report_generated": false
+  },
+  {
+    "question": "SigningKey Deserialization Attack: Could malicious deserialization corrupt OnceCell? v0.rs:54-60",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2516d9d9-d870-42b6-883d-2b2687b21904",
+    "timestamp": "2025-11-21 21:31:08.771158",
+    "report_generated": false
   }
 ]
