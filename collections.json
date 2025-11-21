@@ -898,5 +898,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1a9a7222-65a6-4bea-a3a1-fdf19f792a02",
     "timestamp": "2025-11-21 14:11:36.150020",
     "report_generated": false
+  },
+  {
+    "question": "Could lack of guardian involvement enable recoverability attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e43e168a-8fb6-45c3-9a5d-5ef43b730df1",
+    "timestamp": "2025-11-21 14:12:50.123198",
+    "report_generated": false
+  },
+  {
+    "question": "Could node offline status cause effective threshold degradation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7ba211f2-0918-4b93-b807-f33ae8f1a5f1",
+    "timestamp": "2025-11-21 14:13:03.480610",
+    "report_generated": false
+  },
+  {
+    "question": "Could compromised initialization enable later VDRF reconstruction attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_526372ab-827c-46a6-bb54-99c3931be90a",
+    "timestamp": "2025-11-21 14:13:16.629837",
+    "report_generated": false
+  },
+  {
+    "question": "If initialization is compromised, which protocol invariants break?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a291948e-1441-4929-8445-b3303b4c68a8",
+    "timestamp": "2025-11-21 14:13:30.662507",
+    "report_generated": false
+  },
+  {
+    "question": "Should MPC be used to prevent any party from knowing full secrets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7245af32-1250-4237-a38a-41cebfdf56c3",
+    "timestamp": "2025-11-21 14:13:45.682408",
+    "report_generated": false
+  },
+  {
+    "question": "Is the setup ceremony publicly verifiable?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f790240e-c71f-48c3-96c1-ca8b09d0a434",
+    "timestamp": "2025-11-21 14:14:02.435742",
+    "report_generated": false
+  },
+  {
+    "question": "Can node rotation introduce new attack surface in initialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_851ecc1b-92b5-4a8b-88a2-02f6ae11e029",
+    "timestamp": "2025-11-21 14:14:19.318619",
+    "report_generated": false
+  },
+  {
+    "question": "Is there an emergency recovery mechanism, and can it be abused?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a445790e-5209-4177-8eea-72ab6b5aeac1",
+    "timestamp": "2025-11-21 14:14:38.532978",
+    "report_generated": false
+  },
+  {
+    "question": "Can the system detect if initialized secrets are corrupted?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d5374c12-5bb9-4ae6-98ff-c492fb4216d4",
+    "timestamp": "2025-11-21 14:14:57.776390",
+    "report_generated": false
+  },
+  {
+    "question": "Can threshold be safely increased post-initialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fd5c1f18-1818-46fb-9cb6-f40403d7398c",
+    "timestamp": "2025-11-21 14:15:18.996371",
+    "report_generated": false
+  },
+  {
+    "question": "Should proactive secret sharing refresh secrets periodically?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c697001a-15a1-4358-9c7c-338206b810fa",
+    "timestamp": "2025-11-21 14:15:40.968451",
+    "report_generated": false
+  },
+  {
+    "question": "Is accountability ensured if initialization fails?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e4f81521-17b2-4d06-a188-5bf7398f76c5",
+    "timestamp": "2025-11-21 14:16:06.336920",
+    "report_generated": false
+  },
+  {
+    "question": "Does trust extend transitively to node operators who may be compromised?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5a417375-c75c-466c-b421-c78dfd764439",
+    "timestamp": "2025-11-21 14:16:31.286588",
+    "report_generated": false
+  },
+  {
+    "question": "Could mismatches between api/src/init.rs and contract init.rs cause parsing failures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_089a0afa-b878-480a-b266-3cfaca3b7a2a",
+    "timestamp": "2025-11-21 14:16:58.035971",
+    "report_generated": false
+  },
+  {
+    "question": "Can incompatible OffchainSecret formats break VDRF evaluation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ec5d2bc2-c728-4331-accc-a2ff68d98eed",
+    "timestamp": "2025-11-21 14:17:25.295589",
+    "report_generated": false
+  },
+  {
+    "question": "Does the hash used in commitment verification match the one used in commitment generation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_24927179-b5ac-4d8c-bb09-40c636eaca13",
+    "timestamp": "2025-11-21 14:17:53.903884",
+    "report_generated": false
+  },
+  {
+    "question": "Could OffchainSecret be confused with other tagged types in other modules?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0b6c8036-5631-4a75-8a4a-4e1e236237e1",
+    "timestamp": "2025-11-21 14:18:23.647427",
+    "report_generated": false
+  },
+  {
+    "question": "Could version mismatch between API and contract cause silent failures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a631369d-e322-4978-891d-4b9a1395a3dc",
+    "timestamp": "2025-11-21 14:18:54.632427",
+    "report_generated": false
+  },
+  {
+    "question": "Do initialization errors propagate correctly to callers?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5a3680df-9b71-4b84-8eea-4b0d930e2c8c",
+    "timestamp": "2025-11-21 14:19:27.186440",
+    "report_generated": false
+  },
+  {
+    "question": "Does the VDRF eval endpoint depend on correctly initialized secrets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cae93c6a-0b42-45d6-9ede-a28e739f190a",
+    "timestamp": "2025-11-21 14:19:59.936475",
+    "report_generated": false
+  },
+  {
+    "question": "Could reconstruction operations fail due to incomplete initialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_67b97490-e186-43c9-92c9-cda2bc3bab81",
+    "timestamp": "2025-11-21 14:20:33.365430",
+    "report_generated": false
+  },
+  {
+    "question": "Does compromised initialization break the account recovery invariant?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6cd83985-dd9d-461e-a848-0c19b36af38d",
+    "timestamp": "2025-11-21 14:21:08.482522",
+    "report_generated": false
+  },
+  {
+    "question": "Can compromised initialization enable unauthorized backup reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f9001029-d159-4af8-9616-9bae673b9759",
+    "timestamp": "2025-11-21 14:21:43.753285",
+    "report_generated": false
+  },
+  {
+    "question": "Does initialization pattern leak email–account associations indirectly?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7f733005-5acc-404d-903f-570a690053f0",
+    "timestamp": "2025-11-21 14:22:17.985510",
+    "report_generated": false
+  },
+  {
+    "question": "Could initialization bypass guardian approval requirements?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_971d141d-acb1-48d5-96a6-df6e6494f8c1",
+    "timestamp": "2025-11-21 14:22:53.086469",
+    "report_generated": false
   }
 ]
