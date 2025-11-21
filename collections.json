@@ -5698,5 +5698,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_edd75e89-a0f3-48c7-9744-d92cad7dc782",
     "timestamp": "2025-11-21 20:21:51.312357",
     "report_generated": false
+  },
+  {
+    "question": "Can an attacker correlate backup creation events across different accounts using timing or size analysis?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f4000e71-d469-458d-8710-052a4c495147",
+    "timestamp": "2025-11-21 20:22:58.151449",
+    "report_generated": false
+  },
+  {
+    "question": "Is the RNG used in BackupCiphertextV0::new() sufficient to prevent prediction of future backup IDs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0a11457c-0e77-49cf-a8aa-b813a074f37d",
+    "timestamp": "2025-11-21 20:23:11.005593",
+    "report_generated": false
+  },
+  {
+    "question": "Can network observers link guardian participation across multiple recovery sessions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_02c8cdfa-0c00-45af-9aba-f0e358f54713",
+    "timestamp": "2025-11-21 20:23:24.217740",
+    "report_generated": false
+  },
+  {
+    "question": "Does the Display trait implementation for BackupId reveal information that aids in user de-anonymization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cf9562c9-5552-4140-b3c3-9e4ea1c59fc0",
+    "timestamp": "2025-11-21 20:23:37.781676",
+    "report_generated": false
+  },
+  {
+    "question": "Can backup metadata or structure leak information about associated accounts or emails through the AADBackup field?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2effcb13-6d34-4500-b962-3415c60b50be",
+    "timestamp": "2025-11-21 20:23:53.267791",
+    "report_generated": false
+  },
+  {
+    "question": "Does the encryption context binding prevent cross-protocol attacks where backups are confused with other encrypted data types?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6809c94e-0e25-4998-8709-0620dcd89c26",
+    "timestamp": "2025-11-21 20:24:09.574000",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker use the Tagged trait separators to fingerprint Swafe backups and identify users on-chain?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1d04d2c1-c3e9-4bd6-b386-340edbd5a48a",
+    "timestamp": "2025-11-21 20:24:27.116677",
+    "report_generated": false
+  },
+  {
+    "question": "Is there sufficient domain separation between backup encryption and other protocol operations to prevent key reuse attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fbffd0f4-4c7a-40f1-83ff-ce6d9f9c2e9f",
+    "timestamp": "2025-11-21 20:24:46.725227",
+    "report_generated": false
+  },
+  {
+    "question": "Can analyzing multiple protocol operations (backup, recovery, association) allow linking of user activities?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0648ee13-9c55-41c7-abbd-845169698199",
+    "timestamp": "2025-11-21 20:25:07.004377",
+    "report_generated": false
+  },
+  {
+    "question": "Does the versioned_enum! macro prevent deserialization of maliciously crafted version tags that could cause type confusion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7202afde-0c53-4ddb-ba1e-3df047ee7360",
+    "timestamp": "2025-11-21 20:25:29.781659",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker craft a serialized BackupCiphertext that deserializes to an unexpected type or causes memory corruption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b4027823-994c-4d09-8a5a-dc06c40a08ee",
+    "timestamp": "2025-11-21 20:25:51.887189",
+    "report_generated": false
+  },
+  {
+    "question": "Is there validation that all serialized fields are within expected bounds to prevent integer overflow during deserialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0d0ac35b-be43-45af-b1b2-4d2301abcc47",
+    "timestamp": "2025-11-21 20:26:14.963928",
+    "report_generated": false
+  },
+  {
+    "question": "Does the bincode serialization in BackupMetadata prevent injection of malicious data that executes during deserialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c7e8460e-76e9-4519-85ba-02eca300b6c3",
+    "timestamp": "2025-11-21 20:26:39.980692",
+    "report_generated": false
+  },
+  {
+    "question": "Can version mismatches between SecretShare::V0 and GuardianShare::V0 cause interoperability issues that break recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e8341347-a14c-4f78-9eb5-14a23d95b290",
+    "timestamp": "2025-11-21 20:27:05.415103",
+    "report_generated": false
+  },
+  {
+    "question": "EmailInput Construction: In EmailInput::from_str v0.rs:36-43 , can a malicious user inject control characters or non-normalized Unicode to create multiple distinct EmailInput instances that hash to similar values, breaking the invariant that 'an email should be associated to at most one account at a time'?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_71cc0f15-1433-4138-8fcf-efff828f22e8",
+    "timestamp": "2025-11-21 20:27:32.160074",
+    "report_generated": false
+  },
+  {
+    "question": "EmailInput Domain Separator: The EmailInput struct uses SEPARATOR: 'v0:email-input' v0.rs:46-48 . If an attacker controls both the email string and can manipulate serialization order, could they cause domain separation collisions with other Tagged types to link emails across different contexts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a7ac1843-7b07-43f2-8ca8-7fc6e9f3ee9b",
+    "timestamp": "2025-11-21 20:28:00.412169",
+    "report_generated": false
+  },
+  {
+    "question": "EmailKey VDRF Verification: EmailKey::new verifies VDRF evaluation v0.rs:176-184 . If a minority of corrupted off-chain nodes provide malformed VdrfEvaluation values that still pass verification due to implementation flaws in Vdrf::verify, could this allow email-account unlinkability to be broken?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_85701fa4-ff2e-44ca-bec0-feef98719f23",
+    "timestamp": "2025-11-21 20:28:29.538417",
+    "report_generated": false
+  },
+  {
+    "question": "EmailKey Replay Attacks: The EmailKey is derived from VdrfEvaluation v0.rs:173-184 . Can an attacker who intercepts a valid VdrfEvaluation for one email reuse it to associate a different account with the same email, violating the uniqueness invariant?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_df5eacdd-3a3f-48f9-b75c-a9ae285c9a40",
+    "timestamp": "2025-11-21 20:29:00.215560",
+    "report_generated": false
+  },
+  {
+    "question": "EmailTag Storage: EmailTag is a raw [u8; 32] v0.rs:76-77 . Without integrity protection or origin binding, could a malicious off-chain node substitute one user's EmailTag with another's during storage/retrieval operations to break email-account association privacy?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_13f9f2cb-90d7-4961-ba5d-76821805ffb5",
+    "timestamp": "2025-11-21 20:29:33.905414",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Public Key Binding: When gen_node_secret_share generates an email certificate token v0.rs:424 , is the VDRF public key properly bound to prevent an attacker from using a different public key to re-evaluate the same email and deanonymize users?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0282dc71-5b3b-4044-83bf-5f37bcff9446",
+    "timestamp": "2025-11-21 20:30:10.423615",
+    "report_generated": false
+  },
+  {
+    "question": "Email Certificate Token Scope: The EmailCert::token generated in gen_node_secret_share v0.rs:424 is node-specific. If a corrupted node shares its token with other nodes, could this enable cross-node correlation attacks to identify which emails are associated with which accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1663b5a4-5bd6-43f0-a581-9b2168947fa9",
+    "timestamp": "2025-11-21 20:30:49.275312",
+    "report_generated": false
+  },
+  {
+    "question": "Email Normalization: EmailInput::from_str performs simple to_string() conversion v0.rs:39-42 . Could different email representations (e.g., with/without dots in Gmail addresses, different case) create distinct EmailInput values that allow a single user to register multiple associations, violating uniqueness?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ea152e1e-51d6-40ed-8c30-1b9626da5cec",
+    "timestamp": "2025-11-21 20:31:31.389871",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Evaluation Uniqueness: If Vdrf::verify v0.rs:182 doesn't enforce unique mappings between inputs and outputs, could two different emails produce the same EmailKey, allowing account takeover when one email's owner recovers 'their' account?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6efa1143-b989-48ff-bee4-f0f2e423f2ff",
+    "timestamp": "2025-11-21 20:32:20.152410",
+    "report_generated": false
+  },
+  {
+    "question": "Email Privacy Under Node Collusion: If a minority of off-chain nodes collude and pool their NodeSecretShare data v0.rs:79-118 , can they learn which emails map to which accounts by correlating EmailCertToken values across nodes, violating the privacy guarantee?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bfe54fd7-948a-4417-95cc-e6d5083a8a28",
+    "timestamp": "2025-11-21 20:33:07.235467",
+    "report_generated": false
+  },
+  {
+    "question": "Email Serialization Side Channels: When EmailInput is serialized for VDRF hashing v0.rs:30-34 , could timing variations in string serialization leak information about email lengths or character distributions to a network observer?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3bc6635d-8f09-464f-979e-10e61a576e83",
+    "timestamp": "2025-11-21 20:33:54.895220",
+    "report_generated": false
   }
 ]
