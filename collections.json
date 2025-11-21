@@ -6598,5 +6598,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_24edd620-d899-489e-aecc-1bfb8c8818ab",
     "timestamp": "2025-11-21 21:29:05.259107",
     "report_generated": false
+  },
+  {
+    "question": "Can an attacker cause account lockout by corrupting old_sig such that neither the current nor old signing keys can produce valid signatures? v0.rs:719",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d355c624-8547-4e50-8729-6d12399d25cf",
+    "timestamp": "2025-11-21 21:30:18.778826",
+    "report_generated": false
+  },
+  {
+    "question": "In new_msk, does rotating the MSK invalidate the recovery state's enc_msk, requiring a full recovery setup refresh? v0.rs:480-483",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bf7aa52d-cedc-4bb4-b72d-1c11c821d2a9",
+    "timestamp": "2025-11-21 21:30:31.490923",
+    "report_generated": false
+  },
+  {
+    "question": "When AccountSecrets::gen creates initial recovery secrets with empty guardians and threshold 0, does this violate the invariant that recovery requires guardian approval? v0.rs:407-416",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fcfd7f9d-33b4-4f32-9da1-620d7f33de65",
+    "timestamp": "2025-11-21 21:30:45.251451",
+    "report_generated": false
+  },
+  {
+    "question": "Does new_sig update the account ID if the signing key changes, or can this cause the account to become unreachable? v0.rs:486-489",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9126d774-2a15-46e1-92ca-77aa3889d692",
+    "timestamp": "2025-11-21 21:31:00.128002",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit race conditions between multiple concurrent calls to new_pke to cause old_pke to miss storing a key? v0.rs:492-496",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4171c508-3c92-4d48-b993-e35b78b07436",
+    "timestamp": "2025-11-21 21:31:15.670338",
+    "report_generated": false
+  },
+  {
+    "question": "In decrypt, if the MSK is incorrect, does the error message leak information about which specific decryption step failed? v0.rs:251-289",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_067116d4-acd1-4269-aeec-d18999e11eff",
+    "timestamp": "2025-11-21 21:31:31.307151",
+    "report_generated": false
+  },
+  {
+    "question": "When old MSKs are stored in old_msk, is there a maximum retention period or count to prevent indefinite storage of sensitive key material? v0.rs:58",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a8dc09f4-4a3d-4f0e-b760-7d305cfe419e",
+    "timestamp": "2025-11-21 21:31:48.000547",
+    "report_generated": false
+  },
+  {
+    "question": "Does gen verify that the generated msk_ss_rik and msk_ss_social have sufficient entropy and are not reused across accounts? v0.rs:407-408",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0e9a1299-2737-4aa0-b777-5693cebeb748",
+    "timestamp": "2025-11-21 21:32:06.574695",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker who observes multiple update transactions infer that key rotation occurred by analyzing the encrypted state size changes? v0.rs:669-689",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_111c0b7c-b8c3-4503-afa6-edb04d1b7e77",
+    "timestamp": "2025-11-21 21:32:26.859954",
+    "report_generated": false
+  },
+  {
+    "question": "In add_backup, can a malicious user add the same backup ciphertext multiple times to inflate storage costs or cause processing overhead? v0.rs:503-507",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2f3cad40-1319-4d68-9f66-7189e6385c17",
+    "timestamp": "2025-11-21 21:32:47.414296",
+    "report_generated": false
+  },
+  {
+    "question": "Does remove_backup verify ownership before removing a backup, or can any user remove backups from shared storage? v0.rs:510-514",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8858b6c2-d604-4d45-9965-72aca783fa64",
+    "timestamp": "2025-11-21 21:33:08.930634",
+    "report_generated": false
+  },
+  {
+    "question": "In mark_recovery, when moving a backup from backups to recover, does the function verify that the backup is actually decryptable by the account? v0.rs:517-526",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e92fba7d-8f62-4fff-8eba-8100cc618dbf",
+    "timestamp": "2025-11-21 21:33:31.282414",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exhaust the backups or recover vectors by repeatedly adding backups without removing old ones? v0.rs:503-507",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5adfadc6-d821-4709-8761-44858b9fd25b",
+    "timestamp": "2025-11-21 21:33:54.495875",
+    "report_generated": false
+  },
+  {
+    "question": "Does mark_recovery prevent marking the same backup for recovery multiple times, potentially causing duplicate guardian share requests? v0.rs:517-526",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bd0aa314-ad9e-49e2-9835-d57ea69bd9bf",
+    "timestamp": "2025-11-21 21:34:18.839241",
+    "report_generated": false
+  },
+  {
+    "question": "In decrypt_share_backupy, does using AADBackup with the wrong account ID allow decryption of another user's backup shares? v0.rs:556-562",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_37fe2025-7529-46e8-b875-278dcf60ec82",
+    "timestamp": "2025-11-21 21:34:44.360800",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker replace backups in the backups vector with malicious ciphertexts that cause denial of service when guardians attempt to decrypt shares? v0.rs:503-507",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_31da9d66-029b-4bf7-81dd-21fc8ee970d0",
+    "timestamp": "2025-11-21 21:35:10.258692",
+    "report_generated": false
+  },
+  {
+    "question": "Does recover_backups expose all backup ciphertexts publicly, potentially leaking metadata about the number and types of backups? v0.rs:246-248",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2521f9f8-4cc7-4817-8abb-9ba0c83b4422",
+    "timestamp": "2025-11-21 21:35:38.269582",
+    "report_generated": false
+  },
+  {
+    "question": "In decrypt_share, when trying old_pke.last() as a fallback, does this create timing differences that leak information about recent PKE rotations? v0.rs:600",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_45608d36-1b9c-42c9-a08c-9d69c604fd3a",
+    "timestamp": "2025-11-21 21:36:06.747389",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker cause decrypt_share to return None by manipulating the EncryptionContext parameters, causing guardians to believe they're not authorized for a backup? v0.rs:572-603",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_85ffb3bb-34f3-4e88-bcdc-65d763f7359a",
+    "timestamp": "2025-11-21 21:36:36.971083",
+    "report_generated": false
+  },
+  {
+    "question": "Does remove_backup properly synchronize removal across both backups and recover vectors to prevent orphaned entries? v0.rs:510-514",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ebd0f6a5-de59-4938-a989-5832e61a71e1",
+    "timestamp": "2025-11-21 21:37:08.771744",
+    "report_generated": false
+  },
+  {
+    "question": "In add_backup, is there validation that the backup ciphertext is well-formed and decryptable before adding it to the account state? v0.rs:503-507",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4a535fe6-79fa-4384-b88f-85c3533e4888",
+    "timestamp": "2025-11-21 21:37:41.034696",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit the comment at line 501-502 about no unique ID guarantees to create confusion about backup ownership? v0.rs:499-502",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_729faf13-d469-405f-884c-0e9778c0bea1",
+    "timestamp": "2025-11-21 21:38:13.892129",
+    "report_generated": false
+  },
+  {
+    "question": "Does mark_recovery verify that the backup ID exists in backups before attempting to move it, preventing unnecessary error conditions? v0.rs:519-522",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_764cf9db-dcb6-48b8-b0ec-7856958b4a6e",
+    "timestamp": "2025-11-21 21:38:45.519923",
+    "report_generated": false
+  },
+  {
+    "question": "In decrypt_share_recovery, can an attacker provide a backup encrypted with AADRecovery when the guardian expects AADBackup, causing authorization failures? v0.rs:564-570",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cbbb1478-0b18-411e-86a4-3f745cb8e9d7",
+    "timestamp": "2025-11-21 21:39:17.237637",
+    "report_generated": false
+  },
+  {
+    "question": "When decrypt_share returns Some, does it verify that the decrypted share corresponds to the expected backup ID to prevent share substitution attacks? v0.rs:572-603",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_49606ea2-7cfa-4b38-b79b-dae702b04ee9",
+    "timestamp": "2025-11-21 21:39:49.094394",
+    "report_generated": false
   }
 ]
