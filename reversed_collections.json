@@ -6148,5 +6148,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d5453217-e8d2-4fa1-adec-72ac4b658781",
     "timestamp": "2025-11-21 20:36:30.321259",
     "report_generated": false
+  },
+  {
+    "question": "In encryption_key() v0.rs:62-65 , the OnceCell::get_or_init() is called with a closure that computes the public key. If this closure panics or is interrupted (e.g., by a signal), could the OnceCell be left in an inconsistent state, causing subsequent encryption operations to use an incorrect public key?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_39670f0d-c3f4-4e23-b46d-a7a3b362251e",
+    "timestamp": "2025-11-21 20:37:46.188563",
+    "report_generated": false
+  },
+  {
+    "question": "The DecryptionKey struct v0.rs:28-34 contains a OnceCell<curve::GAffine> for caching the public key. If the OnceCell is not properly handled during serialization/deserialization, could a deserialized key have an uninitialized or corrupted public key, causing subsequent operations to fail or leak information?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4e506f31-2f11-4d6d-be16-d1d9841c27b5",
+    "timestamp": "2025-11-21 20:37:59.395363",
+    "report_generated": false
+  },
+  {
+    "question": "In decrypt() v0.rs:73-78 , the shared secret is computed into a local ikm vector. Is this vector properly zeroized after use, or could it remain in memory and be extracted through side-channels, allowing an attacker to decrypt future ciphertexts from the same guardian?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_69a54271-fa33-433f-bda3-675e7999f55b",
+    "timestamp": "2025-11-21 20:38:12.495512",
+    "report_generated": false
+  },
+  {
+    "question": "The DecryptionKey is cloneable v0.rs:28-34 . If a guardian clones their key for concurrent operations (e.g., decrypting multiple shares), could one clone be dropped while another is still in use, causing the secret key to be zeroized prematurely and breaking decryption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b330ab0d-cf15-4c56-95a0-9a2218e3ff66",
+    "timestamp": "2025-11-21 20:38:26.183045",
+    "report_generated": false
+  },
+  {
+    "question": "In encryption_key() v0.rs:61-66 , the public key is computed from the secret key. If this computation is performed multiple times (e.g., due to incorrect OnceCell usage), could intermediate values from the scalar multiplication remain in memory and leak information about the secret key?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9678729d-ad2a-4e26-a067-0caf9fada71b",
+    "timestamp": "2025-11-21 20:38:40.733608",
+    "report_generated": false
+  },
+  {
+    "question": "The DecryptionKey::gen() function v0.rs:54-59 generates a fresh key by sampling from the RNG. If the RNG's internal state is not properly zeroized after key generation, could the generated secret keys be reconstructed by analyzing memory dumps or side-channels?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4f7b7619-b9d3-4399-9d5c-333897502b70",
+    "timestamp": "2025-11-21 20:38:56.956647",
+    "report_generated": false
+  },
+  {
+    "question": "In decrypt() v0.rs:68-92 , the secret key self.sk is used in scalar multiplication. If the scalar multiplication operation is not constant-time or the secret key is copied into temporary buffers during computation, could this leave copies of the key in memory that are not zeroized?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5c3331e6-cc74-4d4b-af37-17bfff9489fe",
+    "timestamp": "2025-11-21 20:39:14.102518",
+    "report_generated": false
+  },
+  {
+    "question": "The DecryptionKey struct v0.rs:28-34 implements Serialize and Deserialize. If a guardian's DecryptionKey is serialized to disk or transmitted over the network, could the secret key be intercepted before the Drop is called, allowing an attacker to extract it and decrypt all shares for that guardian?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ec013987-1d7b-4211-8929-1bc32f89f3a0",
+    "timestamp": "2025-11-21 20:39:33.138247",
+    "report_generated": false
+  },
+  {
+    "question": "In DecryptionKey::Drop v0.rs:36-40 , only self.sk is zeroized. The cached public key in self.pk: OnceCell is not zeroized. While public keys don't need zeroization, could this leave other sensitive data in the OnceCell if it's used for caching computed values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e174d21e-ac99-403f-8185-22031c96d8cb",
+    "timestamp": "2025-11-21 20:39:53.921358",
+    "report_generated": false
+  },
+  {
+    "question": "The DecryptionKey implements Drop v0.rs:36-40 to zeroize the secret key self.sk. However, if the DecryptionKey is cloned (it implements Clone v0.rs:28-34 ), could the cloned copies retain the secret key in memory even after the original is dropped, violating the zeroization guarantee?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_387e1156-d80d-499e-bd38-d224ada6a2bb",
+    "timestamp": "2025-11-21 20:40:14.750559",
+    "report_generated": false
+  },
+  {
+    "question": "In the parent pke/mod.rs module, v0 types are wrapped in versioned enums. If the version dispatch logic has bugs or allows version confusion, could an attacker cause a v0 DecryptionKey to be used with a v1 Ciphertext, potentially leading to security vulnerabilities or recovery failures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ca434064-2df4-4a37-a77c-7c347d5c87f8",
+    "timestamp": "2025-11-21 20:40:37.168308",
+    "report_generated": false
+  },
+  {
+    "question": "The EncryptionKey and DecryptionKey structures v0.rs:14-34 use serde for serialization. If the serialization format changes between versions (e.g., adding new fields), could old keys become incompatible, preventing guardians from accessing their historical backup shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4ce14b66-818b-4e2b-b532-e921e954272f",
+    "timestamp": "2025-11-21 20:41:03.784285",
+    "report_generated": false
+  },
+  {
+    "question": "In decrypt() v0.rs:68-92 , there's no explicit version check on the ciphertext. If a malicious party provides a ciphertext from a different version with a compatible structure, could this cause unexpected behavior or security vulnerabilities when guardians attempt to decrypt their shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9a4031f7-af27-4a72-9004-b527a7d1dcce",
+    "timestamp": "2025-11-21 20:41:29.135983",
+    "report_generated": false
+  },
+  {
+    "question": "The DiffieHellmanCtx separator v0.rs:50 includes \"v0:\" prefix. If version negotiation is not properly enforced, could an attacker downgrade a v1 ciphertext to v0, exploiting potential weaknesses in the older version to decrypt guardian shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_42cf1c9c-3781-4096-a666-de37a1ed3d53",
+    "timestamp": "2025-11-21 20:41:54.579916",
+    "report_generated": false
+  },
+  {
+    "question": "The file is named v0.rs v0.rs:1 , suggesting versioning. If a future v1.rs uses different cryptographic primitives or serialization formats, could old guardian shares encrypted with v0 become permanently undecryptable if the versioning is not properly handled in the parent module?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e939b5cd-bb53-4ae8-b80c-3b6cacaa07cc",
+    "timestamp": "2025-11-21 20:42:22.168596",
+    "report_generated": false
+  },
+  {
+    "question": "The encrypt() function v0.rs:117-128 passes both message and context to the symmetric layer. If the symmetric layer does not properly separate these in its MAC computation, could an attacker swap messages and contexts to create valid but semantically incorrect ciphertexts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_409e92c8-902e-462c-97c5-74a7a9a262e5",
+    "timestamp": "2025-11-21 20:42:50.860039",
+    "report_generated": false
+  },
+  {
+    "question": "In decrypt() v0.rs:81-91 , the deserialization of the plaintext uses bincode::serde::decode_from_slice(). If the deserializer allows multiple valid encodings for the same data structure, could an attacker create non-canonical guardian shares that bypass integrity checks in later recovery steps?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1feabee0-a294-450a-bd12-c6b3a4139612",
+    "timestamp": "2025-11-21 20:43:19.052851",
+    "report_generated": false
+  },
+  {
+    "question": "The DiffieHellmanCtx structure v0.rs:21-26 contains curve points that are serialized. If the serialization format changes between versions or is not canonical, could an old ciphertext become undecryptable or decryptable with incorrect context, permanently locking guardian shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9f035d65-0ff2-41dc-b854-de267dfb2455",
+    "timestamp": "2025-11-21 20:43:48.608179",
+    "report_generated": false
+  },
+  {
+    "question": "In both encrypt() and decrypt(), the Tagged trait ensures domain separation. However, if the trait is implemented incorrectly for guardian share types (e.g., using dynamic separators or user-controlled strings), could this break domain separation and enable collision attacks on encrypted shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8e6fb428-2460-418e-9d83-fc407df5811a",
+    "timestamp": "2025-11-21 20:44:19.290019",
+    "report_generated": false
+  },
+  {
+    "question": "The context type A: Tagged v0.rs:68-72 is separate from the message type M: Tagged. If an attacker can find two types A1 and A2 with colliding separators but different semantic meanings, could this enable cross-context attacks where a guardian share encrypted for backup recovery is decrypted in a different protocol flow?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fdfd7a55-11e9-4594-8c19-daf12d38bb0f",
+    "timestamp": "2025-11-21 20:44:51.361094",
+    "report_generated": false
+  },
+  {
+    "question": "In decrypt() v0.rs:81-91 , the sym::open() call uses the message type M's separator for domain separation. If multiple message types in the backup/recovery flow share the same separator (e.g., due to copy-paste errors), could this enable type confusion attacks where one share type is substituted for another?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f0cfce57-1c80-4213-a83a-98da2f0af2cc",
+    "timestamp": "2025-11-21 20:45:22.976180",
+    "report_generated": false
+  },
+  {
+    "question": "The encrypt() function v0.rs:99-132 serializes the message msg: &M where M: Tagged. If the Tagged implementation for guardian share types has a weak or colliding separator, could this allow an attacker to create fake guardian shares that pass decryption but contain malicious data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_af988716-c417-49c3-9542-e8e7231d5138",
+    "timestamp": "2025-11-21 20:45:54.079583",
+    "report_generated": false
+  },
+  {
+    "question": "In the Tagged trait implementation for DiffieHellmanCtx v0.rs:49-51 , the separator is a compile-time constant. However, if the separator is not globally unique across all Tagged types in the codebase, could this enable cross-type confusion where a ciphertext intended for one purpose is decrypted in another?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_605f5547-27e5-4e1e-9a38-6435ed1bea71",
+    "timestamp": "2025-11-21 20:46:24.406922",
+    "report_generated": false
+  },
+  {
+    "question": "The decrypt() function v0.rs:68-92 accepts a generic message type M: Tagged + DeserializeOwned. If an attacker can cause the deserialization to succeed with a different type than intended (e.g., deserializing a GuardianShare as an AccountSecret), could this violate type safety and lead to incorrect recovery flows?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d6ffd60e-a2a6-4256-8c2e-ce9e38522843",
+    "timestamp": "2025-11-21 20:46:53.867353",
+    "report_generated": false
+  },
+  {
+    "question": "The DiffieHellmanCtx has a fixed separator v0.rs:49-51 \"v0:pke-dhpk-ss\". If this separator is reused in other parts of the codebase or can be influenced by user input, could this enable domain separation failures where guardian shares are confused with other encrypted data types?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_aa958177-5ac6-4fd7-8d72-473258f895da",
+    "timestamp": "2025-11-21 20:47:24.085198",
+    "report_generated": false
   }
 ]
