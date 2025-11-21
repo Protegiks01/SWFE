@@ -4498,5 +4498,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b99fcfe5-ca44-4988-821c-473dafdc1f0a",
     "timestamp": "2025-11-21 18:52:56.521764",
     "report_generated": false
+  },
+  {
+    "question": "Does timestamp in metadata prevent replay attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0a3a5698-3a1f-4d6c-8015-4628a5251ee9",
+    "timestamp": "2025-11-21 18:54:08.211020",
+    "report_generated": false
+  },
+  {
+    "question": "Can name/desc fields contain malicious payloads?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_547d3fa5-71e3-4c4c-bc24-39e19f23af26",
+    "timestamp": "2025-11-21 18:54:21.189083",
+    "report_generated": false
+  },
+  {
+    "question": "Does new() ensure secret format correctness?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_05bfa067-4ddc-49ab-9b02-c2b0db8791fa",
+    "timestamp": "2025-11-21 18:54:36.568314",
+    "report_generated": false
+  },
+  {
+    "question": "Do KDF separators provide strong domain separation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_22e33829-3b1c-4dce-8940-011816fe9b8f",
+    "timestamp": "2025-11-21 18:54:50.430033",
+    "report_generated": false
+  },
+  {
+    "question": "Does guardian shuffling provide unlinkability?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7b829e56-0eaf-4af2-81c3-615c6e6b8279",
+    "timestamp": "2025-11-21 18:55:05.187052",
+    "report_generated": false
+  },
+  {
+    "question": "Can ciphertext size reveal guardian count?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_14135ba9-1576-4e19-9667-aa4facbd2a02",
+    "timestamp": "2025-11-21 18:55:20.725836",
+    "report_generated": false
+  },
+  {
+    "question": "Do share commitments leak distribution or guardian identity?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ad7c86c4-8ff1-4d9c-a39d-1ac12c0442a2",
+    "timestamp": "2025-11-21 18:55:37.877934",
+    "report_generated": false
+  },
+  {
+    "question": "Can backups be correlated by commitment structure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3f682d5f-149e-4186-98e5-30d6d33c49ae",
+    "timestamp": "2025-11-21 18:55:57.528108",
+    "report_generated": false
+  },
+  {
+    "question": "Does recover() leak guardian participation through timing?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_53871eae-1798-4bd1-9b06-8d19b1a0c396",
+    "timestamp": "2025-11-21 18:56:17.179068",
+    "report_generated": false
+  },
+  {
+    "question": "Is BackupCiphertext::id() linkable to account usage patterns?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3b8741cc-25bf-4108-9712-c4fa9de7e8a8",
+    "timestamp": "2025-11-21 18:56:39.011349",
+    "report_generated": false
+  },
+  {
+    "question": "Does metadata ciphertext length leak backup contents?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0d5f25e8-a02a-409a-aad0-e3007922a116",
+    "timestamp": "2025-11-21 18:57:01.211669",
+    "report_generated": false
+  },
+  {
+    "question": "Does send() leak guardian identity through metadata/timing?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c5c20afc-39c7-4bc0-9d20-b7e9090a4f38",
+    "timestamp": "2025-11-21 18:57:25.147760",
+    "report_generated": false
+  },
+  {
+    "question": "Does signature verification timing leak key information?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6c9123a5-e595-466a-9ab8-670034c9508a",
+    "timestamp": "2025-11-21 18:57:50.402929",
+    "report_generated": false
+  },
+  {
+    "question": "Can attackers infer account associations from comms structure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_08afd877-36e9-409e-8ab1-e6f974f9b6c5",
+    "timestamp": "2025-11-21 18:58:16.413848",
+    "report_generated": false
+  },
+  {
+    "question": "Does timestamp leak user behavior patterns?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cb24353c-07c6-4c73-8f57-c6a9c747ee74",
+    "timestamp": "2025-11-21 18:58:43.019311",
+    "report_generated": false
+  },
+  {
+    "question": "Do share hashes have enough entropy to prevent dictionary attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7da72ee5-5dd6-498a-921e-d0045a9d2ec1",
+    "timestamp": "2025-11-21 18:59:10.507186",
+    "report_generated": false
+  },
+  {
+    "question": "Can attacker map encrypted shares to guardian identities?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8b1db954-61dd-49ba-be06-4c359d658339",
+    "timestamp": "2025-11-21 18:59:40.078297",
+    "report_generated": false
+  },
+  {
+    "question": "Do recover() errors distinguish invalid/insufficient shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_99e17e99-8d13-46e0-a0b1-65b59a19a8d9",
+    "timestamp": "2025-11-21 19:00:09.868265",
+    "report_generated": false
+  },
+  {
+    "question": "Does AADBackup include unnecessary account identifiers?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a860c2b3-6759-43dc-82d2-35e3e42ae36b",
+    "timestamp": "2025-11-21 19:00:41.783172",
+    "report_generated": false
+  },
+  {
+    "question": "Does share transmission traffic analysis reveal participation patterns?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d6258a01-eb02-4b51-ab12-8ab96d7f27f4",
+    "timestamp": "2025-11-21 19:01:12.163047",
+    "report_generated": false
+  },
+  {
+    "question": "Is batch encryption deterministic enough to link backups?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cb6fd7f6-0470-4691-b874-6466c55fabbd",
+    "timestamp": "2025-11-21 19:01:41.465449",
+    "report_generated": false
+  },
+  {
+    "question": "Does ShareComm leak guardian identities through stored verification keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_efaea62a-ca98-4f28-9691-06c4cf0cbd98",
+    "timestamp": "2025-11-21 19:02:11.274903",
+    "report_generated": false
+  },
+  {
+    "question": "Can ciphertext patterns across backups leak share content?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_21296ea4-960c-4d7c-a2b7-1d1622f5fe17",
+    "timestamp": "2025-11-21 19:02:42.579022",
+    "report_generated": false
+  },
+  {
+    "question": "Does metadata decryption leak structure via timing?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_622b4156-5a3c-48f3-ab28-7de75eda0409",
+    "timestamp": "2025-11-21 19:03:11.428354",
+    "report_generated": false
+  },
+  {
+    "question": "Does use of EmptyInfo reduce privacy guarantees?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c3905547-24b0-455d-bb04-4a4ae59805bc",
+    "timestamp": "2025-11-21 19:03:40.660550",
+    "report_generated": false
   }
 ]
