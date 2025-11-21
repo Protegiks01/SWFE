@@ -5248,5 +5248,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f0194473-4459-4df1-bae2-316ce20b7c98",
     "timestamp": "2025-11-21 19:48:44.724786",
     "report_generated": false
+  },
+  {
+    "question": "Does the timestamp field in BackupMetadata serve a cryptographic purpose, or can it be manipulated without detection?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_18ce8949-197a-4891-b81c-7f6e0d50cdd2",
+    "timestamp": "2025-11-21 19:49:49.538103",
+    "report_generated": false
+  },
+  {
+    "question": "Can a malicious user create a backup with misleading name and desc fields to trick guardians into approving incorrect recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_51a011ae-66c5-49dd-81ec-9cc536ef2c8b",
+    "timestamp": "2025-11-21 19:50:02.822048",
+    "report_generated": false
+  },
+  {
+    "question": "Is the data field within BackupMetadata properly authenticated to prevent plaintext manipulation before encryption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_351d9b64-7914-45d5-b95d-b210c9149349",
+    "timestamp": "2025-11-21 19:50:16.998181",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker inject malicious data into BackupMetadata that causes deserialization vulnerabilities during recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8f2ff1ad-058b-4ede-b01e-779cefbb9b94",
+    "timestamp": "2025-11-21 19:50:30.668999",
+    "report_generated": false
+  },
+  {
+    "question": "Does the versioned_enum! macro for BackupCiphertext properly validate version tags to prevent downgrade attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2212ab0b-65c6-4a1f-8b74-14e6e00fed82",
+    "timestamp": "2025-11-21 19:50:45.133634",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker force the system to use an older, potentially vulnerable version of backup encryption by manipulating version fields?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6b97af54-6e4b-43dc-84f9-37f74cec76cd",
+    "timestamp": "2025-11-21 19:51:01.162537",
+    "report_generated": false
+  },
+  {
+    "question": "If a new version of BackupCiphertext is introduced, can old backups still be recovered securely?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b1942663-e87d-419d-b438-287744a28c38",
+    "timestamp": "2025-11-21 19:51:18.652557",
+    "report_generated": false
+  },
+  {
+    "question": "Does the version handling prevent type confusion between BackupCiphertext::V0 and future versions during deserialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_946223e9-0d6d-4a67-91cb-b64fb71496ea",
+    "timestamp": "2025-11-21 19:51:37.212331",
+    "report_generated": false
+  },
+  {
+    "question": "Can version mismatches between BackupCiphertext and GuardianShare cause recovery failures or security issues?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_82ff6a32-d847-402f-b7c9-e9a4768f7291",
+    "timestamp": "2025-11-21 19:51:57.492303",
+    "report_generated": false
+  },
+  {
+    "question": "Can a malicious guardian modify their encrypted share in GuardianShareV0::ct while keeping the signature valid?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_07c1093a-fd24-40d3-a7a3-6420e2a746c6",
+    "timestamp": "2025-11-21 19:52:18.998296",
+    "report_generated": false
+  },
+  {
+    "question": "Does the signature in GuardianShareV0 cover the entire ciphertext to prevent ciphertext malleability attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_90487148-946a-4c39-921a-c182f425a3c9",
+    "timestamp": "2025-11-21 19:52:41.585985",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker flip bits in the encrypted share to change the recovered secret without invalidating the signature?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_58f90124-ecb1-477d-83ad-ba69a52d9beb",
+    "timestamp": "2025-11-21 19:53:05.156778",
+    "report_generated": false
+  },
+  {
+    "question": "In DecryptedShareV0::send(), is the ciphertext commitment strong enough to prevent related-message attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_93b810f6-ee44-4a4f-a6e6-7e4a76f3cae4",
+    "timestamp": "2025-11-21 19:53:29.419135",
+    "report_generated": false
+  },
+  {
+    "question": "Can a guardian submit a modified share that passes verification but causes incorrect secret reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_aa90d914-08ee-46ec-b6bf-e48cf2bf55f1",
+    "timestamp": "2025-11-21 19:53:55.328921",
+    "report_generated": false
+  },
+  {
+    "question": "In BackupCiphertextV0::recover(), does the filtering of invalid shares prevent a denial-of-service where all shares are rejected?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b1a5d762-5a34-4ba7-b7a0-778d82f16d5e",
+    "timestamp": "2025-11-21 19:54:22.548738",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker cause the recovery to succeed with incorrect data by submitting carefully crafted invalid shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8b3adbc9-8a04-45d5-88e0-6b643ad2e5b5",
+    "timestamp": "2025-11-21 19:54:52.305016",
+    "report_generated": false
+  },
+  {
+    "question": "Does the recovery process validate that the reconstructed secret is within valid bounds before deriving encryption keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d6d442eb-f974-4143-a9c9-07a435a69cff",
+    "timestamp": "2025-11-21 19:55:23.336124",
+    "report_generated": false
+  },
+  {
+    "question": "Can a malicious off-chain node provide different subsets of shares to different users to cause recovery inconsistencies?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_46602c20-0230-4c72-9274-b40c62625936",
+    "timestamp": "2025-11-21 19:55:54.304890",
+    "report_generated": false
+  },
+  {
+    "question": "Is there a check that the recovered data deserializes to the expected type M before returning it?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1ccfd3af-116c-4e78-8b45-a9cecb45c47d",
+    "timestamp": "2025-11-21 19:56:25.965598",
+    "report_generated": false
+  },
+  {
+    "question": "Does the BTreeMap usage in recovery prevent duplicate share indices, or can the same share be submitted multiple times?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a34b70dd-6b89-4e9c-963e-b12d8e1fde74",
+    "timestamp": "2025-11-21 19:56:58.166519",
+    "report_generated": false
+  },
+  {
+    "question": "Can a guardian replay an old valid share from a previous backup to interfere with current recovery attempts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b9a2bf85-1bd8-4c5c-a38d-51937b8fcf84",
+    "timestamp": "2025-11-21 19:57:31.500390",
+    "report_generated": false
+  },
+  {
+    "question": "Is there a mechanism to prevent the same GuardianShare from being used across different backup recovery sessions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_93242dc1-d633-4189-8c40-7f8faed7428f",
+    "timestamp": "2025-11-21 19:58:05.792964",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker collect valid shares from multiple guardians and replay them out of order to cause recovery failures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3f05de45-2256-4390-8957-48eb8884e750",
+    "timestamp": "2025-11-21 19:58:40.557939",
+    "report_generated": false
+  },
+  {
+    "question": "Does the system track which shares have been used to prevent share reuse in subsequent recovery attempts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_da9563f5-4d2e-4dea-801a-b911fc55ef15",
+    "timestamp": "2025-11-21 19:59:16.604950",
+    "report_generated": false
+  },
+  {
+    "question": "In EncryptionContext, if the aad is not properly included in the encryption, can shares be transplanted to different backups?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2fd40838-c38e-4457-a615-da1ce0c153b9",
+    "timestamp": "2025-11-21 19:59:51.199126",
+    "report_generated": false
   }
 ]
