@@ -4348,5 +4348,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_357452a1-9000-4704-b665-f4107dd18b96",
     "timestamp": "2025-11-21 18:19:48.618202",
     "report_generated": false
+  },
+  {
+    "question": "Forward Compatibility Breaking: The test forward_compatibility_deserialize_old_variant_with_new_enum shows old variants deserializing with new enums. Can this be exploited to bypass new security checks by using old variant serializations? venum.rs:240-272",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_249528dd-f8d5-414f-b140-ce29b54b6bfe",
+    "timestamp": "2025-11-21 18:21:08.035936",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Integrity Checks: Serialized versioned enums lack built-in integrity checks (like checksums or MACs). Can an attacker modify serialized data undetected, especially for critical types like GuardianShare or BackupCiphertext? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_06fe557a-ba67-446c-b6a0-9ce40238fe00",
+    "timestamp": "2025-11-21 18:21:21.062243",
+    "report_generated": false
+  },
+  {
+    "question": "Format String Vulnerabilities: The expecting method returns a hardcoded string. Can this be exploited if the string is ever used in unsafe contexts? venum.rs:92-94",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_eeb984d2-3b14-4fbe-b7df-4de76e1ebbfa",
+    "timestamp": "2025-11-21 18:21:34.534640",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization of Large Enums: The macro allows #[allow(clippy::large_enum_variant)]. Can very large variants cause performance issues or memory exhaustion during serialization? venum.rs:53",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a6e8b865-013d-466b-992a-3837c9563b88",
+    "timestamp": "2025-11-21 18:21:49.631060",
+    "report_generated": false
+  },
+  {
+    "question": "Tuple Size Mismatch: The code expects exactly 2 tuple elements (tag and data). Can an attacker provide 1 or 3+ elements to trigger unexpected behavior? venum.rs:116",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f7162cb3-1397-4d80-bd81-590c2f2a60e4",
+    "timestamp": "2025-11-21 18:22:04.869531",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Panic Safety: If deserialization of the inner type panics, can this leave the system in an inconsistent state or leak partially deserialized data? venum.rs:96-113",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_37569bf1-e298-4db8-9fbe-ce0db4c9e7fa",
+    "timestamp": "2025-11-21 18:22:20.238769",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization of Cryptographic Material: When versioned enums contain sensitive keys or secrets, does serialization expose them to timing side-channels or memory leaks? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5c8638af-3ed3-4830-a0c9-6b44b40a10f0",
+    "timestamp": "2025-11-21 18:22:37.785537",
+    "report_generated": false
+  },
+  {
+    "question": "Zero-Sized Variant Data: Can variants with zero-sized types (like () or empty structs) cause serialization/deserialization bugs or be exploited to create malformed messages? venum.rs:66-77",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dec4f329-c838-4df2-b0d5-6e9f3a5470a3",
+    "timestamp": "2025-11-21 18:22:56.517989",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Stack Depth: For deeply nested versioned enums, can an attacker trigger stack overflow by providing extremely nested structures? venum.rs:96-113",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c6b326b4-6429-4bd3-90bd-d82e731d5a80",
+    "timestamp": "2025-11-21 18:23:17.436086",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization Determinism: Is the serialization output deterministic for the same input? Non-determinism could break cryptographic signatures or commitments that depend on serialized data. venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_77b71916-02a1-4868-8994-2c40e241a208",
+    "timestamp": "2025-11-21 18:23:38.834796",
+    "report_generated": false
+  },
+  {
+    "question": "Bincode Version Dependency: The code depends on a specific bincode version. Can future bincode updates introduce breaking changes that compromise the security of stored versioned enums? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_79f389bf-a474-4551-a353-0684ab45faf7",
+    "timestamp": "2025-11-21 18:24:02.876730",
+    "report_generated": false
+  },
+  {
+    "question": "JSON vs Bincode Confusion: The tests use both JSON and bincode serialization. Can an attacker exploit differences between these formats to create valid JSON that deserializes incorrectly via bincode? venum.rs:163-170",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_38b0bd6a-ceda-4273-be11-94d07ba3791d",
+    "timestamp": "2025-11-21 18:24:27.202948",
+    "report_generated": false
+  },
+  {
+    "question": "Circular Reference Handling: If variant data contains references back to the parent enum, can this cause infinite recursion during serialization? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_23a9fbe3-84a3-4c78-a989-66dee18f9975",
+    "timestamp": "2025-11-21 18:24:52.074911",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization Interoperability: When versioned enums are transmitted between Rust nodes and Partisia smart contracts, can serialization format differences cause authentication or validation failures? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2a379487-5728-4284-8201-3a4d40941c4a",
+    "timestamp": "2025-11-21 18:25:18.158017",
+    "report_generated": false
+  },
+  {
+    "question": "Enum Representation Assumption: The macro assumes #[repr(u8)] doesn't affect serialization, only memory layout. Can this assumption break if Rust's enum representation changes? venum.rs:51-59",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_885a4b90-e3c3-4e85-a60c-4f6f094a0431",
+    "timestamp": "2025-11-21 18:25:45.602789",
+    "report_generated": false
+  },
+  {
+    "question": "Type Confusion via Serde: Since the macro implements Serialize/Deserialize, can an attacker exploit serde's type system to deserialize versioned enums as incompatible types? venum.rs:80-118",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7f62d890-922e-4fd1-91a3-37a978aa8804",
+    "timestamp": "2025-11-21 18:26:13.785060",
+    "report_generated": false
+  },
+  {
+    "question": "Trailing Data Exploitation: After deserializing the tuple, is trailing data validated or ignored? Can an attacker append malicious data that's processed by subsequent operations? venum.rs:116-117",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1354a6ee-cbb7-4db8-8d1e-3e019ea74ee3",
+    "timestamp": "2025-11-21 18:26:43.165982",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization of Untrusted Input: The visit_seq method deserializes arbitrary input. Can an attacker provide malicious sequences that exploit vulnerabilities in the inner type's deserializer? venum.rs:96-113",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fc0dc909-d7c3-4064-9509-2969c34358e3",
+    "timestamp": "2025-11-21 18:27:14.588031",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Serialization Bounds Checks: When serializing variant data, are there checks to ensure the data doesn't exceed reasonable size limits, preventing resource exhaustion attacks? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e59b2ab1-5df8-4610-819d-39cd7234804c",
+    "timestamp": "2025-11-21 18:27:46.829947",
+    "report_generated": false
+  },
+  {
+    "question": "Tuple Element Ordering: The serialization order is hardcoded as tag-first. If bincode's tuple ordering changes in future versions, can this break deserialization of stored data? venum.rs:70-73",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_51cc1ce7-d724-42ae-a372-571f72aa4a69",
+    "timestamp": "2025-11-21 18:28:19.187422",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization Padding Bits: Does bincode introduce padding between the tag byte and variant data? Can an attacker exploit uninitialized padding to leak sensitive information? venum.rs:70-73",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_24d06441-1815-4b24-85e6-649a234d815d",
+    "timestamp": "2025-11-21 18:28:49.751371",
+    "report_generated": false
+  },
+  {
+    "question": "Variable-Length Encoding Attack: For enum variants containing Vec<u8> or String, can an attacker inject enormous length values to cause denial-of-service or memory exhaustion during deserialization? venum.rs:96-113",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_655d115a-5c13-42d7-b155-d52c66f0b813",
+    "timestamp": "2025-11-21 18:29:21.540325",
+    "report_generated": false
+  },
+  {
+    "question": "Bincode Configuration Mismatch: The macro uses default bincode serialization, but encode.rs defines a custom BINCODE_CONFIG. Can this mismatch cause deserialization failures or security vulnerabilities? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ed451c31-aa2f-4927-a597-521c856c76c7",
+    "timestamp": "2025-11-21 18:29:55.326536",
+    "report_generated": false
+  },
+  {
+    "question": "Nested Versioned Enum Confusion: When versioned enums contain other versioned enums (e.g., AccountState contains Ciphertext), can tag nesting create ambiguity where inner tags are mistaken for outer tags? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c51b02bd-d182-46e2-a2d6-c49f5f2cb576",
+    "timestamp": "2025-11-21 18:30:28.252829",
+    "report_generated": false
+  },
+  {
+    "question": "Length Prefix Manipulation: Bincode includes length prefixes for variable-length types. Can an attacker manipulate these to cause buffer overflows or out-of-bounds reads during deserialization of large variant data? venum.rs:80-117",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c66ca77d-3732-4db8-8589-d533f48c7cfa",
+    "timestamp": "2025-11-21 18:31:00.472043",
+    "report_generated": false
   }
 ]
