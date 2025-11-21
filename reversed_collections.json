@@ -2548,5 +2548,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_46e67977-6c00-49b4-b5b8-94853678d451",
     "timestamp": "2025-11-21 16:05:59.991037",
     "report_generated": false
+  },
+  {
+    "question": "Concurrent Batch Decryption: If multiple guardians call decrypt_batch() concurrently on the same BatchCiphertext mod.rs:96-124 , could race conditions cause them to receive inconsistent results?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2474d4a7-641b-4b68-8446-60ca1b6d2251",
+    "timestamp": "2025-11-21 16:07:12.649154",
+    "report_generated": false
+  },
+  {
+    "question": "Batch Signature Forgery: If the signature scheme in sig::SigningKey::sign() mod.rs:180 is vulnerable to forgery, could an attacker create arbitrary batch ciphertexts that pass verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bfb0ee47-e192-4d29-98e0-e19a0c5aa6a6",
+    "timestamp": "2025-11-21 16:07:25.991359",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Batch Freshness: Does the BatchCiphertextV0 include a timestamp or nonce to prevent replaying old batches mod.rs:33-36 ? Could an attacker replay a batch from a previous recovery session?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8ab8e5d1-f695-4a4d-9790-e6fd30f41ae9",
+    "timestamp": "2025-11-21 16:07:39.495331",
+    "report_generated": false
+  },
+  {
+    "question": "Batch Index Out of Bounds: If decrypt_batch() returns an index i mod.rs:116 that is out of bounds for the original guardian list, could this cause the application to assign shares to the wrong guardian?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ddab55fa-55c1-45f4-96fd-a0b3c7973474",
+    "timestamp": "2025-11-21 16:07:53.532507",
+    "report_generated": false
+  },
+  {
+    "question": "Verification Key Type Confusion: If the sig::VerificationKey type mod.rs:34 is substituted with a compatible but insecure type, could batch signatures verify under the wrong security assumptions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7d73fec2-dbce-4163-a0c3-c396eee35ef2",
+    "timestamp": "2025-11-21 16:08:08.298516",
+    "report_generated": false
+  },
+  {
+    "question": "Batch Verification Before Context Binding: In decrypt_batch() mod.rs:104-114 , the signature is verified before attempting decryption. Could an attacker craft a batch with a valid signature but corrupted contexts, causing verification to pass but decryption to fail with confusing errors?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_09420dcf-68ea-4827-8dbd-f5043344dd01",
+    "timestamp": "2025-11-21 16:08:24.647864",
+    "report_generated": false
+  },
+  {
+    "question": "Signing Key Leakage: After batch_encrypt() generates the signing key sk mod.rs:160 , is it zeroized from memory, or could an attacker with node access recover it and forge additional batch signatures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9fcb7c0b-88c6-4716-a0e5-efe79712dafe",
+    "timestamp": "2025-11-21 16:08:42.138176",
+    "report_generated": false
+  },
+  {
+    "question": "Iterator Exhaustion in Batch Encryption: In batch_encrypt() mod.rs:165-176 , if the iterator produces an error or panics mid-iteration, could partial batch ciphertexts be signed and stored, violating all-or-nothing guarantees?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c870113f-8625-437c-9ba2-5bf4b8f2268c",
+    "timestamp": "2025-11-21 16:09:01.890121",
+    "report_generated": false
+  },
+  {
+    "question": "Batch Decryption Without Context: If decrypt_batch() is called with a null or generic context mod.rs:99 , would the individual ciphertexts still be bound to BatchCtx, or could the binding be bypassed?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8178ef84-fcbb-496d-b735-333e218b33c0",
+    "timestamp": "2025-11-21 16:09:22.250518",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Over Partial Data: Does the signature in BatchCiphertextV0 mod.rs:41 cover both vk and cts, or only one? Could an attacker modify the uncovered field without invalidating the signature?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5f7f4931-a11c-453f-b3e4-788256bc1f33",
+    "timestamp": "2025-11-21 16:09:44.826294",
+    "report_generated": false
+  },
+  {
+    "question": "Early Termination on Decryption Success: In decrypt_batch() mod.rs:108-118 , the function returns immediately upon the first successful decryption. Could this timing leak reveal the guardian's position in the batch to a network observer?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6f34af38-cb55-4b05-a1db-e58b396b56af",
+    "timestamp": "2025-11-21 16:10:07.740533",
+    "report_generated": false
+  },
+  {
+    "question": "Batch Nesting Attack: Could an attacker nest BatchCiphertext structures (encrypting a batch as a message within another batch), causing infinite recursion or stack overflow during decrypt_batch()?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f9240b8f-6ab7-4c99-9e81-6cf0aab9498a",
+    "timestamp": "2025-11-21 16:10:32.532693",
+    "report_generated": false
+  },
+  {
+    "question": "Verification Key Collision: If two different signing keys produce the same verification key mod.rs:161 (due to weak curve parameters), could batches signed with different keys become interchangeable, breaking context binding?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ad82cf09-3a7a-45be-85a1-49490c0ee328",
+    "timestamp": "2025-11-21 16:10:58.065791",
+    "report_generated": false
+  },
+  {
+    "question": "Batch Size Manipulation: Could an attacker inflate the cts vector with dummy ciphertexts mod.rs:165-176 , causing guardians' decryption attempts to exhaust computational resources while still verifying the signature?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ccc0adbc-a30b-44ad-813f-2b6a9d660aa7",
+    "timestamp": "2025-11-21 16:11:24.019972",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Verification Error Handling: If ct.inn.vk.verify() mod.rs:104 throws an exception instead of returning an error, could the batch decryption bypass verification and proceed with corrupted ciphertexts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f2de2eb7-702e-453d-96be-8e2c736d9b2c",
+    "timestamp": "2025-11-21 16:11:52.167119",
+    "report_generated": false
+  },
+  {
+    "question": "Batch Context Independence: In batch_encrypt() mod.rs:165-176 , each ciphertext is encrypted independently with the same context bound to vk. Could encrypting the same message multiple times with different keys leak information about the message?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3e20a4b9-199f-4b93-9c3c-38cc41ae9afd",
+    "timestamp": "2025-11-21 16:12:21.257930",
+    "report_generated": false
+  },
+  {
+    "question": "Missing All-or-Nothing Enforcement: The comments claim batch encryption provides 'all ciphertexts decrypt or all fail' guarantees mod.rs:146-148. But if signature verification succeeds, would individual ciphertext corruptions still allow partial decryption, breaking the guarantee?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4af55955-67bc-4b94-b834-f583e140a543",
+    "timestamp": "2025-11-21 16:12:50.955836",
+    "report_generated": false
+  },
+  {
+    "question": "Batch Verification Order Dependency: In decrypt_batch() mod.rs:108-118 , the loop tries each ciphertext sequentially until one succeeds. Could this timing difference leak which guardian is decrypting, violating anonymity?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ad7de10a-e874-43fb-8935-92da74a37634",
+    "timestamp": "2025-11-21 16:13:22.008057",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Malleability: If the signature scheme used in BatchCiphertextV0 mod.rs:39-42 is malleable, could an attacker modify the signature such that it still verifies but corresponds to different batch content?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dd9d335f-1c47-4a7b-b0d2-2aa5fe1c42ba",
+    "timestamp": "2025-11-21 16:13:54.939615",
+    "report_generated": false
+  },
+  {
+    "question": "Batch Ciphertext Duplication: Could an attacker duplicate entries in the cts vector mod.rs:165-176 , causing multiple guardians to receive identical shares and violating threshold security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fdd404d3-0a45-477a-a540-9cad466937c4",
+    "timestamp": "2025-11-21 16:14:27.967581",
+    "report_generated": false
+  },
+  {
+    "question": "Verification Key Substitution Before Signing: In batch_encrypt() mod.rs:161 , if an attacker intercepts execution after vk generation but before signing, could they substitute their own verification key, making all ciphertexts decryptable under the wrong context?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_933487ed-e76b-4cbd-8107-d24287b8262f",
+    "timestamp": "2025-11-21 16:15:01.490691",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Key Reuse Across Batches: If the signing key in batch_encrypt() mod.rs:160 is reused across multiple batches (due to weak RNG), could an attacker link different batches to the same recovery session, leaking privacy?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0fbdbdf0-50fd-4987-b02d-250d5454f5aa",
+    "timestamp": "2025-11-21 16:15:35.499740",
+    "report_generated": false
+  },
+  {
+    "question": "Empty Batch Ciphertext: If batch_encrypt() is called with an empty iterator mod.rs:156 , creating a BatchCiphertext with no ciphertexts, would decrypt_batch() handle this gracefully or cause guardians to believe recovery is complete when no shares exist?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_69f4dafc-542c-4c98-96b3-116d9f658ff3",
+    "timestamp": "2025-11-21 16:16:09.518573",
+    "report_generated": false
+  },
+  {
+    "question": "Batch Index Spoofing: The decrypt_batch() function returns (M, usize) where usize is the index mod.rs:100 . Could an attacker manipulate the ciphertext order such that guardians receive the wrong index, causing them to believe they hold a different guardian position?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2857520f-9adf-4657-bf03-bcfe78b40176",
+    "timestamp": "2025-11-21 16:16:44.640269",
+    "report_generated": false
+  },
+  {
+    "question": "Selective Ciphertext Removal: In decrypt_batch() mod.rs:108-118 , if an attacker removes some ciphertexts from ct.inn.cts, would the signature verification catch this, or could the batch silently decrypt with fewer guardians?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_03a155bf-33f4-4ee6-877c-db309978b2fd",
+    "timestamp": "2025-11-21 16:17:17.229627",
+    "report_generated": false
   }
 ]
