@@ -4198,5 +4198,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ad8e435b-00ca-4967-bf96-160882a655d5",
     "timestamp": "2025-11-21 18:08:07.942439",
     "report_generated": false
+  },
+  {
+    "question": "Key Type Confusion: EncryptionKey, DecryptionKey, SigningKey, and VerificationKey all use versioned_enum!. Can an attacker substitute one key type for another (e.g., sign with an encryption key) to bypass authentication? venum.rs:28-119",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_715b4e6c-f22a-4b51-9922-6f71ac041d1e",
+    "timestamp": "2025-11-21 18:09:16.641634",
+    "report_generated": false
+  },
+  {
+    "question": "Version Aliasing: Can two different enum types use the same internal versioning scheme, causing confusion or allowing one to be deserialized as the other? venum.rs:28-119",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9df6cfce-b537-4ead-91b6-ffa23f56c388",
+    "timestamp": "2025-11-21 18:09:30.436462",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Module Version Dependencies: If AccountState::V1 requires BackupCiphertext::V1, how is this enforced? Can version mismatches cause security issues? venum.rs:28-119",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3c95b192-cb00-43e4-a543-9c79dd0de271",
+    "timestamp": "2025-11-21 18:09:43.749960",
+    "report_generated": false
+  },
+  {
+    "question": "Version Metadata Missing: No metadata about version release dates, security fixes, or breaking changes is encoded. Can this make incident response difficult? venum.rs:28-59",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d337eca8-a8ef-44eb-855a-65d92293fb39",
+    "timestamp": "2025-11-21 18:09:57.989655",
+    "report_generated": false
+  },
+  {
+    "question": "Version Pinning Attack: Can an attacker pin a user's data to an old version, preventing them from benefiting from security improvements in newer versions? venum.rs:240-272",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5fbf85fa-631b-4478-9d9e-ae8495a7c831",
+    "timestamp": "2025-11-21 18:10:13.601055",
+    "report_generated": false
+  },
+  {
+    "question": "Version Information Leakage: Error messages when deserializing invalid versions could leak information about which versions the system supports, aiding attackers. venum.rs:111",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_561fbe57-ab06-4af8-a240-3800292dba8e",
+    "timestamp": "2025-11-21 18:10:30.255128",
+    "report_generated": false
+  },
+  {
+    "question": "Version Compatibility Testing Gaps: Tests only cover forward compatibility for adding new variants, not for modifying existing ones. Can untested migration paths introduce vulnerabilities? venum.rs:240-324",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6a393492-f94f-4fc7-945c-99738fc870b4",
+    "timestamp": "2025-11-21 18:10:47.739369",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Version Monotonicity Enforcement: Nothing prevents adding a V0 variant after V1 already exists. Can this cause confusion or security issues? venum.rs:28-59",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fa1f1d65-6037-46f5-bc9a-552cf1637a13",
+    "timestamp": "2025-11-21 18:11:07.110367",
+    "report_generated": false
+  },
+  {
+    "question": "Version-Specific Vulnerabilities: If V0 of an enum has a vulnerability fixed in V1, can an attacker force use of V0 to exploit it? venum.rs:103-112",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_01837a0a-5d79-4461-b84a-44f7e689afcd",
+    "timestamp": "2025-11-21 18:11:27.312306",
+    "report_generated": false
+  },
+  {
+    "question": "Deprecated Version Persistence: Old versions in storage (e.g., BackupCiphertext::V0) never expire. Can this allow attackers to exploit deprecated cryptographic schemes indefinitely? venum.rs:240-272",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1379a3db-edbe-41a3-bd10-b3d9cae26f1b",
+    "timestamp": "2025-11-21 18:11:49.527063",
+    "report_generated": false
+  },
+  {
+    "question": "Version Upgrade Race Conditions: During a version upgrade, can an attacker exploit race conditions where some components use old versions and others use new versions? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8f9dc405-e132-4723-a2af-b32fe5afc6a4",
+    "timestamp": "2025-11-21 18:12:13.268474",
+    "report_generated": false
+  },
+  {
+    "question": "Version Compatibility Matrix: With multiple versioned enums (accounts, backups, associations), can incompatible version combinations cause security vulnerabilities? venum.rs:28-119",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_36b4e4c5-0886-4d2d-959d-f7ce941dae2f",
+    "timestamp": "2025-11-21 18:12:40.438210",
+    "report_generated": false
+  },
+  {
+    "question": "Emergency Version Revocation: If a version is found vulnerable, there's no mechanism to revoke it. Can attackers continue exploiting old versions indefinitely? venum.rs:28-119",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_98edd959-c67d-46ff-ab88-07a3a117766b",
+    "timestamp": "2025-11-21 18:13:09.756469",
+    "report_generated": false
+  },
+  {
+    "question": "Version Semantic Confusion: Nothing prevents using tags non-sequentially (e.g., V0=10, V1=5). Can this cause confusion about which version is 'newer' or 'more secure'? venum.rs:28-59",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e5cf2168-8619-4cef-96e0-a19e54121660",
+    "timestamp": "2025-11-21 18:13:39.670915",
+    "report_generated": false
+  },
+  {
+    "question": "Version Exhaustion: With 128 possible versions, can the protocol run out of version space for critical enums like AccountState or BackupCiphertext? venum.rs:38",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c52a7881-bfd4-4318-b7d5-a793d56941f9",
+    "timestamp": "2025-11-21 18:14:10.729411",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Contract Version Mismatch: When versioned enums are stored on-chain and accessed by different contracts with different version support, can this cause state inconsistencies? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e88b8a05-88ae-4a4d-85eb-21db77e3666b",
+    "timestamp": "2025-11-21 18:14:43.022484",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Version Documentation: Tags are just numbers with no semantic versioning information. Can this cause confusion about which version introduced security fixes? venum.rs:28-59",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_801613fd-345c-4a39-a285-11a2e435430a",
+    "timestamp": "2025-11-21 18:15:16.273167",
+    "report_generated": false
+  },
+  {
+    "question": "Type Evolution Without Tag Change: Can a developer change a variant's inner type without changing its tag, causing silent deserialization failures or data corruption? venum.rs:28-59",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_37ea63eb-6e38-4ff0-963c-34d5eac449c7",
+    "timestamp": "2025-11-21 18:15:49.669216",
+    "report_generated": false
+  },
+  {
+    "question": "Version Detection Bypass: There's no mechanism to detect which version an enum is before deserializing. Can this cause security checks to be applied to the wrong version? venum.rs:80-117",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8926b9e7-c1aa-4aa2-9446-6674b5503ddf",
+    "timestamp": "2025-11-21 18:16:23.709218",
+    "report_generated": false
+  },
+  {
+    "question": "Partial Version Support: If different nodes support different version ranges, can this cause consensus failures or allow attackers to exploit version-specific vulnerabilities? venum.rs:28-119",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c25bf6e2-935b-49dc-bd5f-8a61c3b2be28",
+    "timestamp": "2025-11-21 18:16:59.032092",
+    "report_generated": false
+  },
+  {
+    "question": "Version Rollback Attack: Can an attacker force the system to roll back to an older version by providing old-format data, potentially reintroducing fixed vulnerabilities? venum.rs:240-272",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3438ae04-c565-417c-ab35-a319d0c81021",
+    "timestamp": "2025-11-21 18:17:34.962553",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Migration Path: There's no built-in mechanism to migrate data from old to new versions. Can this cause permanent data loss if old variants become deprecated? venum.rs:240-272",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dd045f97-8941-4a13-afba-e87a4ab2f62f",
+    "timestamp": "2025-11-21 18:18:08.233360",
+    "report_generated": false
+  },
+  {
+    "question": "Backward Incompatible Changes: If a variant's inner type changes incompatibly between versions (e.g., V0(OldType) → V0(NewType)), can this cause silent data corruption during deserialization? venum.rs:28-59",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7a993df6-ad9b-4184-868a-995c794501f1",
+    "timestamp": "2025-11-21 18:18:41.812436",
+    "report_generated": false
+  },
+  {
+    "question": "Version Skipping: Can an attacker skip intermediate versions (e.g., serialize as V0, deserialize expecting V2) to bypass migration logic or security improvements? venum.rs:240-272",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_25647fc8-bce6-48ef-970a-a129e7001173",
+    "timestamp": "2025-11-21 18:19:15.026220",
+    "report_generated": false
+  },
+  {
+    "question": "Removed Variant Attack: Test shows removed variants cause deserialization errors. Can an attacker force errors by presenting old variants, potentially locking users out of their accounts if old AccountState versions become unreadable? venum.rs:316-323",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_357452a1-9000-4704-b665-f4107dd18b96",
+    "timestamp": "2025-11-21 18:19:48.618202",
+    "report_generated": false
   }
 ]
