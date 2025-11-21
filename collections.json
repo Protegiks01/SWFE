@@ -1348,5 +1348,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b05f44a1-d99b-41e1-8e6a-7b6fc6ec048b",
     "timestamp": "2025-11-21 14:44:35.727205",
     "report_generated": false
+  },
+  {
+    "question": "Rate Limiting Bypass: While DoS is out of scope README.md:19-25, can unlimited authentication-free queries enable an attacker to build a complete database of all accounts for future attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f0fb7ca2-7bde-48b6-9228-8fa13f0b342c",
+    "timestamp": "2025-11-21 14:45:42.144377",
+    "report_generated": false
+  },
+  {
+    "question": "Concurrent Request Handling: If multiple requests arrive for the same account_id, can race conditions in get_account lib.rs:34-38 expose inconsistent states during recovery operations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f296b5ba-f326-4fe9-9017-a98bf8ffa43c",
+    "timestamp": "2025-11-21 14:45:55.231412",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Collusion Preparation: Can malicious guardians (below threshold) use this endpoint to coordinate attacks by sharing account states and identifying vulnerable recovery configurations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7283b72d-ebc5-4822-9d39-1de1bdf37532",
+    "timestamp": "2025-11-21 14:46:08.730823",
+    "report_generated": false
+  },
+  {
+    "question": "MSK Ciphertext Exposure: The AccountState includes enc_msk in RecoveryStateV0 v0.rs:100-106. Can an attacker collect these to attempt cryptanalysis if a future vulnerability in symmetric encryption is discovered?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8346ef57-0816-4cc6-bf19-9fde0e460564",
+    "timestamp": "2025-11-21 14:46:22.795829",
+    "report_generated": false
+  },
+  {
+    "question": "Backup ID Enumeration: The returned state contains BackupCiphertext IDs v0.rs:236-237. Can an attacker use this to track which accounts share guardians, reducing anonymity?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_181dc425-f1c7-4137-864c-710ed047e809",
+    "timestamp": "2025-11-21 14:46:37.431963",
+    "report_generated": false
+  },
+  {
+    "question": "Association Count Leakage: The number of AssociationsV0 entries v0.rs:95-98 reveals how many email addresses are linked to an account. Can this metadata be used to deanonymize high-profile users?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7c2f8e4c-4ee7-4efc-940a-604cb31959d2",
+    "timestamp": "2025-11-21 14:46:53.352961",
+    "report_generated": false
+  },
+  {
+    "question": "Version Number Exposure: The cnt field v0.rs:230-231 reveals account activity levels. Can this be used to identify inactive accounts for targeted takeover attempts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_82f2bed2-fc3c-4658-89bb-e2811689662c",
+    "timestamp": "2025-11-21 14:47:10.928378",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery Status Leakage: The presence of pke in RecoveryStateV0 v0.rs:102 indicates if recovery is in progress. Can an attacker use this to identify vulnerable accounts mid-recovery and launch competing recovery requests?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bfc8e944-d8b1-429d-a522-bca42f1c1d8a",
+    "timestamp": "2025-11-21 14:47:30.442859",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Set Discovery: By analyzing backup ciphertexts v0.rs:236-237, can an attacker deduce the guardian set size and threshold, enabling targeted social engineering attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_77c2400c-d5b6-4d73-88fd-19b9f56498aa",
+    "timestamp": "2025-11-21 14:47:51.054524",
+    "report_generated": false
+  },
+  {
+    "question": "Social Graph Reconstruction: Can an attacker query multiple accounts and correlate backup guardians to reconstruct users' social networks, violating privacy even under honest off-chain nodes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c1ff3170-b1a9-4b8c-bb08-cd98d1738f1d",
+    "timestamp": "2025-11-21 14:48:13.087739",
+    "report_generated": false
+  },
+  {
+    "question": "Email-Account Linking: If an attacker compromises a minority of off-chain nodes README.md:191-196, can they use account states from this endpoint to correlate VDRF evaluations with specific accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d73c4081-dd1c-4739-855a-8077daff5391",
+    "timestamp": "2025-11-21 14:48:35.512770",
+    "report_generated": false
+  },
+  {
+    "question": "Old Key Retention Analysis: The AccountState doesn't directly expose old_pke and old_msk but their existence affects backup decryption. Can timing analysis of backup reconstruction requests reveal key rotation patterns?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_612311c9-3187-4e28-a725-6c8c3f691849",
+    "timestamp": "2025-11-21 14:48:59.446805",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Discovery: Can an attacker submit recovery requests while monitoring this endpoint to infer the exact threshold t for specific accounts, enabling minimum-effort guardian bribery attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5024eb2b-1ea6-4ac8-9204-fb26128de73f",
+    "timestamp": "2025-11-21 14:49:24.835020",
+    "report_generated": false
+  },
+  {
+    "question": "Nonce Reuse Detection: Without request authentication, can an attacker detect if the contract reuses any nonces in cryptographic operations by repeatedly querying states before and after operations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f9eb4d55-eb1e-454b-bad2-f3d23cd16963",
+    "timestamp": "2025-11-21 14:49:51.160762",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Expiration Exploitation: The endpoint doesn't verify timestamp validity. Can an attacker use stale states to bypass recent revocations of email certificates or associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1b535a24-7fde-4543-8e1e-92437a2c627e",
+    "timestamp": "2025-11-21 14:50:18.943368",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Origin Request Forgery: Without CORS validation or authentication, can a malicious website trick a user's browser into making requests to this endpoint, potentially exposing account data through error messages?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0f0634a4-544c-4595-af7c-0518ef2cc33f",
+    "timestamp": "2025-11-21 14:50:47.893721",
+    "report_generated": false
+  },
+  {
+    "question": "Account Existence Oracle: The 404 error get.rs:27 vs. 200 response creates a perfect oracle for account enumeration. Can this be used to build a rainbow table of AccountIds to email hashes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2c81de2e-4e6e-4dce-90d6-2bbdaff8d2e7",
+    "timestamp": "2025-11-21 14:51:17.759782",
+    "report_generated": false
+  },
+  {
+    "question": "Malicious Node Impersonation: Can a corrupted minority off-chain node use this endpoint to retrieve account states and craft convincing phishing attacks by displaying accurate (but stolen) recovery configuration details to users?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_afdca10d-4f65-4740-a620-7092671f6465",
+    "timestamp": "2025-11-21 14:51:48.805467",
+    "report_generated": false
+  },
+  {
+    "question": "Email-Account Anonymity Violation: The AccountState returned get.rs:25-27 can be correlated with VDRF outputs. Even with no corrupted off-chain nodes README.md:187-189, can a network adversary deanonymize users by comparing on-chain states with VDRF evaluation requests?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_02771959-8e87-49ad-84a7-db937d578f14",
+    "timestamp": "2025-11-21 14:52:19.846815",
+    "report_generated": false
+  },
+  {
+    "question": "On-Chain Metadata Leakage: Every response includes serialized AccountState get.rs:29-34. Can the size of the serialized response reveal the number of backups, associations, or recovery configurations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1fc40b1e-4100-423a-ad1a-eb2bce63802f",
+    "timestamp": "2025-11-21 14:52:51.389850",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Opening Attack: The BackupCiphertext includes Pedersen commitments mod.rs:9-11. Can an attacker collect states from this endpoint and use commitment values to identify shared guardians across accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1d11fc3d-8e32-4da3-940f-02a77473089d",
+    "timestamp": "2025-11-21 14:53:23.290783",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Public Key Correlation: The contract stores a global VDRF public key lib.rs:27-28. Can an attacker use account states to reverse-engineer which VDRF evaluations correspond to which accounts, breaking email privacy?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5e72fdb2-fe1b-4cc5-b159-3ec08feadedd",
+    "timestamp": "2025-11-21 14:53:54.561929",
+    "report_generated": false
+  },
+  {
+    "question": "Social Recovery Graph Exposure: The social backup ciphertext in RecoveryStateV0 v0.rs:104 reveals the recovery structure. Can this be used to map trust relationships between users?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_277ff5a6-722c-4b22-a1ac-597175dfbe40",
+    "timestamp": "2025-11-21 14:54:26.895951",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Identity Inference: Although guardian AccountIds aren't directly exposed, can an attacker use backup ciphertext metadata to infer guardians?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b940de18-e99f-4ff5-aac9-1eab5a09ddeb",
+    "timestamp": "2025-11-21 14:54:58.547409",
+    "report_generated": false
+  },
+  {
+    "question": "Email Certificate Fingerprinting: If the endpoint returns multiple associations, can timing analysis reveal Swafe-io certificate issuance patterns?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_62c66a62-08c8-4923-8f85-cbb683ffe893",
+    "timestamp": "2025-11-21 14:55:30.337052",
+    "report_generated": false
   }
 ]
