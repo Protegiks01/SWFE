@@ -2098,5 +2098,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_334e0db0-6c0d-405f-adf6-3e778dcd26a7",
     "timestamp": "2025-11-21 15:53:04.030242",
     "report_generated": false
+  },
+  {
+    "question": "Swafe-io Unilateral Action Prevention: State exposure reduces required collusion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b0a8b2f7-b999-4458-9c52-1b10d10f8894",
+    "timestamp": "2025-11-21 15:54:08.058946",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate-Contingent Email Access: State helps bypass certificate verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4a57862d-4d19-48c0-929f-c6ac8a36634d",
+    "timestamp": "2025-11-21 15:54:21.358314",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Share Security: State exposure helps reverse-engineer VDRF shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0c9b6e72-04ae-4cfa-be3c-545d6650fe71",
+    "timestamp": "2025-11-21 15:54:34.524239",
+    "report_generated": false
+  },
+  {
+    "question": "Off-Chain State Leakage Prevention: On-chain + leaked off-chain breaks anonymity?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_28c1107e-3478-4d3c-bf34-ceb09f07a164",
+    "timestamp": "2025-11-21 15:54:48.197345",
+    "report_generated": false
+  },
+  {
+    "question": "System Availability Under Minority Corruption: State monitoring targets users for DoS?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_83d95551-942b-4c3a-83e5-0f4376920dff",
+    "timestamp": "2025-11-21 15:55:02.593706",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Set Selection Privacy: State exposes guardian selection patterns?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_26f2a0f5-6abb-45fe-ba97-b5e36046777b",
+    "timestamp": "2025-11-21 15:55:18.095900",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Inference Security: Backup ciphertexts leak threshold t?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a3611cae-ecf7-4af4-bc10-c5dca2266b23",
+    "timestamp": "2025-11-21 15:55:36.933449",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Account Guardian Correlation: Query multiple accounts to detect shared guardians?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_157a77f8-b1b9-486f-b962-dc25d29e931f",
+    "timestamp": "2025-11-21 15:55:57.410442",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery Window Exploitation: rec.pke exposure signals attack window?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7260e740-4889-4762-bdab-45d232ca6410",
+    "timestamp": "2025-11-21 15:56:19.166488",
+    "report_generated": false
+  },
+  {
+    "question": "Old Key Compromise Amplification: Old state history enables retroactive decryption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1615bdef-11a8-4604-a867-d51d109cc24b",
+    "timestamp": "2025-11-21 15:56:41.856869",
+    "report_generated": false
+  },
+  {
+    "question": "Association Revocation Timing: Delayed updates leak revoked associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a841d4aa-78e1-4d1b-9887-b394e7a321c8",
+    "timestamp": "2025-11-21 15:57:06.099580",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Approval Tracking: Network timing reveals approval patterns?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f8a84086-fa9d-4def-a446-ed772f076502",
+    "timestamp": "2025-11-21 15:57:30.688685",
+    "report_generated": false
+  },
+  {
+    "question": "Combined Attack Surface: State exposure + VDRF + guardian flows create emergent vulnerabilities?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0bf7a7c8-8bec-427c-9958-93f6ae7424f5",
+    "timestamp": "2025-11-21 15:57:56.675641",
+    "report_generated": false
+  },
+  {
+    "question": "Clock Manipulation in EmailCert::issue(): Can a compromised execution environment manipulate system time to create certificates with arbitrary timestamps, allowing an attacker to extend certificate validity beyond the 5-minute window?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_31d40afd-5f5d-49f6-8ee6-d87f73b9b167",
+    "timestamp": "2025-11-21 15:58:23.617326",
+    "report_generated": false
+  },
+  {
+    "question": "Time Backwards Panic: Could the panic 'Time went backwards' be triggered on execution environments with misconfigured clocks to cause denial of service during association workflows?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6f38e264-8a58-481e-bc58-34c8b0821887",
+    "timestamp": "2025-11-21 15:58:52.080431",
+    "report_generated": false
+  },
+  {
+    "question": "Email String Validation: Could malformed emails cause issues downstream in VDRF evaluation or storage lookups?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f904798d-c52d-4080-91e6-766fc6560b8c",
+    "timestamp": "2025-11-21 15:59:22.249765",
+    "report_generated": false
+  },
+  {
+    "question": "User Public Key Cloning: Could an attacker provide a maliciously crafted verification key that behaves differently when cloned versus used directly?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_07481edd-1c0b-4b70-b946-99f94fd64966",
+    "timestamp": "2025-11-21 15:59:52.392871",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Timestamp Precision: Could the lack of sub-second precision allow replay attacks within the same second?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4fd2b211-0865-4aa5-b266-16f98e97837b",
+    "timestamp": "2025-11-21 16:00:24.209563",
+    "report_generated": false
+  },
+  {
+    "question": "EmailCertificateMessage Domain Separator: Could collision with other domain separators allow signature substitution attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ae60180d-1bc4-48de-a001-851a63385a25",
+    "timestamp": "2025-11-21 16:00:56.794526",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Cloning Security: Could cloned certificates be modified while retaining the original signature?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d65dcef3-790e-4a45-b385-a8a903fc0f17",
+    "timestamp": "2025-11-21 16:01:30.670958",
+    "report_generated": false
+  },
+  {
+    "question": "Public Fields Exposure: Could direct field access bypass intended validation logic?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_41d0f935-95d4-4d6a-b571-42d74c2b1d22",
+    "timestamp": "2025-11-21 16:02:06.025620",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Algorithm Dependency: Could weaknesses in the signature scheme compromise certificate authenticity?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c5435d2f-894e-4222-b9ab-9114ffd69c26",
+    "timestamp": "2025-11-21 16:02:40.369428",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Message Serialization: Could non-canonical serialization yield distinct signatures for semantically identical messages?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_34fa826c-7368-49ca-a030-f721cc89d271",
+    "timestamp": "2025-11-21 16:03:16.084924",
+    "report_generated": false
+  },
+  {
+    "question": "Email Privacy: Could plaintext email storage in certificates leak user identities?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7c40a962-20ff-4cfc-8ecf-e4cf1af68298",
+    "timestamp": "2025-11-21 16:03:51.401214",
+    "report_generated": false
+  },
+  {
+    "question": "User Public Key Binding: Can an attacker register the same email with multiple public keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4de54acf-8caf-470a-801b-924978a9e397",
+    "timestamp": "2025-11-21 16:04:26.981590",
+    "report_generated": false
   }
 ]
