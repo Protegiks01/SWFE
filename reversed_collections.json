@@ -298,5 +298,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4978e41a-87d2-4eac-b892-1859485393ca",
     "timestamp": "2025-11-21 13:16:37.088355",
     "report_generated": false
+  },
+  {
+    "question": "XofRng Memory Footprint: Can attackers cause memory exhaustion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7c949381-d685-4fba-8da5-a8dc1ab5605a",
+    "timestamp": "2025-11-21 13:17:50.985290",
+    "report_generated": false
+  },
+  {
+    "question": "fill_bytes Partial Writes: Could partial writes leave uninitialized bytes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5a2ecdb2-ee4d-4a37-80c8-f1abcc556e85",
+    "timestamp": "2025-11-21 13:18:03.673700",
+    "report_generated": false
+  },
+  {
+    "question": "RNG Output Verification: Does the system check for zero/low-entropy outputs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e06d730e-3c11-4a5a-89bc-344a3298982e",
+    "timestamp": "2025-11-21 13:18:17.162294",
+    "report_generated": false
+  },
+  {
+    "question": "XofRng Clone Semantics: Would cloning duplicate state?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d960bfc0-d563-48d5-b8bc-eecfb2357ac8",
+    "timestamp": "2025-11-21 13:18:30.846703",
+    "report_generated": false
+  },
+  {
+    "question": "next_u64 Bit Alignment: Are reads atomic and constant-time?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_724deeb3-c5b8-469a-b797-27315cd820b4",
+    "timestamp": "2025-11-21 13:18:45.187667",
+    "report_generated": false
+  },
+  {
+    "question": "RNG Initialization Vector: Is the RNG IV unique or reused?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c37a2093-7a2f-4b64-aec8-3b43c90ad830",
+    "timestamp": "2025-11-21 13:19:00.956481",
+    "report_generated": false
+  },
+  {
+    "question": "XofRng Synchronization: Do guardians derive incompatible shares due to misaligned reads?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_794b199f-0223-4861-b4ce-5cfdbea939ff",
+    "timestamp": "2025-11-21 13:19:18.262307",
+    "report_generated": false
+  },
+  {
+    "question": "RNG Period Length: Could XOF reach a repeating cycle?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bfa9c045-84ff-4e3f-9228-d961ab110e9c",
+    "timestamp": "2025-11-21 13:19:36.490095",
+    "report_generated": false
+  },
+  {
+    "question": "Deterministic RNG Audit Trail: Does deterministic RNG allow forensic reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8998f25c-2891-4910-a34b-b06ce96ba5d8",
+    "timestamp": "2025-11-21 13:19:55.649341",
+    "report_generated": false
+  },
+  {
+    "question": "XofRng Drop Safety: Is internal state zeroed on drop?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7042bdb5-7099-48de-8ac8-4dc0d7f8ec80",
+    "timestamp": "2025-11-21 13:20:15.821776",
+    "report_generated": false
+  },
+  {
+    "question": "RNG Fork Attacks: Do concurrent reads interleave outputs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a523088a-d1f6-4126-8623-4399f048245b",
+    "timestamp": "2025-11-21 13:20:37.228815",
+    "report_generated": false
+  },
+  {
+    "question": "CryptoRng Trait Misuse: Is XofRng misused under assumption of true randomness?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bed51f0a-2f6e-4257-bf20-413c4f09c9b5",
+    "timestamp": "2025-11-21 13:20:59.765304",
+    "report_generated": false
+  },
+  {
+    "question": "next_u64/u32 Consistency: Do combination calls fragment state?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_194368ff-cd1b-4b7b-9db3-737d4a93e9c2",
+    "timestamp": "2025-11-21 13:21:23.416375",
+    "report_generated": false
+  },
+  {
+    "question": "XofReader Depletion: Does XOF ever run out of bytes, producing zeros?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_234c9e97-2bcc-49ab-a5e4-1ad8f1e004b5",
+    "timestamp": "2025-11-21 13:21:48.220377",
+    "report_generated": false
+  },
+  {
+    "question": "RNG State Serialization: Can an attacker save/restore RNG state?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b15e07f5-5ed3-465f-8127-f43b2fc911ae",
+    "timestamp": "2025-11-21 13:22:13.491603",
+    "report_generated": false
+  },
+  {
+    "question": "fill_bytes Buffer Overrun: Can malformed buffers cause memory corruption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cc11afec-7e6d-4d74-a25b-5c8cbe32bdfb",
+    "timestamp": "2025-11-21 13:22:39.435729",
+    "report_generated": false
+  },
+  {
+    "question": "XofRng Re-initialization: Do repeated calls with same inputs create replayable nonces?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_75fa9f0e-ac61-478a-97f1-f7c6aae51c78",
+    "timestamp": "2025-11-21 13:23:07.810086",
+    "report_generated": false
+  },
+  {
+    "question": "RNG Output Bias: Is XOF output statistically uniform?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cd29f5ed-be69-4fdd-967d-9c438444c6c4",
+    "timestamp": "2025-11-21 13:23:35.945730",
+    "report_generated": false
+  },
+  {
+    "question": "XofRng Seek Operations: Can RNG streams be rewound or desynchronized?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fd9136bf-485c-4fb1-9374-65e0e7c72901",
+    "timestamp": "2025-11-21 13:24:04.716788",
+    "report_generated": false
+  },
+  {
+    "question": "next_u32 Truncation: Does truncation reduce entropy?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a9d68d59-5d4a-4098-be97-fdfad886ce0d",
+    "timestamp": "2025-11-21 13:24:34.358214",
+    "report_generated": false
+  },
+  {
+    "question": "next_u64 Endianness: Are cross-platform RNG outputs consistent?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d2eca5c2-b1cf-4d11-9164-ce3fcced4a52",
+    "timestamp": "2025-11-21 13:25:04.259454",
+    "report_generated": false
+  },
+  {
+    "question": "try_fill_bytes Error Suppression: Do silent errors weaken randomness?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1580b4c8-fa02-47e9-b0f1-3295f7b7bebe",
+    "timestamp": "2025-11-21 13:25:33.399551",
+    "report_generated": false
+  },
+  {
+    "question": "RngCore Implementation Correctness: Are repeated patterns possible?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d9ae3d4a-fa87-411b-98aa-a16db8ed4abb",
+    "timestamp": "2025-11-21 13:26:02.562895",
+    "report_generated": false
+  },
+  {
+    "question": "XofRng State Cloning: Can RNG state be duplicated to predict outputs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_63949849-1be1-480c-a3f5-70f7863db939",
+    "timestamp": "2025-11-21 13:26:31.942344",
+    "report_generated": false
+  },
+  {
+    "question": "XofRng Determinism Exploitation: Can deterministic RNG output be predicted if IKM is known?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2f6ad3b4-fb82-4aaa-bdd4-b1f3e6dc4004",
+    "timestamp": "2025-11-21 13:27:01.537183",
+    "report_generated": false
   }
 ]
