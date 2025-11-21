@@ -1048,5 +1048,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_971d141d-acb1-48d5-96a6-df6e6494f8c1",
     "timestamp": "2025-11-21 14:22:53.086469",
     "report_generated": false
+  },
+  {
+    "question": "Is on-chain commitment state always consistent with off-chain secrets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3a944556-6f84-44b3-bb85-ccfaa35a6c39",
+    "timestamp": "2025-11-21 14:24:06.394559",
+    "report_generated": false
+  },
+  {
+    "question": "Could multiple contracts cause cross-initialization interference?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3850abe8-f12f-454a-a9ef-fe256bc6f7fd",
+    "timestamp": "2025-11-21 14:24:19.764655",
+    "report_generated": false
+  },
+  {
+    "question": "Are secret migrations secure during upgrades?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3a4ae35a-f344-4c12-81e2-c866b359c16c",
+    "timestamp": "2025-11-21 14:24:33.012284",
+    "report_generated": false
+  },
+  {
+    "question": "Could old OffchainSecret formats break later operations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b14847dc-446e-49be-945e-1fde1d8ec83d",
+    "timestamp": "2025-11-21 14:24:47.724703",
+    "report_generated": false
+  },
+  {
+    "question": "Does initialization on one blockchain affect others in multi-chain deployments?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a8eea22b-7a9e-4239-90f1-0570580acea7",
+    "timestamp": "2025-11-21 14:25:02.381471",
+    "report_generated": false
+  },
+  {
+    "question": "Could metadata inside OffchainSecret be tampered with without detection?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9fbf9616-d34f-4a4b-82f4-5a0120635466",
+    "timestamp": "2025-11-21 14:25:18.107708",
+    "report_generated": false
+  },
+  {
+    "question": "Could initialization inconsistencies cause incorrect VDRF proof verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_621d8f18-8529-46b9-9046-fbc8d7a887c1",
+    "timestamp": "2025-11-21 14:25:35.955295",
+    "report_generated": false
+  },
+  {
+    "question": "Are initialized secrets tested end-to-end across all protocol flows?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9d0c8ecb-855b-4759-bd78-3ee17294e302",
+    "timestamp": "2025-11-21 14:25:54.655941",
+    "report_generated": false
+  },
+  {
+    "question": "Does the StrEncoded<AccountId> wrapper in the Request struct properly validate that decoded bytes match the expected 32-byte format, or can malformed account IDs bypass validation at the API layer?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bcca79f0-ee80-4d4b-bf5b-496928f0a550",
+    "timestamp": "2025-11-21 14:26:14.776617",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker craft a malicious base64 string in request.account_id that deserializes to an invalid AccountId, potentially causing panics or undefined behavior in downstream contract code?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bada3d0f-5283-483d-8021-96ddb261584c",
+    "timestamp": "2025-11-21 14:26:37.205887",
+    "report_generated": false
+  },
+  {
+    "question": "Does the StrEncoded<BackupId> deserialization enforce that the backup ID is properly formatted as a 32-byte hash, or can arbitrary bytes be injected?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cb1173e7-e461-4daa-85bd-9096c477bd8e",
+    "timestamp": "2025-11-21 14:27:00.817845",
+    "report_generated": false
+  },
+  {
+    "question": "Can type confusion occur where a StrEncoded<GuardianShare> is deserialized with mismatched version tags (V0 vs future versions), bypassing signature verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0aa93cac-b49c-40b4-9311-7db885bdda56",
+    "timestamp": "2025-11-21 14:27:25.367197",
+    "report_generated": false
+  },
+  {
+    "question": "Does the StrEncoded wrapper prevent length extension attacks where additional bytes are appended to valid serialized data but still deserialize successfully?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f544b1e1-4df2-4643-9fee-a1240e0ad120",
+    "timestamp": "2025-11-21 14:27:51.740754",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit the lack of canonical encoding enforcement in StrEncoded to create multiple distinct string representations of the same GuardianShare, enabling replay or duplicate submission attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_333814a8-02ca-4be7-9deb-c3976974e76d",
+    "timestamp": "2025-11-21 14:28:18.490698",
+    "report_generated": false
+  },
+  {
+    "question": "Does the Request struct validate that account_id, backup_id, and share are all properly encoded before being passed to the contract handler, or is validation deferred?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_26eeca83-baad-4211-918b-089d024e1eb8",
+    "timestamp": "2025-11-21 14:28:47.121783",
+    "report_generated": false
+  },
+  {
+    "question": "Can oversized serialized payloads in StrEncoded fields cause resource exhaustion during deserialization, even though DoS is out-of-scope for severity?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_238a0372-ad33-487d-bf1e-84350dc294d2",
+    "timestamp": "2025-11-21 14:29:16.518817",
+    "report_generated": false
+  },
+  {
+    "question": "Does the deserialization of GuardianShare from StrEncoded perform cryptographic validation (signature checks) at the API layer, or is this entirely delegated to the contract?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ac4b7704-bd91-4c99-b3fd-917a757af07a",
+    "timestamp": "2025-11-21 14:29:46.422753",
+    "report_generated": false
+  },
+  {
+    "question": "Can version mismatch attacks occur where GuardianShare::V0 is expected but a future version with different semantics is provided, bypassing security checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dba1df3b-766e-42be-bec0-35f9bd7926aa",
+    "timestamp": "2025-11-21 14:30:17.525497",
+    "report_generated": false
+  },
+  {
+    "question": "Does the Request struct lack any authentication metadata (e.g., guardian signatures over the request) that would prevent unauthorized parties from uploading shares for arbitrary account/backup pairs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fab31d63-d444-441e-90c8-d9589662f7a3",
+    "timestamp": "2025-11-21 14:30:48.451842",
+    "report_generated": false
+  },
+  {
+    "question": "Can a malicious guardian upload shares for backups they are not authorized to participate in, since the API layer provides no authorization checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ed149c31-1287-4b1f-9409-085ff9f8f09e",
+    "timestamp": "2025-11-21 14:31:20.438616",
+    "report_generated": false
+  },
+  {
+    "question": "Is there rate limiting or nonce tracking at the API layer to prevent a compromised guardian from uploading the same share repeatedly, potentially interfering with legitimate reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e2f4d5c0-7416-49ed-a39d-6b6c41ee9fec",
+    "timestamp": "2025-11-21 14:31:52.458745",
+    "report_generated": false
+  },
+  {
+    "question": "Does the API definition lack timestamp or expiration fields that would prevent replay of old shares after a backup has been updated or rotated?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_79b8c6df-c4e1-4ede-9faa-b93936e18215",
+    "timestamp": "2025-11-21 14:32:24.934553",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker submit shares for non-existent account_id or backup_id values, wasting contract storage or causing state bloat?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2a4449cb-868e-467b-9c80-50120198022e",
+    "timestamp": "2025-11-21 14:32:59.021460",
+    "report_generated": false
+  },
+  {
+    "question": "Does the Request struct lack binding to the specific guardian identity, allowing share theft where Guardian A's share is submitted by Guardian B?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_681840b2-2edc-4acd-b34b-fd4c02876b91",
+    "timestamp": "2025-11-21 14:33:34.029804",
+    "report_generated": false
+  },
+  {
+    "question": "Is there protection against submitting shares before the account owner has initiated reconstruction, potentially violating the invariant that only owners trigger recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_561f31ea-337f-4dea-b768-7abddfbbe187",
+    "timestamp": "2025-11-21 14:34:08.963846",
+    "report_generated": false
   }
 ]
