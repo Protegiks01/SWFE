@@ -1,3 +1,152 @@
 [
-
+  {
+    "question": "Can an unprivileged attacker enumerate all accounts by systematically querying account IDs derived from known verification keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0b6617cf-1baf-495a-b01a-f422208605c3",
+    "timestamp": "2025-11-21 12:40:59.989199",
+    "report_generated": false
+  },
+  {
+    "question": "Can a network adversary extract email-to-account associations by correlating timing of account queries with VDRF evaluations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6865a1fb-f717-4f1f-84bf-5912892421cd",
+    "timestamp": "2025-11-21 12:41:13.178077",
+    "report_generated": false
+  },
+  {
+    "question": "Can a malicious guardian query victim accounts to learn their recovery configurations before attacking?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_89898925-f69f-40fd-b6c7-563fb74833c1",
+    "timestamp": "2025-11-21 12:41:26.708571",
+    "report_generated": false
+  },
+  {
+    "question": "Does exposing RecoveryStateV0.assoc (encrypted associations) allow attackers to perform offline cryptanalysis to extract RIK shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f151bbd5-878e-408f-a6e5-08c546a4e372",
+    "timestamp": "2025-11-21 12:41:41.394130",
+    "report_generated": false
+  },
+  {
+    "question": "Can the social backup ciphertext in RecoveryStateV0 be used to infer the number and identity of guardians through metadata analysis?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_debb0f83-7be4-4fca-b68e-dc9edec2fb7b",
+    "timestamp": "2025-11-21 12:41:57.076164",
+    "report_generated": false
+  },
+  {
+    "question": "Does the backups field leak information about what secrets users are storing through ciphertext size or count analysis?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0404c106-1742-40ac-9855-4d290f7ee512",
+    "timestamp": "2025-11-21 12:42:14.526365",
+    "report_generated": false
+  },
+  {
+    "question": "Can the pke encryption key in AccountStateV0 be used to mount chosen-ciphertext attacks against the owner?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_469fcf5e-9601-4105-9e31-7c71ac48c766",
+    "timestamp": "2025-11-21 12:42:33.227459",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker provide malformed base64url strings in account_id to cause deserialization panics that crash the endpoint?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bcc65086-a959-469e-833d-348ff7272ace",
+    "timestamp": "2025-11-21 12:42:53.185605",
+    "report_generated": false
+  },
+  {
+    "question": "Does the StrEncoded deserialization process validate that the decoded AccountId is exactly 32 bytes, or can oversized inputs cause buffer issues?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2e9bcc31-d4b1-477d-85e0-fa9e7d79aacf",
+    "timestamp": "2025-11-21 12:43:14.628167",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit differences between bincode serialization versions to cause type confusion when deserializing AccountState?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_be59a623-8182-480f-a306-aba0fb15efc5",
+    "timestamp": "2025-11-21 12:43:37.746076",
+    "report_generated": false
+  },
+  {
+    "question": "If AccountState schema evolves (e.g., from V0 to V1), can old clients deserialize new states, potentially misinterpreting encrypted fields?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_21bc040e-ab49-4211-8b93-510ad311828d",
+    "timestamp": "2025-11-21 12:44:00.757210",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit TOCTOU by querying an account, triggering a recovery update, then using stale state to compute invalid guardian shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fdb8ffe1-2867-4bef-9c12-cd4ee5044fe8",
+    "timestamp": "2025-11-21 12:44:26.398894",
+    "report_generated": false
+  },
+  {
+    "question": "If a user initiates recovery (setting RecoveryStateV0.pke), can querying the old state before the update propagates allow an attacker to submit guardian shares to the wrong encryption key?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4c3bf665-9a63-451f-9b91-78aaeabe0f56",
+    "timestamp": "2025-11-21 12:44:53.874193",
+    "report_generated": false
+  },
+  {
+    "question": "Can concurrent queries during account state transitions return inconsistent views (e.g., half-updated backup lists)?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8722ee3e-0e7b-4160-979c-5dfe885c3c5d",
+    "timestamp": "2025-11-21 12:45:22.445244",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker use timing differences between 'account not found' vs. successful deserialization to enumerate which account IDs exist?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f2ff271d-90f4-4a7f-88e9-120db4799fd1",
+    "timestamp": "2025-11-21 12:45:51.792568",
+    "report_generated": false
+  },
+  {
+    "question": "Does the error response leak whether an account ID is malformed vs. simply non-existent?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_530fdc92-6ea4-462b-9028-6e2625fc13c9",
+    "timestamp": "2025-11-21 12:46:22.626150",
+    "report_generated": false
+  },
+  {
+    "question": "Can the HTTP status code (404) be used to confirm whether an email has been associated with an account by deriving the AccountId from potential verification keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_abc36ad4-4901-4857-b3fb-a3ef09097738",
+    "timestamp": "2025-11-21 12:46:54.534098",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker perform mass surveillance by querying all possible account IDs to map the entire user base?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6589cfd1-d661-4063-b2a1-e08c8672fac4",
+    "timestamp": "2025-11-21 12:47:28.761147",
+    "report_generated": false
+  },
+  {
+    "question": "Does unlimited querying allow an attacker to monitor when accounts are created, updated, or enter recovery mode?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e2aa56f4-0b77-49f3-b1be-6c5d20e11502",
+    "timestamp": "2025-11-21 12:48:01.665130",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker correlate query patterns with blockchain transactions to de-anonymize users?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6c3a2966-c3ae-494d-82aa-7518a20b5cf8",
+    "timestamp": "2025-11-21 12:48:32.913929",
+    "report_generated": false
+  },
+  {
+    "question": "Can a guardian query another guardian's account to learn their recovery configuration before colluding to attack a mutual user?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8cac4f9c-d30c-472a-b269-1153522015a4",
+    "timestamp": "2025-11-21 12:49:05.177124",
+    "report_generated": false
+  },
+  {
+    "question": "Can off-chain nodes (even honest minority) query accounts to extract encrypted MSK ciphertexts for offline attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_380451ed-bc5f-435b-9f95-585a0946c6fb",
+    "timestamp": "2025-11-21 12:49:37.042566",
+    "report_generated": false
+  },
+  {
+    "question": "Can Swafe-io query arbitrary accounts to violate the prohibition against unilateral reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_137fc7f0-993a-4195-9992-db8d97afc6bd",
+    "timestamp": "2025-11-21 12:50:09.281097",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker use the cnt field to track user activity (number of updates) and infer usage patterns?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1b5bdcac-cecf-4b64-9c11-d8237d064c59",
+    "timestamp": "2025-11-21 12:50:42.096744",
+    "report_generated": false
+  },
+  {
+    "question": "Does the act (encrypted combined secrets) field's size leak information about the number of old keys being retained?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ae0fed95-04e6-4ed7-bd88-60fdc85a7046",
+    "timestamp": "2025-11-21 12:51:16.631103",
+    "report_generated": false
+  }
 ]
