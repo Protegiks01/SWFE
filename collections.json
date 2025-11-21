@@ -7348,5 +7348,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a3106253-8014-435d-8d27-9f669feec370",
     "timestamp": "2025-11-21 22:23:11.796924",
     "report_generated": false
+  },
+  {
+    "question": "Can users repeatedly reconstruct RIK data, causing off-chain state inconsistencies or resource exhaustion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_61ad4ae1-f8a4-4287-a1e8-02b8ae26229a",
+    "timestamp": "2025-11-21 22:24:23.339047",
+    "report_generated": false
+  },
+  {
+    "question": "Does encapsulation key derivation provide domain separation preventing KDF reuse across contexts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ab4d3441-be11-43c2-96a1-cf74334c24af",
+    "timestamp": "2025-11-21 22:24:36.071769",
+    "report_generated": false
+  },
+  {
+    "question": "Can attackers observing v0_point reverse the KDF and recover v_0, enabling unauthorized decryption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2e70d4fe-3df8-46e3-b4ee-6f9d5a5028e7",
+    "timestamp": "2025-11-21 22:24:50.763660",
+    "report_generated": false
+  },
+  {
+    "question": "Is the recovered symmetric key properly zeroized during reconstruct_recovery_key?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_eefc6efc-a10b-40e4-b156-086e6b4a5873",
+    "timestamp": "2025-11-21 22:25:04.312384",
+    "report_generated": false
+  },
+  {
+    "question": "Can attackers brute-force v_0 if KDF stretching is insufficient?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_214bd569-f2c2-4c99-9722-1f79ddf65e43",
+    "timestamp": "2025-11-21 22:25:18.965407",
+    "report_generated": false
+  },
+  {
+    "question": "Can floating-point precision errors during point serialization cause incorrect encapsulation key derivation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8d0a73d9-9c57-4c08-ae6f-f1dce04dd4e5",
+    "timestamp": "2025-11-21 22:25:35.065952",
+    "report_generated": false
+  },
+  {
+    "question": "Does authenticated encryption in create_encrypted_msk bind ciphertext to user identity?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c2b4cdd9-b51d-4f84-8839-2c58248fb667",
+    "timestamp": "2025-11-21 22:25:52.465004",
+    "report_generated": false
+  },
+  {
+    "question": "Can attackers perform chosen-ciphertext attacks by modifying encrypted RIK and observing reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_81ee837d-74b3-423a-bf60-1ac183bafc77",
+    "timestamp": "2025-11-21 22:26:10.339404",
+    "report_generated": false
+  },
+  {
+    "question": "Does symmetric::seal use a secure random nonce to avoid nonce reuse?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e0d6b244-a3f4-48a7-b113-910affd1b9c7",
+    "timestamp": "2025-11-21 22:26:30.023810",
+    "report_generated": false
+  },
+  {
+    "question": "Can attackers supply a valid RIK for one user and decrypt another user's data during reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1eabba1e-ccf0-496b-b63b-331d6ae8a0f8",
+    "timestamp": "2025-11-21 22:26:50.091999",
+    "report_generated": false
+  },
+  {
+    "question": "AccountId Derivation from Verification Key: In AccountId::from_vk(), the account ID is derived as hash(vk). Can an attacker generate collisions by finding two different verification keys that hash to the same AccountId, allowing them to claim ownership of another user's account?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8b062568-da0f-425a-abc3-39640730b3d7",
+    "timestamp": "2025-11-21 22:27:12.322656",
+    "report_generated": false
+  },
+  {
+    "question": "AccountId Constructor Exposure: The from_vk() method is pub(crate) while from_verification_key() is public. Could inconsistent access patterns allow external code to bypass intended visibility restrictions in account creation flows?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ba0fbc83-7b92-404e-bb6d-aa6dfbd3747e",
+    "timestamp": "2025-11-21 22:27:35.364680",
+    "report_generated": false
+  },
+  {
+    "question": "AccountId Hash Function Security: The AccountId::from_vk() uses a generic hash() without domain separation. Could this lead to hash collisions with other system components?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a19c7172-c5ff-47c1-8d4e-ac24e4f93603",
+    "timestamp": "2025-11-21 22:27:59.754631",
+    "report_generated": false
+  },
+  {
+    "question": "Account Allocation Without Email Verification: In AccountUpdateV0::verify_allocation(), an account can be allocated if acc == AccountId::from_vk(&st.sig). Can an attacker create multiple accounts without email association, bypassing the intended recovery mechanism?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_69b012b9-f12f-4310-8a91-4e2891984652",
+    "timestamp": "2025-11-21 22:28:24.909225",
+    "report_generated": false
+  },
+  {
+    "question": "Initial Account State Validation: Allocation checks only st.cnt != 0 and signature validity. Are there other state fields that should be validated to prevent malicious initial configurations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9fd0caac-b2fa-4f2d-9a50-3fccc3392202",
+    "timestamp": "2025-11-21 22:28:50.849934",
+    "report_generated": false
+  },
+  {
+    "question": "MSK Randomness Quality: In AccountSecrets::gen(), the MSK is generated using rng.gen(). If RNG is weak or compromised, could an attacker predict the MSK?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0007c09d-a890-4f25-be15-a50d661a8017",
+    "timestamp": "2025-11-21 22:29:17.608178",
+    "report_generated": false
+  },
+  {
+    "question": "MSK Secret Share Independence: msk_ss_social and msk_ss_rik are independently generated. Could correlation reduce security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_516ab59f-5159-476d-b3ce-0a751244b1b3",
+    "timestamp": "2025-11-21 22:29:45.175512",
+    "report_generated": false
+  },
+  {
+    "question": "Initial Recovery State Setup: Initial account creates a recovery backup with empty guardians and threshold 0. Could this allow unauthorized recovery before configuration?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e1484796-26a4-4717-b9b5-267beab8e85d",
+    "timestamp": "2025-11-21 22:30:14.103953",
+    "report_generated": false
+  },
+  {
+    "question": "Old Key Initialization: old_msk and old_pke start empty. Could this break key rotation if code assumes non-empty history?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8daaecc8-868d-43d2-9fc2-aa69c0f6a183",
+    "timestamp": "2025-11-21 22:30:44.389516",
+    "report_generated": false
+  },
+  {
+    "question": "Signing Key Reuse: sig and old_sig are initialized to same key. Could this confuse verification logic?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bfb0eae7-1fbb-46f7-8e10-59cbc30a3726",
+    "timestamp": "2025-11-21 22:31:14.956044",
+    "report_generated": false
+  },
+  {
+    "question": "Dirty Flag Manipulation: dirty flag controls version increments. Could an attacker manipulate it to avoid version increments?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dcb5b1a9-781d-4fe1-bf65-43d695e3f2b5",
+    "timestamp": "2025-11-21 22:31:45.470755",
+    "report_generated": false
+  },
+  {
+    "question": "Version Counter Overflow: cnt is u32. Could overflow create replay attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0931a807-545a-4f5d-95c7-12081a6ec48d",
+    "timestamp": "2025-11-21 22:32:16.242225",
+    "report_generated": false
+  },
+  {
+    "question": "Multiple Old Keys Storage: old_pke can grow unbounded. Could it cause bloat or DoS?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9f67d4c9-b230-4a47-becd-e0eac775d342",
+    "timestamp": "2025-11-21 22:32:46.553637",
+    "report_generated": false
+  },
+  {
+    "question": "Old MSK Vector Purpose: old_msk never populated. Does this indicate incomplete rotation logic?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ae04c58f-3c69-435f-a2f9-73cc0976daf5",
+    "timestamp": "2025-11-21 22:33:16.659722",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery Secrets Exposure: AccountSecretsV0Recovery contains sensitive fields. Are these zeroized on drop?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_20976644-38dd-402e-b599-60e9287909ba",
+    "timestamp": "2025-11-21 22:33:46.856776",
+    "report_generated": false
   }
 ]
