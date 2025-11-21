@@ -6898,5 +6898,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2516d9d9-d870-42b6-883d-2b2687b21904",
     "timestamp": "2025-11-21 21:31:08.771158",
     "report_generated": false
+  },
+  {
+    "question": "VerificationKey Serialization: Could multiple serialization paths produce inconsistent hashes? mod.rs:13-17",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5a94f9ac-fcfe-47d7-aa78-f2d88adc25ca",
+    "timestamp": "2025-11-21 21:32:17.898940",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Serialization Size: Can malformed sized signatures bypass checks? v0.rs:18-24",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5ce35fa3-0771-449a-93a5-0ff4dca18726",
+    "timestamp": "2025-11-21 21:32:30.975648",
+    "report_generated": false
+  },
+  {
+    "question": "Version Tag Mutation: Could in-transit bit-flips switch signature versions? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_941e9f26-417e-4bf0-996c-95eec303f01f",
+    "timestamp": "2025-11-21 21:32:44.327151",
+    "report_generated": false
+  },
+  {
+    "question": "Forward Compatibility: Can V1 signatures cause downgrade attacks via V0-only code? mod.rs:7-11",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d778dd16-a6f8-4e6b-8f1a-8e1bcf4ecfb8",
+    "timestamp": "2025-11-21 21:32:58.062716",
+    "report_generated": false
+  },
+  {
+    "question": "Version Tag Range Validation: Can version tags ≥128 bypass validation? venum.rs:34-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d1909353-7ab5-48c3-8fc4-aecfac095367",
+    "timestamp": "2025-11-21 21:33:12.661495",
+    "report_generated": false
+  },
+  {
+    "question": "Message Type Erasure: Could equal serialization lead to unintended signature reuse? mod.rs:31-35",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0bbe2d5f-3761-44ce-a248-7646e221f2f2",
+    "timestamp": "2025-11-21 21:33:28.894027",
+    "report_generated": false
+  },
+  {
+    "question": "Separator Length Limit: Could long separators cause serialization DoS? mod.rs:25-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5b590960-1232-4c41-b238-2e86b2ca9973",
+    "timestamp": "2025-11-21 21:33:47.499738",
+    "report_generated": false
+  },
+  {
+    "question": "Tagged Version Mismatch: Could Tagged changes break old signatures? mod.rs:31-35",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_28dd5efb-554f-4bac-8776-274c08ce0a66",
+    "timestamp": "2025-11-21 21:34:07.001083",
+    "report_generated": false
+  },
+  {
+    "question": "VerificationKey Equality Check: Could equivalent points compare unequal? mod.rs:13-17",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1e32f8c6-0054-4dd0-8abd-0e0fe99f60d3",
+    "timestamp": "2025-11-21 21:34:27.452579",
+    "report_generated": false
+  },
+  {
+    "question": "SchnorrHash Message Field Size: Does fixed-size hashing introduce truncation risk? v0.rs:74",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0014901c-991a-4f3c-9381-58f9525fe551",
+    "timestamp": "2025-11-21 21:34:49.316913",
+    "report_generated": false
+  },
+  {
+    "question": "Bincode Varint Manipulation: Could length prefix manipulation inject arbitrary data? encode.rs:5-6",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1d63c074-389a-4a19-bfd4-c5f48b4a4d9c",
+    "timestamp": "2025-11-21 21:35:11.628186",
+    "report_generated": false
+  },
+  {
+    "question": "Message Hash Pre-image Resistance: Could weak pre-image resistance allow collisions? v0.rs:99-100",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2ff7c8ff-708d-46a3-8b4b-0e738b9f52de",
+    "timestamp": "2025-11-21 21:35:36.388581",
+    "report_generated": false
+  },
+  {
+    "question": "Trait Object Safety: Could Tagged trait erasure cause confusion in collections? mod.rs:31-35",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b6670b69-08f1-4927-a7cb-9d570626f735",
+    "timestamp": "2025-11-21 21:36:01.361315",
+    "report_generated": false
+  },
+  {
+    "question": "VerificationKey Hash for AccountId: Could malleability allow multiple AccountIds? mod.rs:25-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4ec063cb-ec38-4a3e-970f-6db680fd1000",
+    "timestamp": "2025-11-21 21:36:27.787554",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Module Separator Collisions: Could two modules reuse same SEPARATOR? mod.rs:25-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_793c30dc-4cce-418a-97bf-8d3a131c1a90",
+    "timestamp": "2025-11-21 21:36:55.863296",
+    "report_generated": false
+  },
+  {
+    "question": "Tagged Message Serialization Order: Could reordering break verification? encode.rs:20-37",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_12d699e3-433e-4e44-a2e3-40565e35be26",
+    "timestamp": "2025-11-21 21:37:24.927045",
+    "report_generated": false
+  },
+  {
+    "question": "Message Type Downgrade: Could deserialization as a different Tagged type bypass checks? mod.rs:31-35",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7d4d0825-cd07-4820-aacb-5226a7f00536",
+    "timestamp": "2025-11-21 21:37:55.155459",
+    "report_generated": false
+  },
+  {
+    "question": "Separator Injection: Could malicious separators inject nulls or newlines? mod.rs:25-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7758f6c3-0f67-4096-87ee-bee575c595ba",
+    "timestamp": "2025-11-21 21:38:26.444299",
+    "report_generated": false
+  },
+  {
+    "question": "Empty Separator String: Could empty SEPARATOR collide with bincode varints? encode.rs:8-10",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4f428c59-868b-438e-95ef-a6fb66123029",
+    "timestamp": "2025-11-21 21:38:59.026499",
+    "report_generated": false
+  },
+  {
+    "question": "Separator Version Prefix Manipulation: Could stripping the 'v0:' prefix cause replay? mod.rs:25-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_48c24a23-e3e7-41dc-befe-dd47894ee5e0",
+    "timestamp": "2025-11-21 21:39:31.423351",
+    "report_generated": false
+  },
+  {
+    "question": "Tagged Encoding Injectivity: Can different Tagged values encode to identical bytes? encode.rs:8-38",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_89889203-5e5d-4014-899b-5e84078b3622",
+    "timestamp": "2025-11-21 21:40:03.813088",
+    "report_generated": false
+  },
+  {
+    "question": "SchnorrHash Separator Collision: Could another scheme reuse 'v0:schnorr'? v0.rs:77-79",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ff14c01f-d652-4e22-b6de-42f6e9c618ac",
+    "timestamp": "2025-11-21 21:40:38.489507",
+    "report_generated": false
+  },
+  {
+    "question": "Tagged Type Confusion: Could two Tagged types serialize identically? mod.rs:31-35",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ea7d9140-87d4-4a34-9bc1-773244769ea4",
+    "timestamp": "2025-11-21 21:41:12.213540",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Tagged Implementation on Signature: Could lack of Tagged enable type confusion? mod.rs:7-11",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_67593c85-3cfc-462d-b001-2013bc116de7",
+    "timestamp": "2025-11-21 21:41:45.532035",
+    "report_generated": false
+  },
+  {
+    "question": "Tagged Separator Reuse: Could identical separators allow replay across modules? mod.rs:25-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_72e45d42-6069-40b1-a22f-cb0249fff1bb",
+    "timestamp": "2025-11-21 21:42:19.782886",
+    "report_generated": false
   }
 ]
