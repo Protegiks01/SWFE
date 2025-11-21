@@ -598,5 +598,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3dc2f514-0a64-481a-961c-f3da4a96bfcf",
     "timestamp": "2025-11-21 13:48:57.256422",
     "report_generated": false
+  },
+  {
+    "question": "What happens if two nodes claim the same NodeId?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4452eb9c-ca21-4d78-b04a-7037548d9f50",
+    "timestamp": "2025-11-21 13:50:06.831660",
+    "report_generated": false
+  },
+  {
+    "question": "Does querying initialization status leak information about node activity?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_718b8cdb-0d74-46df-9b67-2cbea47cce70",
+    "timestamp": "2025-11-21 13:50:20.193703",
+    "report_generated": false
+  },
+  {
+    "question": "Are initialized secrets persisted correctly through upgrades or redeployments?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a92f1fdb-3c4c-4e51-965a-9ad0d1ce94e0",
+    "timestamp": "2025-11-21 13:50:34.367452",
+    "report_generated": false
+  },
+  {
+    "question": "Does NodeId reveal organizational or geographic information about a node?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_67c242a5-4063-46b4-9b6c-eda6147306b0",
+    "timestamp": "2025-11-21 13:50:49.299463",
+    "report_generated": false
+  },
+  {
+    "question": "Can timing of initialization correlate nodes with user-level activities?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cc3e107f-551f-442d-94b8-68a75bd2170c",
+    "timestamp": "2025-11-21 13:51:04.326795",
+    "report_generated": false
+  },
+  {
+    "question": "Can VdrfPublicKey be linked to user accounts via on-chain analysis?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4ef59591-c215-4a92-8e43-81a10081bad1",
+    "timestamp": "2025-11-21 13:51:20.150180",
+    "report_generated": false
+  },
+  {
+    "question": "If randomizers are deterministic, do they leak setup ceremony structure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1bea1401-3bd3-47ee-80f4-9e122e577d97",
+    "timestamp": "2025-11-21 13:51:37.305501",
+    "report_generated": false
+  },
+  {
+    "question": "Can packet size or OffchainSecret structure enable traffic analysis?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cd52b87d-0171-40e3-aee8-120ac9d7c5cc",
+    "timestamp": "2025-11-21 13:51:57.022871",
+    "report_generated": false
+  },
+  {
+    "question": "Does storage layout of OffchainSecret leak which nodes are active?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1e91dcd0-4c36-4f01-8cde-25b396331f4f",
+    "timestamp": "2025-11-21 13:52:17.644349",
+    "report_generated": false
+  },
+  {
+    "question": "Can multiple initialization requests from one node be correlated?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_17574134-7fdc-4b55-b986-e6c04551637b",
+    "timestamp": "2025-11-21 13:52:39.611046",
+    "report_generated": false
+  },
+  {
+    "question": "Does reusing VdrfPublicKey across accounts leak identity information?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d18dd514-ef4e-4096-9813-907ed9846a63",
+    "timestamp": "2025-11-21 13:53:02.286155",
+    "report_generated": false
+  },
+  {
+    "question": "Can on-chain commitments reveal setup ceremony participant behavior?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ce7343cb-f651-4374-bb6a-e29c71bb4912",
+    "timestamp": "2025-11-21 13:53:27.694620",
+    "report_generated": false
+  },
+  {
+    "question": "Does initialization reveal total off-chain node count indirectly?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d7efde91-6e71-4a53-ae14-6f24f8e700a4",
+    "timestamp": "2025-11-21 13:53:54.206023",
+    "report_generated": false
+  },
+  {
+    "question": "Does order of node initialization leak operational hierarchy?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f946038c-bfea-45fe-b902-18b6e046846d",
+    "timestamp": "2025-11-21 13:54:21.719469",
+    "report_generated": false
+  },
+  {
+    "question": "Do initialization error messages leak existing node configurations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9d6f0fce-4c12-4d43-9abb-c726e38fe1ea",
+    "timestamp": "2025-11-21 13:54:50.775821",
+    "report_generated": false
+  },
+  {
+    "question": "Can timing of commitment verification leak secret share values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_aa355f18-d172-497b-91d6-b4766fb2c496",
+    "timestamp": "2025-11-21 13:55:20.263045",
+    "report_generated": false
+  },
+  {
+    "question": "Could statistical analysis over many initializations reveal patterns?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_34cd46bc-48e0-4b09-ac65-303b47935fdb",
+    "timestamp": "2025-11-21 13:55:50.982854",
+    "report_generated": false
+  },
+  {
+    "question": "Can differences in how nodes serialize OffchainSecret enable fingerprinting?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3aa9bf31-0a4d-41ef-96b6-ba03e95ae448",
+    "timestamp": "2025-11-21 13:56:21.556929",
+    "report_generated": false
+  },
+  {
+    "question": "Do HTTP headers or metadata leak sensitive node identity information?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_82b038d6-d0ea-432f-9470-c62396db80b7",
+    "timestamp": "2025-11-21 13:56:52.819745",
+    "report_generated": false
+  },
+  {
+    "question": "Can network routes or IPs link nodes to locations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_16412e3e-bc31-403d-a45c-6341e6dc04cc",
+    "timestamp": "2025-11-21 13:57:25.849800",
+    "report_generated": false
+  },
+  {
+    "question": "Can initialization be linked to later VDRF evaluation requests?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c7bd29ec-b148-499a-9e00-1fa98f10eae8",
+    "timestamp": "2025-11-21 13:57:58.715846",
+    "report_generated": false
+  },
+  {
+    "question": "Who can query stored OffchainSecret values, and is access restricted?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cd7021b4-6da9-420c-9ccd-352ecda1dc19",
+    "timestamp": "2025-11-21 13:58:32.033167",
+    "report_generated": false
+  },
+  {
+    "question": "Can initialization patterns leak data about other co-located protocols?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5b9d254b-b833-48b4-a604-3866c3597028",
+    "timestamp": "2025-11-21 13:59:06.604119",
+    "report_generated": false
+  },
+  {
+    "question": "Can unprivileged attackers initialize a node without authorization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_37f9c82f-3b36-422c-befe-c347366c9eb9",
+    "timestamp": "2025-11-21 13:59:42.279271",
+    "report_generated": false
+  },
+  {
+    "question": "Can attackers impersonate nodes by stealing NodeId values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d61f5b44-38a4-4c52-a612-4472fe9b7284",
+    "timestamp": "2025-11-21 14:00:18.536953",
+    "report_generated": false
   }
 ]
