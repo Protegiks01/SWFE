@@ -1,3 +1,152 @@
 [
-
+  {
+    "question": "Zeroization of Sensitive Buffers: Are all sensitive buffers securely zeroed after use?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a391cbb5-55a9-41fc-8e44-5e07eb881406",
+    "timestamp": "2025-11-21 12:41:16.166942",
+    "report_generated": false
+  },
+  {
+    "question": "Side-Channel Resistant XOR: Is XOR encryption implemented in constant time?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5b84e5f1-faee-476a-8609-2372d043b5cf",
+    "timestamp": "2025-11-21 12:41:29.036266",
+    "report_generated": false
+  },
+  {
+    "question": "Constant-Time Nonce Generation: Is nonce derivation constant-time?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a510eff5-cde1-434f-9fe5-c422a7703cff",
+    "timestamp": "2025-11-21 12:41:42.841283",
+    "report_generated": false
+  },
+  {
+    "question": "Cache-Timing on Domain Separators: Can attackers infer operation type via separator lookup timing?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e5fd3133-a5ed-465a-8cd8-1b2d1d179602",
+    "timestamp": "2025-11-21 12:41:56.654735",
+    "report_generated": false
+  },
+  {
+    "question": "Memory Access Patterns: Do memory accesses leak data-dependent structure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_52d17dc4-f9ce-42df-9740-f3ec91aec71a",
+    "timestamp": "2025-11-21 12:42:11.608959",
+    "report_generated": false
+  },
+  {
+    "question": "Branch Prediction Attacks: Can speculative execution leak secrets in kdf()?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_20179190-4d31-450f-a6c8-0a6aa16b964e",
+    "timestamp": "2025-11-21 12:42:28.349207",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Output Comparison: Are digest comparisons constant-time?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c1247e3c-8f7f-4914-8d27-94e6a027cdfd",
+    "timestamp": "2025-11-21 12:42:44.914269",
+    "report_generated": false
+  },
+  {
+    "question": "XofRng Timing Leakage: Could fill_bytes() leak RNG state via timing?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_60a9d71c-8698-423d-ba82-ae25e0f205a6",
+    "timestamp": "2025-11-21 12:43:03.636009",
+    "report_generated": false
+  },
+  {
+    "question": "KDF Timing Side-Channels: Does kdf() run in constant time?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_24f8472c-8ac6-47ad-8c4a-5c81b83de76d",
+    "timestamp": "2025-11-21 12:43:22.829673",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Computation Timing: Do variable input sizes leak timing information?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d0837192-8e70-432d-9c01-cabe5d5272de",
+    "timestamp": "2025-11-21 12:43:43.677512",
+    "report_generated": false
+  },
+  {
+    "question": "Unwrap Panic Recovery: Do panics leave guardian state inconsistent?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_21e170b6-385c-4db4-ba09-762b31b0fcb0",
+    "timestamp": "2025-11-21 12:44:05.529605",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization Endianness: Are big-endian systems supported safely?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9aaffe13-34d2-4be7-a1d1-e712073e7fc9",
+    "timestamp": "2025-11-21 12:44:27.615852",
+    "report_generated": false
+  },
+  {
+    "question": "Encode Buffer Reuse: Could buffer reuse leak residual bytes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6d93f5ae-3e3a-47ab-b064-5d9d37b24f97",
+    "timestamp": "2025-11-21 12:44:52.007980",
+    "report_generated": false
+  },
+  {
+    "question": "Bincode Integer Encoding: Could varint ambiguities create collisions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1e8272a6-a35b-4443-8c88-36d0776563e5",
+    "timestamp": "2025-11-21 12:45:16.291768",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization Canonicalization: Do identical values always encode canonically?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f2282ef0-6501-4b92-a469-a7513d19ebb4",
+    "timestamp": "2025-11-21 12:45:40.778401",
+    "report_generated": false
+  },
+  {
+    "question": "Error Message Leakage: Could detailed errors leak sensitive metadata?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_29ca58cf-b0bf-49eb-83e6-25382dd06af5",
+    "timestamp": "2025-11-21 12:46:06.276027",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization Side-Channel: Does serialization leak timing info?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_383bd6e7-b358-478d-99f9-da49618fa513",
+    "timestamp": "2025-11-21 12:46:30.630337",
+    "report_generated": false
+  },
+  {
+    "question": "Bincode Schema Evolution: Could struct changes break existing backups?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_87d4e336-4fa8-4aa3-b951-68a5feab535e",
+    "timestamp": "2025-11-21 12:46:55.848746",
+    "report_generated": false
+  },
+  {
+    "question": "Unwrap Safety Audit: Could unwrap() calls panic with adversarial inputs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b7ed2450-b1f2-423a-8ad0-5cba2a0a5410",
+    "timestamp": "2025-11-21 12:47:21.893405",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization Type Safety: Does bincode enforce strict type matching?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f5fb4da8-0cc3-445c-8867-34be8112b28d",
+    "timestamp": "2025-11-21 12:47:47.957279",
+    "report_generated": false
+  },
+  {
+    "question": "Encode Buffer Allocation: Can huge Tagged values exhaust memory?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c96b7cfc-5799-417b-afd4-5a6c4a19eade",
+    "timestamp": "2025-11-21 12:48:16.260266",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization of KDF Outputs: Could deserialization corruption bypass threshold checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2709f976-5bc5-4105-89d8-0117e765962f",
+    "timestamp": "2025-11-21 12:48:43.864029",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization Format Versioning: Could bincode upgrades break encoding determinism?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3c529425-ee75-4adc-992b-2d682efd022b",
+    "timestamp": "2025-11-21 12:49:12.420807",
+    "report_generated": false
+  },
+  {
+    "question": "Tagged Encode Panics: Can an attacker cause panics in encode()?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f8108914-ccea-48e3-a881-a0e3decc8bce",
+    "timestamp": "2025-11-21 12:49:40.823768",
+    "report_generated": false
+  },
+  {
+    "question": "Bincode Serialization Panics: Can malicious inputs cause panic in kdf_rng()?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ebf2a77c-8423-4daa-ae0e-d39e6275bb31",
+    "timestamp": "2025-11-21 12:50:11.130941",
+    "report_generated": false
+  }
 ]
