@@ -3898,5 +3898,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_732f67ac-8893-4ca7-84ee-43c93ff7f393",
     "timestamp": "2025-11-21 17:46:09.132764",
     "report_generated": false
+  },
+  {
+    "question": "Commitment Scheme Domain Confusion: Could an attacker reuse a Pedersen commitment created for email association as a commitment for backup verification, violating the invariant that 'only the owner of an email should be able to request the recovery of an account' README.md:138 ?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_df3758f7-a084-4bd2-9bac-d30576aa8161",
+    "timestamp": "2025-11-21 17:47:20.956062",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Scheme Cross-Domain Reuse: If ShareHash and BackupCiphertext use similar SEPARATOR values, could a signature over a ShareHash be replayed as a signature over BackupCiphertext, bypassing guardian approval for backup reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_718358a7-0bfe-4440-afb8-55f40d2e9cfb",
+    "timestamp": "2025-11-21 17:47:34.516686",
+    "report_generated": false
+  },
+  {
+    "question": "Unwrap Panic in Tagged::encode(): The encode() method uses .unwrap() encode.rs:36 on bincode serialization. Could a malicious Serialize implementation cause a panic here, leading to a denial-of-service during critical operations like guardian approval or backup reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b8083a73-8ed4-4a91-abad-7e10ecadd629",
+    "timestamp": "2025-11-21 17:47:48.007664",
+    "report_generated": false
+  },
+  {
+    "question": "Zero-Length Value Collision: If two Tagged types have different SEPARATOR values but serialize to zero-length data, could their encodings collide in hash-based operations, enabling cross-domain attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fb934450-198d-4da3-8730-ca3cb84c887c",
+    "timestamp": "2025-11-21 17:48:01.928393",
+    "report_generated": false
+  },
+  {
+    "question": "Bincode Variable-Length Encoding: Bincode uses variable-length encoding for integers and strings encode.rs:17-19. Could specially crafted SEPARATOR values exploit this to create ambiguous encodings where the separator boundary is unclear?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_db477eea-233b-4f52-9f2e-8c7eb2814382",
+    "timestamp": "2025-11-21 17:48:16.600370",
+    "report_generated": false
+  },
+  {
+    "question": "DomainTuple Struct Ordering: The DomainTuple struct orders fields as (sep, val) encode.rs:25-28. Could reversing this order to (val, sep) in a malicious implementation allow encoding collisions that break cryptographic domain separation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e85381eb-fa8c-4287-9401-e4a4ec20b242",
+    "timestamp": "2025-11-21 17:48:32.913371",
+    "report_generated": false
+  },
+  {
+    "question": "Non-Injective Encoding Attack: The Tagged::encode() method claims to be injective encode.rs:13-15. Can two different Tagged values produce identical byte encodings? If so, this could enable signature forgery or commitment collision attacks.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7933bc2e-18c8-449c-8306-d9d6d29599f2",
+    "timestamp": "2025-11-21 17:48:50.611731",
+    "report_generated": false
+  },
+  {
+    "question": "SEPARATOR Length Field Manipulation: Since bincode encodes strings with a variable-length field encode.rs:17-19, could an attacker craft a SEPARATOR that, when var-encoded, produces a length field that overlaps with the actual data, breaking domain separation guarantees?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b502d540-6bfb-4131-9529-56dae2256122",
+    "timestamp": "2025-11-21 17:49:10.090132",
+    "report_generated": false
+  },
+  {
+    "question": "Version Prefix Bypass: The SEPARATOR convention uses 'v0:' prefixes. Could an attacker create a type with separator 'v0:account-idv0:backup' that collides with concatenated encodings, breaking the injectivity claim encode.rs:13-15 ?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a032f696-b866-4546-8d71-f833c459a687",
+    "timestamp": "2025-11-21 17:49:31.016869",
+    "report_generated": false
+  },
+  {
+    "question": "SEPARATOR Collision in EmailInput vs AccountId: If EmailInput and AccountId accidentally use the same SEPARATOR value, could an attacker substitute one for the other in cryptographic operations, violating the invariant that 'an email should be associated to at most one account at a time' README.md:142 ?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_87d301da-70c5-473b-9485-f4f45ffe98f6",
+    "timestamp": "2025-11-21 17:49:53.292907",
+    "report_generated": false
+  },
+  {
+    "question": "Empty SEPARATOR Bypass: Can a malicious implementation provide an empty string as SEPARATOR encode.rs:9 to bypass domain separation entirely, allowing cross-domain signature reuse that could enable unauthorized account recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a97318f2-ed8c-4a81-a01e-36bf1333d626",
+    "timestamp": "2025-11-21 17:50:15.479566",
+    "report_generated": false
+  },
+  {
+    "question": "SEPARATOR Collision Attack: Does the Tagged::encode() method encode.rs:20-37 guarantee that two different types implementing Tagged with identical SEPARATOR values cannot produce colliding encodings? Could an attacker craft types with duplicate separators to forge signatures or commitments across different cryptographic domains?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4f3b06d5-b1f5-403d-a447-47cb7811e948",
+    "timestamp": "2025-11-21 17:50:39.169455",
+    "report_generated": false
+  },
+  {
+    "question": "Off-Chain Node Minority Attack: With minority of off-chain nodes corrupted, can they exploit version manipulation to leak email addresses during association or recovery? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3fd6a224-62d1-4d66-a100-3e593b333982",
+    "timestamp": "2025-11-21 17:51:04.179439",
+    "report_generated": false
+  },
+  {
+    "question": "Multiple Email Recovery Bypass: The invariant allows 'multiple emails associated for recovery'. Can version confusion allow recovery with emails not actually associated with the account? venum.rs:96-113",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_46513ba4-3458-480a-b131-b1e92dd3c584",
+    "timestamp": "2025-11-21 17:51:30.085356",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Metadata Manipulation: Backup metadata (name, description) is stored with ciphertexts. Can version manipulation allow metadata tampering that misleads users during recovery? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_102afa6a-8ca9-4f75-a018-ac7620cd62dd",
+    "timestamp": "2025-11-21 17:51:58.054043",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery Secret Exposure: RecoverySecrets likely contain sensitive data. Does deserialization ensure secrets are properly protected in memory? venum.rs:96-113",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d7653081-6792-44e0-9005-994d68f706e5",
+    "timestamp": "2025-11-21 17:52:26.326593",
+    "report_generated": false
+  },
+  {
+    "question": "Dirty State Persistence: Account state may have 'dirty' fields that should be cleared on update. Can version manipulation prevent proper clearing, leaking old secrets? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f02e9400-2b40-4af7-a087-5d94e0ddffe6",
+    "timestamp": "2025-11-21 17:52:55.960510",
+    "report_generated": false
+  },
+  {
+    "question": "Account State Rollback: If AccountState can be deserialized from old versions, can an attacker roll back account state to re-enable removed associations or backups? venum.rs:240-272",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_347ae56b-8b58-4628-b083-92b251f7517b",
+    "timestamp": "2025-11-21 17:53:26.942469",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Share Forgery: Malicious guardians (below threshold) might attempt to forge GuardianShare messages. Does versioning provide any protection against forgery? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f798f70f-3243-426b-a1a3-14f74a7e1fc6",
+    "timestamp": "2025-11-21 17:53:59.570428",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Ciphertext Replay: Can an attacker replay old BackupCiphertext serializations to restore accounts to previous states, potentially reverting ownership changes? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9a25dda4-3f0c-4861-ad5f-048435eddcf1",
+    "timestamp": "2025-11-21 17:54:33.223482",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery Initiation Key Theft: RIKs in Association data must only be accessible to account owners. Can deserialization expose RIKs to unauthorized parties? venum.rs:96-113",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7670846f-b45f-4475-99da-b2eb987106fb",
+    "timestamp": "2025-11-21 17:55:06.194510",
+    "report_generated": false
+  },
+  {
+    "question": "Association Uniqueness Violation: The invariant 'email-to-account bindings are unique' must be enforced. Can versioned Association enums be exploited to bind one email to multiple accounts? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8296cf23-1732-417b-8ddb-0bc84e5bf773",
+    "timestamp": "2025-11-21 17:55:39.874544",
+    "report_generated": false
+  },
+  {
+    "question": "Email Verification Bypass: Email certificates are likely versioned. Can deserialization skip email ownership verification, allowing unauthorized account recovery? venum.rs:96-113",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cb208c2d-d670-41e9-8948-4d2ae777beff",
+    "timestamp": "2025-11-21 17:56:13.961650",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Threshold Reduction: If guardian threshold is encoded in versioned structures, can an attacker reduce the threshold by downgrading versions, allowing recovery with fewer guardians? venum.rs:103-112",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_30c41dcb-1309-4014-9a4b-185ef093198a",
+    "timestamp": "2025-11-21 17:56:48.380587",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Reconstruction Bypass: BackupCiphertext versioning must preserve the invariant 'only owner can reconstruct backups'. Can version manipulation allow unauthorized reconstruction? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ce986bc0-8634-4f39-b5e4-243c24205ab2",
+    "timestamp": "2025-11-21 17:57:23.782982",
+    "report_generated": false
   }
 ]
