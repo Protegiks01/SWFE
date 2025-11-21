@@ -7048,5 +7048,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_72e45d42-6069-40b1-a22f-cb0249fff1bb",
     "timestamp": "2025-11-21 21:42:19.782886",
     "report_generated": false
+  },
+  {
+    "question": "Message Hash Prefix Collision: Could similar prefix hashes collide despite Tagged separation? v0.rs:99-100",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5f720979-c898-4ee5-a08a-dee31faa04b2",
+    "timestamp": "2025-11-21 21:43:32.243270",
+    "report_generated": false
+  },
+  {
+    "question": "VerificationKey Cloning Timing: Could cloning leak timing differences? v0.rs:32-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d140488d-3723-4f11-9821-77bb1cc895bb",
+    "timestamp": "2025-11-21 21:43:45.180407",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Curve Attacks: Could signatures from another curve be accepted if versioning fails? mod.rs:7-23",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5bd21d6b-6ed3-4b44-8663-d1b27e9de89f",
+    "timestamp": "2025-11-21 21:43:59.265427",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Length Extension: Could appended bytes still allow deserialization to succeed? v0.rs:18-24",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4a180bc8-f036-4aed-8b1b-0808b80e7f51",
+    "timestamp": "2025-11-21 21:44:13.204861",
+    "report_generated": false
+  },
+  {
+    "question": "Public Key Recovery from Signatures: Could observers derive verification keys from signatures? v0.rs:93-104",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7aefd9fa-da29-4538-9185-eb1cf7ed7bbb",
+    "timestamp": "2025-11-21 21:44:28.924060",
+    "report_generated": false
+  },
+  {
+    "question": "Deterministic Nonces: Should deterministic nonces replace RNG-based ones to avoid reuse? v0.rs:94",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1f6b1caf-f64c-4aea-bd6f-96f79afe599c",
+    "timestamp": "2025-11-21 21:44:44.980045",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Function Collision: Could SHA3-256 collisions allow cross-message replay? v0.rs:99-100",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9f264f7e-235e-410b-a307-49e209edd593",
+    "timestamp": "2025-11-21 21:45:02.142861",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Component Swapping: Could attackers mix r and s components from different signatures? v0.rs:18-24",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ac9970e3-8c80-410b-996c-e18b8ba4aade",
+    "timestamp": "2025-11-21 21:45:21.429891",
+    "report_generated": false
+  },
+  {
+    "question": "Multiple Representations of Same Public Key: Could compressed point malleability affect protocol hashing? v0.rs:108-112",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_daabb2cf-a579-486a-be6b-93c6f44c4a16",
+    "timestamp": "2025-11-21 21:45:41.563686",
+    "report_generated": false
+  },
+  {
+    "question": "Zero Private Key: If SigningKey::gen() yields zero, signatures become forgeable. Is this prevented? v0.rs:83-89",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_14d95489-6536-4b20-a071-da8122cf147c",
+    "timestamp": "2025-11-21 21:46:02.022693",
+    "report_generated": false
+  },
+  {
+    "question": "Curve Parameter Validation: If curve parameters change, could old signatures break or new ones be forged? v0.rs:1-2",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e6288de8-9c40-4432-a676-cf33eb2e0819",
+    "timestamp": "2025-11-21 21:46:24.715148",
+    "report_generated": false
+  },
+  {
+    "question": "Challenge Hash Serialization Order: Could reordering serialized fields break backward compatibility? v0.rs:69-75",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_14640923-956c-4b51-91a9-ce349b8e3c6d",
+    "timestamp": "2025-11-21 21:46:47.938248",
+    "report_generated": false
+  },
+  {
+    "question": "Point Conversion Issues: Could projective/affine conversion errors allow forgery? v0.rs:42-44",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_78177cf9-fd11-4698-9a8f-f2efade2b348",
+    "timestamp": "2025-11-21 21:47:13.523054",
+    "report_generated": false
+  },
+  {
+    "question": "Scalar Addition Overflow: Could overflow in s = k + e * sk produce invalid yet verifiable signatures? v0.rs:103",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_50adef0e-e2a5-4731-a5a5-13641b0f8076",
+    "timestamp": "2025-11-21 21:47:40.615592",
+    "report_generated": false
+  },
+  {
+    "question": "Public Key Derivation Caching: Could race conditions in OnceCell lead to repeated derivations with leaks? v0.rs:58-60",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b359abad-bee7-40fa-9013-996132a440f1",
+    "timestamp": "2025-11-21 21:48:08.719324",
+    "report_generated": false
+  },
+  {
+    "question": "Batch Verification Absence: Could lack of batch verification leak timing info across multiple signatures? mod.rs:29-36",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fbc4cd5b-7fe4-42b0-9b53-2592f050c72a",
+    "timestamp": "2025-11-21 21:48:37.951001",
+    "report_generated": false
+  },
+  {
+    "question": "RNG Failure Mode: If SigningKey::gen() uses a weak RNG, can predictable secret keys be generated? v0.rs:83-84",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1fefcffa-c12f-4c65-8495-0084d183cb56",
+    "timestamp": "2025-11-21 21:49:07.335263",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Equation Timing Side Channel: Could timing differences in equality check leak information? v0.rs:45-46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e9d04bcb-cd54-4ec4-94bf-278ee59d9d3f",
+    "timestamp": "2025-11-21 21:49:39.175888",
+    "report_generated": false
+  },
+  {
+    "question": "Field Element Reduction: Could reduction via from_le_bytes_mod_order introduce biases weakening security? v0.rs:35-39",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_073190f7-3b63-4c3b-8517-7779bb94b8fa",
+    "timestamp": "2025-11-21 21:50:10.088178",
+    "report_generated": false
+  },
+  {
+    "question": "Message Hashing Pre-commitment: Could double-hashing in SchnorrHash introduce second-preimage issues? v0.rs:37-39 v0.rs:99-100",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a51a1725-7a4d-409d-81a2-46d2a9420863",
+    "timestamp": "2025-11-21 21:50:39.500643",
+    "report_generated": false
+  },
+  {
+    "question": "Challenge Hash Domain Separation: Could separator collisions allow signatures to be replayed across contexts? v0.rs:77-79",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8bd36713-6135-48e6-a287-2173a506a413",
+    "timestamp": "2025-11-21 21:51:11.442612",
+    "report_generated": false
+  },
+  {
+    "question": "Generator Point Consistency: If the generator used in signing differs from that in verification, could this break validation? v0.rs:42-44",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1e535032-81a1-42f2-b158-ab74bfed0ef3",
+    "timestamp": "2025-11-21 21:51:43.403871",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Version Signature Verification: If VerificationKey::verify() receives a V0 signature but newer versions exist, could version mismatch lead to incorrect acceptance? mod.rs:29-36",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_55af0c5c-dde7-4a6e-8110-6281e352f879",
+    "timestamp": "2025-11-21 21:52:16.353305",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Malleability: Given a valid Schnorr signature, could an attacker construct another valid signature for the same message? v0.rs:18-24",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7db81d14-b254-4e47-8b67-85f2ea184207",
+    "timestamp": "2025-11-21 21:52:49.666446",
+    "report_generated": false
+  },
+  {
+    "question": "Public Key Validation: When deserializing a VerificationKey, is it validated to be a non-identity point in the correct subgroup? v0.rs:26-30",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0938d676-ac6a-45e7-a694-bee91c32b2ed",
+    "timestamp": "2025-11-21 21:53:24.011923",
+    "report_generated": false
   }
 ]
