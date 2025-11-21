@@ -5848,5 +5848,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3bc6635d-8f09-464f-979e-10e61a576e83",
     "timestamp": "2025-11-21 20:33:54.895220",
     "report_generated": false
+  },
+  {
+    "question": "VDRF Output Malleability: If the VdrfEvaluation type allows multiple equivalent representations (e.g., different point encodings), could an attacker create multiple valid EmailKey values for the same email to register duplicate associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_50a28445-0873-44fc-b7fb-66235c3756de",
+    "timestamp": "2025-11-21 20:35:08.072570",
+    "report_generated": false
+  },
+  {
+    "question": "Email Certificate Forgery: In gen_node_secret_share v0.rs:418-432 , if the email certificate generation doesn't properly bind the user's signing key to the certificate, could an attacker forge certificates for arbitrary emails and perform unauthorized account associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f99a32d7-2112-4061-9446-91efbb7655b7",
+    "timestamp": "2025-11-21 20:35:21.128058",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Version VDRF Attacks: The EmailInput separator is versioned 'v0:email-input' v0.rs:47 . If a future version uses different VDRF parameters, could an attacker map old-version email associations to new-version accounts to break isolation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_54c41103-5f0b-49ac-a542-519d5ad72f23",
+    "timestamp": "2025-11-21 20:35:34.294444",
+    "report_generated": false
+  },
+  {
+    "question": "EmailKey Storage Collision: If two users obtain the same EmailKey v0.rs:173-184 (due to VDRF flaws), could this allow one user to recover another's account?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3ece08c2-11f6-4ccd-97e8-bf0cf5d955be",
+    "timestamp": "2025-11-21 20:35:48.197187",
+    "report_generated": false
+  },
+  {
+    "question": "RikSecretData Encryption: create_encrypted_msk encrypts RikSecretData using symmetric::seal with RIK as the key v0.rs:345-350 . If the authenticated encryption doesn't bind ciphertext to NodeId, could a malicious node substitute ciphertexts between users?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4b255161-2f33-4c2e-862f-07caff272015",
+    "timestamp": "2025-11-21 20:36:02.815391",
+    "report_generated": false
+  },
+  {
+    "question": "RIK Key Commitment: The encryption in create_encrypted_msk v0.rs:345-350 must be key-committing. If not, could an attacker find a different RIK that decrypts the same ciphertext to different RikSecretData?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9ad0dfed-9d7a-41f1-96ea-e3732d98b0c4",
+    "timestamp": "2025-11-21 20:36:18.732386",
+    "report_generated": false
+  },
+  {
+    "question": "CombinedSecretData Version Confusion: CombinedSecretData is enum V0 v0.rs:67-74 . During decryption v0.rs:526-534 , could an attacker swap versions to bypass checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0c7fa8cf-2e30-4091-9cb8-ef5615a9c905",
+    "timestamp": "2025-11-21 20:36:36.026302",
+    "report_generated": false
+  },
+  {
+    "question": "RikSecretData Cloning: RikSecretData derives Clone v0.rs:55-61 . Could sensitive sig_sk and msk_ss_rik leak via unzeroized copies?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_74086de4-f3f2-4a1d-8fb6-920e88ead3e0",
+    "timestamp": "2025-11-21 20:36:54.974586",
+    "report_generated": false
+  },
+  {
+    "question": "Sig_sk Binding to User: If sig_sk in RikSecretData v0.rs:58 isn't bound to user's public key, can an attacker substitute a different signing key?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_84b76e59-e1e4-48eb-9340-8dcdd1ced4dc",
+    "timestamp": "2025-11-21 20:37:15.306913",
+    "report_generated": false
+  },
+  {
+    "question": "Msk_ss_rik Entropy: If msk_ss_rik RNG in create_rik_association v0.rs:382 is weak, can an attacker brute-force the share?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9a3e2171-af67-4705-b8e0-ca3277271de3",
+    "timestamp": "2025-11-21 20:37:37.187806",
+    "report_generated": false
+  },
+  {
+    "question": "RIK Storage Security: After create_rik_association returns RIK v0.rs:376-387 , if storage isn't encrypted, can attackers steal/modify it?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_73e6d769-2c77-40ae-bfbd-2aa9aaa75d54",
+    "timestamp": "2025-11-21 20:38:00.070061",
+    "report_generated": false
+  },
+  {
+    "question": "RikSecretData Deserialization: During reconstruct_rik_data v0.rs:532-534 , could malformed signing keys be injected?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4f2ccedd-2af0-458e-994b-839b02effa6d",
+    "timestamp": "2025-11-21 20:38:23.938128",
+    "report_generated": false
+  },
+  {
+    "question": "Placeholder MSK Security: create_encrypted_msk stores placeholder MSK v0.rs:361 . If mistakenly used, could it weaken encryption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3b31f183-e8fd-4ca2-9b90-c96eeaa5e845",
+    "timestamp": "2025-11-21 20:38:48.331970",
+    "report_generated": false
+  },
+  {
+    "question": "RIK Decryption Error Handling: symmetric::open errors v0.rs:526-530 may leak timing info about RIK. Can attackers exploit this?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_afc9805c-c8db-455e-8a21-be71863bd74c",
+    "timestamp": "2025-11-21 20:39:13.729802",
+    "report_generated": false
+  },
+  {
+    "question": "Encap_key vs RIK Confusion: If encapsulation_key v0.rs:335 and RIK lack domain separation, can chosen-ciphertext attacks occur?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fb37d095-ff36-473f-ad3a-64f85e6b5b57",
+    "timestamp": "2025-11-21 20:39:40.622531",
+    "report_generated": false
+  },
+  {
+    "question": "RikSecretData Tagged Separator: If SEPARATOR 'v0:rik-secret-data' v0.rs:63-65 is reused elsewhere, can cross-context substitution occur?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b2c5cd99-f8d0-4c56-aac9-8ab857d4c14e",
+    "timestamp": "2025-11-21 20:40:08.768194",
+    "report_generated": false
+  },
+  {
+    "question": "CombinedSecretData Tagged Separator: Same for 'v0:combined-secret' v0.rs:72-74 — are cross-context attacks possible?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fddf9933-aac8-443d-b15d-99fb3ca37824",
+    "timestamp": "2025-11-21 20:40:40.692911",
+    "report_generated": false
+  },
+  {
+    "question": "Sig_sk Generation Randomness: If SigningKey::gen v0.rs:317 RNG is predictable, can attacker derive signing key?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4ee8cbfc-f3f0-462f-a603-8b06b8637b1b",
+    "timestamp": "2025-11-21 20:41:10.923472",
+    "report_generated": false
+  },
+  {
+    "question": "RIK Secret Share Splitting: msk_ss_rik is not Shamir-split v0.rs:60 . If one node's encrypted data leaks, is share recoverable?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_826e006b-f125-49f2-a6e8-82e3ddcf245c",
+    "timestamp": "2025-11-21 20:41:41.711279",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Generation Randomness: generate_commitment_values samples randomness v0.rs:408 . If RNG weak, can attacker predict openings?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_27dfdc7c-c384-4f1d-81ff-afc6287e59fc",
+    "timestamp": "2025-11-21 20:42:13.547759",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Binding: If pedersen(v_i, r_i) binding weak v0.rs:409 , can attacker find collisions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_29b4b17a-ca57-49c2-8b20-790f035ea56b",
+    "timestamp": "2025-11-21 20:42:45.526361",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Homomorphism Abuse: verify_secret_share uses linear combinations v0.rs:257-264 . Can attacker exploit homomorphism?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bd8e8512-ef6e-4281-b0fd-36463b0d88c5",
+    "timestamp": "2025-11-21 20:43:18.491506",
+    "report_generated": false
+  },
+  {
+    "question": "Generator Collision: PedersenGenerators::new() v0.rs:203 — if G = H, commitments break. Possible?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bcc024bd-a3f9-441a-aff3-9e6b963a8f3b",
+    "timestamp": "2025-11-21 20:43:52.357941",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Array Length: If commitments array malformed v0.rs:126 , can attacker bypass threshold?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1206bfee-59ec-48a8-9f89-88e7b31e389d",
+    "timestamp": "2025-11-21 20:44:26.007910",
+    "report_generated": false
+  },
+  {
+    "question": "Zero Commitment Attack: v_i=0,r_i=0 produces identity v0.rs:408-411 . Can attacker exploit?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fa3b0562-6764-445f-a505-3efbbb861062",
+    "timestamp": "2025-11-21 20:44:57.649385",
+    "report_generated": false
   }
 ]
