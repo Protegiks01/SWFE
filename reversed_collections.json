@@ -1798,5 +1798,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8d575e70-e807-4157-9c4e-7951cf0994d2",
     "timestamp": "2025-11-21 15:09:07.329892",
     "report_generated": false
+  },
+  {
+    "question": "Vector G1 Ordering Security: Does ordering matter for Pedersen commitments?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1c0e0723-6523-47d0-999e-a134b30b5257",
+    "timestamp": "2025-11-21 15:10:21.812657",
+    "report_generated": false
+  },
+  {
+    "question": "Vector G1 Duplicate Detection: Can duplicates break VDRF verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cc47c84d-4f7f-477a-8b92-1c080de909d1",
+    "timestamp": "2025-11-21 15:10:34.678674",
+    "report_generated": false
+  },
+  {
+    "question": "Vector G1 Length Validation: Are vectors checked for excessive length?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3db913ae-c76d-418e-af71-f6540a99ce0f",
+    "timestamp": "2025-11-21 15:10:48.431617",
+    "report_generated": false
+  },
+  {
+    "question": "Vector G1 Commitment Lists: Does serialization preserve binding between coefficients?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8decbd7e-9c8b-4c6f-8deb-8329206e11c0",
+    "timestamp": "2025-11-21 15:11:01.996445",
+    "report_generated": false
+  },
+  {
+    "question": "Vector Fr Bincode Dependency: Could bincode updates break compatibility?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9936697c-d5f1-450d-81fe-12eeb0f396e5",
+    "timestamp": "2025-11-21 15:11:16.716129",
+    "report_generated": false
+  },
+  {
+    "question": "Vector Fr Secret Share Lists: Does the serialization leak number of shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1f378bc9-be42-449b-84b1-d434731973f3",
+    "timestamp": "2025-11-21 15:11:32.645908",
+    "report_generated": false
+  },
+  {
+    "question": "Vector Fr Memory Efficiency: Could huge vectors cause memory exhaustion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8a2dcab3-924b-4f93-8b64-c23bad093429",
+    "timestamp": "2025-11-21 15:11:50.806581",
+    "report_generated": false
+  },
+  {
+    "question": "Vector Fr Deserialization Error: Does one invalid element corrupt the vector?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d83e4a14-64df-48ed-9f0a-eec94b250b18",
+    "timestamp": "2025-11-21 15:12:09.938818",
+    "report_generated": false
+  },
+  {
+    "question": "Vector Fr Compression Format: Is compression adding any security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_79b1cef7-288e-4b83-90dc-ba452a9a21d3",
+    "timestamp": "2025-11-21 15:12:29.997123",
+    "report_generated": false
+  },
+  {
+    "question": "Vector Fr Ordering: Could reordering coefficients break VDRF security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a6086795-9548-469b-b170-bdaa040e7706",
+    "timestamp": "2025-11-21 15:12:51.750830",
+    "report_generated": false
+  },
+  {
+    "question": "Vector Fr Threshold Validation: Does deserialization validate expected lengths?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e91631ee-9050-410e-8f59-2a03384c8679",
+    "timestamp": "2025-11-21 15:13:13.642133",
+    "report_generated": false
+  },
+  {
+    "question": "Vector Fr Size Mismatch: Can malformed byte sequences cause partial deserialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6f3a1be1-b7b1-432b-9c61-531a95a2d16c",
+    "timestamp": "2025-11-21 15:13:37.389688",
+    "report_generated": false
+  },
+  {
+    "question": "Vector Fr Empty Handling: Could empty vectors be abused where coefficients are expected?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_57094638-5706-4edd-9418-400b9c4f6a8b",
+    "timestamp": "2025-11-21 15:14:02.329998",
+    "report_generated": false
+  },
+  {
+    "question": "Vector Fr Length Encoding: Does serialize_compressed include a manipulable length prefix?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_509b7652-227d-47f3-be05-d57be9d2a302",
+    "timestamp": "2025-11-21 15:14:28.197635",
+    "report_generated": false
+  },
+  {
+    "question": "G2 Cross-Platform Consistency: Is G2 serialization stable across architectures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c38cd114-47fb-4f90-a6f1-6515cdae727f",
+    "timestamp": "2025-11-21 15:14:55.167809",
+    "report_generated": false
+  },
+  {
+    "question": "G2 Batch Operations: Do batch ops leak timing side-channels?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7a635092-b46d-4bd4-af09-53b33ec3d183",
+    "timestamp": "2025-11-21 15:15:22.882913",
+    "report_generated": false
+  },
+  {
+    "question": "G2 Canonical Y-Coordinate: Is canonical form enforced?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1f6faabe-a34f-41af-bf2b-525cf4cd9542",
+    "timestamp": "2025-11-21 15:15:51.864246",
+    "report_generated": false
+  },
+  {
+    "question": "G2 Compression Flags: Can attackers craft invalid combinations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1abfca52-8762-4691-88d8-b0716f56d77a",
+    "timestamp": "2025-11-21 15:16:21.790203",
+    "report_generated": false
+  },
+  {
+    "question": "G2 Deserialization Allocation: Any heap attack surface?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d3ff5065-6e03-45ea-acb3-af0b3d76aa6e",
+    "timestamp": "2025-11-21 15:16:55.105015",
+    "report_generated": false
+  },
+  {
+    "question": "G2 Buffer Reuse: Are buffers cleared when serializing many points?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e82b5f45-4798-4f4b-9286-d06febada333",
+    "timestamp": "2025-11-21 15:17:28.587927",
+    "report_generated": false
+  },
+  {
+    "question": "G2 Affine vs Projective: Could conversion introduce vulnerabilities?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_918f21d8-4955-4304-9327-580d111a3d13",
+    "timestamp": "2025-11-21 15:18:03.036893",
+    "report_generated": false
+  },
+  {
+    "question": "G2 Tuple Serialization Size: Could serde backends interpret tuple forms incorrectly?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0d6dde98-ac4b-4228-a701-101df5daae69",
+    "timestamp": "2025-11-21 15:18:39.135505",
+    "report_generated": false
+  },
+  {
+    "question": "G2 Generator Serialization: Is the serialized generator canonical?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9907b30c-4a6c-423c-b188-48e4fde5c6b7",
+    "timestamp": "2025-11-21 15:19:14.573976",
+    "report_generated": false
+  },
+  {
+    "question": "G2 Serialization Round-Trip: Is serialize/deserialize stable for all valid points?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fb1cdc07-562e-4dde-ad75-fc766ddd0aec",
+    "timestamp": "2025-11-21 15:19:49.715856",
+    "report_generated": false
+  },
+  {
+    "question": "G2 Point Validation Order: Is validation performed in the correct ordering?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_07f5dc9a-56dc-4db3-baee-700d2d1efb3d",
+    "timestamp": "2025-11-21 15:20:26.190684",
+    "report_generated": false
   }
 ]
