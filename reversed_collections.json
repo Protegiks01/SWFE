@@ -6448,5 +6448,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_443111ca-f2c2-476d-906a-7d4718267335",
     "timestamp": "2025-11-21 20:58:10.076723",
     "report_generated": false
+  },
+  {
+    "question": "The DiffieHellmanCtx implements Tagged v0.rs:49-51 with separator \"v0:pke-dhpk-ss\". If a future version uses a different separator or the separator can be controlled by an attacker, could this enable cross-protocol attacks where guardian shares encrypted in one context are decrypted in another?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3da61751-8251-4c0b-bcee-153a4f93c8e9",
+    "timestamp": "2025-11-21 20:59:19.587177",
+    "report_generated": false
+  },
+  {
+    "question": "In encrypt() v0.rs:119-125 , the DiffieHellmanCtx uses self.0 as the pk field. If the EncryptionKey can be malleated or corrupted during transmission (e.g., from contract storage), could this cause the encryption and decryption contexts to mismatch, permanently locking guardian shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ed972a69-364d-4230-8781-0509c1ad325f",
+    "timestamp": "2025-11-21 20:59:32.703564",
+    "report_generated": false
+  },
+  {
+    "question": "The kdfn() function v0.rs:82-88 takes &DiffieHellmanCtx which includes the public keys. If the serialization of DiffieHellmanCtx is not injective (i.e., different contexts could serialize to the same bytes), could this enable context confusion attacks where a ciphertext from one guardian is decryptable by another?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bcc765e0-a5df-4c41-b59e-7cb9b265d476",
+    "timestamp": "2025-11-21 20:59:45.906438",
+    "report_generated": false
+  },
+  {
+    "question": "In both encrypt() and decrypt() v0.rs:82-88 , the DiffieHellmanCtx is constructed with tp and pk. However, the user-provided context ctx is passed separately to the symmetric AEAD. Could a type confusion attack occur where the same context type is used with different separators, allowing a guardian share encrypted for backup recovery to be decrypted in an account recovery session?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ff2db1ee-b588-45d3-b177-045595728c61",
+    "timestamp": "2025-11-21 20:59:59.692795",
+    "report_generated": false
+  },
+  {
+    "question": "The DiffieHellmanCtx structure v0.rs:21-26 includes both the ephemeral public key tp and the recipient's public key pk in the KDF context. If either key is malleated or substituted after encryption but before KDF derivation, could this break the binding between ciphertext and recipient, allowing guardian shares to be decrypted by unintended parties?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3fd723c4-e8b7-406d-aa60-e4570becc276",
+    "timestamp": "2025-11-21 21:00:14.123921",
+    "report_generated": false
+  },
+  {
+    "question": "The ephemeral key tp in Ciphertext v0.rs:42-47 is stored as a curve point. If this point is not checked for subgroup membership during deserialization, could an attacker provide points in a small subgroup, reducing the effective security of guardian share encryption to the subgroup order?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6481c06d-dab1-4864-b1dd-5c1e40679426",
+    "timestamp": "2025-11-21 21:00:30.054693",
+    "report_generated": false
+  },
+  {
+    "question": "In decrypt() v0.rs:73-78 , the shared secret is computed before any validation of the ciphertext's MAC. If an attacker can trigger shared secret computation with many invalid ciphertexts, could this create a timing side-channel that leaks information about the secret key self.sk?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_17ebee3a-593e-4e06-a029-97d98ccb11fb",
+    "timestamp": "2025-11-21 21:00:47.211868",
+    "report_generated": false
+  },
+  {
+    "question": "The shared secret computation in both encrypt() and decrypt() v0.rs:75-78 assumes the curve operations are constant-time. If the underlying ark_ec library has timing side-channels during scalar multiplication, could a malicious off-chain node or network adversary extract guardian secret keys through timing analysis of decryption operations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_45696e23-e391-4f09-86d6-b850be5e8de6",
+    "timestamp": "2025-11-21 21:01:06.341055",
+    "report_generated": false
+  },
+  {
+    "question": "In encrypt() v0.rs:107 , the ephemeral public key is computed as (curve::GAffine::generator() * ts).into(). If the generator point is not properly validated or is substituted during deserialization, could this lead to weak ephemeral keys that compromise the security of guardian share encryption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8d2f2f32-9704-4519-b348-13499bf52aca",
+    "timestamp": "2025-11-21 21:01:26.481033",
+    "report_generated": false
+  },
+  {
+    "question": "The Diffie-Hellman computation in decrypt() v0.rs:75-78 uses the ciphertext's ephemeral key ct.tp directly without validation. Could a malicious party who controls a minority of guardians craft invalid ephemeral keys that cause arithmetic errors during shared secret computation, preventing honest guardians from decrypting their shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_84f4f923-6bdd-4e14-b5c1-5cb940ae753d",
+    "timestamp": "2025-11-21 21:01:48.125688",
+    "report_generated": false
+  },
+  {
+    "question": "In encrypt() v0.rs:110-114 , the input key material (IKM) for the KDF is the serialized shared secret. If the serialization includes extra metadata or non-canonical representations, could this lead to different IKMs for the same shared secret, breaking decryption and causing guardian shares to be permanently undecryptable?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f32e2832-c25f-4b58-88f6-b898a251f169",
+    "timestamp": "2025-11-21 21:02:11.323703",
+    "report_generated": false
+  },
+  {
+    "question": "The shared secret in decrypt() v0.rs:74-78 is serialized using serialize_compressed(). If this serialization is not canonical or allows multiple representations of the same point, could an attacker create multiple valid ciphertexts for the same plaintext, enabling ciphertext malleability attacks on guardian shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b8288c6b-a88f-451f-bd83-63a91fff4c11",
+    "timestamp": "2025-11-21 21:02:34.656327",
+    "report_generated": false
+  },
+  {
+    "question": "In both encrypt() and decrypt() v0.rs:75-78 , the result of scalar multiplication is converted to affine coordinates with .into_affine(). If the multiplication results in the point at infinity (e.g., due to small-order points), could this cause a panic or produce an invalid shared secret, violating the integrity of guardian share encryption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_37aac4e8-c580-4be0-ad34-75acb711422c",
+    "timestamp": "2025-11-21 21:02:59.882066",
+    "report_generated": false
+  },
+  {
+    "question": "The encrypt() function v0.rs:111-114 computes the shared secret as (self.0 * ts).into_affine(). If self.0 (the recipient's public key) is not validated during deserialization and is a point of small order, could this result in a small shared secret space, enabling brute-force attacks on guardian backup shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3f100aa7-035a-4cee-83e0-36d3856a03a3",
+    "timestamp": "2025-11-21 21:03:26.053371",
+    "report_generated": false
+  },
+  {
+    "question": "In decrypt() v0.rs:73-78 , the shared secret is computed as (ct.tp * self.sk).into_affine(). If ct.tp is a maliciously crafted point (e.g., point of small order, invalid curve point), could this lead to a predictable shared secret, allowing an attacker to decrypt guardian shares without knowing the secret key?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d58095b5-9ffd-4125-b7ab-ca9075f9060d",
+    "timestamp": "2025-11-21 21:03:53.237932",
+    "report_generated": false
+  },
+  {
+    "question": "In encrypt() v0.rs:106-107 , the ephemeral scalar ts is generated without checking if it's zero. If ts = 0 (with negligible probability), the ephemeral public key tp would be the identity element, and the shared secret computation would fail. Could this cause a denial-of-service in backup creation, preventing guardians from receiving valid shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_28ea8f4a-5b73-4b47-9665-13c9380a12a7",
+    "timestamp": "2025-11-21 21:04:22.002790",
+    "report_generated": false
+  },
+  {
+    "question": "The DecryptionKey struct v0.rs:28-34 caches the public key in a OnceCell. If an attacker can trigger multiple initializations through concurrent access or race conditions, could this lead to inconsistent public/private key pairs, allowing a guardian's share to be encrypted to a different key than they can decrypt?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7a00c6fd-8dcd-45b0-af18-dfbb1b0e4ad3",
+    "timestamp": "2025-11-21 21:04:51.645476",
+    "report_generated": false
+  },
+  {
+    "question": "The secret key sk in DecryptionKey v0.rs:29-34 is stored as curve::Fr. Does this type guarantee that values are always in the correct field, or could deserialization allow out-of-range values that break discrete log assumptions and enable unauthorized decryption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4b9b618b-d7ec-49ef-95c2-d3cc32869f6d",
+    "timestamp": "2025-11-21 21:05:21.823913",
+    "report_generated": false
+  },
+  {
+    "question": "In encryption_key() v0.rs:61-66 , the public key is computed as curve::GAffine::generator() * self.sk. If the curve implementation has vulnerabilities (e.g., cofactor issues, invalid point handling), could a malicious party craft invalid public keys that pass deserialization but enable cryptographic attacks when used for guardian share encryption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f151471a-9f0c-4eef-828a-d1a4da726acb",
+    "timestamp": "2025-11-21 21:05:53.227014",
+    "report_generated": false
+  },
+  {
+    "question": "The encrypt() function v0.rs:99-132 generates a fresh ephemeral key ts for each encryption. If the RNG fails or repeats nonces (e.g., due to insufficient entropy after fork), could this lead to nonce reuse in the underlying symmetric AEAD, breaking semantic security and allowing ciphertext decryption by observing XOR differences?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d3afe57f-1ed8-423f-8568-c60da104ab71",
+    "timestamp": "2025-11-21 21:06:25.491937",
+    "report_generated": false
+  },
+  {
+    "question": "The ephemeral Diffie-Hellman secret ts in encrypt() v0.rs:106-107 is sampled from the provided RNG. If the RNG is compromised or predictable (e.g., seeded with low-entropy data), could an attacker predict ts, compute the shared secret, and decrypt guardian shares, violating backup confidentiality?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_397b3117-7756-4ad1-8485-0a251463c120",
+    "timestamp": "2025-11-21 21:06:57.275589",
+    "report_generated": false
+  },
+  {
+    "question": "In DecryptionKey::gen() v0.rs:54-59 , there's no validation that sk ≠ 0. If a zero secret key is generated (though statistically improbable), the corresponding public key would be the identity element. Could this enable an attacker to forge ciphertexts that decrypt under multiple keys, violating the binding between guardian and their backup share?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a057af98-e75a-4dc6-9f22-0418ab3a797e",
+    "timestamp": "2025-11-21 21:07:29.712161",
+    "report_generated": false
+  },
+  {
+    "question": "The EncryptionKey is derived lazily in encryption_key() v0.rs:61-66 using OnceCell. If the public key computation curve::GAffine::generator() * self.sk encounters an edge case (e.g., sk = 0), could this result in the identity element as a public key, causing all encryptions to the same point and breaking IND-CCA2 security for that guardian?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1453db7e-bbae-435f-834e-b9dc4a0f11a9",
+    "timestamp": "2025-11-21 21:08:01.499469",
+    "report_generated": false
+  },
+  {
+    "question": "The DecryptionKey::gen() function v0.rs:54-59 accepts any CryptoRng + Rng implementation. If a malicious off-chain node or compromised client supplies a deterministic or predictable RNG, could this lead to predictable secret keys, enabling an attacker to pre-compute decryption keys for future guardian shares and compromise backup reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_80eafdd7-f715-499a-b43d-99719cda5c30",
+    "timestamp": "2025-11-21 21:08:33.134201",
+    "report_generated": false
+  },
+  {
+    "question": "In DecryptionKey::gen() v0.rs:54-59 , the secret key sk is generated directly from the RNG without any rejection sampling or range checks. Could a weak or biased RNG produce secret keys that lie in a small subgroup or have low discrete log complexity, allowing an attacker to brute-force guardian decryption keys and violate the \"only owner can reconstruct backups\" invariant?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cbb3cae2-4c1e-433e-a4f1-43cafc9771c2",
+    "timestamp": "2025-11-21 21:09:05.856878",
+    "report_generated": false
   }
 ]
