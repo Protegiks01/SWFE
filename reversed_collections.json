@@ -598,5 +598,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4644d102-e03d-4974-a502-1150825aefd3",
     "timestamp": "2025-11-21 13:38:22.782969",
     "report_generated": false
+  },
+  {
+    "question": "Output Distribution Uniformity: Is KDF output uniformly random?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9e75f3a4-f6d6-42f5-a750-8df1fabe65e5",
+    "timestamp": "2025-11-21 13:39:43.753430",
+    "report_generated": false
+  },
+  {
+    "question": "IKM Padding Oracle: Does KDF serialization leak structure via timing?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a73f9b56-69ee-41ae-9751-c4b6b001d6c2",
+    "timestamp": "2025-11-21 13:39:56.845377",
+    "report_generated": false
+  },
+  {
+    "question": "KDF Version Migration: Could version confusion cause the use of weaker KDF variants?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f99058bf-891d-4e56-bb6f-50145e4f74d0",
+    "timestamp": "2025-11-21 13:40:11.133314",
+    "report_generated": false
+  },
+  {
+    "question": "KMAC Finalize Idempotence: Can XOF readers be reused safely?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e6a80b6a-e0d2-4c53-9c3a-0a47f76b9c55",
+    "timestamp": "2025-11-21 13:40:25.272290",
+    "report_generated": false
+  },
+  {
+    "question": "Output Buffer Initialization: Are output buffers zeroed before writing to avoid leaks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4bf96d7c-fc1e-433f-a745-d8299520fc70",
+    "timestamp": "2025-11-21 13:40:40.254005",
+    "report_generated": false
+  },
+  {
+    "question": "IKM Length Validation: Are tiny IKMs rejected as too weak?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_360dbdc2-6648-4d96-affa-ddd75c402297",
+    "timestamp": "2025-11-21 13:40:56.375920",
+    "report_generated": false
+  },
+  {
+    "question": "KDF Salt Absence: Does separator uniqueness prevent rainbow-table attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fe71605f-f64e-4150-8229-53c6d6f032b8",
+    "timestamp": "2025-11-21 13:41:14.627745",
+    "report_generated": false
+  },
+  {
+    "question": "XOF Mode Security: Is arbitrary-length XOF extraction secure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_00f4e56e-825b-4e67-9626-06d4eb5f2a00",
+    "timestamp": "2025-11-21 13:41:34.332048",
+    "report_generated": false
+  },
+  {
+    "question": "IKM Deserialization Attacks: Could malicious bincode data cause code execution?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1e49edf0-ffbe-40f5-8ff5-2a343428d08d",
+    "timestamp": "2025-11-21 13:41:54.181791",
+    "report_generated": false
+  },
+  {
+    "question": "Output Length Overflow: Could huge output sizes cause memory exhaustion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1bd75989-66dc-42ab-b4af-91bf0e41173d",
+    "timestamp": "2025-11-21 13:42:16.285335",
+    "report_generated": false
+  },
+  {
+    "question": "KMAC Key Commitment: Does the construction prevent two IKM values from producing same output?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5f01551a-8701-4b88-a43d-49aaf7313a45",
+    "timestamp": "2025-11-21 13:42:39.736639",
+    "report_generated": false
+  },
+  {
+    "question": "KDF Context Binding: Is IKM bound to account and email context, preventing cross-account derivation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e5030c3a-c2df-41e5-84bd-2fa837205799",
+    "timestamp": "2025-11-21 13:43:03.590576",
+    "report_generated": false
+  },
+  {
+    "question": "XofReader Read Errors: Could silent read errors cause weak randomness?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_efcadb24-1c2e-4763-a27b-b2ff6d8fbcf7",
+    "timestamp": "2025-11-21 13:43:29.418110",
+    "report_generated": false
+  },
+  {
+    "question": "IKM Type Confusion: Can serialization of non-standard types (e.g., NaN floats) break determinism?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d572303f-12f1-4e51-8139-c73005eddeba",
+    "timestamp": "2025-11-21 13:43:56.497070",
+    "report_generated": false
+  },
+  {
+    "question": "Fixed-Size KDF Constant-Time: Does kdfn() run in constant time, preventing timing leaks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c1109370-08a7-40e7-b9fa-c3c3c76d6161",
+    "timestamp": "2025-11-21 13:44:24.090598",
+    "report_generated": false
+  },
+  {
+    "question": "Customization String Length: Do very long separators cause truncation or collisions in KMAC256?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_966b8ae2-0835-4895-82fd-8a4bf7784ebc",
+    "timestamp": "2025-11-21 13:44:52.968248",
+    "report_generated": false
+  },
+  {
+    "question": "Output Buffer Aliasing: Could overlapping output buffers cause undefined behavior or predictable KDF outputs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0accf6d6-f868-4e35-bc47-e91e8b1ffa44",
+    "timestamp": "2025-11-21 13:45:22.993119",
+    "report_generated": false
+  },
+  {
+    "question": "KDF Determinism Across Platforms: Are KDF outputs identical across architectures, preventing cross-platform inconsistency?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_45ef7ad6-6a70-4828-a9bf-ba46222de1ff",
+    "timestamp": "2025-11-21 13:45:54.258622",
+    "report_generated": false
+  },
+  {
+    "question": "XofReader State Leakage: Could internal state of XofReader leak via memory dumps, enabling RNG prediction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_45abcc8c-8dca-4345-8072-8dcf9c3c1943",
+    "timestamp": "2025-11-21 13:46:25.117138",
+    "report_generated": false
+  },
+  {
+    "question": "IKM Zero-Byte Handling: Does the KDF reject all-zero IKM, preventing predictable keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4acb9f9d-08e6-4c1e-bfe1-42df5240288f",
+    "timestamp": "2025-11-21 13:46:56.434959",
+    "report_generated": false
+  },
+  {
+    "question": "KMAC256 Implementation Backdoors: Could a supply-chain compromise of sha3_kmac produce predictable outputs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7ec169db-178c-49c5-92ad-f24d4c089fe3",
+    "timestamp": "2025-11-21 13:47:27.527506",
+    "report_generated": false
+  },
+  {
+    "question": "KDF Output Reuse: Are KDF outputs guaranteed unique across contexts, preventing linkability of encrypted backups?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_554dfc4c-9b2f-4c13-8a36-a7f09abbd544",
+    "timestamp": "2025-11-21 13:47:59.944135",
+    "report_generated": false
+  },
+  {
+    "question": "Output Length Validation: Does kdf() enforce secure output sizes, or could a caller request dangerously short keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e58d00cc-b858-46d1-910a-b3f61c7a1fd6",
+    "timestamp": "2025-11-21 13:48:33.448203",
+    "report_generated": false
+  },
+  {
+    "question": "IKM Serialization Integrity: Can malicious serialization cause collisions between different IKM values, breaking guardian threshold security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1fd7bf9f-9dcb-474a-8e3c-4dfe5d1f22da",
+    "timestamp": "2025-11-21 13:49:07.569061",
+    "report_generated": false
+  },
+  {
+    "question": "KMAC256 Weak Key Handling: Does kdf_rng() properly handle low-entropy IKM values, or could weak passwords produce brute-forceable keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7c57b652-a05a-441a-ba87-b38b9fd00d5c",
+    "timestamp": "2025-11-21 13:49:40.224908",
+    "report_generated": false
   }
 ]
