@@ -4798,5 +4798,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_39109f11-da11-4e59-8241-e366d575a9bd",
     "timestamp": "2025-11-21 18:52:44.075969",
     "report_generated": false
+  },
+  {
+    "question": "EM Radiation from Scalar Mult: Electromagnetic radiation during G * k and G * sk operations could leak hamming weights of secrets. Are countermeasures like blinding used?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e5c59086-a48f-47ad-aa4d-cbd5d54f5107",
+    "timestamp": "2025-11-21 18:53:54.021695",
+    "report_generated": false
+  },
+  {
+    "question": "Power Analysis on Signing: The signing operation v0.rs:93-105 involves scalar multiplications and field operations. Could power analysis on IoT or embedded devices leak the secret key?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_848a2847-5847-40de-a01c-681aa9f69bed",
+    "timestamp": "2025-11-21 18:54:07.529561",
+    "report_generated": false
+  },
+  {
+    "question": "Verification Key Cache Timing: The OnceCell cache v0.rs:109-111 causes timing differences between first access (computes key) and subsequent accesses (returns cached). Could this leak usage patterns?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fc0f9a04-0fec-4268-be49-eef76c5c7af1",
+    "timestamp": "2025-11-21 18:54:22.096620",
+    "report_generated": false
+  },
+  {
+    "question": "Network Timing: If signature verification happens on-chain or via off-chain nodes, could network timing variations leak whether signatures are valid or which keys were used?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e91c9c19-5ec8-45f0-8115-5a8e09227ac9",
+    "timestamp": "2025-11-21 18:54:39.341212",
+    "report_generated": false
+  },
+  {
+    "question": "Cache Timing in Scalar Mult: Scalar multiplication may use lookup tables. Could cache-timing attacks (e.g., Flush+Reload) leak nonce or secret key bits?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c92702b6-2d4b-43a8-85ab-7f58e4a2badc",
+    "timestamp": "2025-11-21 18:54:55.917374",
+    "report_generated": false
+  },
+  {
+    "question": "Branch-Based Timing Leaks: If the verification logic contains conditional branches based on secret values, could branch prediction side-channels leak information?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5e0a9bd2-f303-4860-b262-ae8bbd198704",
+    "timestamp": "2025-11-21 18:55:14.239584",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Timing: Deserializing signatures or keys may have timing side-channels. Could attackers measure deserialization time to infer structural properties of keys or signatures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_43acce03-16d4-4202-9bc8-622fc04fffce",
+    "timestamp": "2025-11-21 18:55:33.888365",
+    "report_generated": false
+  },
+  {
+    "question": "RNG Generation Timing: Generating the nonce k v0.rs:94 may have variable timing. Could this leak entropy or RNG state to remote attackers?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c3f7b33e-aa8f-43e2-bf4c-f4c22fda761b",
+    "timestamp": "2025-11-21 18:55:54.570262",
+    "report_generated": false
+  },
+  {
+    "question": "Point Affine Conversion Timing: Converting projective points to affine form v0.rs:42-44 involves an inversion. Could timing variations in inversion leak coordinate information?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_090da15e-1e50-4a9a-9a53-3fd58793a487",
+    "timestamp": "2025-11-21 18:56:16.395742",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Computation Timing: Hashing the message and computing the challenge v0.rs:35-39 v0.rs:96-100 may have message-length-dependent timing. Could this leak information about message content?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_abba5d82-ca3a-4463-ab23-9a13f7285c36",
+    "timestamp": "2025-11-21 18:56:39.446550",
+    "report_generated": false
+  },
+  {
+    "question": "Verification Equation Timing: The equality check in verify() v0.rs:45 may short-circuit. Could early termination leak information about which bit positions differ, aiding in forgery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fb1be559-4770-43fc-a388-fdbf1419edf9",
+    "timestamp": "2025-11-21 18:57:03.197412",
+    "report_generated": false
+  },
+  {
+    "question": "Scalar Multiplication Timing: Both signing v0.rs:95 and verification v0.rs:42-44 perform scalar multiplications. Are these constant-time operations, or could timing differences leak secret key bits?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6a3dd7a0-16ac-4e67-8a3e-93b3a9c09400",
+    "timestamp": "2025-11-21 18:57:28.611408",
+    "report_generated": false
+  },
+  {
+    "question": "Association Signature Timestamp: If recovery signatures don't include timestamps or nonces, could attackers use expired certificates or associations to initiate recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_91a81c32-2968-4db6-a002-f1e56a4dc7d3",
+    "timestamp": "2025-11-21 18:57:54.668607",
+    "report_generated": false
+  },
+  {
+    "question": "Off-Chain Node Signature Exposure: Off-chain nodes hold VDRF shares. If they also verify recovery signatures, could timing differences in verification leak information about valid associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a5304a61-4e5f-42e1-b50e-5f5d9c12ef7c",
+    "timestamp": "2025-11-21 18:58:22.175357",
+    "report_generated": false
+  },
+  {
+    "question": "Anonymous Recovery Signature Leak: During anonymous recovery, does signing the recovery request leak which association is being used, violating privacy guarantees?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f8bc8413-4201-49a1-9dc6-0e8fdd5ff72e",
+    "timestamp": "2025-11-21 18:58:49.832853",
+    "report_generated": false
+  },
+  {
+    "question": "Email Certificate Replay: If email certificates are signed using this Schnorr implementation, could attackers replay certificates across accounts to claim multiple identities?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4efaac31-dfa1-4e92-91f1-463067bf45d2",
+    "timestamp": "2025-11-21 18:59:18.549663",
+    "report_generated": false
+  },
+  {
+    "question": "Association Removal Authorization: Does removing an association require a signature? If not, could attackers with partial account access remove legitimate associations to deny recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c35098f2-364d-49f8-9232-f28d82c6bd96",
+    "timestamp": "2025-11-21 18:59:49.135591",
+    "report_generated": false
+  },
+  {
+    "question": "Multi-Association Key Reuse: An account may have multiple email associations. If the same SigningKey is reused across associations, could compromising one key expose all associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7faf3df3-9b79-47a2-b100-60eefa51577a",
+    "timestamp": "2025-11-21 19:00:18.847901",
+    "report_generated": false
+  },
+  {
+    "question": "Association Creation Signature: When adding an association, is the SigningKey generation authenticated by a signature from the account owner? Could attackers inject unauthorized associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_89620bed-d22a-4a26-8122-47515e982e07",
+    "timestamp": "2025-11-21 19:00:49.606658",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Signature Verification: Email certificates from Swafe-io must be verified. If the system reuses the Schnorr signature implementation for certificate verification, could vulnerabilities affect certificate validation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1171bf7c-ac8d-4283-9868-a91b0f1911e7",
+    "timestamp": "2025-11-21 19:01:21.115984",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Output Binding: If the SigningKey is derived from or used alongside VDRF outputs, could weaknesses in the signature scheme leak information about the VDRF secret shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e6df773c-91fa-4a22-8e1f-656eeab63b30",
+    "timestamp": "2025-11-21 19:01:52.401927",
+    "report_generated": false
+  },
+  {
+    "question": "Email Privacy via Signature: The association system uses VDRF to hide email-to-account mappings. If the VerificationKey is stored on-chain in plaintext, could attackers link accounts to users by correlating keys across contexts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5051b4de-c693-4973-b8db-858dd30f875a",
+    "timestamp": "2025-11-21 19:02:23.723958",
+    "report_generated": false
+  },
+  {
+    "question": "Honest Guardian Signature Theft: If an attacker intercepts a legitimate guardian's signed share, could they reuse it in unauthorized reconstruction attempts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ea7eecbf-42dc-4a2f-a179-c0057ddd0b3e",
+    "timestamp": "2025-11-21 19:02:55.360535",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Compromise Escalation: If fewer than t guardians' signing keys are compromised, what prevents attackers from combining their forged signatures with legitimate shares to reach the threshold?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_68241eb2-c809-4f5d-a2da-f8365a1322e2",
+    "timestamp": "2025-11-21 19:03:26.486281",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Backup Share Reuse: If the same SigningKey is used across multiple backups, could shares from one backup be replayed in another backup's reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b2e8c537-fe62-4e0a-9664-6bec6851d734",
+    "timestamp": "2025-11-21 19:03:56.609969",
+    "report_generated": false
   }
 ]
