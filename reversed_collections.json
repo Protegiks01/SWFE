@@ -7348,5 +7348,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_715cb57c-2973-40dc-aa0c-d7ff6443ae22",
     "timestamp": "2025-11-21 22:04:12.077323",
     "report_generated": false
+  },
+  {
+    "question": "NodeId Unicode Normalization: The validation checks c.is_ascii_alphabetic(), but does it reject Unicode lookalikes or homoglyphs? Could an attacker use visually similar characters to impersonate legitimate node IDs in social engineering attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_67c308ac-56cb-44ce-8397-032e541249db",
+    "timestamp": "2025-11-21 22:05:36.785342",
+    "report_generated": false
+  },
+  {
+    "question": "NodeId Maximum Length: Is there a maximum length enforced for NodeIds? Could an attacker submit extremely long NodeIds (e.g., 10MB) that pass validation but cause memory exhaustion when stored in HashMap<NodeId, ...> collections in VDRF operations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3c47b051-427d-40cc-b37c-a8460d9468f7",
+    "timestamp": "2025-11-21 22:05:50.397539",
+    "report_generated": false
+  },
+  {
+    "question": "NodeId Hyphen Boundary Cases: The validation allows hyphens in NodeIds, but does it prevent leading/trailing hyphens (e.g., \"node:-malicious\" or \"node:malicious-\")? Could these create ambiguous NodeIds that collide after normalization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ab641d95-e2c3-4ddf-a524-ffea224c1f4b",
+    "timestamp": "2025-11-21 22:06:03.948723",
+    "report_generated": false
+  },
+  {
+    "question": "NodeId Empty String Handling: Can NodeId::from_str() accept an empty string after the colon (e.g., \"node:\")? If so, does this create a zero-length NodeId that could cause panics or undefined behavior when computing eval_point() via hashing?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_770e443b-5d85-4e79-a37a-49c76e2d5c4d",
+    "timestamp": "2025-11-21 22:06:18.267460",
+    "report_generated": false
+  },
+  {
+    "question": "NodeId Case Sensitivity: The NodeId::from_str() function checks if typ != \"node\", but does it enforce case sensitivity? Could an attacker bypass validation by submitting \"NODE:malicious-id\" or \"Node:malicious-id\" to create collision attacks on VDRF evaluation points?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c71779ba-f573-4764-a6b6-c385049a15c2",
+    "timestamp": "2025-11-21 22:06:33.396009",
+    "report_generated": false
+  },
+  {
+    "question": "The final KDF output is returned to callers. Can malicious callers use chosen-input attacks to derive relationships between evaluation outputs and recovered emails?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2e5ef343-62ca-45a2-9c84-59b2ad0d9f79",
+    "timestamp": "2025-11-21 22:06:49.539061",
+    "report_generated": false
+  },
+  {
+    "question": "In verify() vdrf.rs:239-245 , missing validation on KDF output length could allow misuse in downstream protocols. Can attackers exploit variable-length outputs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_882564ea-3e00-400a-9d7a-3234a3e06ebd",
+    "timestamp": "2025-11-21 22:07:07.455082",
+    "report_generated": false
+  },
+  {
+    "question": "The KDF implementation may rely on underlying hash functions. Can weakened hash security cause the KDF to produce predictable or forgeable outputs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5f0d3641-93fb-4acf-81b4-3f953030bae1",
+    "timestamp": "2025-11-21 22:07:27.674683",
+    "report_generated": false
+  },
+  {
+    "question": "In verify() vdrf.rs:239-245 , domain separation relies on separators in VdrfOutputInfo. Can separator reuse across the codebase cause cross-protocol confusion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3e3ca7da-7dd8-44d2-b71c-d028f03a1a95",
+    "timestamp": "2025-11-21 22:07:48.612917",
+    "report_generated": false
+  },
+  {
+    "question": "The KDF output is used as final protocol output. Can insufficient entropy in evaluation shares allow brute-force attacks on the derived output?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2dcfe7f2-af26-451a-b37b-64739924ff06",
+    "timestamp": "2025-11-21 22:08:10.906407",
+    "report_generated": false
+  },
+  {
+    "question": "In verify() vdrf.rs:239-245 , the evaluation share is compressed for KDF. Can compression ambiguities or malleability in compressed G2 encoding alter the final output?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0235bac9-1796-4220-81f6-1c97cf399f44",
+    "timestamp": "2025-11-21 22:08:34.629142",
+    "report_generated": false
+  },
+  {
+    "question": "The KDF step vdrf.rs:239-245 combines multiple inputs. Can changing the order or formatting of these inputs cause ambiguity or collisions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5d2832ea-715f-4c8c-9b91-996b4bf2e1fe",
+    "timestamp": "2025-11-21 22:09:00.368481",
+    "report_generated": false
+  },
+  {
+    "question": "In verify() vdrf.rs:239-245 , kdfn derives output bytes directly. Can an attacker exploit structural weaknesses in KDF output to derive partial information about the underlying evaluation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_636be3d6-34d0-4692-9d77-4c6cf3e91695",
+    "timestamp": "2025-11-21 22:09:27.517311",
+    "report_generated": false
+  },
+  {
+    "question": "The KDF output in verify() vdrf.rs:239-245 depends on input and c0. Can two different evaluations with identical serialized forms cause collisions in output derivation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ee68942b-a19a-466c-a5ac-fefa26c64f39",
+    "timestamp": "2025-11-21 22:09:55.392247",
+    "report_generated": false
+  },
+  {
+    "question": "In verify() vdrf.rs:239-245 , the kdfn function is called with the serialized evaluation and VdrfOutputInfo. Can the KDF implementation have insufficient domain separation, allowing outputs from one context to be used in another?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_af709146-cd1c-4d5f-b9c6-8f907cf6c449",
+    "timestamp": "2025-11-21 22:10:25.777163",
+    "report_generated": false
+  },
+  {
+    "question": "The verify() function vdrf.rs:225-229 performs a pairing check that's cryptographically expensive. Can an attacker force many verification attempts to cause resource exhaustion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9e571a8c-7565-48e5-a364-45b607c155d9",
+    "timestamp": "2025-11-21 22:10:57.862116",
+    "report_generated": false
+  },
+  {
+    "question": "In verify() vdrf.rs:239-245 , the KDF output length is parameterized by N. Can setting N to 0 or extremely large values cause issues with the KDF or downstream uses?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_aa69d094-e626-41c1-a4db-33c55291e42d",
+    "timestamp": "2025-11-21 22:11:31.923178",
+    "report_generated": false
+  },
+  {
+    "question": "The VdrfOutputInfo separator is 'v0:vdrf-output' vdrf.rs:83-85 . Can this separator collide with other protocol separators, allowing VDRF outputs to be reinterpreted in different contexts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_097f81f1-d83e-4197-b75e-3fb9c3a8d544",
+    "timestamp": "2025-11-21 22:12:06.344277",
+    "report_generated": false
+  },
+  {
+    "question": "In verify() vdrf.rs:226 , the function uses pp::G1Affine::generator(). Can a corrupted standard library or arkworks dependency return a non-standard generator, breaking all VDRF operations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_21c3b5aa-f166-4e53-bae7-b96c3c123fc0",
+    "timestamp": "2025-11-21 22:12:39.716203",
+    "report_generated": false
+  },
+  {
+    "question": "The verify() function vdrf.rs:217-220 recomputes the hash-to-curve that was done in combine(). Can inconsistencies between these computations allow verification to pass for incorrect evaluations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5ab25f02-42e3-4984-9829-7b44901a4ab9",
+    "timestamp": "2025-11-21 22:13:13.782293",
+    "report_generated": false
+  },
+  {
+    "question": "In verify() vdrf.rs:234-237 , the evaluation is serialized before being passed to KDF. Can this serialization step fail silently for edge cases, producing incorrect KDF inputs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_847f5f38-4e55-4291-a2d0-efffcf33e8af",
+    "timestamp": "2025-11-21 22:13:45.710596",
+    "report_generated": false
+  },
+  {
+    "question": "The pairing verification vdrf.rs:225-228 compares the result to the identity element. Can bugs in the pairing library's identity comparison allow non-identity results to pass?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0889f02e-a9bb-49a3-93d7-4fe8cc2556f4",
+    "timestamp": "2025-11-21 22:14:18.434047",
+    "report_generated": false
+  },
+  {
+    "question": "In verify() vdrf.rs:208-212 , the function accepts a generic T: Tagged input and const generic N for output size. Can mismatches between caller expectations and actual parameters cause security issues?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9b716528-c3d8-444f-a3cd-2239a9f5ae7b",
+    "timestamp": "2025-11-21 22:14:52.909857",
+    "report_generated": false
+  },
+  {
+    "question": "The verify() function vdrf.rs:239-245 calls kdfn to derive the final output. Can weak KDF parameters or implementation allow rainbow table attacks on VDRF outputs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_beb2b7b5-0b46-4f8f-aefe-d124aac33d70",
+    "timestamp": "2025-11-21 22:15:25.871099",
+    "report_generated": false
+  },
+  {
+    "question": "In verify() vdrf.rs:217-219 , the point K is computed using hash_to_g2 with VdrfKPoint. Can weaknesses in the hash-to-curve implementation allow finding collisions or preimages?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e6e7d65c-5cc3-4dce-91cb-eb7d096b86c6",
+    "timestamp": "2025-11-21 22:16:00.554312",
+    "report_generated": false
   }
 ]
