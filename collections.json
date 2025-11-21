@@ -1798,5 +1798,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bd39deb1-3b4a-4687-bf2e-0d6dd9c5db67",
     "timestamp": "2025-11-21 15:18:30.289539",
     "report_generated": false
+  },
+  {
+    "question": "State Caching Vulnerabilities: Cached responses bypass recovery restrictions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6c94ed2e-83e3-46d5-b0c9-caab13024245",
+    "timestamp": "2025-11-21 15:32:31.208375",
+    "report_generated": false
+  },
+  {
+    "question": "Dirty State Detection: Dirty flag v0.rs:49 detectable via timing?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0d779eec-02ff-4049-bf88-0de34b3eb33e",
+    "timestamp": "2025-11-21 15:32:44.500514",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery State Transition Atomicity: rec.pke v0.rs:102 mid-transition observable?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_14aeb355-2a29-4791-af35-c95bfed6e47a",
+    "timestamp": "2025-11-21 15:32:59.034988",
+    "report_generated": false
+  },
+  {
+    "question": "Version Counter Consistency: cnt v0.rs:231 inconsistent under concurrent writes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f9523aa6-a8c6-4b91-9fec-8f49cb86a82d",
+    "timestamp": "2025-11-21 15:33:13.328418",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Vector Modification Race: backups/recover vectors v0.rs:236-237 mid-update readable?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6b7470b2-17d9-46f9-a685-757941cc13e9",
+    "timestamp": "2025-11-21 15:33:28.432085",
+    "report_generated": false
+  },
+  {
+    "question": "Association Array Consistency: assoc v0.rs:103 partially updated during reads?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4ffefd77-bf5f-4dd3-b8ac-e83c72ed0586",
+    "timestamp": "2025-11-21 15:33:44.521481",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Backend Consistency: Does Partisia guarantee read-after-write?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d4611593-e7b7-4d88-b93a-2ba028ece9bd",
+    "timestamp": "2025-11-21 15:34:01.470443",
+    "report_generated": false
+  },
+  {
+    "question": "State Rollback Vulnerability: Failed tx → rolled-back but partially visible?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e40103c2-000f-473f-bbc0-741ded066412",
+    "timestamp": "2025-11-21 15:34:20.489377",
+    "report_generated": false
+  },
+  {
+    "question": "Deleted Account Cleanup: Delayed deletion leaks old states?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_52cad5c9-57a8-483f-a199-1c88eef551b9",
+    "timestamp": "2025-11-21 15:34:39.578720",
+    "report_generated": false
+  },
+  {
+    "question": "Key Rotation Mid-Read: Mixed old/new PKE keys exposed?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0b924aa0-f3f4-40f0-96a6-013767565efa",
+    "timestamp": "2025-11-21 15:35:00.139150",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian List Consistency: Social backup guardian list inconsistent during modifications?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8a76385f-0d35-46ce-8183-8b4fac4f38f1",
+    "timestamp": "2025-11-21 15:35:21.392546",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Value Race: Threshold updates produce inconsistent reads?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3001cdaf-66d0-409c-b803-f63185eaf887",
+    "timestamp": "2025-11-21 15:35:44.189371",
+    "report_generated": false
+  },
+  {
+    "question": "MSK Encryption Key Consistency: Derived MSK encryption key updated mid-read?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4508dbc1-f781-4e77-8fb1-d24f47844bf0",
+    "timestamp": "2025-11-21 15:36:08.188512",
+    "report_generated": false
+  },
+  {
+    "question": "Old Key Cleanup Timing: old_pke/old_msk v0.rs:58-59 uncontrolled growth?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c9ab7ca2-f29b-41aa-9006-7b1746721a93",
+    "timestamp": "2025-11-21 15:36:32.814554",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Metadata Consistency: Metadata update before ciphertext update?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0f0d0a28-cfc4-4cdb-8118-fb13ce77a8bf",
+    "timestamp": "2025-11-21 15:36:58.895511",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Public Key Update: Old states incompatible with new parameters?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_298fa04c-0443-488c-95d2-1f0c3c868a59",
+    "timestamp": "2025-11-21 15:37:25.554366",
+    "report_generated": false
+  },
+  {
+    "question": "Node Configuration Race: nodes map lib.rs:24 changes affect interpretation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_23d28c34-87bf-4356-8e35-ea466adf920c",
+    "timestamp": "2025-11-21 15:37:53.565071",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Verification State: Global state changes invalidate commitments?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_db14d073-5111-417e-b47e-6db7beec3730",
+    "timestamp": "2025-11-21 15:38:22.992426",
+    "report_generated": false
+  },
+  {
+    "question": "Error Message Information Leakage: 404 get.rs:27 leaks account existence.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_baf5dd42-0b07-464f-b61b-9b16dd8f519e",
+    "timestamp": "2025-11-21 15:38:53.828477",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Error Exposure: deserialize_request_body get.rs:24 leaks hints?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_71a9d983-832e-4ffd-8d1f-b5d2f56f0013",
+    "timestamp": "2025-11-21 15:39:25.176691",
+    "report_generated": false
+  },
+  {
+    "question": "Panic Information Leakage: .expect lib.rs:37 reveals internals.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cfa7bd9b-a785-4902-8f3d-e3b2b7a765fd",
+    "timestamp": "2025-11-21 15:39:57.937531",
+    "report_generated": false
+  },
+  {
+    "question": "JSON Serialization Error Details: create_json_response get.rs:29-34 leak structure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_af88f24f-2e7e-4280-bbad-c59d1c30a5ca",
+    "timestamp": "2025-11-21 15:40:30.476237",
+    "report_generated": false
+  },
+  {
+    "question": "HTTP Status Code Oracle: 200 vs 404 enables fast enumeration.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dfceccf8-e0a3-4ff2-bcd3-2267cb0b547d",
+    "timestamp": "2025-11-21 15:41:02.409210",
+    "report_generated": false
+  },
+  {
+    "question": "Content-Type Header Security: Missing/incorrect headers → XSS?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9760f1c0-6d77-461c-82a7-a24a61cb38db",
+    "timestamp": "2025-11-21 15:41:35.219606",
+    "report_generated": false
+  },
+  {
+    "question": "CORS Header Absence: Allows cross-origin data theft?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_677f95e1-29ca-40dc-a2b6-1b4cbf36fb5d",
+    "timestamp": "2025-11-21 15:42:06.361123",
+    "report_generated": false
   }
 ]
