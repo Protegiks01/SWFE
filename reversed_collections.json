@@ -5998,5 +5998,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_281f87fd-046a-47dc-8b5f-c70d87af09e9",
     "timestamp": "2025-11-21 20:23:39.497089",
     "report_generated": false
+  },
+  {
+    "question": "Ciphertext Malleability: Although the MAC should prevent tampering, the XOR-based encryption allows direct bit-flipping of the ciphertext. If an attacker can manipulate the ct field before MAC verification, does the MAC verification order ensure all modifications are detected? symmetric.rs:118-129",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a5f45571-5fb8-42d7-9c55-a9f342c43899",
+    "timestamp": "2025-11-21 20:24:53.993432",
+    "report_generated": false
+  },
+  {
+    "question": "RNG Source Trust: The seal function accepts any R: Rng for generating the random component of the synthetic nonce. If a malicious caller passes a weak or predictable RNG, could this compromise nonce uniqueness and enable chosen-ciphertext attacks during backup encryption? symmetric.rs:71-76",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_00fb88d8-3cca-4bab-b257-e43ec6e51fab",
+    "timestamp": "2025-11-21 20:25:07.358624",
+    "report_generated": false
+  },
+  {
+    "question": "Key Length Validation: The key is defined as 32 bytes (SIZE_KEY). Does the system validate that keys passed to seal and open are exactly 32 bytes? Could zero-length or incorrect-length keys cause panics or weak encryption? symmetric.rs:15-19",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d0520b2d-befe-484c-83d6-637c0f8c3f62",
+    "timestamp": "2025-11-21 20:25:20.607139",
+    "report_generated": false
+  },
+  {
+    "question": "Nonce Length Security: The nonce is 32 bytes (SIZE_NONCE). For the XOR-based encryption scheme, is 32 bytes sufficient to prevent nonce collisions under high-volume usage across all Swafe accounts? symmetric.rs:14",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_966e94ad-0555-4df3-bee4-26f186b8917f",
+    "timestamp": "2025-11-21 20:25:34.537492",
+    "report_generated": false
+  },
+  {
+    "question": "MAC Length Hardcoding: The MAC is hardcoded to 32 bytes (SIZE_MAC). If KMAC256 allows variable-length outputs, could an attacker who controls serialization logic truncate the MAC during deserialization, weakening authentication? symmetric.rs:13",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_be07d016-6472-46e5-8c60-1898c308b2d1",
+    "timestamp": "2025-11-21 20:25:48.928389",
+    "report_generated": false
+  },
+  {
+    "question": "Bincode Serialization Determinism: The seal function uses bincode::serde::encode_to_vec(pt, bincode::config::standard()).unwrap(). If the plaintext type has non-deterministic serialization (e.g., HashMaps), could different serializations of the same logical plaintext produce different nonces, breaking key commitment? symmetric.rs:77-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_50d589e9-445c-413c-9b2a-cb8ce00410b3",
+    "timestamp": "2025-11-21 20:26:05.870782",
+    "report_generated": false
+  },
+  {
+    "question": "Type Parameter Constraints: The seal and open functions require M: Tagged and A: Tagged. Could a malicious caller pass types that don't properly implement Tagged, leading to empty or predictable separators that break domain separation? symmetric.rs:71-76",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b1fb6bbb-9399-436e-a54f-a58c6e05bf73",
+    "timestamp": "2025-11-21 20:26:23.426226",
+    "report_generated": false
+  },
+  {
+    "question": "Nonce Reuse Across Protocol Versions: The separators use 'v0:...' prefixes. If a future protocol version reuses the same nonce generation logic with updated separators, could old ciphertexts be replayed in new contexts? symmetric.rs:55-56",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e1275463-4d83-438d-978c-d02e718b2454",
+    "timestamp": "2025-11-21 20:26:42.453232",
+    "report_generated": false
+  },
+  {
+    "question": "Key Material Zeroing: After seal and open complete, are intermediate buffers like pt (plaintext) and derived XOR pads securely zeroed? If guardian shares or master secrets remain in memory, could a compromised off-chain node extract them via memory dumps? symmetric.rs:92-96",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_078773bc-0129-45c1-bdd8-78b1012d7536",
+    "timestamp": "2025-11-21 20:27:03.286403",
+    "report_generated": false
+  },
+  {
+    "question": "MAC Input Ordering: The MACTuple serializes fields in the order (separator, nonce, ct, ad). Could an attacker exploit bincode's encoding scheme to craft a different struct that serializes to the same bytes, bypassing MAC verification? symmetric.rs:38-44",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_616c2f83-6905-47d7-ab31-ef878a7e2d22",
+    "timestamp": "2025-11-21 20:27:24.964888",
+    "report_generated": false
+  },
+  {
+    "question": "XOR Pad Derivation Collision: The KDFPad struct derives the XOR pad from the nonce alone. If two different messages with different nonces happen to produce the same KDFPad output due to KDF collisions, could this enable key recovery attacks? symmetric.rs:33-34",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3854a783-1f1e-46f6-ac8a-aba1bd462974",
+    "timestamp": "2025-11-21 20:27:47.548664",
+    "report_generated": false
+  },
+  {
+    "question": "Plaintext Length Leakage: The AEADCiphertext struct stores ct: Vec<u8> whose length equals the plaintext length. For backup shares or association data, does leaking the exact plaintext size via ciphertext length violate privacy invariants by revealing which guardians are selected or the structure of encrypted data? symmetric.rs:22-26",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_191cb534-5ab5-4aa7-a4a7-34a3b3650868",
+    "timestamp": "2025-11-21 20:28:11.046931",
+    "report_generated": false
+  },
+  {
+    "question": "Empty Associated Data Security: The EmptyAD type with separator 'v0:sym-ad-empty' is used when no associated data is needed. If account recovery logic incorrectly uses EmptyAD instead of binding the email certificate or account ID, could an attacker replay ciphertexts across different recovery contexts? symmetric.rs:28-30",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4fd5e684-7305-4222-9b83-8ff795a2f113",
+    "timestamp": "2025-11-21 20:28:36.054633",
+    "report_generated": false
+  },
+  {
+    "question": "Domain Separation Tag Collision: The MACTuple and NonceTuple structs use separator: (&'static str, &'static str) with message and AD separators. Could an attacker craft a malicious Tagged implementation where M::SEPARATOR and A::SEPARATOR combine to match a different valid domain, enabling cross-domain ciphertext substitution? symmetric.rs:39-44",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c93bd21f-f906-4865-b8f0-552fdbc0c748",
+    "timestamp": "2025-11-21 20:29:02.379563",
+    "report_generated": false
+  },
+  {
+    "question": "KDF Output Length Manipulation: The kdf function in hash.rs fills an arbitrary-length output buffer. If the XOR-pad buffer ct in seal is incorrectly sized due to serialization issues with pt, could this lead to truncated encryption or buffer overflow when XORing? symmetric.rs:92-96",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f751aff5-0e35-4af3-b378-9ed3bd3c4716",
+    "timestamp": "2025-11-21 20:29:29.685443",
+    "report_generated": false
+  },
+  {
+    "question": "MAC Verification Constant-Time: The open function uses subtle::ConstantTimeEq for MAC comparison, but if ct.mac or mac_corr arrays contain uninitialized or partial data due to incorrect deserialization, could the constant-time comparison still leak timing information? symmetric.rs:127-129",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6554d276-2d5f-46f2-a162-fec6d7fb87d8",
+    "timestamp": "2025-11-21 20:30:00.899705",
+    "report_generated": false
+  },
+  {
+    "question": "Synthetic Nonce Input Entropy: The NonceTuple struct used for synthetic nonce generation includes rng.gen::<Nonce>(), pt, and ad. If an attacker can predict or influence the plaintext pt during account recovery scenarios where recovery data is deterministic, does the synthetic nonce generation still provide sufficient randomness? symmetric.rs:81-89",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7660cb53-4ab1-4104-b00f-f92b029ce3e8",
+    "timestamp": "2025-11-21 20:30:35.245098",
+    "report_generated": false
+  },
+  {
+    "question": "Key Commitment Binding: The scheme claims to be 'Key-Committing AEAD,' but does the MAC computation in seal truly bind the key to the ciphertext? Could an attacker who obtains two different keys that produce the same MAC for different plaintexts cause decryption ambiguity? symmetric.rs:99-107",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b72ca64c-5787-4863-8a55-4f991701cabd",
+    "timestamp": "2025-11-21 20:31:11.992718",
+    "report_generated": false
+  },
+  {
+    "question": "Nonce Uniqueness Under Key Reuse: In the seal function, the synthetic nonce is derived from kdfn(key, &NonceTuple{...}) where the tuple includes a random nonce from rng.gen::<Nonce>(). If the same key is reused across multiple encryptions with the same plaintext and associated data, could a weak RNG produce colliding random nonces, leading to nonce reuse and XOR-pad reuse that enables ciphertext manipulation? symmetric.rs:81-89",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fe2a6734-74e5-4afd-9b9a-0bc6ca7f3e0f",
+    "timestamp": "2025-11-21 20:31:50.346273",
+    "report_generated": false
+  },
+  {
+    "question": "The pk field in DecryptionKey",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8cb75661-5867-4173-bf60-136431a52f00",
+    "timestamp": "2025-11-21 20:32:32.013760",
+    "report_generated": false
+  },
+  {
+    "question": "The DecryptionKey serialization v0.rs:28-34 skips the pk field with #[serde(skip)]. If a guardian serializes and deserializes their key, the public key cache is lost. Could this cause the public key to be recomputed multiple times, increasing exposure to side-channel attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_140e6c73-eae0-4cf6-93c3-c8f1075b93af",
+    "timestamp": "2025-11-21 20:33:16.829720",
+    "report_generated": false
+  },
+  {
+    "question": "In decrypt() v0.rs:75-78 , the scalar multiplication ct.tp * self.sk may create intermediate values during computation. Are these intermediate values properly zeroized by the ark_ec library, or could they remain in memory and leak information about the guardian's secret key?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_020856bc-028e-460d-b1b1-5da5dace13a9",
+    "timestamp": "2025-11-21 20:34:02.566549",
+    "report_generated": false
+  },
+  {
+    "question": "The DecryptionKey implements Clone v0.rs:28 via the derive macro. If cloning creates deep copies of the secret key sk, could multiple copies of the key exist in memory simultaneously, increasing the attack surface for key extraction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_62a8b096-f2c9-441a-b2f0-5b144bd413c8",
+    "timestamp": "2025-11-21 20:34:48.057216",
+    "report_generated": false
+  },
+  {
+    "question": "In DecryptionKey::gen() v0.rs:54-59 , the generated key is returned directly without any additional protection (e.g., encryption with a master key). If the key is stored in plaintext in guardian device memory, could a memory dump or malware extract all guardian keys, enabling unauthorized backup reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_34f062cc-736f-4ef1-8303-ee9297baf72c",
+    "timestamp": "2025-11-21 20:35:41.334442",
+    "report_generated": false
+  },
+  {
+    "question": "The secret key sk: curve::Fr v0.rs:31 is a field element. If the zeroize() implementation for curve::Fr is not thorough or misses some internal buffers, could residual key material remain in memory after drop, allowing an attacker to recover guardian secret keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d5453217-e8d2-4fa1-adec-72ac4b658781",
+    "timestamp": "2025-11-21 20:36:30.321259",
+    "report_generated": false
   }
 ]
