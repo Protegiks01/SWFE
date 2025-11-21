@@ -2398,5 +2398,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c656d929-a800-4299-a1ec-c9ee56e30d1f",
     "timestamp": "2025-11-21 15:54:43.053868",
     "report_generated": false
+  },
+  {
+    "question": "Pairing with Corrupted Curve Points: If a deserialized G1/G2 point is not on the curve (due to deserialization bugs), does check_pairing detect this before performing the pairing operation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_178adec3-d60e-45c1-8c3a-bd9e9498a269",
+    "timestamp": "2025-11-21 15:55:55.783734",
+    "report_generated": false
+  },
+  {
+    "question": "Pairing Result Precision: Does the BLS12-381 pairing implementation have sufficient precision? Could rounding errors cause valid VDRF evaluations to fail or invalid ones to pass?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_94fd11c3-3546-4ff7-830a-c9b19f387ef7",
+    "timestamp": "2025-11-21 15:56:08.678764",
+    "report_generated": false
+  },
+  {
+    "question": "Multi-Pairing vs Single Pairing: Are there security differences between calling multi_pairing once versus multiple pairing calls? Could this affect VDRF threshold verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b8d8d028-0521-402a-9d97-749a4f840fbc",
+    "timestamp": "2025-11-21 15:56:22.499826",
+    "report_generated": false
+  },
+  {
+    "question": "Pairing Input Order Dependency: Does the order of elements in lhs and rhs arrays affect the pairing result? Could reordering points in malicious VDRF shares pass verification incorrectly?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_914f365e-e67f-48fa-abd9-438b2e4e6a82",
+    "timestamp": "2025-11-21 15:56:36.129227",
+    "report_generated": false
+  },
+  {
+    "question": "Negated Point Confusion: In VDRF verification, check_pairing receives negated G2 points. Could an attacker exploit double negation or identity element edge cases to bypass verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_774253e3-7eb7-4847-9309-988fd3e9f78d",
+    "timestamp": "2025-11-21 15:56:50.629645",
+    "report_generated": false
+  },
+  {
+    "question": "Pairing Check Side-Channel: Does check_pairing have constant-time comparison when checking if the result equals Default::default(), or could timing leaks reveal information about VDRF secret shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fdb378e7-aa06-40e1-bf82-bffc6eb33ad7",
+    "timestamp": "2025-11-21 15:57:07.206289",
+    "report_generated": false
+  },
+  {
+    "question": "Pairing Batch Verification Attack: Since check_pairing uses multi_pairing, could an attacker craft multiple malicious point pairs where individual pairings fail but the sum passes, breaking VDRF security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ea138485-0c00-4cb5-846c-2c936c106246",
+    "timestamp": "2025-11-21 15:57:23.769108",
+    "report_generated": false
+  },
+  {
+    "question": "Point-at-Infinity in Pairing: Can an attacker include points at infinity in lhs or rhs arrays to manipulate VDRF share verification logic, potentially allowing invalid shares to pass?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5defb108-ff11-45c4-a957-dcffcd87bba2",
+    "timestamp": "2025-11-21 15:57:43.404956",
+    "report_generated": false
+  },
+  {
+    "question": "Subgroup Membership Before Pairing: Does check_pairing verify that all G1Affine and G2Affine points are in the correct prime-order subgroup before pairing, preventing small subgroup attacks on VDRF?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6690cc04-9fc3-4f11-95b2-b74b364aedd9",
+    "timestamp": "2025-11-21 15:58:04.553069",
+    "report_generated": false
+  },
+  {
+    "question": "Pairing Non-Determinism: Is the pairing check deterministic across different machines/architectures? Could timing variations leak information about email associations during VDRF verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_36bee55b-f2ae-411f-947f-8392ec20dd58",
+    "timestamp": "2025-11-21 15:58:26.032055",
+    "report_generated": false
+  },
+  {
+    "question": "Single Element Pairing Weakness: Can a malicious off-chain node provide single-element arrays to check_pairing that might have different security properties than multi-pairing verification used in VDRF?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_da32a22d-6060-426c-9de3-da133f432d1f",
+    "timestamp": "2025-11-21 15:58:48.297167",
+    "report_generated": false
+  },
+  {
+    "question": "Empty Array Pairing Check: What happens when check_pairing is called with empty arrays lhs=[] and rhs=[]? Does it return true, allowing trivial VDRF verification bypasses?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cc2c0c54-ea9f-4718-af8b-8471293127fb",
+    "timestamp": "2025-11-21 15:59:13.248728",
+    "report_generated": false
+  },
+  {
+    "question": "Pairing Identity Element Confusion: Does check_pairing return true when comparing the identity element against itself, potentially allowing invalid VDRF evaluations where both sides are identity points to pass verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3692de04-1425-4b10-9916-0159cedd0088",
+    "timestamp": "2025-11-21 15:59:40.152370",
+    "report_generated": false
+  },
+  {
+    "question": "Pairing Check Assert Panic: In check_pairing, can an attacker supply lhs and rhs arrays of different lengths to trigger the assert! panic, causing DoS in VDRF share verification or account recovery flows?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f81f3c6c-2f0b-442b-9802-8164a8f642cc",
+    "timestamp": "2025-11-21 16:00:07.583229",
+    "report_generated": false
+  },
+  {
+    "question": "Ciphertext Padding Injection: Could an attacker append extra bytes to a serialized Ciphertext v0.rs:42-47 that are ignored during deserialization but affect hash-based integrity checks elsewhere in Swafe?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5b8d792d-349c-46d1-bcd2-5fae714acb9f",
+    "timestamp": "2025-11-21 16:00:36.774146",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Version Check in Decrypt: In decrypt() mod.rs:86-92 , the match statement only handles Ciphertext::V0. If a new version is added but the match isn't updated, would it fallback to DecryptionFailed or panic?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_be1d6710-e33f-48c8-a296-5d6f8bb8a395",
+    "timestamp": "2025-11-21 16:01:05.903687",
+    "report_generated": false
+  },
+  {
+    "question": "Version Downgrade in DecryptionKey: If a DecryptionKey is serialized as V0 but deserialized as a future version due to version tag corruption mod.rs:14-18 , could the decryption logic use the wrong algorithm?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_54116279-aa66-4f67-b7db-d9e20e1d6ef7",
+    "timestamp": "2025-11-21 16:01:36.672043",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization Format Ambiguity: If both JSON and bincode serialization are supported for Ciphertext mod.rs:20-24 , could an attacker craft input that deserializes differently under each format, causing verification/decryption mismatches?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6b9abaa0-26f7-4530-baf5-91d7e63de412",
+    "timestamp": "2025-11-21 16:02:08.912959",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization of Untrusted Ciphertexts: When off-chain nodes deserialize BatchCiphertext from network data mod.rs:26-30 , could maliciously crafted input trigger panics or memory exhaustion due to unbounded vector sizes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4175338c-e75d-4356-b5d4-0bb6022c14d5",
+    "timestamp": "2025-11-21 16:02:41.634057",
+    "report_generated": false
+  },
+  {
+    "question": "Forward Compatibility Violation: If a future V1 is added, could V0 ciphertexts be accidentally decrypted as V1 mod.rs:86-92 , bypassing V1-specific security checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8e34b3e4-4e9e-42c5-a127-21a18cf0cea7",
+    "timestamp": "2025-11-21 16:03:18.411485",
+    "report_generated": false
+  },
+  {
+    "question": "Version Tag Manipulation: The versioned_enum! macro mod.rs:8-12 assigns version tag 0 to V0 types. Could an attacker modify the tag to a future version, causing the deserializer to interpret V0 data as a different version?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6c3cd149-06bf-447e-8908-b66395fa9fd9",
+    "timestamp": "2025-11-21 16:03:51.125022",
+    "report_generated": false
+  },
+  {
+    "question": "Ciphertext Deserialization Without Validation: When deserializing a Ciphertext from JSON or bincode mod.rs:20-24 , does the code validate that the inner v0 tp point is on the curve, or could invalid points cause decryption failures that lock out accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f1239633-f42f-4d3f-962d-08327e23d3c6",
+    "timestamp": "2025-11-21 16:04:23.147402",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Scheme Parameter Manipulation: If the signature scheme's parameters (e.g., curve, hash function) are configurable, could an attacker force batch_encrypt() to use weak parameters, breaking the all-or-nothing guarantee?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e265d3fc-6417-464b-ad0a-d440e70da2bf",
+    "timestamp": "2025-11-21 16:04:56.641053",
+    "report_generated": false
+  },
+  {
+    "question": "Verification Key Binding to Account: Is the verification key in BatchCiphertextV0Inner mod.rs:34 bound to the account ID, or could batches for different accounts use the same verification key, enabling cross-account share decryption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c1f28373-a0b2-4899-92a5-bb9fe3ba2716",
+    "timestamp": "2025-11-21 16:05:27.709258",
+    "report_generated": false
+  },
+  {
+    "question": "Batch Ciphertext Version Mismatch: If a BatchCiphertext::V0 contains individual Ciphertext::V1 entries mod.rs:26-30 , would the decryption logic handle this, or could it cause type confusion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_46e67977-6c00-49b4-b5b8-94853678d451",
+    "timestamp": "2025-11-21 16:05:59.991037",
+    "report_generated": false
   }
 ]
