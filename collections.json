@@ -6148,5 +6148,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5faf9848-dd0e-4d46-a015-2ab0e180ae50",
     "timestamp": "2025-11-21 20:55:27.833215",
     "report_generated": false
+  },
+  {
+    "question": "Commitment Linear Combination: Off-by-one errors v0.rs:257-264 ?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_17158e07-0b3e-4bfd-80be-d2677bad6c61",
+    "timestamp": "2025-11-21 20:56:47.878691",
+    "report_generated": false
+  },
+  {
+    "question": "X_power Initialization: Wrong initial value v0.rs:258 ?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9ac6d51b-10d9-4466-8553-e0047bb8127f",
+    "timestamp": "2025-11-21 20:57:00.823975",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Addition Order: Reordering effects?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0204ea7d-5599-4429-8cf5-735bd452a062",
+    "timestamp": "2025-11-21 20:57:14.605908",
+    "report_generated": false
+  },
+  {
+    "question": "Generator Consistency: Fresh generators v0.rs:268 mismatch original ones?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0f9b4dff-a531-4a3c-8d38-d418f98aea00",
+    "timestamp": "2025-11-21 20:57:28.523613",
+    "report_generated": false
+  },
+  {
+    "question": "Equality Check Timing: comb != generators.commit(eval) timing leak?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a635f40e-8cea-4c88-a7b7-94e6cc9eb7ef",
+    "timestamp": "2025-11-21 20:57:43.193682",
+    "report_generated": false
+  },
+  {
+    "question": "Empty Commitments Array: coms empty v0.rs:248-251 — trivial acceptance?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cd838751-e524-4877-9be7-023a571c83c7",
+    "timestamp": "2025-11-21 20:57:59.109568",
+    "report_generated": false
+  },
+  {
+    "question": "Verification Error Oracle: Failure as oracle?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_eee62e7b-0005-4449-9937-31b16ec868bd",
+    "timestamp": "2025-11-21 20:58:16.382744",
+    "report_generated": false
+  },
+  {
+    "question": "Filter_map Reconstruction Drop: attacker injecting many invalid shares v0.rs:494-506 ?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d0309169-5fa4-408f-bd90-395e81c8030e",
+    "timestamp": "2025-11-21 20:58:35.467019",
+    "report_generated": false
+  },
+  {
+    "question": "Share Verification Before Storage: Flaw allows invalid shares stored v0.rs:199-200 ?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3e8dabda-939a-4794-931c-d5decc85ccab",
+    "timestamp": "2025-11-21 20:58:56.996287",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Clone Safety: Clone issues v0.rs:260-262 ?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_adfd4901-1353-414d-8a76-4cc36f6c88c9",
+    "timestamp": "2025-11-21 20:59:18.947295",
+    "report_generated": false
+  },
+  {
+    "question": "X_power Multiplication Order: If reversed?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_46462134-1265-41f8-a136-3e6e58cba9f7",
+    "timestamp": "2025-11-21 20:59:42.813514",
+    "report_generated": false
+  },
+  {
+    "question": "Verification in Multiple Contexts: Same function used in different trust contexts exploitable?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cb57e9e5-6449-422d-8e7b-0bb8f51d06c5",
+    "timestamp": "2025-11-21 21:00:07.362153",
+    "report_generated": false
+  },
+  {
+    "question": "Partial Verification State: Exceptions leaking info?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_be02fbed-6b19-4ae3-82a9-6966c2cc29af",
+    "timestamp": "2025-11-21 21:00:32.843601",
+    "report_generated": false
+  },
+  {
+    "question": "Zero Eval Attack: eval zero v0.rs:249 trivial acceptance?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c2def897-1388-4f88-b51f-9cce2f66a417",
+    "timestamp": "2025-11-21 21:01:00.354468",
+    "report_generated": false
+  },
+  {
+    "question": "Interpolation Point Selection: Attacker influences points v0.rs:509 ?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6a2c104f-2e8b-486a-a575-11b61225c06b",
+    "timestamp": "2025-11-21 21:01:27.576877",
+    "report_generated": false
+  },
+  {
+    "question": "Insufficient Points: Exactly threshold but one malicious share?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d19631b8-2bc6-4010-bbfd-bbad45dcefa8",
+    "timestamp": "2025-11-21 21:01:56.669923",
+    "report_generated": false
+  },
+  {
+    "question": "Lagrange Coefficient Overflow: Degenerate x values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a91eff70-4236-4134-9932-dbe1f2da32cf",
+    "timestamp": "2025-11-21 21:02:25.341216",
+    "report_generated": false
+  },
+  {
+    "question": "Duplicate X-coordinates: Division by zero v0.rs:499 ?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0f5138e7-f214-44b2-9aac-1c024e0a8de9",
+    "timestamp": "2025-11-21 21:02:55.451101",
+    "report_generated": false
+  },
+  {
+    "question": "Interpolation at Known Points: Leakage via observing inputs/outputs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d0c05962-f68e-43a5-a6d7-891c206b2ba9",
+    "timestamp": "2025-11-21 21:03:27.318996",
+    "report_generated": false
+  },
+  {
+    "question": "Y-coordinate Extraction: PedersenOpen::value() side channel?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_da6dac5b-091f-4c42-843b-147875223001",
+    "timestamp": "2025-11-21 21:03:59.771815",
+    "report_generated": false
+  },
+  {
+    "question": "Points Vector Construction: filter_map inclusion bugs v0.rs:494-506 ?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d647c38a-e9b0-4f49-93f0-8b2e72588acc",
+    "timestamp": "2025-11-21 21:04:31.208185",
+    "report_generated": false
+  },
+  {
+    "question": "Interpolation Error Propagation: Silent errors?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ed8c295f-9a48-4734-9016-6a83b570c114",
+    "timestamp": "2025-11-21 21:05:01.054291",
+    "report_generated": false
+  },
+  {
+    "question": "Field Element Stability: Non-exact arithmetic?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5a24af7f-b321-460c-b12e-eb1b7f3b594b",
+    "timestamp": "2025-11-21 21:05:31.787697",
+    "report_generated": false
+  },
+  {
+    "question": "Reconstruction Determinism: Non-deterministic algorithm?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9dd09313-8014-417c-9d3e-2164e920ebb5",
+    "timestamp": "2025-11-21 21:06:02.667141",
+    "report_generated": false
+  },
+  {
+    "question": "V0 Point Serialization: Non-canonical encodings allow multiple keys v0.rs:326-334 ?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_52113078-015b-4793-b033-91dc20e528d3",
+    "timestamp": "2025-11-21 21:06:35.883166",
+    "report_generated": false
   }
 ]
