@@ -898,5 +898,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_951bbb46-a9c3-404e-acaa-af135d9b714c",
     "timestamp": "2025-11-21 14:00:44.833920",
     "report_generated": false
+  },
+  {
+    "question": "Cross-Account Interference: Could a malicious user interfere with another user's account recovery using cryptographic primitives? mod.rs:29-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_368da0d6-22bf-41a0-a152-23bf963f8b19",
+    "timestamp": "2025-11-21 14:02:01.845735",
+    "report_generated": false
+  },
+  {
+    "question": "Malicious User Certificate Forging: Could a malicious user without email access forge email certificates to associate emails to their accounts? mod.rs:30",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5574d052-d94b-4dcc-b0a5-1440171a8ff5",
+    "timestamp": "2025-11-21 14:02:15.440185",
+    "report_generated": false
+  },
+  {
+    "question": "Unprivileged User Attack Surface: Could an unprivileged user exploit cryptographic primitives to recover another user's account? mod.rs:29-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3b1b8bab-a2cb-44f4-82ce-e6d4e7f74887",
+    "timestamp": "2025-11-21 14:02:28.909205",
+    "report_generated": false
+  },
+  {
+    "question": "Network Adversary Limitations: What cryptographic protections exist against network adversaries observing or modifying traffic? Could MITM attacks compromise recovery? mod.rs:29-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7d0c879d-5006-493a-b32b-fca39b5c0b88",
+    "timestamp": "2025-11-21 14:02:43.006155",
+    "report_generated": false
+  },
+  {
+    "question": "Off-Chain Node State Leakage: Could leaked state from minority corrupted nodes reveal secrets using cryptographic analysis? mod.rs:14-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b8e4ac42-7019-4e00-be1a-0ed1b6d47ba6",
+    "timestamp": "2025-11-21 14:02:58.023728",
+    "report_generated": false
+  },
+  {
+    "question": "Off-Chain Node Minority Corruption: If a minority of off-chain nodes are corrupted, do cryptographic primitives protect user emails and associations? mod.rs:33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4ea95d93-3646-4a20-9325-80b571189215",
+    "timestamp": "2025-11-21 14:03:13.976386",
+    "report_generated": false
+  },
+  {
+    "question": "Honest Guardian Assumption: Does the protocol maintain security if up to t-1 guardians are malicious? Could malicious guardians exploit cryptographic primitives to forge shares? mod.rs:20",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_07069be4-e1cb-4da0-9d34-e76281962ead",
+    "timestamp": "2025-11-21 14:03:31.804584",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Threshold Enforcement: Do cryptographic primitives enforce that at least t guardians must participate in recovery? Could t-1 malicious guardians bypass threshold checks? mod.rs:20",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f0a7d6ef-3ff5-49d8-9b12-f383221624de",
+    "timestamp": "2025-11-21 14:03:51.387751",
+    "report_generated": false
+  },
+  {
+    "question": "Swafe-io Email Certificate Authority: Does the crypto module properly constrain email certificate issuance to Swafe-io? Could guardians or nodes forge certificates using re-exported signature types? mod.rs:30",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8a594eb8-7c3c-486d-b23f-02e590218c2c",
+    "timestamp": "2025-11-21 14:04:12.141805",
+    "report_generated": false
+  },
+  {
+    "question": "On-Chain Privacy Guarantees: How do cryptographic primitives ensure on-chain privacy? Could on-chain data analysis reveal email-account associations? mod.rs:15",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e5772e5c-eafd-4a85-b095-6dd4381a00cb",
+    "timestamp": "2025-11-21 14:04:33.985684",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Guardian Approval: How does the protocol enforce threshold t guardian approvals using cryptographic primitives? Could threshold bypass allow unauthorized recovery? mod.rs:20",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_17e1814c-ab01-4017-9e8c-6f995015f881",
+    "timestamp": "2025-11-21 14:04:57.376001",
+    "report_generated": false
+  },
+  {
+    "question": "Email-Account Binding Cryptography: How does VDRF ensure email-to-account binding is unique? Could VDRF collisions allow multiple accounts per email? mod.rs:33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_037aa1d0-b22a-4065-99bf-fac0ebf2e3cc",
+    "timestamp": "2025-11-21 14:05:22.406269",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Reconstruction Cryptography: How are backup shares combined using SSS primitives? Could reconstruction with wrong shares cause silent failures? mod.rs:20",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ba545bfa-f16d-44a1-af8d-87a83509a1a7",
+    "timestamp": "2025-11-21 14:05:47.414549",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery Protocol Cryptography: How does the recovery protocol use re-exported types for guardian approval? Could cryptographic weaknesses allow unauthorized recovery? mod.rs:29-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_65be8468-3076-405c-af13-a336070dd003",
+    "timestamp": "2025-11-21 14:06:13.744710",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Share Distribution: How are guardian shares distributed using crypto primitives? Could distribution protocol weaknesses allow share interception? mod.rs:20",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b582f831-1a5e-4e22-9d9e-494540be794c",
+    "timestamp": "2025-11-21 14:06:40.580287",
+    "report_generated": false
+  },
+  {
+    "question": "Off-Chain Node Communication: How do off-chain nodes exchange cryptographic material? Could network-level attacks intercept or modify VDRF shares? mod.rs:33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d76c3471-8cec-48cb-8595-10f425afa71b",
+    "timestamp": "2025-11-21 14:07:09.469789",
+    "report_generated": false
+  },
+  {
+    "question": "HTTP Endpoint Authentication: Do HTTP endpoints use re-exported signature types for request authentication? Could authentication bypass allow unauthorized operations? mod.rs:32",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_43e72134-33b4-483e-b64d-d5222dcf5ddf",
+    "timestamp": "2025-11-21 14:07:39.678747",
+    "report_generated": false
+  },
+  {
+    "question": "API JSON Serialization: How do cryptographic types serialize for API JSON responses? Could JSON serialization leak binary data or fail to round-trip? mod.rs:29-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a1f4bc3a-718c-4419-be35-2783361bc721",
+    "timestamp": "2025-11-21 14:08:10.024902",
+    "report_generated": false
+  },
+  {
+    "question": "Contract Storage Integration: How do cryptographic types serialize for contract storage? Could storage format mismatches cause deserialization failures? mod.rs:12",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_36270cae-7e47-498f-be85-a4c279fb0a4a",
+    "timestamp": "2025-11-21 14:08:41.598761",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Module Lifetime Management: How are lifetimes of cryptographic objects managed across module boundaries? Could premature drops cause use-after-free? mod.rs:29-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ab52439c-c39d-4abc-9c4c-a08aa1893792",
+    "timestamp": "2025-11-21 14:09:15.003757",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Module Type Conversion: How are types converted when passing between crypto and higher-level modules? Could unsafe conversions bypass validation? mod.rs:29-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6adcf9fe-2143-4899-943a-cbb97a76a31b",
+    "timestamp": "2025-11-21 14:09:46.947803",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Module State Synchronization: If multiple modules maintain cryptographic state, how is synchronization handled? Could race conditions cause state inconsistencies? mod.rs:14-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b32e14d8-7875-486b-9001-54b4395b6dc1",
+    "timestamp": "2025-11-21 14:10:21.083794",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Module Error Handling: When cryptographic operations fail, how are errors reported to higher-level modules? Could error messages leak sensitive information? mod.rs:14-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_915fe894-24fe-4016-9986-9064c36b9419",
+    "timestamp": "2025-11-21 14:10:55.067590",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Module Key Management: How are cryptographic keys passed between modules? Could key material leak through intermediate modules? mod.rs:29-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4b3a802c-0b25-4a95-b702-d175613483c9",
+    "timestamp": "2025-11-21 14:11:28.525929",
+    "report_generated": false
+  },
+  {
+    "question": "API Module Email Certificate Validation: Does the API module correctly validate email certificates using re-exported types? Could certificate validation errors allow unauthorized email-to-account associations? mod.rs:30",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_75c65fc9-3877-44ac-ba3b-d3c0e368bae2",
+    "timestamp": "2025-11-21 14:12:02.933472",
+    "report_generated": false
   }
 ]
