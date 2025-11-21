@@ -6298,5 +6298,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_aa958177-5ac6-4fd7-8d72-473258f895da",
     "timestamp": "2025-11-21 20:47:24.085198",
     "report_generated": false
+  },
+  {
+    "question": "In encrypt(), the context ctx is used in both the DiffieHellmanCtx (indirectly via public keys) and the symmetric AEAD. If these two bindings are not cryptographically independent, could a collision in one allow an attacker to forge valid ciphertexts that decrypt under different contexts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_de302766-d63e-4799-adc5-d64829aa98b9",
+    "timestamp": "2025-11-21 20:48:37.399965",
+    "report_generated": false
+  },
+  {
+    "question": "The context binding in decrypt() v0.rs:90-91 relies on the symmetric AEAD's associated data mechanism. If the AEAD implementation has weaknesses in AD handling (e.g., not actually binding AD to the ciphertext), could this allow an attacker to swap contexts and decrypt guardian shares with incorrect metadata?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6f7193ab-80e2-4331-90c3-d0a278e7afda",
+    "timestamp": "2025-11-21 20:48:50.365563",
+    "report_generated": false
+  },
+  {
+    "question": "In encrypt() v0.rs:126-127 , the context is serialized as part of the AEAD associated data. If the context contains large or unbounded data structures, could this cause performance issues or memory exhaustion when encrypting guardian shares for a backup with many guardians?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_76e0e4c7-bfa1-4036-afe9-d0269efa0e41",
+    "timestamp": "2025-11-21 20:49:04.151156",
+    "report_generated": false
+  },
+  {
+    "question": "The decrypt() function v0.rs:68-92 does not verify that the context matches any on-chain commitment or merkle root. Could an attacker provide a valid ciphertext but an incorrect context to cause decryption to fail, enabling a denial-of-service attack where guardians cannot decrypt their shares even though the ciphertext is valid?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_25e555ee-7afd-4d38-a760-465be8a9f8d5",
+    "timestamp": "2025-11-21 20:49:17.964650",
+    "report_generated": false
+  },
+  {
+    "question": "In both encrypt() and decrypt(), the context is provided by the caller without validation. If a malicious off-chain node or compromised guardian provides a context that collides with contexts from other backups, could this enable a guardian to decrypt shares from multiple backups, violating the isolation between different users' backups?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_df8803e2-02e4-4540-b515-3f800c6dee98",
+    "timestamp": "2025-11-21 20:49:33.161738",
+    "report_generated": false
+  },
+  {
+    "question": "The context type A: Tagged v0.rs:68-72 must implement the Tagged trait with a domain separator. If two different context types use the same separator string, could this enable cross-protocol attacks where a guardian share encrypted for backup recovery is decryptable in account recovery or vice versa?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ca178aa6-61e1-48ce-b8cd-e76412b40acc",
+    "timestamp": "2025-11-21 20:49:49.492091",
+    "report_generated": false
+  },
+  {
+    "question": "In decrypt() v0.rs:90-91 , the context ctx is passed to sym::open(). If the caller provides an incorrect context (e.g., due to a bug or malicious input), the function will fail with DecryptionFailed. Could this error be exploited to leak information about which guardian shares belong to which backup?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b1682d00-6259-4fcc-9777-6d58451eef32",
+    "timestamp": "2025-11-21 20:50:06.780849",
+    "report_generated": false
+  },
+  {
+    "question": "The DiffieHellmanCtx v0.rs:21-26 binds the public keys but not the user context ctx. If two encryptions use the same recipient key but different user contexts, could an attacker swap the symmetric ciphertexts while keeping the same tp, causing guardian shares to decrypt with incorrect associated data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_719d51c2-0a4c-42b6-8ad0-553b26a384f3",
+    "timestamp": "2025-11-21 20:50:25.726140",
+    "report_generated": false
+  },
+  {
+    "question": "In encrypt() v0.rs:99-132 , the user-provided context ctx is passed to the symmetric AEAD layer. If the context type A does not include sufficient binding information (e.g., backup ID, account address, nonce), could this allow cross-context attacks where a ciphertext valid in one recovery session is accepted in another?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6eb98801-4f6d-4cb5-a277-31305c07ea73",
+    "timestamp": "2025-11-21 20:50:46.381570",
+    "report_generated": false
+  },
+  {
+    "question": "The decrypt() function v0.rs:68-92 requires the same context ctx: &A that was used during encryption. If the context is not properly bound to the backup or account instance, could an attacker take a guardian share ciphertext from one backup and replay it in another backup, violating the backup-to-account binding invariant?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3d52f229-489f-4515-a3c9-3923b9108e47",
+    "timestamp": "2025-11-21 20:51:07.789611",
+    "report_generated": false
+  },
+  {
+    "question": "In encrypt() v0.rs:119-125 , the KDF output is directly used as the AEAD key. If the KDF is not key-committing or has weak output properties, could an attacker find two different shared secrets that produce the same symmetric key, enabling a chosen-ciphertext attack on guardian shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4054dd40-df46-40b5-a1d1-d1c010511054",
+    "timestamp": "2025-11-21 20:51:30.836317",
+    "report_generated": false
+  },
+  {
+    "question": "The derived symmetric key in both encrypt() and decrypt() is not explicitly zeroized after use. Could this leave key material in memory longer than necessary, increasing the risk of key extraction through memory dumps or side-channel attacks on guardian devices?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_51b4d5c7-bdb5-4ae7-8243-9f27ed33bb1b",
+    "timestamp": "2025-11-21 20:51:53.768081",
+    "report_generated": false
+  },
+  {
+    "question": "The encrypt() function v0.rs:117-128 passes msg and ctx to sym::seal(). If the message type M or context type A implement Tagged incorrectly (e.g., with colliding separators), could this enable type confusion attacks where a guardian share is interpreted as a different data structure after decryption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cc7930d5-6980-4e42-899d-bb66881faa86",
+    "timestamp": "2025-11-21 20:52:18.885563",
+    "report_generated": false
+  },
+  {
+    "question": "In decrypt() v0.rs:81-91 , after successful MAC verification in sym::open(), the plaintext is deserialized. If deserialization fails, is the derived symmetric key properly zeroized, or could it remain in memory and be leaked through side-channels or memory dumps?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_68545f6c-3f1e-4cbd-9224-a46f9d9c58f8",
+    "timestamp": "2025-11-21 20:52:44.629309",
+    "report_generated": false
+  },
+  {
+    "question": "The sym::open() function v0.rs:81-91 takes the symmetric key and ciphertext. If an attacker can replay the same ciphertext multiple times to the same guardian, could timing differences in decryption (even with constant-time primitives) leak information about the plaintext or key material?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3e282a0d-80d2-4695-bb35-ee7cd52ce416",
+    "timestamp": "2025-11-21 20:53:12.094639",
+    "report_generated": false
+  },
+  {
+    "question": "In encrypt() v0.rs:117-128 , the same derived key is used for potentially multiple messages if the function is called repeatedly. Although each call generates a fresh ts, could repeated encryptions with the same recipient key create patterns that leak information about the guardian shares or the shared secrets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_398c6c2a-32e5-425f-9a13-9281ce56bb91",
+    "timestamp": "2025-11-21 20:53:40.294577",
+    "report_generated": false
+  },
+  {
+    "question": "The symmetric key passed to sym::seal() v0.rs:117-128 is derived from kdfn() with a fixed-size output. If the output size is shorter than the security parameter (e.g., 128 bits instead of 256 bits), could this reduce the effective security of guardian share encryption below the intended level?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6d128943-ccde-45ee-84c4-cd6b3e1b2864",
+    "timestamp": "2025-11-21 20:54:09.198736",
+    "report_generated": false
+  },
+  {
+    "question": "The sym::open() call in decrypt() v0.rs:81-91 returns a generic SwafeError::DecryptionFailed on failure. Does this error leak information about whether the failure was due to MAC mismatch, deserialization error, or other causes? Could a malicious off-chain node use this to distinguish between corrupted ciphertexts and wrong keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a2d8add9-ac72-43b4-8023-c6c2aabd36f1",
+    "timestamp": "2025-11-21 20:54:39.912271",
+    "report_generated": false
+  },
+  {
+    "question": "In encrypt() v0.rs:117-128 , the symmetric key is derived from the shared secret and immediately used with sym::seal(). If the symmetric AEAD has nonce reuse vulnerabilities or weak key derivation, could this compromise the confidentiality of guardian shares even if the underlying PKE is secure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bcd89a25-f3f6-4b77-beb2-4b26cb562c65",
+    "timestamp": "2025-11-21 20:55:10.346420",
+    "report_generated": false
+  },
+  {
+    "question": "The decrypt() function v0.rs:81-91 calls sym::open() which performs MAC verification. If the MAC check is timing-variable or the error handling leaks information about which part of decryption failed, could a network adversary or malicious guardian use this as an oracle to extract information about the guardian's secret key?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_65d1fe7d-09de-466c-8fdf-1d13aa9a7d43",
+    "timestamp": "2025-11-21 20:55:40.510688",
+    "report_generated": false
+  },
+  {
+    "question": "The DiffieHellmanCtx structure v0.rs:21-26 is serialized as part of the KDF input. If the serialization library (serde/bincode) has vulnerabilities or allows non-canonical encodings, could an attacker craft two different DiffieHellmanCtx instances that produce the same KDF output, breaking the uniqueness of derived keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_09db0a70-a2e8-436f-a671-bea699cd5307",
+    "timestamp": "2025-11-21 20:56:11.340258",
+    "report_generated": false
+  },
+  {
+    "question": "In encrypt() and decrypt(), the user-provided context ctx: &A v0.rs:68-72 is passed to the symmetric AEAD but not directly to the DiffieHellmanCtx. If two different context types serialize to the same bytes, could this enable a collision attack where a guardian share encrypted for one backup is decryptable in another backup, violating backup-to-account binding?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b8ba5566-1959-4281-bc94-0a68e0136437",
+    "timestamp": "2025-11-21 20:56:42.506390",
+    "report_generated": false
+  },
+  {
+    "question": "The kdfn() call v0.rs:82-88 derives a symmetric key from the shared secret and context. If the KDF output length is insufficient or the KDF has cryptographic weaknesses, could an attacker with partial knowledge of guardian shares brute-force the symmetric key and decrypt guardian backup shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cfacef9f-69f4-4888-b19f-d686fc185d12",
+    "timestamp": "2025-11-21 20:57:12.947160",
+    "report_generated": false
+  },
+  {
+    "question": "The KDF context binding includes the ephemeral key tp v0.rs:23 , which is also part of the ciphertext v0.rs:45 . If an attacker modifies tp in the ciphertext after encryption, the context will mismatch and decryption will fail. However, could this allow a denial-of-service attack where a malicious guardian or off-chain node corrupts ciphertexts to prevent other guardians from participating in backup recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5c4a1500-6593-406f-babd-8d2c86df1a97",
+    "timestamp": "2025-11-21 20:57:43.084212",
+    "report_generated": false
+  },
+  {
+    "question": "In decrypt() v0.rs:84-87 , the DiffieHellmanCtx is constructed with self.encryption_key().0. If the cached public key in OnceCell is uninitialized or corrupted, could this lead to using an incorrect public key in the KDF context, causing decryption to fail or succeed for wrong ciphertexts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_443111ca-f2c2-476d-906a-7d4718267335",
+    "timestamp": "2025-11-21 20:58:10.076723",
+    "report_generated": false
   }
 ]
