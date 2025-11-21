@@ -5548,5 +5548,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5734d1bb-789b-4236-8376-a7b491ceefa3",
     "timestamp": "2025-11-21 20:10:54.823589",
     "report_generated": false
+  },
+  {
+    "question": "Can an attacker call send() with a different AccountState to redirect shares to an unauthorized recipient?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_41defbe3-8edb-4436-9cdb-9579e5c13ecb",
+    "timestamp": "2025-11-21 20:12:04.050579",
+    "report_generated": false
+  },
+  {
+    "question": "Is there validation that the encryption key in owner.encryption_key() hasn't been compromised before share transmission?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c521f6ac-0f4a-4561-82a1-7f5a29f22e99",
+    "timestamp": "2025-11-21 20:12:16.932724",
+    "report_generated": false
+  },
+  {
+    "question": "Can a guardian send shares encrypted for one account while claiming they're for another account?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_773970c5-1625-4666-95c5-dcfc16423688",
+    "timestamp": "2025-11-21 20:12:30.693135",
+    "report_generated": false
+  },
+  {
+    "question": "Does the system prevent guardians from sending shares to multiple different accounts for the same backup?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a2813d95-e781-4579-bfc0-80fa551c2823",
+    "timestamp": "2025-11-21 20:12:44.425736",
+    "report_generated": false
+  },
+  {
+    "question": "In recovery, does the check shares.len() < meta.threshold properly enforce the exact threshold or allow threshold+1 shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0fa23c78-e6de-4fde-abdf-b55117dc30d2",
+    "timestamp": "2025-11-21 20:12:58.790984",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker provide exactly threshold shares but ensure some are invalid to cause recovery failures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e8222748-0db5-4cc4-a2f5-3d1ae1c3e2d6",
+    "timestamp": "2025-11-21 20:13:14.663895",
+    "report_generated": false
+  },
+  {
+    "question": "Is there validation that the threshold stored in metadata matches the threshold required by the backup policy?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2e74439e-ebbe-4e5d-be7c-c84ef34ec113",
+    "timestamp": "2025-11-21 20:13:31.278290",
+    "report_generated": false
+  },
+  {
+    "question": "Can a malicious user create a backup with threshold=1 to enable single-guardian recovery, bypassing multi-guardian security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f2408582-0439-4068-86e5-bf8c8ee9474d",
+    "timestamp": "2025-11-21 20:13:50.379675",
+    "report_generated": false
+  },
+  {
+    "question": "Does the code prevent threshold manipulation between backup creation and recovery through metadata tampering?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7644c411-50c1-48c4-9f36-9c33cff43c0e",
+    "timestamp": "2025-11-21 20:14:10.329065",
+    "report_generated": false
+  },
+  {
+    "question": "Does the shuffling of guardians in BackupCiphertextV0::new() fully hide the original guardian ordering from on-chain observers?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_652d3f35-f047-4550-8b96-78161de3073a",
+    "timestamp": "2025-11-21 20:14:32.024822",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker analyze the BatchCiphertext structure to determine which guardians were selected despite the shuffle?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ea534fe1-16c7-4af0-9d7e-2b6ef70d0129",
+    "timestamp": "2025-11-21 20:14:56.135981",
+    "report_generated": false
+  },
+  {
+    "question": "Does the ShareComm structure leak information about guardian identities through the verification key vk?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_76d08705-d4f3-4ee5-82c4-d27306e587f4",
+    "timestamp": "2025-11-21 20:15:20.311398",
+    "report_generated": false
+  },
+  {
+    "question": "Can statistical analysis of multiple backups reveal common guardian sets if the same guardians are frequently used?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_52d52860-0c0b-43b1-ae1c-628b9255fc27",
+    "timestamp": "2025-11-21 20:15:44.868184",
+    "report_generated": false
+  },
+  {
+    "question": "Is the index assignment in GuardianShareV0 correlated with guardian identity in a way that leaks privacy?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4a9a01bf-00ce-4ebd-8466-686a653ef8c2",
+    "timestamp": "2025-11-21 20:16:10.278401",
+    "report_generated": false
+  },
+  {
+    "question": "Does the two-layer encryption (metadata and data) prevent any leakage about the backup content before threshold shares are collected?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_473776af-f7ac-454b-830c-916a1ff3f8f7",
+    "timestamp": "2025-11-21 20:16:38.161891",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker with access to BackupMetadata ciphertext determine the size or type of the backed-up data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_51cafc18-c460-40d0-b0ad-d8ac307beb5a",
+    "timestamp": "2025-11-21 20:17:06.443010",
+    "report_generated": false
+  },
+  {
+    "question": "Does the name and desc fields in BackupMetadata leak sensitive information before full decryption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e59442b4-9794-4c84-9c7e-a06248116b43",
+    "timestamp": "2025-11-21 20:17:35.157236",
+    "report_generated": false
+  },
+  {
+    "question": "Can timing analysis of the encryption process reveal information about the size or complexity of the backed-up data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_11001257-5589-4851-877e-bae4f0bfebde",
+    "timestamp": "2025-11-21 20:18:05.230096",
+    "report_generated": false
+  },
+  {
+    "question": "Is the timestamp field encrypted in a way that prevents temporal correlation of backups from the same user?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f54689d8-e442-41ef-b436-c38cc1040215",
+    "timestamp": "2025-11-21 20:18:37.459107",
+    "report_generated": false
+  },
+  {
+    "question": "In BackupShareV0, does storing the share and sk together leak information if the share value has low entropy?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6aead3dc-a839-4d64-887f-3d03e1a98f1a",
+    "timestamp": "2025-11-21 20:19:08.314038",
+    "report_generated": false
+  },
+  {
+    "question": "Can a malicious off-chain node with access to encrypted shares learn anything about the underlying secret?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0f53add8-51cc-47e4-a1e7-523dde335731",
+    "timestamp": "2025-11-21 20:19:40.022818",
+    "report_generated": false
+  },
+  {
+    "question": "Does the hash commitment in ShareComm leak information about the share distribution if the hash function has weak preimage resistance?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_32bf3438-dc48-4100-a4e1-9ef25c9ca2d7",
+    "timestamp": "2025-11-21 20:20:12.844007",
+    "report_generated": false
+  },
+  {
+    "question": "Can guardians with fewer than threshold shares learn partial information about the secret through cryptanalysis?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4e11d88b-111f-4ad4-b6b7-6f35882ae41c",
+    "timestamp": "2025-11-21 20:20:45.319639",
+    "report_generated": false
+  },
+  {
+    "question": "Is the signature in GuardianShareV0 generated in a way that prevents guardian fingerprinting across multiple backups?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f9a94f63-c791-436e-9954-28335dbd8c69",
+    "timestamp": "2025-11-21 20:21:18.561833",
+    "report_generated": false
+  },
+  {
+    "question": "Does the BackupId derivation prevent linkability of multiple backups from the same user?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_edd75e89-a0f3-48c7-9744-d92cad7dc782",
+    "timestamp": "2025-11-21 20:21:51.312357",
+    "report_generated": false
   }
 ]
