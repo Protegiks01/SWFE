@@ -3448,5 +3448,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d3c6371b-0948-4b0c-bfea-17248d312ab1",
     "timestamp": "2025-11-21 17:12:42.040654",
     "report_generated": false
+  },
+  {
+    "question": "Unwrap in Hot Path: Is unwrap() reachable during guardian approval?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9b5d15c7-194a-4d32-90ea-36e20f117d70",
+    "timestamp": "2025-11-21 17:13:54.349904",
+    "report_generated": false
+  },
+  {
+    "question": "From Trait Panics: Could invalid T values crash nodes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7ccb6b46-d9be-494d-b600-e6f0e2a00a75",
+    "timestamp": "2025-11-21 17:14:08.667082",
+    "report_generated": false
+  },
+  {
+    "question": "Error Recovery Exploitation: Could repeated errors leak behavior?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_534f63f2-1242-4a58-be6d-ba82eb64576b",
+    "timestamp": "2025-11-21 17:14:24.244454",
+    "report_generated": false
+  },
+  {
+    "question": "Silent Failure Risk: Are results ever ignored?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dcfc095d-1078-4d13-815d-398f05ec4ef6",
+    "timestamp": "2025-11-21 17:14:40.628528",
+    "report_generated": false
+  },
+  {
+    "question": "Partial Failure State: Could partial serialized data corrupt state?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7cb3daa7-84ac-4e2b-82ef-d4146ace8080",
+    "timestamp": "2025-11-21 17:14:56.833420",
+    "report_generated": false
+  },
+  {
+    "question": "Error Message Inconsistency: Could patterns reveal system state?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_beb62777-d3ce-468a-ad58-c6aeaeeeb938",
+    "timestamp": "2025-11-21 17:15:14.173209",
+    "report_generated": false
+  },
+  {
+    "question": "Nested Error Context Loss: Do errors preserve original context?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c8238339-edb2-465f-a211-c6ff3dde797e",
+    "timestamp": "2025-11-21 17:15:32.099992",
+    "report_generated": false
+  },
+  {
+    "question": "From Trait Unwrap Panic: Could panics crash recovery endpoints?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c3e30b6c-cb2c-4437-a475-2a76c5b98af0",
+    "timestamp": "2025-11-21 17:15:52.852667",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialize Trait Error Messages: Could custom errors leak sensitive types?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_48d27dae-642d-4268-b04c-ebae700c6aff",
+    "timestamp": "2025-11-21 17:16:14.423139",
+    "report_generated": false
+  },
+  {
+    "question": "Serialize Trait Error Handling: Could error conversions hide root causes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_277a6d3f-8196-4931-b4b3-55f97ec84a0c",
+    "timestamp": "2025-11-21 17:16:38.287974",
+    "report_generated": false
+  },
+  {
+    "question": "TryFrom Validation Gaps: Could partial failures leak data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_93444dee-de25-42ba-a7d5-a30445c34bc1",
+    "timestamp": "2025-11-21 17:17:02.084514",
+    "report_generated": false
+  },
+  {
+    "question": "StrEncoded Clone Semantics: Could cloning leave secrets in memory?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9a67d5e7-9646-4384-84a0-2a797e5c6f00",
+    "timestamp": "2025-11-21 17:17:26.493954",
+    "report_generated": false
+  },
+  {
+    "question": "Unicode Normalization Issues: Could normalization differences bypass checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4b95fd4e-a420-4314-aa33-32d257050536",
+    "timestamp": "2025-11-21 17:17:51.807748",
+    "report_generated": false
+  },
+  {
+    "question": "String Length Validation Gap: Are maximum lengths enforced?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_161cb2bc-cdf6-47fc-8899-5b3a568990f1",
+    "timestamp": "2025-11-21 17:18:19.555352",
+    "report_generated": false
+  },
+  {
+    "question": "deserialize_str() Type Parameter Confusion: Could type inference pick the wrong type?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bf51a13c-89e8-4e7c-a483-2bf0ee702fe6",
+    "timestamp": "2025-11-21 17:18:47.611888",
+    "report_generated": false
+  },
+  {
+    "question": "Error Handling Inconsistency: Could hidden panics crash nodes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4cfb2516-b2d2-4084-a84a-50b3f6922b8a",
+    "timestamp": "2025-11-21 17:19:16.998504",
+    "report_generated": false
+  },
+  {
+    "question": "Double Encoding Attack: Could data be double-encoded, locking accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0b132e59-fa64-486d-bd66-d568955b0ea5",
+    "timestamp": "2025-11-21 17:19:47.041345",
+    "report_generated": false
+  },
+  {
+    "question": "Base64 Truncation Attack: Could truncated strings partially decode?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_244c9157-86f0-47d1-abc5-d827037f4185",
+    "timestamp": "2025-11-21 17:20:18.329059",
+    "report_generated": false
+  },
+  {
+    "question": "Encoding Round-Trip Failure: Can bytes_to_str(str_to_bytes(x)) fail identity?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b24bc647-ee06-4268-9dda-b4c65cced2d0",
+    "timestamp": "2025-11-21 17:20:51.373131",
+    "report_generated": false
+  },
+  {
+    "question": "Base64 Canonicalization: Could non-canonical forms bypass deduplication?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_278ae6a3-9a07-4cb5-a3df-5ae165796818",
+    "timestamp": "2025-11-21 17:21:23.872697",
+    "report_generated": false
+  },
+  {
+    "question": "Homograph Attack: Could visually similar characters enable social engineering?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ea59c21d-380a-4158-982c-f5f2ce27f883",
+    "timestamp": "2025-11-21 17:21:54.772318",
+    "report_generated": false
+  },
+  {
+    "question": "Base64 Collision Attack: Any byte sequences with identical encodings?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_69e59422-bc1c-430d-b28e-28dfe19eec0d",
+    "timestamp": "2025-11-21 17:22:27.509036",
+    "report_generated": false
+  },
+  {
+    "question": "Error Propagation Chain: Could chained error messages leak secrets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a3a6dc89-c7fc-4dfa-8ff7-4edb33904048",
+    "timestamp": "2025-11-21 17:22:59.241088",
+    "report_generated": false
+  },
+  {
+    "question": "Partial Decode Information Leak: Could partial decode outputs leak data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c6fab2f2-7cb0-42ba-82ce-76544a7d5c6c",
+    "timestamp": "2025-11-21 17:23:31.758066",
+    "report_generated": false
+  },
+  {
+    "question": "Error Message Distinguishability: Could attackers distinguish base64 vs bincode failures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a7be5ed7-310b-4f6d-86e7-a68250a739a9",
+    "timestamp": "2025-11-21 17:24:06.284066",
+    "report_generated": false
   }
 ]
