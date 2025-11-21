@@ -4198,5 +4198,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3dff8bba-d374-46ad-a46c-20281da7482d",
     "timestamp": "2025-11-21 18:30:33.594206",
     "report_generated": false
+  },
+  {
+    "question": "In GuardianShareV0::verify() at line 342, does the function check that share.idx is within valid bounds before indexing into self.comms, or could out-of-bounds access occur?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_80242efa-f65d-4132-a130-4bdc49de7778",
+    "timestamp": "2025-11-21 18:31:39.799106",
+    "report_generated": false
+  },
+  {
+    "question": "Can a malicious guardian generate a valid signature for an arbitrary ciphertext by exploiting weaknesses in SignedEncryptedShare?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b2ac9710-d104-4a45-9edf-5a949c3bd929",
+    "timestamp": "2025-11-21 18:31:53.028983",
+    "report_generated": false
+  },
+  {
+    "question": "Does verify() use constant-time operations when checking the signature, or could timing side-channels reveal information about the signing key?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0567704d-f4b7-4659-a82b-f879c55db780",
+    "timestamp": "2025-11-21 18:32:06.287659",
+    "report_generated": false
+  },
+  {
+    "question": "In send_for_recovery(), if the recovery PKE key is not set, does the error message leak information about recovery state?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_083def01-e72e-4d7d-b9df-f63f481d4bd2",
+    "timestamp": "2025-11-21 18:32:21.117391",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker who compromises a single guardian's BackupShareV0 derive signing keys for other guardians if keys share entropy sources?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dfa1f2b6-0f6a-4d80-a637-c03e4dc22a91",
+    "timestamp": "2025-11-21 18:32:36.083720",
+    "report_generated": false
+  },
+  {
+    "question": "Does the send() function verify that encryption succeeds before returning, or could failed encryption result in empty/malformed GuardianShare?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f3d6f6ef-9713-4a17-b5f9-1a0e7b25f2cf",
+    "timestamp": "2025-11-21 18:32:52.591393",
+    "report_generated": false
+  },
+  {
+    "question": "In verify(), can an attacker provide share.idx equal to self.comms.len() to bypass bounds checking due to off-by-one?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fedc9c4b-d8a7-4b6f-99c1-a65aa79d1a86",
+    "timestamp": "2025-11-21 18:33:10.539327",
+    "report_generated": false
+  },
+  {
+    "question": "Does signature verification bind signatures to specific backup IDs, preventing replay across backups?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9435384e-7961-4e7a-8c09-fe311064c261",
+    "timestamp": "2025-11-21 18:33:29.458279",
+    "report_generated": false
+  },
+  {
+    "question": "Can a guardian who refuses to participate in recovery be distinguished from one whose share failed validation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_eee2f8c1-74a0-4dd7-870d-72037f3a9da5",
+    "timestamp": "2025-11-21 18:33:49.397304",
+    "report_generated": false
+  },
+  {
+    "question": "In send_for_recovery(), does the function ensure recovery PKE keys are fresh and not reused across sessions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_86cadd98-2063-4345-9d35-89aa0f5743f0",
+    "timestamp": "2025-11-21 18:34:10.372784",
+    "report_generated": false
+  },
+  {
+    "question": "Can attackers intercept encrypted shares and modify them without detection?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6220939d-b689-473f-b037-c8f607d76c37",
+    "timestamp": "2025-11-21 18:34:32.559443",
+    "report_generated": false
+  },
+  {
+    "question": "Does send() protect against chosen-ciphertext attacks where multiple share encryptions leak info?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6060b250-69ae-40c1-b103-05829abecf05",
+    "timestamp": "2025-11-21 18:34:56.228076",
+    "report_generated": false
+  },
+  {
+    "question": "Can attackers exploit idx field in GuardianShare to cause index confusion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8a04b72f-8a22-477a-a2c0-7ac2f0e64614",
+    "timestamp": "2025-11-21 18:35:20.646321",
+    "report_generated": false
+  },
+  {
+    "question": "Does verify() ensure comms[share.idx].vk matches legitimate guardian keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_18e738e5-991b-4cb5-ab17-c5b9540950ed",
+    "timestamp": "2025-11-21 18:35:44.846778",
+    "report_generated": false
+  },
+  {
+    "question": "Can a malicious guardian create multiple valid shares by re-signing ciphertext with different nonces?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_42f6045d-42bc-4489-bb2e-febe5b4af277",
+    "timestamp": "2025-11-21 18:36:10.950740",
+    "report_generated": false
+  },
+  {
+    "question": "Does send() have rate limiting to prevent share-spam attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bc3613fa-427f-4816-981a-eb38264a267d",
+    "timestamp": "2025-11-21 18:36:38.329307",
+    "report_generated": false
+  },
+  {
+    "question": "Can attackers force use of expired recovery PKE keys via race conditions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ea3f5ef7-78ae-45c5-8f50-31a5879ad7a8",
+    "timestamp": "2025-11-21 18:37:08.222278",
+    "report_generated": false
+  },
+  {
+    "question": "Is the signing key in BackupShareV0 adequately protected from memory exposure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fa8d8c11-a08e-4afd-9815-d26215c265e0",
+    "timestamp": "2025-11-21 18:37:35.899891",
+    "report_generated": false
+  },
+  {
+    "question": "Can attackers derive other signing keys if entropy sources overlap?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_185a1506-5a04-416d-9f55-1d0f3203f991",
+    "timestamp": "2025-11-21 18:38:04.938874",
+    "report_generated": false
+  },
+  {
+    "question": "Does verify() protect against signature malleability?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_890faa98-05e9-4de3-af8d-802ffb81a459",
+    "timestamp": "2025-11-21 18:38:36.236163",
+    "report_generated": false
+  },
+  {
+    "question": "Does send() validate owner's encryption key strength?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ce36c087-cfca-43fe-bf0c-0ae73cb281be",
+    "timestamp": "2025-11-21 18:39:07.763727",
+    "report_generated": false
+  },
+  {
+    "question": "Can guardians reuse signing keys across backups creating cross-backup correlation vectors?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c11978e6-387d-4a7d-ae1c-667ffb267e03",
+    "timestamp": "2025-11-21 18:39:38.660320",
+    "report_generated": false
+  },
+  {
+    "question": "Is the signature scheme strongly unforgeable under chosen message attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8fa199b6-3e7f-46ed-93d1-b694c5df1304",
+    "timestamp": "2025-11-21 18:40:09.609873",
+    "report_generated": false
+  },
+  {
+    "question": "Can recovery-mode encryption be abused to encrypt shares under wrong keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0616383d-d175-470a-a620-028f74a51045",
+    "timestamp": "2025-11-21 18:40:41.732933",
+    "report_generated": false
+  },
+  {
+    "question": "In BackupCiphertextV0::new(), does the function correctly enforce threshold <= guardians.len(), avoiding off-by-one mistakes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9d892b33-b6c8-41fd-836b-04937661c97c",
+    "timestamp": "2025-11-21 18:41:13.277471",
+    "report_generated": false
   }
 ]
