@@ -3898,5 +3898,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e539acc3-69ab-45a7-befc-69bab58d24d3",
     "timestamp": "2025-11-21 18:08:13.164277",
     "report_generated": false
+  },
+  {
+    "question": "Alpha Power Zero Case: If alpha equals zero (hash collision), what happens to alpha_power in the loop? Could all terms become zero, making the proof trivially verifiable?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4d2445a0-d6dc-4ef0-adab-0152649e937e",
+    "timestamp": "2025-11-21 18:09:27.968776",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Combine Overflow: When combining commitments with scalar multipliers, could accumulated projective coordinates overflow internal representations (even though field arithmetic is mod p)?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_db4d1491-d9e3-4f56-9e10-05152b7966a4",
+    "timestamp": "2025-11-21 18:09:41.282540",
+    "report_generated": false
+  },
+  {
+    "question": "Message Hash Collision: The message is hashed to 32 bytes before SoK commitments.rs:182 . With 2^128 collision resistance, could birthday attacks on high-volume systems find collisions that enable proof replay?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cd16534a-9734-4581-b2a2-2f6250054ec4",
+    "timestamp": "2025-11-21 18:09:54.548035",
+    "report_generated": false
+  },
+  {
+    "question": "Opening Value Getter Side Effects: The value() getter commitments.rs:105-107 returns a copy. If copying field elements isn't zeroized, could intermediate copies leak secrets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ddda69b1-696a-4510-9cca-96d553daa162",
+    "timestamp": "2025-11-21 18:10:08.174831",
+    "report_generated": false
+  },
+  {
+    "question": "Test-Only Functions in Production: The new function is marked #[cfg(test)] commitments.rs:93-96 . Could this accidentally be available in production through conditional compilation flags, enabling deterministic commitment generation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ff54b535-604b-4a4e-8ea7-3ea814d3d1ce",
+    "timestamp": "2025-11-21 18:10:22.464372",
+    "report_generated": false
+  },
+  {
+    "question": "Discrete Log Hardness Assumption: The security relies on discrete log hardness in BLS12-381. With 128-bit security, could advances in quantum algorithms or specialized hardware threaten commitment security within the expected lifetime of accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d47e3390-d90c-41a8-b783-b16c31ab02cf",
+    "timestamp": "2025-11-21 18:10:40.004757",
+    "report_generated": false
+  },
+  {
+    "question": "Trusted Setup Absence: Unlike some commitment schemes, Pedersen commitments don't need trusted setup. However, the choice of generators via hash-to-curve is deterministic. Could this be a weakness compared to schemes with randomized setup?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_93e261ae-82d3-49aa-99f4-d3577d13ba73",
+    "timestamp": "2025-11-21 18:10:59.223701",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Function Collision Resistance: The Fiat-Shamir transform uses hash functions for challenges. If SHA3-256 (used internally) has weaknesses, could pre-image or collision attacks enable proof forgery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b937baa0-3916-471d-998f-ae510c333de7",
+    "timestamp": "2025-11-21 18:11:19.947742",
+    "report_generated": false
+  },
+  {
+    "question": "BLS12-381 Curve Security: Are there any known weak points or potential attacks on BLS12-381 that could affect commitment security, particularly given its use in Ethereum and other high-value systems?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_df42a11b-41a3-4b5e-8387-5170bacdb09d",
+    "timestamp": "2025-11-21 18:11:42.059094",
+    "report_generated": false
+  },
+  {
+    "question": "Random Oracle Assumption: The SoK proof security relies on modeling hash functions as random oracles. If this assumption breaks, what is the concrete security degradation for Swafe's privacy guarantees?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_556185c8-41bd-4055-8865-a176788fcfe3",
+    "timestamp": "2025-11-21 18:12:05.297542",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Binding vs Hiding Trade-off: Pedersen commitments are computationally binding and unconditionally hiding. Does the implementation properly leverage this, or could computational binding be broken if discrete log becomes easier?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7711b127-9ba9-4046-821d-19e346ef124a",
+    "timestamp": "2025-11-21 18:12:29.608386",
+    "report_generated": false
+  },
+  {
+    "question": "Multi-Party Trust Model: The security analysis assumes honest majority for guardians but doesn't fully account for collusion between minority guardians and compromised off-chain nodes. Could such collusion weaken commitment-based privacy?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f8f856a1-1917-4813-aee0-16cee7d25f9d",
+    "timestamp": "2025-11-21 18:12:54.659457",
+    "report_generated": false
+  },
+  {
+    "question": "Side-Channel Resistance: Are commitment operations resistant to cache-timing, power analysis, or electromagnetic emanation attacks? Could an attacker with physical access to an off-chain node extract opening values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_52d18de5-b71e-4d8a-bc9a-7ca1a3c9a2d9",
+    "timestamp": "2025-11-21 18:13:21.456392",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Reuse Across Protocols: If Swafe's commitments are recognizable to external observers (due to on-chain...)",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_579a6f31-7853-4e8f-bd43-eb1b4487e1cc",
+    "timestamp": "2025-11-21 18:13:48.194613",
+    "report_generated": false
+  },
+  {
+    "question": "In BackupCiphertextV0::recover(), can an attacker who obtains fewer than threshold shares still recover the secret by exploiting the polynomial interpolation logic to extrapolate the remaining shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_38d68541-4250-48b0-9962-dcc2bfe5d2d4",
+    "timestamp": "2025-11-21 18:14:16.803096",
+    "report_generated": false
+  },
+  {
+    "question": "Does BackupCiphertextV0::recover() validate that the provided dke parameter actually belongs to the legitimate account owner before attempting decryption, or can any user with a valid decryption key attempt recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_38da8d16-3207-40dd-82fb-6e4c1c95b9d5",
+    "timestamp": "2025-11-21 18:14:45.869702",
+    "report_generated": false
+  },
+  {
+    "question": "In BackupCiphertextV0::recover(), the filter_map at lines 299-313 silently ignores invalid shares—could a malicious guardian flood the system with invalid shares to cause legitimate shares to be skipped if the shares vector has ordering constraints?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f60ad3e7-d4d0-460b-816b-77de130faef7",
+    "timestamp": "2025-11-21 18:15:16.358358",
+    "report_generated": false
+  },
+  {
+    "question": "Can the recover() function be called with duplicate share indices in the input shares parameter, and does the BTreeMap deduplication at line 311 prevent an attacker from manipulating which share gets selected when duplicates exist?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2d641aa8-fd68-46bd-b88a-47a8e406cb36",
+    "timestamp": "2025-11-21 18:15:47.623908",
+    "report_generated": false
+  },
+  {
+    "question": "In BackupCiphertextV0::recover(), after filtering shares, does line 322 correctly enforce the threshold check, or could an off-by-one error allow recovery with threshold-1 shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_abd0fb20-0d5f-4b8b-8277-e08697bd4233",
+    "timestamp": "2025-11-21 18:16:19.726425",
+    "report_generated": false
+  },
+  {
+    "question": "Does recover() validate that all share indices fall within the valid range [0, n) where n is the number of guardians, or could out-of-bounds indices cause unexpected behavior in the Shamir secret reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_eb00e39b-5fcd-45ea-9ee9-ece24161705e",
+    "timestamp": "2025-11-21 18:16:52.130599",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker provide shares with valid signatures but corrupted ciphertext payloads to recover(), causing the function to derive an incorrect secret while still passing all validation checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_eb938a46-dd59-4249-b962-24c7f793e3c6",
+    "timestamp": "2025-11-21 18:17:22.293005",
+    "report_generated": false
+  },
+  {
+    "question": "In BackupCiphertextV0::recover(), does the metadata key derivation at line 316 bind to all components of the backup, or could an attacker substitute a valid metadata from a different backup to bypass checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bfac9f0f-02b8-4ac0-8c3f-f10c6fe61c87",
+    "timestamp": "2025-11-21 18:17:54.300338",
+    "report_generated": false
+  },
+  {
+    "question": "Does recover() perform constant-time operations when validating share hashes at line 305, or could timing side-channels leak information about which shares are valid?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_64d343e3-f73a-4a56-9ad0-24aa7ccc3907",
+    "timestamp": "2025-11-21 18:18:26.826241",
+    "report_generated": false
+  },
+  {
+    "question": "Can the take(meta.threshold as usize) operation at line 331 be manipulated if meta.threshold was tampered with in the encrypted metadata, allowing recovery with fewer shares than originally specified?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dd547d93-960b-4292-b1bc-f991a1d249e8",
+    "timestamp": "2025-11-21 18:19:00.039424",
+    "report_generated": false
+  },
+  {
+    "question": "In AccountSecrets::recover(), does the function verify that the provided backup parameter actually belongs to this account (via BackupId matching), or can any backup ciphertext be attempted for recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_736ee78d-09f3-4cd2-a3cf-91d450928053",
+    "timestamp": "2025-11-21 18:19:33.212206",
+    "report_generated": false
   }
 ]
