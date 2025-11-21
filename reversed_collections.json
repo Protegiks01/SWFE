@@ -7648,5 +7648,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_87ae9f24-08fd-4e8f-88df-ea27fd228bf2",
     "timestamp": "2025-11-21 22:26:51.464185",
     "report_generated": false
+  },
+  {
+    "question": "The combine() function vdrf.rs:192-202 sums weighted evaluation shares. Can the summation order affect the final result due to rounding, or can an attacker exploit associativity to manipulate outcomes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_58c0518f-3e34-41ff-a6c6-11fd9d23d403",
+    "timestamp": "2025-11-21 22:28:04.153839",
+    "report_generated": false
+  },
+  {
+    "question": "In combine() vdrf.rs:196-200 , the Lagrange coefficient is computed using poly::lagrange(). Can numerical errors in this computation cause the final result to differ from the expected VDRF evaluation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d4a0f52b-31f6-408f-affa-8fbcc4803748",
+    "timestamp": "2025-11-21 22:28:17.158128",
+    "report_generated": false
+  },
+  {
+    "question": "The Lagrange interpolation in combine() vdrf.rs:192-201 evaluates at point zero vdrf.rs:199 . Can this special evaluation point create edge cases or degeneracies in the interpolation formula?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_30c55436-2c31-4103-a490-931546147125",
+    "timestamp": "2025-11-21 22:28:31.723058",
+    "report_generated": false
+  },
+  {
+    "question": "In combine() vdrf.rs:155-158 , the hash-to-curve operation is repeated. Can computing this outside the loop and reusing the result introduce vulnerabilities, or is recomputation necessary for security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a2f681b2-0c8a-49a1-9360-02ccdee7a606",
+    "timestamp": "2025-11-21 22:28:45.660172",
+    "report_generated": false
+  },
+  {
+    "question": "The combine() function vdrf.rs:185-187 checks if exactly threshold shares were collected. Can an attacker provide threshold-1 valid shares plus invalid shares to trigger the insufficient shares error, causing denial of service?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_16ca5f93-c34a-4719-a634-555d21e54ee4",
+    "timestamp": "2025-11-21 22:29:00.383386",
+    "report_generated": false
+  },
+  {
+    "question": "In combine() vdrf.rs:178-180 , the function breaks early once it has exactly threshold valid shares. Can an attacker provide threshold malicious shares first, then honest shares, to force acceptance of the malicious set?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_938825de-679b-4227-91c7-74066af2f76f",
+    "timestamp": "2025-11-21 22:29:16.566864",
+    "report_generated": false
+  },
+  {
+    "question": "The pairing verification in combine() vdrf.rs:170-176 uses compute_commitment_at_point() vdrf.rs:173 . Can mismatches between the commitment computation and share computation allow invalid shares to pass verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7f68858d-0e29-47d0-94cc-51a62c551caf",
+    "timestamp": "2025-11-21 22:29:34.206385",
+    "report_generated": false
+  },
+  {
+    "question": "In combine() vdrf.rs:170-177 , share verification uses a pairing check e(G1, eval_i) * e(-E_i, K) = 1. Can an attacker craft evaluation shares that pass this check but don't correspond to valid polynomial evaluations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c276a8f0-35bc-448b-ba75-145b53a1b878",
+    "timestamp": "2025-11-21 22:29:53.339830",
+    "report_generated": false
+  },
+  {
+    "question": "The combine() function vdrf.rs:161-167 filters duplicates using uniq_shares.contains_key(&xi). Can an attacker exploit the iteration order to ensure their malicious share is selected first when there are duplicates?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5d76ded5-7e1c-4542-8bad-f8c0ba824c46",
+    "timestamp": "2025-11-21 22:30:13.571370",
+    "report_generated": false
+  },
+  {
+    "question": "In Vdrf::combine() vdrf.rs:149-205 , the function accepts a slice of (NodeId, VdrfEvaluationShare) pairs. Can an attacker provide duplicate NodeIds with different shares to manipulate which shares are used in reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c586a37a-8a04-489b-b3de-d2808765ae93",
+    "timestamp": "2025-11-21 22:30:35.397592",
+    "report_generated": false
+  },
+  {
+    "question": "The partial evaluation result vdrf.rs:145 is deterministic for a given input and share. Can this determinism be exploited to track user activities across different sessions or contexts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2ff3b982-ff91-4ae5-9b4b-4374c699eee8",
+    "timestamp": "2025-11-21 22:30:58.752506",
+    "report_generated": false
+  },
+  {
+    "question": "In partial_eval() vdrf.rs:133-146 , there's no verification that the input hasn't been used before. Can replay attacks using old inputs allow an attacker to generate multiple email bindings for the same account?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_56c71cd5-c79a-4278-b5f1-d29497f615f6",
+    "timestamp": "2025-11-21 22:31:21.991172",
+    "report_generated": false
+  },
+  {
+    "question": "The VdrfKPoint includes c0 from the public key vdrf.rs:139-142 . If c0 is the identity element, can this reduce the hash-to-curve output space and create collisions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bfe6ec5f-85d6-45a2-8420-7ae82fb528c3",
+    "timestamp": "2025-11-21 22:31:47.531656",
+    "report_generated": false
+  },
+  {
+    "question": "In partial_eval() vdrf.rs:141 , the hash(input) function is called on the Tagged input. Can this hash function have weaknesses that allow preimage or second-preimage attacks on email addresses?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_da3fb551-a64f-4b42-a12d-d0236d52a41f",
+    "timestamp": "2025-11-21 22:32:14.569879",
+    "report_generated": false
+  },
+  {
+    "question": "The partial_eval() function vdrf.rs:145 performs scalar multiplication pnt * secret_share.0. Can this operation leak information about the secret share through timing, power, or cache side channels?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7d1db4e0-1eab-404e-b977-6dc18bceda1e",
+    "timestamp": "2025-11-21 22:32:40.879116",
+    "report_generated": false
+  },
+  {
+    "question": "In partial_eval() vdrf.rs:139 , the conversion pp::G2Projective::from(pp::hash_to_g2(...)) may involve point operations. Can this introduce non-determinism or rounding errors that cause different nodes to compute different results?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_798caed6-664c-43f8-b12a-d74fbc6bbcc5",
+    "timestamp": "2025-11-21 22:33:08.613095",
+    "report_generated": false
+  },
+  {
+    "question": "The generic parameter T: Tagged in partial_eval() vdrf.rs:133-137 allows any tagged type. Can this flexibility allow cross-protocol attacks where VDRF evaluations from one context (e.g., email binding) are reused in another?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d984ff42-83af-4900-b4f0-6313342d83ad",
+    "timestamp": "2025-11-21 22:33:37.414048",
+    "report_generated": false
+  },
+  {
+    "question": "In partial_eval() vdrf.rs:133-137 , there's no check that the public_key matches the secret_share. Can an attacker provide a mismatched pair to generate evaluations that fail verification later, causing denial of service?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4147aa76-4312-4f9c-913f-28fe26c22389",
+    "timestamp": "2025-11-21 22:34:07.654468",
+    "report_generated": false
+  },
+  {
+    "question": "The VdrfEvaluationShare struct vdrf.rs:50-53 has no additional metadata beyond the G2 point. Can shares from different inputs, nodes, or VDRF instances be mixed together in the combination phase?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_57bdefa0-2f31-4ed3-a222-8f47e4081f5d",
+    "timestamp": "2025-11-21 22:34:38.278452",
+    "report_generated": false
+  },
+  {
+    "question": "In partial_eval() vdrf.rs:139-142 , the hash input includes public_key.c0. Can two different public keys with the same c0 but different ci coefficients produce identical partial evaluations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f71403e5-5479-4eb2-9fa7-51b6ff4e1b4a",
+    "timestamp": "2025-11-21 22:35:09.265969",
+    "report_generated": false
+  },
+  {
+    "question": "The partial_eval() function vdrf.rs:133-146 doesn't verify that secret_share corresponds to the provided public_key. Can a corrupted node use a share from a different VDRF instance to create evaluations that look valid but aren't?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_207773a4-58e7-4dd7-963b-6f3e65775f1e",
+    "timestamp": "2025-11-21 22:35:40.429952",
+    "report_generated": false
+  },
+  {
+    "question": "In partial_eval() vdrf.rs:145 , the function converts from G2Projective to G2Affine using .into(). Can this conversion fail for edge cases like the point at infinity, or can it introduce malleability?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e3fa222f-1b65-4660-8008-d75013de26e3",
+    "timestamp": "2025-11-21 22:36:11.473243",
+    "report_generated": false
+  },
+  {
+    "question": "The partial evaluation returns VdrfEvaluationShare vdrf.rs:145 which is a G2 element. Can an attacker substitute this with a different valid G2 point that still passes group membership checks but represents a different evaluation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1917bcc0-d338-41d6-991e-c7a67c7a76a4",
+    "timestamp": "2025-11-21 22:36:41.845304",
+    "report_generated": false
+  },
+  {
+    "question": "In partial_eval() vdrf.rs:139 , the function calls pp::hash_to_g2(). Can the hash-to-curve implementation have non-uniform distribution, making some outputs more likely and reducing VDRF security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_76350aaa-819e-49f2-95b3-1ec8c899d33a",
+    "timestamp": "2025-11-21 22:37:12.464294",
+    "report_generated": false
+  },
+  {
+    "question": "The VdrfKPoint struct implements Tagged with separator 'v0:vdrf-input' vdrf.rs:79-81 . Can an attacker craft inputs that when encoded produce the same bytes as valid VdrfKPoint instances, bypassing domain separation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d8753f0c-60c0-4cf9-9d7a-4db5368b0cab",
+    "timestamp": "2025-11-21 22:37:43.461800",
+    "report_generated": false
   }
 ]
