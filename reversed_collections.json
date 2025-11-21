@@ -8548,5 +8548,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_789c5431-c5ef-47b2-8434-48278cc5f464",
     "timestamp": "2025-11-21 23:32:09.299168",
     "report_generated": false
+  },
+  {
+    "question": "When interpolate_eval processes points, if an attacker can inject points with y-values that are multiples of each other, could this create linear dependencies that reveal information about the underlying secret?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_30503017-9746-4025-a104-12ede68d4ad7",
+    "timestamp": "2025-11-21 23:33:31.137141",
+    "report_generated": false
+  },
+  {
+    "question": "If interpolate_eval is called with points where some y-values are zero, does this reduce the effective degree of the polynomial in a way that could weaken threshold security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d80e9639-b100-447f-b28a-559a62b4335a",
+    "timestamp": "2025-11-21 23:33:44.281491",
+    "report_generated": false
+  },
+  {
+    "question": "The interpolate_eval function creates a new roots vector for each point in the fold. poly.rs:28 Could this O(n²) complexity be exploited by a malicious guardian providing a large number of shares to cause DoS during reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4c6b8caf-ce15-47fa-af9e-6e56dc326eca",
+    "timestamp": "2025-11-21 23:33:57.893710",
+    "report_generated": false
+  },
+  {
+    "question": "When interpolate_eval is used in sss::recover to reconstruct secrets, sss.rs:51-63 if the share indices are manipulated (e.g., using saturating_add), could this lead to reconstructing a different polynomial than intended?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_58de235d-ced6-4b2d-8dfb-b41a85d3f79f",
+    "timestamp": "2025-11-21 23:34:11.689063",
+    "report_generated": false
+  },
+  {
+    "question": "In interpolate_eval, the fold accumulates eval + py * lagrange(...). poly.rs:27-30 Could accumulated rounding errors in the field arithmetic cause the final result to differ from the true polynomial evaluation, compromising secret reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fd0a3d53-5188-4d24-b290-0e19f4c285cd",
+    "timestamp": "2025-11-21 23:34:27.072827",
+    "report_generated": false
+  },
+  {
+    "question": "The interpolate_eval function evaluates the interpolating polynomial at point x. If a malicious party can choose x to equal one of the points' x-coordinates, does the interpolation correctly return the corresponding y-value, or could implementation details cause errors?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c0aabfa6-289e-41b4-91ce-27e702914fe2",
+    "timestamp": "2025-11-21 23:34:43.511724",
+    "report_generated": false
+  },
+  {
+    "question": "When interpolate_eval filters roots as xs.iter().cloned().filter(|&x| x != px), if the comparison fails due to field element representation differences, could px remain in roots, causing division by zero in lagrange? poly.rs:28",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4b48f773-8e08-49a8-8cc2-89a96f0ff8e1",
+    "timestamp": "2025-11-21 23:35:01.126191",
+    "report_generated": false
+  },
+  {
+    "question": "The interpolate_eval function does not check if all x-coordinates in points are distinct. If duplicate x-coordinates are provided with different y-values, does this create an over-determined system that could leak information or produce incorrect results?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f6e3ba1e-74a3-45b9-8484-3903ae673ad4",
+    "timestamp": "2025-11-21 23:35:20.694132",
+    "report_generated": false
+  },
+  {
+    "question": "In interpolate_eval, the xs vector is collected from all points, then filtered for each Lagrange basis. poly.rs:26-28 Could a malicious guardian provide duplicate x-coordinates in the points to manipulate the interpolation result?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_27f73466-9a8b-4ba7-9bed-1459546e92c7",
+    "timestamp": "2025-11-21 23:35:40.952387",
+    "report_generated": false
+  },
+  {
+    "question": "The interpolate_eval function asserts that points is non-empty but does not validate minimum threshold. poly.rs:24-31 If called with fewer than t points in Shamir secret sharing, could it still produce a result that appears valid but is actually incorrect, allowing unauthorized reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_942d2671-5d21-471c-abfe-40e6caf06b47",
+    "timestamp": "2025-11-21 23:36:02.198587",
+    "report_generated": false
+  },
+  {
+    "question": "The lagrange function computes (x - r_1)(x - r_2)...(x - r_n) / ((px - r_1)(px - r_2)...(px - r_n)). If the field characteristic is small, could overflow in the multiplications cause wrapping that produces incorrect basis polynomials?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ac82f7c8-3a11-4914-8096-0425e31e09b0",
+    "timestamp": "2025-11-21 23:36:24.357838",
+    "report_generated": false
+  },
+  {
+    "question": "If an attacker provides roots where all elements are equal (but not equal to px), does lagrange produce a well-defined result, or could this degenerate case be exploited?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e8a7f040-c3f6-40f2-8b31-9f4b2b740cfe",
+    "timestamp": "2025-11-21 23:36:47.774750",
+    "report_generated": false
+  },
+  {
+    "question": "When lagrange clones the iterator for vanish evaluation, if the iterator has side effects (e.g., logging, state updates), could this leak information about which guardians are participating in reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e6e33497-f7dd-407d-bb95-191dbae6998f",
+    "timestamp": "2025-11-21 23:37:12.437367",
+    "report_generated": false
+  },
+  {
+    "question": "The Lagrange basis computed by lagrange should be a rational function. Could the division operation introduce denominators that don't cancel properly, leading to incorrect interpolation results?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_af9dd241-c1c3-494f-b65e-7e28f71e7097",
+    "timestamp": "2025-11-21 23:37:37.522950",
+    "report_generated": false
+  },
+  {
+    "question": "If lagrange is called with roots containing the additive identity (F::ZERO), and px is also zero, does this create a trivial denominator that breaks interpolation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_27f33c16-a06f-422b-bb7b-ecb2dfe9e95d",
+    "timestamp": "2025-11-21 23:38:04.509947",
+    "report_generated": false
+  },
+  {
+    "question": "When lagrange computes the vanishing polynomial at px, if px is extremely large or small in the field, could this cause the denominator to have special properties that weaken security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_189d452e-e1d9-4f30-9ff8-6ca428f28ff6",
+    "timestamp": "2025-11-21 23:38:31.337783",
+    "report_generated": false
+  },
+  {
+    "question": "If the roots slice is mutated by another thread while lagrange is executing (violating Rust's borrowing rules elsewhere), could this race condition lead to computing an incorrect Lagrange basis?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4782c3e6-1245-498a-8e4b-87138a496530",
+    "timestamp": "2025-11-21 23:38:59.891977",
+    "report_generated": false
+  },
+  {
+    "question": "The lagrange function returns a single field element. Could accumulated precision loss in the division operation (even in exact arithmetic) cause small errors that compound in interpolate_eval when summing multiple basis polynomials?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bfe8872c-22d2-4f04-895e-7e17b56e94c7",
+    "timestamp": "2025-11-21 23:39:28.850538",
+    "report_generated": false
+  },
+  {
+    "question": "If lagrange is used in a context where px represents a share index (1..n) and x represents the secret evaluation point (0), could evaluating at these specific points leak the polynomial degree information?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6989e05b-14c0-4d5f-9a50-719cda9f63c6",
+    "timestamp": "2025-11-21 23:39:58.412348",
+    "report_generated": false
+  },
+  {
+    "question": "When computing the Lagrange basis at evaluation point x, if x is chosen to be a special value (like a root of unity), could this create algebraic relationships that a malicious guardian could exploit to learn information about other shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_518a61a5-b75c-4031-80dc-e6c0ae54867a",
+    "timestamp": "2025-11-21 23:40:28.995639",
+    "report_generated": false
+  },
+  {
+    "question": "The lagrange function does not check if all elements in roots are valid field elements. Could out-of-range values or improperly deserialized field elements cause incorrect basis computation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_637c4c20-6489-49ae-b414-962cbb4c60f0",
+    "timestamp": "2025-11-21 23:40:58.488622",
+    "report_generated": false
+  },
+  {
+    "question": "If lagrange is called with a very large roots array (approaching the guardian limit), could the repeated multiplication in the vanishing polynomial computation accumulate errors that violate interpolation correctness?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e1e3a88e-3cd7-435c-bdd5-55d7c12b73f5",
+    "timestamp": "2025-11-21 23:41:27.821077",
+    "report_generated": false
+  },
+  {
+    "question": "When lagrange is used in interpolate_eval, the roots are filtered to exclude px. poly.rs:28 If the filter condition x != px fails due to representation issues, could this lead to division by zero?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_018865db-9e00-46e3-9d56-43f37fec5342",
+    "timestamp": "2025-11-21 23:41:58.691365",
+    "report_generated": false
+  },
+  {
+    "question": "The lagrange function performs field division, which is typically implemented as multiplication by the modular inverse. If the field implementation has bugs in the inversion algorithm, could this lead to incorrect Lagrange basis computation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9a90b1cd-99b7-46a9-a8e4-da8f23050d0c",
+    "timestamp": "2025-11-21 23:42:27.666120",
+    "report_generated": false
+  },
+  {
+    "question": "If an attacker can control the roots array passed to lagrange during VDRF evaluation, could they provide roots that create a malformed basis, leaking information about the VDRF secret key shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ed34ae82-3706-499c-a8ed-e341aceec8d9",
+    "timestamp": "2025-11-21 23:42:56.639082",
+    "report_generated": false
   }
 ]
