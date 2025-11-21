@@ -8098,5 +8098,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5ec05620-a91d-411e-bdf7-40db10b134e0",
     "timestamp": "2025-11-21 22:59:00.503690",
     "report_generated": false
+  },
+  {
+    "question": "In VDRF combine operations, if the Lagrange coefficients computed by lagrange are not validated, could a malicious off-chain node provide coefficients that reconstruct an incorrect VDRF evaluation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ef6f659d-cb80-4d01-9351-ad54b55a0e00",
+    "timestamp": "2025-11-21 23:00:11.716314",
+    "report_generated": false
+  },
+  {
+    "question": "When interpolate_eval is used in recovery, if the same set of shares is used multiple times with different evaluation points, could this leak information about the polynomial structure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6ac3da5d-f328-41ee-b658-0bc2e11c4aa3",
+    "timestamp": "2025-11-21 23:00:24.485702",
+    "report_generated": false
+  },
+  {
+    "question": "The SSS implementation evaluates the polynomial at points 1, 2, 3, .... Could this sequential pattern be exploited by a malicious guardian who observes multiple reconstruction sessions to learn the underlying polynomial?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5587ee7b-b167-46e0-8544-3da41c880fb4",
+    "timestamp": "2025-11-21 23:00:38.202322",
+    "report_generated": false
+  },
+  {
+    "question": "In association recovery using interpolate_eval, v0.rs:1-628 if a corrupted off-chain node provides shares with manipulated x-coordinates, could this cause reconstruction of a different recovery key than intended?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c630fa8d-dce4-4007-aa01-9e3f8e79e2bb",
+    "timestamp": "2025-11-21 23:00:51.840826",
+    "report_generated": false
+  },
+  {
+    "question": "When backup reconstruction uses sss::recover, which relies on interpolate_eval, if fewer than threshold shares are provided, does the system properly reject reconstruction, or could it produce an incorrect secret that appears valid?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6bf67ad8-21bb-4014-b3cf-da108d0624aa",
+    "timestamp": "2025-11-21 23:01:06.739018",
+    "report_generated": false
+  },
+  {
+    "question": "In VDRF evaluation using poly::lagrange, vdrf.rs:1-100 could a malicious minority of off-chain nodes provide manipulated Lagrange coefficients that still pass verification but produce an incorrect VDRF output?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fa469201-74b8-4afc-9941-f05ada8a271b",
+    "timestamp": "2025-11-21 23:01:22.670491",
+    "report_generated": false
+  },
+  {
+    "question": "The SSS implementation generates t random coefficients where cs[0] is the secret. sss.rs:43-47 If eval is called with coefficients in the wrong order, could the wrong coefficient be used as the secret, leaking the actual secret through shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_309e33b7-2fd2-4bdc-854d-6b6b62c9f028",
+    "timestamp": "2025-11-21 23:01:39.639786",
+    "report_generated": false
+  },
+  {
+    "question": "When sss::recover calls interpolate_eval at F::ZERO, sss.rs:62 could malicious shares be crafted such that interpolation at zero produces an attacker-controlled value instead of the original secret?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_348baff3-1efe-4663-8dcf-db2760a757ca",
+    "timestamp": "2025-11-21 23:01:58.061826",
+    "report_generated": false
+  },
+  {
+    "question": "The sss::recover function uses saturating_add(1) when converting share indices. sss.rs:60 Could integer overflow in share indexing cause incorrect x-coordinates in interpolate_eval, reconstructing the wrong secret?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a44ff5ad-6e18-4aff-a84e-caa244edc50f",
+    "timestamp": "2025-11-21 23:02:17.171074",
+    "report_generated": false
+  },
+  {
+    "question": "In sss::share, polynomial evaluation points are chosen as 1..=n. sss.rs:44-46 Could this predictable choice allow a malicious guardian to pre-compute attack patterns before participating in the protocol?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6ea90a6e-db0a-45aa-81cf-3d9cc70b325b",
+    "timestamp": "2025-11-21 23:02:37.750610",
+    "report_generated": false
+  },
+  {
+    "question": "The interpolate_eval function performs multiple Lagrange basis computations. Could measuring total execution time reveal information about the point coordinates or y-values being interpolated?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_411caa97-918f-4d96-acf6-4e20852fd965",
+    "timestamp": "2025-11-21 23:02:59.782468",
+    "report_generated": false
+  },
+  {
+    "question": "If the field arithmetic implementation uses lookup tables for certain operations, could cache-timing attacks on these lookups reveal share values during reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_28b50cb3-2e95-4b59-869e-573d4e29a7fe",
+    "timestamp": "2025-11-21 23:03:21.629565",
+    "report_generated": false
+  },
+  {
+    "question": "When lagrange computes two vanishing polynomials at different points, could differential timing analysis reveal information about the relationship between x and px?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c3f18e3f-0a3a-46ac-a691-3ea73105969f",
+    "timestamp": "2025-11-21 23:03:44.844580",
+    "report_generated": false
+  },
+  {
+    "question": "The fold operations process iterators sequentially. Could memory access patterns during iteration create cache-timing side-channels that leak information about input values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_432630fe-a00b-4159-b2cf-d67903ed78ed",
+    "timestamp": "2025-11-21 23:04:09.595010",
+    "report_generated": false
+  },
+  {
+    "question": "If field multiplication in eval and vanish is not constant-time, could power analysis or timing attacks recover polynomial coefficients or roots?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fab912f2-2641-4a58-8abc-003b82b52d8e",
+    "timestamp": "2025-11-21 23:04:35.852969",
+    "report_generated": false
+  },
+  {
+    "question": "The interpolate_eval function performs a different number of Lagrange basis computations depending on points.len(). Could timing this reveal the number of shares being used, leaking information about guardian participation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d3e4d52c-405c-43a6-9828-4e3f564f9af3",
+    "timestamp": "2025-11-21 23:05:03.353397",
+    "report_generated": false
+  },
+  {
+    "question": "When interpolate_eval filters roots, the filter predicate compares field elements. If comparison is not constant-time, could timing reveal which x-coordinates are being used in interpolation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_50b6a224-873e-4c5a-978c-0cd0adc0d596",
+    "timestamp": "2025-11-21 23:05:31.138751",
+    "report_generated": false
+  },
+  {
+    "question": "The lagrange function performs field division, which typically uses modular inversion. Could timing variations in the inversion algorithm leak information about the denominator value?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_984ec0b8-a7f9-4665-bbfa-bbeba1f32e69",
+    "timestamp": "2025-11-21 23:06:00.114478",
+    "report_generated": false
+  },
+  {
+    "question": "In vanish, the fold operation performs a different number of iterations depending on the number of roots. Could timing this operation reveal how many guardians are participating in reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c7d15e72-6233-410e-a3d8-36881e5586d9",
+    "timestamp": "2025-11-21 23:06:30.396516",
+    "report_generated": false
+  },
+  {
+    "question": "The eval function iterates through coefficients and performs multiplications and additions. Could the number of iterations leak information about the polynomial degree, revealing the threshold t?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0f7abdbd-d68a-4aca-b402-df4f8c6bbccd",
+    "timestamp": "2025-11-21 23:07:00.887271",
+    "report_generated": false
+  },
+  {
+    "question": "When summing Lagrange basis polynomials in interpolate_eval, could the order of addition affect the final result if the field operations are not truly associative due to implementation bugs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_422c22f0-fe20-43b6-b430-5f91e3ae4be9",
+    "timestamp": "2025-11-21 23:07:31.728220",
+    "report_generated": false
+  },
+  {
+    "question": "If the field modulus is not prime but a prime power, could the polynomial operations have unexpected behaviors in the presence of zero divisors?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8be8262a-e343-409c-9e40-1378c5e4f0c5",
+    "timestamp": "2025-11-21 23:08:04.549526",
+    "report_generated": false
+  },
+  {
+    "question": "The Lagrange basis computation requires computing products of many field elements. Could accumulated floating-point errors (even in exact arithmetic) from repeated operations cause result corruption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_556cf6e6-d39d-4cfe-9239-b605f5b170cf",
+    "timestamp": "2025-11-21 23:08:36.926485",
+    "report_generated": false
+  },
+  {
+    "question": "If the field has roots of unity with special properties, could evaluating polynomials at these roots create exploitable patterns in the shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_334d1b7e-57be-417b-9890-a5778f5b12d6",
+    "timestamp": "2025-11-21 23:09:07.173888",
+    "report_generated": false
+  },
+  {
+    "question": "When multiplying many field elements in vanish, could the product approach zero due to field structure, even though individual factors are non-zero, causing numerical issues?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_998d121a-748a-49aa-a99a-659ddde6c1ae",
+    "timestamp": "2025-11-21 23:09:35.667728",
+    "report_generated": false
   }
 ]
