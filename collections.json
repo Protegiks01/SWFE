@@ -2848,5 +2848,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_914f2a9e-5d67-4dd2-9ef7-85ceb822e01d",
     "timestamp": "2025-11-21 16:49:43.353853",
     "report_generated": false
+  },
+  {
+    "question": "Timestamp Precision Loss: Could same-second operations cause replay issues?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_48c2ed62-78c7-4a8c-8cdc-036070753024",
+    "timestamp": "2025-11-21 16:50:48.614564",
+    "report_generated": false
+  },
+  {
+    "question": "System Time Dependencies: Could time manipulation extend certificate lifetime?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d3a77bea-08e2-4f52-b2e8-80816ae280d3",
+    "timestamp": "2025-11-21 16:51:01.718673",
+    "report_generated": false
+  },
+  {
+    "question": "Clock Skew Between Nodes: Could skew cause cross-node verification failures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_813b1ada-aa86-4063-981d-fd00ca718c3d",
+    "timestamp": "2025-11-21 16:51:15.378622",
+    "report_generated": false
+  },
+  {
+    "question": "Future Certificate Rejection: Could clock adjustments break legitimate certs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4bdb0b64-f88e-4ef7-a902-c5305fcd580a",
+    "timestamp": "2025-11-21 16:51:29.127691",
+    "report_generated": false
+  },
+  {
+    "question": "Expiration Boundary Precision: Could rounding cause inconsistent decisions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_02461863-bf2b-4d87-9e83-ddcc08648973",
+    "timestamp": "2025-11-21 16:51:43.746101",
+    "report_generated": false
+  },
+  {
+    "question": "Time Monotonicity Assumptions: Could NTP or DST cause backward time jumps?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fa51b0c1-a4ea-423a-96c6-9d4b0dae5c39",
+    "timestamp": "2025-11-21 16:51:59.393813",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Age Tracking: Could old certs create fresh-looking tokens?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4286a163-fc17-4d54-9ded-9d68d89a6113",
+    "timestamp": "2025-11-21 16:52:16.687881",
+    "report_generated": false
+  },
+  {
+    "question": "Replay Window: Could attackers replay tokens multiple times?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9f804df8-60f9-4e60-b81e-0372255bfadf",
+    "timestamp": "2025-11-21 16:52:36.055332",
+    "report_generated": false
+  },
+  {
+    "question": "Timestamp Overflow at Boundaries: Could u64 overflow extend validity?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8c5ae801-2650-495a-a764-f6e1f10957b9",
+    "timestamp": "2025-11-21 16:52:56.944783",
+    "report_generated": false
+  },
+  {
+    "question": "Time Source Trustworthiness: Could fake now parameters accept expired certs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_55323bd9-a53f-48ad-9149-c787d9e93660",
+    "timestamp": "2025-11-21 16:53:18.540061",
+    "report_generated": false
+  },
+  {
+    "question": "Concurrent Time Checks: Could race conditions cause inconsistent verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_98b358d6-a8a3-4dbd-b2fa-1dd270fe3c99",
+    "timestamp": "2025-11-21 16:53:41.230997",
+    "report_generated": false
+  },
+  {
+    "question": "Timezone Handling: Could timezone misconfigs break expiration checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9824154e-e15f-4752-91a6-6949001b945e",
+    "timestamp": "2025-11-21 16:54:05.086268",
+    "report_generated": false
+  },
+  {
+    "question": "Does choosing BLS12-381 instead of another curve (e.g., secp256r1) introduce any security tradeoffs for the protocol components depending on these aliases?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_db30af4d-6c6f-444f-9416-4f6da0083fd2",
+    "timestamp": "2025-11-21 16:54:31.478273",
+    "report_generated": false
+  },
+  {
+    "question": "Can downstream code mistakenly assume these aliases wrap custom logic rather than direct arkworks types?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cefd51b9-1bf9-46f8-8cd4-2ed95d694dc4",
+    "timestamp": "2025-11-21 16:54:57.964934",
+    "report_generated": false
+  },
+  {
+    "question": "Could the aliasing mask decisions about curve parameter security that should be explicit in the main cryptography logic?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_526bb3e3-67f8-4605-a1ea-f16af07852d4",
+    "timestamp": "2025-11-21 16:55:26.003806",
+    "report_generated": false
+  },
+  {
+    "question": "Do the aliases introduce ambiguity on whether G1 or G2 should be used for specific operations in VDRF or commitments?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_25c3b755-659e-4813-9511-cb74db8988c6",
+    "timestamp": "2025-11-21 16:55:54.934980",
+    "report_generated": false
+  },
+  {
+    "question": "Could the type aliasing hide the fact that certain operations require G2 elements but receive G1 elements due to unclear naming at call sites?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8d82eb25-69a0-4ded-932d-5b81e61be313",
+    "timestamp": "2025-11-21 16:56:24.661491",
+    "report_generated": false
+  },
+  {
+    "question": "Can GAffine/GProjective type confusion occur because the file exposes both without enforcing usage rules?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a361aa59-1893-4d5d-9a73-ac04938ed9f2",
+    "timestamp": "2025-11-21 16:56:55.472653",
+    "report_generated": false
+  },
+  {
+    "question": "Could implicit affine-to-projective conversions create timing-side channels in downstream cryptographic operations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_423d76bb-b300-45fb-a10d-b13dd077f49f",
+    "timestamp": "2025-11-21 16:57:26.637043",
+    "report_generated": false
+  },
+  {
+    "question": "Does the abstraction layer hide the need for subgroup membership checks after deserialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2942def8-ed5d-4297-b417-195b96bfdc7f",
+    "timestamp": "2025-11-21 16:57:58.367271",
+    "report_generated": false
+  },
+  {
+    "question": "Can code unintentionally mix Fr with scalar fields from other crypto modules due to identical type aliasing?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c210fdb1-b346-46c5-9135-82273d76e5db",
+    "timestamp": "2025-11-21 16:58:32.209537",
+    "report_generated": false
+  },
+  {
+    "question": "Does the re-export pattern reduce explicitness about whether points are guaranteed to be in the prime subgroup?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3cf6a249-c8c6-4e1d-8d06-58fea609d7c1",
+    "timestamp": "2025-11-21 16:59:07.994639",
+    "report_generated": false
+  },
+  {
+    "question": "Does the file allow downstream code to bypass identity-point checks because the aliasing gives the illusion of safe defaults?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_08abe2e2-3826-48fa-9b73-56a5139cd3cb",
+    "timestamp": "2025-11-21 16:59:42.795807",
+    "report_generated": false
+  },
+  {
+    "question": "Could Fr aliasing mask distinctions between different scalar fields used by other cryptographic modules?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_02d8fa36-9e29-40a8-b07d-78c80bee79d7",
+    "timestamp": "2025-11-21 17:00:20.198065",
+    "report_generated": false
+  },
+  {
+    "question": "Do the re-exported serialization modules enforce canonical group element encoding?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7247809f-de22-437c-8c4a-0956b63f3646",
+    "timestamp": "2025-11-21 17:00:58.584090",
+    "report_generated": false
   }
 ]
