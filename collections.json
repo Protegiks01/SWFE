@@ -7648,5 +7648,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c31c0edc-e1d6-4cf6-882b-03edd0012413",
     "timestamp": "2025-11-21 22:44:51.788191",
     "report_generated": false
+  },
+  {
+    "question": "Version Increment Check: Could checked_add(None) be misinterpreted?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f542d1dc-e159-49c5-9376-94d75af960d7",
+    "timestamp": "2025-11-21 22:46:07.799996",
+    "report_generated": false
+  },
+  {
+    "question": "Old Signature Verification: Could old key authorize updates indefinitely?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_76f0c4ba-8aad-4714-950d-112d97e9ccbb",
+    "timestamp": "2025-11-21 22:46:21.189128",
+    "report_generated": false
+  },
+  {
+    "question": "State Replacement Without Validation: Could attacker inject malicious backups?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6a4150d7-5564-46c9-aa7b-c48ba67977c1",
+    "timestamp": "2025-11-21 22:46:34.775495",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery State Modification: Could attacker disable recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_60789808-b1f8-49dc-be07-314b0fba32bc",
+    "timestamp": "2025-11-21 22:46:49.230015",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Addition Validation: Are new backups validated?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dac3982a-253e-4050-9ac4-5732cc90e10b",
+    "timestamp": "2025-11-21 22:47:04.927378",
+    "report_generated": false
+  },
+  {
+    "question": "RIK Decryption Timing Attack: Can timing reveal valid associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2e5b144f-1583-4ff2-82f1-47cd8617538e",
+    "timestamp": "2025-11-21 22:47:21.643910",
+    "report_generated": false
+  },
+  {
+    "question": "Verification Key Matching: Can attacker manipulate encrypted data to pass verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fb80395e-f6e9-4bc2-b30e-6c9afbdc015b",
+    "timestamp": "2025-11-21 22:47:41.155416",
+    "report_generated": false
+  },
+  {
+    "question": "Fresh Key Generation: Is RNG sound for ephemeral keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_582f36cf-72a5-420f-a08b-9f89234806d7",
+    "timestamp": "2025-11-21 22:48:01.529387",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery Request Signature: Can attacker forge ephemeral key?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6089b7ec-0333-45c7-86cb-de30fe64cece",
+    "timestamp": "2025-11-21 22:48:22.045422",
+    "report_generated": false
+  },
+  {
+    "question": "MSK Share Leakage: Could error messages leak shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_73c30083-3ba5-4eb5-ba0c-5286bb01236e",
+    "timestamp": "2025-11-21 22:48:44.764122",
+    "report_generated": false
+  },
+  {
+    "question": "RecoverySecrets Protection: Are sensitive fields protected in memory?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fdd9b665-ff11-4649-a79c-42cae24f8831",
+    "timestamp": "2025-11-21 22:49:08.081904",
+    "report_generated": false
+  },
+  {
+    "question": "State Clone in Recovery: Could modifications affect session?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f8872300-dcae-401c-886b-7f8e92cfc9f6",
+    "timestamp": "2025-11-21 22:49:32.485889",
+    "report_generated": false
+  },
+  {
+    "question": "No Association Revocation Check: Can revoked RIK still recover?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b7709352-1dae-48f3-8392-2e69c8072ed4",
+    "timestamp": "2025-11-21 22:49:58.339217",
+    "report_generated": false
+  },
+  {
+    "question": "Account ID Mismatch: Can attacker initiate recovery for wrong account?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6787688f-3e35-42c2-89b7-2c7891ae5cbd",
+    "timestamp": "2025-11-21 22:50:25.664360",
+    "report_generated": false
+  },
+  {
+    "question": "Iterator Short-Circuit: Can ordering be detected via timing?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d6af13d0-81ad-43d1-93be-8e31ec2f8277",
+    "timestamp": "2025-11-21 22:50:55.035309",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Share Validation Missing: Can attacker submit fake shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7229d80c-f00f-451d-800d-35b91fefdc28",
+    "timestamp": "2025-11-21 22:51:25.625689",
+    "report_generated": false
+  },
+  {
+    "question": "Social Share Recovery Parameters: Is EmptyInfo sufficient?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_32d29470-192b-4ed9-95a5-b5d547cd6cc0",
+    "timestamp": "2025-11-21 22:51:55.876571",
+    "report_generated": false
+  },
+  {
+    "question": "MSK Decryption Key Security: Does compromising one share weaken MSK?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fd87f13f-96f0-42fe-aa4d-a9e0d0d605e2",
+    "timestamp": "2025-11-21 22:52:26.634138",
+    "report_generated": false
+  },
+  {
+    "question": "EmptyInfo Parameter Risk: Should include session context?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_746ca060-f71d-4506-a5bd-759acd4b1e8f",
+    "timestamp": "2025-11-21 22:52:58.237446",
+    "report_generated": false
+  },
+  {
+    "question": "Account ID Binding in MSK Decryption: Is binding sufficient?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4a3a0ce7-9a01-4715-8f18-8317b7c60668",
+    "timestamp": "2025-11-21 22:53:30.279970",
+    "report_generated": false
+  },
+  {
+    "question": "No Threshold Validation: Can attacker attempt recovery with few shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1079c499-efbe-46f4-a548-67d9cd6d8295",
+    "timestamp": "2025-11-21 22:54:02.705017",
+    "report_generated": false
+  },
+  {
+    "question": "Decryption Key Lifetime: Can keys be replayed?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_58114012-3d23-4512-9247-3d15015f0b98",
+    "timestamp": "2025-11-21 22:54:35.767083",
+    "report_generated": false
+  },
+  {
+    "question": "Share Type Matching: Could V1 shares bypass checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7b487974-9dd2-4b35-a06e-4ad24d29088c",
+    "timestamp": "2025-11-21 22:55:06.145265",
+    "report_generated": false
+  },
+  {
+    "question": "MSK Return Without Validation: Could corrupted MSK cause downstream issues?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_96443c7b-50b0-4020-bbeb-cfd0191e75e5",
+    "timestamp": "2025-11-21 22:55:35.423040",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery State Reuse: Could attacker replay recovery to extract MSK?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b65e06d7-5467-4096-b91c-9f40c02ef9b1",
+    "timestamp": "2025-11-21 22:56:04.708301",
+    "report_generated": false
   }
 ]
