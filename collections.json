@@ -3148,5 +3148,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b5ba6fe6-f7e7-4072-99ce-e00415a4dc8a",
     "timestamp": "2025-11-21 17:11:45.032329",
     "report_generated": false
+  },
+  {
+    "question": "Generator Serialization: The generators are not serialized or versioned. If the hash-to-curve algorithm changes in a future version, will old commitments remain verifiable, or could users lose access to their accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3a6c5837-098d-4048-91b8-086ff6b63e35",
+    "timestamp": "2025-11-21 17:12:56.375171",
+    "report_generated": false
+  },
+  {
+    "question": "Subgroup Membership: Does hash_to_g1 guarantee the resulting points lie in the prime-order subgroup? If generators land in a small subgroup, commitment security degrades, potentially exposing email addresses during off-chain node interactions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b2cbd2e8-5a08-4031-81ec-cf8b11c59356",
+    "timestamp": "2025-11-21 17:13:09.529794",
+    "report_generated": false
+  },
+  {
+    "question": "Generator Ordering: The commit function computes [v]H + [r]G commitments.rs:63-67 . If H and G are accidentally swapped in any usage, does this break zero-knowledge properties in SoK proofs, leaking information about backup encryption keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_509d446c-3516-45c6-8ccf-9640029fce9c",
+    "timestamp": "2025-11-21 17:13:23.394764",
+    "report_generated": false
+  },
+  {
+    "question": "Domain Separation in Multi-Use: Pedersen commitments are used in association records v0.rs:146 . Without commitment-type domain separation, could an attacker replay commitments from one context (e.g., email association) to another (e.g., backup verification), bypassing guardian approval requirements?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_de57887c-63d3-497b-a4dc-270f650b9cb2",
+    "timestamp": "2025-11-21 17:13:37.001671",
+    "report_generated": false
+  },
+  {
+    "question": "Generator Fixed Points: Could there exist edge cases where specific email inputs combined with VDRF outputs produce commitments equal to the generator G or H, creating degenerate cases that break privacy during account recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9197af82-ccab-4e6e-9c7f-843a1866a983",
+    "timestamp": "2025-11-21 17:13:51.600433",
+    "report_generated": false
+  },
+  {
+    "question": "Generator Consistency Across Modules: The generators are recreated in each module that imports them. If one module accidentally uses a different curve or hash function, could mixed commitments enable a malicious guardian to correlate on-chain commitments with off-chain email data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f3349d63-242f-4fec-857f-bd605d83d443",
+    "timestamp": "2025-11-21 17:14:08.962277",
+    "report_generated": false
+  },
+  {
+    "question": "Generator Replacement Attack: If an attacker can inject custom generators through a malformed API call or contract interaction, could they create \"fake\" commitments that verify under SoK proofs but don't correspond to valid email certificates, enabling unauthorized account recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d8ef3c05-0e74-4e8c-883e-253c5a6be8ef",
+    "timestamp": "2025-11-21 17:14:26.202542",
+    "report_generated": false
+  },
+  {
+    "question": "Generator Parameter Validation: The hash_to_g1 function takes a Tagged input. If the tag doesn't properly domain-separate generator creation from other hash-to-curve uses (like VDRF), could tag collisions create unexpected relationships between commitments and VDRF outputs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3309ceac-fa5b-43d8-a46d-bd9c9c3977c5",
+    "timestamp": "2025-11-21 17:14:47.150030",
+    "report_generated": false
+  },
+  {
+    "question": "Generator Pre-computation Attack: Could an attacker pre-compute large tables of generator multiples to accelerate discrete log attacks on commitment openings, particularly for low-entropy values like predictable email addresses, violating privacy guarantees?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bd22d153-e5d0-4fd0-83a6-a9269e2d4fd8",
+    "timestamp": "2025-11-21 17:15:09.097439",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Protocol Generator Reuse: If the same BLS12-381 curve and hash-to-curve parameters are used in other protocols, could commitments from Swafe be malleated or replayed in external systems, indirectly leaking information about email-account associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_450674bc-cf54-4f2b-b152-ed0350515864",
+    "timestamp": "2025-11-21 17:15:32.851361",
+    "report_generated": false
+  },
+  {
+    "question": "Value Validation: PedersenOpen contains value and randomness fields with no validation commitments.rs:78-83 . Could zero values for both fields create trivial commitments that break binding, allowing attackers to claim ownership of any account?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7aad8825-7513-4bac-8967-af480b419dd3",
+    "timestamp": "2025-11-21 17:15:56.580341",
+    "report_generated": false
+  },
+  {
+    "question": "Randomness Source Quality: PedersenOpen::gen uses generic Rng + CryptoRng commitments.rs:86-91 . If a caller provides a weak RNG, could predictable randomness enable commitment pre-image attacks, exposing master secret keys during backup reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d1229836-929f-46dd-a23c-94b621144b60",
+    "timestamp": "2025-11-21 17:16:22.378562",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Collision Resistance: The commit function produces a single G1 point. Given the ~2^128 collision resistance of BLS12-381, could birthday attacks on commitments enable an attacker to find two different openings for the same commitment, breaking the binding between encrypted backups and account owners?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_76814722-1dbe-4cde-a870-2dc61cf1f1fa",
+    "timestamp": "2025-11-21 17:16:48.690463",
+    "report_generated": false
+  },
+  {
+    "question": "Zero Commitment Handling: PedersenCommitment::zero() creates an identity commitment commitments.rs:17-20 . If this is accidentally used in association records, does it reveal that no email is associated, violating the privacy invariant that email-account links remain hidden on-chain?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b1fee245-43d2-4851-b2d4-caf16eafc980",
+    "timestamp": "2025-11-21 17:17:16.632479",
+    "report_generated": false
+  },
+  {
+    "question": "Opening Validation in Commit: The commit function doesn't check if the opening is the zero opening commitments.rs:63-67 . Could a malicious off-chain node submit zero commitments that appear valid but don't actually bind to any email, allowing account takeover without proper email verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c3d268c5-f717-466f-a184-532250a36c7d",
+    "timestamp": "2025-11-21 17:17:45.312974",
+    "report_generated": false
+  },
+  {
+    "question": "Field Element Range: The value field is a pp::Fr element. Are there edge cases near the field modulus where arithmetic operations could wrap, producing unexpected commitments that don't correspond to the intended values, breaking backup integrity?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_04a7c9e2-bc13-4568-afdd-9331ab8e2a07",
+    "timestamp": "2025-11-21 17:18:15.787366",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Uniqueness: For a given value, multiple randomness choices produce different commitments. Could a malicious guardian create multiple commitments to the same email and correlate them across different accounts, de-anonymizing users despite the off-chain node privacy guarantees?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_772118d0-978e-442e-ace5-af2356416af1",
+    "timestamp": "2025-11-21 17:18:47.097252",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Canonical Encoding: Pedersen commitments serialize as G1 affine points. If non-canonical encodings are accepted during deserialization, could an attacker create multiple representations of the same commitment, bypassing uniqueness checks for the invariant \"email associates with at most one account\"?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f5cc59ed-5dbe-4d39-a979-d23657585dbc",
+    "timestamp": "2025-11-21 17:19:18.951675",
+    "report_generated": false
+  },
+  {
+    "question": "Homomorphic Property Exploitation: Commitments support addition commitments.rs:30-36 . Could an attacker exploit this to derive valid commitments without knowing openings, creating fake association records that bypass email certificate verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9f1c3879-694b-4f94-9634-e621b0d1e7f3",
+    "timestamp": "2025-11-21 17:19:51.437019",
+    "report_generated": false
+  },
+  {
+    "question": "Scalar Multiplication by Zero: Multiplying a commitment by Fr::ZERO commitments.rs:22-28 produces zero commitment. Could this be used in SoK proof manipulation to \"cancel out\" commitments, making proofs verify for unintended commitment sets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_872d0b07-8bb8-47dc-a960-71badd1b98e8",
+    "timestamp": "2025-11-21 17:20:23.441631",
+    "report_generated": false
+  },
+  {
+    "question": "Value Extraction: PedersenOpen::value() exposes the raw value commitments.rs:105-107 . If this is logged or leaked through error messages, does it reveal master secret key components or email-derived values that should remain confidential?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_73729dcc-b797-4e14-969c-d5c8d11dcc07",
+    "timestamp": "2025-11-21 17:20:58.785434",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Malleability: Given commitment C = [v]H + [r]G, an attacker knowing discrete log α between H and G could create C' = [v']H + [r']G opening to different values. Does the protocol verify commitment integrity in ways that would detect such malleability attacks during account recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3dd3d4d3-f465-47ea-9622-506c9a9ab5aa",
+    "timestamp": "2025-11-21 17:21:31.881904",
+    "report_generated": false
+  },
+  {
+    "question": "Infinity Point Handling: What happens if commitment arithmetic produces the point at infinity? Could this degenerate case be exploited during SoK verification to make proofs pass for invalid commitments, violating guardian approval requirements?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9a9c0cc5-568e-45cf-b871-77e26b5f3649",
+    "timestamp": "2025-11-21 17:22:07.231574",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Aggregation: Multiple commitments can be combined via addition. If an attacker aggregates commitments from different users, could the aggregate be submitted as a \"valid\" commitment for a new account, bypassing Swafe-io's email certificate requirement?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fc883ea1-19c3-4d20-a2e5-d04c17ce4219",
+    "timestamp": "2025-11-21 17:22:43.237802",
+    "report_generated": false
+  },
+  {
+    "question": "Endomorphism Acceleration: BLS12-381 curves have efficiently computable endomorphisms. Could an attacker use endomorphism-based attacks to compute commitment openings faster than expected, threatening the security of master secret key encryption within the threshold window?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2839aa1d-f533-489e-9c5c-3fac7fb810b2",
+    "timestamp": "2025-11-21 17:23:20.760412",
+    "report_generated": false
   }
 ]
