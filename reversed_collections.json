@@ -3598,5 +3598,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a7be5ed7-310b-4f6d-86e7-a68250a739a9",
     "timestamp": "2025-11-21 17:24:06.284066",
     "report_generated": false
+  },
+  {
+    "question": "Base64 Decoding Error Timing: Could timing differences leak structure information?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_09afd177-bb8d-4f26-8521-8a39c0ec3171",
+    "timestamp": "2025-11-21 17:25:24.232765",
+    "report_generated": false
+  },
+  {
+    "question": "Detailed Error in str_to_bytes(): Could error messages leak sensitive data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a88a90ba-d179-4bc9-baab-6d6c3a65ad30",
+    "timestamp": "2025-11-21 17:25:37.397092",
+    "report_generated": false
+  },
+  {
+    "question": "Empty String Edge Case: Can empty strings bypass validation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_62779a86-2c7d-4162-ab85-16b14919470e",
+    "timestamp": "2025-11-21 17:25:51.511684",
+    "report_generated": false
+  },
+  {
+    "question": "Base64 Variant Mixing: Could multiple variants cause confusion attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_daf86673-e549-4219-a026-a8b8b3357ba6",
+    "timestamp": "2025-11-21 17:26:05.443023",
+    "report_generated": false
+  },
+  {
+    "question": "URL-Safe vs Standard Base64 Confusion: Could + and / bypass validation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4aa657be-ff7b-4b55-b87b-cb787b261b18",
+    "timestamp": "2025-11-21 17:26:19.962245",
+    "report_generated": false
+  },
+  {
+    "question": "Length Calculation Mismatch: Could mismatched expected lengths cause overreads?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7355bb25-1c3d-4cef-9104-181decd545eb",
+    "timestamp": "2025-11-21 17:26:36.228346",
+    "report_generated": false
+  },
+  {
+    "question": "Base64 Size Explosion: Could base64 size increase cause buffer overflows?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a3c6825a-5343-43a4-a0bf-1d1d6c58be35",
+    "timestamp": "2025-11-21 17:26:53.487404",
+    "report_generated": false
+  },
+  {
+    "question": "NULL Byte Injection: Could null bytes cause early truncation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c9854cdc-29a8-45e2-b6fc-0ea781677220",
+    "timestamp": "2025-11-21 17:27:12.845193",
+    "report_generated": false
+  },
+  {
+    "question": "Whitespace Handling: Are whitespace characters ignored, enabling normalization bypass?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_49bd34a6-f2b5-4673-8b07-c76e120f5567",
+    "timestamp": "2025-11-21 17:27:33.430184",
+    "report_generated": false
+  },
+  {
+    "question": "Case Sensitivity Exploitation: Could case differences alter decoding?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_66a89606-11df-4d42-8009-4db3f62ee7a9",
+    "timestamp": "2025-11-21 17:27:54.595708",
+    "report_generated": false
+  },
+  {
+    "question": "Invalid Character Injection: Could invalid characters cause timing leaks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8ac662cd-8d36-4e3d-8c12-a78fd593553d",
+    "timestamp": "2025-11-21 17:28:17.964231",
+    "report_generated": false
+  },
+  {
+    "question": "Base64 Padding Manipulation: Could adding '=' padding bypass validation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7cf323f0-c3fa-4c99-a578-a4f1aafd3679",
+    "timestamp": "2025-11-21 17:28:42.407581",
+    "report_generated": false
+  },
+  {
+    "question": "Trailing Bytes Ignored: Could trailing malicious data be ignored, enabling data smuggling?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4eea6c83-7929-4520-a797-d4bb35d76e0b",
+    "timestamp": "2025-11-21 17:29:07.088133",
+    "report_generated": false
+  },
+  {
+    "question": "Size Limit Bypass: Does deserialize() enforce size limits, or can arbitrary payloads be deserialized?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d265fc82-42d4-45d0-bc70-14eb66c8e28f",
+    "timestamp": "2025-11-21 17:29:34.269623",
+    "report_generated": false
+  },
+  {
+    "question": "Variable-Length vs Fixed-Length Configuration: Could config mismatches enable length manipulation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2512ce80-ae7c-449d-b53d-05f242cf014c",
+    "timestamp": "2025-11-21 17:30:02.173568",
+    "report_generated": false
+  },
+  {
+    "question": "Endianness Exploitation: Could cross-platform endianness mismatches break validation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a5d9fc94-a152-4378-8bee-46355e1da44e",
+    "timestamp": "2025-11-21 17:30:29.566640",
+    "report_generated": false
+  },
+  {
+    "question": "BINCODE_CONFIG Modification Risk: Could malicious dependencies modify bincode config?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_43d5f955-e70a-4061-b2c8-98c4d4c83c9f",
+    "timestamp": "2025-11-21 17:30:58.855701",
+    "report_generated": false
+  },
+  {
+    "question": "Tuple vs Struct Encoding Ambiguity: Could ambiguous encodings enable type confusion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ac0adb81-37ed-4cbf-805e-2f037992bc9f",
+    "timestamp": "2025-11-21 17:31:28.226950",
+    "report_generated": false
+  },
+  {
+    "question": "Boolean Non-Canonical Representation: Could bool values encoded as other bytes break logic?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_963735f7-5681-48a2-a6f5-16e548b3c02c",
+    "timestamp": "2025-11-21 17:31:59.568654",
+    "report_generated": false
+  },
+  {
+    "question": "Enum Discriminant Non-Uniqueness: Could variant substitution occur via non-unique discriminants?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ac55cc1c-56fc-4bd6-8514-9482ff37fb90",
+    "timestamp": "2025-11-21 17:32:31.637341",
+    "report_generated": false
+  },
+  {
+    "question": "Padding Byte Exploitation: Could padding bytes hide malicious data bypassing integrity checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_20ee6e5a-8958-49c7-ad4a-abb210a88d8c",
+    "timestamp": "2025-11-21 17:33:03.578655",
+    "report_generated": false
+  },
+  {
+    "question": "Non-Canonical Integer Encoding: Could variable-length integer malleability enable signature forgery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4d2a08da-72ff-42ae-8fc1-07e572217249",
+    "timestamp": "2025-11-21 17:33:36.661961",
+    "report_generated": false
+  },
+  {
+    "question": "Allocation Amplification: Could deserialization amplify memory usage disproportionately?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7aa4c1da-34d3-4fb2-9f3d-f724d40cd245",
+    "timestamp": "2025-11-21 17:34:07.606140",
+    "report_generated": false
+  },
+  {
+    "question": "Cumulative Allocation Attack: Could multiple nested allocations crash nodes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b9974a02-307c-4ff9-afd3-439340db8e6c",
+    "timestamp": "2025-11-21 17:34:36.440632",
+    "report_generated": false
+  },
+  {
+    "question": "HashMap/BTreeMap Size Attacks: Could huge map lengths exhaust memory when deserializing guardian approval metadata?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9aef0c60-29e8-40b9-b76d-141465624588",
+    "timestamp": "2025-11-21 17:35:06.655644",
+    "report_generated": false
   }
 ]
