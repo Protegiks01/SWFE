@@ -5848,5 +5848,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cf8a0a4b-2263-48e6-9f38-710757256b9e",
     "timestamp": "2025-11-21 20:12:39.188488",
     "report_generated": false
+  },
+  {
+    "question": "XOR Buffer Alignment: The decryption loop XORs pt[i] ^= ct.ct[i] byte-by-byte. If the vectors have mismatched lengths due to deserialization corruption, could this cause panics or incorrect decryption? symmetric.rs:134-136",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2a417a6d-5324-44c1-afc9-3242866e3aaa",
+    "timestamp": "2025-11-21 20:13:53.930351",
+    "report_generated": false
+  },
+  {
+    "question": "Bincode Version Compatibility: If a future version of bincode changes encoding format, could old ciphertexts stored on-chain become unreadable, permanently locking backup shares? symmetric.rs:78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_eeeadb02-81cc-4549-9d54-c3109d8e66d1",
+    "timestamp": "2025-11-21 20:14:06.836700",
+    "report_generated": false
+  },
+  {
+    "question": "Debug Trait Exposure: The AEADCiphertext derives Debug. If this struct is accidentally logged during contract execution, does the debug output expose sensitive ciphertext bytes or MACs that could aid cryptanalysis? symmetric.rs:21-26",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_913f9c0c-8bb5-4531-846c-a53e8d6a78fc",
+    "timestamp": "2025-11-21 20:14:20.535249",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Derivation for Ciphertext: The struct derives Hash, allowing ciphertexts to be used in hash-based collections. Could an attacker cause hash collisions by crafting ciphertexts with different content but identical hashes, disrupting storage logic? symmetric.rs:21-26",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f80e05ff-72d6-4baf-94b2-25e4eaeb194c",
+    "timestamp": "2025-11-21 20:14:35.108900",
+    "report_generated": false
+  },
+  {
+    "question": "Ciphertext Equality Comparison: The AEADCiphertext struct derives PartialEq and Eq. If two ciphertexts are compared for equality during account recovery, could timing differences in vector comparison leak information about plaintext differences? symmetric.rs:21-26",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d8a0039c-9d71-4987-80c7-b66821134e09",
+    "timestamp": "2025-11-21 20:14:50.338056",
+    "report_generated": false
+  },
+  {
+    "question": "Partial Deserialization State: If bincode::serde::decode_from_slice in open partially succeeds (deserializes some fields but fails on others), could partial state leak sensitive information or cause incorrect error handling? symmetric.rs:139-145",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_954707e3-720f-438d-8d70-dadb625ccf9e",
+    "timestamp": "2025-11-21 20:15:08.433871",
+    "report_generated": false
+  },
+  {
+    "question": "Separator Serialization Format: The separator field in MACTuple and NonceTuple is (&'static str, &'static str). How does bincode serialize this tuple, and could an attacker exploit bincode's string encoding to create separator collisions? symmetric.rs:40",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e25ee3d0-37a2-40e3-bbe6-a6918faccf62",
+    "timestamp": "2025-11-21 20:15:26.375138",
+    "report_generated": false
+  },
+  {
+    "question": "Ciphertext Clone Safety: The AEADCiphertext struct derives Clone. If a ciphertext is cloned and one copy is decrypted successfully, does the MAC verification prevent the cloned copy from being modified and reused maliciously? symmetric.rs:21-26",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d5ea872a-e0fd-4fb4-8930-99b6753185ef",
+    "timestamp": "2025-11-21 20:15:45.529815",
+    "report_generated": false
+  },
+  {
+    "question": "Associated Data Serialization Consistency: The associated data ad is serialized inside MACTuple and NonceTuple. If ad has non-deterministic serialization, could the same logical AD produce different MACs, breaking verification? symmetric.rs:39-44",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_eb2d19ba-c85a-47e6-82bf-62074e07b0b4",
+    "timestamp": "2025-11-21 20:16:06.548918",
+    "report_generated": false
+  },
+  {
+    "question": "Plaintext Size Explosion: The seal function serializes the plaintext to Vec<u8>. Could an attacker provide a plaintext type that serializes to an enormous size (e.g., via custom Serialize impl), causing memory exhaustion when encrypting backup data? symmetric.rs:77-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c222c4ea-b888-43f7-917b-db1c6ba6127f",
+    "timestamp": "2025-11-21 20:16:28.752307",
+    "report_generated": false
+  },
+  {
+    "question": "MAC Array Deserialization: The mac field is type [u8; SIZE_MAC]. If deserialization incorrectly handles fixed-size arrays, could a malformed ciphertext have a truncated MAC that still passes deserialization? symmetric.rs:24",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0d7b3384-886d-48c1-9a76-fc25890ba471",
+    "timestamp": "2025-11-21 20:16:52.473298",
+    "report_generated": false
+  },
+  {
+    "question": "Nonce Deserialization Trust: The nonce field in AEADCiphertext is used directly in MAC computation and XOR pad derivation without validation. Could an attacker craft a ciphertext with an invalid nonce (e.g., all zeros) that causes weak key derivation? symmetric.rs:22-26",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a8a4c6f8-2e14-44d3-9572-4290b88656e9",
+    "timestamp": "2025-11-21 20:17:15.385571",
+    "report_generated": false
+  },
+  {
+    "question": "Zero-Length Ciphertext Handling: If ct.ct is an empty vector, the decryption loop never executes. Does open correctly handle zero-length plaintexts, or could this lead to unexpected behavior in calling code expecting non-empty data? symmetric.rs:131-136",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_74b59e97-926b-4541-a577-484ebc98ffe1",
+    "timestamp": "2025-11-21 20:17:40.229841",
+    "report_generated": false
+  },
+  {
+    "question": "Recursive Deserialization Attack: If the plaintext type M contains nested structures, could deeply nested deserialization in open cause stack overflow or excessive memory allocation, disrupting contract execution? symmetric.rs:139-145",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dc9a1949-c191-49b9-9adb-badc8dbce617",
+    "timestamp": "2025-11-21 20:18:06.951602",
+    "report_generated": false
+  },
+  {
+    "question": "Malformed Ciphertext Struct: The AEADCiphertext struct is derived with Deserialize. Could an attacker craft a serialized AEADCiphertext where ct.len() doesn't match the actual vector length, causing out-of-bounds access during decryption? symmetric.rs:21-26",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bf43002a-c1b0-462d-984e-27a59fb162db",
+    "timestamp": "2025-11-21 20:18:34.397295",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Error Information Leakage: When deserialization fails in open, the function returns SwafeError::DecryptionFailed without details. However, could timing differences between MAC failure and deserialization failure leak information about plaintext structure to an attacker? symmetric.rs:147",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bff5d4c5-fa2e-4fbc-b550-e5de567f26f4",
+    "timestamp": "2025-11-21 20:19:04.128397",
+    "report_generated": false
+  },
+  {
+    "question": "Bincode Configuration Mismatch: Both seal and open use bincode::config::standard(). If the configuration changes between versions or is used inconsistently across modules, could ciphertexts become unreadable, permanently locking guardian shares? symmetric.rs:78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8eeb6309-8a58-43ea-a839-4d76734b2a5d",
+    "timestamp": "2025-11-21 20:19:32.576940",
+    "report_generated": false
+  },
+  {
+    "question": "Type Confusion in Deserialization: The open function deserializes to generic type M: Tagged + DeserializeOwned. Could an attacker provide a ciphertext that deserializes correctly to type M but was encrypted for a different type with the same binary representation, bypassing domain separation? symmetric.rs:139-145",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6521d2d2-0e35-49fa-a2fa-d45b0cfb9a40",
+    "timestamp": "2025-11-21 20:20:02.723121",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Length Mismatch: In open, after decrypting to pt, the function checks if n != pt.len() where n is bytes consumed during deserialization. Could an attacker craft a ciphertext where valid deserialization consumes fewer bytes, leaving trailing data that could be exploited in subsequent operations? symmetric.rs:139-145",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c435e953-304c-4742-b615-5f2f93f460ae",
+    "timestamp": "2025-11-21 20:20:32.395588",
+    "report_generated": false
+  },
+  {
+    "question": "Key Derivation Root Key Protection: The key parameter is used directly in KDF calls. If this key is derived from a master secret using the same KDF, could related-key attacks be possible? symmetric.rs:73",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ac216988-d0eb-4aae-a1b8-3a127d12225b",
+    "timestamp": "2025-11-21 20:21:05.013706",
+    "report_generated": false
+  },
+  {
+    "question": "Synthetic Nonce Truncation: The kdfn function returns exactly SIZE_NONCE bytes. If the KDF output is truncated or padded incorrectly, could this reduce nonce entropy and increase collision probability? symmetric.rs:81-89",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_eabee0e8-edc6-45ba-9d4f-4293fdd48c69",
+    "timestamp": "2025-11-21 20:21:36.681962",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Protocol Nonce Reuse: If the same key is used for both symmetric encryption (this module) and other schemes (e.g., PKE in pke/v0.rs), could nonce/randomness reuse across different protocols break security? symmetric.rs:81-89",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4fac7dee-24ff-4118-b498-a73da5ca7cc9",
+    "timestamp": "2025-11-21 20:22:08.238831",
+    "report_generated": false
+  },
+  {
+    "question": "Panic on Serialization Failure: The seal function calls .unwrap() on bincode serialization. If serialization fails due to malformed plaintext types, could this cause a panic in the contract execution, leading to stuck transactions? symmetric.rs:78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_333c6fbd-c201-4db3-9499-650a041c423b",
+    "timestamp": "2025-11-21 20:22:38.169820",
+    "report_generated": false
+  },
+  {
+    "question": "Associated Data Mutability: The ad parameter in seal and open is borrowed immutably. If the caller modifies the associated data after sealing but before storing the ciphertext on-chain, could this lead to decryption failures during recovery that permanently lock accounts? symmetric.rs:75-76",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8305169a-f3b8-4cf5-90d0-e2d04527ba67",
+    "timestamp": "2025-11-21 20:23:07.410904",
+    "report_generated": false
+  },
+  {
+    "question": "KDF Context Mixing: The kdfn function uses KMAC256 with the Tagged separator as customization string. If two different contexts (e.g., XOR pad vs. MAC) use the same input key material, could output collisions occur? symmetric.rs:93",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_281f87fd-046a-47dc-8b5f-c70d87af09e9",
+    "timestamp": "2025-11-21 20:23:39.497089",
+    "report_generated": false
   }
 ]
