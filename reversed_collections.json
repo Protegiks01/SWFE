@@ -4948,5 +4948,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b2e8c537-fe62-4e0a-9664-6bec6851d734",
     "timestamp": "2025-11-21 19:03:56.609969",
     "report_generated": false
+  },
+  {
+    "question": "Signature Verification Order: If shares are verified after decryption rather than before, could decryption failures leak information about share validity to attackers?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e98a43b4-2531-4281-b79e-d2a1924a72f9",
+    "timestamp": "2025-11-21 19:05:03.907582",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Share Signature: What happens if a guardian share is submitted without a signature? Could unsigned shares bypass security checks if validation is incomplete?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8737b0e2-d1cc-4113-94b7-f0958167e845",
+    "timestamp": "2025-11-21 19:05:17.251208",
+    "report_generated": false
+  },
+  {
+    "question": "Replay Across Backups: If guardian share signatures don't bind to specific backup sessions or timestamps, could attackers replay old signed shares in new reconstruction attempts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_12e29321-804d-43d0-b1c0-47af532d81fe",
+    "timestamp": "2025-11-21 19:05:30.397603",
+    "report_generated": false
+  },
+  {
+    "question": "Share Origin Authentication: Does the signature on guardian shares prove which guardian created the share, or only that someone with the signing key approved it? Could guardians repudiate shares they actually created?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_406b9b08-7287-48c9-9f9a-e27265910ca7",
+    "timestamp": "2025-11-21 19:05:44.090820",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Bypass via Forgery: If an attacker can forge signatures for t-1 guardian shares, they could bypass the threshold requirement and reconstruct backups without sufficient guardian approval.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1d47b112-c83e-45ab-aace-9c23508c9964",
+    "timestamp": "2025-11-21 19:05:58.526205",
+    "report_generated": false
+  },
+  {
+    "question": "Share Commitment Binding: The VerificationKey is stored in ShareComm.vk within backup ciphertexts. If the key isn't bound to the share's content, could attackers swap keys to redirect reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8e4d9271-ef23-4537-8948-ff7d4ee8c324",
+    "timestamp": "2025-11-21 19:06:15.470804",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Share Signature Validation: Each guardian share has an associated SigningKey. If the signature on the encrypted share isn't validated properly, could attackers inject malicious shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_89375cca-01fc-4fd2-a826-30765165acb2",
+    "timestamp": "2025-11-21 19:06:32.625817",
+    "report_generated": false
+  },
+  {
+    "question": "Email-to-Account Association Attack: If an attacker can forge a signature that verifies against a legitimate VerificationKey, could they claim ownership of another user's email-account association?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b87b02c5-151e-4981-882e-12320a385cf4",
+    "timestamp": "2025-11-21 19:06:51.799064",
+    "report_generated": false
+  },
+  {
+    "question": "Off-Chain Node Signature Verification: Off-chain nodes verify recovery signatures. If a minority of nodes are compromised and skip signature verification, could they collude with attackers to approve invalid recoveries?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d0011b1c-2e7f-4bef-abc0-f737b814d8e1",
+    "timestamp": "2025-11-21 19:07:12.012983",
+    "report_generated": false
+  },
+  {
+    "question": "Key Rotation Gaps: If a user rotates their signing key during account lifecycle, could old signatures remain valid, allowing attackers who stole old keys to initiate recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fb8092b3-ef1c-445e-a233-596eb6b361a5",
+    "timestamp": "2025-11-21 19:07:34.832489",
+    "report_generated": false
+  },
+  {
+    "question": "Revocation Mechanism Absence: Once a VerificationKey is stored on-chain, there's no apparent revocation mechanism. If a SigningKey is compromised, can the user revoke the key to prevent unauthorized recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f46d4159-b47e-441a-aa95-ac1a172437a9",
+    "timestamp": "2025-11-21 19:07:59.871467",
+    "report_generated": false
+  },
+  {
+    "question": "Concurrent Recovery Races: If multiple recovery requests are initiated simultaneously with the same SigningKey, could race conditions in signature verification allow unauthorized parallel recoveries?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9db69077-be6b-474d-9b74-bd7ff4a38a95",
+    "timestamp": "2025-11-21 19:08:24.797170",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Replay in Recovery: If a recovery request signature is accepted multiple times, could an attacker reuse a single valid signature to trigger multiple recoveries or drain accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fb706f95-bede-42fd-93a4-03c96201e8b8",
+    "timestamp": "2025-11-21 19:08:51.507944",
+    "report_generated": false
+  },
+  {
+    "question": "Email Certificate Binding: The VerificationKey is stored in AssociationsV0.sig. If the key isn't cryptographically bound to the email certificate from Swafe-io, could attackers associate arbitrary keys with stolen emails?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c0ada322-8660-4797-b5ad-a82f5171b71a",
+    "timestamp": "2025-11-21 19:09:19.298203",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Approval Bypass: Recovery requires guardian approval. If the signature verification in verify() v0.rs:34-50 has vulnerabilities, could attackers bypass guardian checks by forging signatures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_600ddd17-323a-4e4e-86d3-494122564e0a",
+    "timestamp": "2025-11-21 19:09:47.373257",
+    "report_generated": false
+  },
+  {
+    "question": "RIK Decryption Attacks: The SigningKey is encrypted with the Recovery Initiation Key (RIK). If RIK decryption is compromised (e.g., weak password-based KDF), could attackers extract the signing key and authorize fake recoveries?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8c25cc4e-bf4c-4fa7-9705-67fe2bfaa63c",
+    "timestamp": "2025-11-21 19:10:16.906966",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery Request Signature Binding: According to the search results, SigningKey is used to sign RecoveryRequestMessage. If the signature doesn't bind to the specific account contract address, could attackers replay recovery requests across accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5dd18abd-9ab9-472b-bdb9-dfbef46072ce",
+    "timestamp": "2025-11-21 19:10:48.176985",
+    "report_generated": false
+  },
+  {
+    "question": "Hardware RNG Failure: If the system relies on hardware RNGs (e.g., RDRAND) and they fail or are backdoored, could weak nonces compromise all signatures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bcd2febe-2832-49bf-b40b-cf9ba4e5ef15",
+    "timestamp": "2025-11-21 19:11:20.312713",
+    "report_generated": false
+  },
+  {
+    "question": "Fork Safety: If the process forks after initializing the RNG, could parent and child processes share the same RNG state, causing nonce reuse?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_51e70d75-43e3-4f3c-a7e9-6f028a6e00b7",
+    "timestamp": "2025-11-21 19:11:51.264999",
+    "report_generated": false
+  },
+  {
+    "question": "RNG State Leak: If the RNG state is leaked via side-channels (e.g., memory dumps), could attackers predict future nonces and forge signatures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1bd9e45c-aa8a-45fe-aebd-d1bbcbdd4d02",
+    "timestamp": "2025-11-21 19:12:22.809419",
+    "report_generated": false
+  },
+  {
+    "question": "CryptoRng Marker Abuse: The CryptoRng trait is a marker with no methods. Could an attacker implement it for a weak RNG to bypass quality checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fae1f079-df66-47af-9b65-373c34572e34",
+    "timestamp": "2025-11-21 19:12:54.507480",
+    "report_generated": false
+  },
+  {
+    "question": "RNG Type Bounds: The gen() and sign() functions require R: Rng + CryptoRng v0.rs:83 v0.rs:93 . Could callers provide a compliant but weak RNG (e.g., a PRNG with known state)?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_43a6401e-3802-4781-ad92-33d2771a9d41",
+    "timestamp": "2025-11-21 19:13:28.493084",
+    "report_generated": false
+  },
+  {
+    "question": "Truncation Weakness: If the hash is truncated (e.g., only lower bytes used), could truncation introduce patterns exploitable by attackers?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ac1c6812-8c15-45e0-9236-7cb0c9cc25ff",
+    "timestamp": "2025-11-21 19:14:00.361507",
+    "report_generated": false
+  },
+  {
+    "question": "Hash-to-Scalar Non-Uniformity: If hash_to_fr doesn't map uniformly to the scalar field, could certain challenges be more likely, reducing security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_65f9a91c-471e-4cf0-85e9-c7b666fb853c",
+    "timestamp": "2025-11-21 19:14:33.228801",
+    "report_generated": false
+  },
+  {
+    "question": "Challenge Precomputation: If r and pk are known before signing, could an attacker precompute challenges and search for favorable messages that produce weak challenges?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_299e22e6-7d10-47bf-a864-c4066e606456",
+    "timestamp": "2025-11-21 19:15:05.852392",
+    "report_generated": false
   }
 ]
