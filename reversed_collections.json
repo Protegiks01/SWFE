@@ -5548,5 +5548,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1cf51ffd-a5a0-4bcc-af59-39990832cb6b",
     "timestamp": "2025-11-21 19:50:07.215903",
     "report_generated": false
+  },
+  {
+    "question": "Length Check Error Path: The check if n != pt.len() returns DecryptionFailed. Could an attacker craft ciphertexts where this check fails but MAC verification passes, leaking information about the deserialization process? symmetric.rs:141-142",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_782b9886-bd38-4dcf-b3cb-2f1cbb2e8eea",
+    "timestamp": "2025-11-21 19:51:17.400619",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Failure Details: When bincode::serde::decode_from_slice fails, the error is converted to SwafeError::DecryptionFailed without preserving the underlying cause. Could this hide important debugging information or enable silent failures? symmetric.rs:147",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d05336d6-f511-4f3b-85f6-940e6382842e",
+    "timestamp": "2025-11-21 19:51:30.483200",
+    "report_generated": false
+  },
+  {
+    "question": "MAC Verification Timing: The constant-time MAC comparison uses subtle::ConstantTimeEq. However, the check if mac_corr.ct_eq(&ct.mac).unwrap_u8() != 1 might not be constant-time for the branch. Could this leak information? symmetric.rs:127-129",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_28a2f084-5a36-4661-8727-a31b1b8d9456",
+    "timestamp": "2025-11-21 19:51:44.797971",
+    "report_generated": false
+  },
+  {
+    "question": "Uniform Error Return: The open function returns SwafeError::DecryptionFailed for both MAC verification failures and deserialization errors. Could an attacker distinguish these cases via timing side channels? symmetric.rs:127-148",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e2d43e95-4b8c-4ecf-a0de-071174e72c2d",
+    "timestamp": "2025-11-21 19:51:58.978207",
+    "report_generated": false
+  },
+  {
+    "question": "Anonymous Recovery: The system aims to preserve anonymity during recovery. Does encrypting recovery data with this symmetric scheme prevent linking on-chain ciphertexts to specific email addresses? symmetric.rs:71-109",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c6f54d2d-884f-45c3-a65b-707ccac01d98",
+    "timestamp": "2025-11-21 19:52:14.517742",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Expiry Impact: Email certificates have expiry times. If a certificate expires after sealing but before opening recovery data, could the decryption fail due to expired certificates in associated data? symmetric.rs:75-76",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f841fc7a-5094-4c9b-8bfa-e1cc3af711e6",
+    "timestamp": "2025-11-21 19:52:30.622129",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Version Migration: If the symmetric encryption scheme is upgraded (e.g., to v1), can old v0 ciphertexts be decrypted, or would this permanently lock old backups? symmetric.rs:54-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_15e9c79e-cd12-4f08-bb1d-1829bcc09ecf",
+    "timestamp": "2025-11-21 19:52:48.706304",
+    "report_generated": false
+  },
+  {
+    "question": "Concurrent Recovery Attempts: If multiple recovery attempts occur concurrently for the same account, could race conditions in decrypting and verifying shares lead to incorrect state or leaked information? symmetric.rs:112-149",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_951972fe-5598-4a56-b328-bf34f06de648",
+    "timestamp": "2025-11-21 19:53:08.547539",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Revocation: If a guardian is revoked, their encrypted share should become unusable. Does the symmetric scheme allow selective share revocation without re-encrypting all shares? symmetric.rs:71-109",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dba1f315-680b-4e43-8c2f-fb7118d39256",
+    "timestamp": "2025-11-21 19:53:29.368992",
+    "report_generated": false
+  },
+  {
+    "question": "Account Deletion: When an account is deleted, are all encrypted shares and recovery data properly removed? Could orphaned ciphertexts remain on-chain, leaking information about deleted accounts? symmetric.rs:71-109",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_da0984be-e636-416f-be7e-f90b6dae0f8b",
+    "timestamp": "2025-11-21 19:53:51.644811",
+    "report_generated": false
+  },
+  {
+    "question": "Key Rotation: If an account owner wants to rotate encryption keys for backup shares, does the symmetric scheme support atomic key rotation, or could partial rotation leave some shares undecryptable? symmetric.rs:71-109",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9904d521-d98c-4c9b-98dd-bcfb348b2d47",
+    "timestamp": "2025-11-21 19:54:14.699255",
+    "report_generated": false
+  },
+  {
+    "question": "Encrypted Share Distribution: Shares are uploaded to off-chain nodes via HTTP endpoints. If an attacker intercepts encrypted shares in transit, could the symmetric scheme's properties prevent offline brute-force attacks? symmetric.rs:71-109",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_666ea9ed-61de-463f-a791-0bdbcd7743c2",
+    "timestamp": "2025-11-21 19:54:39.392362",
+    "report_generated": false
+  },
+  {
+    "question": "Share Reconstruction Ordering: When reconstructing a secret from encrypted shares, does the decryption order matter? Could an attacker force a specific decryption order to leak information via timing or error messages? symmetric.rs:112-149",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4ca4564b-38f1-4360-ab6b-38adee595c3d",
+    "timestamp": "2025-11-21 19:55:04.566188",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Approval Encryption: Guardian approvals are part of the recovery process. If approval signatures are encrypted, does the associated data bind the approval to the specific recovery request and account? symmetric.rs:75-76",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d4a00171-302b-41c0-8641-ea7cc77196a8",
+    "timestamp": "2025-11-21 19:55:31.291663",
+    "report_generated": false
+  },
+  {
+    "question": "Multi-Email Recovery: Accounts can have multiple associated emails. If each email's recovery data is encrypted separately, could an attacker mix and match ciphertexts from different emails to forge a recovery request? symmetric.rs:71-109",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2828ecc1-6906-47d2-802f-9fe79de827e4",
+    "timestamp": "2025-11-21 19:55:58.766886",
+    "report_generated": false
+  },
+  {
+    "question": "Dirty Account State: Account state can be 'dirty' (pending changes). If dirty state is encrypted but the encryption key is updated before committing, could decryption fail permanently, locking the account? symmetric.rs:112-149",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_51321d5b-8ed0-4e3c-afc5-27843ab0e9ae",
+    "timestamp": "2025-11-21 19:56:27.462871",
+    "report_generated": false
+  },
+  {
+    "question": "PKE Integration: The pke/v0.rs module uses symmetric encryption internally. If the PKE scheme derives a shared secret that is then used as a symmetric key, could weak key derivation enable chosen-ciphertext attacks? symmetric.rs:71-109",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_600570e5-d8ef-4ad8-bfe2-f3520e2bd319",
+    "timestamp": "2025-11-21 19:56:59.766069",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Share Encryption: The system uses VDRF for email-to-account association. If VDRF shares are encrypted with this symmetric scheme, could an attacker who compromises multiple off-chain nodes correlate encrypted shares to break anonymity? symmetric.rs:71-109",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d4439b8a-d36a-42d1-89f3-4df79c812cfc",
+    "timestamp": "2025-11-21 19:57:31.614260",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Public Key Binding: When encrypting shares destined for specific guardians, does the associated data include the guardian's public key to prevent misdirection of shares to the wrong guardian? symmetric.rs:75-76",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9a017c76-5956-4056-8085-d7e30f6cd883",
+    "timestamp": "2025-11-21 19:58:03.512284",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Metadata Encryption: Backup metadata (guardian public keys, threshold) is encrypted. If an attacker tampers with the ciphertext, could MAC verification failure during recovery permanently lock the backup? symmetric.rs:118-129",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9622afa8-387d-4399-98eb-ba724517bac2",
+    "timestamp": "2025-11-21 19:58:35.423571",
+    "report_generated": false
+  },
+  {
+    "question": "Association Privacy: The encrypted RIK (Recovery Identifier Key) is stored on-chain. Does the ciphertext length or structure leak information about the email address length or domain, potentially de-anonymizing users? symmetric.rs:22-26",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6498e6e1-2645-43b0-a259-c03171c1550a",
+    "timestamp": "2025-11-21 19:59:09.089432",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery Nonce Reuse: During account recovery, if the same plaintext (recovery data) is encrypted multiple times with the same key, does the synthetic nonce generation guarantee different ciphertexts, or could repeated recovery attempts leak information? symmetric.rs:81-89",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_80ab6187-9fa6-43bd-ac85-e81642a0b199",
+    "timestamp": "2025-11-21 19:59:41.852180",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Enforcement in Encryption: The symmetric scheme doesn't inherently enforce threshold t of n guardians. If calling code doesn't properly split and distribute shares before encrypting, could the entire secret be recoverable from a single encrypted blob? symmetric.rs:71-109",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_916ce22a-756d-4238-9374-185dfa46fbb0",
+    "timestamp": "2025-11-21 20:00:13.825643",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Account Ciphertext Replay: If two accounts use the same encryption key (e.g., derived from a common password), could an attacker copy a sealed ciphertext from one account and replay it in another account's recovery process? symmetric.rs:71-109",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8e8aada7-5eea-483e-ae33-1fbceb34795d",
+    "timestamp": "2025-11-21 20:00:44.988467",
+    "report_generated": false
+  },
+  {
+    "question": "Off-Chain Node Secret Leakage: Off-chain nodes store encrypted shares from seal. If a minority of nodes are compromised and their full state (including keys used for symmetric encryption) is leaked, can the attacker decrypt shares for accounts they shouldn't access? symmetric.rs:71-109",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1f752076-0ce0-47a6-8fcf-ec023c8dc68a",
+    "timestamp": "2025-11-21 20:01:18.125829",
+    "report_generated": false
   }
 ]
