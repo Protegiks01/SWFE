@@ -8398,5 +8398,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5e3348e8-cdb2-4028-a4a6-0aa5766e4f93",
     "timestamp": "2025-11-21 23:20:34.936956",
     "report_generated": false
+  },
+  {
+    "question": "None of the functions check for the additive or multiplicative identity in their inputs. Could special field elements (zero, one) in unexpected positions create degenerate cases that violate security properties?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_76eb3f3c-8531-401b-b8f9-cee804ab7965",
+    "timestamp": "2025-11-21 23:21:50.541450",
+    "report_generated": false
+  },
+  {
+    "question": "If a caller passes an infinite iterator to eval or vanish, could the function hang indefinitely, causing DoS during critical backup reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1c7cb4e5-e8ec-4196-9b84-bafb8a1c6f1f",
+    "timestamp": "2025-11-21 23:22:03.969049",
+    "report_generated": false
+  },
+  {
+    "question": "The functions accept generic field types via the Field trait. Could using a field with weak cryptographic properties (e.g., small characteristic) allow an attacker to break the threshold security model?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f7b3a2d1-d00b-4ece-9363-ce4338b61a02",
+    "timestamp": "2025-11-21 23:22:18.420240",
+    "report_generated": false
+  },
+  {
+    "question": "None of the functions in poly.rs validate that field elements are in their canonical form. Could non-canonical representations cause equality checks to fail, leading to incorrect polynomial operations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b1ef937b-2faf-458c-a093-40461a7a4f13",
+    "timestamp": "2025-11-21 23:22:34.139174",
+    "report_generated": false
+  },
+  {
+    "question": "The interpolate_eval function only asserts that points is non-empty. poly.rs:25 Could calling with a single point (insufficient for any meaningful threshold) allow trivial reconstruction that bypasses guardian approval requirements?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9f38cea6-9c68-4f5a-966a-507cdc682f20",
+    "timestamp": "2025-11-21 23:22:50.783431",
+    "report_generated": false
+  },
+  {
+    "question": "The interpolate_eval function evaluates the polynomial at x by summing Lagrange basis polynomials. Could the order of summation (due to iterator ordering) affect the result in a way that violates mathematical correctness?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f725c0f0-85fb-4ce2-b5c1-5ff7a28715bc",
+    "timestamp": "2025-11-21 23:23:10.003168",
+    "report_generated": false
+  },
+  {
+    "question": "If interpolate_eval is used in a multi-threaded context where different threads reconstruct different secrets, could shared state in the field arithmetic implementation cause race conditions that corrupt interpolation results?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fb704b70-5ae2-43f6-a1f7-4419d322e6a9",
+    "timestamp": "2025-11-21 23:23:29.738659",
+    "report_generated": false
+  },
+  {
+    "question": "When interpolate_eval collects xs into a vector, if the iterator is corrupted or produces duplicate values, could this lead to incorrect root filtering and division by zero in Lagrange basis computation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1a25fa7a-e7db-4311-afb5-ba90f9170304",
+    "timestamp": "2025-11-21 23:23:51.590626",
+    "report_generated": false
+  },
+  {
+    "question": "The interpolate_eval function does not verify that the points actually lie on a polynomial of the expected degree. Could a malicious guardian inject inconsistent points to cause reconstruction to fail or produce incorrect results?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_490c98d9-bd94-4d54-85fe-2217cff0dd29",
+    "timestamp": "2025-11-21 23:24:14.610332",
+    "report_generated": false
+  },
+  {
+    "question": "If interpolate_eval is called with the maximum possible number of points (equal to the field characteristic), could overflow or wraparound in the Lagrange basis computation cause incorrect results?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c2a55839-5acb-4358-8a9a-298ee310ee48",
+    "timestamp": "2025-11-21 23:24:39.233154",
+    "report_generated": false
+  },
+  {
+    "question": "When interpolate_eval is called with points representing guardian shares in backup reconstruction, if one guardian provides a corrupted share (below threshold), does the function fail gracefully or produce an incorrect result that appears valid?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9fd33382-e6e9-4264-be7a-0147ef30d273",
+    "timestamp": "2025-11-21 23:25:04.713261",
+    "report_generated": false
+  },
+  {
+    "question": "The interpolate_eval function performs Lagrange interpolation, which is mathematically equivalent to solving a Vandermonde system. Could numerical stability issues in the field arithmetic cause the interpolation to fail for certain point configurations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_07b86587-d1c3-4672-b715-cbedc36c8356",
+    "timestamp": "2025-11-21 23:25:31.200650",
+    "report_generated": false
+  },
+  {
+    "question": "If interpolate_eval is used to evaluate a polynomial at multiple points sequentially, could caching or memoization of intermediate results in the calling code introduce bugs that violate interpolation correctness?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4af186dd-2a11-4fa7-a4d0-da81509db0cc",
+    "timestamp": "2025-11-21 23:25:58.691359",
+    "report_generated": false
+  },
+  {
+    "question": "When interpolate_eval filters to create roots, the filter predicate is |&x| x != px. If this comparison is not constant-time, could a timing side-channel leak information about which shares are being used in reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c36f69d9-cf37-4ab9-bffd-6c4c779cf220",
+    "timestamp": "2025-11-21 23:26:26.634592",
+    "report_generated": false
+  },
+  {
+    "question": "If interpolate_eval is called with points where some y-values are the multiplicative identity (F::ONE), could this create special algebraic relationships that a malicious guardian could exploit?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8b904f52-8635-49c8-83ae-f0440b72da05",
+    "timestamp": "2025-11-21 23:26:56.739514",
+    "report_generated": false
+  },
+  {
+    "question": "The interpolate_eval function evaluates at a single point x. If multiple evaluations are needed (e.g., for verification), could repeated calls with different x values leak information about the polynomial coefficients through timing or computational patterns?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9b038951-b8d4-4424-8b89-3ac4f3691650",
+    "timestamp": "2025-11-21 23:27:27.054945",
+    "report_generated": false
+  },
+  {
+    "question": "When interpolate_eval is used in association reconstruction, v0.rs:1-628 if a malicious off-chain node provides manipulated share data, could the interpolation still succeed but reconstruct an incorrect recovery key?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_21bc134c-918f-4692-994c-4c2c1b48afcd",
+    "timestamp": "2025-11-21 23:27:56.211963",
+    "report_generated": false
+  },
+  {
+    "question": "In the fold operation of interpolate_eval, each iteration computes a Lagrange basis and multiplies by py. Could the order of processing points affect the final result due to non-commutativity of operations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f7dbd47b-a943-47b6-b505-b8ed4da7db67",
+    "timestamp": "2025-11-21 23:28:24.773776",
+    "report_generated": false
+  },
+  {
+    "question": "If interpolate_eval is called with points containing the same x-coordinate but different y-coordinates, the mathematical system is inconsistent. Does the function detect this or silently produce an incorrect result?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5d93a049-3d2c-4c3b-8537-e669dfe9c49d",
+    "timestamp": "2025-11-21 23:28:55.866893",
+    "report_generated": false
+  },
+  {
+    "question": "When interpolate_eval constructs the xs vector, if memory allocation fails (in an out-of-memory scenario), could partial vector construction lead to incorrect interpolation that violates the 'only owner can reconstruct' invariant?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1b4e49d4-3055-4ba6-9832-aa2fb0615a68",
+    "timestamp": "2025-11-21 23:29:27.928177",
+    "report_generated": false
+  },
+  {
+    "question": "The interpolate_eval function does not validate that the degree of the interpolating polynomial is exactly points.len() - 1. Could this allow reconstruction with fewer points than the threshold by carefully choosing point coordinates?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_321278a0-6dc3-495a-b929-0cefbd0d10a0",
+    "timestamp": "2025-11-21 23:30:00.734823",
+    "report_generated": false
+  },
+  {
+    "question": "If interpolate_eval is called with points where all x-coordinates are consecutive integers (1, 2, 3, ...), could this regular structure be exploited by a malicious guardian to compute additional shares without authorization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ff74b78b-732d-4d3c-8ef7-b1d3ef6e2805",
+    "timestamp": "2025-11-21 23:30:34.169360",
+    "report_generated": false
+  },
+  {
+    "question": "When interpolate_eval is used to reconstruct a secret at x = F::ZERO, sss.rs:62 could evaluating at this special point leak information about the polynomial structure to observing adversaries?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fe8ef18e-345a-4f2b-85a1-1b144c2ccf50",
+    "timestamp": "2025-11-21 23:31:06.156644",
+    "report_generated": false
+  },
+  {
+    "question": "In interpolate_eval, if the x-coordinates span a very large range in the field, could this cause numerical issues in the vanishing polynomial computation that lead to incorrect interpolation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_394cc879-aa30-44d2-be1b-0256c03bcd80",
+    "timestamp": "2025-11-21 23:31:37.611678",
+    "report_generated": false
+  },
+  {
+    "question": "The interpolate_eval function assumes all points lie on a unique polynomial of degree < n. If more than n points are provided, does the function still produce a result, and if so, is it correct according to polynomial interpolation theory?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_789c5431-c5ef-47b2-8434-48278cc5f464",
+    "timestamp": "2025-11-21 23:32:09.299168",
+    "report_generated": false
   }
 ]
