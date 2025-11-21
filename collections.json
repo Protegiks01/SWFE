@@ -5398,5 +5398,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2fd40838-c38e-4457-a615-da1ce0c153b9",
     "timestamp": "2025-11-21 19:59:51.199126",
     "report_generated": false
+  },
+  {
+    "question": "Does the lack of binding between ShareComm.hash and the specific backup allow share substitution attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0054930e-f719-446c-a3c1-dd7b037c22e6",
+    "timestamp": "2025-11-21 20:01:04.942332",
+    "report_generated": false
+  },
+  {
+    "question": "Can the idx field in GuardianShareV0 be manipulated to cause shares to be matched with wrong commitments?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_96fb9ae8-f7f8-41b3-b3b3-a678e133cd2d",
+    "timestamp": "2025-11-21 20:01:19.406198",
+    "report_generated": false
+  },
+  {
+    "question": "Is there sufficient binding between the backup owner's identity and the guardian shares to prevent cross-account attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_97f76159-3a86-4a30-bd3a-68e5087a323b",
+    "timestamp": "2025-11-21 20:01:33.554973",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit weak binding between encryption layers to modify intermediate ciphertext values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e1d24c83-9711-459b-94b2-5df3c73d1fa7",
+    "timestamp": "2025-11-21 20:01:47.408218",
+    "report_generated": false
+  },
+  {
+    "question": "Does BackupCiphertextV0::recover() leak information about which shares are invalid through timing or error messages?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8634a2ab-4ec5-4c1a-92d6-86d0e9125758",
+    "timestamp": "2025-11-21 20:02:01.990190",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker use the filter_map behavior to determine which guardians have been compromised based on share rejection?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3c055b1b-2e05-4267-afba-bca015cea1c2",
+    "timestamp": "2025-11-21 20:02:17.965552",
+    "report_generated": false
+  },
+  {
+    "question": "If deserialization of BackupMetadata fails, does the error message reveal sensitive information about the backup structure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_549a4afa-26b8-4ac2-9ff2-dd8cac64cf0a",
+    "timestamp": "2025-11-21 20:02:34.918948",
+    "report_generated": false
+  },
+  {
+    "question": "Can error conditions in DecryptedShareV0::send_for_recovery() be exploited to bypass recovery checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8eeb304a-0b19-48a0-9de3-0bdb2b646335",
+    "timestamp": "2025-11-21 20:02:54.550988",
+    "report_generated": false
+  },
+  {
+    "question": "Does the InsufficientShares error reveal how many valid shares were collected, leaking guardian participation information?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a5007ad7-ac4d-48f6-9283-f56aef4a8315",
+    "timestamp": "2025-11-21 20:03:15.547954",
+    "report_generated": false
+  },
+  {
+    "question": "In DecryptedShareV0::send_for_recovery(), does the code verify that owner.rec.pke is the legitimate recovery key before encryption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cf1cb754-9436-4ec3-b7b2-7f28e393ef5f",
+    "timestamp": "2025-11-21 20:03:37.983072",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker replace the recovery PKE key in AccountState to redirect guardian shares to their own key?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5c6cb164-6ab5-4594-96c6-c35b73d3d8fc",
+    "timestamp": "2025-11-21 20:04:01.090383",
+    "report_generated": false
+  },
+  {
+    "question": "Does the recovery process validate that the recovery key hasn't been revoked or expired before encrypting shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_61f0c673-0c25-476f-af47-05467d0a2074",
+    "timestamp": "2025-11-21 20:04:23.492719",
+    "report_generated": false
+  },
+  {
+    "question": "Can a malicious user initiate multiple recovery processes with different recovery keys to collect shares from confused guardians?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_78318284-8de8-4ac2-9a54-db9ac15414df",
+    "timestamp": "2025-11-21 20:04:48.698792",
+    "report_generated": false
+  },
+  {
+    "question": "Is there a check that the recovery key matches the original account owner's identity to prevent account takeover?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b9375984-28ab-4d4c-9901-a80ef163f6db",
+    "timestamp": "2025-11-21 20:05:15.375566",
+    "report_generated": false
+  },
+  {
+    "question": "Does the system verify that guardians in the recovery process are the same as those specified during backup creation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_56e01a55-171c-46bc-b56d-bf6df092d27c",
+    "timestamp": "2025-11-21 20:05:46.068365",
+    "report_generated": false
+  },
+  {
+    "question": "Can a malicious user substitute guardians after backup creation but before recovery to bypass the original guardian selection?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ab5971bc-ecb8-419d-97f6-8c62687e4bda",
+    "timestamp": "2025-11-21 20:06:14.823433",
+    "report_generated": false
+  },
+  {
+    "question": "Is there validation that each guardian approving recovery is authorized for that specific backup?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_156f1b57-9f0f-4dde-bfc1-5cc24c94fe49",
+    "timestamp": "2025-11-21 20:06:44.379925",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker trick guardians into approving recovery by presenting a forged backup with altered guardian lists?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_23919285-804f-411a-b5d1-8f3171a138ab",
+    "timestamp": "2025-11-21 20:07:14.258811",
+    "report_generated": false
+  },
+  {
+    "question": "Does the code prevent a single malicious guardian from impersonating multiple guardians to reach the threshold?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3d00281e-66a9-4c05-a304-5a82a96a138b",
+    "timestamp": "2025-11-21 20:07:44.563254",
+    "report_generated": false
+  },
+  {
+    "question": "In send_for_recovery(), does the 'Recovery not started' error check prevent premature share transmission?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b9b4d615-1c0c-4ceb-b72a-8b4e2dc05ebf",
+    "timestamp": "2025-11-21 20:08:15.072402",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker race to submit shares during recovery initialization to bypass proper authorization checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_11416a78-2da5-4952-8c4c-872dbe4e984e",
+    "timestamp": "2025-11-21 20:08:46.799719",
+    "report_generated": false
+  },
+  {
+    "question": "Is there a mechanism to prevent recovery from being initiated multiple times in parallel with different parameters?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1a9a16a1-839d-4e9a-a5bd-96fce9e05c6a",
+    "timestamp": "2025-11-21 20:09:20.059911",
+    "report_generated": false
+  },
+  {
+    "question": "Does the recovery state transition ensure that once recovery starts, the original account parameters cannot be modified?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_268dc0a1-7886-493d-8285-50d59bbd878b",
+    "timestamp": "2025-11-21 20:09:53.466036",
+    "report_generated": false
+  },
+  {
+    "question": "Can a malicious off-chain node manipulate the recovery state to accept shares meant for a different recovery session?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4c3ca333-ac2b-4392-ac73-7daa6344bc11",
+    "timestamp": "2025-11-21 20:10:24.596982",
+    "report_generated": false
+  },
+  {
+    "question": "Does DecryptedShareV0::send() verify that the owner parameter corresponds to the actual backup owner before encrypting?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5734d1bb-789b-4236-8376-a7b491ceefa3",
+    "timestamp": "2025-11-21 20:10:54.823589",
+    "report_generated": false
   }
 ]
