@@ -1498,5 +1498,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dfeebd66-8494-4f02-94f1-5c5845c66b72",
     "timestamp": "2025-11-21 14:48:03.174353",
     "report_generated": false
+  },
+  {
+    "question": "Internal Module Circular Dependencies: Could circular dependencies between internal modules (e.g., symmetric depending on pke, which depends on symmetric) create opportunities for attackers to exploit initialization order to bypass encryption? mod.rs:14-21",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_56227733-efaf-4ec9-a6b7-033644d7a891",
+    "timestamp": "2025-11-21 14:49:13.840655",
+    "report_generated": false
+  },
+  {
+    "question": "Public API Surface Minimization: Does the current re-export strategy expose more cryptographic primitives than necessary for the protocol's security model, increasing the attack surface for malicious guardians or compromised nodes? mod.rs:29-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bec54610-a9ab-444c-84db-6e47a9f8d2e1",
+    "timestamp": "2025-11-21 14:49:26.572200",
+    "report_generated": false
+  },
+  {
+    "question": "Re-export Completeness: Are there critical cryptographic types or functions in the internal modules that should be re-exported but aren't, forcing higher-level code to use unsafe workarounds that bypass security checks? mod.rs:29-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1e0a54a6-78d7-46d5-919e-c5561e85cd60",
+    "timestamp": "2025-11-21 14:49:40.469352",
+    "report_generated": false
+  },
+  {
+    "question": "Module Import Order Dependencies: Does the order of module declarations create initialization dependencies that could be exploited if modules are imported in unexpected order, causing cryptographic primitives to use uninitialized state? mod.rs:14-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fa4644d8-20e2-49b1-8f29-c8ccba0f9712",
+    "timestamp": "2025-11-21 14:49:54.154750",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Module Type Confusion: Could attackers exploit the fact that multiple modules (curve, pairing, commitments, vdrf) use the same underlying BLS12-381 types to create type confusion between commitments and VDRF evaluations? mod.rs:14-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_542d8b17-366f-408c-a66f-fb5b7e899e85",
+    "timestamp": "2025-11-21 14:50:08.903497",
+    "report_generated": false
+  },
+  {
+    "question": "Curve Type Aliases Leakage: Does the curve module's re-export of pairing types as public interfaces create opportunities for type confusion attacks where G1 and G2 points are swapped? mod.rs:16",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4eff794f-4d4b-4b5e-9653-748f30e98ec2",
+    "timestamp": "2025-11-21 14:50:25.290516",
+    "report_generated": false
+  },
+  {
+    "question": "Polynomial Module Misuse: Could unauthorized access to the poly module's Lagrange interpolation functions enable attackers to forge shares that pass verification but produce incorrect secrets during reconstruction? mod.rs:19",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_69cf53e6-0f7f-46f9-9571-ee08d1ab5457",
+    "timestamp": "2025-11-21 14:50:42.543644",
+    "report_generated": false
+  },
+  {
+    "question": "Pairing Module Exposure: Could exposure of the pairing module's BLS12-381 implementation details allow attackers to craft invalid pairing equations that bypass VDRF evaluation verification, breaking email-to-account anonymity? mod.rs:17",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d9443c7f-a96d-47b9-bc8e-035ea795597e",
+    "timestamp": "2025-11-21 14:51:01.144760",
+    "report_generated": false
+  },
+  {
+    "question": "Commitments Module Privacy: If the internal commitments module implementing Pedersen commitments were accessible, could an attacker extract randomness from commitment openings to break the binding property, allowing backup ciphertext mauling? mod.rs:15",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_eb3f586c-1806-4534-b477-32ef264f7f51",
+    "timestamp": "2025-11-21 14:51:20.106865",
+    "report_generated": false
+  },
+  {
+    "question": "SSS Module Direct Access: Could direct access to the internal sss (Shamir Secret Sharing) module by a compromised off-chain node allow manipulation of share generation or recovery, enabling reconstruction with fewer than threshold t shares? mod.rs:20",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a50dd64d-78c2-4968-ba54-f726d6a25b16",
+    "timestamp": "2025-11-21 14:51:41.395219",
+    "report_generated": false
+  },
+  {
+    "question": "PKE Module Encapsulation: Does the pub(crate) restriction on the pke module prevent malicious guardians from directly accessing threshold decryption internals, or could they exploit public APIs to decrypt backup shares without proper authorization checks? mod.rs:18",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2696e787-c1e6-44b9-b6e4-f0c2f56fd0de",
+    "timestamp": "2025-11-21 14:52:03.909201",
+    "report_generated": false
+  },
+  {
+    "question": "Symmetric Module Access: Could unauthorized access to the internal symmetric module's AEAD implementation allow attackers to bypass key-committing properties or synthetic nonce generation used in backup encryption, violating the invariant that only account owners can decrypt backups? mod.rs:21",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_251f5f7a-0b84-4728-8c85-ca0e5f6114f9",
+    "timestamp": "2025-11-21 14:52:25.692764",
+    "report_generated": false
+  },
+  {
+    "question": "Accidental Public Exposure of Internal Types: Do any of the re-exported types (EmailCert, EmailCertToken, EmailCertificate, hash, kdf, kdfn, Signature, Vdrf, etc.) expose internal types from pub(crate) modules in their public API signatures, potentially leaking implementation details? mod.rs:29-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e0b5c9d4-a97b-4c18-be06-ec13550c0c01",
+    "timestamp": "2025-11-21 14:52:49.630536",
+    "report_generated": false
+  },
+  {
+    "question": "Internal Module Exposure via Re-exports: Could the pub(crate) visibility restriction on commitments, curve, pairing, pke, poly, sss, and symmetric modules be bypassed through indirect re-exports in the public modules (email_cert, hash, sig, vdrf), allowing external crates to access internal cryptographic primitives that should remain hidden? mod.rs:14-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ee78fe66-ff99-450e-b57f-100083351455",
+    "timestamp": "2025-11-21 14:53:13.877208",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Module Cryptographic Consistency: Could inconsistent primitive use introduce vulnerabilities?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7665317d-9fc7-4460-9515-c3d87222a15a",
+    "timestamp": "2025-11-21 14:53:39.158444",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Approval Cryptography: Could serialization issues forged signatures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_416d66e5-fc4e-42c4-bde4-ee04d8356b6e",
+    "timestamp": "2025-11-21 14:54:04.879988",
+    "report_generated": false
+  },
+  {
+    "question": "Email Certificate Replay: Could old certs be replayed?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_aeb990d5-9eaf-4668-b2b3-099ab2a3104d",
+    "timestamp": "2025-11-21 14:54:30.870197",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Commitment Verification: Does pairing ensure commitment soundness?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c9fa85f2-c392-4cf7-bdc3-886fc566ef24",
+    "timestamp": "2025-11-21 14:54:58.867119",
+    "report_generated": false
+  },
+  {
+    "question": "Pedersen Commitment Soundness: Could generators leak discrete log relation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_607f7d7b-9069-4686-91d1-2106dcc5cca5",
+    "timestamp": "2025-11-21 14:55:25.766571",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Commitment Malleability: Can attackers tamper with commitments?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_03cf640b-8e12-468b-ad48-57abd2c4195d",
+    "timestamp": "2025-11-21 14:55:54.109305",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Share Binding: Are shares bound to their instance?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_82324e37-60ca-4f05-aebd-f79a1455c77e",
+    "timestamp": "2025-11-21 14:56:23.176253",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Output Determinism: Could non-determinism break output consistency?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ac79fc45-0a24-479d-89c1-cf3147dfc3ac",
+    "timestamp": "2025-11-21 14:56:54.201317",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Threshold Bypass: Could weak pairing checks bypass thresholds?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_df1db5e5-9c88-4f3f-9105-f1445cdf76f6",
+    "timestamp": "2025-11-21 14:57:23.872178",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Email Privacy: Could hash-to-curve timing leak email info?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3078fc77-d95a-463e-9321-f72c961f3f13",
+    "timestamp": "2025-11-21 14:57:54.979668",
+    "report_generated": false
+  },
+  {
+    "question": "Cryptographic Constants: Any incorrect hardcoded constants?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a6c55440-f47d-418a-855f-22870b37f746",
+    "timestamp": "2025-11-21 14:58:26.268495",
+    "report_generated": false
   }
 ]
