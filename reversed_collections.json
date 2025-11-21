@@ -4048,5 +4048,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ce986bc0-8634-4f39-b5e4-243c24205ab2",
     "timestamp": "2025-11-21 17:57:23.782982",
     "report_generated": false
+  },
+  {
+    "question": "Unauthorized Account Recovery: AccountState and AccountUpdate are versioned. Can an attacker manipulate versions to bypass guardian approval requirements during account recovery? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2d9cda86-aeb1-40e7-b952-cddb9517e805",
+    "timestamp": "2025-11-21 17:58:35.925834",
+    "report_generated": false
+  },
+  {
+    "question": "Key Compromise via Version Information: Can error messages or deserialization behavior leak information about which cryptographic schemes are in use, aiding attackers in choosing exploits? venum.rs:111",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d0f97edc-4edd-46f9-bc7d-18bcdd7a353d",
+    "timestamp": "2025-11-21 17:58:49.090588",
+    "report_generated": false
+  },
+  {
+    "question": "Cryptographic Agility Misuse: Supporting multiple cryptographic schemes via versioning is 'crypto agility'. Can this be exploited to downgrade security or create cross-scheme attacks? venum.rs:28-119",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c80c644e-d87c-426d-85e4-48e5f17b923f",
+    "timestamp": "2025-11-21 17:59:02.284954",
+    "report_generated": false
+  },
+  {
+    "question": "Side-Channel Resistance: Does the deserialization path for cryptographic types (keys, signatures) have constant-time properties, or can timing attacks leak version information? venum.rs:96-113",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1a96e3f9-3c27-4a2c-87e7-744a3541ac5e",
+    "timestamp": "2025-11-21 17:59:16.875767",
+    "report_generated": false
+  },
+  {
+    "question": "Zero-Knowledge Proof Versioning: If ZK proofs are versioned, can version manipulation bypass soundness checks or allow proof forgery? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1509420d-657c-447b-a20d-55b708d73ff2",
+    "timestamp": "2025-11-21 17:59:31.723398",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Function Downgrade: If hash functions are versioned, can an attacker force MD5 or SHA-1 by modifying version tags, enabling collision attacks? venum.rs:103-112",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_eb64684b-07ac-41f3-bde0-6c70a79d62ed",
+    "timestamp": "2025-11-21 17:59:47.804490",
+    "report_generated": false
+  },
+  {
+    "question": "Curve Parameter Substitution: If different elliptic curves are supported via versions, can an attacker force use of weak curves? venum.rs:103-112",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4dd0439e-6a68-49bd-9cc1-051eff539287",
+    "timestamp": "2025-11-21 18:00:04.867227",
+    "report_generated": false
+  },
+  {
+    "question": "Randomness Source Versioning: If RNG state is versioned, can an attacker force use of a weaker randomness source by manipulating versions? venum.rs:103-112",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1b7ded3c-bd6a-44a4-b79b-c8eeb4d0ba17",
+    "timestamp": "2025-11-21 18:00:23.015230",
+    "report_generated": false
+  },
+  {
+    "question": "Nonce Reuse via Version Rollback: If cryptographic nonces are versioned, can rollback attacks cause nonce reuse, breaking encryption security? venum.rs:240-272",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6923ff16-afbe-44e6-8e99-d7f0c5455012",
+    "timestamp": "2025-11-21 18:00:42.571672",
+    "report_generated": false
+  },
+  {
+    "question": "Symmetric Key Confusion: Different symmetric encryption schemes might use versioned wrappers. Can an attacker substitute AES for ChaCha to exploit implementation differences? venum.rs:103-112",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9d8201b7-2bac-42b9-a281-033abcfa05c8",
+    "timestamp": "2025-11-21 18:01:02.557603",
+    "report_generated": false
+  },
+  {
+    "question": "Key Derivation Context Loss: If versioned enums are used in key derivation (e.g., via Tagged trait), can context be lost during serialization, weakening key isolation? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_876f7d82-8482-46fe-a9c5-0bd4c3479b1d",
+    "timestamp": "2025-11-21 18:01:25.850032",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Output Integrity: VDRF outputs for email anonymization are likely versioned. Can deserialization corrupt VDRF proofs, violating email privacy? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8af43eda-3c23-4284-b5c3-c978ebcb3c9c",
+    "timestamp": "2025-11-21 18:01:48.848936",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Verification Bypass: Pedersen commitments in backups must be verified. Can version manipulation skip verification steps during deserialization? venum.rs:96-113",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ebe4862e-a1eb-42e1-9d03-71fe12a5eb77",
+    "timestamp": "2025-11-21 18:02:12.562907",
+    "report_generated": false
+  },
+  {
+    "question": "Email Certificate Binding: Email certificates must be bound to accounts. Can versioned enum deserialization allow certificate reuse across multiple accounts? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cf150ee5-7bb2-4cf1-878d-56b55078c246",
+    "timestamp": "2025-11-21 18:02:36.637981",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Security Violation: Versioned enums used in threshold cryptography (Shamir secret sharing) must preserve the threshold property. Can version mismatch reduce the effective threshold? venum.rs:28-119",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_29b26d35-4440-4204-a227-1a9b5f86db99",
+    "timestamp": "2025-11-21 18:03:02.245237",
+    "report_generated": false
+  },
+  {
+    "question": "Master Secret Key Leakage: MSKs in Association enums must be zeroized after use. Does the macro's deserialization ensure proper cleanup on error? venum.rs:96-113",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fb1dba5c-e878-41e2-b40b-71cb7063b69a",
+    "timestamp": "2025-11-21 18:03:28.081042",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery Initiation Key Protection: RIKs are likely stored in versioned enums. Can deserialization expose RIKs in memory longer than necessary, creating side-channel vulnerabilities? venum.rs:96-113",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_71a8b3ec-4a7d-45e1-9bfe-7684c90b3cba",
+    "timestamp": "2025-11-21 18:03:55.423165",
+    "report_generated": false
+  },
+  {
+    "question": "Batch Ciphertext Atomicity: BatchCiphertext must maintain all-or-nothing decryption semantics. Can version manipulation break this atomicity, allowing selective share disclosure? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ce74d023-2a4c-4e4a-9e17-daa9ef975355",
+    "timestamp": "2025-11-21 18:04:24.581381",
+    "report_generated": false
+  },
+  {
+    "question": "Association Record Authenticity: MskRecord and Association contain sensitive MSK data. Does versioning preserve authenticity, or can deserialization bypass signature verification? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5ad481c2-5890-419d-9bce-174cb19a363c",
+    "timestamp": "2025-11-21 18:04:52.671591",
+    "report_generated": false
+  },
+  {
+    "question": "Account State Integrity: AccountState transitions must preserve cryptographic invariants. Can version changes during serialization/deserialization bypass integrity checks? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4538a312-55f0-4a12-8249-97b7fb25d591",
+    "timestamp": "2025-11-21 18:05:23.016980",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Ciphertext Binding: Versioned BackupCiphertext must be bound to BackupId. Can deserialization bypass this binding, allowing backup theft or replay attacks? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8eae62de-6595-4574-a7f7-630e001f9e20",
+    "timestamp": "2025-11-21 18:05:54.237713",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Share Type Confusion: SecretShare can contain different share types. Can an attacker substitute Shamir shares for Pedersen commitments or vice versa to bypass verification? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_46265104-122e-4bce-ba08-ce20792f54e9",
+    "timestamp": "2025-11-21 18:06:26.604340",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Share Tampering: GuardianShare is versioned without inherent authentication. Can a malicious guardian (below threshold) modify shares to corrupt backup reconstruction? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b9409349-506b-49e5-b3cc-bb8a99209cac",
+    "timestamp": "2025-11-21 18:06:59.370333",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Scheme Substitution: Multiple signature schemes could be supported via different variants. Can an attacker downgrade to a weaker scheme by modifying the tag? venum.rs:103-112",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_167f3787-6d55-4c24-9d78-d6c4ba79054e",
+    "timestamp": "2025-11-21 18:07:33.817300",
+    "report_generated": false
+  },
+  {
+    "question": "Ciphertext Malleability: Versioned Ciphertext and BatchCiphertext enums lack built-in authentication. Can an attacker modify serialized ciphertexts to maul encrypted backups or recovery data? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ad8e435b-00ca-4967-bf96-160882a655d5",
+    "timestamp": "2025-11-21 18:08:07.942439",
+    "report_generated": false
   }
 ]
