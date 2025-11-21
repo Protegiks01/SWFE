@@ -1648,5 +1648,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f390a8a9-3d90-4850-9ee1-cd856c5faeee",
     "timestamp": "2025-11-21 15:06:48.128593",
     "report_generated": false
+  },
+  {
+    "question": "Bincode Version Mismatch: Using bincode::config::standard encode.rs:6. Different client/contract versions break compatibility?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2ac44f8d-b25a-4c53-882a-0c017c5af59b",
+    "timestamp": "2025-11-21 15:08:09.113284",
+    "report_generated": false
+  },
+  {
+    "question": "AccountState Deserialization Integrity: get_account lib.rs:34-38 uses .expect(). Can corrupted on-chain state panic?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f2de5aaf-cfc2-4ed5-966f-3200e633cf85",
+    "timestamp": "2025-11-21 15:08:22.199749",
+    "report_generated": false
+  },
+  {
+    "question": "Type Confusion Attack: Can crafted AccountId deserialize but map to wrong logical structure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a074c076-3ef8-4584-a563-0162fe43b52d",
+    "timestamp": "2025-11-21 15:08:36.216472",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization Canonicality: Can multiple binary encodings map to same logical state?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c6acc41f-b109-447a-b9de-d1f17edf095f",
+    "timestamp": "2025-11-21 15:08:51.044340",
+    "report_generated": false
+  },
+  {
+    "question": "Domain Separator Bypass: Tagged trait encode.rs:8-38. Can attacker bypass domain separation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_322201bb-e049-46f6-8231-af9f858fc5ac",
+    "timestamp": "2025-11-21 15:09:05.960589",
+    "report_generated": false
+  },
+  {
+    "question": "Integer Overflow in Size Parsing: Malformed AccountId with huge lengths => overflow?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a3d8a71a-1ed2-4a12-b299-6800174d8dab",
+    "timestamp": "2025-11-21 15:09:22.061548",
+    "report_generated": false
+  },
+  {
+    "question": "Recursive Deserialization DoS: Deep structures => stack overflow?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_38c491ad-8eee-44ec-a80d-32893413d252",
+    "timestamp": "2025-11-21 15:09:40.172778",
+    "report_generated": false
+  },
+  {
+    "question": "UTF-8 Validation Bypass: JSON body parsed as UTF-8. Invalid UTF-8 bypass?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ed1e24fe-cca4-41a6-ab24-402589ae8d87",
+    "timestamp": "2025-11-21 15:09:59.807047",
+    "report_generated": false
+  },
+  {
+    "question": "JSON Parsing Ambiguity: json::from_str mod.rs:22 accepts ambiguous forms → bypass logging/caching?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e57d0ec1-2890-4a2d-84ac-5acf0c6ac116",
+    "timestamp": "2025-11-21 15:10:21.146363",
+    "report_generated": false
+  },
+  {
+    "question": "AccountState Version Confusion: Future V1 variant breaks clients expecting V0?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_de42a028-02ff-4733-acc7-01f00ab5d630",
+    "timestamp": "2025-11-21 15:10:43.387884",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Ciphertext Malleability: Serialized ciphertext tampering breaks clients?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7a4c095a-48fb-4c67-904a-256c9d1c00a1",
+    "timestamp": "2025-11-21 15:11:06.786855",
+    "report_generated": false
+  },
+  {
+    "question": "StrEncoded Round-Trip Safety: Endianness issues?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a74631c2-6cdf-40a3-8bca-e1e55cd31557",
+    "timestamp": "2025-11-21 15:11:31.736414",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Serialization Order: Pedersen commitment ordering inconsistencies allow forgery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_94930543-564a-4054-ab3e-9043a5017bf8",
+    "timestamp": "2025-11-21 15:11:57.044621",
+    "report_generated": false
+  },
+  {
+    "question": "AEAD Ciphertext Parsing: Malformed AEAD leaks timing?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2c7a8000-4bba-4fe5-a426-7b1b0250d3b1",
+    "timestamp": "2025-11-21 15:12:25.772167",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Serialization Ambiguity: compressed/uncompressed curve key confusion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5b506ad5-276b-4c09-ac84-5f536ef5951b",
+    "timestamp": "2025-11-21 15:12:55.963118",
+    "report_generated": false
+  },
+  {
+    "question": "Share Polynomial Deserialization: Out-of-range polynomial values break arithmetic?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_04be53a1-ea0f-46c3-8935-ebd966464c73",
+    "timestamp": "2025-11-21 15:13:26.935739",
+    "report_generated": false
+  },
+  {
+    "question": "VDF Proof Deserialization: Malformed future proofs crash clients?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_39b7980f-22b3-41ae-b23c-54134373e89e",
+    "timestamp": "2025-11-21 15:13:58.794128",
+    "report_generated": false
+  },
+  {
+    "question": "Encrypted Data Padding Oracle: AEAD scheme leaks padding info?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_aae655fe-8175-4610-b014-9613b1aeeecc",
+    "timestamp": "2025-11-21 15:14:31.512037",
+    "report_generated": false
+  },
+  {
+    "question": "Bincode Varint Exploitation: Inefficient varints confuse parsers?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cb19d947-6f97-4b3d-8ec0-c114aa949446",
+    "timestamp": "2025-11-21 15:15:03.811328",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Resource Exhaustion: Large backups vector => memory exhaustion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4133c7c3-eca9-4737-847a-b5bbfdeb6d26",
+    "timestamp": "2025-11-21 15:15:36.373581",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Version Compatibility: Contract upgrades make states non-deserializable?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3fcefded-471c-4946-a586-8955ee6bc2fe",
+    "timestamp": "2025-11-21 15:16:09.170690",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Base Point Inconsistency: Missing base-point encoding creates ambiguity?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_93a44f3d-917b-451f-a218-1a69da7c231f",
+    "timestamp": "2025-11-21 15:16:44.305684",
+    "report_generated": false
+  },
+  {
+    "question": "Nonce Reuse in Serialization: Internal nonces leak via repeated serialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a3588bc2-3d3d-4076-89d5-cf4474d30c8a",
+    "timestamp": "2025-11-21 15:17:18.934325",
+    "report_generated": false
+  },
+  {
+    "question": "Concurrent State Read Race: get_account lib.rs:34-38 vs update_account lib.rs:107-134.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b12fc112-dc39-4611-aaaf-77a6e8121450",
+    "timestamp": "2025-11-21 15:17:54.497736",
+    "report_generated": false
+  },
+  {
+    "question": "AvlTreeMap Consistency: Rebalancing during access causes incorrect reads?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bd39deb1-3b4a-4687-bf2e-0d6dd9c5db67",
+    "timestamp": "2025-11-21 15:18:30.289539",
+    "report_generated": false
   }
 ]
