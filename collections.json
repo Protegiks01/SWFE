@@ -5998,5 +5998,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fa3b0562-6764-445f-a505-3efbbb861062",
     "timestamp": "2025-11-21 20:44:57.649385",
     "report_generated": false
+  },
+  {
+    "question": "Commitment Malleability: If serialization v0.rs:125-127 malleable, can attacker forge commitments?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5c02bd0b-f8a6-4e3d-b975-3524a3490ca1",
+    "timestamp": "2025-11-21 20:46:10.782325",
+    "report_generated": false
+  },
+  {
+    "question": "PedersenOpen Serialization: Side-channel leakage from PedersenOpen v0.rs:85 ?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d8eb1db5-2d20-4e38-97ee-92d4070278a0",
+    "timestamp": "2025-11-21 20:46:23.614735",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Verification Race: AssociationRequestEmail::verify order v0.rs:199-206 — can this leak information?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cac112e5-21e3-4da5-a427-9665775f2ccd",
+    "timestamp": "2025-11-21 20:46:36.736017",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Truncation: commits vector truncation v0.rs:146 — can attacker reduce threshold?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3ae6391e-3caf-4e2b-89f3-8dd3966f2fb4",
+    "timestamp": "2025-11-21 20:46:51.548664",
+    "report_generated": false
+  },
+  {
+    "question": "Generator Domain Separation: H,G derived with domain tags v0.rs:268 — collisions possible?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0ab94203-f423-45c0-9fdb-8ed6297a7023",
+    "timestamp": "2025-11-21 20:47:06.306302",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Consistency Across Nodes: Can malicious node modify commitments before majority voting v0.rs:467-482?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dd964c40-43c2-4988-8a90-b5ca8e549b14",
+    "timestamp": "2025-11-21 20:47:22.451561",
+    "report_generated": false
+  },
+  {
+    "question": "Polynomial Degree Disclosure: Threshold leaks via number of commitments v0.rs:152-154 . Exploitable?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b87148bc-cc22-4f42-8450-725a241eaf70",
+    "timestamp": "2025-11-21 20:47:39.964840",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Arithmetic Overflow: Crafted commitments causing overflow v0.rs:257-264 ?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9778edaf-3d1b-4a90-865e-184713ccd19b",
+    "timestamp": "2025-11-21 20:47:58.212542",
+    "report_generated": false
+  },
+  {
+    "question": "Pedersen Opening Storage: pedersen_open stored in EncapsulatedMsk v0.rs:124 . If leaked, can attacker recover polynomial?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_966929f7-1a6a-4d44-84c4-5ab9231282b7",
+    "timestamp": "2025-11-21 20:48:17.603247",
+    "report_generated": false
+  },
+  {
+    "question": "NodeId Hash Collision: node_id.eval_point v0.rs:225 — if hash collides, two nodes get same share?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c3f24e8a-1ddf-4302-ac2f-44710a1ca81f",
+    "timestamp": "2025-11-21 20:48:39.317759",
+    "report_generated": false
+  },
+  {
+    "question": "NodeId Zero Collision: eval_point asserts x != 0 — can attacker trigger panic?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_179aa153-9864-4e9a-89e6-a3216a83f9bf",
+    "timestamp": "2025-11-21 20:49:00.780808",
+    "report_generated": false
+  },
+  {
+    "question": "Polynomial Evaluation Correctness: compute_secret_shares v0.rs:228-236 — incorrect arithmetic?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c67dc016-da5b-451f-a84e-84cc3048cc5e",
+    "timestamp": "2025-11-21 20:49:22.993770",
+    "report_generated": false
+  },
+  {
+    "question": "Share Distribution Completeness: Missing shares v0.rs:418-432 causing lockout?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c296a473-df16-47ad-80d7-d3f15b587890",
+    "timestamp": "2025-11-21 20:49:46.534714",
+    "report_generated": false
+  },
+  {
+    "question": "NodeSecretShare Cloning: Clone leak v0.rs:80-88 ?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_46b26a0d-26d1-4a44-9eb8-a811700f8874",
+    "timestamp": "2025-11-21 20:50:11.352937",
+    "report_generated": false
+  },
+  {
+    "question": "Msk_result Field Exposure: NodeSecretShare contains EncapsulatedMsk v0.rs:83 — violates least privilege?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0a275513-ff12-4365-a2ab-958229ea0bed",
+    "timestamp": "2025-11-21 20:50:37.637892",
+    "report_generated": false
+  },
+  {
+    "question": "Token Binding to Share: token v0.rs:87 not bound to share — reuse possible?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2f882c3f-8173-451b-86eb-bc469285fd22",
+    "timestamp": "2025-11-21 20:51:03.520225",
+    "report_generated": false
+  },
+  {
+    "question": "Share Substitution Attack: share field v0.rs:449 manipulable?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_42ef6cd8-fda3-42b7-b643-3d0e9208b67b",
+    "timestamp": "2025-11-21 20:51:31.779256",
+    "report_generated": false
+  },
+  {
+    "question": "X-coordinate Reuse: Reused NodeId → same x v0.rs:225 — can attacker gather multiple y-values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f5ee1ca5-1a77-448a-b4ff-d02599dd4233",
+    "timestamp": "2025-11-21 20:52:00.620869",
+    "report_generated": false
+  },
+  {
+    "question": "Share Computation Timing: compute_secret_shares timing leaks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0ee2b05a-5495-44f9-a236-6721aa5f2dca",
+    "timestamp": "2025-11-21 20:52:29.654783",
+    "report_generated": false
+  },
+  {
+    "question": "Field Element Overflow: y accumulation v0.rs:233 — overflow possible?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_383f572d-ff85-45c5-ab1b-444556eba7cc",
+    "timestamp": "2025-11-21 20:52:58.739904",
+    "report_generated": false
+  },
+  {
+    "question": "X_power Accumulation: Issues with x^k accumulation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_80c11dae-16e4-4f43-8b98-0ded6ad503d3",
+    "timestamp": "2025-11-21 20:53:28.480285",
+    "report_generated": false
+  },
+  {
+    "question": "Share Request Replay: No nonce in gen_association_request v0.rs:435-451 — replay possible?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3a7adf70-c207-48ef-81bd-038d8ad0315f",
+    "timestamp": "2025-11-21 20:53:58.787888",
+    "report_generated": false
+  },
+  {
+    "question": "PedersenOpen Zero Initialization: zero() correctness v0.rs:230 ?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9602cbf2-f0be-48ee-bf44-7db37b92c140",
+    "timestamp": "2025-11-21 20:54:28.154010",
+    "report_generated": false
+  },
+  {
+    "question": "Share Distribution Ordering: Observing share order leaks which nodes get which shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2395d593-a9e8-4295-ba0b-cfc26551e6aa",
+    "timestamp": "2025-11-21 20:54:57.998458",
+    "report_generated": false
+  },
+  {
+    "question": "Verify_secret_share X-collision: node_id.eval_point v0.rs:253 collision?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5faf9848-dd0e-4d46-a015-2ab0e180ae50",
+    "timestamp": "2025-11-21 20:55:27.833215",
+    "report_generated": false
   }
 ]
