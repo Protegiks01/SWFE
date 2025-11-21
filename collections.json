@@ -2548,5 +2548,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_de59b480-bccd-4f89-9cb7-69cfe2449239",
     "timestamp": "2025-11-21 16:26:43.525706",
     "report_generated": false
+  },
+  {
+    "question": "Verification Bypass via Deserialization: Could malformed tokens bypass checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_09e3c95e-3599-4bfd-9746-1836a6ce996e",
+    "timestamp": "2025-11-21 16:27:59.951450",
+    "report_generated": false
+  },
+  {
+    "question": "Token Lifetime vs Certificate Lifetime: Does coupling cause operational issues?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_08af1f1b-39d3-4936-b032-a00a471cd2dc",
+    "timestamp": "2025-11-21 16:28:13.544015",
+    "report_generated": false
+  },
+  {
+    "question": "User Key Verification Failure Handling: Could timing leaks expose valid vs invalid keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ac0607a1-dc6d-46fe-ad2e-0e34521ab4e6",
+    "timestamp": "2025-11-21 16:28:28.027722",
+    "report_generated": false
+  },
+  {
+    "question": "Email Encoding Issues: Could encoding inconsistencies break comparisons?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8ce0bec8-f8d5-4f8b-9a13-8cf48f53d184",
+    "timestamp": "2025-11-21 16:28:44.408372",
+    "report_generated": false
+  },
+  {
+    "question": "Verification Context Missing: Could tokens be reused across unrelated endpoints?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e1fd56d0-81e8-46f3-8821-3f9661a6a859",
+    "timestamp": "2025-11-21 16:29:01.286508",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Revocation Missing: Could compromised certificates remain usable?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9fc0e696-f72c-4cb5-ad01-61c67bbe369c",
+    "timestamp": "2025-11-21 16:29:19.271484",
+    "report_generated": false
+  },
+  {
+    "question": "Time Manipulation Detection: Could attackers exploit clock rollback?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b70f6592-e529-4dd1-b41e-85517e3afca2",
+    "timestamp": "2025-11-21 16:29:38.599871",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Scheme Version Mismatches: Could mismatches break verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_05e2ccf5-fd10-42c0-b061-02952345b5b8",
+    "timestamp": "2025-11-21 16:29:58.904543",
+    "report_generated": false
+  },
+  {
+    "question": "Serde Serialization Security: Could malicious data cause memory corruption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_363c21aa-a917-4ef5-966f-d0a5b487dae5",
+    "timestamp": "2025-11-21 16:30:21.001427",
+    "report_generated": false
+  },
+  {
+    "question": "JSON vs Bincode Compatibility: Could format differences cause verification failures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ac8e5f31-7152-4fd1-87bc-7ea06f71a6df",
+    "timestamp": "2025-11-21 16:30:45.148292",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Resource Limits: Could large payloads cause DoS?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5ded7e98-a77a-4356-8787-1846e6c13ded",
+    "timestamp": "2025-11-21 16:31:09.646582",
+    "report_generated": false
+  },
+  {
+    "question": "Field Ordering Differences: Could serializers reorder fields and break signatures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c4fbed06-3d8c-4b3c-9830-5ee33b75d256",
+    "timestamp": "2025-11-21 16:31:35.571629",
+    "report_generated": false
+  },
+  {
+    "question": "Email String Length Limits: Could extremely long emails exhaust resources?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d2da4931-10b1-4ea3-a507-6e87ae1f0e88",
+    "timestamp": "2025-11-21 16:32:02.851983",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Byte Representation: Could invalid signatures deserialize into invalid curve points?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f5e67df2-48e0-496c-a8b0-08041a1c0de8",
+    "timestamp": "2025-11-21 16:32:31.369205",
+    "report_generated": false
+  },
+  {
+    "question": "Timestamp Serialization Format: Could endianness issues break timestamp interpretation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c588e9de-24df-4525-9c4a-831492c236ea",
+    "timestamp": "2025-11-21 16:32:59.695398",
+    "report_generated": false
+  },
+  {
+    "question": "Public Key Serialization: Could non-canonical PK encodings break verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2cabfdea-b2ce-4192-a432-7737dd8c8080",
+    "timestamp": "2025-11-21 16:33:29.820508",
+    "report_generated": false
+  },
+  {
+    "question": "Clone vs Serialize: Could clone and serialize produce different results?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a2e8fc8e-8996-4ec4-889a-8676503560ac",
+    "timestamp": "2025-11-21 16:34:00.855086",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Version Compatibility: Could struct changes break old certificates?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b04b4a7f-b3a7-4f18-be45-ab0d92973861",
+    "timestamp": "2025-11-21 16:34:33.734496",
+    "report_generated": false
+  },
+  {
+    "question": "Tagged Trait Serialization: Could Tagged vs non-tagged encoding cause confusion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6821ec07-4be2-476a-aad8-1ea2a7442be4",
+    "timestamp": "2025-11-21 16:35:08.730628",
+    "report_generated": false
+  },
+  {
+    "question": "Nested Serialization Security: Could nested structures amplify DoS?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cdac1797-129b-4ffe-b0ce-2a5db94e852a",
+    "timestamp": "2025-11-21 16:35:44.005559",
+    "report_generated": false
+  },
+  {
+    "question": "String Encoding Validation: Could invalid UTF-8 cause failures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c9d6bd48-27e4-4b77-970e-5ca80e52ce44",
+    "timestamp": "2025-11-21 16:36:17.902575",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization Format Changes: Could serde upgrades break compatibility?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ed416742-4de1-4aa4-8bd6-a6d81fb69abb",
+    "timestamp": "2025-11-21 16:36:51.514565",
+    "report_generated": false
+  },
+  {
+    "question": "Partial Deserialization: Could partial success leave system in inconsistent state?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ee2ed02e-5b56-4a9d-b4b5-1a75be8ed293",
+    "timestamp": "2025-11-21 16:37:26.047640",
+    "report_generated": false
+  },
+  {
+    "question": "Type Confusion: Could crafted data deserialize as EmailCertToken but be malicious?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_599aac57-5fa3-4a21-9be8-d317ab0960fd",
+    "timestamp": "2025-11-21 16:38:00.367570",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Malleability Through Serialization: Could alternate encodings be abused?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c37bd75a-b69f-4e74-a3e5-81e8861872c1",
+    "timestamp": "2025-11-21 16:38:34.318620",
+    "report_generated": false
   }
 ]
