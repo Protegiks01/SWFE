@@ -7198,5 +7198,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_42c7140c-162f-410c-a05f-1b2baa9310c4",
     "timestamp": "2025-11-21 22:12:34.890859",
     "report_generated": false
+  },
+  {
+    "question": "Can an attacker observing the EmailCertificate message forge a valid association by crafting their own EncapsulatedMsk with the same user_pk?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b39f3df5-b570-4f17-85c5-4e6d539c596d",
+    "timestamp": "2025-11-21 22:13:58.340576",
+    "report_generated": false
+  },
+  {
+    "question": "In gen_node_secret_share, does the function generate a fresh random nonce per node_id, or could deterministic tokens be predicted by attackers?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_835a8eff-bc51-48d7-b557-f885bdb599bc",
+    "timestamp": "2025-11-21 22:14:11.053216",
+    "report_generated": false
+  },
+  {
+    "question": "If a user calls gen_node_secret_share multiple times for the same node_id, will identical shares leak fingerprinting information?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_111c0cab-048b-4fe7-aa5c-5657ca96ab07",
+    "timestamp": "2025-11-21 22:14:24.740393",
+    "report_generated": false
+  },
+  {
+    "question": "Can corrupted off-chain nodes perform timing side-channel analysis on NodeSecretShare verification to infer email patterns?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6de01fa1-e200-46d2-8a29-e817ccfe5792",
+    "timestamp": "2025-11-21 22:14:38.300528",
+    "report_generated": false
+  },
+  {
+    "question": "Does compute_secret_shares implement constant-time evaluation to prevent timing leakage of node_id or polynomial coefficients?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6846e511-10fe-4722-91bd-2b9b2fa0ec0f",
+    "timestamp": "2025-11-21 22:14:53.024799",
+    "report_generated": false
+  },
+  {
+    "question": "In compute_secret_shares, can integer overflow in x_power computation cause incorrect shares for large node_id hash values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_caa17f82-541c-4175-89b5-c02f4ed2b8b0",
+    "timestamp": "2025-11-21 22:15:09.877779",
+    "report_generated": false
+  },
+  {
+    "question": "Does AssociationRequestEmail::verify check certificate revocation by Swafe-io before accepting association requests?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cd152d59-4d45-4e9f-ad9f-56de90c38ae1",
+    "timestamp": "2025-11-21 22:15:27.016563",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker replay old AssociationRequestEmail messages with expired certificates if timestamp freshness isn't validated?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_197e3824-d1da-4df4-9f0d-b795efc79e48",
+    "timestamp": "2025-11-21 22:15:46.976741",
+    "report_generated": false
+  },
+  {
+    "question": "In gen_association_request, is there protection to prevent callers from requesting shares for node_ids they do not control?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_41b0c00a-6551-4212-aed7-e40a67142f92",
+    "timestamp": "2025-11-21 22:16:06.488035",
+    "report_generated": false
+  },
+  {
+    "question": "Does EmailCertToken binding in gen_node_secret_share prevent MITM replaying tokens to different nodes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4155dd2a-6257-4db5-ba6a-71337f7023ac",
+    "timestamp": "2025-11-21 22:16:27.842470",
+    "report_generated": false
+  },
+  {
+    "question": "Can a user with a valid email certificate for one account use it to create associations for multiple accounts, violating uniqueness?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1cb9c7d2-7aef-4ebc-b007-a9cd9193104b",
+    "timestamp": "2025-11-21 22:16:49.191887",
+    "report_generated": false
+  },
+  {
+    "question": "If threshold−1 nodes are corrupted, can they statistically narrow down email addresses via share analysis?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f0c12d54-e7e5-42fc-a4ca-687a28421a66",
+    "timestamp": "2025-11-21 22:17:11.884988",
+    "report_generated": false
+  },
+  {
+    "question": "Does the system prevent corrupted nodes from requesting shares for fake node_ids to identify email patterns through differential analysis?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a4e6e5f5-7763-4a35-8d4c-e434e5bbab82",
+    "timestamp": "2025-11-21 22:17:36.053325",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker who compromises email certificate storage on one node extract all emails and match them to on-chain accounts using VDRF?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_145a37ab-7db0-458c-825b-799adef0af30",
+    "timestamp": "2025-11-21 22:17:59.118488",
+    "report_generated": false
+  },
+  {
+    "question": "After a node compromise and recovery, is there a mechanism for rotating exposed email certificates or detecting leakage?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1366ab12-8d2a-449c-ac23-9a8a25cf5375",
+    "timestamp": "2025-11-21 22:18:24.406422",
+    "report_generated": false
+  },
+  {
+    "question": "Does EmailKey derivation use a cryptographically secure hash preventing rainbow-table precomputation attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e88f5b56-a8e6-41cf-869f-f071e43b98b9",
+    "timestamp": "2025-11-21 22:18:50.850438",
+    "report_generated": false
+  },
+  {
+    "question": "In reconstruct_rik_data, can attackers controlling fewer than threshold shares provide corrupted shares that still pass reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_04ab1f73-ee75-446e-9134-20e1798d6371",
+    "timestamp": "2025-11-21 22:19:19.223161",
+    "report_generated": false
+  },
+  {
+    "question": "Does majority voting in reconstruct_rik_data handle exact ties deterministically, or could this yield inconsistent reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_54966c3f-1560-4bc8-85bb-9cc3489ead8c",
+    "timestamp": "2025-11-21 22:19:48.314936",
+    "report_generated": false
+  },
+  {
+    "question": "Can malicious nodes provide invalid shares that pass verify_secret_share but break interpolate_eval and v_0 reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2d117c12-ac50-4759-a3d2-e64c5c0a2268",
+    "timestamp": "2025-11-21 22:20:17.984601",
+    "report_generated": false
+  },
+  {
+    "question": "Does silently ignoring invalid shares allow attackers to force discarding good shares until fewer than threshold remain?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_079f09d1-0a02-4e7f-bd4f-30491e43e1ac",
+    "timestamp": "2025-11-21 22:20:47.777859",
+    "report_generated": false
+  },
+  {
+    "question": "Does reconstruct_rik_data verify that reconstructed RikSecretData corresponds to user_pk, preventing data substitution?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9a367ea0-3706-4665-94e0-d029ee96f9ae",
+    "timestamp": "2025-11-21 22:21:17.980688",
+    "report_generated": false
+  },
+  {
+    "question": "Can attackers exploit div_ceil(2) majority logic to trigger reconstruction with fewer than the intended threshold?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2cfe9ca8-0c72-4d9f-99ae-ada09104c7b3",
+    "timestamp": "2025-11-21 22:21:45.479250",
+    "report_generated": false
+  },
+  {
+    "question": "Can attackers submit >threshold malicious shares and dominate majority voting to select incorrect fixed fields?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b6ae8c43-cf0e-4d6e-8933-6ff8d9cca23f",
+    "timestamp": "2025-11-21 22:22:14.140904",
+    "report_generated": false
+  },
+  {
+    "question": "Does interpolate_eval handle duplicate node_ids safely, preventing division-by-zero or incorrect interpolation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cb720968-531b-4190-bddd-f4f29ca2170e",
+    "timestamp": "2025-11-21 22:22:43.919443",
+    "report_generated": false
+  },
+  {
+    "question": "Can users who lose RIK but control threshold nodes reconstruct another user’s RIK if identity isn't verified?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a3106253-8014-435d-8d27-9f669feec370",
+    "timestamp": "2025-11-21 22:23:11.796924",
+    "report_generated": false
   }
 ]
