@@ -448,5 +448,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2f6ad3b4-fb82-4aaa-bdd4-b1f3e6dc4004",
     "timestamp": "2025-11-21 13:27:01.537183",
     "report_generated": false
+  },
+  {
+    "question": "Hash Precomputation Tables: Can attackers precompute common email hashes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fa359702-b75e-412e-904f-dea9f58cee65",
+    "timestamp": "2025-11-21 13:28:13.398644",
+    "report_generated": false
+  },
+  {
+    "question": "Multi-Block Hash Security: Does SHA3-256 remain secure for huge encodings?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e87f0a8e-1f42-4b7f-b350-d20bfbdd930f",
+    "timestamp": "2025-11-21 13:28:26.270965",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Output Encoding: Can base64 or hex collisions occur?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f4d02328-9fcc-49a7-ab53-5c0acbc2235d",
+    "timestamp": "2025-11-21 13:28:39.979429",
+    "report_generated": false
+  },
+  {
+    "question": "Tagged Value Mutation: Can post-hash mutation cause verification bypass?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e99b99e0-d815-4392-a550-ea40c5c47ad8",
+    "timestamp": "2025-11-21 13:28:53.735849",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Algorithm Agility: Can the system migrate to new hash algorithms?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5eb12587-783a-4ebf-9a2a-de59937e4572",
+    "timestamp": "2025-11-21 13:29:08.329812",
+    "report_generated": false
+  },
+  {
+    "question": "Partial Hash Collisions: Can prefix collisions bypass weak comparisons?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7313a11e-059c-4c45-8047-10736163ea3e",
+    "timestamp": "2025-11-21 13:29:23.671999",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Digest Comparison: Is equality check constant-time?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cf498034-b495-4a2d-b95e-25ebaefb5802",
+    "timestamp": "2025-11-21 13:29:42.392185",
+    "report_generated": false
+  },
+  {
+    "question": "Tagged Encoding Canonicalization: Do identical values always encode identically?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_71b4c95d-9838-4e0f-82ef-66c777671cbc",
+    "timestamp": "2025-11-21 13:30:01.241731",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Rate Limiting: Can attackers DoS by flooding hash operations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_aed96957-52df-4db6-a8fd-20326c6c32e5",
+    "timestamp": "2025-11-21 13:30:21.883127",
+    "report_generated": false
+  },
+  {
+    "question": "Multi-Collision Attacks: Could an attacker produce many colliding email hashes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8c429b0b-f986-4b58-aa1c-690bf4f41af6",
+    "timestamp": "2025-11-21 13:30:43.448940",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Composition Security: Does hashing a hash weaken security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a2cdff68-627d-4abe-9623-e7e3403416ca",
+    "timestamp": "2025-11-21 13:31:05.990214",
+    "report_generated": false
+  },
+  {
+    "question": "Differential Cryptanalysis: Are known SHA3-256 differential attacks relevant?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ff81e6f2-dd51-443f-a0f0-ffd16a1b664b",
+    "timestamp": "2025-11-21 13:31:29.469699",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Input Size Limits: Do huge inputs cause memory exhaustion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1985094e-29ba-45ab-b4c7-61ba5bfebb54",
+    "timestamp": "2025-11-21 13:31:54.134948",
+    "report_generated": false
+  },
+  {
+    "question": "SHA3-256 Finalization: Does finalize() properly pad inputs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_98b465ca-dfc8-40e2-a9de-c8a2fb5120f8",
+    "timestamp": "2025-11-21 13:32:20.222870",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Function Malleability: Can input mutation preserve hash validity?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_331a31d4-7527-4400-8d7d-2107b94f09aa",
+    "timestamp": "2025-11-21 13:32:49.282379",
+    "report_generated": false
+  },
+  {
+    "question": "Tagged Encoding Preimage: Can two Tagged values encode identically?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a326552f-898d-4850-8944-8072baf04eb7",
+    "timestamp": "2025-11-21 13:33:19.943031",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Output Truncation Safety: Does SHA3-256 avoid length-extension attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bc614ad0-c9b2-4fcc-b443-104bd554775c",
+    "timestamp": "2025-11-21 13:33:51.122327",
+    "report_generated": false
+  },
+  {
+    "question": "Second Preimage Resistance: Can a recovery request be substituted with another preimage?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a78b5287-cf01-4f3f-95c4-86f3a1e0df0d",
+    "timestamp": "2025-11-21 13:34:24.427503",
+    "report_generated": false
+  },
+  {
+    "question": "Preimage Attack on Commitments: Could preimage weaknesses reveal email bindings?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9e184b84-8aa7-4e1e-8f13-6d6fa0f2a308",
+    "timestamp": "2025-11-21 13:34:58.455742",
+    "report_generated": false
+  },
+  {
+    "question": "SHA3-256 Collision Resistance: Is SHA3-256 strong enough for all signature uses?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_af4987c6-b118-4138-b307-cb04596c6f34",
+    "timestamp": "2025-11-21 13:35:33.944841",
+    "report_generated": false
+  },
+  {
+    "question": "IKM Sanitization: Is IKM securely zeroed after use?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d96686a8-f5f7-40db-917d-081ecdd27f7f",
+    "timestamp": "2025-11-21 13:36:09.493853",
+    "report_generated": false
+  },
+  {
+    "question": "Output Length Side-Channels: Do memory access patterns leak output length?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9633bd22-ce6a-4e8b-849d-384ed142f323",
+    "timestamp": "2025-11-21 13:36:43.796709",
+    "report_generated": false
+  },
+  {
+    "question": "KMAC Absorb Phase: Can absorb be skipped due to malformed input?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a50d8be3-bc18-429b-a16f-958c8613ac06",
+    "timestamp": "2025-11-21 13:37:16.985876",
+    "report_generated": false
+  },
+  {
+    "question": "KDF Composition Attacks: Is using one KDF output as another’s IKM secure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_76c63b27-6761-4c6a-89b8-ff77c7fb8dc1",
+    "timestamp": "2025-11-21 13:37:50.718604",
+    "report_generated": false
+  },
+  {
+    "question": "XofRng CryptoRng Trait: Does XofRng actually guarantee cryptographic randomness?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4644d102-e03d-4974-a502-1150825aefd3",
+    "timestamp": "2025-11-21 13:38:22.782969",
+    "report_generated": false
   }
 ]
