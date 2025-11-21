@@ -448,5 +448,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_55dca6d8-83de-4ca2-ae87-8ebbc185dbcc",
     "timestamp": "2025-11-21 13:37:31.432065",
     "report_generated": false
+  },
+  {
+    "question": "Could future enum tags create type confusion vulnerabilities in OffchainSecret?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1c2ceee6-d3a0-4184-ad70-7cb340878a0b",
+    "timestamp": "2025-11-21 13:38:41.390090",
+    "report_generated": false
+  },
+  {
+    "question": "Can compressed malicious data bypass size checks during deserialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9bb1d9b8-2840-4bc7-9a9a-354424cd6819",
+    "timestamp": "2025-11-21 13:38:54.163185",
+    "report_generated": false
+  },
+  {
+    "question": "Can special characters in node_id enable encoding injection attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_75dd42fb-8ac0-4219-88d7-7d67444e00c5",
+    "timestamp": "2025-11-21 13:39:07.325791",
+    "report_generated": false
+  },
+  {
+    "question": "Does the deserializer reject OffchainSecret structures with duplicate fields?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d9260f49-312a-4a76-9e09-12b04deca6ec",
+    "timestamp": "2025-11-21 13:39:22.009629",
+    "report_generated": false
+  },
+  {
+    "question": "Can large integers in serialized curve points cause overflows?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_db29495b-1741-40a7-8a94-0a71b53fec03",
+    "timestamp": "2025-11-21 13:39:38.096333",
+    "report_generated": false
+  },
+  {
+    "question": "Are serialized field elements consistent across architectures with different endianness?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a8a6738a-6400-4c01-82dd-e1a6c21f2565",
+    "timestamp": "2025-11-21 13:39:56.160940",
+    "report_generated": false
+  },
+  {
+    "question": "Does the randomizer validate exact length (32 bytes) during deserialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f43d385e-3a4b-4dc0-a966-8df2e0b41260",
+    "timestamp": "2025-11-21 13:40:16.318859",
+    "report_generated": false
+  },
+  {
+    "question": "Could deeply nested serialized structures cause stack overflows during decoding?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_48b01871-1bb5-460b-8893-e42dfb29a70e",
+    "timestamp": "2025-11-21 13:40:36.820025",
+    "report_generated": false
+  },
+  {
+    "question": "Can attackers replay a valid initialization request to overwrite existing secrets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9570b26e-0636-404e-b1a5-6901a0c12b3f",
+    "timestamp": "2025-11-21 13:40:57.869496",
+    "report_generated": false
+  },
+  {
+    "question": "Can concurrent initialization requests for the same node cause inconsistent state?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5de0ae83-f497-4f0a-8e2d-a8b0dc61d3a7",
+    "timestamp": "2025-11-21 13:41:21.942616",
+    "report_generated": false
+  },
+  {
+    "question": "Is the initialization endpoint idempotent, preventing repeated state changes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_22847e42-0036-4608-b97c-bd710fc63711",
+    "timestamp": "2025-11-21 13:41:45.599255",
+    "report_generated": false
+  },
+  {
+    "question": "Could partial state remain if initialization fails midway?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8dfe308d-e2ea-4350-ae98-598dbbabc77f",
+    "timestamp": "2025-11-21 13:42:10.339333",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker trigger a state rollback after initialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_657e3c9a-323b-46b8-9daa-1379229107c3",
+    "timestamp": "2025-11-21 13:42:37.040760",
+    "report_generated": false
+  },
+  {
+    "question": "Are there locks preventing concurrent writes to StoredOffchainSecret?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ad38296c-c3dc-4eb5-90c3-9ce21259e155",
+    "timestamp": "2025-11-21 13:43:04.479480",
+    "report_generated": false
+  },
+  {
+    "question": "Does initialization depend on node order, and could reordering break assumptions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_72a389b0-fa66-42d0-8987-e04e881265ba",
+    "timestamp": "2025-11-21 13:43:32.604363",
+    "report_generated": false
+  },
+  {
+    "question": "Can attackers bypass the 'already initialized' check by manipulating storage keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7f45db0b-370d-421f-9e33-c7fe6a61eea6",
+    "timestamp": "2025-11-21 13:44:03.022334",
+    "report_generated": false
+  },
+  {
+    "question": "Does the storage key design prevent nodes overwriting each other's secrets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1789f797-2f86-491a-90af-c5862c6f0de3",
+    "timestamp": "2025-11-21 13:44:33.498375",
+    "report_generated": false
+  },
+  {
+    "question": "Does the contract verify that stored OffchainSecret matches the submitted one?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5d6b9d3e-d857-4933-b763-5900a5764f09",
+    "timestamp": "2025-11-21 13:45:05.756332",
+    "report_generated": false
+  },
+  {
+    "question": "Could uninitialized node storage be used by other endpoints?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d8116806-b51d-4b26-953a-f7af0d6c3244",
+    "timestamp": "2025-11-21 13:45:38.496640",
+    "report_generated": false
+  },
+  {
+    "question": "Are expired initialization requests rejected properly?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b0b429ab-f43f-44cc-8976-8d5e124366e0",
+    "timestamp": "2025-11-21 13:46:12.314324",
+    "report_generated": false
+  },
+  {
+    "question": "If protocol upgrades occur, could old secrets be migrated insecurely?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_35882c04-ed0d-43f6-9b3d-933347459bef",
+    "timestamp": "2025-11-21 13:46:45.432414",
+    "report_generated": false
+  },
+  {
+    "question": "Could multiple Swafe contracts interfere with each other’s initialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ffc95fd1-fe47-4704-a7b5-378ed134bdaf",
+    "timestamp": "2025-11-21 13:47:17.797042",
+    "report_generated": false
+  },
+  {
+    "question": "Can attackers pre-fill storage with malicious data before legitimate initialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9a1b1225-82bc-482d-b25a-207b24865383",
+    "timestamp": "2025-11-21 13:47:50.512554",
+    "report_generated": false
+  },
+  {
+    "question": "Is commitment verification and storage atomic, avoiding TOCTOU attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3650c217-76e3-4365-978d-38136461ca8e",
+    "timestamp": "2025-11-21 13:48:23.175023",
+    "report_generated": false
+  },
+  {
+    "question": "Can secrets be revoked, and could revocation be abused for DoS?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3dc2f514-0a64-481a-961c-f3da4a96bfcf",
+    "timestamp": "2025-11-21 13:48:57.256422",
+    "report_generated": false
   }
 ]
