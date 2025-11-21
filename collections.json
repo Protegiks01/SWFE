@@ -2698,5 +2698,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c37bd75a-b69f-4e74-a3e5-81e8861872c1",
     "timestamp": "2025-11-21 16:38:34.318620",
     "report_generated": false
+  },
+  {
+    "question": "Email Normalization: Could different casings serialize differently, breaking invariants?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_45022cf7-a1bf-4329-baf2-e4b2b4a562de",
+    "timestamp": "2025-11-21 16:39:48.521955",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Side Effects: Could side effects leak info or burn resources?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f701fbfb-1505-4107-b63c-89fb90087753",
+    "timestamp": "2025-11-21 16:40:02.097207",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization Canonicalization: Could lack of canonical encoding break verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dd81292a-56c5-41d4-82ce-ca5d2fb259c4",
+    "timestamp": "2025-11-21 16:40:15.459948",
+    "report_generated": false
+  },
+  {
+    "question": "Contract Endpoint Authentication: Could contracts skip verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a30f11c4-4055-4cb5-b523-88c68e2a4cea",
+    "timestamp": "2025-11-21 16:40:29.310695",
+    "report_generated": false
+  },
+  {
+    "question": "Swafe PK Distribution: Could key substitution attacks occur?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bab81c95-0729-4ca1-90d1-adf22da9f060",
+    "timestamp": "2025-11-21 16:40:43.856267",
+    "report_generated": false
+  },
+  {
+    "question": "Node ID Context Binding: Could compromised nodes replay tokens?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5942f608-d28f-44a0-a256-f8ceb447436f",
+    "timestamp": "2025-11-21 16:40:59.942000",
+    "report_generated": false
+  },
+  {
+    "question": "Time Source in Contract: Could blockchain time differ from real time?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6551beb1-1da9-4cb6-a4e8-54d48c97a193",
+    "timestamp": "2025-11-21 16:41:17.421208",
+    "report_generated": false
+  },
+  {
+    "question": "Email to VDRF Mapping: Could email extraction inconsistencies break lookups?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b19c6d74-1d3b-493f-bfd2-5396f454074a",
+    "timestamp": "2025-11-21 16:41:36.529814",
+    "report_generated": false
+  },
+  {
+    "question": "MskRecord Association: Could race conditions allow unauthorized access?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_64491c82-5b4c-4ac8-8c8c-722a497d0a57",
+    "timestamp": "2025-11-21 16:41:56.661654",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Reuse Across Endpoints: Could tokens be reused for different operations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4bc3b606-e00b-40ce-be25-074a81cecbbc",
+    "timestamp": "2025-11-21 16:42:18.024927",
+    "report_generated": false
+  },
+  {
+    "question": "Error Handling in Endpoints: Could error messages leak info?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d5e4dc84-9d6a-4f2d-a2b9-8fd1849da10a",
+    "timestamp": "2025-11-21 16:42:40.504490",
+    "report_generated": false
+  },
+  {
+    "question": "Concurrent Request Handling: Could shared state races break authorization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c14ad9ad-32d0-46be-a3d7-636dd15e89b4",
+    "timestamp": "2025-11-21 16:43:04.655955",
+    "report_generated": false
+  },
+  {
+    "question": "User PK Binding: Could mismatches allow unauthorized retrieval?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dcc1a7f3-7e31-4ef4-895a-bf3cdf0d4a1d",
+    "timestamp": "2025-11-21 16:43:29.417457",
+    "report_generated": false
+  },
+  {
+    "question": "Token Deserialization in Requests: Could malformed input crash endpoints?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a4510056-0da9-49df-8469-20a69a2a91bd",
+    "timestamp": "2025-11-21 16:43:55.817147",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Evaluation Consistency: Could timing leaks reveal email information?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_497cbc27-4729-4c58-9ba9-9de2286a493d",
+    "timestamp": "2025-11-21 16:44:23.024010",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Validity Coordination: Could skew cause inconsistent acceptance?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7f44d616-8123-4911-bac3-633759b4ae1c",
+    "timestamp": "2025-11-21 16:44:51.090746",
+    "report_generated": false
+  },
+  {
+    "question": "Email Privacy in Logs: Could logs leak plaintext emails?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dc8ae919-ea0a-48a7-9573-819cf5f0ac09",
+    "timestamp": "2025-11-21 16:45:20.298735",
+    "report_generated": false
+  },
+  {
+    "question": "Token Expiration During Processing: Could mid-request expiration cause corruption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1d1aceb3-49bb-483e-9901-45c533b98102",
+    "timestamp": "2025-11-21 16:45:49.883970",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Node Token Isolation: Could side-channels reveal token use?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_57ee5392-1fcc-46a6-9417-f4f26a1758b7",
+    "timestamp": "2025-11-21 16:46:21.715009",
+    "report_generated": false
+  },
+  {
+    "question": "State Consistency After Verification: Could failures leave inconsistent state?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c6f531c0-4544-4775-92a3-f9fadbe14477",
+    "timestamp": "2025-11-21 16:46:54.128103",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Storage On-Chain: Could lack of audit trail hide abuses?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e369552d-3518-4a9e-ba9b-663328b5b22d",
+    "timestamp": "2025-11-21 16:47:26.330933",
+    "report_generated": false
+  },
+  {
+    "question": "API Request Validation: Could insufficient validation cause crashes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_258142e1-ec89-46eb-9726-7a7bdd40187d",
+    "timestamp": "2025-11-21 16:47:59.946462",
+    "report_generated": false
+  },
+  {
+    "question": "Email Case Handling in VDRF: Could case sensitivity cause mismatches?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1c22c627-fb0f-4bd4-9762-acea94105ddf",
+    "timestamp": "2025-11-21 16:48:35.262551",
+    "report_generated": false
+  },
+  {
+    "question": "5-Minute Validity Window: Could the 5-minute limit be too restrictive?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_58456fc4-58fc-4d64-9fb2-28cbe9b63612",
+    "timestamp": "2025-11-21 16:49:08.987352",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Creation Race: Could near-expiration certificates fail token creation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_914f2a9e-5d67-4dd2-9ef7-85ceb822e01d",
+    "timestamp": "2025-11-21 16:49:43.353853",
+    "report_generated": false
   }
 ]
