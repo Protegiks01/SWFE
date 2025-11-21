@@ -5698,5 +5698,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1f752076-0ce0-47a6-8fcf-ec023c8dc68a",
     "timestamp": "2025-11-21 20:01:18.125829",
     "report_generated": false
+  },
+  {
+    "question": "Email Certificate Binding: When encrypting association data (RIK), does the associated data include the email certificate to prevent an attacker from using the same encrypted RIK with a different email? symmetric.rs:75-76",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7e940c7d-5275-4adb-bb64-88b24b87f2ff",
+    "timestamp": "2025-11-21 20:02:33.976468",
+    "report_generated": false
+  },
+  {
+    "question": "Master Secret Key Storage: The account's Master Secret Key (MSK) is encrypted with symmetric encryption. If the encryption key is derived from user-controlled data, could an attacker brute-force weak keys to decrypt the MSK? symmetric.rs:71-109",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f141f57e-9815-4931-9ceb-5c114614d829",
+    "timestamp": "2025-11-21 20:02:47.155515",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Share Encryption: Backup shares are encrypted using seal. If a malicious guardian who hasn't reached the threshold t obtains multiple encrypted shares, could weaknesses in the symmetric scheme enable correlation attacks to identify other guardians? symmetric.rs:71-109",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ca0343b2-a7a6-453a-ae17-831798067a3b",
+    "timestamp": "2025-11-21 20:03:00.398134",
+    "report_generated": false
+  },
+  {
+    "question": "Account Recovery Key Binding: When symmetric encryption is used to seal account recovery data (as seen in account/v0.rs), does the associated data properly bind the encrypted data to the specific account address, preventing replay across accounts? symmetric.rs:71-76",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_18186db4-af66-49ca-a127-458ef26e7802",
+    "timestamp": "2025-11-21 20:03:13.996659",
+    "report_generated": false
+  },
+  {
+    "question": "Type Alias Security: The file defines type aliases Mac, Nonce, and Key as fixed-size byte arrays. Could calling code accidentally mix up these types (e.g., using a nonce as a key), bypassing type safety? symmetric.rs:17-19",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fb2ebf20-3abc-42b3-9aa5-c40c61cd0aa9",
+    "timestamp": "2025-11-21 20:03:28.558409",
+    "report_generated": false
+  },
+  {
+    "question": "Public Visibility of Internal Types: The KDFPad, MACTuple, and NonceTuple structs are not pub, but their separators are accessible via the Tagged trait. Could external code misuse these separators? symmetric.rs:33-52",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9c1c3bbb-0a27-430e-a498-e40ba669c76b",
+    "timestamp": "2025-11-21 20:03:45.832962",
+    "report_generated": false
+  },
+  {
+    "question": "Separator Collision Resistance: Are there any collision checks or uniqueness guarantees for separators across the entire codebase? Could duplicate separators in different modules cause security issues? symmetric.rs:54-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_55045017-14c0-413a-a475-e067184ddf25",
+    "timestamp": "2025-11-21 20:04:02.384337",
+    "report_generated": false
+  },
+  {
+    "question": "Static Lifetime Requirement: The separators must be &'static str. Could this prevent dynamic separator generation based on runtime context (e.g., including account IDs), weakening separation? symmetric.rs:54-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_716bf4f8-2999-4e13-837f-80017bef212b",
+    "timestamp": "2025-11-21 20:04:21.379676",
+    "report_generated": false
+  },
+  {
+    "question": "Separator Encoding: The separators are UTF-8 strings. Could an attacker use Unicode normalization or homoglyphs to create visually identical but cryptographically different separators? symmetric.rs:54-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5260ffab-5bfd-49f2-9b83-f3e2a445fb49",
+    "timestamp": "2025-11-21 20:04:41.347668",
+    "report_generated": false
+  },
+  {
+    "question": "Case Sensitivity in Separators: The separators are case-sensitive strings. Could an attacker exploit case variations (e.g., 'v0:Sym-Mac' vs 'v0:sym-mac') to bypass domain separation? symmetric.rs:54-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_60c0f585-e922-4e93-b7d4-0f067080209d",
+    "timestamp": "2025-11-21 20:05:03.291070",
+    "report_generated": false
+  },
+  {
+    "question": "Tuple Separator Ordering: The MACTuple and NonceTuple put message separator first, then AD separator. If the order is reversed in calling code, could this break MAC verification? symmetric.rs:39-52",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ccaece45-6efd-4d9e-8e4d-28c44f52b497",
+    "timestamp": "2025-11-21 20:05:26.242014",
+    "report_generated": false
+  },
+  {
+    "question": "Tagged Trait Coherence: If multiple crates implement Tagged for the same type with different separators, could this lead to inconsistent domain separation across the system? symmetric.rs:54-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8b51fb37-4083-4d63-a85f-8c9d093e1220",
+    "timestamp": "2025-11-21 20:05:51.739340",
+    "report_generated": false
+  },
+  {
+    "question": "Separator Character Restrictions: Do the separators allow special characters or null bytes? Could an attacker craft a separator containing bincode delimiter characters that cause parsing ambiguities? symmetric.rs:54-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9ed07c77-ac41-4e01-81d0-9a9f0c690631",
+    "timestamp": "2025-11-21 20:06:18.414224",
+    "report_generated": false
+  },
+  {
+    "question": "Separator Length Limits: Are there any length limits on SEPARATOR strings? Could an attacker define a separator thousands of characters long, causing performance issues during serialization? symmetric.rs:54-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a2a9fcc1-d908-43f2-b2f7-6548761407fe",
+    "timestamp": "2025-11-21 20:06:46.453328",
+    "report_generated": false
+  },
+  {
+    "question": "Type Parameter Variance: The seal and open functions use different type parameters for message (M) and associated data (A). Could an attacker exploit Rust's type system to pass subtypes that serialize identically but have different security properties? symmetric.rs:71-76",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cf11197a-b9c0-49f3-8a68-2b3964f83b80",
+    "timestamp": "2025-11-21 20:07:17.422925",
+    "report_generated": false
+  },
+  {
+    "question": "Protocol Version in Separators: All separators use 'v0:' prefix. If the protocol upgrades to v1 but forgets to update some separators, could old and new ciphertexts be confused? symmetric.rs:54-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0677fc08-9cd7-4b63-9400-f7d7064f0bde",
+    "timestamp": "2025-11-21 20:07:47.524227",
+    "report_generated": false
+  },
+  {
+    "question": "NonceTuple Separator Collision: The NonceTuple has its own separator 'v0:sym-nonce' plus the message/AD separators. If the nonce generation logic is used outside this module, could nonce collisions occur? symmetric.rs:46-52",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d4fd04e7-376b-48c4-84a8-f510f03a336e",
+    "timestamp": "2025-11-21 20:08:18.260696",
+    "report_generated": false
+  },
+  {
+    "question": "MACTuple Separator Format: The MACTuple uses separator: (M::SEPARATOR, A::SEPARATOR) as a tuple. Could an attacker craft message and AD types where the concatenated separator tuple matches a different valid combination? symmetric.rs:39-44",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_423a8c37-af92-400e-840b-4e580b9de2bd",
+    "timestamp": "2025-11-21 20:08:48.871875",
+    "report_generated": false
+  },
+  {
+    "question": "KDFPad Separator Uniqueness: The KDFPad struct has separator 'v0:sym-pad'. If this same separator is used elsewhere in the codebase for different purposes, could KDF outputs collide? symmetric.rs:54-56",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b19751d7-db30-4490-b8e9-e4160b7e99a8",
+    "timestamp": "2025-11-21 20:09:20.237498",
+    "report_generated": false
+  },
+  {
+    "question": "Empty Associated Data Default: The EmptyAD type uses separator 'v0:sym-ad-empty'. If calling code defaults to EmptyAD when AD should be required (e.g., binding email certificates), could this enable replay attacks across accounts? symmetric.rs:28-30",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6ef8eb99-c977-4855-91b9-a38840f7d60a",
+    "timestamp": "2025-11-21 20:09:53.411506",
+    "report_generated": false
+  },
+  {
+    "question": "Associated Data Type Confusion: The open function accepts generic A: Tagged for associated data. If an attacker provides a different AD type than what was used in seal, the MAC verification should fail. But could type erasure in the calling code bypass this check? symmetric.rs:112-116",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_09185e80-1964-4cf1-9034-115256609e52",
+    "timestamp": "2025-11-21 20:10:27.444191",
+    "report_generated": false
+  },
+  {
+    "question": "Message Type Separator Format: Message types like TestMsg1 and TestMsg2 use separators like 'v0:test-message-v1'. Could an attacker register an account or backup with carefully chosen separators that collide with system-reserved prefixes? symmetric.rs:175-181",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_51ca238d-74df-4b9c-ab4b-9cdc187d77f8",
+    "timestamp": "2025-11-21 20:10:59.977189",
+    "report_generated": false
+  },
+  {
+    "question": "Separator Reuse Across Contexts: The file defines separators like 'v0:sym-pad', 'v0:sym-mac', and 'v0:sym-nonce'. If these separators are reused in other cryptographic contexts (e.g., signatures, commitments), could this enable cross-protocol attacks? symmetric.rs:54-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e93aae29-15d8-420e-9bba-44b95a2958d0",
+    "timestamp": "2025-11-21 20:11:33.927944",
+    "report_generated": false
+  },
+  {
+    "question": "Tagged Trait Implementation Trust: The Tagged trait requires implementors to define const SEPARATOR: &'static str. If a malicious or buggy type defines an empty separator, does this completely break domain separation between different message types? symmetric.rs:62-64",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a214b44d-6b40-4c9e-a0e2-80d654b548c3",
+    "timestamp": "2025-11-21 20:12:06.992267",
+    "report_generated": false
+  },
+  {
+    "question": "Unwrap on Serialization: The seal function calls .unwrap() on serialization. If the plaintext type has custom Serialize logic that returns errors, could this lead to panics that disrupt transaction flow? symmetric.rs:78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cf8a0a4b-2263-48e6-9f38-710757256b9e",
+    "timestamp": "2025-11-21 20:12:39.188488",
+    "report_generated": false
   }
 ]
