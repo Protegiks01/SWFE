@@ -1948,5 +1948,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_07f5dc9a-56dc-4db3-baee-700d2d1efb3d",
     "timestamp": "2025-11-21 15:20:26.190684",
     "report_generated": false
+  },
+  {
+    "question": "G2 Error Propagation: Do deserialization errors leak curve point information?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_045f4313-9221-4ab4-990f-80d51505214e",
+    "timestamp": "2025-11-21 15:21:44.989571",
+    "report_generated": false
+  },
+  {
+    "question": "G2 Visitor Byte-by-Byte: Could reading bytes one-by-one leak memory access patterns?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_84ebcff5-7a98-433a-a400-a2e08ebdd6c5",
+    "timestamp": "2025-11-21 15:21:58.612999",
+    "report_generated": false
+  },
+  {
+    "question": "G2 Deserialization Side-Channels: Is decompression constant-time?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a152392b-a8e5-4ab4-9f61-d87906dc97ed",
+    "timestamp": "2025-11-21 15:22:12.170911",
+    "report_generated": false
+  },
+  {
+    "question": "G2 Compression Efficiency: Could using 96-byte compressed G2 introduce subtle vulnerabilities?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d2c27b1a-92a4-4fea-8f50-77c26125f9bc",
+    "timestamp": "2025-11-21 15:22:26.170656",
+    "report_generated": false
+  },
+  {
+    "question": "G2 Twist Security: Does serialization ensure points are on the correct twist?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1d8de564-2f6f-47b2-b2d7-e7f584e57d82",
+    "timestamp": "2025-11-21 15:22:40.835108",
+    "report_generated": false
+  },
+  {
+    "question": "G2 Identity Serialization: How does the G2 identity serialize, and can this be exploited in VDRF verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1281185c-b5bb-4a11-ae24-dd0a95b62e60",
+    "timestamp": "2025-11-21 15:22:56.915871",
+    "report_generated": false
+  },
+  {
+    "question": "G2 Hash-to-Curve Output: Are points from hash_to_g2 guaranteed to lie in the prime-order subgroup?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_616cdd41-de12-444d-bc34-612970753a9f",
+    "timestamp": "2025-11-21 15:23:14.281672",
+    "report_generated": false
+  },
+  {
+    "question": "G2 Cofactor Clearing: Does G2Affine::deserialize_compressed automatically clear the cofactor?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c323526f-f10a-494c-9ad1-09c8f38cc615",
+    "timestamp": "2025-11-21 15:23:33.502809",
+    "report_generated": false
+  },
+  {
+    "question": "G2 Size Validation: The code checks bytes.len() != 96 for G2 compressed points. Is 96 bytes always correct?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_af8dda7b-7aec-47f2-9ecc-41e9f00ba61e",
+    "timestamp": "2025-11-21 15:23:54.318326",
+    "report_generated": false
+  },
+  {
+    "question": "Fr Secret Share Storage: When VDRF shares are stored via serialization, could storage format leak information about polynomial structure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_664c555c-1fde-479f-80c2-63d1f5b3c1d8",
+    "timestamp": "2025-11-21 15:24:15.930425",
+    "report_generated": false
+  },
+  {
+    "question": "Fr Equality After Round-Trip: Is deserialize(serialize(fr)) == fr guaranteed for all values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_45f9d5be-3d18-4c43-a3e9-21d8f3df744e",
+    "timestamp": "2025-11-21 15:24:38.507276",
+    "report_generated": false
+  },
+  {
+    "question": "Fr Memory Representation: Does the in-memory representation match the serialized form, or could conversion introduce vulnerabilities?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dd66835c-8435-40b2-8d63-5f1f9d2168d0",
+    "timestamp": "2025-11-21 15:25:01.817768",
+    "report_generated": false
+  },
+  {
+    "question": "Fr Deserialization Performance: Could repeated deserialization of Fr elements create timing attack surfaces?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ff9edf5e-29ff-4226-a6e2-6f4d71064d92",
+    "timestamp": "2025-11-21 15:25:26.841548",
+    "report_generated": false
+  },
+  {
+    "question": "Fr Endianness Consistency: from_le_bytes_mod_order uses little-endian. Is this consistent across all serialization paths?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1e936348-a1a2-4f31-bfe6-3f1770564a74",
+    "timestamp": "2025-11-21 15:25:52.565072",
+    "report_generated": false
+  },
+  {
+    "question": "Fr Compression Unnecessary: Fr elements are already 32 bytes. Why use compressed serialization, and could this cause confusion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2bc67b55-fbc3-479d-97a6-81fd46416e23",
+    "timestamp": "2025-11-21 15:26:20.073610",
+    "report_generated": false
+  },
+  {
+    "question": "Fr Negative Values: Could deserialization accept values that represent negative elements modulo p, violating canonical forms?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_53f125d2-77d4-4c73-86cc-3c3e5b658cbc",
+    "timestamp": "2025-11-21 15:26:48.891004",
+    "report_generated": false
+  },
+  {
+    "question": "Fr Additive vs Multiplicative Identity: Does serialization distinguish between Fr::ZERO (additive identity) and Fr::ONE (multiplicative identity)?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2b3678fe-8bb7-4aac-b616-f86995d28b68",
+    "timestamp": "2025-11-21 15:27:17.996724",
+    "report_generated": false
+  },
+  {
+    "question": "Fr Batch Deserialization Safety: When deserializing Vec<Fr> for polynomial coefficients, does one invalid Fr corrupt the entire batch?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_741f9fcd-4b57-42a6-90b2-04aa53a81dc7",
+    "timestamp": "2025-11-21 15:27:49.718008",
+    "report_generated": false
+  },
+  {
+    "question": "Fr Tuple Serialization Optimization: Does using serialize_tuple(32) provide any security benefits over serialize_bytes for secret field elements?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c3fbec39-ba33-40cb-9da8-8f2bb91c9456",
+    "timestamp": "2025-11-21 15:28:24.437049",
+    "report_generated": false
+  },
+  {
+    "question": "Fr Zeroization: After deserializing a VDRF secret share (Fr element), is the intermediate byte buffer zeroized to prevent memory leaks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ed176e70-b5a3-486e-9725-cf85a6166df0",
+    "timestamp": "2025-11-21 15:29:00.297856",
+    "report_generated": false
+  },
+  {
+    "question": "Fr Serialization Timing: Does serializing different Fr values take constant time, or could timing variations leak information about VDRF secret shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b64b0995-b220-47a7-af36-dc5df1f4d854",
+    "timestamp": "2025-11-21 15:29:35.482335",
+    "report_generated": false
+  },
+  {
+    "question": "Fr Hash Collision: In hash_to_fr, could two different inputs produce the same field element after from_le_bytes_mod_order, affecting VDRF security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3dc4fdc3-b267-433f-b6a7-e2eb10ebf4c4",
+    "timestamp": "2025-11-21 15:30:11.376141",
+    "report_generated": false
+  },
+  {
+    "question": "Fr Visitor Error Messages: Do error messages in FrVisitor reveal information about the expected vs actual byte values, potentially leaking secret data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_87298a11-53c8-4ce7-958d-043ad394ee23",
+    "timestamp": "2025-11-21 15:30:49.508641",
+    "report_generated": false
+  },
+  {
+    "question": "Fr Secret Leakage via Serialization: When VDRF secret shares (wrapped in Fr) are serialized, could the serialization process leak bits through side channels?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1fd0fa5c-5c3d-43d6-85db-a25dfdbe7f68",
+    "timestamp": "2025-11-21 15:31:27.723767",
+    "report_generated": false
+  },
+  {
+    "question": "Fr Canonical Encoding: Does Fr::deserialize_compressed enforce that the value is less than the field modulus? Could non-canonical values break equality checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bac3270b-cf99-47c6-b82e-c5535df8148e",
+    "timestamp": "2025-11-21 15:32:05.985734",
+    "report_generated": false
   }
 ]
