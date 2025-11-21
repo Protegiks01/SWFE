@@ -2248,5 +2248,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8bed23d9-29e4-45f0-91f5-29492aa323de",
     "timestamp": "2025-11-21 15:43:09.003776",
     "report_generated": false
+  },
+  {
+    "question": "Concurrent Hash-to-Curve Operations: Are hash_to_g1 and hash_to_g2 thread-safe? Could concurrent VDRF operations cause issues with the hasher state?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6605b060-f57c-4102-abe4-666dde402a1b",
+    "timestamp": "2025-11-21 15:44:19.263587",
+    "report_generated": false
+  },
+  {
+    "question": "Hash-to-Curve Bias: Does the hash-to-curve implementation have uniform distribution over the curve? Could biased outputs affect VDRF security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8459bc6e-309e-45ec-b349-5a8f4f2352f8",
+    "timestamp": "2025-11-21 15:44:33.876009",
+    "report_generated": false
+  },
+  {
+    "question": "Domain Separator Injection in Email Certs: If email certificates use hash-to-curve with user-controlled data, could an attacker inject domain separators to create collisions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_09308f2a-9538-4ea7-96a3-1a13a9fb938b",
+    "timestamp": "2025-11-21 15:44:48.145922",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Type Hash Collision: Could an attacker craft two different Tagged types that, when encoded and hashed, produce the same G1 or G2 point, breaking VDRF uniqueness?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9456a7a6-856a-4503-80f9-cd7d1e491054",
+    "timestamp": "2025-11-21 15:45:03.517949",
+    "report_generated": false
+  },
+  {
+    "question": "Hash-to-Curve Unwrap Safety: Both hash-to-curve functions call .unwrap() after .hash(). Under what conditions could hashing fail, and could this cause panics during critical operations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b201c04a-2991-4b8c-9416-76c144db8419",
+    "timestamp": "2025-11-21 15:45:20.393621",
+    "report_generated": false
+  },
+  {
+    "question": "DefaultFieldHasher Configuration: DefaultFieldHasher<Sha3_256, 128> uses a 128-byte security parameter. Is this sufficient for BLS12-381's 128-bit security level?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8dfe51e3-cf56-44ed-83b0-de32eac50853",
+    "timestamp": "2025-11-21 15:45:38.762935",
+    "report_generated": false
+  },
+  {
+    "question": "WBMap Domain Separation: Does the WBMap implementation in arkworks respect the domain separator passed to MapToCurveBasedHasher::new()?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_20a952e0-e540-4240-9e41-2e1b10566c4e",
+    "timestamp": "2025-11-21 15:45:59.574028",
+    "report_generated": false
+  },
+  {
+    "question": "Input Encoding in Hash-to-Curve: hash_to_g2 hashes input.encode(). If the encode() function has vulnerabilities, could this affect the hash-to-curve security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d68151fe-3697-4e05-9d8a-995f291bf96a",
+    "timestamp": "2025-11-21 15:46:20.370689",
+    "report_generated": false
+  },
+  {
+    "question": "Pedersen Generator Domain Collision: PedersenGenSep uses \"v0:pedersen\" with names \"H\" and \"G\". Could these collide with VDRF domains or other commitment schemes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_11d8e3ae-389a-4f17-8025-b1eab481f254",
+    "timestamp": "2025-11-21 15:46:42.122358",
+    "report_generated": false
+  },
+  {
+    "question": "Hash-to-Curve Determinism: Are hash_to_g1 and hash_to_g2 deterministic across all platforms? Could architecture differences cause different curve points for the same input?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2ddf4692-1888-4733-89b1-3e4f4be0e523",
+    "timestamp": "2025-11-21 15:47:05.063977",
+    "report_generated": false
+  },
+  {
+    "question": "Unicode in Domain Separator: If T::SEPARATOR contains Unicode characters, does format! handle them correctly across different locales/platforms, ensuring consistent hashing?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_75081795-cc56-4186-9e7d-c4ded983b0c2",
+    "timestamp": "2025-11-21 15:47:30.051506",
+    "report_generated": false
+  },
+  {
+    "question": "Domain String Length Limits: Are there any length limits on the combined domain string \"swafe-bls12-381-g2 : {SEPARATOR}\"? Could extremely long separators cause issues?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_09c2bbee-6f1d-486a-9811-514ddbfa011d",
+    "timestamp": "2025-11-21 15:47:55.303920",
+    "report_generated": false
+  },
+  {
+    "question": "Hasher Creation Panic: hash_to_g1 and hash_to_g2 both use .expect(\"Failed to create hasher\"). Under what conditions could hasher creation fail, and could this be exploited for DoS?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8605ff71-968b-4a0a-9311-19957da310c7",
+    "timestamp": "2025-11-21 15:48:21.388407",
+    "report_generated": false
+  },
+  {
+    "question": "Domain Separator Versioning: The v0: prefix suggests versioning. If a v1: version is introduced, could old VDRF evaluations be replayed or confused with new ones?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_efe8f5e9-9bf8-46c4-ae84-d2ba3a742a46",
+    "timestamp": "2025-11-21 15:48:49.352306",
+    "report_generated": false
+  },
+  {
+    "question": "VdrfKPoint Domain Reuse: The VdrfKPoint type uses separator \"v0:vdrf-input\". Could another module accidentally reuse this separator, breaking VDRF security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4eed1e24-5948-472a-9159-6e69fea2a111",
+    "timestamp": "2025-11-21 15:49:18.675342",
+    "report_generated": false
+  },
+  {
+    "question": "G1 vs G2 Domain Overlap: The only difference between hash_to_g1 and hash_to_g2 domain strings is \"g1\" vs \"g2\". Is this sufficient to prevent cross-group attacks in mixed-usage scenarios?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_38530efe-d2b2-42c9-ba63-3b8fd8ad40f9",
+    "timestamp": "2025-11-21 15:49:48.287398",
+    "report_generated": false
+  },
+  {
+    "question": "Separator Format String Injection: Could special characters in T::SEPARATOR break the format! string parsing, leading to incorrect domain separation in VDRF input hashing?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1e695d80-8101-48f7-a72f-23f733ba3cf0",
+    "timestamp": "2025-11-21 15:50:19.050497",
+    "report_generated": false
+  },
+  {
+    "question": "Empty Separator Attack: Can a malicious implementation of Tagged provide an empty SEPARATOR, potentially colliding with another type's domain and allowing email association attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_76ec5447-bfc8-4247-95ec-a8a697f6997d",
+    "timestamp": "2025-11-21 15:50:51.509030",
+    "report_generated": false
+  },
+  {
+    "question": "Domain Separator Collision: In hash_to_g2, the domain separator is format!(\"swafe-bls12-381-g2 : {}\", T::SEPARATOR). Could two different Tagged types with crafted SEPARATOR values produce the same domain string, causing type confusion in VDRF?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_91ff6026-8d61-4bd2-a2c3-6d45a2750b63",
+    "timestamp": "2025-11-21 15:51:24.609310",
+    "report_generated": false
+  },
+  {
+    "question": "Pairing Verification Bypass via Assert: Could an attacker craft inputs that pass the length assert! but still cause undefined behavior or incorrect pairing results in edge cases?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_40f4ccdb-df6c-425d-a99d-2f4426580a65",
+    "timestamp": "2025-11-21 15:51:57.932494",
+    "report_generated": false
+  },
+  {
+    "question": "Concurrent Pairing Checks: If multiple VDRF verifications occur concurrently using check_pairing, are there any race conditions or shared state issues in the underlying arkworks library?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a3201e5d-60dd-4a5e-87c3-0990cb6701fd",
+    "timestamp": "2025-11-21 15:52:31.119470",
+    "report_generated": false
+  },
+  {
+    "question": "Pairing Equation Reformulation: VDRF verification reformulates e(G1, eval) = e(C0, K) as e(G1, eval) * e(C0, -K) = 1. Could the negation introduce vulnerabilities?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4591ba81-4ae7-441f-b56f-3df51df72596",
+    "timestamp": "2025-11-21 15:53:04.402273",
+    "report_generated": false
+  },
+  {
+    "question": "Generator Point Pairing: Does check_pairing properly handle the case where G1Affine::generator() is used in VDRF verification? Are there any edge cases with the generator point?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bb8c052c-3fba-4cdd-a3c7-0f27a82597c3",
+    "timestamp": "2025-11-21 15:53:38.399729",
+    "report_generated": false
+  },
+  {
+    "question": "Pairing Check Error Handling: Does check_pairing handle all possible error conditions from the underlying multi_pairing operation, or could panics occur during VDRF verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e1a86e5c-9e0e-471c-b704-815327d18cee",
+    "timestamp": "2025-11-21 15:54:10.137464",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Share Pairing Optimization: The VDRF combine function uses pairing checks per share. Could an attacker provide many invalid shares to cause excessive pairing computations, affecting liveness?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c656d929-a800-4299-a1ec-c9ee56e30d1f",
+    "timestamp": "2025-11-21 15:54:43.053868",
+    "report_generated": false
   }
 ]
