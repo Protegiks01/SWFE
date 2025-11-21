@@ -1648,5 +1648,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a6c55440-f47d-418a-855f-22870b37f746",
     "timestamp": "2025-11-21 14:58:26.268495",
     "report_generated": false
+  },
+  {
+    "question": "Multi-Pairing Optimization: Could optimizations introduce errors?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c9184b91-2075-4cd2-ae40-bda90c04bdb8",
+    "timestamp": "2025-11-21 14:59:30.613031",
+    "report_generated": false
+  },
+  {
+    "question": "Pairing Performance Impact: Can slow verification harm UX/security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e3a0d3f9-31d5-4bde-8c40-586bae06986f",
+    "timestamp": "2025-11-21 14:59:43.508683",
+    "report_generated": false
+  },
+  {
+    "question": "Curve25519 vs BLS12-381: Performance/security tradeoff?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_addb752d-d3a2-43ef-a11c-e91f6852c4be",
+    "timestamp": "2025-11-21 14:59:56.634687",
+    "report_generated": false
+  },
+  {
+    "question": "Random Oracle Assumption: Could structured input break RO?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d42120e7-30bf-48fc-94df-d87f0e8a7dff",
+    "timestamp": "2025-11-21 15:00:11.217848",
+    "report_generated": false
+  },
+  {
+    "question": "Zero-Knowledge Properties: Does verification leak info?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dfb9c104-969c-4333-b73b-f51f1e9beb25",
+    "timestamp": "2025-11-21 15:00:25.912070",
+    "report_generated": false
+  },
+  {
+    "question": "Bilinear Map Properties: Is bilinearity enforced correctly?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bc0e2972-bace-4a2b-a8dc-d7b58c30a3a2",
+    "timestamp": "2025-11-21 15:00:41.870209",
+    "report_generated": false
+  },
+  {
+    "question": "Hash-to-Curve Security: Is WBMap sufficiently robust?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d63e0fde-c4e9-4829-a362-22fc58b8b949",
+    "timestamp": "2025-11-21 15:00:59.168635",
+    "report_generated": false
+  },
+  {
+    "question": "Embedding Degree Security: Is k=12 adequate?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_55c8a088-ff8e-4f23-ba3e-3a7490d7a968",
+    "timestamp": "2025-11-21 15:01:17.866727",
+    "report_generated": false
+  },
+  {
+    "question": "Pairing Non-Degeneracy: Is non-degeneracy guaranteed?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_33e1e22b-02cc-44ac-bf2a-c1e7429a93a3",
+    "timestamp": "2025-11-21 15:01:38.915881",
+    "report_generated": false
+  },
+  {
+    "question": "Group Operation Security: Are G1/G2 ops constant-time?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f1e8e73a-7f89-4648-a096-fa2d4a059507",
+    "timestamp": "2025-11-21 15:02:00.874430",
+    "report_generated": false
+  },
+  {
+    "question": "Field Arithmetic Security: Are Fr ops constant-time?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_eeafc181-4b12-4489-a212-3555d07122ad",
+    "timestamp": "2025-11-21 15:02:22.887624",
+    "report_generated": false
+  },
+  {
+    "question": "Curve Parameter Validation: Are parameters assumed correct?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0cf37f4b-ff1f-43a1-b920-f8c938d88538",
+    "timestamp": "2025-11-21 15:02:46.833602",
+    "report_generated": false
+  },
+  {
+    "question": "Cofactor Handling: Is cofactor handling correct for G2?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dfbfb4b5-abf8-4eb4-b5c7-95e9d9a4cdff",
+    "timestamp": "2025-11-21 15:03:11.214865",
+    "report_generated": false
+  },
+  {
+    "question": "Subgroup Order Security: Is subgroup size adequate for thresholds?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4814d438-043a-493d-b9a8-3457511c99be",
+    "timestamp": "2025-11-21 15:03:36.946728",
+    "report_generated": false
+  },
+  {
+    "question": "Generator Point Hardcoding: Are generators canonical?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_002164ca-d2ba-45ac-b87a-a56a7ca78ca3",
+    "timestamp": "2025-11-21 15:04:03.572717",
+    "report_generated": false
+  },
+  {
+    "question": "Type Alias Confusion: Could alias misuse introduce bugs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_91c1bf8c-1331-4744-8ffd-4a03bf8e6c73",
+    "timestamp": "2025-11-21 15:04:31.663697",
+    "report_generated": false
+  },
+  {
+    "question": "Arkworks Library Trust: Could arkworks bugs break pairing ops?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_550c92c1-1b1d-4f0e-8781-819dfb9e443f",
+    "timestamp": "2025-11-21 15:05:00.606396",
+    "report_generated": false
+  },
+  {
+    "question": "Pairing-Friendly Curve Attacks: Are known attacks applicable to VDRF?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ddd00eb8-d7da-40e9-b119-08359501c8a8",
+    "timestamp": "2025-11-21 15:05:30.810307",
+    "report_generated": false
+  },
+  {
+    "question": "Curve Choice Security: Is BLS12-381 sufficient long-term?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_84887c3e-136d-4ba2-b68d-d79cf752b95b",
+    "timestamp": "2025-11-21 15:06:02.416447",
+    "report_generated": false
+  },
+  {
+    "question": "Vector Fr and G1 Correspondence: Does serialization enforce coefficient ↔ commitment alignment?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_671b8db0-577a-4d0f-9898-72b07de9829c",
+    "timestamp": "2025-11-21 15:06:32.837789",
+    "report_generated": false
+  },
+  {
+    "question": "Vector Serialization Format Mismatch: Could tuple-vs-byte confusion occur?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e77a1dd4-2ff5-43c5-b227-8004c6af3c64",
+    "timestamp": "2025-11-21 15:07:02.759571",
+    "report_generated": false
+  },
+  {
+    "question": "Vector G1 Partial Deserialization: Is partial state cleaned up?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b6dfa8eb-fc0a-4601-af6b-e614d6ea7ae6",
+    "timestamp": "2025-11-21 15:07:33.757936",
+    "report_generated": false
+  },
+  {
+    "question": "Vector G1 Size Explosion: Can attackers submit vectors large enough for DoS?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_151a1ea8-9e23-435d-913f-2a799f74e2dc",
+    "timestamp": "2025-11-21 15:08:05.328488",
+    "report_generated": false
+  },
+  {
+    "question": "Vector G1 Batch Verification: Are efficient batch checks possible?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c81576c9-26ed-49ae-ab59-a15d1e55c511",
+    "timestamp": "2025-11-21 15:08:37.266151",
+    "report_generated": false
+  },
+  {
+    "question": "Vector G1 Identity Elements: Can identity points break polynomial reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8d575e70-e807-4157-9c4e-7951cf0994d2",
+    "timestamp": "2025-11-21 15:09:07.329892",
+    "report_generated": false
   }
 ]
