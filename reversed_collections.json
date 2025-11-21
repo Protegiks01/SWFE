@@ -3748,5 +3748,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9aef0c60-29e8-40b9-b76d-141465624588",
     "timestamp": "2025-11-21 17:35:06.655644",
     "report_generated": false
+  },
+  {
+    "question": "String Length Exploitation: Could extremely large String lengths cause memory exhaustion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fa0be47d-f2f1-499d-b4ce-a50ad53427c8",
+    "timestamp": "2025-11-21 17:36:16.670365",
+    "report_generated": false
+  },
+  {
+    "question": "Large Allocation via Vec Deserialization: Could huge Vec lengths exhaust memory during share or backup deserialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_70e70d85-6cef-4572-9fee-6d24dad0da70",
+    "timestamp": "2025-11-21 17:36:29.604661",
+    "report_generated": false
+  },
+  {
+    "question": "Floating Point NaN/Infinity Injection: Could malicious float encodings break comparison logic enabling guardian bypass?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_30e994e9-9233-41b3-9c4b-067a4c000ad3",
+    "timestamp": "2025-11-21 17:36:43.443113",
+    "report_generated": false
+  },
+  {
+    "question": "Invalid UTF-8 in String Fields: Could invalid UTF-8 cause panics when used in cryptographic operations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bfd65373-d21b-47ab-9f74-af71b9fb8d87",
+    "timestamp": "2025-11-21 17:36:57.072972",
+    "report_generated": false
+  },
+  {
+    "question": "Recursive Type Deserialization: Could recursive types cause infinite loops during deserialization, hanging the system during recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7de43464-115d-4e93-887d-c9805b751ed2",
+    "timestamp": "2025-11-21 17:37:11.325916",
+    "report_generated": false
+  },
+  {
+    "question": "Nested Structure Depth Attack: Could deeply nested serialized structures cause stack overflow during deserialization, crashing off-chain nodes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_77254490-a912-43af-8149-ca7734e1a2e3",
+    "timestamp": "2025-11-21 17:37:27.371294",
+    "report_generated": false
+  },
+  {
+    "question": "Integer Overflow in Length Fields: Could bincode variable-length length fields cause integer overflow leading to memory corruption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_322e4fd6-fefd-42d5-b71a-c172ccb52a65",
+    "timestamp": "2025-11-21 17:37:46.419020",
+    "report_generated": false
+  },
+  {
+    "question": "Vec Length Exploitation: Bincode encodes Vec length as a variable integer. Could an attacker provide a huge length field to cause memory allocation failures or bypass length validation checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_09dcd50d-5506-43b4-a8cb-7045580e9ac7",
+    "timestamp": "2025-11-21 17:38:05.430041",
+    "report_generated": false
+  },
+  {
+    "question": "Option None vs Some Confusion: Could maliciously crafted bytes cause Option::None to deserialize as Option::Some(attacker_data), bypassing validation checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f1385300-56d8-4822-9b9e-2f6ab359c581",
+    "timestamp": "2025-11-21 17:38:25.344937",
+    "report_generated": false
+  },
+  {
+    "question": "Struct Field Reordering Attack: If a struct's field order changes between versions, could old serialized data deserialize with fields swapped, corrupting critical state like guardian thresholds?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_49b433a4-0bed-49e0-af90-9c4d5cabcbcd",
+    "timestamp": "2025-11-21 17:38:46.618927",
+    "report_generated": false
+  },
+  {
+    "question": "Enum Variant Confusion: If versioned enums are serialized, could an attacker craft bytes that deserialize as a different variant, enabling state corruption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_115753d1-1a6a-4113-8f84-f282f53c610c",
+    "timestamp": "2025-11-21 17:39:08.888436",
+    "report_generated": false
+  },
+  {
+    "question": "Type Substitution Attack in deserialize(): The deserialize::<T>() function encode.rs:62-74 uses bincode without explicit type verification. Could an attacker deserialize MasterSecretKey bytes as AccountId, bypassing authorization checks for backup reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8769b160-0e8c-427f-9476-6fca82e618c0",
+    "timestamp": "2025-11-21 17:39:31.999953",
+    "report_generated": false
+  },
+  {
+    "question": "Trait Object Domain Confusion: If Tagged is used via trait objects (&dyn Tagged), could dynamic dispatch enable SEPARATOR confusion when deserializing, allowing type substitution attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cbddffd5-d141-4c9a-b93d-622a0c3faa3a",
+    "timestamp": "2025-11-21 17:39:56.053663",
+    "report_generated": false
+  },
+  {
+    "question": "Associated Type Domain Separation: If Tagged types have associated types with different security requirements, does the SEPARATOR adequately distinguish between them?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_059852c4-ba45-4b1c-ae5b-e14c45e515f0",
+    "timestamp": "2025-11-21 17:40:21.193920",
+    "report_generated": false
+  },
+  {
+    "question": "Lifetime Parameter Encoding Gaps: Could lifetime parameters in Tagged implementations affect domain separation, where Foo<'a> and Foo<'b> have the same SEPARATOR but different security properties?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b98eeef2-b3cf-4457-b637-63cf24cc2d8a",
+    "timestamp": "2025-11-21 17:40:48.259455",
+    "report_generated": false
+  },
+  {
+    "question": "Generic Type Parameter Confusion: If Tagged is implemented for generic types with different type parameters, could SEPARATOR values fail to distinguish between instantiations, enabling type confusion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_51aedf3f-1cec-4c37-a6c9-5d6597786ffb",
+    "timestamp": "2025-11-21 17:41:16.778663",
+    "report_generated": false
+  },
+  {
+    "question": "SEPARATOR Runtime Modification: Although SEPARATOR is a const encode.rs:9, could unsafe code or trait implementation tricks modify it at runtime, enabling dynamic domain separation bypass?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e4e858a0-0a2e-4dc9-8d80-43c947caf346",
+    "timestamp": "2025-11-21 17:41:45.304998",
+    "report_generated": false
+  },
+  {
+    "question": "Version Migration State Corruption: During a hypothetical migration from v0 to v1 separators, could partially migrated state allow SEPARATOR collisions that enable unauthorized access?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6940d296-d0be-4c9a-969e-0d648cf45b29",
+    "timestamp": "2025-11-21 17:42:14.805215",
+    "report_generated": false
+  },
+  {
+    "question": "Mixed Version Attack: If an account uses v0 backups but recovers with v1 logic, could an attacker exploit encoding differences to reconstruct backups without proper guardian approval?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cfe5fe9e-47d0-4fe0-b096-e0829a082f52",
+    "timestamp": "2025-11-21 17:42:46.145561",
+    "report_generated": false
+  },
+  {
+    "question": "Version Separator Collision: Could 'v0:backup' and 'v1:backup' have overlapping encodings in certain edge cases, enabling version confusion attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_07f64b7e-1084-459b-b84f-77eb75344e55",
+    "timestamp": "2025-11-21 17:43:18.415972",
+    "report_generated": false
+  },
+  {
+    "question": "Forward Compatibility Exploitation: If v1 types are introduced, could old code deserializing v0 data accept v1 encodings, leading to type confusion vulnerabilities that enable unauthorized account recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5d611d17-37fd-414d-9941-74c81e7fb440",
+    "timestamp": "2025-11-21 17:43:50.508351",
+    "report_generated": false
+  },
+  {
+    "question": "Version Downgrade Attack: The 'v0:' prefix in SEPARATOR values suggests versioning. Could an attacker force deserialization of newer versioned data as v0 types, bypassing security checks introduced in later versions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a920255c-7da2-4f02-b743-2dcaefa35384",
+    "timestamp": "2025-11-21 17:44:23.805331",
+    "report_generated": false
+  },
+  {
+    "question": "MAC Authentication Domain Bypass: If authenticated encryption uses Tagged::encode() for additional authenticated data (AAD), could SEPARATOR collisions enable MAC forgery across different encryption contexts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f8155346-eae8-4a24-a8f9-f07950fd333c",
+    "timestamp": "2025-11-21 17:44:57.658016",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Function Domain Mixing: When cryptographic hashes use Tagged::encode() for input, could identical data with different SEPARATOR values hash to predictable or related outputs, weakening privacy guarantees?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ff1ddb59-8ccf-4360-8f90-56d75f09efd0",
+    "timestamp": "2025-11-21 17:45:34.551474",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Domain Separation Failure: If VDRF evaluation uses Tagged::encode() for input hashing, could an attacker craft inputs that collide across different VDRF contexts, enabling email-to-account association privacy violations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_732f67ac-8893-4ca7-84ee-43c93ff7f393",
+    "timestamp": "2025-11-21 17:46:09.132764",
+    "report_generated": false
   }
 ]
