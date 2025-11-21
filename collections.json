@@ -3748,5 +3748,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_39144ded-5514-4f8e-b252-6797203882e9",
     "timestamp": "2025-11-21 17:56:56.977270",
     "report_generated": false
+  },
+  {
+    "question": "MskRecord Commitment Storage: Association records store commitment vectors v0.rs:146 . Is the vector length validated against the threshold? Could an attacker submit too few or too many commitments to break threshold security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8babd82f-613c-4580-9940-140b1e13ecc6",
+    "timestamp": "2025-11-21 17:58:12.589155",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment-Ciphertext Binding: Commitments are stored alongside encrypted master keys v0.rs:144 . Are they cryptographically bound, or could an attacker swap commitments between different encrypted keys, enabling unauthorized decryption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_732a97dd-d9e1-4a3d-87bd-a2134599b19b",
+    "timestamp": "2025-11-21 17:58:25.522955",
+    "report_generated": false
+  },
+  {
+    "question": "SoK Proof Verification in Upload: When uploading MSK records, is the SoK proof verified before storing? If not, could an attacker store invalid proofs that later cause verification failures, locking users out of accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_413afb30-ee2d-48dd-b6d7-20ee2a50e594",
+    "timestamp": "2025-11-21 17:58:38.980554",
+    "report_generated": false
+  },
+  {
+    "question": "Email Certificate and Commitment Linking: Email certificates should be linked to commitments. Could an attacker present a valid certificate for one email but use commitments for a different email, creating false associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0a51c688-c782-4f1d-9ade-b52864a3325c",
+    "timestamp": "2025-11-21 17:58:55.094856",
+    "report_generated": false
+  },
+  {
+    "question": "Node Secret Share Opening Exposure: NodeSecretShare contains a PedersenOpen v0.rs:85 . Is this opening properly zeroized when the node share is dropped? Could leaked openings enable bypassing guardian approval?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8578dba9-3c3f-4559-bf81-f584120dd5e1",
+    "timestamp": "2025-11-21 17:59:09.626053",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Aggregation in MskResult: Multiple commitments are aggregated in EncapsulatedMsk v0.rs:126 . Could an attacker manipulate the aggregation to produce a valid-looking but incorrect commitment sum?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_91b545ff-be99-458a-a3a4-6fdb4b83e0fb",
+    "timestamp": "2025-11-21 17:59:25.328316",
+    "report_generated": false
+  },
+  {
+    "question": "SoK Proof Reuse: Could a SoK proof generated for one email association be replayed for a different association with the same commitments, enabling email address changes without proper verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_22572be6-7a09-49a2-b660-23da841fe7c4",
+    "timestamp": "2025-11-21 17:59:42.757330",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Ordering in Association: If commitments are reordered between generation and verification, could this break the SoK proof binding, allowing unauthorized account recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_67d7446c-8014-4ce5-b615-efa672e441a9",
+    "timestamp": "2025-11-21 18:00:02.185894",
+    "report_generated": false
+  },
+  {
+    "question": "Off-Chain Node Secret Share Correlation: Each node receives a different secret share opening. Could a malicious minority of off-chain nodes correlate their shares to statistically recover information about email addresses?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3cb31faf-5dd1-49fd-994b-e649cc8b0a26",
+    "timestamp": "2025-11-21 18:00:23.256157",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Output and Commitment Interaction: VDRF outputs are used in key derivation along with commitments. Could the two systems interact in unexpected ways, like VDRF outputs leaking information that helps break commitment hiding?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_47648b72-b187-4af5-84ac-29e4aed35d27",
+    "timestamp": "2025-11-21 18:00:44.869769",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Mismatch: If the number of commitments doesn't match the VDRF threshold, could this create an inconsistency exploitable for either bypassing guardian requirements or causing denial-of-service?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8e7ef6c5-bb12-470a-b1df-8107c8323a9d",
+    "timestamp": "2025-11-21 18:01:08.667301",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Substitution in Recovery: During account recovery, are commitments from the original registration verified to match those in recovery requests? Could an attacker substitute different commitments to bypass email verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a30438f6-e93f-4644-bbf3-56ecd3820149",
+    "timestamp": "2025-11-21 18:01:32.243638",
+    "report_generated": false
+  },
+  {
+    "question": "Privacy Leakage Through Commitment Patterns: If multiple users use the same guardian set, could the pattern of commitments on-chain leak information about guardian relationships, indirectly revealing user identities?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bb7742de-d8af-4e4f-8cea-da06d6843212",
+    "timestamp": "2025-11-21 18:01:57.211141",
+    "report_generated": false
+  },
+  {
+    "question": "Encapsulation Key Binding: Commitments should be bound to the encapsulation key. If this binding is weak or missing, could an attacker decrypt the master key without properly proving knowledge of the committed values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8103b082-b57e-45ba-88e3-db7ff1688bab",
+    "timestamp": "2025-11-21 18:02:23.218033",
+    "report_generated": false
+  },
+  {
+    "question": "Association Uniqueness Enforcement: The invariant states one email per account. Do commitments alone enforce this, or could an attacker create multiple associations with different randomness for the same email value?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f10e96e2-b3b2-4b7a-a749-fe93fe66c03e",
+    "timestamp": "2025-11-21 18:02:50.328336",
+    "report_generated": false
+  },
+  {
+    "question": "InvalidInput Error Details: The prove function returns SwafeError::InvalidInput commitments.rs:163-165 . Could error messages leak information about commitment structure or values, aiding attacks on email privacy?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_73b8baf9-404e-4760-a332-72423a55a0ab",
+    "timestamp": "2025-11-21 18:03:19.320341",
+    "report_generated": false
+  },
+  {
+    "question": "Empty Array Edge Case: What if all openings are zero? The code checks for empty arrays but not all-zero openings. Could this create degenerate proofs that verify but don't prove knowledge?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_60145385-4b72-4f00-a9bf-0fa1489fca8e",
+    "timestamp": "2025-11-21 18:03:48.993624",
+    "report_generated": false
+  },
+  {
+    "question": "Single Commitment Special Case: For N=1 commitments, the batched SoK reduces to standard Schnorr. Are there security implications of this reduction that could be exploited for accounts with single email associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5096cbee-e378-4696-b797-23b737bde9c8",
+    "timestamp": "2025-11-21 18:04:19.429299",
+    "report_generated": false
+  },
+  {
+    "question": "Verification Failure Timing: Does verification fail at the same time regardless of which check fails (length, challenge recomputation, equation check)? Timing variations could leak information about which commitments are invalid.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d36e1378-559f-4f79-8242-649a58f6a792",
+    "timestamp": "2025-11-21 18:04:50.150096",
+    "report_generated": false
+  },
+  {
+    "question": "RNG Failure Handling: If rng.gen() fails during mask generation, does it panic or return an error? Unhandled RNG failures could cause denial-of-service during account creation or recovery.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b140ce24-c711-44ec-8265-9b3ea327d97c",
+    "timestamp": "2025-11-21 18:05:22.086690",
+    "report_generated": false
+  },
+  {
+    "question": "Arithmetic Overflow in Loop: The proof generation loops over openings commitments.rs:190-193 . Could very large arrays cause stack overflow or excessive memory consumption, enabling resource exhaustion attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f4742aab-4976-4794-b576-145add57d541",
+    "timestamp": "2025-11-21 18:05:54.613003",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Vector Capacity: If commitment vectors are pre-allocated with excessive capacity, could this be exploited for memory exhaustion attacks, particularly if users can control the vector size through API calls?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7bfbb22a-564c-469f-ba4d-ee39786819f7",
+    "timestamp": "2025-11-21 18:06:27.685229",
+    "report_generated": false
+  },
+  {
+    "question": "Verification with Mismatched Generators: What if verify is called with different generators than were used in prove? The function doesn't validate generator equality. Could this cause false negatives that lock users out?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c740ad73-9a31-4ded-a6b9-4cac8a4f737e",
+    "timestamp": "2025-11-21 18:07:02.303838",
+    "report_generated": false
+  },
+  {
+    "question": "Proof Verification Panic Paths: Are there any unwrap() or expect() calls in the verification path that could panic on attacker-controlled input, causing denial-of-service?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_466ec77f-9e3b-481d-b379-1c47def260e8",
+    "timestamp": "2025-11-21 18:07:36.913963",
+    "report_generated": false
+  },
+  {
+    "question": "Delta Zero Check: What happens if Delta equals the identity? The code doesn't explicitly check this. Could a zero Delta create degenerate proofs with unexpected security properties?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e539acc3-69ab-45a7-befc-69bab58d24d3",
+    "timestamp": "2025-11-21 18:08:13.164277",
+    "report_generated": false
   }
 ]
