@@ -7048,5 +7048,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bde01d0a-923a-4a58-aa2c-139becf77a4b",
     "timestamp": "2025-11-21 22:01:40.126798",
     "report_generated": false
+  },
+  {
+    "question": "Can an attacker manipulate the RecoveryRequestMessage fields to create a valid signature for an unintended recovery? v0.rs:809-812",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2679e35a-c44f-42c8-b62b-283d0f638657",
+    "timestamp": "2025-11-21 22:02:48.261150",
+    "report_generated": false
+  },
+  {
+    "question": "Does verify_update ensure that the new state cannot have fields set to attacker-controlled values despite valid signatures? v0.rs:789-801",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a738ef90-172e-404f-a55c-1eb97a216d62",
+    "timestamp": "2025-11-21 22:03:01.205719",
+    "report_generated": false
+  },
+  {
+    "question": "In verify_update, when handling recovery messages, does setting verified = false initially protect against logic errors? v0.rs:815",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8db32bd5-89e9-4473-9ed4-afa61c796d5a",
+    "timestamp": "2025-11-21 22:03:14.517729",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit the signature verification at line 775 to cause denial of service through expensive cryptographic operations? v0.rs:775",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2aa23a3a-d351-4d3e-9b27-2aee4661dec1",
+    "timestamp": "2025-11-21 22:03:29.436208",
+    "report_generated": false
+  },
+  {
+    "question": "In check_for_recovery, does cloning self at line 743 create security risks if the clone is not properly protected? v0.rs:743",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ef31b574-2460-45f2-b2cd-938d848491f0",
+    "timestamp": "2025-11-21 22:03:43.856719",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker cause check_for_recovery to return invalid guardian shares by manipulating the state parameter? v0.rs:727-755",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_12307f04-d184-4933-bdc7-ed850ac84398",
+    "timestamp": "2025-11-21 22:03:59.278181",
+    "report_generated": false
+  },
+  {
+    "question": "Does check_for_recovery verify that the requesting account has permission to receive shares before calling send_for_recovery? v0.rs:754",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9493460a-80fc-4035-ba67-24eca3358e86",
+    "timestamp": "2025-11-21 22:04:16.192223",
+    "report_generated": false
+  },
+  {
+    "question": "In decrypt_share, when decryption fails with the current PKE key, does trying old_pke.last() leak information about key rotation? v0.rs:597-601",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a58bae2a-9a17-4674-a252-d2d80837121d",
+    "timestamp": "2025-11-21 22:04:35.640627",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit the decrypt_batch function to cause guardians to decrypt shares for unintended recipients? v0.rs:578-587",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_40e47b78-a569-4ae7-a574-48b46d1f7d71",
+    "timestamp": "2025-11-21 22:04:55.586298",
+    "report_generated": false
+  },
+  {
+    "question": "Does check_for_recovery handle the case where multiple recovery requests are active simultaneously? v0.rs:727-755",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f55df4be-11fb-46ef-b0e9-b429fda1a83d",
+    "timestamp": "2025-11-21 22:05:17.151776",
+    "report_generated": false
+  },
+  {
+    "question": "In decrypt_share_backupy, can providing the wrong acc parameter cause guardians to decrypt shares for a different account? ???",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f0e562bc-6c2d-42a6-ae18-dda51d94582c",
+    "timestamp": "2025-11-21 22:05:39.723088",
+    "report_generated": false
+  },
+  {
+    "question": "In Association::create_association, can an attacker who observes the EncapsulatedMsk on-chain reverse the VDRF evaluation to determine the user's email address, violating the anonymity invariant that only corrupted off-chain nodes should learn email associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3988b250-1c9d-4026-b639-a87a82589be9",
+    "timestamp": "2025-11-21 22:06:03.559888",
+    "report_generated": false
+  },
+  {
+    "question": "Does EmailKey::new in v0.rs properly verify that the VDRF evaluation corresponds to the claimed email input before accepting it as valid, or can an attacker forge email keys by providing arbitrary evaluation outputs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bcd28f04-00c7-42ef-8b6f-1ff417edfdbb",
+    "timestamp": "2025-11-21 22:06:28.331669",
+    "report_generated": false
+  },
+  {
+    "question": "In AssociationV0::gen_node_secret_share, is the email certificate token generation vulnerable to replay attacks where a malicious node could reuse a token from one node_id on a different node_id to impersonate the user?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_304d3f3d-bea6-4575-9d1a-68a2a9e9c7ae",
+    "timestamp": "2025-11-21 22:06:54.025144",
+    "report_generated": false
+  },
+  {
+    "question": "Can a corrupted minority of off-chain nodes correlate multiple NodeSecretShare instances by comparing the msk_result field, thereby linking a user's email across different nodes and violating email privacy?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_68ccd299-8e84-48c4-ba12-75088ed00560",
+    "timestamp": "2025-11-21 22:07:21.668345",
+    "report_generated": false
+  },
+  {
+    "question": "Does the EmailInput struct's from_str implementation sanitize or normalize email addresses consistently, or can attackers create multiple associations for the same logical email using different string representations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_466c8178-eea9-4214-881f-1386e0a4a8a5",
+    "timestamp": "2025-11-21 22:07:49.457660",
+    "report_generated": false
+  },
+  {
+    "question": "In the VDRF evaluation flow, can an attacker who compromises a single off-chain node extract the email from the EmailCertificate and brute-force match it against on-chain EncapsulatedMsk using the VDRF public key?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a824c6e8-821e-4eb2-86ef-953cb1f4de3e",
+    "timestamp": "2025-11-21 22:08:18.893566",
+    "report_generated": false
+  },
+  {
+    "question": "Does the EmailTag type implement domain separation or binding to prevent an attacker from using the same email tag to associate multiple accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_515e3738-95eb-496e-b0e4-322faab9eff8",
+    "timestamp": "2025-11-21 22:08:49.627569",
+    "report_generated": false
+  },
+  {
+    "question": "Can a network adversary performing timing analysis on gen_node_secret_share distinguish different email addresses based on VDRF token generation timing?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a18f2c00-9bda-45a6-934a-073222e2c1d2",
+    "timestamp": "2025-11-21 22:09:19.891252",
+    "report_generated": false
+  },
+  {
+    "question": "If the EmailCertificate expires but the EncapsulatedMsk remains stored on-chain, can an attacker bypass freshness checks and re-associate the same email to different accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d035cdaa-0319-408d-b1c2-9752256d76cc",
+    "timestamp": "2025-11-21 22:09:52.041266",
+    "report_generated": false
+  },
+  {
+    "question": "In gen_association_request, is there a binding between EmailCertToken and AssociationRequestEmail to prevent token substitution attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b70401b0-f653-4699-8c57-47b226462e34",
+    "timestamp": "2025-11-21 22:10:23.141600",
+    "report_generated": false
+  },
+  {
+    "question": "Does Association::new verify that the provided email certificate matches the user_secret_key public key, preventing mismatched credentials?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0dac11d9-0ec8-42cc-b5b2-ecddda6ec312",
+    "timestamp": "2025-11-21 22:10:55.107337",
+    "report_generated": false
+  },
+  {
+    "question": "Can multiple users call create_association with the same threshold and receive colliding EncapsulatedMsk commitments that link accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_353b1a18-4ca1-4910-a026-1729dcfe22e3",
+    "timestamp": "2025-11-21 22:11:29.070437",
+    "report_generated": false
+  },
+  {
+    "question": "In AssociationV0::new, is there validation that msk_result corresponds to the user_secret_key through the SoK proof, preventing inconsistent data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3b0a6080-0d9a-428d-9037-ee4ce1b464c2",
+    "timestamp": "2025-11-21 22:12:02.779150",
+    "report_generated": false
+  },
+  {
+    "question": "Does the protocol prevent a user from creating multiple associations for the same email by repeatedly calling create_encrypted_msk with different RIK values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_42c7140c-162f-410c-a05f-1b2baa9310c4",
+    "timestamp": "2025-11-21 22:12:34.890859",
+    "report_generated": false
   }
 ]
