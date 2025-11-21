@@ -1048,5 +1048,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_75c65fc9-3877-44ac-ba3b-d3c0e368bae2",
     "timestamp": "2025-11-21 14:12:02.933472",
     "report_generated": false
+  },
+  {
+    "question": "Contract Module Signature Verification: Do smart contract endpoints properly use re-exported signature types for authentication? Could signature verification bypass allow unauthorized state changes? mod.rs:32",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_198841db-b0b0-445a-b1e5-d69677e73b9a",
+    "timestamp": "2025-11-21 14:13:10.172765",
+    "report_generated": false
+  },
+  {
+    "question": "Association Module VDRF Usage: Does the association module correctly use re-exported VDRF types to maintain email anonymity? Could misuse leak email-to-account associations? mod.rs:33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1a66dd15-2b2a-47a0-be33-9121c2157c1f",
+    "timestamp": "2025-11-21 14:13:23.021441",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Module Secret Handling: Does the backup module properly use symmetric and pke internal modules for encryption? Could direct access bypass key-committing AEAD properties? mod.rs:18-21",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f061a3c1-12c7-4947-9931-f2ed706b78d1",
+    "timestamp": "2025-11-21 14:13:38.203609",
+    "report_generated": false
+  },
+  {
+    "question": "Account Module Integration: How does the account module use re-exported crypto types? Could improper integration allow unauthorized account recovery by malicious guardians? mod.rs:29-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c397cff6-8b35-41af-8afd-e02c24d026b3",
+    "timestamp": "2025-11-21 14:13:53.271771",
+    "report_generated": false
+  },
+  {
+    "question": "Re-export Naming Conflicts: Could re-exported items conflict with names in dependent crates? Could naming conflicts lead to using wrong cryptographic primitives? mod.rs:29-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_43c9bf1e-2d0b-4cbf-9ba6-8c7b1695114e",
+    "timestamp": "2025-11-21 14:14:09.297336",
+    "report_generated": false
+  },
+  {
+    "question": "Re-export Visibility Consistency: Are visibility modifiers consistent across similar items? Could inconsistent visibility confuse developers and lead to security bugs? mod.rs:29-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_781f43d8-7798-4c40-975d-f7da921a8747",
+    "timestamp": "2025-11-21 14:14:27.042932",
+    "report_generated": false
+  },
+  {
+    "question": "Re-export Const Generics: Do re-exported types use const generics (e.g., array sizes)? Could incorrect generic parameters cause buffer overflows? mod.rs:29-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5889e3ae-528b-4380-9d22-92e166f5c680",
+    "timestamp": "2025-11-21 14:14:45.659804",
+    "report_generated": false
+  },
+  {
+    "question": "Re-export Lifetime Parameters: If re-exported types have lifetime parameters, are they properly constrained? Could lifetime issues allow use-after-free of cryptographic material? mod.rs:29-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8ebabffc-45cb-46d5-af3a-46573c4178c8",
+    "timestamp": "2025-11-21 14:15:05.656389",
+    "report_generated": false
+  },
+  {
+    "question": "Re-export Trait Bounds: Do re-exported types properly constrain trait bounds? Could missing bounds allow insecure type instantiations? mod.rs:29-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e408c395-cd1b-4555-9c0d-061f41d0ced7",
+    "timestamp": "2025-11-21 14:15:29.202683",
+    "report_generated": false
+  },
+  {
+    "question": "Re-export Stability Guarantees: Do re-exports provide stability guarantees? Could changes to re-exported types break compatibility with stored ciphertexts or shares? mod.rs:29-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_79c50939-dfd0-4b74-aae4-b56da77d7dd4",
+    "timestamp": "2025-11-21 14:15:55.276671",
+    "report_generated": false
+  },
+  {
+    "question": "Re-export Documentation: Are re-exported items properly documented? Could lack of documentation lead to misuse of cryptographic primitives? mod.rs:29-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ada25780-fef3-4b60-b934-974a3d03abb6",
+    "timestamp": "2025-11-21 14:16:23.924322",
+    "report_generated": false
+  },
+  {
+    "question": "Re-export Type Safety: Do re-exports maintain type safety? Could casting between re-exported types and internal types bypass validation? mod.rs:29-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4c20f5b3-6e0e-43b0-89cb-d8dd1203b607",
+    "timestamp": "2025-11-21 14:16:55.005255",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Commitment Re-exports: The commitments module is internal. Could this prevent proper use of commitments in backup protocols, forcing insecure alternatives? mod.rs:15",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_47987c8b-ac6b-4c1e-b273-8c8affb55dd1",
+    "timestamp": "2025-11-21 14:17:27.650447",
+    "report_generated": false
+  },
+  {
+    "question": "Missing SSS Re-exports: The sss module is internal with no re-exports. Could this force reimplementation of secret sharing in higher-level modules, introducing bugs? mod.rs:20",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e8936388-410c-42ff-ae1c-b7cdc18d70d5",
+    "timestamp": "2025-11-21 14:18:01.295477",
+    "report_generated": false
+  },
+  {
+    "question": "Missing PKE Re-exports: The pke module is internal, with no types re-exported. Could this force higher-level code to use raw encryption primitives from the symmetric module, bypassing PKE security properties? mod.rs:18",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0c0b51fe-6080-4243-8631-29a2f8bc4aef",
+    "timestamp": "2025-11-21 14:18:35.769853",
+    "report_generated": false
+  },
+  {
+    "question": "Email Certificate Type Granularity: All three email certificate types are re-exported (EmailCert, EmailCertToken, EmailCertificate). Could exposing all types allow attackers to craft certificates without going through proper issuance? mod.rs:30",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_632dbbce-dde1-4738-b08c-ea6a887b22c1",
+    "timestamp": "2025-11-21 14:19:11.279233",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Type Re-export Only: Only Signature is re-exported from the sig module, not SigningKey or VerificationKey. Could this limitation cause issues in key management or signature verification? mod.rs:32",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cadaa758-50a4-4793-8ec7-2b126bf9f9f0",
+    "timestamp": "2025-11-21 14:19:47.537233",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Function Re-export Granularity: Only hash, kdf, and kdfn are re-exported from the hash module. Are other hash-related functions (like kdf_rng) intentionally hidden? Could this force developers to reimplement KDF functionality insecurely? mod.rs:31",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4469b67c-b485-4db3-891f-8da99ba71c02",
+    "timestamp": "2025-11-21 14:20:24.345501",
+    "report_generated": false
+  },
+  {
+    "question": "Re-export Completeness for VDRF: The file re-exports Vdrf, VdrfEvaluation, VdrfPublicKey, and VdrfSecretKeyShare, but are all necessary types exposed? Could missing types force unsafe workarounds in VDRF evaluation? mod.rs:33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9db21bea-2517-4c07-b000-12aa6b34f398",
+    "timestamp": "2025-11-21 14:21:03.165754",
+    "report_generated": false
+  },
+  {
+    "question": "Module Test Coverage: Is there sufficient integration testing across module boundaries? Could bugs in module interactions go undetected until production? mod.rs:14-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5edee3d2-7343-44c6-9437-ec0fd9b1815a",
+    "timestamp": "2025-11-21 14:21:42.462367",
+    "report_generated": false
+  },
+  {
+    "question": "Module Memory Safety: While Rust provides memory safety, could unsafe blocks in any module introduce memory corruption that affects cryptographic operations? mod.rs:14-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e3899e3f-bf6b-45bb-9e00-1be1b59eba59",
+    "timestamp": "2025-11-21 14:22:21.311636",
+    "report_generated": false
+  },
+  {
+    "question": "Module Panic Safety: Are all modules panic-safe? Could panics in cryptographic operations leave sensitive data in an invalid state? mod.rs:14-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_abd7b1a2-4de9-4daa-9776-6113c39da725",
+    "timestamp": "2025-11-21 14:22:58.396449",
+    "report_generated": false
+  },
+  {
+    "question": "Module Trait Implementations: Do modules implement common traits (e.g., Clone, Debug, Serialize) consistently? Could inconsistent implementations leak secrets through debug output? mod.rs:14-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ccdcd875-3655-4012-acd1-a3bed9fb2a21",
+    "timestamp": "2025-11-21 14:23:35.797267",
+    "report_generated": false
+  },
+  {
+    "question": "Module Feature Flags: Are any modules conditionally compiled based on feature flags? Could missing features cause fallback to insecure implementations? mod.rs:14-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_48eeba00-45f3-492f-a232-d528a8e7b3bf",
+    "timestamp": "2025-11-21 14:24:13.643632",
+    "report_generated": false
+  },
+  {
+    "question": "Module Versioning Strategy: How are breaking changes in internal modules handled? Could version mismatches between modules cause silent failures or security vulnerabilities? mod.rs:14-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2050b6cc-5c54-4dbb-8068-c20a5f409761",
+    "timestamp": "2025-11-21 14:24:51.373995",
+    "report_generated": false
   }
 ]
