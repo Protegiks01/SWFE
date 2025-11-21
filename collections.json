@@ -3598,5 +3598,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_886e0c09-5439-4bcb-a720-b64c3cbd9010",
     "timestamp": "2025-11-21 17:45:41.128569",
     "report_generated": false
+  },
+  {
+    "question": "Field Element Reduction: Field operations automatically reduce modulo the prime. Could an attacker provide \"unreduced\" field elements in serialized form that equal zero after reduction, creating degenerate commitments?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cec3ec38-3039-4eeb-afde-fa2850b6c597",
+    "timestamp": "2025-11-21 17:46:46.644421",
+    "report_generated": false
+  },
+  {
+    "question": "Point Compression Vulnerabilities: G1 affine points use compressed serialization. Could decompression ambiguity (choosing wrong y-coordinate sign) create multiple representations of the same commitment, bypassing uniqueness checks for email associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_51ecc832-1045-4089-a903-c5d6519d2604",
+    "timestamp": "2025-11-21 17:46:59.852485",
+    "report_generated": false
+  },
+  {
+    "question": "Subgroup Confinement: Are all arithmetic operations confined to the prime-order subgroup? If operations leak into the cofactor subgroup, could this create weak commitments vulnerable to small-subgroup attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_352df9f3-c179-4e5f-9d0b-042e17d86c98",
+    "timestamp": "2025-11-21 17:47:13.294388",
+    "report_generated": false
+  },
+  {
+    "question": "Neutral Element Handling: How is the identity/neutral element handled in addition? Could repeatedly adding commitments eventually produce identity through numerical instability, even if mathematically they shouldn't?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4c062681-1e98-4dc8-8fcb-66ec3866349f",
+    "timestamp": "2025-11-21 17:47:27.632169",
+    "report_generated": false
+  },
+  {
+    "question": "Overflow in Power Computation: When computing α^i for large i in SoK proofs, could integer overflow occur in the exponent calculation (not the field operation), causing incorrect power sequences?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_764aed69-3488-4d9f-a366-cb54937fd07a",
+    "timestamp": "2025-11-21 17:47:43.199646",
+    "report_generated": false
+  },
+  {
+    "question": "Projective to Affine Conversion Cost: Conversion from projective to affine commitments.rs:34 requires inversion. Could an attacker submit commitments requiring expensive conversions to cause resource exhaustion during verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9a817663-69f4-4df5-85d8-2460baed1a34",
+    "timestamp": "2025-11-21 17:48:00.392701",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Negation: Fr field supports negation. Could negating openings and re-committing create commitments that look different but verify under modified proofs, enabling commitment confusion attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dcfd26f1-cd5f-43e0-8797-d1ac430fa057",
+    "timestamp": "2025-11-21 17:48:18.855745",
+    "report_generated": false
+  },
+  {
+    "question": "Mixed Representation Attacks: If some code paths use projective and others use affine, could representation mismatches cause commitments that are mathematically equal to compare as unequal, breaking association uniqueness checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f6312e28-968a-4992-95a4-08d27167a8a4",
+    "timestamp": "2025-11-21 17:48:38.950221",
+    "report_generated": false
+  },
+  {
+    "question": "Scalar Zero Multiplication: Multiplying by Fr::ZERO should yield identity. Is this explicitly checked, or could a null pointer or uninitialized memory be returned, causing memory safety issues despite Rust's guarantees?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4f01700e-6462-4150-a912-6e982225ca6f",
+    "timestamp": "2025-11-21 17:48:59.678559",
+    "report_generated": false
+  },
+  {
+    "question": "Algebraic Relationship Preservation: In proof generation, does the algebraic relationship between mask, challenge, and response perfectly match the verification equation, or could floating-point-like precision issues in field arithmetic create slight mismatches?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_860d4fb3-52a7-4b2d-a83c-0558acb6b74f",
+    "timestamp": "2025-11-21 17:49:22.181160",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Serialization Format: Commitments serialize via serde with custom g1 serialization commitments.rs:11-14 . Is this format versioned? Could deserializing commitments from an older version cause incompatibilities that lock users out of their accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_155389bb-2d06-494f-a41d-bfa1ccf41624",
+    "timestamp": "2025-11-21 17:49:44.606238",
+    "report_generated": false
+  },
+  {
+    "question": "G1 Point Serialization Length: G1 affine points serialize to 48 bytes compressed. Is this length enforced during deserialization? Could variable-length inputs cause buffer overflows or parsing confusion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5a439339-1488-4753-bd23-e7d14776589f",
+    "timestamp": "2025-11-21 17:50:08.679921",
+    "report_generated": false
+  },
+  {
+    "question": "Non-Canonical Point Encoding: BLS12-381 points have canonical compressed forms. If non-canonical encodings are accepted, could an attacker create multiple commitment representations that bypass deduplication, violating the \"at most one email per account\" invariant?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_07c85bbc-734c-4c15-b757-d2863adb0b72",
+    "timestamp": "2025-11-21 17:50:33.247821",
+    "report_generated": false
+  },
+  {
+    "question": "Fr Field Serialization: PedersenOpen uses custom fr serialization for field elements commitments.rs:79-82 . Does this enforce canonical representation? Could multiple representations of the same opening create confusion in proof verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ec8bac5b-f017-42f0-af51-eb15bd9758b2",
+    "timestamp": "2025-11-21 17:51:00.455697",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Panics: Could malformed serialized data cause panics during deserialization, enabling denial-of-service attacks against account recovery by submitting corrupted proofs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1e7ad549-e62d-4669-94d0-f775a85a9fb8",
+    "timestamp": "2025-11-21 17:51:28.781675",
+    "report_generated": false
+  },
+  {
+    "question": "Proof Serialization Integrity: SoK proofs serialize delta and alpha. Are these protected by any MAC or signature? Could an attacker modify serialized proofs to change the claimed commitments while keeping the proof structure intact?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_20ce37b1-09ce-4cd1-a3bf-f0b1a7a083c7",
+    "timestamp": "2025-11-21 17:51:58.333583",
+    "report_generated": false
+  },
+  {
+    "question": "Endianness Consistency: Field element serialization uses from_le_bytes_mod_order. Are all system components consistent in endianness? Could endian mismatches between smart contracts and off-chain nodes cause commitment verification failures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3c5c1cea-c1c5-4f20-ad24-dd03bb6258d6",
+    "timestamp": "2025-11-21 17:52:32.028059",
+    "report_generated": false
+  },
+  {
+    "question": "Version Compatibility: The code uses \"v0:\" prefixes in tagged separators. If v1 is released with different commitment schemes, could old commitments be re-interpreted as v1, breaking backward compatibility and locking users out?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c4a869fc-0db1-4a6d-ab3d-556ad2400387",
+    "timestamp": "2025-11-21 17:53:06.197881",
+    "report_generated": false
+  },
+  {
+    "question": "Serialized Size Validation: Does deserialization validate that the input is exactly the expected size? Could oversized inputs contain trailing data that's ignored but later used in an exploit, like hiding malicious code in \"unused\" fields?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_10635f2e-8a92-422e-820b-8fb934b999de",
+    "timestamp": "2025-11-21 17:53:39.525130",
+    "report_generated": false
+  },
+  {
+    "question": "Point Validation on Deserialize: When deserializing G1 points, is subgroup membership checked? Could accepting points outside the prime-order subgroup enable small-subgroup attacks that break commitment hiding?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_27cbfa54-5073-4033-b9c4-f8addd98f555",
+    "timestamp": "2025-11-21 17:54:13.559669",
+    "report_generated": false
+  },
+  {
+    "question": "Field Element Range Check: During Fr deserialization, are values checked to be less than the field modulus? Could out-of-range values cause modular reduction surprises that break proof correctness?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_89b23543-51bc-46d5-8501-4457a2abc63a",
+    "timestamp": "2025-11-21 17:54:46.052693",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Cloning During Serialization: Serialization might clone commitments. If cloning doesn't preserve all invariants (like zeroization for openings), could serialized-then-deserialized secrets escape secure erasure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2858cf74-5212-4255-b009-3a7c4be3f4fb",
+    "timestamp": "2025-11-21 17:55:17.919833",
+    "report_generated": false
+  },
+  {
+    "question": "Proof Forgery via Serialization: Could an attacker craft a serialized proof that deserializes to valid types but contains mathematically invalid relationships (e.g., Delta not matching alpha), bypassing verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4249f07f-32d6-41e9-9d45-bf57b5c262e9",
+    "timestamp": "2025-11-21 17:55:50.343798",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Platform Serialization: Are serialized commitments compatible across different architectures (x86, ARM) and operating systems? Could platform-specific differences cause valid commitments to fail verification when moved between systems?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_44ef1e9f-82b4-4a91-b53b-66db84e84e01",
+    "timestamp": "2025-11-21 17:56:23.730257",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization of Infinity: If the point at infinity is serialized, does deserialization correctly reconstruct it, or could it become a default value that's misinterpreted as a valid commitment?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_39144ded-5514-4f8e-b252-6797203882e9",
+    "timestamp": "2025-11-21 17:56:56.977270",
+    "report_generated": false
   }
 ]
