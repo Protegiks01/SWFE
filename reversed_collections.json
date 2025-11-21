@@ -7798,5 +7798,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d8753f0c-60c0-4cf9-9d7a-4db5368b0cab",
     "timestamp": "2025-11-21 22:37:43.461800",
     "report_generated": false
+  },
+  {
+    "question": "In partial_eval() vdrf.rs:133-137 , the function signature uses a generic T: Tagged for the input. Can type confusion attacks allow an attacker to provide different types that serialize to the same bytes but have different semantic meanings?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_45fc618f-f63e-4b0b-9b04-88a8f7b0f566",
+    "timestamp": "2025-11-21 22:38:51.412874",
+    "report_generated": false
+  },
+  {
+    "question": "The partial_eval() function vdrf.rs:145 multiplies the G2 point by secret_share.0. Can a corrupted node provide a share that's a scalar multiple of the correct share, passing verification but breaking reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4419fea1-2c89-4c45-a861-9f070b6c1561",
+    "timestamp": "2025-11-21 22:39:04.457386",
+    "report_generated": false
+  },
+  {
+    "question": "In partial_eval() vdrf.rs:139-142 , the input is first hashed via hash(input) before being included in VdrfKPoint. Can this double-hashing pattern create collisions or reduce entropy?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_98022953-036e-45af-ab64-004e4d0ee894",
+    "timestamp": "2025-11-21 22:39:18.303270",
+    "report_generated": false
+  },
+  {
+    "question": "The VdrfKPoint struct used in partial_eval() vdrf.rs:66-70 includes both c0 and input. Can omitting either field from the hash allow cross-key or cross-input attacks where evaluations can be reused?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_59e0df71-c7a1-47b3-9b0d-ae10baf6817a",
+    "timestamp": "2025-11-21 22:39:31.884310",
+    "report_generated": false
+  },
+  {
+    "question": "In Vdrf::partial_eval() vdrf.rs:133-146 , the function hashes to G2 using VdrfKPoint containing public_key.c0 and the hashed input vdrf.rs:139-142 . Can an attacker craft two different inputs that hash to the same G2 point, breaking VDRF uniqueness for email bindings?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_351317bd-3858-438c-ae62-9b03a954da6f",
+    "timestamp": "2025-11-21 22:39:47.197995",
+    "report_generated": false
+  },
+  {
+    "question": "The polynomial degree determines the threshold security. If ci has length t-1 but the actual polynomial has a different degree due to zero coefficients, can this reduce the effective threshold below t?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0f7074de-159a-4702-8eb5-7c4b81cf5233",
+    "timestamp": "2025-11-21 22:40:02.553227",
+    "report_generated": false
+  },
+  {
+    "question": "In both evaluation functions, the result depends on the order of coefficients in the vectors vdrf.rs:114 and vdrf.rs:251-253 . Can vector reordering attacks during serialization cause shares and commitments to be computed for different polynomials?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1ef8dc66-5d81-4eac-9942-780595d44e1f",
+    "timestamp": "2025-11-21 22:40:19.075454",
+    "report_generated": false
+  },
+  {
+    "question": "The share() function wraps the final result in VdrfSecretKeyShare vdrf.rs:115 . Can this wrapping step fail or be manipulated during serialization to produce shares that appear valid but aren't?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a9984854-d6aa-43f6-b99f-892db3104ce2",
+    "timestamp": "2025-11-21 22:40:38.990487",
+    "report_generated": false
+  },
+  {
+    "question": "In share() vdrf.rs:114 , the fold operation accumulates intermediate results. Can attackers observe these intermediate values through side channels (cache, timing) to reconstruct polynomial coefficients?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_21b5e855-3287-4d99-bcdc-36de24b251e0",
+    "timestamp": "2025-11-21 22:40:59.762879",
+    "report_generated": false
+  },
+  {
+    "question": "The polynomial evaluation in compute_commitment_at_point() vdrf.rs:251-253 operates on group elements rather than field elements. Can different group operation implementations between nodes cause consensus failures in share verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_104b6bca-ec48-4303-9329-60bd334187b9",
+    "timestamp": "2025-11-21 22:41:22.397987",
+    "report_generated": false
+  },
+  {
+    "question": "In share(), the function explicitly checks for zero evaluation points vdrf.rs:107-111 . Can an attacker bypass this check by providing a field element that becomes zero after certain operations but passes the initial check?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0452aea3-bf64-41d0-8856-f07cc29ccf72",
+    "timestamp": "2025-11-21 22:41:44.868513",
+    "report_generated": false
+  },
+  {
+    "question": "The Horner's method implementation in both share() vdrf.rs:114 and compute_commitment_at_point() vdrf.rs:251-253 uses multiplication by x. Can consecutive multiplications lead to exponential growth in intermediate values that cause timing variations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2a1603b7-abe0-463e-9fe7-1cc98bc103ec",
+    "timestamp": "2025-11-21 22:42:06.867528",
+    "report_generated": false
+  },
+  {
+    "question": "In share() vdrf.rs:113-115 , the polynomial is evaluated at point xi. Can an attacker choose or manipulate xi values during dealing to create shares that leak information about the polynomial coefficients?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_daa3bdad-1cdf-4f56-8a6e-fd48bc931730",
+    "timestamp": "2025-11-21 22:42:31.587414",
+    "report_generated": false
+  },
+  {
+    "question": "The assertion assert_ne!(x, pp::Fr::zero()) in eval_point() vdrf.rs:20 claims finding zero requires ~2^256 operations. Is this estimate accurate given that from_le_bytes_mod_order may reduce modulo a smaller field order?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6ad1aead-8e4a-437e-a5a1-38227a258c5e",
+    "timestamp": "2025-11-21 22:42:56.963136",
+    "report_generated": false
+  },
+  {
+    "question": "In NodeId::eval_point() vdrf.rs:16-22 , the function uses from_le_bytes_mod_order to convert hash output to a field element. Can this deterministic conversion create bias in the evaluation point distribution, making some points more likely than others?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f9981f69-0bca-41e4-87fb-db75d83594a6",
+    "timestamp": "2025-11-21 22:43:24.115820",
+    "report_generated": false
+  },
+  {
+    "question": "The polynomial evaluation in share() processes coefficients from most significant to least vdrf.rs:114 . Can an attacker craft a polynomial where this ordering reveals information about the secret through timing or power analysis?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_407f4f93-9963-4ae9-991f-7e6d3a3f1bb7",
+    "timestamp": "2025-11-21 22:43:52.018511",
+    "report_generated": false
+  },
+  {
+    "question": "In compute_commitment_at_point() vdrf.rs:251-254 , the final step is (result * x + c0).into(). Can the conversion to affine coordinates fail for certain projective points, causing panics or incorrect results?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_966f43d3-4904-43c4-873d-b4ae9b78cb00",
+    "timestamp": "2025-11-21 22:44:21.003453",
+    "report_generated": false
+  },
+  {
+    "question": "The evaluation in share() vdrf.rs:114 assumes the ci vector contains exactly t-1 elements. Can a mismatch between vector length and expected threshold cause out-of-bounds access or incorrect evaluation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ba44e32f-cc83-49ad-9c6a-f83b11221233",
+    "timestamp": "2025-11-21 22:44:49.387925",
+    "report_generated": false
+  },
+  {
+    "question": "In compute_commitment_at_point() vdrf.rs:251-253 , the function uses G1Projective::zero() as the initial accumulator. Can this lead to incorrect results if the polynomial's highest degree coefficient commitment is the identity element?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b7aade84-4ec6-42f9-a05c-b11a3598e7ae",
+    "timestamp": "2025-11-21 22:45:17.886252",
+    "report_generated": false
+  },
+  {
+    "question": "The polynomial evaluation uses fold() iterator operations vdrf.rs:114 . Can the iterator be empty, causing fold to return zero incorrectly, or can iterator ordering be manipulated?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d3c1b16a-5435-48e1-838f-89f621bd7357",
+    "timestamp": "2025-11-21 22:45:47.657967",
+    "report_generated": false
+  },
+  {
+    "question": "In share() vdrf.rs:114-115 , the final result is xi * result + c0. Can the multiplication xi * result overflow or wrap around the field modulus in a way that compromises share security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_13e636ef-842f-464f-b543-c739259674ed",
+    "timestamp": "2025-11-21 22:46:18.299352",
+    "report_generated": false
+  },
+  {
+    "question": "The compute_commitment_at_point() function vdrf.rs:249-255 multiplies group elements by field elements. Can point addition operations fail or produce unexpected results for edge cases like the identity element?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_24a1b90b-808b-43b6-acfb-f0b937cae633",
+    "timestamp": "2025-11-21 22:46:46.989466",
+    "report_generated": false
+  },
+  {
+    "question": "In compute_commitment_at_point() vdrf.rs:249-255 , the function evaluates the commitment polynomial using the same Horner pattern. Can inconsistencies between this function and share() allow invalid shares to pass verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e7bd796c-06c8-4767-8e0f-f1ab79842ec8",
+    "timestamp": "2025-11-21 22:47:18.612032",
+    "report_generated": false
+  },
+  {
+    "question": "The polynomial evaluation in share() vdrf.rs:113-115 processes coefficients in most-significant-first order. Can reversing this order (either accidentally or maliciously) lead to completely different share values that still appear valid?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0e86138e-cf8f-4fbf-a3f0-8c3c392e0ee4",
+    "timestamp": "2025-11-21 22:47:49.601735",
+    "report_generated": false
+  },
+  {
+    "question": "In share() vdrf.rs:113-115 , Horner's method is implemented as fold(zero, |acc, c| xi * acc + c). Can the order of operations cause precision issues or allow timing attacks to leak information about coefficients?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7aa9dd2f-9d18-41e1-ab14-ecc40fc57fee",
+    "timestamp": "2025-11-21 22:48:21.710510",
+    "report_generated": false
   }
 ]
