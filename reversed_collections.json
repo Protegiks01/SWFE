@@ -5398,5 +5398,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ffbc906f-0015-49c3-ac57-fc33188e3ab4",
     "timestamp": "2025-11-21 19:38:37.586005",
     "report_generated": false
+  },
+  {
+    "question": "Key Generation Bias: The secret key is generated via rng.gen() v0.rs:84 . Does this sample uniformly from the scalar field, or could bias enable key recovery attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7bfba2a2-16bd-4b12-9616-b93abb452dce",
+    "timestamp": "2025-11-21 19:39:57.948257",
+    "report_generated": false
+  },
+  {
+    "question": "RNG Quality in gen(): The SigningKey::gen() function relies on the provided RNG v0.rs:83-90 . If a caller uses a weak or predictable RNG, can the secret key be brute-forced?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f5abf69c-5cae-4986-973d-a9cbc25e54c0",
+    "timestamp": "2025-11-21 19:40:10.919087",
+    "report_generated": false
+  },
+  {
+    "question": "Batch Verification Absence: The system verifies signatures individually. If multiple signatures need verification in recovery flows, could the lack of batch verification enable performance-based DoS or make timing attacks easier?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e8700d63-26dd-4f01-8bbe-b19c372453bd",
+    "timestamp": "2025-11-21 19:40:26.030906",
+    "report_generated": false
+  },
+  {
+    "question": "Point Decompression Vulnerabilities: If r in Signature is stored compressed, decompression errors during verification could cause crashes or expose which signatures are structurally valid before cryptographic checks.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f5b6befc-bcb0-4ab8-b11d-40ba18db914b",
+    "timestamp": "2025-11-21 19:40:39.992183",
+    "report_generated": false
+  },
+  {
+    "question": "Error Path Information Leakage: When verification fails, the function returns SwafeError::SignatureVerificationFailed v0.rs:48 . Could different failure paths (malformed signature vs. invalid signature) leak information to attackers?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_867c180d-fba8-4bf5-a0a4-3d857bdf24a4",
+    "timestamp": "2025-11-21 19:40:54.867531",
+    "report_generated": false
+  },
+  {
+    "question": "Affine Conversion Side-Channels: Both left and right are converted to affine form before comparison v0.rs:42-44 . Could the affine conversion leak timing information about point coordinates?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c328689e-d057-47ec-a859-c4584dfb0c5f",
+    "timestamp": "2025-11-21 19:41:11.227788",
+    "report_generated": false
+  },
+  {
+    "question": "Equality Check Timing: The verification succeeds if left == right v0.rs:45 . Is this comparison constant-time, or could timing side-channels leak information about the secret key or valid signatures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bc1c98d9-86ea-41a3-818d-106cd8abed61",
+    "timestamp": "2025-11-21 19:41:28.930441",
+    "report_generated": false
+  },
+  {
+    "question": "Hash-to-Field Reduction: The verify() function reduces the hash via from_le_bytes_mod_order v0.rs:35 . Does this introduce bias that could weaken the signature scheme's security proof?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_87af9dac-c5a4-48e1-b063-ada376a15d09",
+    "timestamp": "2025-11-21 19:41:48.826397",
+    "report_generated": false
+  },
+  {
+    "question": "Tagged Message Type Confusion: Since messages must implement Tagged, could an attacker craft a type with the same serialized bytes as a legitimate message but different semantics to repurpose signatures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fc46bd2e-421e-4087-9735-acabd7a1f0c1",
+    "timestamp": "2025-11-21 19:42:09.239163",
+    "report_generated": false
+  },
+  {
+    "question": "Public Key Inclusion Order: The SchnorrHash includes pk after r v0.rs:70-75 . Could reordering these fields during serialization allow signature forgery if bincode encoding is position-dependent?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b52d08dc-59a7-4034-b5ee-f020941c32ad",
+    "timestamp": "2025-11-21 19:42:30.814661",
+    "report_generated": false
+  },
+  {
+    "question": "Message Hash Precomputation: The message is hashed before inclusion in SchnorrHash v0.rs:38 v0.rs:99 . If the same message hash appears in different contexts, could cross-protocol replay attacks occur?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d5381f10-8b58-469a-8f00-642a34761c4d",
+    "timestamp": "2025-11-21 19:42:53.376176",
+    "report_generated": false
+  },
+  {
+    "question": "Domain Separation Vulnerability: The SchnorrHash struct uses the separator \"v0:schnorr\" v0.rs:77-79 . If another protocol component uses the same separator with compatible field types, could signed messages be interpreted as signatures elsewhere?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e3e9361a-ca13-4400-8383-7f99c4b4909f",
+    "timestamp": "2025-11-21 19:43:17.728889",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Component Ordering: The Signature struct serializes r then s v0.rs:18-24 . If deserialization reorders these fields, could swapped components still pass verification incorrectly?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_61ef3402-e0a2-4be9-bb83-af5f7415cc8d",
+    "timestamp": "2025-11-21 19:43:43.176747",
+    "report_generated": false
+  },
+  {
+    "question": "Zero Secret Key: If SigningKey::gen() produces sk = 0 due to RNG failure v0.rs:84 , the verification key becomes the identity point. Can this enable trivial signature forgery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2d047d61-b505-4f0d-be1d-956dabcc84b9",
+    "timestamp": "2025-11-21 19:44:09.670759",
+    "report_generated": false
+  },
+  {
+    "question": "Public Key Validation Missing: The VerificationKey wraps a G1Affine point v0.rs:27-30 with no validation that it's in the correct subgroup. Can an attacker supply a low-order public key to create forged signatures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1d7338e5-2c67-406d-9bd1-133659accdaa",
+    "timestamp": "2025-11-21 19:44:37.018178",
+    "report_generated": false
+  },
+  {
+    "question": "Challenge Collision: If two different SchnorrHash inputs produce the same 32-byte hash output via SHA3-256, could an attacker create signature collisions? Are hash collisions feasible given the 256-bit output space?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b4df3c64-763a-41db-92df-cfa594a9c1a6",
+    "timestamp": "2025-11-21 19:45:05.019982",
+    "report_generated": false
+  },
+  {
+    "question": "Generator Consistency: Both sign() and verify() use pp::G1Projective::generator() v0.rs:42 v0.rs:95 . If the generator is not fixed or differs across contexts, could signatures verify incorrectly?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c03373e1-55fc-41c3-ab8b-344dcce132bf",
+    "timestamp": "2025-11-21 19:45:34.556909",
+    "report_generated": false
+  },
+  {
+    "question": "Malleability of s: The Schnorr signature s = k + e*sk v0.rs:103 is computed over the scalar field. Can an attacker negate s or add multiples of the group order to create alternative valid signatures for the same message?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_de47e855-63f0-4712-8137-1f7cb6963ba9",
+    "timestamp": "2025-11-21 19:46:07.080625",
+    "report_generated": false
+  },
+  {
+    "question": "Small Subgroup Attack on r: The verify() function checks [s]*G = R + [e]*PK v0.rs:41-44 but doesn't validate that r is in the prime-order subgroup. Can an attacker craft r in a small subgroup to forge signatures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2845b421-ba82-4685-aaf1-b76cd2644f14",
+    "timestamp": "2025-11-21 19:46:40.247282",
+    "report_generated": false
+  },
+  {
+    "question": "Point-at-Infinity Exploitation: If an attacker submits a signature where r is the point at infinity in Signature, can the verification equation in verify() v0.rs:41-44 be satisfied trivially, bypassing authentication?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2667f431-4abd-4bf3-b42c-615d01612a7b",
+    "timestamp": "2025-11-21 19:47:14.000276",
+    "report_generated": false
+  },
+  {
+    "question": "Challenge Hash Mismatch: The sign() function uses pp::hash_to_fr() v0.rs:96-100 while verify() uses Fr::from_le_bytes_mod_order(&hash(...)) v0.rs:35-39 . Do these produce identical challenge values for the same inputs, or could this discrepancy allow forgery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8d0cb774-1fd3-4428-81f7-a09661187f8b",
+    "timestamp": "2025-11-21 19:47:47.451907",
+    "report_generated": false
+  },
+  {
+    "question": "Nonce Reuse Attack: In SigningKey::sign(), the nonce k is generated fresh each time v0.rs:94 . Can an attacker exploit scenarios where the same RNG state is reused across multiple signatures, allowing nonce extraction and private key recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_db7bcfd3-94f1-4f01-b752-2b16d6d50ac7",
+    "timestamp": "2025-11-21 19:48:22.363718",
+    "report_generated": false
+  },
+  {
+    "question": "Partial Decryption State: If open fails after decrypting but before deserialization, does the decrypted plaintext pt remain in memory? Could this leak sensitive data on failure paths? <cite repo=\"code-423n4/2025-",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ba1ef855-1137-4441-81d7-209dd5cf82fc",
+    "timestamp": "2025-11-21 19:48:57.581411",
+    "report_generated": false
+  },
+  {
+    "question": "Panic vs Result: The seal function can panic on serialization failure (.unwrap()), while open returns Result. Could this inconsistency cause unexpected behavior in calling code? symmetric.rs:78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_81c278c6-500f-4b08-8a36-eb9099719625",
+    "timestamp": "2025-11-21 19:49:33.002036",
+    "report_generated": false
+  },
+  {
+    "question": "Error Propagation to Contracts: When open is called from contract HTTP endpoints, does the error propagate to the HTTP response? Could error messages leak information about which guardian shares failed to decrypt? symmetric.rs:128-129",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1cf51ffd-a5a0-4bcc-af59-39990832cb6b",
+    "timestamp": "2025-11-21 19:50:07.215903",
+    "report_generated": false
   }
 ]
