@@ -4048,5 +4048,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_736ee78d-09f3-4cd2-a3cf-91d450928053",
     "timestamp": "2025-11-21 18:19:33.212206",
     "report_generated": false
+  },
+  {
+    "question": "Does recover() validate that the aad parameter matches the expected account context, or could an attacker bind the recovery to a different account's context?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5ff74a96-e8e8-4a07-aa23-856ebaa723c0",
+    "timestamp": "2025-11-21 18:20:48.944891",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit race conditions by calling recover() multiple times concurrently with different share combinations to extract additional information about the secret?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9a54c036-715c-4ee2-a1f4-c93cb3f763d4",
+    "timestamp": "2025-11-21 18:21:02.252951",
+    "report_generated": false
+  },
+  {
+    "question": "Does the share hash comparison at line 305 use constant-time equality, or could timing attacks reveal information about share validity to an eavesdropper?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d3504b15-5bfb-47a9-b9bc-157ae2b48ccf",
+    "timestamp": "2025-11-21 18:21:15.651462",
+    "report_generated": false
+  },
+  {
+    "question": "In recover(), after decrypting the metadata, does the function validate that the threshold value is consistent with the number of commitments, or could a mismatch cause incorrect secret reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_29404dca-d717-46c0-bfdf-c245271b06f4",
+    "timestamp": "2025-11-21 18:21:29.616532",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker who compromises less than threshold guardians precompute valid share combinations and use them later to mount a delayed recovery attack?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_65d398cd-678d-4e00-8bbf-7f1a39395cec",
+    "timestamp": "2025-11-21 18:21:44.157957",
+    "report_generated": false
+  },
+  {
+    "question": "Does recover() verify that the decrypted shares match the expected Shamir polynomial degree, or could malformed shares cause incorrect secret reconstruction without raising errors?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0858b032-dbbe-4ac2-9629-0a661aea42c7",
+    "timestamp": "2025-11-21 18:22:00.269926",
+    "report_generated": false
+  },
+  {
+    "question": "Can the sss::recover() function at line 327 handle edge cases where share indices are non-consecutive or have gaps, or could this lead to polynomial interpolation errors?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0ffb1add-31db-4cc6-b44c-2cfac76cf036",
+    "timestamp": "2025-11-21 18:22:17.695959",
+    "report_generated": false
+  },
+  {
+    "question": "Does recover() protect against an attacker who replays old valid shares from a previous backup generation, potentially recovering outdated secrets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9172e6eb-d938-4eb0-bf58-5467d4890135",
+    "timestamp": "2025-11-21 18:22:36.979010",
+    "report_generated": false
+  },
+  {
+    "question": "In BackupCiphertextV0::recover(), if an attacker controls multiple guardian decryption keys, can they learn partial information about the secret by attempting recovery with different key combinations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b7a31d0d-805c-479c-a5f9-01761ce7a21a",
+    "timestamp": "2025-11-21 18:22:57.211958",
+    "report_generated": false
+  },
+  {
+    "question": "Does the metadata decryption at line 319 verify the authenticity of the threshold value, or could an attacker who obtains the metadata key manipulate this value to lower the recovery threshold?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e74c77bc-0fab-4018-a8f9-f2ad26cf2727",
+    "timestamp": "2025-11-21 18:23:18.733986",
+    "report_generated": false
+  },
+  {
+    "question": "Can recover() distinguish between shares from different backup versions of the same account, or could an attacker mix shares from different backups to cause recovery failures or extract information?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_98b691a5-a7ed-4fcc-8890-9ba01c2c9458",
+    "timestamp": "2025-11-21 18:23:41.533947",
+    "report_generated": false
+  },
+  {
+    "question": "Does the function validate that the recovered secret from line 327 has the expected format and entropy, or could a malicious set of shares produce a weak or predictable secret?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5f1ac9ba-b467-45a2-bf82-6a2c6bf1b95d",
+    "timestamp": "2025-11-21 18:24:04.631043",
+    "report_generated": false
+  },
+  {
+    "question": "In the share verification loop (lines 299-313), can an attacker cause the function to enter an infinite loop or excessive computation by providing specially crafted malformed shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_590deac8-af01-47b4-8940-374a7446b360",
+    "timestamp": "2025-11-21 18:24:29.470797",
+    "report_generated": false
+  },
+  {
+    "question": "Does recover() implement proper error handling to prevent leaking information about which specific shares failed validation through timing or error messages?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f69d4274-9d8e-4bd5-9172-b7deea5a6de1",
+    "timestamp": "2025-11-21 18:24:55.486995",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker who obtains a valid share for one backup use it to attack recovery of other backups created by the same account if guardian sets overlap?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b8e152b0-210b-4685-9136-30b3a61f8cba",
+    "timestamp": "2025-11-21 18:25:22.828914",
+    "report_generated": false
+  },
+  {
+    "question": "Does the function verify that the encryption key used in key_data derivation at line 336 matches the expected key for the account, or could key confusion lead to incorrect decryption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c99312fc-4b53-4de8-b304-6b763e9abf2e",
+    "timestamp": "2025-11-21 18:25:51.114171",
+    "report_generated": false
+  },
+  {
+    "question": "In recover(), can an attacker manipulate the sym parameter to use a different symmetric key and observe whether decryption succeeds, potentially leaking information about the backup structure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5ed25ad8-8d48-419c-9305-be3acc249144",
+    "timestamp": "2025-11-21 18:26:20.482446",
+    "report_generated": false
+  },
+  {
+    "question": "Does the share filtering logic prevent an attacker from providing the same valid share multiple times with different indices to influence the interpolation process?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9a8ad08f-e8df-427e-ad88-08c7a5ab99e8",
+    "timestamp": "2025-11-21 18:26:50.405101",
+    "report_generated": false
+  },
+  {
+    "question": "Can the recovery process be front-run by a malicious guardian who observes recovery attempts on-chain and submits their own recovery transaction first?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_079c5dbe-9d15-431f-bf4b-10b70cfe7115",
+    "timestamp": "2025-11-21 18:27:20.906580",
+    "report_generated": false
+  },
+  {
+    "question": "In DecryptedShareV0::send(), does the function verify that the owner parameter actually corresponds to the account that created the backup, or can shares be sent to arbitrary accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_021488f2-76a8-4a93-8c3c-011eb527e488",
+    "timestamp": "2025-11-21 18:27:52.212093",
+    "report_generated": false
+  },
+  {
+    "question": "Can a malicious guardian call send_for_recovery() at line 155 with a fake recovery public key to redirect shares to an attacker-controlled key?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_730953a7-729b-4f50-ae7f-1d98e136238c",
+    "timestamp": "2025-11-21 18:28:24.761206",
+    "report_generated": false
+  },
+  {
+    "question": "Does send() protect against a malicious guardian who modifies the share data before encryption, allowing them to inject corrupted shares into the recovery process?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8eb8b9b6-8596-47f0-9716-48d5fa9112b8",
+    "timestamp": "2025-11-21 18:28:57.208114",
+    "report_generated": false
+  },
+  {
+    "question": "In send_for_recovery(), does the function validate that owner.rec.pke is properly initialized and belongs to a legitimate recovery session, or could it be spoofed?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bd503bfd-4ecb-4f75-9d5f-a0dd58873d9a",
+    "timestamp": "2025-11-21 18:29:29.515534",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit the fact that send() uses EmptyInfo as additional data, making all shares encrypted with the same context and vulnerable to context confusion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_28b4d067-ed60-4e60-8ae6-85d6be6daabe",
+    "timestamp": "2025-11-21 18:30:01.608224",
+    "report_generated": false
+  },
+  {
+    "question": "Does DecryptedShareV0::send() implement replay protection, or could an attacker capture and replay encrypted shares to trigger multiple recovery attempts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3dff8bba-d374-46ad-a46c-20281da7482d",
+    "timestamp": "2025-11-21 18:30:33.594206",
+    "report_generated": false
   }
 ]
