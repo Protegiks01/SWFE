@@ -1198,5 +1198,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2050b6cc-5c54-4dbb-8068-c20a5f409761",
     "timestamp": "2025-11-21 14:24:51.373995",
     "report_generated": false
+  },
+  {
+    "question": "Module Documentation Clarity: Is the separation between internal and public modules clearly documented? Could developers accidentally use internal APIs, bypassing security checks? mod.rs:14-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_49c10153-bed3-43ec-b2c9-97c3fa1afd2b",
+    "timestamp": "2025-11-21 14:26:02.401873",
+    "report_generated": false
+  },
+  {
+    "question": "Re-export Transitivity: Could transitive re-exports (public module re-exporting items from internal modules) accidentally expose internal APIs? mod.rs:29-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bf6de950-771c-4dea-a027-a53cfe8330ff",
+    "timestamp": "2025-11-21 14:26:16.316261",
+    "report_generated": false
+  },
+  {
+    "question": "Module State Isolation: Do modules maintain isolated state, or could operations in one module affect the state of another (e.g., global RNG state)? mod.rs:14-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a3f05fab-bffb-42b4-aaaa-65ac77978540",
+    "timestamp": "2025-11-21 14:26:30.659879",
+    "report_generated": false
+  },
+  {
+    "question": "Module Initialization Order: Is there a required initialization order for modules? Could using cryptographic primitives before proper initialization cause undefined behavior? mod.rs:14-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_54d90530-4ab6-4203-b961-987ec5abe3ec",
+    "timestamp": "2025-11-21 14:26:45.897797",
+    "report_generated": false
+  },
+  {
+    "question": "Error Propagation Across Modules: When errors occur in internal modules, are they properly sanitized before propagating to public APIs? Could detailed error messages leak secrets or implementation details? mod.rs:14-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_84560ed4-ade3-49f7-9bec-e8e3dfffd464",
+    "timestamp": "2025-11-21 14:27:03.379320",
+    "report_generated": false
+  },
+  {
+    "question": "Module Boundary Validation: Do modules validate inputs at their public API boundaries? Or could malicious data pass through one module and corrupt state in another? mod.rs:14-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_801e1266-bc5c-4124-800d-5e387d2e8939",
+    "timestamp": "2025-11-21 14:27:22.326304",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Module Type Sharing: Are types from internal modules (e.g., Fr, G1Affine from pairing) used across multiple modules? Could this create opportunities for type confusion attacks? mod.rs:14-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_351cf3f9-a5f6-409e-a235-f7c595c6772e",
+    "timestamp": "2025-11-21 14:27:42.546765",
+    "report_generated": false
+  },
+  {
+    "question": "Public Module Dependencies: Do public modules (email_cert, sig, vdrf) depend on internal modules in ways that could leak implementation details through error messages or timing? mod.rs:24-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1028ed80-b2ba-460f-8c98-a284f176232f",
+    "timestamp": "2025-11-21 14:28:04.083577",
+    "report_generated": false
+  },
+  {
+    "question": "Internal Module Coupling: Are the internal modules (commitments, pke, symmetric, sss) tightly coupled? Could changes to one module's implementation introduce vulnerabilities in dependent modules without obvious breakage? mod.rs:14-21",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ad15b8a5-eeed-4b28-9d60-61f27f8cef6e",
+    "timestamp": "2025-11-21 14:28:27.497149",
+    "report_generated": false
+  },
+  {
+    "question": "Cryptographic Primitive Composability: Are the chosen primitives proven secure under composition? Could interactions between VDRF, signatures, and commitments create unexpected vulnerabilities? mod.rs:14-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f56b2642-7c5a-420a-8555-8e1ab42ae184",
+    "timestamp": "2025-11-21 14:28:51.366060",
+    "report_generated": false
+  },
+  {
+    "question": "Key Generation Bias: Do key generation functions produce uniformly distributed keys? Could bias in key generation reduce the effective key space, making brute-force attacks feasible? mod.rs:14-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dde7870e-5721-4b4a-b8d7-3b48281e8c81",
+    "timestamp": "2025-11-21 14:29:16.600442",
+    "report_generated": false
+  },
+  {
+    "question": "Side-Channel Resistance: Are the cryptographic implementations constant-time? Could timing attacks on signature verification or VDRF evaluation leak secret key shares to malicious guardians? mod.rs:14-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_60083480-44ca-4a87-b5cd-22e5035b938c",
+    "timestamp": "2025-11-21 14:29:43.882205",
+    "report_generated": false
+  },
+  {
+    "question": "Randomness Source Quality: Do the cryptographic primitives use a cryptographically secure RNG? Could predictable randomness allow attackers to predict VDRF evaluations or forge signatures? mod.rs:14-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e4ecd7e9-be8e-4dc5-8e66-05d0647dc2af",
+    "timestamp": "2025-11-21 14:30:11.995746",
+    "report_generated": false
+  },
+  {
+    "question": "Group Element Validation: Are all group elements deserialized with subgroup checks? Could attackers provide points not in the prime-order subgroup to break VDRF security? mod.rs:14-27",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_71bd6eea-2c9d-46d8-b832-9ceb80e3e923",
+    "timestamp": "2025-11-21 14:30:40.847639",
+    "report_generated": false
+  },
+  {
+    "question": "Field Element Validation: Do the curve type aliases properly validate field elements? Could attackers inject invalid field elements that cause silent failures during cryptographic operations? mod.rs:16",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_09d9fb2e-fa50-4630-88b8-9a1413db61f0",
+    "timestamp": "2025-11-21 14:31:11.481841",
+    "report_generated": false
+  },
+  {
+    "question": "Hash-to-Curve Security: Do the hash-to-curve functions in the pairing module use standardized methods (RFC 9380)? Could custom hash-to-curve implementations introduce bias that breaks VDRF unpredictability? mod.rs:17",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8a0e321a-8406-4ced-b5f1-0806f934f8c1",
+    "timestamp": "2025-11-21 14:31:42.540450",
+    "report_generated": false
+  },
+  {
+    "question": "Pairing Non-Degeneracy: Does the internal pairing module check for degenerate pairings (identity elements)? Could attackers craft VDRF evaluations using identity points to bypass verification? mod.rs:17",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9b008447-4fca-4b87-b717-2efddfa469e7",
+    "timestamp": "2025-11-21 14:32:15.821368",
+    "report_generated": false
+  },
+  {
+    "question": "Polynomial Interpolation Numerical Stability: Does the internal poly module's Lagrange interpolation handle edge cases like duplicate x-coordinates? Could numerical instability allow attackers to cause incorrect secret reconstruction? mod.rs:19",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b04ae2d7-ac34-4568-be37-51c1980fd7fc",
+    "timestamp": "2025-11-21 14:32:50.852695",
+    "report_generated": false
+  },
+  {
+    "question": "Shamir Secret Sharing Information-Theoretic Security: Does the internal sss module implement information-theoretic secure Shamir secret sharing? Could fewer than t shares leak information about the secret? mod.rs:20",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1038cc45-9be8-426c-91b7-673ef49f335b",
+    "timestamp": "2025-11-21 14:33:26.541398",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Binding Property: Are Pedersen commitments in the internal module computationally binding? Could a minority of malicious guardians find collision attacks to open commitments to different values? mod.rs:15",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_260bf207-343a-4cf5-b680-44cea55413d3",
+    "timestamp": "2025-11-21 14:34:03.582741",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Hiding Property: Does the internal commitments module's Pedersen commitment implementation use statistically hiding commitments? If only computationally hiding, could future quantum computers reveal committed values? mod.rs:15",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7e951ac1-b6bb-4342-bf6c-6cdae68e10f0",
+    "timestamp": "2025-11-21 14:34:41.040728",
+    "report_generated": false
+  },
+  {
+    "question": "Symmetric Encryption Authenticated: Does the internal symmetric module implement authenticated encryption (AEAD)? If not, could attackers modify backup ciphertexts without detection, causing recovery failures? mod.rs:21",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7fc4f58c-d72e-4a68-b281-00e8f8a58013",
+    "timestamp": "2025-11-21 14:35:17.727454",
+    "report_generated": false
+  },
+  {
+    "question": "PKE Semantic Security: Does the internal pke module implement IND-CCA2 secure encryption? If only IND-CPA secure, could attackers perform chosen-ciphertext attacks to extract guardian shares? mod.rs:18",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_28c9e939-5e54-4be1-a944-0d4528dc79b3",
+    "timestamp": "2025-11-21 14:35:52.911443",
+    "report_generated": false
+  },
+  {
+    "question": "Email Certificate Cryptographic Binding: How do the re-exported email certificate types (EmailCert, EmailCertToken, EmailCertificate) cryptographically bind email addresses to user public keys? Could an attacker with two valid certificates swap bindings? mod.rs:30",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_889898a7-1733-41e1-a22c-13554a52da24",
+    "timestamp": "2025-11-21 14:36:29.747145",
+    "report_generated": false
+  },
+  {
+    "question": "KDF Security Strength: Do the re-exported kdf and kdfn functions provide sufficient key stretching? Could weak KDF parameters allow attackers to brute-force derived keys from partially leaked secrets? mod.rs:31",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5b69be00-19fc-495f-b81f-eeadfa07f835",
+    "timestamp": "2025-11-21 14:37:06.883136",
+    "report_generated": false
   }
 ]
