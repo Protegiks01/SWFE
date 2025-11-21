@@ -6448,5 +6448,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_85f4434e-581d-4f41-a03f-a7c44f630fc5",
     "timestamp": "2025-11-21 21:18:11.117600",
     "report_generated": false
+  },
+  {
+    "question": "Does initiate_recovery protect against timing attacks where an attacker measures decryption time differences to determine which association index corresponds to a valid RIK? v0.rs:178-193",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6f569ee6-49f0-4c5f-8968-91ff89453cc6",
+    "timestamp": "2025-11-21 21:19:16.631855",
+    "report_generated": false
+  },
+  {
+    "question": "In RecoverySecrets, can an attacker who compromises the dkey field decrypt other users' recovery states if the same PKE key is somehow reused? v0.rs:130-135",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_362f72a5-7196-4e47-ae9d-38299c4a6f57",
+    "timestamp": "2025-11-21 21:19:29.634549",
+    "report_generated": false
+  },
+  {
+    "question": "When rec.social.recover is called, does it verify that the shares provided are from the current recovery session and not replayed from a previous session? v0.rs:147-151",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bcddba20-86ee-4ad1-877c-e091f3f71a03",
+    "timestamp": "2025-11-21 21:19:42.981402",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker provide malformed guardian shares to complete that cause guardians to be blamed for providing invalid data when the issue is actually share corruption? v0.rs:145-162",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9991e2c4-ffa6-4720-8da5-35a9f056cb0f",
+    "timestamp": "2025-11-21 21:19:56.756682",
+    "report_generated": false
+  },
+  {
+    "question": "In verify_update for recovery, does the code prevent an attacker from setting rec.pke to None after recovery has started, potentially locking out legitimate recovery attempts? v0.rs:829",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_de747d5a-ba43-4a31-9e28-7122d5ce6069",
+    "timestamp": "2025-11-21 21:20:11.218494",
+    "report_generated": false
+  },
+  {
+    "question": "Does initiate_recovery ensure that the newly generated dkey has sufficient entropy, or can weak RNG compromise the confidentiality of guardian shares? v0.rs:196",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_af982e93-94d6-4da3-bf1e-e2a95960230a",
+    "timestamp": "2025-11-21 21:20:27.400180",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker who obtains RecoverySecrets from a client's local storage impersonate the account owner to guardians and collect unauthorized shares? v0.rs:130-135",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_24691b34-0466-44c1-84bc-d7edbae9b081",
+    "timestamp": "2025-11-21 21:20:44.815058",
+    "report_generated": false
+  },
+  {
+    "question": "In check_for_recovery, when rec_st.pke.is_none() returns true, does this leak information about whether recovery has been initiated, enabling timing attacks? v0.rs:738-740",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3f2001f5-6ee8-47a2-8bd5-0f2cfa505326",
+    "timestamp": "2025-11-21 21:21:04.946048",
+    "report_generated": false
+  },
+  {
+    "question": "Does RecoverySecrets::complete enforce that the account ID in self.acc matches the account being recovered to prevent cross-account key derivation? v0.rs:154-158",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b81d6608-a138-4cb0-95f0-994317e789da",
+    "timestamp": "2025-11-21 21:21:25.985669",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker manipulate the rec.enc_msk ciphertext to cause MSK decryption failures that permanently lock the account after recovery? v0.rs:161",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_24c1ce1f-ca6a-489d-830b-04fe4747ad46",
+    "timestamp": "2025-11-21 21:21:48.379336",
+    "report_generated": false
+  },
+  {
+    "question": "In create_recovery, does passing an empty guardians slice with threshold: 0 create a recovery backup that can be reconstructed without any guardian approval? v0.rs:373-394",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7da55e61-c00f-4b91-a933-badb0d66ee56",
+    "timestamp": "2025-11-21 21:22:11.494148",
+    "report_generated": false
+  },
+  {
+    "question": "When send_for_recovery encrypts shares for recovery_pke, can an attacker substitute this key to intercept shares meant for the legitimate account owner? v0.rs:155-179",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b5341b58-18ac-4d35-986d-50773a384efb",
+    "timestamp": "2025-11-21 21:22:35.415093",
+    "report_generated": false
+  },
+  {
+    "question": "Does verify_update for recovery messages prevent replay attacks where an old signed recovery request is resubmitted after the RIK has been rotated? v0.rs:802-832",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ea21f02e-c866-468b-b8fd-7a2c093d142d",
+    "timestamp": "2025-11-21 21:23:00.275490",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit the find_map operation in initiate_recovery to leak information about the number of valid associations through observable behavior differences? v0.rs:178-193",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_947bb74a-f7ac-4ed4-8db0-198d3d7469bc",
+    "timestamp": "2025-11-21 21:23:25.703644",
+    "report_generated": false
+  },
+  {
+    "question": "In new_msk, when the MSK is rotated, are all dependent encrypted materials (backups, recovery state) properly re-encrypted or invalidated? v0.rs:480-483",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_de7f6e90-fade-497b-9719-bdfc3e7a735a",
+    "timestamp": "2025-11-21 21:23:52.598475",
+    "report_generated": false
+  },
+  {
+    "question": "Does new_sig preserve the old signing key in old_sig correctly to ensure that pending account updates can still be verified? v0.rs:486-489",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_105c7db2-be33-4627-9197-0096c1c919dc",
+    "timestamp": "2025-11-21 21:24:20.897497",
+    "report_generated": false
+  },
+  {
+    "question": "When new_pke rotates the encryption key, does it verify that all old encrypted shares can still be decrypted with keys in old_pke? v0.rs:492-496",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0530a4c9-4f40-4842-80f9-bec8b2e54d8d",
+    "timestamp": "2025-11-21 21:24:50.298171",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker force unlimited growth of old_pke or old_msk vectors through repeated key rotations, eventually causing memory exhaustion or performance degradation? v0.rs:492-496",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a125f3a2-120c-43da-9f99-56fc98c62b69",
+    "timestamp": "2025-11-21 21:25:20.922036",
+    "report_generated": false
+  },
+  {
+    "question": "In gen, does the account ID derivation from the verification key prevent collisions where two different signing keys map to the same account ID? v0.rs:404",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d7c0c7f3-6b97-43c2-9824-b67c844b06c3",
+    "timestamp": "2025-11-21 21:25:53.096490",
+    "report_generated": false
+  },
+  {
+    "question": "When generating fresh keys in gen, is the RNG properly seeded to prevent predictable key generation across multiple accounts? v0.rs:397-440",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_313871b5-d07a-4401-8db6-7f9966a14c54",
+    "timestamp": "2025-11-21 21:26:24.129889",
+    "report_generated": false
+  },
+  {
+    "question": "Does new_pke ensure that the old PKE key is not immediately removed from old_pke, preventing decryption failures for in-flight backup shares? v0.rs:492-496",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a818bc54-3afc-4bcd-aaa7-ef95a69517de",
+    "timestamp": "2025-11-21 21:26:55.983397",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit the fact that old_sig is set to the current sig during initialization to forge signatures if they compromise old_sig later? v0.rs:424-426",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_36702520-9d81-477e-a466-3960916ab523",
+    "timestamp": "2025-11-21 21:27:28.704792",
+    "report_generated": false
+  },
+  {
+    "question": "In update, are old MSK values in old_msk properly included in the encrypted state to allow backward compatibility for decrypting old backups? v0.rs:672-676",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_45e1ecae-b889-40dd-ad09-b174452d194f",
+    "timestamp": "2025-11-21 21:28:00.489019",
+    "report_generated": false
+  },
+  {
+    "question": "Does the dirty flag correctly track all state modifications that require a version increment, preventing stale state attacks? v0.rs:637",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_389b74df-955f-4bd2-890f-dfefa6aee2ba",
+    "timestamp": "2025-11-21 21:28:33.342706",
+    "report_generated": false
+  },
+  {
+    "question": "When old_pke contains multiple keys, does decrypt_share try them in a predictable order that could leak timing information about when keys were rotated? v0.rs:595-602",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_24edd620-d899-489e-aecc-1bfb8c8818ab",
+    "timestamp": "2025-11-21 21:29:05.259107",
+    "report_generated": false
   }
 ]
