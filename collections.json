@@ -4348,5 +4348,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9d892b33-b6c8-41fd-836b-04937661c97c",
     "timestamp": "2025-11-21 18:41:13.277471",
     "report_generated": false
+  },
+  {
+    "question": "Can attackers create a backup with threshold=0, eliminating guardian protection?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e38ad13d-7eb8-4e45-befc-d239570f1427",
+    "timestamp": "2025-11-21 18:42:43.168965",
+    "report_generated": false
+  },
+  {
+    "question": "Is guardian shuffling cryptographically random, or predictable?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a1078aca-152e-462a-a693-81a8e692318b",
+    "timestamp": "2025-11-21 18:42:56.427771",
+    "report_generated": false
+  },
+  {
+    "question": "Can attackers infer original guardian ordering from encrypted indices?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_76d9264f-1bf3-42b5-ad1f-d59c73222213",
+    "timestamp": "2025-11-21 18:43:12.187858",
+    "report_generated": false
+  },
+  {
+    "question": "Does Shamir secret sharing correctly handle threshold=0?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_35222c58-f4d5-4929-8822-2dc5480c18ee",
+    "timestamp": "2025-11-21 18:43:27.738847",
+    "report_generated": false
+  },
+  {
+    "question": "Are signing keys generated with independent randomness?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9f70f4e2-75cb-46e4-8f05-15c3278a7720",
+    "timestamp": "2025-11-21 18:43:44.603492",
+    "report_generated": false
+  },
+  {
+    "question": "Do share commitments provide hiding and binding?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fe082ac2-5f33-4e60-867d-164c31ab58b0",
+    "timestamp": "2025-11-21 18:44:02.657762",
+    "report_generated": false
+  },
+  {
+    "question": "Can attackers brute-force shares from share hash?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_121f5cac-964c-40ca-9b38-490769d4cc4c",
+    "timestamp": "2025-11-21 18:44:21.750980",
+    "report_generated": false
+  },
+  {
+    "question": "Does metadata key derivation provide domain separation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8f2f9db7-f6e8-4ef2-b5b2-baaa384bcd57",
+    "timestamp": "2025-11-21 18:44:41.698811",
+    "report_generated": false
+  },
+  {
+    "question": "Does new() validate sym_key entropy?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a77ee3d6-14ca-445f-99cb-4577750efa48",
+    "timestamp": "2025-11-21 18:45:03.684498",
+    "report_generated": false
+  },
+  {
+    "question": "Does data encryption key derivation ensure proper key separation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_948644e8-9a8c-4d74-827f-df398e03c470",
+    "timestamp": "2025-11-21 18:45:25.942892",
+    "report_generated": false
+  },
+  {
+    "question": "Can attackers manipulate timestamp for ordering or replay attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_403c850f-1920-49fa-811f-cd7ec3cf7f99",
+    "timestamp": "2025-11-21 18:45:48.864857",
+    "report_generated": false
+  },
+  {
+    "question": "Does new() protect against malicious data injection?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_65620e43-6444-4072-af8d-81f77d9c5c4d",
+    "timestamp": "2025-11-21 18:46:12.686742",
+    "report_generated": false
+  },
+  {
+    "question": "Should encryption bind to AAD beyond EmptyAD?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_02af0e9c-2b30-43a9-bfd3-ad71bbb722c7",
+    "timestamp": "2025-11-21 18:46:38.256898",
+    "report_generated": false
+  },
+  {
+    "question": "Does metadata encryption bind threshold securely?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fd7e9adf-47da-48ef-8ec1-8349094315cb",
+    "timestamp": "2025-11-21 18:47:04.577737",
+    "report_generated": false
+  },
+  {
+    "question": "Can batch encryption fail selectively and silently?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b8ed01d6-8a9f-4371-8ec4-f77710c01e90",
+    "timestamp": "2025-11-21 18:47:32.620678",
+    "report_generated": false
+  },
+  {
+    "question": "Does EncryptionContext bind AAD properly?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cd3206f2-67f2-4cea-b8e0-cff763904413",
+    "timestamp": "2025-11-21 18:48:01.947830",
+    "report_generated": false
+  },
+  {
+    "question": "Can attacker-controlled AAD cause unintended decryption contexts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d5b26982-ac74-4b45-95da-d320add6e100",
+    "timestamp": "2025-11-21 18:48:31.975980",
+    "report_generated": false
+  },
+  {
+    "question": "Are guardian public keys validated before use?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dea842cc-2a05-4e44-ad08-2a8c478e84e2",
+    "timestamp": "2025-11-21 18:49:03.410761",
+    "report_generated": false
+  },
+  {
+    "question": "Does batch encryption protect against multi-key compromise?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9e281312-3210-448a-ac3b-3a9a389a0ec9",
+    "timestamp": "2025-11-21 18:49:35.613897",
+    "report_generated": false
+  },
+  {
+    "question": "Is BackupCiphertextV0::id() collision-resistant?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_971900c0-95a4-40d0-8da6-d6689d7f6e30",
+    "timestamp": "2025-11-21 18:50:09.049619",
+    "report_generated": false
+  },
+  {
+    "question": "Does new() provide backup versioning to prevent ciphertext replay?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c9f617b1-533a-45de-b639-9a1db30e0f1e",
+    "timestamp": "2025-11-21 18:50:43.111320",
+    "report_generated": false
+  },
+  {
+    "question": "Can attackers predict future shares from RNG leakage?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a4c9a23f-b5f3-4426-80dc-e034740ae1a3",
+    "timestamp": "2025-11-21 18:51:17.894094",
+    "report_generated": false
+  },
+  {
+    "question": "Are share commitment hashes collision-resistant?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b3788895-27fd-44cf-8669-b7219ffefc2a",
+    "timestamp": "2025-11-21 18:51:52.607585",
+    "report_generated": false
+  },
+  {
+    "question": "Can attackers cause memory exhaustion by supplying many guardians?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8dc55467-703a-4cc8-b29c-bc86d25c5329",
+    "timestamp": "2025-11-21 18:52:25.338874",
+    "report_generated": false
+  },
+  {
+    "question": "Are extreme threshold values validated?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b99fcfe5-ca44-4988-821c-473dafdc1f0a",
+    "timestamp": "2025-11-21 18:52:56.521764",
+    "report_generated": false
   }
 ]
