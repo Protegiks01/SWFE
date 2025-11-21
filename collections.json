@@ -2398,5 +2398,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9d756b3e-7c1a-4e1b-9b0a-ffa8742d483b",
     "timestamp": "2025-11-21 16:15:26.151210",
     "report_generated": false
+  },
+  {
+    "question": "Node ID Domain Separation: Could NodeId signatures be confused with signatures on other data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1ffad09f-f93d-498e-94dd-408be792208d",
+    "timestamp": "2025-11-21 16:16:46.360084",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Expiration Edge Case: Can race conditions cause immediate expiration?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a64c2af5-8498-42ba-a4c1-442a5d654d22",
+    "timestamp": "2025-11-21 16:16:59.568012",
+    "report_generated": false
+  },
+  {
+    "question": "Token Privacy Leakage: Could serialized tokens leak email addresses?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7323d403-e0e2-4153-825f-c4aed98142e4",
+    "timestamp": "2025-11-21 16:17:13.103564",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Verification Order: Could verification order create timing attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_347c8549-99b2-4792-9e6f-ac58a25295e4",
+    "timestamp": "2025-11-21 16:17:26.950630",
+    "report_generated": false
+  },
+  {
+    "question": "Swafe Public Key Trust: Could supplying a forged Swafe PK bypass certificate validation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_04a23299-941c-43c2-a078-d18f044bdf31",
+    "timestamp": "2025-11-21 16:17:41.655064",
+    "report_generated": false
+  },
+  {
+    "question": "Node ID Verification: Could nodes trick users into signing unintended node IDs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_39d7ec25-8bfa-4eee-8354-040f5e5d8ce1",
+    "timestamp": "2025-11-21 16:17:57.900801",
+    "report_generated": false
+  },
+  {
+    "question": "Time Provider Security: Could attackers feed manipulated timestamps for verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_02332a0d-b21c-49a9-912c-ce4683ebe432",
+    "timestamp": "2025-11-21 16:18:16.470312",
+    "report_generated": false
+  },
+  {
+    "question": "Timestamp Conversion Overflow: Could malformed timestamps cause arithmetic errors?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d4a0448c-4490-427a-8c9b-c444bf78aed4",
+    "timestamp": "2025-11-21 16:18:35.945407",
+    "report_generated": false
+  },
+  {
+    "question": "Future Certificate Detection: Can attackers exploit future certificate rejection logic?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c58f4d9d-0b2f-4b6e-b688-3132feec99d7",
+    "timestamp": "2025-11-21 16:18:55.804502",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Expiration Window: Could legitimate certificates expire due to network delays?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bb843e3b-e6fe-42fa-99b1-8db6faafd987",
+    "timestamp": "2025-11-21 16:19:18.297672",
+    "report_generated": false
+  },
+  {
+    "question": "Duration Calculation Error: Could system clock adjustments break time arithmetic?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_494647aa-ff53-40d9-98ba-02506dc0804a",
+    "timestamp": "2025-11-21 16:19:41.550104",
+    "report_generated": false
+  },
+  {
+    "question": "Error Type Information Leakage: Could detailed error codes leak timing information?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_14be2a43-e833-4d9c-aea5-77c92653a59f",
+    "timestamp": "2025-11-21 16:20:05.677561",
+    "report_generated": false
+  },
+  {
+    "question": "Return Value Usage: Could returned references lead to use-after-free?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3a4e7dd9-b29c-48da-a0cb-dd6c0ef78018",
+    "timestamp": "2025-11-21 16:20:30.745946",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Verification Failures: Could malformed signatures cause panics?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cf50f3e6-dc50-49bd-9694-4bf3d940bf8f",
+    "timestamp": "2025-11-21 16:20:56.808430",
+    "report_generated": false
+  },
+  {
+    "question": "Validity Window Precision: Could rounding errors cause early/late expiration?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_993d2887-95da-447b-aead-002ef8f786d8",
+    "timestamp": "2025-11-21 16:21:23.576121",
+    "report_generated": false
+  },
+  {
+    "question": "Replay Attack Prevention: Can tokens be replayed within the 5-minute window?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5fcae8fb-2cca-4915-b18e-9ea1989db5cf",
+    "timestamp": "2025-11-21 16:21:52.275136",
+    "report_generated": false
+  },
+  {
+    "question": "Email String Validation (Verify): Could malformed emails cause downstream failures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_97b4a45c-efb6-49bb-a149-4755af9be0a9",
+    "timestamp": "2025-11-21 16:22:21.827470",
+    "report_generated": false
+  },
+  {
+    "question": "Public Key Extraction: Could returned keys be misused for unintended signing operations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7f9cb87d-7c74-4196-b05e-56e0bc9b4312",
+    "timestamp": "2025-11-21 16:22:52.673300",
+    "report_generated": false
+  },
+  {
+    "question": "Timestamp Boundary Conditions: Could boundary conditions cause inconsistent acceptance?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0f0086af-7c58-47db-bf15-3d7679ad3aa6",
+    "timestamp": "2025-11-21 16:23:24.219836",
+    "report_generated": false
+  },
+  {
+    "question": "Error Handling Completeness: Are all failure modes properly handled?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fc2833b7-11e6-4745-a477-49cf1d35ab79",
+    "timestamp": "2025-11-21 16:23:55.358156",
+    "report_generated": false
+  },
+  {
+    "question": "Concurrent Verification: Could race conditions produce inconsistent results?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e4daf614-7635-4def-a1cf-841f54bfff38",
+    "timestamp": "2025-11-21 16:24:28.596479",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Chain Validation: Could revoked Swafe keys still validate certificates?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d2d04b3a-10f7-470f-aae3-3c3d0de91e31",
+    "timestamp": "2025-11-21 16:25:02.881395",
+    "report_generated": false
+  },
+  {
+    "question": "Time Source Consistency: Could clock skew across nodes break verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7097850e-e342-4790-847d-9380b0a1887e",
+    "timestamp": "2025-11-21 16:25:36.941467",
+    "report_generated": false
+  },
+  {
+    "question": "Cryptographic Algorithm Assumptions: Could crypto advances break the scheme?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f87c308f-4ca5-41a6-a478-8b5304afa3b4",
+    "timestamp": "2025-11-21 16:26:10.120494",
+    "report_generated": false
+  },
+  {
+    "question": "Error Propagation: Could calling code mishandle SwafeError values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_de59b480-bccd-4f89-9cb7-69cfe2449239",
+    "timestamp": "2025-11-21 16:26:43.525706",
+    "report_generated": false
   }
 ]
