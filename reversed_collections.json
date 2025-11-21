@@ -7498,5 +7498,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e6e7d65c-5cc3-4dce-91cb-eb7d096b86c6",
     "timestamp": "2025-11-21 22:16:00.554312",
     "report_generated": false
+  },
+  {
+    "question": "The pairing check in verify() vdrf.rs:225-228 uses generator, c0, evaluation, and -pnt. Can any of these being the identity element cause the check to pass incorrectly?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_76cfbeb3-cdb6-44dd-bf78-17e39b4448d9",
+    "timestamp": "2025-11-21 22:17:19.523864",
+    "report_generated": false
+  },
+  {
+    "question": "In verify() vdrf.rs:234-237 , serialization errors are mapped to VdrfEvaluationVerificationFailed. Can this generic error hide underlying issues like malformed G2 points?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e42ac21d-169e-4911-8c93-09b5bf0916a4",
+    "timestamp": "2025-11-21 22:17:32.597194",
+    "report_generated": false
+  },
+  {
+    "question": "The verify() function vdrf.rs:225-229 returns an error if pairing fails, but doesn't log which input failed. Can this allow an attacker to slowly grind for valid-looking evaluations without detection?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ad5e4a48-aac7-44b1-a4c0-ef78a0b3f5bc",
+    "timestamp": "2025-11-21 22:17:46.030727",
+    "report_generated": false
+  },
+  {
+    "question": "In verify() vdrf.rs:217-220 , VdrfKPoint and VdrfOutputInfo are separate structs with the same fields. Can mixing these types during hashing or KDF cause domain separation failures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1ada885c-6665-4994-8d53-28132eddfc17",
+    "timestamp": "2025-11-21 22:18:00.058892",
+    "report_generated": false
+  },
+  {
+    "question": "The VdrfOutputInfo struct vdrf.rs:72-77 includes c0 and input. Can a malicious public key with a specially crafted c0 cause KDF collisions across different VDRF instances?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_55b4a375-a2d3-4e10-9166-bafc95c99465",
+    "timestamp": "2025-11-21 22:18:15.009242",
+    "report_generated": false
+  },
+  {
+    "question": "In verify() vdrf.rs:239-245 , the KDF uses both the serialized evaluation and a VdrfOutputInfo struct. Can omitting either component from the KDF allow cross-context attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a9ddf39a-824c-404e-94a1-1e6a5c54ee2b",
+    "timestamp": "2025-11-21 22:18:31.224934",
+    "report_generated": false
+  },
+  {
+    "question": "The verify() function vdrf.rs:234-237 , serializes the evaluation using serialize_compressed. Can the serialization produce different byte representations for equivalent G2 points, causing KDF output variations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4040a2cf-6a5c-463b-92af-a9addcb2d6f7",
+    "timestamp": "2025-11-21 22:18:48.723421",
+    "report_generated": false
+  },
+  {
+    "question": "In verify() vdrf.rs:214 , the input is hashed before being used in pairing. Can an attacker provide two inputs with the same hash but different semantics to reuse VDRF evaluations across different emails?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_426c05f1-b2af-42bf-9569-f068f0b94bdf",
+    "timestamp": "2025-11-21 22:19:07.742174",
+    "report_generated": false
+  },
+  {
+    "question": "The verify() function vdrf.rs:225-229 uses check_pairing with negation on the second G2 element. Can implementation bugs in pairing negation cause incorrect verification results?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b2dee83c-f9ab-44cd-bffa-62c81ea33249",
+    "timestamp": "2025-11-21 22:19:28.005599",
+    "report_generated": false
+  },
+  {
+    "question": "In Vdrf::verify() vdrf.rs:208-246 , the pairing check verifies e(G1, evaluation) = e(C_0, pnt). Can an attacker provide an evaluation that satisfies this equation but wasn't derived from the correct VDRF evaluation process?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ef940238-8d95-46e7-8fcd-74f9f74a5363",
+    "timestamp": "2025-11-21 22:19:49.892081",
+    "report_generated": false
+  },
+  {
+    "question": "In combine() vdrf.rs:191 , the xs vector is created by extracting keys from the HashMap. Can the non-deterministic ordering of HashMap iteration cause different results across invocations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5f530871-7fdb-4028-8dcf-f3c775036f68",
+    "timestamp": "2025-11-21 22:20:12.588851",
+    "report_generated": false
+  },
+  {
+    "question": "The combine() function vdrf.rs:165 checks uniq_shares.contains_key(&xi) before inserting. Can race conditions in concurrent calls to combine() cause share substitution, or is this function expected to be called sequentially?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_25088880-2d2a-40a5-8962-298c7283505a",
+    "timestamp": "2025-11-21 22:20:37.276123",
+    "report_generated": false
+  },
+  {
+    "question": "In combine() vdrf.rs:192-202 , the sum uses .sum() on an iterator of G2 projective points. Can the identity element being included or excluded affect whether this produces the expected result?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7975f134-652d-4878-b514-0189cdf85192",
+    "timestamp": "2025-11-21 22:21:02.068762",
+    "report_generated": false
+  },
+  {
+    "question": "The poly::lagrange() function called in combine() vdrf.rs:196-200 computes a fraction. Can zero denominators occur if evaluation points aren't properly validated, causing panics?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_73cbefd4-e4b7-453e-a602-f0d01b171d16",
+    "timestamp": "2025-11-21 22:21:28.357246",
+    "report_generated": false
+  },
+  {
+    "question": "In combine() vdrf.rs:194-201 , the Lagrange interpolation evaluates at zero. Can malicious shares that evaluate correctly at zero but incorrectly at other points pass verification but produce wrong results?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6d028717-13a1-4693-81a0-30b3fbf583c4",
+    "timestamp": "2025-11-21 22:21:56.009407",
+    "report_generated": false
+  },
+  {
+    "question": "The combine() function vdrf.rs:178-180 uses early termination once threshold is reached. Can an attacker exploit this by ordering inputs so that invalid shares are never checked?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2b3f68c2-252e-41e1-8d8f-95e43c238cc1",
+    "timestamp": "2025-11-21 22:22:24.188236",
+    "report_generated": false
+  },
+  {
+    "question": "In combine() vdrf.rs:204 , the final result is converted to affine using .into(). Can this conversion fail or introduce malleability for certain projective coordinates?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6977ab95-8751-4bff-a6b3-5c7bedefaa60",
+    "timestamp": "2025-11-21 22:22:53.255730",
+    "report_generated": false
+  },
+  {
+    "question": "The pairing verification vdrf.rs:170-176 computes check_pairing for each share individually. Can batching these verifications introduce vulnerabilities, or is individual verification necessary?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3e4a660b-3fbe-41d8-ac3f-a00e91cd586e",
+    "timestamp": "2025-11-21 22:23:24.628580",
+    "report_generated": false
+  },
+  {
+    "question": "In combine() vdrf.rs:163 , the function calls id.eval_point() for each share. Can expensive hash computations in this function be exploited for denial of service by providing many NodeIds?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_def4b98d-d67f-45e5-a4c6-b8dace3a81ea",
+    "timestamp": "2025-11-21 22:23:55.219519",
+    "report_generated": false
+  },
+  {
+    "question": "The combine() function accepts a const generic N vdrf.rs:149-153 for output size but doesn't use it directly. Can mismatches between this parameter and later verification in verify() cause issues?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_afaa6a8f-c534-48df-b95c-a39ee598c156",
+    "timestamp": "2025-11-21 22:24:25.402809",
+    "report_generated": false
+  },
+  {
+    "question": "In combine() vdrf.rs:194-201 , evaluation shares are multiplied by Lagrange coefficients. Can overflow in this multiplication produce incorrect results that still pass as valid G2 points?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c6c88458-71b9-4f48-965c-35e596924a28",
+    "timestamp": "2025-11-21 22:24:54.729898",
+    "report_generated": false
+  },
+  {
+    "question": "The combine() function vdrf.rs:190-191 converts the deduplicated shares to a vector. Can the ordering of this vector affect Lagrange interpolation results due to numerical precision issues?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c0b05136-0f17-4ac3-8785-49d0ddf5ee05",
+    "timestamp": "2025-11-21 22:25:23.795817",
+    "report_generated": false
+  },
+  {
+    "question": "In combine() vdrf.rs:161-182 , the function uses a HashMap for deduplication. Can hash collisions in the HashMap implementation allow two different evaluation points to be treated as identical?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_24ee3ee2-67d9-43fb-908b-30aa2a5940e2",
+    "timestamp": "2025-11-21 22:25:52.194431",
+    "report_generated": false
+  },
+  {
+    "question": "The pairing check in combine() vdrf.rs:170-176 uses negation on the second G2 element. Can sign flips or negation errors in the pairing library cause valid shares to be rejected or invalid shares to be accepted?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e694c401-7c22-4d40-8114-dc58cbbaa590",
+    "timestamp": "2025-11-21 22:26:21.675690",
+    "report_generated": false
+  },
+  {
+    "question": "In combine() vdrf.rs:197-198 , the roots are filtered to exclude xi itself. Can an empty filter result (if all xs are identical despite uniqueness checks) cause division by zero in Lagrange computation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_87ae9f24-08fd-4e8f-88df-ea27fd228bf2",
+    "timestamp": "2025-11-21 22:26:51.464185",
+    "report_generated": false
   }
 ]
