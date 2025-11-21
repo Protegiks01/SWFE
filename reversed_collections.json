@@ -5098,5 +5098,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_299e22e6-7d10-47bf-a864-c4066e606456",
     "timestamp": "2025-11-21 19:15:05.852392",
     "report_generated": false
+  },
+  {
+    "question": "Modular Reduction Bias: The from_le_bytes_mod_order reduces the hash modulo the field order v0.rs:35 . If the field order is close to 2^256, could bias enable statistical attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_60e99904-9061-4dba-a712-52eb73843078",
+    "timestamp": "2025-11-21 19:16:40.994063",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Function Weak Randomness: The challenge e is derived via hashing v0.rs:96-100 . If SHA3-256 is weakened in the future, could attackers find challenge collisions to forge signatures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c1fbce06-1db6-4f03-b727-e3caf942da80",
+    "timestamp": "2025-11-21 19:16:54.130338",
+    "report_generated": false
+  },
+  {
+    "question": "Nonce Size Validation: The nonce k is of type Fr. If Fr has a smaller bitsize than expected, could reduced nonce space enable birthday attacks on nonce collisions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0fdd6234-52e6-4dd0-9167-a3609ce72465",
+    "timestamp": "2025-11-21 19:17:07.861144",
+    "report_generated": false
+  },
+  {
+    "question": "Insufficient Entropy: If the RNG draws from an entropy source with insufficient randomness, could nonces have low entropy, enabling brute-force nonce guessing?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5d1ac30c-29e6-415a-acbd-134951415752",
+    "timestamp": "2025-11-21 19:17:21.684149",
+    "report_generated": false
+  },
+  {
+    "question": "Predictable RNG Seed: If the RNG is seeded with predictable data (e.g., current time with low precision), could attackers guess nonces and forge signatures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c7a38360-8978-4900-9711-8ed8482d150b",
+    "timestamp": "2025-11-21 19:17:36.686513",
+    "report_generated": false
+  },
+  {
+    "question": "Nonce Reuse Across Users: In a multi-user system, if the same RNG is used for all users without proper context separation, could nonce collisions across different users occur?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bcc99778-5d4e-45eb-bf8d-a4d23b5731d6",
+    "timestamp": "2025-11-21 19:17:52.735294",
+    "report_generated": false
+  },
+  {
+    "question": "Shared RNG State: If multiple SigningKey instances share the same RNG (e.g., via Arc<Mutex<Rng>>), could concurrent signing operations produce correlated nonces?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_23ed5476-df0b-4cd8-a9e3-6bc54c8cefa2",
+    "timestamp": "2025-11-21 19:18:10.116906",
+    "report_generated": false
+  },
+  {
+    "question": "RNG Failure Handling: If rng.gen() fails or panics, what happens to the partially constructed signature? Could incomplete signatures be leaked or cause crashes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3e94907f-3928-458c-bee5-845fb050693f",
+    "timestamp": "2025-11-21 19:18:29.389760",
+    "report_generated": false
+  },
+  {
+    "question": "Nonce Bias from RNG: If the RNG has statistical bias, could nonces cluster in a smaller space, enabling lattice attacks to recover the secret key from multiple signatures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8f3b8e8a-0109-4e51-be3d-4b904cb9b22f",
+    "timestamp": "2025-11-21 19:18:50.096267",
+    "report_generated": false
+  },
+  {
+    "question": "Nonce Leakage via Side-Channels: The nonce k is used in a scalar multiplication G * k v0.rs:95 . Could timing, power, or cache side-channels leak k during this operation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9710008d-d567-4d04-8692-a7e5dd74c63d",
+    "timestamp": "2025-11-21 19:19:11.215974",
+    "report_generated": false
+  },
+  {
+    "question": "Deterministic RNG in Tests: The test uses thread_rng() v0.rs:118 . If production code accidentally uses a seeded RNG, could nonces become predictable?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0f81bd26-07e0-4a27-91b2-05b7a7546ae8",
+    "timestamp": "2025-11-21 19:19:34.807544",
+    "report_generated": false
+  },
+  {
+    "question": "Single-Use Nonce Guarantee: In sign(), the nonce k is generated via rng.gen() v0.rs:94 . If the RNG state is not advanced properly, could the same nonce be reused, enabling private key extraction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_56a4971b-d6e9-4a94-9987-6bf340c78ad5",
+    "timestamp": "2025-11-21 19:19:58.671293",
+    "report_generated": false
+  },
+  {
+    "question": "Domain Tuple Injection: The encode() method wraps values in a DomainTuple encode.rs:24-28 . Could attackers craft separators that collide with legitimate protocol separators to bypass domain separation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5b694ba2-8dc9-4a6a-b7ab-93de85d39d5b",
+    "timestamp": "2025-11-21 19:20:24.516465",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Output Truncation: The message hash is fixed at 32 bytes v0.rs:74 . If a future version uses larger hashes, could truncation to 32 bytes cause collisions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4b999a44-3deb-49e3-9b1d-1930d849b60a",
+    "timestamp": "2025-11-21 19:20:51.326383",
+    "report_generated": false
+  },
+  {
+    "question": "Message Field Ordering: The SchnorrHash struct fields are ordered r, pk, message v0.rs:70-75 . If bincode encodes fields positionally, could reordering in future versions break compatibility?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bc4e12c7-53a6-4d11-a6e0-7be99c4e6240",
+    "timestamp": "2025-11-21 19:21:19.643101",
+    "report_generated": false
+  },
+  {
+    "question": "Separator Collision: If another protocol component defines a Tagged type with the same separator \"v0:schnorr\", could signatures intended for one context verify in another?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7d65ff59-e1ec-4d77-8013-63cc6e606cb2",
+    "timestamp": "2025-11-21 19:21:49.579648",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Context Signature Reuse: The SchnorrHash type has a fixed separator v0.rs:77-79 . If messages from different contexts (account recovery, backup reconstruction) have the same fields, could signatures be replayed across contexts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c2062320-35e7-42ef-8372-1f0b7202d787",
+    "timestamp": "2025-11-21 19:22:20.026673",
+    "report_generated": false
+  },
+  {
+    "question": "Partial Clone Security: If SigningKey::clone() is used, does the clone share the same OnceCell instance, or are they independent? Could shared caches leak information?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_69be76ae-9e5e-48f1-b459-13b64bec36e3",
+    "timestamp": "2025-11-21 19:22:51.049936",
+    "report_generated": false
+  },
+  {
+    "question": "Serde Skip Field Initialization: The vk field has #[serde(skip)] v0.rs:58-59 . After deserialization, does OnceCell default to empty, or could uninitialized memory cause issues?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4e5eb2a2-fb9f-4fe7-abc1-3e81444fade9",
+    "timestamp": "2025-11-21 19:23:23.346031",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Injection: If an attacker intercepts serialized SigningKey data and injects a crafted secret key, could they impersonate users in recovery flows?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_78248c36-e54a-4d9c-ad64-160c876e231d",
+    "timestamp": "2025-11-21 19:23:53.085479",
+    "report_generated": false
+  },
+  {
+    "question": "Encrypted Storage Requirement: If signing keys are encrypted with RIK before storage (as per the association system), what happens if they're serialized unencrypted? Does the type system prevent this?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_715151f8-00f2-4a0f-afd3-e1b4cb56278c",
+    "timestamp": "2025-11-21 19:24:24.392768",
+    "report_generated": false
+  },
+  {
+    "question": "Accidental Secret Exposure: The SigningKey is marked Serialize v0.rs:54 , allowing the secret key to be serialized. Could developers accidentally log or transmit signing keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5cc2e088-107f-4010-b427-77d0e5b8ae67",
+    "timestamp": "2025-11-21 19:24:57.588015",
+    "report_generated": false
+  },
+  {
+    "question": "Equality vs. Cryptographic Equivalence: VerificationKey derives Eq v0.rs:26 . If equality is based on serialized bytes rather than cryptographic equivalence, could equivalent keys (e.g., different curve representations) be treated as distinct?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_97a4dbd7-ef93-4881-9f7b-4741be943547",
+    "timestamp": "2025-11-21 19:25:30.415399",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Collision via Key Encoding: VerificationKey derives Hash v0.rs:26 . If two different keys have the same hash due to encoding, could attackers exploit hash-based collections?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f066d77e-3168-4b5c-a991-e3a23f66c70e",
+    "timestamp": "2025-11-21 19:26:04.860481",
+    "report_generated": false
+  },
+  {
+    "question": "Canonical Encoding Enforcement: The system uses bincode for serialization. If bincode allows multiple valid encodings of the same VerificationKey, could attackers bypass deduplication or caching logic?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_eed8f58e-6a57-4eb4-8f69-f436dfb7a8f2",
+    "timestamp": "2025-11-21 19:26:37.898916",
+    "report_generated": false
   }
 ]
