@@ -4498,5 +4498,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c66ca77d-3732-4db8-8589-d533f48c7cfa",
     "timestamp": "2025-11-21 18:31:00.472043",
     "report_generated": false
+  },
+  {
+    "question": "Tuple Serialization Ambiguity: The macro serializes as (tag, data) tuple. Can an attacker craft data where the inner type also starts with a u8, causing the deserializer to misparse the tag boundary? venum.rs:66-77",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1ca51f66-89a3-4508-b8ce-295af9a31ce9",
+    "timestamp": "2025-11-21 18:32:11.793939",
+    "report_generated": false
+  },
+  {
+    "question": "Tag Injection in Association Records: For MskRecord and Association enums, can tag manipulation allow unauthorized reconstruction of Recovery Initiation Keys (RIKs), violating account owner exclusivity? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0d9ac1ec-895d-459d-890d-ff1dc7475a79",
+    "timestamp": "2025-11-21 18:32:24.706199",
+    "report_generated": false
+  },
+  {
+    "question": "Tag-Based Version Downgrade in Backups: Can an attacker modify backup ciphertext tags to force older decryption logic, potentially bypassing guardian threshold requirements? venum.rs:103-112",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_250f5d77-b875-40f8-8d5f-2788b19e610a",
+    "timestamp": "2025-11-21 18:32:37.846736",
+    "report_generated": false
+  },
+  {
+    "question": "Tag Replay in Guardian Shares: Can an attacker replay old GuardianShare messages with modified tags to bypass approval checks during account recovery? venum.rs:80-117",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3fbc9ebe-c11f-453f-ad77-348fab008241",
+    "timestamp": "2025-11-21 18:32:51.569217",
+    "report_generated": false
+  },
+  {
+    "question": "Tag Leakage via Error Messages: When deserialization fails due to invalid tags, do error messages reveal sensitive information about the expected enum structure or internal state? venum.rs:111",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7b50901a-caaf-4833-ae75-f536da901408",
+    "timestamp": "2025-11-21 18:33:05.978592",
+    "report_generated": false
+  },
+  {
+    "question": "Tag Preservation in State Transitions: When AccountState transitions via AccountUpdate, are tags preserved correctly, or can an attacker inject mismatched tags to corrupt account state? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e8798564-d501-4dba-8507-5fe064f81703",
+    "timestamp": "2025-11-21 18:33:21.717894",
+    "report_generated": false
+  },
+  {
+    "question": "Tag Forgery in Email Certificates: The EmailCertificate likely uses versioned enums. Can an attacker forge tags to associate arbitrary emails with accounts, violating the 'email-to-account uniqueness' invariant? venum.rs:28-119",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6e74a11f-77b0-4c7e-9129-d43bfb46347d",
+    "timestamp": "2025-11-21 18:33:38.941715",
+    "report_generated": false
+  },
+  {
+    "question": "Tag Consistency Across Network: When versioned enums are transmitted between off-chain nodes and smart contracts, can tag inconsistencies between different deployments cause authentication failures? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a39dc7f7-e091-4a9e-86aa-26cb33c68be5",
+    "timestamp": "2025-11-21 18:33:57.969502",
+    "report_generated": false
+  },
+  {
+    "question": "Tag Validation Bypass via Raw Bytes: If raw bytes are directly cast to a versioned enum (bypassing serde), can an attacker inject arbitrary tags that violate the < 128 constraint? venum.rs:80-117",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fc13b0c8-08f9-41d8-aa59-e04c88e00dbb",
+    "timestamp": "2025-11-21 18:34:18.999605",
+    "report_generated": false
+  },
+  {
+    "question": "Tag Ordering in Deserialization: The match statement on tags uses a specific order. Can the compiler optimize this in ways that introduce timing side-channels revealing which variant was deserialized? venum.rs:103-112",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1c733ed5-7e62-4b92-be4e-6ec7ca880bae",
+    "timestamp": "2025-11-21 18:34:39.820554",
+    "report_generated": false
+  },
+  {
+    "question": "Tag Size Assumption: The code assumes u8 tags serialize as single bytes. Can changes in bincode configuration cause multi-byte tag encoding, breaking the < 128 assumption? venum.rs:71",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_833cb6ba-174e-4fc6-b935-ab171ae8329f",
+    "timestamp": "2025-11-21 18:35:03.823974",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Tag Canonicalization: The macro doesn't enforce canonical encoding of tags. Can an attacker encode the same tag value in multiple ways (e.g., with leading zeros) to create distinct but equivalent serializations? venum.rs:71",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_54535bf0-8b1f-4499-ab6f-334dc0e2b5b4",
+    "timestamp": "2025-11-21 18:35:27.200894",
+    "report_generated": false
+  },
+  {
+    "question": "Tag Manipulation in Signatures: When a Signature enum is serialized for verification, can an attacker modify the tag to point to a different signature algorithm, bypassing cryptographic verification? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_927c6f64-3570-4a05-9854-bc77e2b47c9d",
+    "timestamp": "2025-11-21 18:35:51.669329",
+    "report_generated": false
+  },
+  {
+    "question": "Tag Verification in Batch Operations: For BatchCiphertext which contains multiple ciphertexts, are all inner tags validated consistently, or can an attacker mix tags to cause selective decryption failures? venum.rs:80-117",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_968427ab-0235-44dc-9a96-40c95aee21f1",
+    "timestamp": "2025-11-21 18:36:17.794088",
+    "report_generated": false
+  },
+  {
+    "question": "Tag Context Binding: Tags are not cryptographically bound to the enum type. Can an attacker exploit this to substitute serialized data between different enum types in critical operations like account recovery or backup reconstruction? venum.rs:61-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_81871eef-2e60-4fba-abb3-57cb3d6d1fc4",
+    "timestamp": "2025-11-21 18:36:45.070138",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Version Tag Collision: When adding new variants to an existing enum, can a developer accidentally reuse a tag value that was previously used but removed, breaking backward compatibility? venum.rs:103-112",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_431d2828-5504-4548-8694-150d64ffe95e",
+    "timestamp": "2025-11-21 18:37:13.779483",
+    "report_generated": false
+  },
+  {
+    "question": "Tag Exhaustion Attack: With only 128 possible tag values (0-127), can an attacker force the system to exhaust available tags over time, preventing future version upgrades? venum.rs:38",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c21fdcb3-f2f5-432e-a746-04037a698a1b",
+    "timestamp": "2025-11-21 18:37:43.128708",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Tag Monotonicity: There's no requirement that tag values increase monotonically (e.g., V0=5, V1=2, V2=10 is allowed). Can this cause forward compatibility issues where newer code misinterprets older data? venum.rs:28-59",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0d3eae41-d08b-4dba-8419-6dc74869845f",
+    "timestamp": "2025-11-21 18:38:13.673437",
+    "report_generated": false
+  },
+  {
+    "question": "Tag Injection in Tuple Serialization: The serialization format is a tuple (tag, data). Can an attacker inject malicious data where the inner type also contains a tuple structure, causing nested tag confusion? venum.rs:70-73",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_569f8462-c555-4883-9fe9-12daa4802d40",
+    "timestamp": "2025-11-21 18:38:45.266065",
+    "report_generated": false
+  },
+  {
+    "question": "Tag Downgrade Attack: Can an attacker intercept a newer versioned enum (e.g., AccountState::V1) and modify the tag to an older version (V0) to exploit deprecated logic or bypass new security checks? venum.rs:100-112",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e78f917a-57bb-4337-8ba0-776396898a22",
+    "timestamp": "2025-11-21 18:39:17.146562",
+    "report_generated": false
+  },
+  {
+    "question": "Invalid Tag Error Handling: When deserializing with an invalid tag, the error message is generic 'invalid enum variant'. Can this leak information about which versioned enum failed, allowing an attacker to fingerprint the system's internal state? venum.rs:111",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_75e3400d-72b6-422b-abf5-b497eabb11d2",
+    "timestamp": "2025-11-21 18:39:49.524454",
+    "report_generated": false
+  },
+  {
+    "question": "Tag Overflow During Compilation: The compile-time panic check uses if $value >= 128, but can integer overflow during macro expansion cause the check to pass incorrectly for very large constants? venum.rs:38-46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_568f4789-9557-4655-a00e-001eefbff046",
+    "timestamp": "2025-11-21 18:40:22.303501",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Duplicate Tag Detection: The macro doesn't validate that tag values are unique within a single enum definition. Can a developer accidentally define two variants with the same tag (e.g., V0(Type1) = 0, V1(Type2) = 0), causing deserialization ambiguity? venum.rs:28-59",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_950dba63-260b-4c93-b3f1-8b4b92342cfe",
+    "timestamp": "2025-11-21 18:40:55.551413",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Enum Tag Reuse: Since different enums generated by the macro can use the same tag value (e.g., all V0 variants use tag 0), can an attacker substitute a GuardianShare::V0 serialization for an AccountState::V0 where both use tag 0, potentially bypassing authorization checks? venum.rs:103-113",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2f1408c1-15c2-4587-b467-1091321323bb",
+    "timestamp": "2025-11-21 18:41:31.039514",
+    "report_generated": false
+  },
+  {
+    "question": "Tag Range Enforcement: The compile-time check enforces tags < 128, but can an attacker bypass this by manually crafting bincode with tags >= 128 in the serialized stream to cause undefined behavior during deserialization? venum.rs:34-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9bd1ff66-4e4a-400c-a856-35f94dd9dcf6",
+    "timestamp": "2025-11-21 18:42:07.246269",
+    "report_generated": false
   }
 ]
