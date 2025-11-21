@@ -3298,5 +3298,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2e63e830-acda-4be4-bad9-25f5909c64e6",
     "timestamp": "2025-11-21 17:01:46.145245",
     "report_generated": false
+  },
+  {
+    "question": "Base64 Decode Timing Leak: Could timing reveal partial secrets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0d6bceea-17d9-4286-8c77-dc6aae062330",
+    "timestamp": "2025-11-21 17:02:53.966741",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Timing Leak: Could timing reveal key structure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_913d465c-73cf-4439-ae9e-25d08eecff25",
+    "timestamp": "2025-11-21 17:03:07.322317",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Input Encoding Collision: Could collisions enable multi-account mapping?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8eb2f925-2edf-47c7-9ed7-138a8032efbe",
+    "timestamp": "2025-11-21 17:03:20.506775",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Over Serialized Data: Could encoding malleability affect signatures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_273b856e-da32-4eda-a83d-11f60b2c8287",
+    "timestamp": "2025-11-21 17:03:34.254877",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Binding Failure: Could commitments be reused across accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_466e2a7e-41f8-4f68-947c-dc4b989ee9aa",
+    "timestamp": "2025-11-21 17:03:48.669956",
+    "report_generated": false
+  },
+  {
+    "question": "Share Serialization Integrity: Could share tampering bypass commitments?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fdd0f4c3-9b8d-4f33-80c4-98362f5dba6d",
+    "timestamp": "2025-11-21 17:04:04.361833",
+    "report_generated": false
+  },
+  {
+    "question": "Key Serialization Leakage: Could serialized keys remain in memory?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_162b4f43-2d20-4fa5-b8c1-97aede353c71",
+    "timestamp": "2025-11-21 17:04:21.578602",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Trait Determinism: Could collisions break HashMap usage?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1ac2ce63-f54e-406c-b6e2-70be2ce8af4d",
+    "timestamp": "2025-11-21 17:04:40.344269",
+    "report_generated": false
+  },
+  {
+    "question": "PartialEq Timing: Could comparisons leak timing info?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_caadf77c-85d9-4371-a334-f57ccca81717",
+    "timestamp": "2025-11-21 17:05:00.697216",
+    "report_generated": false
+  },
+  {
+    "question": "Clone and Sensitive Data: Are cloned secrets zeroized?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4c564c19-6774-4b07-a1fb-862ba015d7cc",
+    "timestamp": "2025-11-21 17:05:22.616423",
+    "report_generated": false
+  },
+  {
+    "question": "Display Trait Exposure: Could Display expose encoded secrets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d131b0d5-953a-4d70-b252-77f0c4a4023c",
+    "timestamp": "2025-11-21 17:05:45.044368",
+    "report_generated": false
+  },
+  {
+    "question": "Debug Trait Information Leak: Could Debug leak secrets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b0b31524-fe60-4b9e-8373-aa11767e4a3c",
+    "timestamp": "2025-11-21 17:06:09.301426",
+    "report_generated": false
+  },
+  {
+    "question": "Associated Type Vulnerabilities: Are associated types safely encoded?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_31aa73e9-f35d-4772-af11-b8065b2c483d",
+    "timestamp": "2025-11-21 17:06:33.719884",
+    "report_generated": false
+  },
+  {
+    "question": "Unsized Type Handling: Could dynamic trait objects reintroduce confusion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_03116113-3ebd-4200-b62c-5da754ff11b2",
+    "timestamp": "2025-11-21 17:06:59.457473",
+    "report_generated": false
+  },
+  {
+    "question": "Zero-Sized Type Confusion: Could () cause unexpected behavior?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8579dd65-98c3-4505-afb0-22f9a55ac8e2",
+    "timestamp": "2025-11-21 17:07:25.850244",
+    "report_generated": false
+  },
+  {
+    "question": "PhantomData Exploitation: Could phantom types bypass validation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_01865f25-29cf-463a-81dd-86775f4cf3e7",
+    "timestamp": "2025-11-21 17:07:54.254063",
+    "report_generated": false
+  },
+  {
+    "question": "Generic Type Bound Issues: Are Serialize + DeserializeOwned enough?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a682f273-a06f-4e70-90ce-d14fc119c08a",
+    "timestamp": "2025-11-21 17:08:22.208509",
+    "report_generated": false
+  },
+  {
+    "question": "Serde Skip Fields: Could skipped fields remain uninitialized?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d1699811-1037-4761-8831-4f4546df862d",
+    "timestamp": "2025-11-21 17:08:51.342933",
+    "report_generated": false
+  },
+  {
+    "question": "Serde Rename Attacks: Could renamed fields collide?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a4c29516-7f0a-4797-a18d-1d5b5b6a069d",
+    "timestamp": "2025-11-21 17:09:22.060689",
+    "report_generated": false
+  },
+  {
+    "question": "Serde Derive Bypasses: Could field attributes bypass StrEncoded rules?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_27907029-ee30-4b10-819e-3f599a017eec",
+    "timestamp": "2025-11-21 17:09:54.203329",
+    "report_generated": false
+  },
+  {
+    "question": "Serde Visitor Exploitation: Could malicious tokens bypass checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d83d1ee5-3a25-41bb-aade-314b92aa850d",
+    "timestamp": "2025-11-21 17:10:27.622715",
+    "report_generated": false
+  },
+  {
+    "question": "Serde Deserializer Mismatch: Could non-string JSON confuse deserializer?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d552006f-a258-4164-8f1d-711131504ba9",
+    "timestamp": "2025-11-21 17:11:00.025459",
+    "report_generated": false
+  },
+  {
+    "question": "Panic in Drop: Could panicking Drop create memory safety issues?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b439cee0-ba53-489e-8529-8ef7a508ee2d",
+    "timestamp": "2025-11-21 17:11:33.383597",
+    "report_generated": false
+  },
+  {
+    "question": "Double Panic Safety: Could nested panics cause undefined behavior?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4c87e0d0-9399-497f-94e5-c2737c057285",
+    "timestamp": "2025-11-21 17:12:07.246826",
+    "report_generated": false
+  },
+  {
+    "question": "Panic Recovery Exploitation: Could attackers induce recovery misbehavior?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d3c6371b-0948-4b0c-bfea-17248d312ab1",
+    "timestamp": "2025-11-21 17:12:42.040654",
+    "report_generated": false
   }
 ]
