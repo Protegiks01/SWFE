@@ -298,5 +298,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_48713b9f-ab4a-4179-859b-b86b88367ef8",
     "timestamp": "2025-11-21 13:26:33.722544",
     "report_generated": false
+  },
+  {
+    "question": "Can inconsistencies between stored and expected OffchainSecret values break VDRF evaluation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1d74abcc-c1b5-4e6a-a994-5a982b7687f6",
+    "timestamp": "2025-11-21 13:27:44.767794",
+    "report_generated": false
+  },
+  {
+    "question": "Does the system prevent reusing old OffchainSecret values after key rotation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_855c2a5c-4b34-40f9-b360-f867d34bc7e2",
+    "timestamp": "2025-11-21 13:27:57.827322",
+    "report_generated": false
+  },
+  {
+    "question": "Could timing or size of OffchainSecret submissions leak operational information about nodes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2d875e40-2e98-48a5-9a27-49950cce0121",
+    "timestamp": "2025-11-21 13:28:11.482249",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker force weaker cryptographic parameters during VDRF initialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_776e23b8-b422-4b61-bea2-c115d6eba5f9",
+    "timestamp": "2025-11-21 13:28:25.127130",
+    "report_generated": false
+  },
+  {
+    "question": "Are VdrfSecretKeyShare and VdrfPublicKey serialized in canonical form to prevent malleability?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1e0f23d8-8168-4bcb-951a-ac6d6f9f92b8",
+    "timestamp": "2025-11-21 13:28:39.748561",
+    "report_generated": false
+  },
+  {
+    "question": "Could Swafe-io provide biased randomizers that degrade VDRF security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_85c509f6-2d44-4aba-a2a3-c65f8d4c0aae",
+    "timestamp": "2025-11-21 13:28:55.348177",
+    "report_generated": false
+  },
+  {
+    "question": "Can invalid partial evaluations poison the final VDRF output?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_85f811a7-75fd-4d58-8e16-b49b9e444f3d",
+    "timestamp": "2025-11-21 13:29:12.183232",
+    "report_generated": false
+  },
+  {
+    "question": "Does the system verify that VdrfPublicKey is a valid group element before storage?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d80695d2-18d9-47d6-8424-b9ba1c631b5f",
+    "timestamp": "2025-11-21 13:29:30.963278",
+    "report_generated": false
+  },
+  {
+    "question": "Does initialization enforce bounds checks on VdrfSecretKeyShare field elements?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_76b0458b-e95c-45d0-b3af-6ee8b9ee8904",
+    "timestamp": "2025-11-21 13:29:51.511132",
+    "report_generated": false
+  },
+  {
+    "question": "What happens if two nodes generate identical randomizers during initialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a2bbd119-7729-423f-91d8-70b1079f55c9",
+    "timestamp": "2025-11-21 13:30:13.386203",
+    "report_generated": false
+  },
+  {
+    "question": "Can the combination of public_key and randomizer link later VDRF outputs to a specific node?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_754f624a-f397-4108-8819-c5af058191b2",
+    "timestamp": "2025-11-21 13:30:36.655237",
+    "report_generated": false
+  },
+  {
+    "question": "Does the reconstruction process correctly enforce a minimum of t valid shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5a29ce27-fb3a-4ddb-a7ef-3fdfc0697464",
+    "timestamp": "2025-11-21 13:31:01.369003",
+    "report_generated": false
+  },
+  {
+    "question": "Is the randomizer used with proper domain separation to prevent cross-protocol misuse?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2133a475-dc46-4bf9-a2e3-c7f5cfa2d1e8",
+    "timestamp": "2025-11-21 13:31:26.423640",
+    "report_generated": false
+  },
+  {
+    "question": "Can malformed base64 in StrEncoded<NodeId> cause deserialization errors that leak information?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7cb119b1-9d18-4217-8deb-d6ac37bb1954",
+    "timestamp": "2025-11-21 13:31:52.810761",
+    "report_generated": false
+  },
+  {
+    "question": "Could the separator 'v0:offchain-secret' collide with other tags and cause type confusion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_14856adc-1704-49e4-88ef-4ec457a71a7e",
+    "timestamp": "2025-11-21 13:32:20.140742",
+    "report_generated": false
+  },
+  {
+    "question": "Can outdated bincode formats allow incompatible OffchainSecret structures to bypass checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4eb3ea2a-24ee-4845-a6d4-322abb93d1f9",
+    "timestamp": "2025-11-21 13:32:48.010130",
+    "report_generated": false
+  },
+  {
+    "question": "Could a malicious OffchainSecret deserialize into extremely large memory structures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_726e87d4-3380-4615-a74b-6336f59e0c69",
+    "timestamp": "2025-11-21 13:33:17.270145",
+    "report_generated": false
+  },
+  {
+    "question": "Can nested VdrfPublicKey or VdrfSecretKeyShare contain malicious payloads?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3fb572df-1a7a-4bf8-9267-1d60c5927d62",
+    "timestamp": "2025-11-21 13:33:48.241259",
+    "report_generated": false
+  },
+  {
+    "question": "Does StrEncoded deserialization safely handle missing or extra base64 padding?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_681b3099-934d-4058-8a5e-d1739914c257",
+    "timestamp": "2025-11-21 13:34:19.358275",
+    "report_generated": false
+  },
+  {
+    "question": "Can malformed UTF-8 in serialized fields create inconsistencies across nodes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_003f02d0-c610-48b0-b221-9ece26fac7ff",
+    "timestamp": "2025-11-21 13:34:51.714992",
+    "report_generated": false
+  },
+  {
+    "question": "Are there maximum size limits for OffchainSecret to avoid storage exhaustion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e3032172-1b44-425a-a91c-08bebd19efdb",
+    "timestamp": "2025-11-21 13:35:24.521906",
+    "report_generated": false
+  },
+  {
+    "question": "Does the system enforce canonical serialization for OffchainSecret?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8a3f6ab7-2c0c-4146-af39-d8ce1ca7b6ca",
+    "timestamp": "2025-11-21 13:35:58.291607",
+    "report_generated": false
+  },
+  {
+    "question": "Should OffchainSecret contain a version prefix to support future schema upgrades?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8a57fa37-b8f8-43c4-b5b7-e882942b3372",
+    "timestamp": "2025-11-21 13:36:30.615226",
+    "report_generated": false
+  },
+  {
+    "question": "Can truncated OffchainSecret payloads deserialize into default/zero values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5a3e31ba-5b43-41ff-9c25-d1f2d815882d",
+    "timestamp": "2025-11-21 13:37:02.290150",
+    "report_generated": false
+  },
+  {
+    "question": "Does bincode maintain identical field ordering across all client implementations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_55dca6d8-83de-4ca2-ae87-8ebbc185dbcc",
+    "timestamp": "2025-11-21 13:37:31.432065",
+    "report_generated": false
   }
 ]
