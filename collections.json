@@ -8998,5 +8998,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b2f7a4ad-ab97-4870-84c8-e7418c3568fe",
     "timestamp": "2025-11-22 04:20:23.767072",
     "report_generated": false
+  },
+  {
+    "question": "Are the swafe_public_key and vdrf_public_key in ContractState properly validated before being used for verification operations in endpoints? Could key substitution attacks occur? lib.rs:26-28",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9bc72276-d8a0-4ffc-9964-0e6b934bb29e",
+    "timestamp": "2025-11-22 04:21:45.415302",
+    "report_generated": false
+  },
+  {
+    "question": "When endpoints access accounts via ContractState::get_account(), could deserialization failures cause panics that crash the off-chain node? lib.rs:34-38",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_02c988d2-d516-4ed7-94e1-14dce801fcd4",
+    "timestamp": "2025-11-22 04:21:58.542548",
+    "report_generated": false
+  },
+  {
+    "question": "In ContractState::set_account(), serialization is done with expect(), which panics on failure. Could an attacker craft account states that fail serialization to cause denial of service? lib.rs:40-45",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8fca1263-24ae-4094-ace9-606cc6dbc9b8",
+    "timestamp": "2025-11-22 04:22:12.671215",
+    "report_generated": false
+  },
+  {
+    "question": "Does the HTTP layer enforce that account modifications are atomic? Could partial updates leave accounts in an inconsistent state where backups are registered but guardians are not? mod.rs:170-171",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3bb8317d-6c57-4e59-956b-965161743ada",
+    "timestamp": "2025-11-22 04:22:26.741567",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker query account information via HTTP endpoints without proving ownership, leaking information about which accounts exist or their guardian configurations? mod.rs:144-146",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1af79a71-2671-484c-a187-73f6ff5a0e67",
+    "timestamp": "2025-11-22 04:22:41.594666",
+    "report_generated": false
+  },
+  {
+    "question": "When multiple backups are registered for the same account, does the routing logic ensure that recovery requests target the correct backup? Could backup ID confusion lead to unauthorized access? mod.rs:103-104",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_252aceaa-c9c1-4d5d-bc22-fc8479e19e1b",
+    "timestamp": "2025-11-22 04:22:58.398195",
+    "report_generated": false
+  },
+  {
+    "question": "In the init endpoint, off-chain secrets are stored using OffChainContext. Could an attacker access this storage directly to extract VDRF secret shares and compromise email-to-account anonymity? init.rs:44-46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ea3fe6ea-9c03-4107-95d9-ff279cfac822",
+    "timestamp": "2025-11-22 04:23:15.712618",
+    "report_generated": false
+  },
+  {
+    "question": "Does the HTTP dispatch layer enforce that only one node can initialize its off-chain secrets? Could a compromised node re-initialize with different secrets to break threshold security? init.rs:44-46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d8e7eb7a-5aeb-40b8-a087-3eced2f03921",
+    "timestamp": "2025-11-22 04:23:35.205707",
+    "report_generated": false
+  },
+  {
+    "question": "When OffchainSecrets::store() is called, are the secrets encrypted at rest? If not, could physical access to the off-chain node's storage reveal VDRF shares? init.rs:71",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a8a1bb19-eb49-438f-b1c4-7f4cc855e668",
+    "timestamp": "2025-11-22 04:23:55.868754",
+    "report_generated": false
+  },
+  {
+    "question": "Can the routing logic prevent unauthorized nodes from reading secrets stored by other nodes via the OffChainContext? mod.rs:77-82",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2d9fdcbe-e01a-4199-83d7-969d3461b075",
+    "timestamp": "2025-11-22 04:24:17.618576",
+    "report_generated": false
+  },
+  {
+    "question": "Does the OffChainContext implement proper isolation between different smart contracts deployed on the same node? Could secrets leak across contracts? mod.rs:77-82",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_de068c7d-4ac0-437d-9367-daa060ab24e4",
+    "timestamp": "2025-11-22 04:24:40.689127",
+    "report_generated": false
+  },
+  {
+    "question": "In register_routes(), the init endpoint is registered last. Does registration order matter for security? Could early registration of malicious routes intercept init requests? mod.rs:148-155",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_eeb9f66d-89c8-4925-b3c1-c6dd41f6d844",
+    "timestamp": "2025-11-22 04:25:05.763070",
+    "report_generated": false
+  },
+  {
+    "question": "The init handler uses a closure that calls init::handler() and converts errors. Could error conversion leak information about whether initialization succeeded or failed? mod.rs:151-154",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_51a65e3a-1ae9-430b-9c24-7175cb648b01",
+    "timestamp": "2025-11-22 04:25:32.058369",
+    "report_generated": false
+  },
+  {
+    "question": "Does the init endpoint validate that the provided node_id matches the node making the request? Could a malicious node initialize secrets for a different node? init.rs:51-54",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ba154a63-ea34-4136-b461-b2fd8e627abd",
+    "timestamp": "2025-11-22 04:25:58.960753",
+    "report_generated": false
+  },
+  {
+    "question": "When verifying the secret commitment with hash(&secret) != node_config.comm, does the comparison use constant-time operations to prevent timing side-channels that could leak partial secret information? init.rs:58-64",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e21ca006-96df-4a1e-a030-3ad3a19500db",
+    "timestamp": "2025-11-22 04:26:26.430531",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker repeatedly send init requests with wrong secrets to brute-force the commitment and discover valid VDRF secret shares? init.rs:48-64",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_eb1bc32d-74ec-4d27-9496-fe1da7266cdb",
+    "timestamp": "2025-11-22 04:26:55.120833",
+    "report_generated": false
+  },
+  {
+    "question": "Does the HTTP layer rate-limit init requests to prevent an attacker from flooding the endpoint with invalid secrets? mod.rs:160-172",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_715d55e5-54b8-49eb-82e6-fc36649c97a3",
+    "timestamp": "2025-11-22 04:27:24.555074",
+    "report_generated": false
+  },
+  {
+    "question": "After successful initialization, can the off-chain secret be updated or rotated? If not, does this create a single point of failure if a secret is compromised? init.rs:71",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_992155e7-a71a-4e7b-9363-524a1fcda9b5",
+    "timestamp": "2025-11-22 04:27:57.895350",
+    "report_generated": false
+  },
+  {
+    "question": "When ServerError::VdrfNodeAlreadyInitialized is returned, does this reveal that the node has been initialized? Could an attacker use this to map which nodes are active? init.rs:44-46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2898d62b-09c2-413b-9ab4-4bd369fff50f",
+    "timestamp": "2025-11-22 04:28:28.157066",
+    "report_generated": false
+  },
+  {
+    "question": "Does the init endpoint verify that the request comes from the node's owner address? If not, could anyone with network access initialize the node with malicious secrets? init.rs:38-43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6030f990-c7d4-4ef5-b7f5-3b9ae82e7621",
+    "timestamp": "2025-11-22 04:28:58.405416",
+    "report_generated": false
+  },
+  {
+    "question": "Can the init endpoint be called multiple times in rapid succession before the first call completes, causing race conditions in secret storage? init.rs:44-71",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_21ac8742-9d03-46bf-bb66-b31a3a3ab9d0",
+    "timestamp": "2025-11-22 04:29:29.560993",
+    "report_generated": false
+  },
+  {
+    "question": "When VDRF evaluation endpoints are called via the router, does the HTTP layer verify VDRF proofs before returning results? Could proof verification be bypassed? mod.rs:144-146",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_de1dcf18-02be-4bf6-bebb-8256a24f803a",
+    "timestamp": "2025-11-22 04:29:58.724078",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker request VDRF evaluations for arbitrary inputs to build a database of email-to-VDRF-output mappings, breaking email anonymity? mod.rs:144-145",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8c39246d-9847-49c9-aefb-2b6011246fc4",
+    "timestamp": "2025-11-22 04:30:29.260911",
+    "report_generated": false
+  },
+  {
+    "question": "Does the routing logic enforce that VDRF operations can only be performed after proper initialization? Could uninitialized nodes accept evaluation requests? mod.rs:141-146",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b770ddea-84d6-4f4b-bbce-1a487ed48aa0",
+    "timestamp": "2025-11-22 04:30:57.687518",
+    "report_generated": false
+  },
+  {
+    "question": "When multiple VDRF shares are combined, does the HTTP layer enforce the threshold t? Could an attacker with fewer than t shares still compute valid VDRF outputs? mod.rs:144-145",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b33cc03a-1f4c-405f-a8fc-a08ff8c6c271",
+    "timestamp": "2025-11-22 04:31:25.332764",
+    "report_generated": false
   }
 ]
