@@ -8398,5 +8398,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c95faaa2-7417-4d48-a9a2-243d0cc6e77a",
     "timestamp": "2025-11-22 03:35:59.662410",
     "report_generated": false
+  },
+  {
+    "question": "No Merkle Tree: Can attacker corrupt selective values undetected?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_402db701-6403-43fa-aeea-2048cba82387",
+    "timestamp": "2025-11-22 03:37:14.689289",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Key-Value Binding: Are values not bound to their specific keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d1744cfd-30e6-4291-bb0c-da8217118afd",
+    "timestamp": "2025-11-22 03:37:27.937295",
+    "report_generated": false
+  },
+  {
+    "question": "Temporal Replay: Can old email associations be restored?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_03a02c7a-dcee-41ff-a0a1-59feb30e88ef",
+    "timestamp": "2025-11-22 03:37:41.383912",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Account Replay: Can shares for one account be replayed to another?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e4318895-0ef5-4b4e-9bcf-c2dbf8fb8416",
+    "timestamp": "2025-11-22 03:37:55.408304",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Share Rollback: Can system use old compromised shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dbc721b4-37ca-42f4-9752-d4076e7efbca",
+    "timestamp": "2025-11-22 03:38:10.642812",
+    "report_generated": false
+  },
+  {
+    "question": "State Snapshot Rollback: Can entire storage be replaced with older version?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_913fdce7-df8f-4b7b-a1c1-178ee2ece771",
+    "timestamp": "2025-11-22 03:38:27.817383",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Node Replay: Can storage ops be replayed to foreign nodes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3a6f7881-eef2-43af-81de-42ca23fccd37",
+    "timestamp": "2025-11-22 03:38:45.961916",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Share Substitution: Can malicious guardian upload misleading shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8cc40274-08ec-4a5d-b4f2-60a1401bd442",
+    "timestamp": "2025-11-22 03:39:05.671009",
+    "report_generated": false
+  },
+  {
+    "question": "Share Index Manipulation: Can u32 index in BTreeMap be altered?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5a0e16fe-b53f-49e6-9d5a-4302ad37f1fc",
+    "timestamp": "2025-11-22 03:39:27.172707",
+    "report_generated": false
+  },
+  {
+    "question": "Ciphertext Mauling: Can attacker modify MskRecord ciphertext to leak info?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b93cf6b3-2c51-4af5-ad41-a44273cb9de4",
+    "timestamp": "2025-11-22 03:39:48.867070",
+    "report_generated": false
+  },
+  {
+    "question": "Value Size Manipulation: Can size-skewed values break cryptographic ops?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_afa7161b-da1f-437c-b3d3-ef295e2663d9",
+    "timestamp": "2025-11-22 03:40:11.412314",
+    "report_generated": false
+  },
+  {
+    "question": "Partial Value Corruption: Can attacker flip specific bytes to break recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2ec48db2-4a8a-46e5-9ff6-0a7bb1ce98ac",
+    "timestamp": "2025-11-22 03:40:36.516939",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Schema Versioning: Can format changes break old data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dd78b181-228c-4d39-ba73-859932b2350a",
+    "timestamp": "2025-11-22 03:41:02.044283",
+    "report_generated": false
+  },
+  {
+    "question": "Forward Compatibility: Can new data break older nodes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_878e4906-f780-4610-a66f-ca7a76fc2f8f",
+    "timestamp": "2025-11-22 03:41:29.510217",
+    "report_generated": false
+  },
+  {
+    "question": "Backward Compatibility: Can old data bypass new security checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4e781155-bec8-4942-9425-462f7ec9ecf4",
+    "timestamp": "2025-11-22 03:41:57.373498",
+    "report_generated": false
+  },
+  {
+    "question": "Migration Path Absence: Can upgrades cause data loss?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f885266a-7446-4ec3-84e7-63e63f55105b",
+    "timestamp": "2025-11-22 03:42:26.866424",
+    "report_generated": false
+  },
+  {
+    "question": "Type Evolution Security: Can old values bypass new security fields?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2ed7ebcf-ac1a-40b8-9046-e470378f6d4b",
+    "timestamp": "2025-11-22 03:42:56.051307",
+    "report_generated": false
+  },
+  {
+    "question": "Race in load-modify-store: Can concurrent requests cause lost updates?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_21f1a54b-53eb-4c4a-9a40-f5186a7bf9c2",
+    "timestamp": "2025-11-22 03:43:26.211390",
+    "report_generated": false
+  },
+  {
+    "question": "TOCTOU in share upload: Can backup mutate before store?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3e1734c6-b185-4f00-93b6-647a1665b4a1",
+    "timestamp": "2025-11-22 03:43:58.620815",
+    "report_generated": false
+  },
+  {
+    "question": "Non-Atomic Batch Ops: Can partial writes leave inconsistent state?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_880541ec-ae73-46a7-ae02-4a53b665abc7",
+    "timestamp": "2025-11-22 03:44:30.985991",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Optimistic Locking: Can concurrent stores silently overwrite?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_22125f95-be5c-49dc-b9be-47911e5efddc",
+    "timestamp": "2025-11-22 03:45:04.546393",
+    "report_generated": false
+  },
+  {
+    "question": "Stale Read After Write: Can load retrieve stale data after store?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b2b0e552-fd2a-40c1-85bc-c9be4c3632c5",
+    "timestamp": "2025-11-22 03:45:37.725574",
+    "report_generated": false
+  },
+  {
+    "question": "EmailKey Leaks Email Hash: Can attackers infer email from key structure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_309ddffe-1317-4ae8-8b30-cb6509799711",
+    "timestamp": "2025-11-22 03:46:11.374981",
+    "report_generated": false
+  },
+  {
+    "question": "Access Pattern Leakage: Can load frequency reveal user behavior?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b2626b1c-262a-44b2-9efb-21dc14b5d804",
+    "timestamp": "2025-11-22 03:46:44.856254",
+    "report_generated": false
+  },
+  {
+    "question": "Email Timing Side Channel: Does load time depend on email properties?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f6870315-bc6d-4053-9e05-46ca465fe838",
+    "timestamp": "2025-11-22 03:47:16.664901",
+    "report_generated": false
   }
 ]
