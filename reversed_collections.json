@@ -9898,5 +9898,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_efdc8e9b-93a1-4b3f-97d6-024969f71be2",
     "timestamp": "2025-11-22 03:25:05.197734",
     "report_generated": false
+  },
+  {
+    "question": "Does the handler implement constant-time error handling to prevent timing side-channels from leaking information about authentication outcomes? get_secret_share.rs:23-57",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_79b54bfd-2e26-4f7a-a765-53e2c00e7383",
+    "timestamp": "2025-11-22 03:26:17.236326",
+    "report_generated": false
+  },
+  {
+    "question": "If multiple validation failures occur in sequence, which error is reported and does this leak information? get_secret_share.rs:43-46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dd07956b-e946-491a-9138-8535f8802f87",
+    "timestamp": "2025-11-22 03:26:30.279147",
+    "report_generated": false
+  },
+  {
+    "question": "At line 49, does the error message 'MSK record not found' leak information about the storage structure or key derivation process? get_secret_share.rs:48-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_72a96482-420a-4215-bdff-002dfeb64a18",
+    "timestamp": "2025-11-22 03:26:43.998953",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker use error responses to determine whether a particular email has been associated with an account, violating privacy invariants? get_secret_share.rs:43-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2c5131bb-44c6-456d-9b1a-ac4d3e3dd628",
+    "timestamp": "2025-11-22 03:26:57.879736",
+    "report_generated": false
+  },
+  {
+    "question": "If email.parse() fails at line 45, does the error message reveal information about email validation rules that could help attackers craft bypass attempts? get_secret_share.rs:45",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_804509c9-ccb9-41cd-807a-2779fde912e0",
+    "timestamp": "2025-11-22 03:27:12.361181",
+    "report_generated": false
+  },
+  {
+    "question": "At line 39-40, does the error message for VDRF public key deserialization expose details about the expected format or structure? get_secret_share.rs:38-40",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_709ec800-634d-4dd8-b730-a0ef5adcf357",
+    "timestamp": "2025-11-22 03:27:28.356868",
+    "report_generated": false
+  },
+  {
+    "question": "Can timing differences in error responses reveal information about which validation step failed (certificate verification vs VDRF verification vs storage lookup)? get_secret_share.rs:29-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ac413168-7506-4933-9cb7-5933a1186db6",
+    "timestamp": "2025-11-22 03:27:45.466307",
+    "report_generated": false
+  },
+  {
+    "question": "If an error occurs during email certificate verification at line 43, do the error messages distinguish between expired certificates, invalid signatures, and wrong node IDs? get_secret_share.rs:43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_31d9aaae-7438-4315-bec9-59f82e17aada",
+    "timestamp": "2025-11-22 03:28:04.139062",
+    "report_generated": false
+  },
+  {
+    "question": "At line 36, does returning ServerError::VdrfNodeNotInitialized allow an attacker to determine the initialization status of off-chain nodes? get_secret_share.rs:35-36",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d75da1f2-1863-43f3-8386-d57bf32b615b",
+    "timestamp": "2025-11-22 03:28:24.895088",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker use the different error types returned by the handler to enumerate which nodes are initialized vs which have stored specific MSK records? get_secret_share.rs:35-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_51acbc35-d96f-4b0b-a948-dbcfb772aea0",
+    "timestamp": "2025-11-22 03:28:46.049871",
+    "report_generated": false
+  },
+  {
+    "question": "At line 32-33, does the error message 'Failed to deserialize Swafe public key' leak information about the internal state or structure of the contract? get_secret_share.rs:31-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0c3c50d1-4586-4f43-a410-5ba45d1f11ea",
+    "timestamp": "2025-11-22 03:29:09.173750",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit the ok_or_else error handling at line 49 to distinguish between 'record not found' vs 'record exists but access denied' scenarios? get_secret_share.rs:48-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d679dec9-a3ce-4bad-8426-99f285c1b2db",
+    "timestamp": "2025-11-22 03:29:33.148200",
+    "report_generated": false
+  },
+  {
+    "question": "Does the handler ensure at line 48-49 that the loaded MSK record belongs to the user specified in the email certificate, not just any user with that EmailKey? get_secret_share.rs:43-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f5487590-82c6-4e3a-b472-9de4668f4db4",
+    "timestamp": "2025-11-22 03:29:58.173076",
+    "report_generated": false
+  },
+  {
+    "question": "At line 48-49, if the EmailKey collides with a key used by a different user due to weak VDRF output, can one user access another's MSK record? get_secret_share.rs:46-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b7f85160-30b5-41c7-857b-e426ce5fd899",
+    "timestamp": "2025-11-22 03:30:24.404843",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker who gains read access to off-chain storage bypass the email certificate check by directly deserializing stored MSK records at line 48-49? get_secret_share.rs:48-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cfd216e4-4a6e-4669-990e-b1cd3a74bffd",
+    "timestamp": "2025-11-22 03:30:51.224127",
+    "report_generated": false
+  },
+  {
+    "question": "Does MskRecordCollection::load at line 48-49 validate that the retrieved record's internal structure matches expected formats before returning it? get_secret_share.rs:48-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1eb4932e-f05a-467d-bbbc-a4f09198fb6e",
+    "timestamp": "2025-11-22 03:31:18.460473",
+    "report_generated": false
+  },
+  {
+    "question": "At line 48-49, if the storage layer experiences data corruption, will the error be properly caught and reported, or will it be silently returned as a valid MSK record? get_secret_share.rs:48-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c857ec91-d095-4aa5-b6a6-e1feb9d3a6d7",
+    "timestamp": "2025-11-22 03:31:47.584304",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker who uploaded a malformed MSK record exploit deserialization vulnerabilities when it's loaded at line 48-49? get_secret_share.rs:48-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a6e901ac-29eb-45dd-b93a-4a6ae9897184",
+    "timestamp": "2025-11-22 03:32:16.625860",
+    "report_generated": false
+  },
+  {
+    "question": "Does the handler at line 48-49 enforce any limits on the size or structure of the retrieved MSK record to prevent storage exhaustion attacks? get_secret_share.rs:48-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cd013681-d3d9-433e-b04c-0fad79f014ca",
+    "timestamp": "2025-11-22 03:32:46.373582",
+    "report_generated": false
+  },
+  {
+    "question": "If multiple contracts on the same blockchain use the same collection name at line 48-49, can cross-contract storage access occur? get_secret_share.rs:48-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_85417cdd-74dc-470d-b9fa-ad62fc762951",
+    "timestamp": "2025-11-22 03:33:14.273087",
+    "report_generated": false
+  },
+  {
+    "question": "At line 48-49, does the collection name 'map:associations' properly namespace the storage to prevent conflicts with other contract data? get_secret_share.rs:48-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e3ecda52-dd3d-4b3c-ab2f-56601f4f98e9",
+    "timestamp": "2025-11-22 03:33:41.984835",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit timing differences in MskRecordCollection::load at line 48-49 to determine whether records exist for specific EmailKeys? get_secret_share.rs:48-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9462b01e-89c7-4ab0-975b-a0338b2c06f1",
+    "timestamp": "2025-11-22 03:34:09.729637",
+    "report_generated": false
+  },
+  {
+    "question": "At line 48-49, if the storage backend has been compromised, can an attacker inject a malicious MSK record that exploits vulnerabilities in downstream recovery logic? get_secret_share.rs:48-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7c23d5f1-5a48-4b5c-9c7e-1436dcb81487",
+    "timestamp": "2025-11-22 03:34:38.771695",
+    "report_generated": false
+  },
+  {
+    "question": "Does the handler verify at line 48-49 that the retrieved msk_record has not been tampered with since it was uploaded via upload_msk? get_secret_share.rs:48-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_13c2f864-a39c-4ad7-9674-e64894f01586",
+    "timestamp": "2025-11-22 03:35:07.252548",
+    "report_generated": false
+  },
+  {
+    "question": "If MskRecordCollection::load at line 48-49 uses caching, can an attacker exploit cache poisoning to retrieve stale or incorrect MSK records? get_secret_share.rs:48-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e7707c9f-9eaf-452a-93b5-eefa7c9952c0",
+    "timestamp": "2025-11-22 03:35:35.366851",
+    "report_generated": false
   }
 ]
