@@ -13042,5 +13042,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b2bac896-2af2-40e7-9437-f6015daf3fdc",
     "timestamp": "2025-11-22 07:13:16.718765",
     "report_generated": false
+  },
+  {
+    "question": "Storage Serialization Format Mismatch: Can serialization mismatch prevent access?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b1e9c17e-9b6f-4984-8b24-f4673cda1698",
+    "timestamp": "2025-11-22 07:26:20.957982",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Collection Name Collision: Can cross-collection collisions leak data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_71c94fd7-c0f5-41bc-a32e-043f4dba6f96",
+    "timestamp": "2025-11-22 07:26:33.867465",
+    "report_generated": false
+  },
+  {
+    "question": "Account Recovery State Mismatch: Are shares served to wrong recovery keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9a3c5fb8-037f-4f5d-b7d3-b1788a57c9b5",
+    "timestamp": "2025-11-22 07:26:47.561170",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Ciphertext Unavailability: Can invalid shares be retrieved without loading backup?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0c67d986-30c0-4386-b277-0a483f9983f8",
+    "timestamp": "2025-11-22 07:27:01.368615",
+    "report_generated": false
+  },
+  {
+    "question": "Account State Access Missing: Are nonexistent accounts allowed?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2a431872-8d6e-4b06-83c9-cf789582b0d3",
+    "timestamp": "2025-11-22 07:27:16.114188",
+    "report_generated": false
+  },
+  {
+    "question": "Overwrite Attack: Can corrupted shares replace valid ones?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2818a757-1b08-46d8-9eb4-781f7cfe9d37",
+    "timestamp": "2025-11-22 07:27:32.104616",
+    "report_generated": false
+  },
+  {
+    "question": "Share ID Mapping Consistency: Does retrieval preserve share_id mapping?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_420354f0-8186-4314-bf7c-d3ec12099018",
+    "timestamp": "2025-11-22 07:27:49.196293",
+    "report_generated": false
+  },
+  {
+    "question": "Upload-Get Asymmetry: Are shares validated on upload but not on retrieval?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_58a1db90-394c-427e-b7d7-7b3d990141e6",
+    "timestamp": "2025-11-22 07:28:08.301824",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Contract State Consistency Issues: Does off-chain mismatch on-chain state?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4efed991-27d9-499f-b875-e241c5093a30",
+    "timestamp": "2025-11-22 07:28:28.435883",
+    "report_generated": false
+  },
+  {
+    "question": "State Finalization Ignored: Are shares available post-finalization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_40b68c72-fdd6-4a29-9979-c442915c3795",
+    "timestamp": "2025-11-22 07:28:50.363875",
+    "report_generated": false
+  },
+  {
+    "question": "Idempotency Violations: Can inconsistent responses leak information?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_15424aad-52f2-448c-8f07-4b76a576d3db",
+    "timestamp": "2025-11-22 07:29:12.560544",
+    "report_generated": false
+  },
+  {
+    "question": "Monotonicity of Share Count Violated: Can attackers detect decreasing share counts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b2fd7617-d6e7-4be4-842b-cf5946533384",
+    "timestamp": "2025-11-22 07:29:36.057675",
+    "report_generated": false
+  },
+  {
+    "question": "Garbage Collection Timing Attack: Can attackers infer cleanup events?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f4c46640-a113-45ad-bc34-1a934a4db3c6",
+    "timestamp": "2025-11-22 07:30:01.978888",
+    "report_generated": false
+  },
+  {
+    "question": "Share Expiration Missing: Are old shares always retrievable?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_de80d03c-34c1-4138-af50-dcf43857ae6f",
+    "timestamp": "2025-11-22 07:30:28.746744",
+    "report_generated": false
+  },
+  {
+    "question": "Unbounded Storage Growth: Can attackers fill storage by initiating many recoveries?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2734e106-e23e-4c85-bcb6-0fe95b0be269",
+    "timestamp": "2025-11-22 07:30:58.062531",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Backup Interference: Can share retrieval bleed over across backups?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6b855fb0-16fc-4dd6-a928-fd990d3ed00d",
+    "timestamp": "2025-11-22 07:31:28.680580",
+    "report_generated": false
+  },
+  {
+    "question": "Upload-Get Interleaving: Can attackers observe intermediate states?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a9cca04e-4707-44e1-a912-9734a86ffa06",
+    "timestamp": "2025-11-22 07:32:00.472093",
+    "report_generated": false
+  },
+  {
+    "question": "Concurrent Get Requests: Can requests interfere with each other?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_88d580d8-795f-45ac-945c-447d8d4239ba",
+    "timestamp": "2025-11-22 07:32:32.119877",
+    "report_generated": false
+  },
+  {
+    "question": "Account Deletion Semantics: Can deleted accounts yield shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_88d2f797-b912-40ac-9b09-9bcdbb86b80b",
+    "timestamp": "2025-11-22 07:33:04.937205",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery Completion Not Propagated: Are shares preserved indefinitely?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6fc8d093-4727-4a56-9aee-6eb38a598bbe",
+    "timestamp": "2025-11-22 07:33:37.627755",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Set Change Not Reflected: Are removed guardians still serving shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_777c9224-813f-4b7e-b1a8-70406f9edcae",
+    "timestamp": "2025-11-22 07:34:11.461350",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Ciphertext Update Race: Are outdated shares returned after on-chain updates?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b48ffca3-53d3-420b-8462-cb4a20a3a87c",
+    "timestamp": "2025-11-22 07:34:45.205967",
+    "report_generated": false
+  },
+  {
+    "question": "Account State Desync: Are shares served when account state is finalized?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_84ad498d-4591-40f1-8191-e70e407abbe3",
+    "timestamp": "2025-11-22 07:35:18.666297",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Transaction Boundaries: Are reads atomic or inconsistent?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ede94e2a-a05b-4606-a7db-75be244eb099",
+    "timestamp": "2025-11-22 07:35:52.309840",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Corruption Handling: Does silent corruption allow exploitation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a9b77e1a-9978-4ccd-a8f5-fac9e02f2718",
+    "timestamp": "2025-11-22 07:36:24.133857",
+    "report_generated": false
   }
 ]
