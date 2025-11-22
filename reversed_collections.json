@@ -8848,5 +8848,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d95ce712-fdc7-4a93-b4a7-b455848e3278",
     "timestamp": "2025-11-21 23:53:19.295365",
     "report_generated": false
+  },
+  {
+    "question": "When eval processes coefficients in reverse order (most significant first), could an implementation error in the calling code that doesn't properly reverse coefficients result in evaluating a completely different polynomial, leading to irrecoverable secrets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9cf5f5bc-7b49-4d01-a17e-b36e3ef38214",
+    "timestamp": "2025-11-21 23:54:45.597144",
+    "report_generated": false
+  },
+  {
+    "question": "If a corrupted off-chain node calls eval repeatedly with the same coefficients but different evaluation points to extract share patterns, could timing differences or computation patterns leak information about the polynomial structure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_56f9e317-58c4-49da-9034-59e2a1319bac",
+    "timestamp": "2025-11-21 23:54:58.779130",
+    "report_generated": false
+  },
+  {
+    "question": "The eval function does not validate that the evaluation point x is non-zero. Could evaluating at x = 0 in share generation inadvertently reveal the secret (constant term) to unauthorized parties?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_09e8a774-bf00-4113-b899-b488f45c09c6",
+    "timestamp": "2025-11-21 23:55:12.113776",
+    "report_generated": false
+  },
+  {
+    "question": "If the coefficient iterator in eval is cloned or reused multiple times, could iterator state corruption lead to generating multiple different shares for the same index, breaking SSS security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2212c6f2-7454-42d9-bc9d-8cb545744d2c",
+    "timestamp": "2025-11-21 23:55:26.124436",
+    "report_generated": false
+  },
+  {
+    "question": "When eval is used in sss::share to generate shares at evaluation points 1..=n, sss.rs:44-46 could choosing consecutive integer evaluation points create algebraic relationships between shares that a malicious guardian could exploit?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_06ffaa41-8298-4806-bb0f-ce0360b1bc67",
+    "timestamp": "2025-11-21 23:55:40.939186",
+    "report_generated": false
+  },
+  {
+    "question": "If eval is called with coefficients containing F::ZERO values in non-constant positions, does this reduce the effective degree of the polynomial below t-1, compromising the threshold security model?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_80861ee5-dd5a-4564-b28c-cd35fec324e2",
+    "timestamp": "2025-11-21 23:55:56.720865",
+    "report_generated": false
+  },
+  {
+    "question": "The fold operation in eval uses acc * x + coeff. poly.rs:7 Could the order of operations (multiplication before addition) create numerical precision issues in certain field implementations that lead to incorrect secret reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_425fc23a-d2ab-48aa-ac7d-d79d24f61a7f",
+    "timestamp": "2025-11-21 23:56:13.596804",
+    "report_generated": false
+  },
+  {
+    "question": "If the iterator passed to eval contains duplicate coefficient values, could this reduce the effective degree of the polynomial, weakening the threshold security property in Shamir secret sharing?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_857f26c7-d5a3-42d8-9302-18ca4c7addb9",
+    "timestamp": "2025-11-21 23:56:33.374673",
+    "report_generated": false
+  },
+  {
+    "question": "When evaluating a polynomial at x = F::ZERO in eval, does this reveal information about the constant term (secret) that could be exploited by a minority of corrupted guardians to bypass threshold security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c45848ca-7270-4a77-b87c-958c430ce3d2",
+    "timestamp": "2025-11-21 23:56:54.044603",
+    "report_generated": false
+  },
+  {
+    "question": "The eval function accepts any Field type implementing the ark_ff::Field trait. Could using a field with insufficient security parameters (small modulus) allow an attacker to brute-force polynomial coefficients and reconstruct secrets without proper authorization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6646187f-97a9-4f64-9130-a1f023bd6a2e",
+    "timestamp": "2025-11-21 23:57:15.312442",
+    "report_generated": false
+  },
+  {
+    "question": "If a malicious off-chain node provides manipulated coefficients to eval during share generation, could the function silently produce shares that don't satisfy the threshold property, allowing reconstruction with fewer than t shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_83993e8d-14cc-47be-9bdd-0d5a459e2821",
+    "timestamp": "2025-11-21 23:57:38.053412",
+    "report_generated": false
+  },
+  {
+    "question": "The eval function performs field arithmetic without checking for overflow or underflow in the accumulator. poly.rs:7 In finite field implementations, could repeated multiplication and addition operations lead to incorrect results that violate the 'only the owner can reconstruct backups' invariant?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dff251df-8f22-42fb-b64f-c26fd3febe07",
+    "timestamp": "2025-11-21 23:58:01.960431",
+    "report_generated": false
+  },
+  {
+    "question": "When eval is called with an iterator that gets exhausted mid-evaluation due to an implementation bug elsewhere, could partial polynomial evaluation lead to incorrect share generation in sss::share, compromising the threshold property?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0bf1c4e2-a9ed-4341-a597-b79fc0b90504",
+    "timestamp": "2025-11-21 23:58:26.954168",
+    "report_generated": false
+  },
+  {
+    "question": "The eval function uses a fold operation starting from F::ZERO. poly.rs:6-8 If the iterator is empty, does returning zero break the security model when used in SSS recovery, potentially allowing trivial reconstruction without any shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1231aa15-e534-42af-bfc4-c84f0ab59cf2",
+    "timestamp": "2025-11-21 23:58:52.499913",
+    "report_generated": false
+  },
+  {
+    "question": "In the eval function, the polynomial is evaluated with 'most significant coefficient first.' poly.rs:3-8 If a caller mistakenly passes coefficients in reversed order (least significant first), could this result in reconstructing an incorrect secret in Shamir secret sharing, potentially allowing unauthorized account recovery or backup reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_af5d0f32-ecc8-47c0-9fea-d55a7530098e",
+    "timestamp": "2025-11-21 23:59:18.503684",
+    "report_generated": false
+  },
+  {
+    "question": "Concurrent Recovery Attempts: Can concurrent recoveries cause race conditions or inconsistent secrets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0dbf01fb-d7f4-4920-ac26-f1e11788b359",
+    "timestamp": "2025-11-21 23:59:45.888305",
+    "report_generated": false
+  },
+  {
+    "question": "Empty Guardian List: Does threshold=0 + no guardians produce a publicly recoverable backup?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_264fe391-544a-4479-96ee-e6f8649ce9e1",
+    "timestamp": "2025-11-22 00:00:14.110846",
+    "report_generated": false
+  },
+  {
+    "question": "Field Size Boundary: Do large indices wrap around field modulus?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_580e1e08-ad16-49fd-ac20-e7fd71ef0d74",
+    "timestamp": "2025-11-22 00:00:44.221499",
+    "report_generated": false
+  },
+  {
+    "question": "Minimum Viable Parameters: Are insecure parameter combinations rejected?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0fcedd7a-e39a-46a6-bd02-d09ecd4e6083",
+    "timestamp": "2025-11-22 00:01:13.975681",
+    "report_generated": false
+  },
+  {
+    "question": "Maximum n Value: Can extremely large n cause overflow or memory exhaustion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_df7aa7a3-2ef9-4415-9e50-4378a3e55d7a",
+    "timestamp": "2025-11-22 00:01:44.277473",
+    "report_generated": false
+  },
+  {
+    "question": "Constant-Time Operations: Is critical math constant-time?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_38d722a3-dd24-47ca-afde-e3c965495975",
+    "timestamp": "2025-11-22 00:02:13.745340",
+    "report_generated": false
+  },
+  {
+    "question": "Branch-Timing Leakage: Do branches leak threshold or share properties?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5672bea3-f975-4c58-96b6-bfcc798dde05",
+    "timestamp": "2025-11-22 00:02:41.854434",
+    "report_generated": false
+  },
+  {
+    "question": "Power Analysis Resistance: Does hardware implementation leak via power?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9350c519-4f3e-4409-addf-849a830cd03a",
+    "timestamp": "2025-11-22 00:03:11.164919",
+    "report_generated": false
+  },
+  {
+    "question": "Cache Side-Channels: Can memory access patterns leak info?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_aff7eee8-1e41-4bb0-86c8-758b7ab2f926",
+    "timestamp": "2025-11-22 00:03:40.866044",
+    "report_generated": false
+  },
+  {
+    "question": "Timing Side-Channels in Recovery: Is execution time constant?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_86afe5a3-3ac2-4e2d-9932-afa67747173f",
+    "timestamp": "2025-11-22 00:04:08.707515",
+    "report_generated": false
   }
 ]
