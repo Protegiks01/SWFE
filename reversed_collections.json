@@ -13192,5 +13192,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a9b77e1a-9978-4ccd-a8f5-fac9e02f2718",
     "timestamp": "2025-11-22 07:36:24.133857",
     "report_generated": false
+  },
+  {
+    "question": "Multi-Node Storage Divergence: Can attackers collect shares from multiple inconsistent nodes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3d996d8f-fcf1-45f1-9f05-f666f565bb94",
+    "timestamp": "2025-11-22 07:37:39.163120",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Write-Read Race Condition: Can stale data be returned after upload?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_acebc33e-7acd-47d5-955a-b4ea087c8a20",
+    "timestamp": "2025-11-22 07:37:52.613084",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Read Consistency: Can concurrent reads produce inconsistent share sets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bd56201f-bf12-4b6b-b5e3-8fd6fbd18080",
+    "timestamp": "2025-11-22 07:38:05.843310",
+    "report_generated": false
+  },
+  {
+    "question": "Special Character Injection in IDs: Can serialization be corrupted via special characters?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_42528159-7cb2-49f0-b7bc-773fbc112f6b",
+    "timestamp": "2025-11-22 07:38:19.710990",
+    "report_generated": false
+  },
+  {
+    "question": "Maximum Size Input: Can huge IDs cause overflows?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_45a29e91-37ab-40ec-880c-d2af5313d8b4",
+    "timestamp": "2025-11-22 07:38:34.238423",
+    "report_generated": false
+  },
+  {
+    "question": "Empty Account or Backup IDs: Do empty IDs cause abnormal behavior?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_39605f49-e603-4911-b89c-b9a7c1bd66f5",
+    "timestamp": "2025-11-22 07:38:50.287735",
+    "report_generated": false
+  },
+  {
+    "question": "JSON Error Response Leakage: Do errors leak stack traces?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7aec48bc-67b2-4c8b-9f68-c2de535286c1",
+    "timestamp": "2025-11-22 07:39:07.215258",
+    "report_generated": false
+  },
+  {
+    "question": "Silent Storage Corruption Handling: Does load().ok() hide corrupted state?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dbd456fe-4f9b-4170-8fea-f761a59f59a7",
+    "timestamp": "2025-11-22 07:39:26.255626",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Error Context: Does generic error handling mislead clients?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_aeb975ba-1416-4fb5-8946-dfbf90903e49",
+    "timestamp": "2025-11-22 07:39:46.672350",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Error Messages Leak Info: Do error messages expose secrets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a1b3b972-d20a-4b83-8557-30e2f234e8b1",
+    "timestamp": "2025-11-22 07:40:07.405852",
+    "report_generated": false
+  },
+  {
+    "question": "Tuple Serialization Order Issues: Can attackers exploit key ordering confusion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1654ae8a-f039-478d-bc14-8f7f7f5b404b",
+    "timestamp": "2025-11-22 07:40:30.368880",
+    "report_generated": false
+  },
+  {
+    "question": "Backup ID Serialization Canonicalization: Can attackers probe inconsistencies?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_46e27f9f-e40d-4fff-baea-970c1e3c015a",
+    "timestamp": "2025-11-22 07:40:53.932879",
+    "report_generated": false
+  },
+  {
+    "question": "Account ID Serialization to Storage Key: Can inconsistent serialization cause mismatch?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c41f3dfa-2dba-48cd-990d-08f95673f681",
+    "timestamp": "2025-11-22 07:41:17.992034",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization Timing Side-Channel: Does serialization time leak share count?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b0888dad-b12f-43b1-8be2-ddd856b154e9",
+    "timestamp": "2025-11-22 07:41:45.210192",
+    "report_generated": false
+  },
+  {
+    "question": "Large Response Handling: Can attackers cause OOM by uploading many shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7d60fb68-92ef-4a71-86a3-238e28870e6f",
+    "timestamp": "2025-11-22 07:42:12.733498",
+    "report_generated": false
+  },
+  {
+    "question": "JSON Escaping Vulnerabilities: Are special characters properly escaped?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9e7a4708-4c33-4ddc-abae-9af8400c2a10",
+    "timestamp": "2025-11-22 07:42:40.565296",
+    "report_generated": false
+  },
+  {
+    "question": "StrEncoded Serialization Consistency: Can corrupted values break client decoding?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_12a1dded-a9a8-40a7-a8ca-32a9ed4e5627",
+    "timestamp": "2025-11-22 07:43:10.156994",
+    "report_generated": false
+  },
+  {
+    "question": "Response Serialization Errors: Can malformed shares crash JSON serialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7ff9de31-1043-454b-a537-2b9165cfd2fe",
+    "timestamp": "2025-11-22 07:43:40.756411",
+    "report_generated": false
+  },
+  {
+    "question": "Version Compatibility Issues: Do unsupported versions cause panics?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a6dfe79a-6d9e-4735-a664-e6deb43e0851",
+    "timestamp": "2025-11-22 07:44:09.631135",
+    "report_generated": false
+  },
+  {
+    "question": "Bincode Deserialization Exploits: Can crafted payloads cause overflows or memory abuse?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f0475700-eb3e-4b92-b1a9-5ac616f508b0",
+    "timestamp": "2025-11-22 07:44:37.753147",
+    "report_generated": false
+  },
+  {
+    "question": "Base64 Decoding Errors: Are decode errors handled securely?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bea13ec7-0f26-4a2d-8148-78b0c72c5ab7",
+    "timestamp": "2025-11-22 07:45:06.909801",
+    "report_generated": false
+  },
+  {
+    "question": "Type Confusion in StrEncoded: Can base64 decode into adversarial AccountId or BackupId?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dea82206-d18b-4595-908d-26cefe0f9f20",
+    "timestamp": "2025-11-22 07:45:35.192383",
+    "report_generated": false
+  },
+  {
+    "question": "Malicious Request Body Parsing: Can attackers exploit serde_json parsing?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4fdbf08e-587f-4be9-846e-baa551a6fcf6",
+    "timestamp": "2025-11-22 07:46:06.266770",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Approval Recording Missing: Can attackers claim approval without signatures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_deef36ac-c002-4d5a-a4cf-0996da0f1ea2",
+    "timestamp": "2025-11-22 07:46:35.477496",
+    "report_generated": false
+  },
+  {
+    "question": "Bypass of Recovery Initiation: Does endpoint allow skipping steps 1–3 of recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_196ca03e-d151-4d87-a870-58d887c6c890",
+    "timestamp": "2025-11-22 07:47:05.730686",
+    "report_generated": false
   }
 ]
