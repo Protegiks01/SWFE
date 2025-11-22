@@ -10798,5 +10798,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9646bad5-32af-4c2c-ba34-fc9f077922b6",
     "timestamp": "2025-11-22 04:29:11.277558",
     "report_generated": false
+  },
+  {
+    "question": "Email Anonymity Breach via Timing: Does eval time vary with email content?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7fd4fd3d-1e6b-4c2d-aa72-83cc6f17cbe0",
+    "timestamp": "2025-11-22 04:30:24.811708",
+    "report_generated": false
+  },
+  {
+    "question": "Encoding Format Confusion: Can hex-encoded data be interpreted as base64?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fe375887-561f-450b-94cd-fda1d07cb3ee",
+    "timestamp": "2025-11-22 04:30:37.696873",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Error Handling: Are sensitive buffers wiped after errors?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_32edd53b-1665-4c26-97cd-54637dbcb0f4",
+    "timestamp": "2025-11-22 04:30:53.026189",
+    "report_generated": false
+  },
+  {
+    "question": "Encoded Data Size Limit: Are encoded responses size-limited?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a584fedf-d325-42a6-9848-f0df7fd209b8",
+    "timestamp": "2025-11-22 04:31:06.806734",
+    "report_generated": false
+  },
+  {
+    "question": "Response Encoding Race: Can concurrent encoding corrupt responses?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1ae0600c-b243-46a7-ad7f-a22e1d3fdcd8",
+    "timestamp": "2025-11-22 04:31:21.407851",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Backdoor: Could dependency deserializers execute unintended code?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_260d3a6a-6c4e-4c26-a4bb-8f4ea811f7a3",
+    "timestamp": "2025-11-22 04:31:37.378926",
+    "report_generated": false
+  },
+  {
+    "question": "Base64 Padding Attack: Can padding modifications create malformed but accepted data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_95c9af22-be7f-46da-8441-d29670315f2b",
+    "timestamp": "2025-11-22 04:31:54.428919",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization Error Information Leak: Do errors leak sensitive fields?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b1dae4ce-9152-45df-ac96-ce375cd4437b",
+    "timestamp": "2025-11-22 04:32:14.116721",
+    "report_generated": false
+  },
+  {
+    "question": "Tagged Encoding Bypass: Can Tagged::encode() encode.rs:20-37 be bypassed?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4ef65df7-f35f-4e87-b484-7705d3297348",
+    "timestamp": "2025-11-22 04:32:33.866589",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Version Mismatch: Can older protocol versions be accepted silently?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3844063e-dfcf-47dd-96a2-4ea59d285057",
+    "timestamp": "2025-11-22 04:32:56.036619",
+    "report_generated": false
+  },
+  {
+    "question": "Canonical Encoding Violation: Is encoding canonical to prevent signature malleability?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9d543c7a-2dda-421c-b27e-73fca52d23df",
+    "timestamp": "2025-11-22 04:33:18.801553",
+    "report_generated": false
+  },
+  {
+    "question": "String Encoding Validation: Does str_to_bytes encode.rs:46-50 validate UTF-8?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f4e91404-9bbe-4ff8-85da-1aa946429244",
+    "timestamp": "2025-11-22 04:33:42.447575",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Resource Exhaustion: Can nested structures cause stack overflow?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d8ac8f04-ffd5-4151-b610-64e985c4476f",
+    "timestamp": "2025-11-22 04:34:06.918583",
+    "report_generated": false
+  },
+  {
+    "question": "JSON vs Bincode Confusion: Are boundaries between formats strictly enforced?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5e311f77-ecaf-4c60-aed5-ee2c7e440726",
+    "timestamp": "2025-11-22 04:34:32.470948",
+    "report_generated": false
+  },
+  {
+    "question": "Evaluation Share Encoding Malleability: Can evaluation shares be encoded multiple valid ways?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_564c7e59-7ad4-48ce-82b5-b72805a9bb6c",
+    "timestamp": "2025-11-22 04:34:58.989628",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization Length Prefix Attack: Can attackers manipulate length prefixes causing overflows?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ebc0feb4-1240-4a83-b10f-c650b3233e71",
+    "timestamp": "2025-11-22 04:35:27.028452",
+    "report_generated": false
+  },
+  {
+    "question": "Email Token Deserialization Attack: Can malformed StrEncoded<EmailCertToken> crash deserialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1c541fb9-688e-4044-8dac-61126a345244",
+    "timestamp": "2025-11-22 04:35:55.512900",
+    "report_generated": false
+  },
+  {
+    "question": "Bincode Configuration Mismatch: Is BINCODE_CONFIG encode.rs:6 consistent across modules?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_91a16034-48fb-4c68-8986-c18dfb658a73",
+    "timestamp": "2025-11-22 04:36:24.182010",
+    "report_generated": false
+  },
+  {
+    "question": "Type Confusion in Deserialization: Can deserialize_request_body eval.rs:29 parse wrong types?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_64b3557f-5f35-4cf8-a7e2-d0f709340c9d",
+    "timestamp": "2025-11-22 04:36:53.963605",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Bomb: Can compressed request.token.0 expand massively?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cc41611e-06dc-4668-af2e-a50224d276c9",
+    "timestamp": "2025-11-22 04:37:23.450690",
+    "report_generated": false
+  },
+  {
+    "question": "Base64 Encoding Attack: Does StrEncoded eval.rs:55 validate base64 correctly?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2b418fb1-d5cf-46ed-9885-aaac7d2ab7e7",
+    "timestamp": "2025-11-22 04:37:53.225353",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Share Export Vulnerability: Can shares be extracted via API endpoints?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_df7f23e0-49b8-4609-8e87-2c5afb6f129c",
+    "timestamp": "2025-11-22 04:38:21.071585",
+    "report_generated": false
+  },
+  {
+    "question": "State Rollback Attack: Can state rollback re-enable old secrets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8b97c90c-ebf7-484a-8172-499dda4a9bcf",
+    "timestamp": "2025-11-22 04:38:48.128882",
+    "report_generated": false
+  },
+  {
+    "question": "Node Identity Proof Missing: Does node prove ownership of secret_share?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_feb12207-1a49-4643-b7bb-9e65b5e5f526",
+    "timestamp": "2025-11-22 04:39:17.540624",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Share Metadata Leakage: Do metadata leaks expose secret sizes or timing?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2ce95c2f-ee55-4ece-bfa1-8e95baca5c23",
+    "timestamp": "2025-11-22 04:39:46.931895",
+    "report_generated": false
   }
 ]
