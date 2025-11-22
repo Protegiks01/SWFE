@@ -8548,5 +8548,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f6870315-bc6d-4053-9e05-46ca465fe838",
     "timestamp": "2025-11-22 03:47:16.664901",
     "report_generated": false
+  },
+  {
+    "question": "VDRF Output Linkability: Can repeated VDRF outputs correlate accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d1c47941-20d5-4548-8d81-4f4817b42c42",
+    "timestamp": "2025-11-22 03:48:30.860646",
+    "report_generated": false
+  },
+  {
+    "question": "Email Enumeration via Value Size: Does MskRecord size reveal email traits?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fe0b91a3-2b95-4705-aa1e-6e8f02e062ad",
+    "timestamp": "2025-11-22 03:48:43.771247",
+    "report_generated": false
+  },
+  {
+    "question": "Share Count Leakage: Does BTreeMap size reveal t and n parameters?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5ebd245c-e29d-4db7-bb6f-eb9ec155ac87",
+    "timestamp": "2025-11-22 03:48:57.384476",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Identity Inference: Do GuardianShare fields leak guardian identity?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f0aa0778-b4e4-4567-aceb-3976d3353766",
+    "timestamp": "2025-11-22 03:49:12.606366",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Parameter Leakage: Can number of shares reveal threshold t?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f0b0b8e7-f076-41d7-9851-1ef1d10e7f46",
+    "timestamp": "2025-11-22 03:49:29.065338",
+    "report_generated": false
+  },
+  {
+    "question": "Share Upload Timing: Can timing correlate guardians working together?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_60fe884a-a3f2-4c5e-9798-a2926092af8e",
+    "timestamp": "2025-11-22 03:49:46.911355",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Share Detection: Can attacker infer unuploaded shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_33b4cbb4-af15-48fc-acd0-a858fdf8c5c8",
+    "timestamp": "2025-11-22 03:50:05.761500",
+    "report_generated": false
+  },
+  {
+    "question": "AccountId Correlation: Does AccountId serialization leak identity?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_74db9c50-9584-4aab-8f25-5ee1aa151f8b",
+    "timestamp": "2025-11-22 03:50:26.926253",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Count Enumeration: Can attackers detect number of backups per account?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b51bf265-d847-4556-a06f-f8f4cda23716",
+    "timestamp": "2025-11-22 03:50:49.503210",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Occupancy: Can presence of collections leak feature usage?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e10465e1-f667-4c7c-a72d-2b335dedbe02",
+    "timestamp": "2025-11-22 03:51:13.367128",
+    "report_generated": false
+  },
+  {
+    "question": "Value Size Fingerprinting: Does serialized size reveal account metadata?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8b286313-8c00-4318-91ab-0be5e860b39e",
+    "timestamp": "2025-11-22 03:51:36.520372",
+    "report_generated": false
+  },
+  {
+    "question": "Collection Growth Monitoring: Can attackers infer usage patterns from collection size?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0290fd00-e4c4-4764-ac2e-08d36f0c8647",
+    "timestamp": "2025-11-22 03:52:02.178165",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Sync Leakage: Does node sync traffic reveal activity?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d0dc2e91-7129-4578-adb8-d7a0c7fbd293",
+    "timestamp": "2025-11-22 03:52:28.703745",
+    "report_generated": false
+  },
+  {
+    "question": "Node Diff Leakage: Do differences across nodes leak user preferences?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fc54a6ee-3278-4c27-a41c-1d7d1a06619b",
+    "timestamp": "2025-11-22 03:52:56.433294",
+    "report_generated": false
+  },
+  {
+    "question": "Backend Query Leakage: Do logs reveal which keys are accessed?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2e59c7dc-75d1-4ee0-b8fd-1fb890961715",
+    "timestamp": "2025-11-22 03:53:24.909949",
+    "report_generated": false
+  },
+  {
+    "question": "Cache Timing Attacks: Do cache hit/miss timings leak key presence?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2016d7a0-9e6f-4d8e-aecc-b0f403cc5147",
+    "timestamp": "2025-11-22 03:53:54.028207",
+    "report_generated": false
+  },
+  {
+    "question": "Key Enumeration: Can backend iteration reveal all users?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_273a3672-8064-48f8-8cf6-e4d01b9510f2",
+    "timestamp": "2025-11-22 03:54:23.783557",
+    "report_generated": false
+  },
+  {
+    "question": "Deterministic Serialization Privacy: Can known plaintext attacks identify values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a2bb83e0-2a5a-4748-8a8a-50a36c2f6dd0",
+    "timestamp": "2025-11-22 03:54:52.621757",
+    "report_generated": false
+  },
+  {
+    "question": "Padding Pattern Leakage: Does padding reveal structure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_541dd385-ae79-467f-8823-9bfbaa23712f",
+    "timestamp": "2025-11-22 03:55:24.750911",
+    "report_generated": false
+  },
+  {
+    "question": "Field Ordering Leakage: Can serialization order leak struct layout?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0219ad0e-b998-4432-b8ff-6becc4d9e658",
+    "timestamp": "2025-11-22 03:55:57.158939",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization Error Leakage: Do errors reveal sensitive info?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a2e8273b-899a-432a-9be7-8c78d0487c77",
+    "timestamp": "2025-11-22 03:56:31.906792",
+    "report_generated": false
+  },
+  {
+    "question": "Null Field Detection: Does size variation reveal optional fields?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e151a7cb-f1a3-4e3a-a732-60fd01bf9861",
+    "timestamp": "2025-11-22 03:57:06.222910",
+    "report_generated": false
+  },
+  {
+    "question": "No Caller Authentication: Can any endpoint call store/load?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cd684638-45fe-42d3-8566-99c1780fa4e7",
+    "timestamp": "2025-11-22 03:57:39.321401",
+    "report_generated": false
+  },
+  {
+    "question": "OffChainContext Trust Boundary: Can forged contexts bypass access control?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a3b07a07-7b2b-49a4-95d2-81558c263425",
+    "timestamp": "2025-11-22 03:58:11.228967",
+    "report_generated": false
+  },
+  {
+    "question": "No Key Ownership Check: Can attacker read arbitrary keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2202bf45-c345-424c-a4b4-66048c92a386",
+    "timestamp": "2025-11-22 03:58:43.565480",
+    "report_generated": false
   }
 ]
