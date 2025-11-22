@@ -11998,5 +11998,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_05e42855-ca4b-420d-88c9-1211ebc30312",
     "timestamp": "2025-11-22 05:56:14.136835",
     "report_generated": false
+  },
+  {
+    "question": "User Public Key Mismatch: At line 63, does association.verify(user_pk, &node_id) properly check that the embedded user_pk matches the one from the email certificate at line 55?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_305e2eb3-b904-473f-8823-8e25108e30f4",
+    "timestamp": "2025-11-22 05:57:32.931874",
+    "report_generated": false
+  },
+  {
+    "question": "EmailKey Storage Key: At line 58, does the 32-byte EmailKey provide sufficient collision resistance given the birthday paradox for the expected number of users? upload_msk.rs:48-58",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_765f6022-5f90-4bd4-a02f-136ff0ed2309",
+    "timestamp": "2025-11-22 05:57:46.004901",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Lagrange Interpolation: At line 58, does the verification check that Lagrange interpolation was performed correctly over the correct evaluation points?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f2980236-1ba8-4db4-980d-99bfa66993c0",
+    "timestamp": "2025-11-22 05:57:59.253724",
+    "report_generated": false
+  },
+  {
+    "question": "Partial Evaluation Ordering: Does the VDRF combine operation within line 58's verification care about share ordering, and could attackers manipulate ordering to change outputs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e73316a5-df5a-4951-83a7-6fbc9b935ac0",
+    "timestamp": "2025-11-22 05:58:13.130368",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Zero Evaluation: At line 58, if the VDRF evaluation produces a zero output, could this create a trivial EmailKey that collides with other inputs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b42a2056-f55f-46be-b147-727865ec6d38",
+    "timestamp": "2025-11-22 05:58:27.923587",
+    "report_generated": false
+  },
+  {
+    "question": "EmailInput Serialization: Between line 57's parse and line 58's VDRF verification, is the EmailInput serialization canonical to prevent different byte representations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6eef96f0-c827-4b4b-8784-63ca4e032d78",
+    "timestamp": "2025-11-22 05:58:44.152997",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Evaluation Malleability: At line 58, if the VDRF evaluation signature is malleable, could an attacker create multiple valid evaluations for the same email?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_239736a6-ee43-4086-b75c-48e31b1d7764",
+    "timestamp": "2025-11-22 05:59:02.132802",
+    "report_generated": false
+  },
+  {
+    "question": "Email Tag Overwrite: When MskRecordCollection::store is called at line 60-64, does it check if an EmailKey already exists, preventing silent overwrites of existing associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_17128066-115a-4b64-a4bd-76f04313d19c",
+    "timestamp": "2025-11-22 05:59:21.484227",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Public Key Commitment: At lines 48-50, is the deserialized VDRF public key verified against an on-chain commitment to prevent substitution?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0110a536-f324-494a-8fcb-c044d0eec864",
+    "timestamp": "2025-11-22 05:59:41.384758",
+    "report_generated": false
+  },
+  {
+    "question": "Evaluation Precomputation: Could an attacker precompute VDRF evaluations for common emails before line 58's verification to frontrun legitimate users?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c125531a-0962-4eec-91d6-065b55d2cbe6",
+    "timestamp": "2025-11-22 06:00:03.069589",
+    "report_generated": false
+  },
+  {
+    "question": "EmailKey Uniqueness: At line 58, if two users register the same email to different accounts, does the second call properly fail or overwrite, violating the invariant 'an email should be associated to at most one account at a time'?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6e3c6b82-12b9-40df-a90e-5a77003891ed",
+    "timestamp": "2025-11-22 06:00:25.446451",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Proof Binding: Does the VDRF verification at line 58 check that the evaluation is cryptographically bound to both the email and the VDRF public key?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_41b284b5-2f1a-461d-b8f1-eefa7de9d29d",
+    "timestamp": "2025-11-22 06:00:48.677096",
+    "report_generated": false
+  },
+  {
+    "question": "Off-Chain Node Collusion: If a minority of corrupted nodes provide partial evaluations, could line 58's EmailKey::new be tricked into accepting invalid combinations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4aac5b80-c3d4-48e3-9992-3b865b7e9b15",
+    "timestamp": "2025-11-22 06:01:12.436964",
+    "report_generated": false
+  },
+  {
+    "question": "Email Input Encoding: At line 57, does the EmailInput encoding match the encoding expected by VDRF evaluation at line 58, preventing verification failures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c94351d5-32b1-4cb2-907d-d44a700fcd08",
+    "timestamp": "2025-11-22 06:01:39.715331",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Domain Separation: Does the VDRF evaluation at line 58 include proper domain separation tags to prevent cross-protocol attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ac958fd7-c29e-4eaa-905d-421d5cf5beec",
+    "timestamp": "2025-11-22 06:02:05.716103",
+    "report_generated": false
+  },
+  {
+    "question": "Evaluation Format Validation: Before passing to EmailKey::new at line 58, is request.vdrf_eval.0 validated as a well-formed G2 point on the correct curve?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d8c6b1c9-9388-4756-8a78-9b6ddf14accb",
+    "timestamp": "2025-11-22 06:02:32.474184",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Public Key Version: At lines 48-50, if the VDRF public key is upgraded during protocol operation, how does line 58 handle evaluations computed under old keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4f405156-0ce0-4162-819b-f26bbc24bca7",
+    "timestamp": "2025-11-22 06:03:01.102521",
+    "report_generated": false
+  },
+  {
+    "question": "Email Tag Truncation: Does EmailKey::new at line 58 produce a 32-byte tag from a larger VDRF output, and could truncation lead to collisions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3f5b75c5-a59d-4389-b3ef-646fc3338d17",
+    "timestamp": "2025-11-22 06:03:29.348842",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Determinism: If the same email and VDRF public key are used twice at line 58, will EmailKey::new produce identical tags, or could non-determinism allow storage overwrites?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_49ae5652-b045-4e9c-bd33-faca13308f52",
+    "timestamp": "2025-11-22 06:03:58.042635",
+    "report_generated": false
+  },
+  {
+    "question": "Evaluation Share Validation: At line 58, does the verification check that the VDRF evaluation combines shares from at least t distinct nodes, preventing Sybil attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b6004b82-73d0-47fd-ab6e-294b791e6397",
+    "timestamp": "2025-11-22 06:04:26.386177",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Input Binding: When EmailKey::new is called at line 58, does it verify the VDRF evaluation was computed over the exact email from line 57, preventing input substitution?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bebe789c-2c84-4d44-b9d5-8529c82a5584",
+    "timestamp": "2025-11-22 06:04:55.585520",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Enforcement: Does Vdrf::verify called within EmailKey::new at line 58 enforce the correct threshold t, ensuring minority nodes cannot forge evaluations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_67a73c9f-39a1-45d6-80e9-a3c986eb962b",
+    "timestamp": "2025-11-22 06:05:23.017196",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Evaluation Freshness: At line 58, is there any mechanism to prevent replay of old VDRF evaluations, allowing attackers to re-associate emails with stale data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_460ef803-930f-4149-b9e9-48c812543874",
+    "timestamp": "2025-11-22 06:05:53.053720",
+    "report_generated": false
+  },
+  {
+    "question": "Email Tag Collision: Could two different valid emails hash to the same EmailKey at line 58, allowing one user to overwrite another's association in storage?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_98074f3f-b104-486a-a151-859d0dcd9f87",
+    "timestamp": "2025-11-22 06:06:22.999874",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Evaluation Verification: Does EmailKey::new at line 58 properly verify the VDRF evaluation proof before accepting it, preventing attackers from providing arbitrary email tags?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a182e841-96b6-446d-976c-7c7986891751",
+    "timestamp": "2025-11-22 06:06:52.022879",
+    "report_generated": false
   }
 ]
