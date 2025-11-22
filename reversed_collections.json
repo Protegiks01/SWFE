@@ -11848,5 +11848,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d5c7ca66-d378-415d-a1af-b86b21a5a938",
     "timestamp": "2025-11-22 05:45:15.766419",
     "report_generated": false
+  },
+  {
+    "question": "Storage Overwrite Race: At lines 60-64, if two concurrent requests store MskRecord for the same EmailKey, which value persists and could this violate uniqueness?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1f511505-24bd-4372-b946-d145f0689cb0",
+    "timestamp": "2025-11-22 05:46:33.955790",
+    "report_generated": false
+  },
+  {
+    "question": "Verification Error Handling: If verify at line 63 fails, does it return a generic error or leak information about which specific check failed? upload_msk.rs:60-64",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_eaf4b00a-cd57-4941-b502-18977efd429b",
+    "timestamp": "2025-11-22 05:46:47.604299",
+    "report_generated": false
+  },
+  {
+    "question": "Share Lagrange Coefficient: At line 63, is the correct Lagrange coefficient for the node's evaluation point used in share verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_56adb596-0d5f-43bc-a1db-820c13122f70",
+    "timestamp": "2025-11-22 05:47:00.949988",
+    "report_generated": false
+  },
+  {
+    "question": "SoK Proof Freshness: Does the SoK proof verified at line 63 include any freshness guarantees, or could old proofs be replayed?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ffae0f2a-2161-45f8-8ab6-4ddf7bb3d4cb",
+    "timestamp": "2025-11-22 05:47:15.814220",
+    "report_generated": false
+  },
+  {
+    "question": "Fixed Fields Consistency: Within the AssociationRequestEmail verified at line 63, are all 'fixed' fields checked for consistency across nodes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b84e1483-1f97-4dcf-af42-1609c55e0e53",
+    "timestamp": "2025-11-22 05:47:31.051542",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Opening Validity: At line 63, does verification check that the share could be a valid opening to the commitments without fully opening them?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_53637887-c034-4311-a791-ce9a82610847",
+    "timestamp": "2025-11-22 05:47:47.695250",
+    "report_generated": false
+  },
+  {
+    "question": "User Key Authority: At line 63, how does verification ensure the user_pk has authority over the email, beyond just certificate possession?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9c5ea6de-50a2-4a24-bbac-ab4386fcd9ac",
+    "timestamp": "2025-11-22 05:48:05.479923",
+    "report_generated": false
+  },
+  {
+    "question": "Share Polynomial Degree: Does line 63's verification check that shares correspond to a polynomial of degree t-1, enforcing correct threshold semantics?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3be87800-d544-425e-9dbd-dfbab25c33b8",
+    "timestamp": "2025-11-22 05:48:24.824538",
+    "report_generated": false
+  },
+  {
+    "question": "Ciphertext Version: At line 63, if the EncryptedMsk has a version tag, does verification check compatibility with the current protocol version?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c1a31c9e-eb95-4cdb-8146-f58e66a944bd",
+    "timestamp": "2025-11-22 05:48:45.444551",
+    "report_generated": false
+  },
+  {
+    "question": "Node-Specific Shares: Does line 63's verification ensure the share is computed specifically for the calling node's ID, preventing share reuse across nodes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2739ee1c-2bc8-4532-860f-e345aa3170bd",
+    "timestamp": "2025-11-22 05:49:06.854862",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Zero Check: At line 63, if any Pedersen commitment is the point at infinity, does verification reject it as invalid?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a87ae572-389f-4848-91fe-b243802f2266",
+    "timestamp": "2025-11-22 05:49:28.732814",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Consistency: If line 63's verification succeeds with threshold t, does it ensure the same threshold is used across all nodes for the same email?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_002cad86-7a88-411f-a948-3ca9eae95abb",
+    "timestamp": "2025-11-22 05:49:51.803755",
+    "report_generated": false
+  },
+  {
+    "question": "Share Value Range: At line 63, is the secret share validated to be within the valid field element range, preventing out-of-bounds values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_54cf036e-985e-44b1-a849-99974bd9fc3c",
+    "timestamp": "2025-11-22 05:50:16.573732",
+    "report_generated": false
+  },
+  {
+    "question": "SoK Message Binding: Does the SoK proof verified at line 63 bind to the user's public key specifically, preventing proof reuse across different users?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_05c66aa2-c5ef-4ab9-ba8a-b6a7e67a9b53",
+    "timestamp": "2025-11-22 05:50:42.856088",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Curve Validation: At line 63, are all Pedersen commitments validated as points on the correct elliptic curve before verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5fec1294-05f2-43a6-a873-004d17f2fb1c",
+    "timestamp": "2025-11-22 05:51:09.424725",
+    "report_generated": false
+  },
+  {
+    "question": "Ciphertext Integrity: Does verify at line 63 check that the encrypted MSK ciphertext hasn't been tampered with before accepting the association?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_12f4d205-90b1-4e42-b766-16d451f46a81",
+    "timestamp": "2025-11-22 05:51:37.577683",
+    "report_generated": false
+  },
+  {
+    "question": "Evaluation Point Collision: At line 63, if two node IDs hash to the same evaluation point, could both nodes accept the same share, violating threshold assumptions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9c20f872-f689-4a25-8cdd-0380fa1875ba",
+    "timestamp": "2025-11-22 05:52:06.186008",
+    "report_generated": false
+  },
+  {
+    "question": "Zero Share Detection: At line 63, if the provided share is zero, does verification reject it as invalid since zero breaks secret sharing security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_19ec65f8-0bc6-4073-9116-f7f5097e2ce0",
+    "timestamp": "2025-11-22 05:52:38.850350",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Binding: Does verify at line 63 check that commitments are cryptographically bound to the ciphertext, preventing commitment-ciphertext mismatches?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1c9c40ec-72af-4939-99c7-5f62345b4c19",
+    "timestamp": "2025-11-22 05:53:08.462717",
+    "report_generated": false
+  },
+  {
+    "question": "Pedersen Generator Consistency: At line 63, does verification use the same Pedersen generators across all nodes, preventing different nodes from accepting incompatible shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_48baa58d-0b96-4c22-b9b2-39f242307120",
+    "timestamp": "2025-11-22 05:53:39.794233",
+    "report_generated": false
+  },
+  {
+    "question": "Share Randomness: Does line 63's verification check that the secret share's randomness component is properly committed, preventing share malleability?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ac221470-5c93-4aaa-a522-49d46b63c1a9",
+    "timestamp": "2025-11-22 05:54:10.593124",
+    "report_generated": false
+  },
+  {
+    "question": "SoK Proof Verification: Within the verify call at line 63, is the Signature of Knowledge proof properly validated against the user's public key and commitments?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_62132a5a-8d3a-4ffe-a722-7781b47c72b7",
+    "timestamp": "2025-11-22 05:54:41.411295",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Count Validation: At line 63, does the verification ensure the number of Pedersen commitments matches the threshold t, preventing invalid threshold configurations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b0bb3076-df39-4669-a67a-7fa8db77d1a7",
+    "timestamp": "2025-11-22 05:55:12.607957",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Share Verification: Does verify at line 63 check that share is consistent with the Pedersen commitments for the given node_id, preventing share forgery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e5a7d820-4445-42d3-ac5f-570bc0e1279f",
+    "timestamp": "2025-11-22 05:55:42.595100",
+    "report_generated": false
+  },
+  {
+    "question": "Node ID Substitution: Between line 52 (node_id extraction) and line 63 (verify call), could a compromised node substitute a different node_id to affect secret share computation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_05e42855-ca4b-420d-88c9-1211ebc30312",
+    "timestamp": "2025-11-22 05:56:14.136835",
+    "report_generated": false
   }
 ]
