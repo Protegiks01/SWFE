@@ -10792,5 +10792,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2abd277e-d8f3-4bf4-8390-b7aa520e081f",
     "timestamp": "2025-11-22 06:52:43.554931",
     "report_generated": false
+  },
+  {
+    "question": "Integer Truncation: Can casting share indices cause truncation? upload_share.rs:52-66",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bfc7c88e-b6b0-490b-b9de-f2f2e31ac444",
+    "timestamp": "2025-11-22 06:53:57.511134",
+    "report_generated": false
+  },
+  {
+    "question": "Serde Configuration: Can unsafe serde configs introduce vulnerabilities? upload_share.rs:39-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_926e03c6-b797-4de6-a902-95365d4a275e",
+    "timestamp": "2025-11-22 06:54:10.764722",
+    "report_generated": false
+  },
+  {
+    "question": "Account Not Found Disclosure: Does explicit 'Account not found' reveal valid account IDs? upload_share.rs:44-46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e373d2b8-979b-484e-b493-3586f8a13beb",
+    "timestamp": "2025-11-22 06:54:24.060504",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Not Found Disclosure: Does backup-specific error leak backup existence? upload_share.rs:48-50",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_79bb4b03-8a90-407f-aba9-bb31f208aaf6",
+    "timestamp": "2025-11-22 06:54:37.982488",
+    "report_generated": false
+  },
+  {
+    "question": "Invalid Share Error: Does 'Invalid guardian share' leak verification failure details? upload_share.rs:54-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a6b87637-fa95-4215-83dd-930971acde42",
+    "timestamp": "2025-11-22 06:54:52.687598",
+    "report_generated": false
+  },
+  {
+    "question": "Success Message Disclosure: Do success responses leak share validity or thresholds? upload_share.rs:69-72",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_30022ad1-9437-4884-a14f-57decf70bb54",
+    "timestamp": "2025-11-22 06:55:08.729060",
+    "report_generated": false
+  },
+  {
+    "question": "Error Type Differentiation: Do different error types reveal internal state? upload_share.rs:44-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bbacf464-bf4c-491c-a409-432e727fa179",
+    "timestamp": "2025-11-22 06:55:25.382839",
+    "report_generated": false
+  },
+  {
+    "question": "Verification Failure Details: Does backup.verify() leak reasons for failure? upload_share.rs:53-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fa214fea-dd49-4265-bd0e-23bff22443cc",
+    "timestamp": "2025-11-22 06:55:44.609400",
+    "report_generated": false
+  },
+  {
+    "question": "Panic vs Error: Can unexpected panics leak stack traces? upload_share.rs:33-74",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_14ec64da-3640-47eb-ae0c-01b47796733b",
+    "timestamp": "2025-11-22 06:56:06.481086",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Error Leakage: Do deserialization failures leak details? upload_share.rs:39",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2168488b-6476-4d25-bb33-735e721d3bfb",
+    "timestamp": "2025-11-22 06:56:29.139266",
+    "report_generated": false
+  },
+  {
+    "question": "Response Timing: Do timing differences reveal share validity or internal operations? upload_share.rs:33-74",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_46146101-f88c-4564-9364-c990fe323f90",
+    "timestamp": "2025-11-22 06:56:52.190917",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Operation Errors: Do storage failures leak backend information? upload_share.rs:65-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6e0d2579-16f9-4fb9-b706-5228d92c5277",
+    "timestamp": "2025-11-22 06:57:16.550066",
+    "report_generated": false
+  },
+  {
+    "question": "HTTP Status Code Mapping: Do status codes reveal internal logic paths? upload_share.rs:73",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4aecea9f-fcd4-4c47-a534-62fc1cbe4887",
+    "timestamp": "2025-11-22 06:57:40.580094",
+    "report_generated": false
+  },
+  {
+    "question": "JSON Serialization Errors: Can serialization errors leak sensitive internal data? upload_share.rs:69-73",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_97042b14-c491-4041-9f5a-182df412b82f",
+    "timestamp": "2025-11-22 06:58:06.540740",
+    "report_generated": false
+  },
+  {
+    "question": "State Query Side Effects: Do failed account queries leak account state distribution? upload_share.rs:44-46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_079f8419-3124-411e-9ec8-3000e0ab86b8",
+    "timestamp": "2025-11-22 06:58:33.902534",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Action Privacy: Do responses or logs reveal which guardians uploaded shares? upload_share.rs:69-72",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2b0e0c9f-8cfe-4420-a2f8-1ba367b583e1",
+    "timestamp": "2025-11-22 06:59:02.668263",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Structure Leakage: Can probing different backup IDs leak structure of backups? upload_share.rs:48-50",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cbd5a32e-1687-4fa8-9c13-d56f6efffd2a",
+    "timestamp": "2025-11-22 06:59:31.344118",
+    "report_generated": false
+  },
+  {
+    "question": "Share Count Leakage: Can responses leak how many shares exist or the threshold requirement?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a2d222a2-d165-45b6-8faa-4767ab167556",
+    "timestamp": "2025-11-22 07:00:01.221084",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Bypass via Unauthorized Uploads: If multiple malicious actors can upload valid-looking shares, could they collectively meet the reconstruction threshold without being actual guardians, violating the invariant that recovery only occurs when more than the threshold approve? upload_share.rs:52-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_55c33c75-4e2e-451b-9b68-e9905321be7d",
+    "timestamp": "2025-11-22 07:00:31.444326",
+    "report_generated": false
+  },
+  {
+    "question": "Session/Context Authentication: The handler receives an OffChainContext but does not extract authentication info. Should guardian identity be validated with digital signatures? upload_share.rs:33-38",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_517e4748-46b1-404e-ab3b-a7ea2de03090",
+    "timestamp": "2025-11-22 07:01:02.023901",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Approval Mechanism: The comment mentions overwriting equivalent shares but where is the guardian approval mechanism proving the guardian consented to reconstruction? upload_share.rs:58-63",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6dcfc1d8-1c52-4b11-80e6-8f529e57e51d",
+    "timestamp": "2025-11-22 07:01:33.041692",
+    "report_generated": false
+  },
+  {
+    "question": "Account State Check: The code retrieves account state but does not validate account recovery status. Should additional checks be required before accepting uploads? upload_share.rs:44-50",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4193c1c5-1b06-43a7-a1db-bf04883dfdce",
+    "timestamp": "2025-11-22 07:02:03.584292",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery Initiation Validation: Does absence of recovery initiation validation allow share uploads before email-verified recovery initiation? upload_share.rs:33-74",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4dfd2a79-1985-4628-80a4-dbe00c967b8d",
+    "timestamp": "2025-11-22 07:02:32.879514",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Revocation: If a guardian is removed from configuration after backup creation, can they still upload shares? upload_share.rs:52-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f0556777-c00a-47e0-b713-f2591de47d73",
+    "timestamp": "2025-11-22 07:03:02.417364",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Validity Period: Should the endpoint check if the backup is expired or superseded before accepting shares? upload_share.rs:48-50",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_28316e09-622f-4d77-ba5f-c501bc576184",
+    "timestamp": "2025-11-22 07:03:33.160375",
+    "report_generated": false
   }
 ]
