@@ -11392,5 +11392,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_279c2007-169c-4914-89fd-192d63e0a8db",
     "timestamp": "2025-11-22 07:36:47.849622",
     "report_generated": false
+  },
+  {
+    "question": "JSON Injection: Can JSON injection modify parsed values? upload_share.rs:39",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_493edcd9-eac7-4c3c-a732-c57714f11807",
+    "timestamp": "2025-11-22 07:38:14.037738",
+    "report_generated": false
+  },
+  {
+    "question": "Buffer Overflow: Can large/nested structures exhaust memory? upload_share.rs:39",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e18b7121-cbba-4d38-bb59-5efda3934359",
+    "timestamp": "2025-11-22 07:38:27.126805",
+    "report_generated": false
+  },
+  {
+    "question": "Share Size Validation: Is there max allowed share size? upload_share.rs:39-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_03f315f5-add4-4c86-a836-b0f2413ff3ec",
+    "timestamp": "2025-11-22 07:38:40.904220",
+    "report_generated": false
+  },
+  {
+    "question": "Request Field Injection: Are unexpected fields ignored or harmful? upload_share.rs:39",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b42796ca-de8a-478d-8388-b6d2850ecd75",
+    "timestamp": "2025-11-22 07:38:54.685101",
+    "report_generated": false
+  },
+  {
+    "question": "Encoding Version Compatibility: Can old encodings result in misinterpretation? upload_share.rs:39-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_18c25b4c-e5a5-44ce-8ede-9d35421bc380",
+    "timestamp": "2025-11-22 07:39:09.402196",
+    "report_generated": false
+  },
+  {
+    "question": "Malformed Hex Encoding: Can invalid hex cause issues? upload_share.rs:41-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_598ce37d-f30c-4ebd-89c3-2d3f1f886962",
+    "timestamp": "2025-11-22 07:39:25.796097",
+    "report_generated": false
+  },
+  {
+    "question": "Request Tampering: Can MITM tamper with fields? upload_share.rs:36-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_09fc81f3-840d-46a4-8490-ad69d64691cd",
+    "timestamp": "2025-11-22 07:39:43.056952",
+    "report_generated": false
+  },
+  {
+    "question": "Type Safety: Could deserialized values violate type expectations? upload_share.rs:39-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9075bc6f-445e-4309-ad72-e95091c06b49",
+    "timestamp": "2025-11-22 07:40:02.163049",
+    "report_generated": false
+  },
+  {
+    "question": "Request Origin Spoofing: Can headers/metadata be spoofed? upload_share.rs:36-39",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7ef5328e-eda4-41b2-94d9-41d8a77d2bf7",
+    "timestamp": "2025-11-22 07:40:22.628949",
+    "report_generated": false
+  },
+  {
+    "question": "Share Metadata Validation: Are timestamp/version fields checked? upload_share.rs:39-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_78b5636d-7853-4a9f-a921-2bad71be34da",
+    "timestamp": "2025-11-22 07:40:43.293290",
+    "report_generated": false
+  },
+  {
+    "question": "Integer Truncation: Could integer truncation cause wrong indexing? upload_share.rs:52-66",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_28d1dd65-2453-4acb-bc33-86e1028b7a5b",
+    "timestamp": "2025-11-22 07:41:05.859914",
+    "report_generated": false
+  },
+  {
+    "question": "Serde Configuration: Could unsafe serde options introduce vulnerabilities? upload_share.rs:39-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_63f1bcb5-5c08-4179-8d75-0b238f94290c",
+    "timestamp": "2025-11-22 07:41:30.564170",
+    "report_generated": false
+  },
+  {
+    "question": "Account Not Found Disclosure: Does 'Account not found' reveal valid account IDs? upload_share.rs:44-46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_204570aa-bc4c-4ed3-afad-a64d04cd7323",
+    "timestamp": "2025-11-22 07:41:55.409822",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Not Found Disclosure: Does error reveal which backups exist? upload_share.rs:48-50",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8d27356e-770d-43c5-81a2-03fafa92a7d1",
+    "timestamp": "2025-11-22 07:42:20.692073",
+    "report_generated": false
+  },
+  {
+    "question": "Invalid Share Error: Could invalid share errors leak validation details? upload_share.rs:54-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6ce2f588-9413-48f4-8e06-923e1a3578ac",
+    "timestamp": "2025-11-22 07:42:48.878205",
+    "report_generated": false
+  },
+  {
+    "question": "Success Message Disclosure: Does successful upload response leak state? upload_share.rs:69-72",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f8d65889-eeb9-401b-b4f4-c84587248570",
+    "timestamp": "2025-11-22 07:43:16.676889",
+    "report_generated": false
+  },
+  {
+    "question": "Error Type Differentiation: Do different errors allow system mapping? upload_share.rs:44-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dba6a372-87a4-4b95-963d-1f38c81e894f",
+    "timestamp": "2025-11-22 07:43:46.280460",
+    "report_generated": false
+  },
+  {
+    "question": "Verification Failure Details: Do detailed verification errors aid attackers? upload_share.rs:53-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_19a273bf-9e6a-4164-af8d-704b03e09fc7",
+    "timestamp": "2025-11-22 07:44:16.783465",
+    "report_generated": false
+  },
+  {
+    "question": "Panic vs Error: Could panics leak stack traces? upload_share.rs:33-74",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5f1a67d0-b184-4865-a7fd-7de368a29f56",
+    "timestamp": "2025-11-22 07:44:43.006891",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Error Leakage: Do deserialization errors leak internal logic? upload_share.rs:39",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0d4235d0-8dd4-4980-a0a9-8297d4dfc9c5",
+    "timestamp": "2025-11-22 07:45:09.723163",
+    "report_generated": false
+  },
+  {
+    "question": "Response Timing: Can timing reveal share validity or state? upload_share.rs:33-74",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7a3f2740-2d4f-4e99-932b-97f1a78235f2",
+    "timestamp": "2025-11-22 07:45:37.849197",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Operation Errors: Do storage errors leak implementation details? upload_share.rs:65-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_974a1c32-77b7-45bf-b4df-cc83d9e7b8dd",
+    "timestamp": "2025-11-22 07:46:06.267466",
+    "report_generated": false
+  },
+  {
+    "question": "HTTP Status Code Mapping: Do status codes leak internal failure reasons? upload_share.rs:73",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0dedac51-e7b3-4998-a5ef-b5d0800d9e6b",
+    "timestamp": "2025-11-22 07:46:36.644390",
+    "report_generated": false
+  },
+  {
+    "question": "JSON Serialization Errors: Could serialization errors reveal structure? upload_share.rs:69-73",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5ab79c70-8ad4-4b11-b72f-2c58df6a10c6",
+    "timestamp": "2025-11-22 07:47:08.950234",
+    "report_generated": false
+  },
+  {
+    "question": "State Query Side Effects: Could account state queries leak info? upload_share.rs:44-46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ab5b70d3-54f2-4367-8c4d-e3b4bed8989d",
+    "timestamp": "2025-11-22 07:47:41.828108",
+    "report_generated": false
   }
 ]
