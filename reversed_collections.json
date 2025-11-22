@@ -9148,5 +9148,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c6fe5548-f9ec-4cd1-bf1c-5a00d5e91d0d",
     "timestamp": "2025-11-22 00:15:15.440423",
     "report_generated": false
+  },
+  {
+    "question": "Guardian Key Compromise: Can compromised guardian keys retroactively expose shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_89119701-17e5-44eb-a48e-b86a487df1af",
+    "timestamp": "2025-11-22 00:16:24.706590",
+    "report_generated": false
+  },
+  {
+    "question": "Honest Guardian Assumption: What if exactly t guardians go offline?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_20fa4156-bcd6-4db6-a371-3e64a6147bb3",
+    "timestamp": "2025-11-22 00:16:37.723086",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Share Verification: Are share values checked against commitments?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_43b95564-2a6e-4744-af3f-7b99edfa136e",
+    "timestamp": "2025-11-22 00:16:51.225893",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Collusion Detection: Can colluding guardians detect insufficiency without revealing info?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b98e6941-8ec1-40dd-965b-46779e0f800c",
+    "timestamp": "2025-11-22 00:17:06.057335",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Share Replay: Can guardians replay shares across attempts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_239c6064-0c01-4136-b8df-b7a723b2498a",
+    "timestamp": "2025-11-22 00:17:20.809083",
+    "report_generated": false
+  },
+  {
+    "question": "Secret to Key Derivation: Does kdfn() preserve entropy?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_76628a3d-3127-459d-ae16-64974a48524d",
+    "timestamp": "2025-11-22 00:17:37.040672",
+    "report_generated": false
+  },
+  {
+    "question": "Share Truncation: Why limit shares to exactly threshold instead of using all?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6d8aa381-fd95-4999-ad75-958ba1fc0b8c",
+    "timestamp": "2025-11-22 00:17:54.595315",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Enforcement in Backup System: Is threshold validation consistent with SSS?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d61849fa-975d-4707-9720-b833f8431b0c",
+    "timestamp": "2025-11-22 00:18:13.921649",
+    "report_generated": false
+  },
+  {
+    "question": "Share Verification in Recovery: Is verification before or after SSS, and can timing leak info?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_25ad6958-f070-4a16-a50e-1b59ae337476",
+    "timestamp": "2025-11-22 00:18:35.090844",
+    "report_generated": false
+  },
+  {
+    "question": "Share Decryption Timing: Can decryption timing leak share values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d3fc5c68-aa79-4ee5-b0f6-fee3aa474c03",
+    "timestamp": "2025-11-22 00:18:57.027290",
+    "report_generated": false
+  },
+  {
+    "question": "Share Encryption Key Derivation: If guardian keys are compromised, are multiple backups exposed?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_20761571-24cb-410f-afb3-9fab87a8cb49",
+    "timestamp": "2025-11-22 00:19:21.219596",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Binding: Are share commitments binding and binding to the correct share?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5d537da3-3d77-422d-82e7-30af93ea8b3e",
+    "timestamp": "2025-11-22 00:19:45.649143",
+    "report_generated": false
+  },
+  {
+    "question": "Share Index Assignment: Are indices 0..len() mismatched with SSS 1..=n expectations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c515167c-2213-4895-adc3-9ed87d325ab2",
+    "timestamp": "2025-11-22 00:20:10.650050",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Shuffle Randomness: Can predictable shuffling leak mapping guardian→share?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1db0138d-6693-41e4-b3ba-a50bc322386d",
+    "timestamp": "2025-11-22 00:20:38.173773",
+    "report_generated": false
+  },
+  {
+    "question": "Share Distribution Security: Can plaintext shares leak during BackupCiphertextV0::new()?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_09481f80-c7f9-4c02-83ce-8dca286c72bd",
+    "timestamp": "2025-11-22 00:21:05.818951",
+    "report_generated": false
+  },
+  {
+    "question": "Move Semantics and Zeroization: Is old memory wiped after move?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4faa89bc-4a7d-4418-8668-7c80036e5123",
+    "timestamp": "2025-11-22 00:21:34.509677",
+    "report_generated": false
+  },
+  {
+    "question": "Clone and Zeroization: Are cloned secrets zeroized independently?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c1081422-6588-4729-b50a-1f3b5e08a166",
+    "timestamp": "2025-11-22 00:22:03.015837",
+    "report_generated": false
+  },
+  {
+    "question": "Partial Zeroization: Is zeroization guaranteed during panics?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fe4a43e8-8d91-4ff8-8876-6526895fcf28",
+    "timestamp": "2025-11-22 00:22:34.129792",
+    "report_generated": false
+  },
+  {
+    "question": "Zeroization Bypass: Can compiler optimizations remove zeroization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_52f00179-9fa8-4231-93f8-8b41d63393a0",
+    "timestamp": "2025-11-22 00:23:03.884709",
+    "report_generated": false
+  },
+  {
+    "question": "Zeroization Timing: Does ZeroizeOnDrop run before page swap?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_48103f94-dfe0-49d4-9cb1-5968eef30398",
+    "timestamp": "2025-11-22 00:23:33.281270",
+    "report_generated": false
+  },
+  {
+    "question": "Separator Length Attacks: Can long separators cause DoS?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b16c8ddd-f3d7-43c2-81ff-2178457bc588",
+    "timestamp": "2025-11-22 00:24:03.631963",
+    "report_generated": false
+  },
+  {
+    "question": "Tagged Trait Security: Does Tagged prevent type confusion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4a45b4cb-0404-43ac-bb85-96f572938740",
+    "timestamp": "2025-11-22 00:24:34.972859",
+    "report_generated": false
+  },
+  {
+    "question": "Version Prefix Enforcement: Is the v0: prefix validated?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1ebe9aa3-35e6-4e3b-a87a-45b725d25c7b",
+    "timestamp": "2025-11-22 00:25:05.373812",
+    "report_generated": false
+  },
+  {
+    "question": "Separator Injection: Can separators be injected into serialized data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8a61abb7-f166-4c89-bd58-f880b9731381",
+    "timestamp": "2025-11-22 00:25:35.270328",
+    "report_generated": false
+  },
+  {
+    "question": "SEPARATOR Collision: Can Tagged separators collide?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ad35305e-461c-4187-a6c2-e51f2d5c89bb",
+    "timestamp": "2025-11-22 00:26:04.179716",
+    "report_generated": false
   }
 ]
