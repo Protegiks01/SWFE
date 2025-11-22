@@ -9148,5 +9148,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b33cc03a-1f4c-405f-a8fc-a08ff8c6c271",
     "timestamp": "2025-11-22 04:31:25.332764",
     "report_generated": false
+  },
+  {
+    "question": "Can VDRF evaluation requests be replayed to leak information about which users are performing account associations or recoveries? mod.rs:103-104",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b4c57e62-508b-4854-a95f-b96dbf2d2091",
+    "timestamp": "2025-11-22 04:32:38.340159",
+    "report_generated": false
+  },
+  {
+    "question": "Does the HTTP layer validate that VDRF inputs are properly domain-separated to prevent cross-protocol attacks where outputs from one application are used in another? mod.rs:141-146",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e82883d6-940b-46ea-a86f-907e8d8cce67",
+    "timestamp": "2025-11-22 04:32:51.825136",
+    "report_generated": false
+  },
+  {
+    "question": "When VDRF proofs are verified, are there timing side-channels that could leak information about secret shares? Does verification use constant-time operations? mod.rs:103-104",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3f9df18f-96f1-48f1-9915-0076b1db56e6",
+    "timestamp": "2025-11-22 04:33:19.644579",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker send malformed VDRF evaluation requests that cause the off-chain node to perform expensive cryptographic operations, leading to resource exhaustion? mod.rs:170-171",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3e048de3-b2af-4682-95b5-b393af523773",
+    "timestamp": "2025-11-22 04:33:33.324911",
+    "report_generated": false
+  },
+  {
+    "question": "Does the routing logic prevent VDRF nodes from evaluating the same input multiple times? Could repeated evaluations leak secret shares through side-channel analysis? mod.rs:103-104",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_39f087a1-4d59-4900-a25b-8c7cdc481fb4",
+    "timestamp": "2025-11-22 04:33:47.896663",
+    "report_generated": false
+  },
+  {
+    "question": "When VDRF shares are aggregated across nodes, does the HTTP layer verify that shares come from distinct node IDs? Could a malicious node submit multiple shares? mod.rs:141-146",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_29b589f7-5cd6-4eff-9bf2-cbd40774090d",
+    "timestamp": "2025-11-22 04:34:03.830008",
+    "report_generated": false
+  },
+  {
+    "question": "Do HTTP endpoints that accept email certificates verify them against the swafe_public_key stored in ContractState? Could certificate verification be skipped? lib.rs:26",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c107454d-1079-4d1b-ae12-b7dc6fda1788",
+    "timestamp": "2025-11-22 04:34:21.153109",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker reuse expired email certificates in HTTP requests? Does the routing logic enforce certificate expiration checks? mod.rs:103-104",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8f455c85-9eb2-4a34-83d5-829e146836c2",
+    "timestamp": "2025-11-22 04:34:40.022670",
+    "report_generated": false
+  },
+  {
+    "question": "When an email certificate is presented, does the HTTP layer verify that the certified email matches the email used in the association or recovery request? mod.rs:141-146",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ca8b9007-5ae5-4e62-9693-07243e94a824",
+    "timestamp": "2025-11-22 04:34:59.672255",
+    "report_generated": false
+  },
+  {
+    "question": "Could an attacker present a valid email certificate for email A but request operations on an account associated with email B, bypassing ownership checks? mod.rs:103-104",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d1a63e2e-c98d-4da8-9014-522943a66003",
+    "timestamp": "2025-11-22 04:35:22.162214",
+    "report_generated": false
+  },
+  {
+    "question": "Does the HTTP dispatch verify that email certificates are signed by the trusted Swafe-io key before allowing account recovery? Could key substitution attacks occur? mod.rs:103-104",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_71ca015d-977d-4b69-a55f-f4fcefaab4a9",
+    "timestamp": "2025-11-22 04:35:47.019593",
+    "report_generated": false
+  },
+  {
+    "question": "Can email certificates be replayed across different accounts or requests? Does the routing logic enforce freshness or nonce checks? mod.rs:103-104",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5de01add-2370-4466-887b-49be0fd6cf64",
+    "timestamp": "2025-11-22 04:36:12.627446",
+    "report_generated": false
+  },
+  {
+    "question": "When certificate verification fails, does the error message reveal information about why verification failed, potentially helping an attacker forge certificates? error.rs:62-110",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8c75a19b-692d-4613-b822-c732fbc7ac69",
+    "timestamp": "2025-11-22 04:36:39.337665",
+    "report_generated": false
+  },
+  {
+    "question": "Does the HTTP layer enforce that email certificates cannot be issued for the future? Could certificates with future timestamps bypass time-based security checks? mod.rs:103-104",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fcc0de51-4ae1-4e6f-b86e-dde72634aa12",
+    "timestamp": "2025-11-22 04:37:07.258900",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker present an email certificate that was validly issued but has been revoked? Does the routing logic check certificate revocation status? mod.rs:141-146",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4551a4fc-6694-4e72-b70d-7e186b9ad695",
+    "timestamp": "2025-11-22 04:37:38.617621",
+    "report_generated": false
+  },
+  {
+    "question": "When multiple email certificates are chained (e.g., for recovery of multiple backups), does the HTTP layer verify the entire chain before allowing operations? mod.rs:103-104",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c08cbb7e-59ce-4094-adc3-8fc0e8731b5b",
+    "timestamp": "2025-11-22 04:38:09.208908",
+    "report_generated": false
+  },
+  {
+    "question": "Do HTTP endpoints that handle guardian approvals verify that approval signatures are valid and from registered guardians? Could signature checks be bypassed? mod.rs:146",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_638fe52f-3d68-4537-aa46-62afe95ae3c4",
+    "timestamp": "2025-11-22 04:38:41.300374",
+    "report_generated": false
+  },
+  {
+    "question": "When counting guardian approvals, does the routing logic enforce the threshold t? Could an attacker with t-1 approvals trick the system into allowing recovery? mod.rs:103-104",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b09e2d74-1366-4bb9-8f67-ed1f892edee7",
+    "timestamp": "2025-11-22 04:39:13.572986",
+    "report_generated": false
+  },
+  {
+    "question": "Can the same guardian provide multiple approvals for the same recovery request to inflate the approval count above the threshold? mod.rs:146",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_88448327-81f6-4621-a98a-f91475688f03",
+    "timestamp": "2025-11-22 04:39:45.456083",
+    "report_generated": false
+  },
+  {
+    "question": "Does the HTTP layer verify that guardians are not approving their own accounts? Could self-approval bypass the guardian trust model? mod.rs:103-104",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1629b47b-3a06-4fae-98c2-271bd74598b0",
+    "timestamp": "2025-11-22 04:40:19.121904",
+    "report_generated": false
+  },
+  {
+    "question": "When guardian approvals are submitted via HTTP requests, can they be replayed to approve multiple different recovery requests? mod.rs:146",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2dedb572-8c97-4a97-8a4a-fe8804c4d4c5",
+    "timestamp": "2025-11-22 04:40:52.838165",
+    "report_generated": false
+  },
+  {
+    "question": "Does the routing logic enforce that guardian approvals must be for specific account IDs and backup IDs? Could approval for one account be used for another? mod.rs:103-104",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8f104580-e974-404e-8378-a5ac263e2683",
+    "timestamp": "2025-11-22 04:41:25.680046",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker front-run guardian approval submissions to change the recovery target between when guardians sign and when their approvals are processed? mod.rs:170-171",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f830d635-7869-4c27-a713-189f0bf494c3",
+    "timestamp": "2025-11-22 04:41:59.203700",
+    "report_generated": false
+  },
+  {
+    "question": "When the threshold number of approvals is reached, does the HTTP layer immediately trigger recovery? Could this create a race condition where more approvals arrive? mod.rs:103-104",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7e60c5c7-76c3-4de2-84ec-d68e90b18891",
+    "timestamp": "2025-11-22 04:42:30.718630",
+    "report_generated": false
+  },
+  {
+    "question": "Does the routing logic verify that guardian public keys match those registered in the account's guardian list? Could key substitution allow unauthorized approvals? mod.rs:146",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_20c143c6-a1d8-4a42-bebf-d30f321b6857",
+    "timestamp": "2025-11-22 04:43:03.300141",
+    "report_generated": false
   }
 ]
