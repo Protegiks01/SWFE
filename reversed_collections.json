@@ -13492,5 +13492,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1af93c3d-afa4-4e69-9519-0bbce036fed4",
     "timestamp": "2025-11-22 07:58:33.435575",
     "report_generated": false
+  },
+  {
+    "question": "Multi-Node Query Correlation: Can attackers correlate inconsistencies across nodes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bb7bbb1b-460f-4ba1-a67e-9d9c3c9446a7",
+    "timestamp": "2025-11-22 07:59:50.725367",
+    "report_generated": false
+  },
+  {
+    "question": "Empty Response Distinguishability: Can attackers distinguish invalid vs. empty backup IDs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b3c4f114-3623-49d4-9e6d-c06d519691ad",
+    "timestamp": "2025-11-22 08:00:04.482821",
+    "report_generated": false
+  },
+  {
+    "question": "Error Message Information Disclosure: Do errors leak existence of accounts or backups?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_08e5d258-97ac-43a7-a8dd-86cf637d41cc",
+    "timestamp": "2025-11-22 08:00:17.957382",
+    "report_generated": false
+  },
+  {
+    "question": "JSON Response Structure Leakage: Does JSON formatting leak versioning or metadata?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d1df7edc-1241-40c9-b755-c49e61fc224b",
+    "timestamp": "2025-11-22 08:00:32.676788",
+    "report_generated": false
+  },
+  {
+    "question": "StrEncoded Format Analysis: Does base64 length leak share size or count?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_17246089-9bbc-4183-95b5-5115a015a6d6",
+    "timestamp": "2025-11-22 08:00:47.687364",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Compaction Leakage: Can storage GC timing reveal share lifecycle?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_08076303-c2c0-42ad-8536-db2156d10e23",
+    "timestamp": "2025-11-22 08:01:04.255621",
+    "report_generated": false
+  },
+  {
+    "question": "Database Query Timing Side Channel: Does query timing reveal existence of shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_867f8456-39df-487d-b782-2c02f8090ec3",
+    "timestamp": "2025-11-22 08:01:22.526123",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Key Predictability: Can attackers brute-force storage key space?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_beba80df-caa7-45be-9642-85b52408da8f",
+    "timestamp": "2025-11-22 08:01:42.068881",
+    "report_generated": false
+  },
+  {
+    "question": "Off-Chain Storage Enumeration: Can attackers enumerate storage keys and discover active recoveries?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_67cd7e76-edab-41a5-963f-a8081227a876",
+    "timestamp": "2025-11-22 08:02:02.758793",
+    "report_generated": false
+  },
+  {
+    "question": "Batch Ciphertext Structure Leakage: Does batch format leak guardian ordering?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c6c4b887-5cbd-4a77-bbc5-ab51c27f05ad",
+    "timestamp": "2025-11-22 08:02:25.178809",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Pattern Recognition: Can repeated guardian signatures fingerprint guardians?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9b9aa82a-f447-4604-afb2-efe715e211e2",
+    "timestamp": "2025-11-22 08:02:47.782548",
+    "report_generated": false
+  },
+  {
+    "question": "Ciphertext Leakage: Does ciphertext structure leak guardian identity or share patterns?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_252e324e-2362-4c20-944e-ed89a124db41",
+    "timestamp": "2025-11-22 08:03:12.552259",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Set Overlap Analysis: Can attackers detect overlapping guardian sets across accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3444d1f2-7afe-4079-93fa-fe4e74929205",
+    "timestamp": "2025-11-22 08:03:37.818145",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Behavioral Pattern Leakage: Does share upload timing expose guardian habits?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8f29d1a0-377b-4e2c-bf5e-c8482438a2f3",
+    "timestamp": "2025-11-22 08:04:02.867562",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Identity Exposure via Share Metadata: Does ShareComm leak guardian keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9c78e9e6-cd4a-4e7e-acc6-6ec087360a5d",
+    "timestamp": "2025-11-22 08:04:30.139952",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Authority Timing Attack: Can issued certificates be correlated to share retrievals?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a277d369-5c19-4596-8f34-849b9315a900",
+    "timestamp": "2025-11-22 08:04:58.048779",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Output Correlation: Can minority corrupted nodes correlate VDRF with share retrieval?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_61de6cc5-fea6-4774-ba33-6caaac890bc3",
+    "timestamp": "2025-11-22 08:05:26.807952",
+    "report_generated": false
+  },
+  {
+    "question": "Email-To-Account Linkage: Can attackers correlate email verification timing with recovery attempts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9d03b27b-4079-41ab-8c01-6738318ed3c7",
+    "timestamp": "2025-11-22 08:05:55.654448",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Identity Leakage via Ciphertext: Does ciphertext format link to guardians?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_688dc666-a82e-4e57-9194-65636c50d766",
+    "timestamp": "2025-11-22 08:06:25.610362",
+    "report_generated": false
+  },
+  {
+    "question": "Account ID Correlation: Can attackers identify which accounts are under recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5f535e9c-865d-40f2-accf-6f516e8da333",
+    "timestamp": "2025-11-22 08:06:56.668084",
+    "report_generated": false
+  },
+  {
+    "question": "Backup ID as Deterministic Identifier: Can attackers correlate on-chain backup IDs with off-chain shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_13bcb60e-ae8c-470e-bd3f-9ca9f75e35d1",
+    "timestamp": "2025-11-22 08:07:28.274706",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Account Recovery Pattern Recognition: Can similar share sets reveal common users?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3441f2cc-7a18-4a3e-aded-17a8b1138b77",
+    "timestamp": "2025-11-22 08:07:58.842509",
+    "report_generated": false
+  },
+  {
+    "question": "Network Traffic Analysis: Can attackers infer account activity via response size?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_73418a70-1e69-47dd-800d-36b1ffb7bac5",
+    "timestamp": "2025-11-22 08:08:29.076874",
+    "report_generated": false
+  },
+  {
+    "question": "Temporal Correlation Attack: Can attackers correlate share uploads with recovery attempts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_51bba588-615d-4d02-bf9b-0102cced6ce2",
+    "timestamp": "2025-11-22 08:09:00.589300",
+    "report_generated": false
+  },
+  {
+    "question": "Share Index Exposure: Does sending GuardianShare.idx leak guardian ordering?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_47f86aa2-bf33-45aa-8f39-f8130f1cc862",
+    "timestamp": "2025-11-22 08:09:30.816448",
+    "report_generated": false
   }
 ]
