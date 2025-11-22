@@ -9898,5 +9898,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c2d3b8ce-4169-4421-a0ad-812c9db3b167",
     "timestamp": "2025-11-22 05:26:49.752123",
     "report_generated": false
+  },
+  {
+    "question": "Backup ID Immutability: Can backup_id reuse mix old and new shares? upload_share.rs:41-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fb0b6b8f-ce7d-4108-ac2c-a287a1d39297",
+    "timestamp": "2025-11-22 05:28:03.786779",
+    "report_generated": false
+  },
+  {
+    "question": "Share Count Tracking: Is threshold tracking accurate and secure? upload_share.rs:64-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_85e9d5d2-4837-4acf-8098-b85b67505700",
+    "timestamp": "2025-11-22 05:28:16.695122",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Namespace Isolation: Are backup share maps isolated per account? upload_share.rs:64-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5c133b71-ba1a-40b7-8eed-a262c082fb03",
+    "timestamp": "2025-11-22 05:28:29.826721",
+    "report_generated": false
+  },
+  {
+    "question": "Map Value Mutation: Can partial map updates leave invalid state? upload_share.rs:65-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0c664219-60fe-430f-8d63-ad8bf812df64",
+    "timestamp": "2025-11-22 05:28:44.265037",
+    "report_generated": false
+  },
+  {
+    "question": "Context Mutation Side Effects: Can OffChainContext mutations affect other operations? upload_share.rs:34-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_81e01e01-c7e0-40dd-bb7e-3d2016dc76b0",
+    "timestamp": "2025-11-22 05:28:58.599832",
+    "report_generated": false
+  },
+  {
+    "question": "Share Replacement Notification: Is silent overwriting detectable or logged? upload_share.rs:58-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_32b491b2-6cdc-4dd8-995d-cb74bcb02bfa",
+    "timestamp": "2025-11-22 05:29:14.245426",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Error Propagation: Could silent storage failures hide missing shares? upload_share.rs:67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_09a76e07-da26-44e1-ad2d-352951fc832e",
+    "timestamp": "2025-11-22 05:29:31.364330",
+    "report_generated": false
+  },
+  {
+    "question": "Collection Lifetime: Are stale collections cleaned up securely? upload_share.rs:23-31",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f058075a-0836-4f46-b5d0-f4f747962771",
+    "timestamp": "2025-11-22 05:29:50.977788",
+    "report_generated": false
+  },
+  {
+    "question": "Share Versioning in Storage: Can incompatible share versions coexist in storage? upload_share.rs:64-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_279fac0b-c77e-46b0-8502-f0e335fe91b4",
+    "timestamp": "2025-11-22 05:30:11.270519",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Schema Evolution: Can schema changes corrupt older storage? upload_share.rs:23-31",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_aee3c720-170f-4f51-9e31-4ec89431caba",
+    "timestamp": "2025-11-22 05:30:32.861706",
+    "report_generated": false
+  },
+  {
+    "question": "Idempotency Guarantees: Does overwriting preserve idempotent semantics? upload_share.rs:58-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b4766c6d-3e7c-41ef-a810-03eb4d15b284",
+    "timestamp": "2025-11-22 05:30:54.924641",
+    "report_generated": false
+  },
+  {
+    "question": "Share Index Gaps: Can non-consecutive indices break reconstruction? upload_share.rs:65-66",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f9ec89e4-d58d-45f9-9461-d93337175c1f",
+    "timestamp": "2025-11-22 05:31:18.369814",
+    "report_generated": false
+  },
+  {
+    "question": "Request Body Validation: Are request sizes limited to prevent oversized-body attacks? upload_share.rs:39",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_38437b5a-29f4-4f93-ac18-234318f1ac82",
+    "timestamp": "2025-11-22 05:31:43.005920",
+    "report_generated": false
+  },
+  {
+    "question": "StrEncoded Security: Can malformed string encoding bypass validation? upload_share.rs:39-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6fc670fc-09df-4c16-926f-3de9a02f6eb6",
+    "timestamp": "2025-11-22 05:32:09.263799",
+    "report_generated": false
+  },
+  {
+    "question": "Unwrapping Inner Values: Can .0 inner fields be malformed after passing StrEncoded? upload_share.rs:41-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9163c01c-eb2e-4e57-9cbf-48ed8bd4fc91",
+    "timestamp": "2025-11-22 05:32:35.784067",
+    "report_generated": false
+  },
+  {
+    "question": "AccountId Validation: Is extracted account_id.0 checked for existence? upload_share.rs:42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a6c939bc-aa90-4ae1-a484-41ce77d3ac4c",
+    "timestamp": "2025-11-22 05:33:03.616937",
+    "report_generated": false
+  },
+  {
+    "question": "BackupId Validation: Is backup_id.0 verified as existing for the account? upload_share.rs:41",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_32d73378-bb67-4468-869b-1f4cddae8922",
+    "timestamp": "2025-11-22 05:33:32.951763",
+    "report_generated": false
+  },
+  {
+    "question": "GuardianShare Deserialization: Can crafted share data exploit deserialization logic? upload_share.rs:39-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ff1ad23f-d7ec-4e96-95c9-876c5625369f",
+    "timestamp": "2025-11-22 05:34:03.265444",
+    "report_generated": false
+  },
+  {
+    "question": "Type Confusion: Can GuardianShare versioned enum variants be abused? upload_share.rs:39-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1dfcd15b-4ceb-4a96-aa7d-00ee14168631",
+    "timestamp": "2025-11-22 05:34:33.279555",
+    "report_generated": false
+  },
+  {
+    "question": "Field Bounds Checking: Are numeric fields checked for bounds? upload_share.rs:52-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8e047108-e844-4a59-89f6-16daa9045896",
+    "timestamp": "2025-11-22 05:35:04.950437",
+    "report_generated": false
+  },
+  {
+    "question": "Null/Empty Input Handling: Can null/empty inputs trigger undefined behavior? upload_share.rs:39-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_46cc035a-7ba4-4297-afb7-839361481eb0",
+    "timestamp": "2025-11-22 05:35:40.198911",
+    "report_generated": false
+  },
+  {
+    "question": "Character Encoding Issues: Can unexpected encodings bypass validation? upload_share.rs:39-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d690fd05-504e-4dbd-9730-583ab6e2a46c",
+    "timestamp": "2025-11-22 05:36:14.656486",
+    "report_generated": false
+  },
+  {
+    "question": "Request Content-Type: Is Content-Type enforced? upload_share.rs:36-39",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_81505506-b011-4d19-a7ab-280d86a7ad9c",
+    "timestamp": "2025-11-22 05:36:46.833565",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Error Handling: Do errors leak sensitive info? upload_share.rs:39",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e0ab2dfb-ea40-49f0-8852-adfea4d52dd4",
+    "timestamp": "2025-11-22 05:37:19.597256",
+    "report_generated": false
+  },
+  {
+    "question": "Canonical Encoding: Can alternative encodings bypass duplicate detection? upload_share.rs:39-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_81d4c6c3-88dc-4d67-b45f-1e027c86f98b",
+    "timestamp": "2025-11-22 05:37:52.617987",
+    "report_generated": false
   }
 ]
