@@ -10348,5 +10348,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1198e61c-b8d5-42b8-84d2-bf9310db5db4",
     "timestamp": "2025-11-22 03:57:00.178892",
     "report_generated": false
+  },
+  {
+    "question": "At line 46, does EmailKey::new properly verify that the vdrf_eval corresponds to the email input before creating the EmailKey, or can an attacker provide mismatched inputs? get_secret_share.rs:46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2834fbe3-71e7-4fc9-b351-6a09cced239f",
+    "timestamp": "2025-11-22 03:58:21.377696",
+    "report_generated": false
+  },
+  {
+    "question": "Does the handler enforce any rate limiting or throttling on certificate verification attempts at line 43 to prevent brute-force attacks on expired certificates? get_secret_share.rs:43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e8eb7126-7ce8-4459-a19e-76a4a1421cb2",
+    "timestamp": "2025-11-22 03:58:34.629105",
+    "report_generated": false
+  },
+  {
+    "question": "If an attacker compromises the time source for ctx.current_time() at line 43, can they extend or shorten the certificate validity window to bypass access controls? get_secret_share.rs:43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_330bd8cc-84c4-4832-b72f-4d07c67756ab",
+    "timestamp": "2025-11-22 03:58:48.613881",
+    "report_generated": false
+  },
+  {
+    "question": "At line 43, does the verification ensure that the certificate's user public key is properly bound to the email, preventing an attacker from using a certificate for email A with a public key for email B? get_secret_share.rs:43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8c19816f-794d-4b5b-81ee-f67a518199cc",
+    "timestamp": "2025-11-22 03:59:02.553121",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker who obtains a valid certificate for their own email manipulate the vdrf_eval parameter to derive EmailKeys for other users' emails and access their MSK records? get_secret_share.rs:29-46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_eb740ec5-9ae6-441c-8a60-41c918287747",
+    "timestamp": "2025-11-22 03:59:17.453662",
+    "report_generated": false
+  },
+  {
+    "question": "Does the handler validate that the token parameter at line 29 has not been revoked or blacklisted before passing it to EmailCert::verify at line 43? get_secret_share.rs:29-43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fdaa4372-7478-4e63-a01e-6bbd7c1839d7",
+    "timestamp": "2025-11-22 03:59:33.291698",
+    "report_generated": false
+  },
+  {
+    "question": "At line 43, if the certificate contains an email that normalizes to multiple different EmailInput values, can an attacker access MSK records under different EmailKeys? get_secret_share.rs:43-46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_54530271-958e-466b-812e-bf685dab3a17",
+    "timestamp": "2025-11-22 03:59:50.535172",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker forge a certificate by exploiting potential malleability in the signature scheme used by EmailCert::verify at line 43? get_secret_share.rs:43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_369459a0-cef5-4185-ba7e-20edfa4fb24d",
+    "timestamp": "2025-11-22 04:00:09.767221",
+    "report_generated": false
+  },
+  {
+    "question": "If EmailCert::verify at line 43 throws an error due to signature verification failure, does the error message leak information about which component failed (Swafe signature vs user signature)? get_secret_share.rs:43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_497556a6-2845-4b06-9b98-b7f1a95cbcdc",
+    "timestamp": "2025-11-22 04:00:30.222800",
+    "report_generated": false
+  },
+  {
+    "question": "Does line 43's verification properly reject certificates with timestamps exactly at the boundary of the 5-minute validity period to prevent timing-based attacks? get_secret_share.rs:43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dcb8fd0c-8795-469c-ad0b-1cb23dc83f0d",
+    "timestamp": "2025-11-22 04:00:52.165075",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit a time-of-check-time-of-use (TOCTOU) race condition between certificate verification at line 43 and MSK record retrieval at line 48-49? get_secret_share.rs:43-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a62ed8ca-ed60-49e0-91a7-94dd6498a1f2",
+    "timestamp": "2025-11-22 04:01:15.020108",
+    "report_generated": false
+  },
+  {
+    "question": "At line 43, does the verification properly handle the case where multiple certificates are issued for the same email to different users, preventing one user from accessing another's MSK record? get_secret_share.rs:43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9aa9e315-7d8a-41ff-93af-7283b07f38bd",
+    "timestamp": "2025-11-22 04:01:39.025513",
+    "report_generated": false
+  },
+  {
+    "question": "If the user_pk returned at line 43 is used elsewhere in the recovery flow, can an attacker substitute their own public key by manipulating the certificate verification process? get_secret_share.rs:43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_96a2b4d3-03ad-47af-b83c-4cb8063a1397",
+    "timestamp": "2025-11-22 04:02:04.011476",
+    "report_generated": false
+  },
+  {
+    "question": "Does the handler implement any nonce or unique request identifier mechanism to prevent replay attacks on the email certificate token used at line 43? get_secret_share.rs:43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3b666f10-8ec9-4ca4-a8dc-f487196f9cf8",
+    "timestamp": "2025-11-22 04:02:30.546343",
+    "report_generated": false
+  },
+  {
+    "question": "Can replay attacks occur where an attacker captures a valid token and VDRF evaluation pair from network traffic and resubmits them within the 5-minute validity window to retrieve the MSK record? get_secret_share.rs:29-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_71a3704d-5453-44b9-ad40-130b87272c6b",
+    "timestamp": "2025-11-22 04:02:57.773022",
+    "report_generated": false
+  },
+  {
+    "question": "At line 43, if the certificate is valid but was issued for a different email than the one used to generate the VDRF evaluation, can an attacker gain unauthorized access to another user's MSK record? get_secret_share.rs:43-46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1df921b5-117c-407c-a074-602a8d2154ab",
+    "timestamp": "2025-11-22 04:03:26.356082",
+    "report_generated": false
+  },
+  {
+    "question": "Does line 43's verification ensure that the Swafe signature covers the exact node_id value, preventing attackers from using a certificate signed for node A to access data on node B? get_secret_share.rs:42-43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_09a2fe10-75fc-43c3-8d89-f314680b39d6",
+    "timestamp": "2025-11-22 04:03:55.707111",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker submit a certificate where the email string contains control characters, null bytes, or Unicode normalization tricks to bypass the email-to-EmailKey binding at lines 45-46? get_secret_share.rs:45-46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e80d0be6-f85d-48b5-a48e-bd70ae82ecde",
+    "timestamp": "2025-11-22 04:04:25.195180",
+    "report_generated": false
+  },
+  {
+    "question": "If EmailCert::verify returns the email string at line 43, is there proper sanitization to prevent injection attacks when the email is later parsed into EmailInput? get_secret_share.rs:43-45",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9d5e88fb-01cd-4929-9b12-a23799867d40",
+    "timestamp": "2025-11-22 04:04:52.271158",
+    "report_generated": false
+  },
+  {
+    "question": "At line 43, does the verification check that the node_id signature in the token matches stored_secret.node_id.0, preventing cross-node token reuse attacks? get_secret_share.rs:42-43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_10b341fa-4176-42df-8a9c-ff986c3676c5",
+    "timestamp": "2025-11-22 04:05:19.741230",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker who compromises a minority of off-chain nodes reuse the same token across multiple nodes to retrieve the same MSK record multiple times, violating the invariant that 'Only the owner of an email should be able to request the recovery of an account'? get_secret_share.rs:29-43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_930d1a6d-acc4-4841-9b17-57cd94e2348c",
+    "timestamp": "2025-11-22 04:05:48.573219",
+    "report_generated": false
+  },
+  {
+    "question": "Does the handler verify that the user_pk extracted from the email certificate at line 43 matches any expected user public key, or can any valid certificate grant access regardless of the user identity? get_secret_share.rs:43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_40744e4b-3749-4438-aa47-298860a4c8c9",
+    "timestamp": "2025-11-22 04:06:18.684547",
+    "report_generated": false
+  },
+  {
+    "question": "At line 43, if the swafe_pk deserialization succeeds but contains a malformed or zero public key, will EmailCert::verify fail safely or could it allow unauthorized access? get_secret_share.rs:31-43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_04a49661-7a9b-49ee-88a4-cfb681e59f7d",
+    "timestamp": "2025-11-22 04:06:48.069741",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit a time synchronization vulnerability where ctx.current_time() at line 43 returns an incorrect timestamp, allowing expired certificates to pass verification? get_secret_share.rs:43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_76cd10d9-25fa-4645-aa9b-18cd39319018",
+    "timestamp": "2025-11-22 04:07:19.998941",
+    "report_generated": false
+  },
+  {
+    "question": "Does EmailCert::verify at line 43 enforce the 5-minute validity period defined in the email certificate specification, or can an attacker reuse an expired certificate to repeatedly access MSK records? get_secret_share.rs:43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_745889c5-d1cf-4cf8-b0d8-3ec796fab486",
+    "timestamp": "2025-11-22 04:07:50.051981",
+    "report_generated": false
   }
 ]
