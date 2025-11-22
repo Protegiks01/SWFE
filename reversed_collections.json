@@ -10498,5 +10498,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_745889c5-d1cf-4cf8-b0d8-3ec796fab486",
     "timestamp": "2025-11-22 04:07:50.051981",
     "report_generated": false
+  },
+  {
+    "question": "In the handler function at line 43, does EmailCert::verify properly validate that the certificate timestamp is not from the future, preventing attackers from creating certificates with future timestamps to extend their validity window? get_secret_share.rs:43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_279f5e20-ace2-4208-a6dd-7676ce4c3a03",
+    "timestamp": "2025-11-22 04:09:09.606349",
+    "report_generated": false
+  },
+  {
+    "question": "Multi-Node Query Attack: Can attacker query all nodes simultaneously to accelerate secret reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_64ac3cc9-962f-4814-9cf7-fac0671a43f8",
+    "timestamp": "2025-11-22 04:09:22.699433",
+    "report_generated": false
+  },
+  {
+    "question": "Request Timestamp Validation: Are request timestamps validated to prevent replay?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3ac59426-a0d5-4aaa-9e7d-a232ca61195b",
+    "timestamp": "2025-11-22 04:09:36.019600",
+    "report_generated": false
+  },
+  {
+    "question": "Authorization Bypass: Can request fields bypass node authorization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e74cbfd1-34ea-456f-8849-0c0d38874c6c",
+    "timestamp": "2025-11-22 04:09:49.858245",
+    "report_generated": false
+  },
+  {
+    "question": "Authentication Token Binding: Is token bound to requester session?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_13d5d2a0-9231-488c-b599-4363a4f358ea",
+    "timestamp": "2025-11-22 04:10:04.544985",
+    "report_generated": false
+  },
+  {
+    "question": "Request Parameter Injection: Can extra request params alter logic?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_07933809-48ec-4f61-959d-2d9ed1c3954e",
+    "timestamp": "2025-11-22 04:10:20.092120",
+    "report_generated": false
+  },
+  {
+    "question": "Duplicate Request Prevention: Can attackers repeat requests for timing analysis?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ba560e04-e1b2-40e7-8452-48df76819c6a",
+    "timestamp": "2025-11-22 04:10:37.981611",
+    "report_generated": false
+  },
+  {
+    "question": "Request Origin Validation: Are cross-origin requests blocked?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f9aaaf89-0500-4e9f-b2db-94b094211aa8",
+    "timestamp": "2025-11-22 04:10:57.120934",
+    "report_generated": false
+  },
+  {
+    "question": "Content-Type Verification: Is Content-Type checked to enforce JSON-only requests?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1fa4f046-1346-4fda-9a0f-69d46300174c",
+    "timestamp": "2025-11-22 04:11:17.958121",
+    "report_generated": false
+  },
+  {
+    "question": "HTTP Method Validation: Is endpoint restricted to POST?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fe538225-45d0-4a9e-8135-bfe7babf2d85",
+    "timestamp": "2025-11-22 04:11:41.014963",
+    "report_generated": false
+  },
+  {
+    "question": "Request Body Size Limit: Is request.token eval.rs:29 size-limited to prevent memory exhaustion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_39791b9b-48be-40a7-90e8-3909f4e19214",
+    "timestamp": "2025-11-22 04:12:03.835570",
+    "report_generated": false
+  },
+  {
+    "question": "Panic Handling: Are panics sanitized to prevent leakage?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_30c662bf-4568-4a2d-9a9c-22c225919b28",
+    "timestamp": "2025-11-22 04:12:27.747835",
+    "report_generated": false
+  },
+  {
+    "question": "Error Logging Sensitivity: Are errors logged securely?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cc15e73f-1749-49c9-8ad3-9d73fa7a34d2",
+    "timestamp": "2025-11-22 04:12:53.479934",
+    "report_generated": false
+  },
+  {
+    "question": "JSON Response Errors: Does JSON error structure leak metadata?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_08c3a38e-5323-4560-a23a-0b2819b540e9",
+    "timestamp": "2025-11-22 04:13:19.130502",
+    "report_generated": false
+  },
+  {
+    "question": "Cryptographic Error Details: Do crypto errors reveal key-related details?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7ba6b9c5-b4f3-405a-a50b-ed7fe0ec3ff9",
+    "timestamp": "2025-11-22 04:13:46.465023",
+    "report_generated": false
+  },
+  {
+    "question": "Error Rate Limiting: Is error rate limited to block error-based enumeration?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e5cf7cea-40cd-4542-b5c7-c7f7d27ab907",
+    "timestamp": "2025-11-22 04:14:15.152525",
+    "report_generated": false
+  },
+  {
+    "question": "Concurrent Error Amplification: Can simultaneous requests amplify leakage?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7178361e-32fd-4807-9410-0411e0a0813b",
+    "timestamp": "2025-11-22 04:14:45.283307",
+    "report_generated": false
+  },
+  {
+    "question": "Error Recovery Side Effects: Are sensitive buffers wiped after errors?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_49dbe38c-9d4a-4ce7-b321-0ca5c326ccc9",
+    "timestamp": "2025-11-22 04:15:13.316814",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Failure Context: Does encode::deserialize eval.rs:48 reveal expected types?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3d79a8f9-eef9-4bda-975e-248c5e24f36c",
+    "timestamp": "2025-11-22 04:15:42.556474",
+    "report_generated": false
+  },
+  {
+    "question": "Partial Success Errors: Do partial evaluation errors leak intermediate data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d0b08df7-c26d-42ad-9e02-39bdd84b0dd8",
+    "timestamp": "2025-11-22 04:16:11.288640",
+    "report_generated": false
+  },
+  {
+    "question": "Stack Trace Exposure: Can internal stack traces be returned?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a67b1e97-e467-4daa-99a1-9ce341c3494e",
+    "timestamp": "2025-11-22 04:16:38.366470",
+    "report_generated": false
+  },
+  {
+    "question": "Error Message Standardization: Are messages uniform to prevent leakage?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_49ad1168-c00c-4b77-9ceb-51034efd1291",
+    "timestamp": "2025-11-22 04:17:06.766126",
+    "report_generated": false
+  },
+  {
+    "question": "HTTP Status Code Leakage: Do status codes reveal auth failures vs permission failures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4504d7b3-125e-4e35-89bd-0419819d7394",
+    "timestamp": "2025-11-22 04:17:33.795029",
+    "report_generated": false
+  },
+  {
+    "question": "Node Uninitialized Timing: Can timing distinguish initialized vs uninitialized nodes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d6d8f029-0ab1-410d-9916-7348426bfc87",
+    "timestamp": "2025-11-22 04:18:02.887413",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization Error Details: Does SerializationError eval.rs:31-32 leak serialized contents?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_71389027-7fe6-49dd-94b4-39f66aeb4499",
+    "timestamp": "2025-11-22 04:18:30.994352",
+    "report_generated": false
   }
 ]
