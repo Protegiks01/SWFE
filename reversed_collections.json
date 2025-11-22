@@ -11098,5 +11098,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8ae42b39-c138-4a75-bc81-c40a45bdcf2d",
     "timestamp": "2025-11-22 04:50:46.990544",
     "report_generated": false
+  },
+  {
+    "question": "Pairing-Based Attack: Are pairing checks resistant to subgroup or invalid-curve attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_71e82553-f2df-4db0-85ff-b2627691db24",
+    "timestamp": "2025-11-22 04:52:19.605276",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Input Injection: Can special characters modify VDRF computation paths?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dcc50372-424c-45d5-96c8-6cb0bb1358bc",
+    "timestamp": "2025-11-22 04:52:32.850103",
+    "report_generated": false
+  },
+  {
+    "question": "Evaluation Share Aggregation Attack: Can evaluation shares from nodes leak VDRF private key?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ebcf0d56-eee0-44f2-b5c3-c54a6f88bf21",
+    "timestamp": "2025-11-22 04:52:46.951759",
+    "report_generated": false
+  },
+  {
+    "question": "Email Hash Preimage Resistance: Is hashing strong enough to prevent preimage discovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_020e9821-0216-4a2e-aa45-55b920f0296f",
+    "timestamp": "2025-11-22 04:53:00.936502",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Public Key Version Confusion: Can mismatched protocol versions produce invalid shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4a7daeb7-2db1-4da8-9bbb-7ec7c253336f",
+    "timestamp": "2025-11-22 04:53:15.737018",
+    "report_generated": false
+  },
+  {
+    "question": "Evaluation Share Compression: Is compression canonical and non-malleable?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dc3e3cef-816c-4efe-b076-90964dd3d477",
+    "timestamp": "2025-11-22 04:53:32.166366",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Share Format Validation: Is secret_share validated for correct size/format?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3aec956a-82d0-4d6b-a41f-339717564eff",
+    "timestamp": "2025-11-22 04:53:49.874847",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Evaluation Determinism: Are identical emails guaranteed identical partial evaluations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ac70da50-81a8-481e-bf50-37f5ac9dabdd",
+    "timestamp": "2025-11-22 04:54:09.262673",
+    "report_generated": false
+  },
+  {
+    "question": "Email Input Length Limitation: Is email length capped to prevent hash-to-curve DoS?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0b88a665-62ba-4627-98fd-569f173e7dbc",
+    "timestamp": "2025-11-22 04:54:29.930117",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Generator Point Manipulation: Can attackers modify generator points used in evaluation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_493b430a-a15f-4285-ac82-d972b9b1a822",
+    "timestamp": "2025-11-22 04:54:51.656050",
+    "report_generated": false
+  },
+  {
+    "question": "Evaluation Share Encoding Attack: Can StrEncoded eval.rs:55 introduce encoding-level malleability?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_56bfafc9-37c4-4ddb-b1ff-0fc5da6d7e16",
+    "timestamp": "2025-11-22 04:55:14.475324",
+    "report_generated": false
+  },
+  {
+    "question": "Partial Evaluation Batch Attack: Can attackers batch many email requests to extract algebraic info?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f7f4f482-f3f1-43dd-b568-be781aee351b",
+    "timestamp": "2025-11-22 04:55:38.326166",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Commitment Verification: Is vdrf_public_key verified against expected commitments?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a98fe283-17ae-4cf5-8330-be9e8e32a4f3",
+    "timestamp": "2025-11-22 04:56:03.542816",
+    "report_generated": false
+  },
+  {
+    "question": "Evaluation Share Uniqueness: Is returning repeated shares prevented to block statistical leakage?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6f2cf0a2-0f37-4150-8424-bb255aef4de3",
+    "timestamp": "2025-11-22 04:56:30.650707",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Share Polynomial Degree Leakage: Can attackers infer polynomial degree from multiple evaluations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5aaad08c-5418-4142-8671-fbe43f5c2c4e",
+    "timestamp": "2025-11-22 04:56:58.842586",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Input Canonicalization: Is email canonicalized before hashing eval.rs:49?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_62339ed5-d50b-4d4c-aa96-37f29d9d7195",
+    "timestamp": "2025-11-22 04:57:27.886001",
+    "report_generated": false
+  },
+  {
+    "question": "G2 Point Validity Check: Does partial evaluation verify returned G2 points are on-curve?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3662d693-2be4-48d1-82aa-799835cf1d54",
+    "timestamp": "2025-11-22 04:57:58.147209",
+    "report_generated": false
+  },
+  {
+    "question": "Evaluation Point Collision: Can node_id.eval_point() collide with another node’s evaluation point?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0271ea3a-333a-4deb-8f2f-3219c35d4290",
+    "timestamp": "2025-11-22 04:58:29.535854",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Public Key Threshold Mismatch: Can threshold in vdrf_public_key vdrf.rs:36-39 be manipulated?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b091a1af-514f-4c4c-a21a-ee443a72ef02",
+    "timestamp": "2025-11-22 04:59:01.153949",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Share Zero Check Missing: Is secret_share verified non-zero eval.rs:47 as required by vdrf.rs:107-111?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5802b491-81b1-4e62-bc04-1dc49c1e2dfb",
+    "timestamp": "2025-11-22 04:59:32.885195",
+    "report_generated": false
+  },
+  {
+    "question": "Evaluation Share Malleability: Can evaluation_result eval.rs:50 be manipulated before encoding?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bb53bcbd-5217-4da6-8fa2-947305687f4b",
+    "timestamp": "2025-11-22 05:00:04.433632",
+    "report_generated": false
+  },
+  {
+    "question": "Hash-to-Curve Weakness: Does hashing email to a curve point vdrf.rs:139-142 resist collisions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_590a8743-ab98-4556-8a95-ef7b0a5aea89",
+    "timestamp": "2025-11-22 05:00:35.296188",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Input Domain Separation Missing: Is EmailInput domain-separated v0.rs:46-48 to prevent cross-protocol replay?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_13126639-99dc-42c3-b52a-a19a05ed4ce5",
+    "timestamp": "2025-11-22 05:01:06.639942",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Share Extraction via Timing: Does partial_eval leak secret_share via timing differences?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_429b06e6-d6b5-46e5-a274-df99d356a0ee",
+    "timestamp": "2025-11-22 05:01:38.368431",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Public Key Type Confusion: Can malformed state.vdrf_public_key eval.rs:48 deserialize but remain invalid?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d03dbd16-e799-4ec3-9317-722144d9dfa1",
+    "timestamp": "2025-11-22 05:02:10.313008",
+    "report_generated": false
   }
 ]
