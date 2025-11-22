@@ -11398,5 +11398,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a7c63e6e-02a2-4c78-9f44-fbd45fcd2bcc",
     "timestamp": "2025-11-22 05:12:51.982827",
     "report_generated": false
+  },
+  {
+    "question": "Certificate Timestamp Validation Bypass: In eval.rs:40-45, can an attacker manipulate ctx.current_time() or exploit clock skew to bypass the 5-minute validity window defined in email_cert.rs:7?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_942a0ce9-5bcc-4dc3-99d4-f4d7fc6f2141",
+    "timestamp": "2025-11-22 05:14:06.303877",
+    "report_generated": false
+  },
+  {
+    "question": "Response Content-Type: Does create_json_response at line 66 set proper Content-Type: application/json headers for client parsing? upload_msk.rs:66-74",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4a6d33da-061f-4e5a-afed-669744572987",
+    "timestamp": "2025-11-22 05:14:19.514863",
+    "report_generated": false
+  },
+  {
+    "question": "Error Context Loss: When errors are converted at line 73, is enough context preserved for debugging without leaking sensitive data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5aa859cf-784c-4494-a3f0-3964f9e5d486",
+    "timestamp": "2025-11-22 05:14:32.763740",
+    "report_generated": false
+  },
+  {
+    "question": "Handler Return Type: At line 38, does the Result<HttpResponseData, ContractError> properly map all possible errors to appropriate HTTP responses?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_51fcdfbf-812c-456f-b119-5bfb7797c455",
+    "timestamp": "2025-11-22 05:14:46.442987",
+    "report_generated": false
+  },
+  {
+    "question": "Response Timing: Could the time taken to generate a response at lines 66-73 reveal information about whether the association already existed?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_82b06bc9-f48e-4e50-9d5c-901b50301084",
+    "timestamp": "2025-11-22 05:15:01.040446",
+    "report_generated": false
+  },
+  {
+    "question": "Success Message Generic: At lines 69-70, is 'Association uploaded successfully' generic enough to not reveal information about the association?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_163dbe8a-c92b-4b9e-9c2c-6f00e646cef5",
+    "timestamp": "2025-11-22 05:15:16.893617",
+    "report_generated": false
+  },
+  {
+    "question": "Response Serialization: At lines 66-72, could create_json_response fail to serialize the response, and how is that error handled?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dec079e3-7e3e-4563-b909-005368e39e2e",
+    "timestamp": "2025-11-22 05:15:34.430105",
+    "report_generated": false
+  },
+  {
+    "question": "Error Response Format: If any operation fails, do error responses follow a consistent format that doesn't leak implementation details?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4cefb27b-bf33-46b8-9a15-c04ac93bf404",
+    "timestamp": "2025-11-22 05:15:53.405566",
+    "report_generated": false
+  },
+  {
+    "question": "Response Status Code: Is the 200 status code at line 67 appropriate for all successful stores, or should 201 (Created) be used for new associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_51b43da2-d104-4213-bc73-b87dcf141132",
+    "timestamp": "2025-11-22 05:16:14.207203",
+    "report_generated": false
+  },
+  {
+    "question": "Error Conversion: At line 73, does .map_err(|e| e.into()) properly convert all error types without losing security-relevant information?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bd893b4a-1493-4e00-91a9-7effbc5ced1e",
+    "timestamp": "2025-11-22 05:16:35.099505",
+    "report_generated": false
+  },
+  {
+    "question": "Success Response: At lines 66-72, does the JSON response leak any sensitive information about the stored association?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1653137f-376d-4f7a-a060-1db78f9f3e55",
+    "timestamp": "2025-11-22 05:16:58.041539",
+    "report_generated": false
+  },
+  {
+    "question": "State Consistency: Between lines 41 and 48, could the state parameter change, leading to inconsistent key usage within the same handler? upload_msk.rs:41-50",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f1d4baf6-d2f2-4605-b6dd-891631d7aa47",
+    "timestamp": "2025-11-22 05:17:22.371012",
+    "report_generated": false
+  },
+  {
+    "question": "Key Caching: Should the deserialized keys at lines 41-50 be cached to avoid repeated deserialization in subsequent requests?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b1cd4ce1-3236-4602-9cdb-fef39177ddfd",
+    "timestamp": "2025-11-22 05:17:47.250453",
+    "report_generated": false
+  },
+  {
+    "question": "State Access Patterns: Does accessing state.swafe_public_key at line 41 and state.vdrf_public_key at line 48 cause excessive state reads?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_72d320e2-606d-414d-8e1c-3e7d1ded7942",
+    "timestamp": "2025-11-22 05:18:13.474583",
+    "report_generated": false
+  },
+  {
+    "question": "Error Message Information Leak: At lines 42 and 49, do the 'Failed to deserialize' error messages reveal information about key formats that aids attackers?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6852106b-2d74-4139-adfd-4b84acc68c0c",
+    "timestamp": "2025-11-22 05:18:40.765621",
+    "report_generated": false
+  },
+  {
+    "question": "Key Size Limits: Are there maximum sizes enforced on state.swafe_public_key and state.vdrf_public_key before deserialization at lines 41-50?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dbf8fc46-d7a5-406f-95a0-9475e496ec54",
+    "timestamp": "2025-11-22 05:19:08.285238",
+    "report_generated": false
+  },
+  {
+    "question": "Bincode Configuration: At lines 41-50, does encode::deserialize use a consistent bincode configuration across all endpoints?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d022ab7d-828c-4f9e-af59-f29bdddaaa21",
+    "timestamp": "2025-11-22 05:19:36.922887",
+    "report_generated": false
+  },
+  {
+    "question": "Key Commitment Verification: After deserializing keys at lines 41-50, should they be verified against on-chain commitments to prevent substitution?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_50faf945-2d04-45ab-a561-8498506c9a25",
+    "timestamp": "2025-11-22 05:20:05.894993",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Side Effects: Do the deserialize operations at lines 41-43 and 48-50 have any side effects that could affect handler behavior?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c0aec380-2d6e-4778-8c47-7a2a2a4456d0",
+    "timestamp": "2025-11-22 05:20:35.706271",
+    "report_generated": false
+  },
+  {
+    "question": "Key Version Compatibility: At lines 41-50, if the stored keys were serialized with an older version of the code, does deserialization handle version differences?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_23126dfa-3702-4e9b-997d-9b960238bab5",
+    "timestamp": "2025-11-22 05:21:04.955207",
+    "report_generated": false
+  },
+  {
+    "question": "State Sharing: Is the ContractState at line 35 read-only within this handler, or could mutations affect concurrent handlers?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6eb75926-c511-4c6a-a9c3-be712a215832",
+    "timestamp": "2025-11-22 05:21:34.772456",
+    "report_generated": false
+  },
+  {
+    "question": "Key Storage Integrity: How does the handler detect if state.swafe_public_key at line 41 or state.vdrf_public_key at line 48 was corrupted in storage?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_202d63f8-9c22-4bc4-b3e6-371fb648c670",
+    "timestamp": "2025-11-22 05:22:03.725948",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Key Format Validation: At lines 48-50, after deserializing vdrf_public_key, are the G1 commitments validated as points on the BLS12-381 curve?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e9b6c1b1-e2f3-47a6-8970-5d25de9cf73d",
+    "timestamp": "2025-11-22 05:22:33.544354",
+    "report_generated": false
+  },
+  {
+    "question": "Key Format Validation: At lines 41-43, after deserializing swafe_public_key, is it validated as a well-formed signature verification key on the correct curve?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_63831648-9a1f-45a3-abe1-d7d4b8b1dc71",
+    "timestamp": "2025-11-22 05:23:03.573098",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Key Deserialization Error: At lines 48-50, does the error handling distinguish between corrupted keys and missing keys, potentially leaking state?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b97e4f46-655c-4e53-9ced-9af661bbc33b",
+    "timestamp": "2025-11-22 05:23:33.290072",
+    "report_generated": false
   }
 ]
