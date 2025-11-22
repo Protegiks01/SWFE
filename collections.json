@@ -4437,289 +4437,289 @@
     "question": "Can batch encryption fail selectively and silently?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b8ed01d6-8a9f-4371-8ec4-f77710c01e90",
     "timestamp": "2025-11-21 18:47:32.620678",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does EncryptionContext bind AAD properly?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cd3206f2-67f2-4cea-b8e0-cff763904413",
     "timestamp": "2025-11-21 18:48:01.947830",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can attacker-controlled AAD cause unintended decryption contexts?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d5b26982-ac74-4b45-95da-d320add6e100",
     "timestamp": "2025-11-21 18:48:31.975980",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Are guardian public keys validated before use?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dea842cc-2a05-4e44-ad08-2a8c478e84e2",
     "timestamp": "2025-11-21 18:49:03.410761",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does batch encryption protect against multi-key compromise?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9e281312-3210-448a-ac3b-3a9a389a0ec9",
     "timestamp": "2025-11-21 18:49:35.613897",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Is BackupCiphertextV0::id() collision-resistant?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_971900c0-95a4-40d0-8da6-d6689d7f6e30",
     "timestamp": "2025-11-21 18:50:09.049619",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does new() provide backup versioning to prevent ciphertext replay?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c9f617b1-533a-45de-b639-9a1db30e0f1e",
     "timestamp": "2025-11-21 18:50:43.111320",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can attackers predict future shares from RNG leakage?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a4c9a23f-b5f3-4426-80dc-e034740ae1a3",
     "timestamp": "2025-11-21 18:51:17.894094",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Are share commitment hashes collision-resistant?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b3788895-27fd-44cf-8669-b7219ffefc2a",
     "timestamp": "2025-11-21 18:51:52.607585",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can attackers cause memory exhaustion by supplying many guardians?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8dc55467-703a-4cc8-b29c-bc86d25c5329",
     "timestamp": "2025-11-21 18:52:25.338874",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Are extreme threshold values validated?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b99fcfe5-ca44-4988-821c-473dafdc1f0a",
     "timestamp": "2025-11-21 18:52:56.521764",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does timestamp in metadata prevent replay attacks?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0a3a5698-3a1f-4d6c-8015-4628a5251ee9",
     "timestamp": "2025-11-21 18:54:08.211020",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can name/desc fields contain malicious payloads?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_547d3fa5-71e3-4c4c-bc24-39e19f23af26",
     "timestamp": "2025-11-21 18:54:21.189083",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does new() ensure secret format correctness?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_05bfa067-4ddc-49ab-9b02-c2b0db8791fa",
     "timestamp": "2025-11-21 18:54:36.568314",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Do KDF separators provide strong domain separation?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_22e33829-3b1c-4dce-8940-011816fe9b8f",
     "timestamp": "2025-11-21 18:54:50.430033",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does guardian shuffling provide unlinkability?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7b829e56-0eaf-4af2-81c3-615c6e6b8279",
     "timestamp": "2025-11-21 18:55:05.187052",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can ciphertext size reveal guardian count?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_14135ba9-1576-4e19-9667-aa4facbd2a02",
     "timestamp": "2025-11-21 18:55:20.725836",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Do share commitments leak distribution or guardian identity?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ad7c86c4-8ff1-4d9c-a39d-1ac12c0442a2",
     "timestamp": "2025-11-21 18:55:37.877934",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can backups be correlated by commitment structure?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3f682d5f-149e-4186-98e5-30d6d33c49ae",
     "timestamp": "2025-11-21 18:55:57.528108",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does recover() leak guardian participation through timing?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_53871eae-1798-4bd1-9b06-8d19b1a0c396",
     "timestamp": "2025-11-21 18:56:17.179068",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Is BackupCiphertext::id() linkable to account usage patterns?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3b8741cc-25bf-4108-9712-c4fa9de7e8a8",
     "timestamp": "2025-11-21 18:56:39.011349",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does metadata ciphertext length leak backup contents?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0d5f25e8-a02a-409a-aad0-e3007922a116",
     "timestamp": "2025-11-21 18:57:01.211669",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does send() leak guardian identity through metadata/timing?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c5c20afc-39c7-4bc0-9d20-b7e9090a4f38",
     "timestamp": "2025-11-21 18:57:25.147760",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does signature verification timing leak key information?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6c9123a5-e595-466a-9ab8-670034c9508a",
     "timestamp": "2025-11-21 18:57:50.402929",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can attackers infer account associations from comms structure?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_08afd877-36e9-409e-8ab1-e6f974f9b6c5",
     "timestamp": "2025-11-21 18:58:16.413848",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does timestamp leak user behavior patterns?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cb24353c-07c6-4c73-8f57-c6a9c747ee74",
     "timestamp": "2025-11-21 18:58:43.019311",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Do share hashes have enough entropy to prevent dictionary attacks?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7da72ee5-5dd6-498a-921e-d0045a9d2ec1",
     "timestamp": "2025-11-21 18:59:10.507186",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can attacker map encrypted shares to guardian identities?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8b1db954-61dd-49ba-be06-4c359d658339",
     "timestamp": "2025-11-21 18:59:40.078297",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Do recover() errors distinguish invalid/insufficient shares?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_99e17e99-8d13-46e0-a0b1-65b59a19a8d9",
     "timestamp": "2025-11-21 19:00:09.868265",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does AADBackup include unnecessary account identifiers?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a860c2b3-6759-43dc-82d2-35e3e42ae36b",
     "timestamp": "2025-11-21 19:00:41.783172",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does share transmission traffic analysis reveal participation patterns?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d6258a01-eb02-4b51-ab12-8ab96d7f27f4",
     "timestamp": "2025-11-21 19:01:12.163047",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Is batch encryption deterministic enough to link backups?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cb6fd7f6-0470-4691-b874-6466c55fabbd",
     "timestamp": "2025-11-21 19:01:41.465449",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does ShareComm leak guardian identities through stored verification keys?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_efaea62a-ca98-4f28-9691-06c4cf0cbd98",
     "timestamp": "2025-11-21 19:02:11.274903",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can ciphertext patterns across backups leak share content?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_21296ea4-960c-4d7c-a2b7-1d1622f5fe17",
     "timestamp": "2025-11-21 19:02:42.579022",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does metadata decryption leak structure via timing?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_622b4156-5a3c-48f3-ab28-7de75eda0409",
     "timestamp": "2025-11-21 19:03:11.428354",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does use of EmptyInfo reduce privacy guarantees?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c3905547-24b0-455d-bb04-4a4ae59805bc",
     "timestamp": "2025-11-21 19:03:40.660550",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can share index patterns link backups to accounts?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4cf7410a-42c7-4b54-93ba-a3fb1a6de27d",
     "timestamp": "2025-11-21 19:04:54.215426",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does send_for_recovery() leak recovery-state information?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7505b007-131c-40d2-a213-480b9019edc6",
     "timestamp": "2025-11-21 19:05:07.543946",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Do name/description/timestamp leak behavioral metadata?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f3d99681-fa14-4821-89f0-9364b254fa54",
     "timestamp": "2025-11-21 19:05:21.113176",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does number of recovery shares leak threshold or participation?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ccdcc6d0-0911-4883-a7cf-48c599842e41",
     "timestamp": "2025-11-21 19:05:34.974783",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does guardian shuffling leak RNG state?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fdb606a2-5ab9-4f59-9a9c-3f6037f7a580",
     "timestamp": "2025-11-21 19:05:49.659811",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does comms vector length leak number of guardians?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a6e0b267-5519-46da-b680-85daa818cbe1",
     "timestamp": "2025-11-21 19:06:05.865723",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can metadata patterns be fingerprinted across users?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7510873f-9ffc-4e4e-b63d-e4a9160159b5",
     "timestamp": "2025-11-21 19:06:23.444545",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does verify() leak expected index ranges?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3aaeaf3f-b092-46af-81a2-04eec137da1b",
     "timestamp": "2025-11-21 19:06:42.080904",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does shared signing-key usage link normal and recovery operations?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_00983844-63c3-4db3-9b76-e0295acdf2c8",
     "timestamp": "2025-11-21 19:07:02.000454",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can metadata substitution bypass integrity checks in recover()?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1c839a8e-5c3f-427f-bea1-97ae57c53285",
     "timestamp": "2025-11-21 19:07:23.373911",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does share hash verification prevent ciphertext mauling?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3c20062c-6150-4cb3-8ce4-94b158d236ec",
     "timestamp": "2025-11-21 19:07:45.956549",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can attackers modify threshold inside encrypted metadata?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b5dea410-7583-4915-b391-160db18850a1",
     "timestamp": "2025-11-21 19:08:09.982017",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does binding between data and commitments prevent substitution?",
@@ -4731,19 +4731,19 @@
     "question": "Is BackupCiphertext::id() collision-resistant?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_79404d00-28b2-46b3-adb6-f63cc260e8db",
     "timestamp": "2025-11-21 19:09:01.841047",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can signature replay validate shares across backups?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_76073861-3b41-47e3-a9b9-b7739a74b728",
     "timestamp": "2025-11-21 19:09:30.555973",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does EncryptionContext bind AAD to ciphertext?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_32784fa9-8c87-4959-a1de-3245c335ee11",
     "timestamp": "2025-11-21 19:10:00.562370",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can AAD manipulation create multi-context-valid backups?",
@@ -4755,175 +4755,175 @@
     "question": "Does metadata KDF prevent metadata reuse attacks?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cf7e570f-ba6f-4aeb-8cdf-c75805bd2b60",
     "timestamp": "2025-11-21 19:11:03.168933",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does signature scheme prevent malleability?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_99c65fe7-8181-4697-9f0d-6451785580e4",
     "timestamp": "2025-11-21 19:11:36.493909",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can attackers strip/replace guardian signatures?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e002e86b-be62-4dc1-a38a-a694ec5ed3ca",
     "timestamp": "2025-11-21 19:12:10.123017",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does batch encryption signature bind to all ciphertexts?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d39cde79-0db9-45d8-b187-c6d04bc196a0",
     "timestamp": "2025-11-21 19:12:45.038708",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Do share commitments prevent substitution attacks?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_84680789-0d54-44d1-824a-4b8a214d4fd5",
     "timestamp": "2025-11-21 19:13:20.081847",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can attackers modify idx to misbind shares to commitments?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1b8e50dc-04c3-425f-937d-953a69a8a60e",
     "timestamp": "2025-11-21 19:13:54.361334",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does data-key derivation prevent arbitrary data decryption?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a6a5d66d-5e8c-411d-9af8-87c9f9837c8f",
     "timestamp": "2025-11-21 19:14:27.535668",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does BackupKDFInput domain-separate key instances?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f63ae181-1feb-43c7-be99-48b6b792935d",
     "timestamp": "2025-11-21 19:14:59.617705",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can attackers reuse signature over modified ciphertext?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6ab666ef-8031-49e8-ae74-8cde268bf442",
     "timestamp": "2025-11-21 19:16:13.553082",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does SignedEncryptedShare bind signature to both ciphertext and index?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4abf034d-0dc9-4c37-92d0-4bdceae9c85b",
     "timestamp": "2025-11-21 19:16:26.642876",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Is metadata authenticated encryption used correctly?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a7ee8ea0-6566-4459-86c0-8d9f751126da",
     "timestamp": "2025-11-21 19:16:40.394390",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can attackers substitute encap entirely while keeping comms valid?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_427e8b56-5c75-4dad-bf6c-532666b7fdfc",
     "timestamp": "2025-11-21 19:16:54.403332",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does AAD binding prevent cross-account backup claims?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9665d476-71f6-4197-9ebf-2ca56cdf163f",
     "timestamp": "2025-11-21 19:17:08.919216",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does constant-time hash comparison prevent timing leaks?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0e113259-402c-48b0-a65c-f7cbb29591a8",
     "timestamp": "2025-11-21 19:17:24.489621",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can attackers truncate or extend comms vector?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5e5eb731-0fb6-43b1-a3b7-bb7ea38c34c9",
     "timestamp": "2025-11-21 19:17:42.107136",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does recover() validate metadata format robustness?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_45c7582d-d571-4094-acc2-e3c4932d3422",
     "timestamp": "2025-11-21 19:18:01.035107",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Is BackupMetadata serialization safe from injection?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_79847a26-3a6d-401c-89b2-86996e1b6027",
     "timestamp": "2025-11-21 19:18:21.515395",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can verification key substitution allow forging shares?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b8437f00-7dc9-4cfd-9b16-04a4c15dc730",
     "timestamp": "2025-11-21 19:18:44.054315",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does encryption bind to owner identity in send()?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ff40fbe4-6709-45e6-927a-cea601b52a77",
     "timestamp": "2025-11-21 19:19:06.528987",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does batch encryption context prevent partial-share extraction?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0c4f69c7-9b26-462b-8569-6125de23d10c",
     "timestamp": "2025-11-21 19:19:29.993244",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can metadata/data separation be exploited for mix-and-match?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_83499e59-1591-48db-b256-1be0e871dce7",
     "timestamp": "2025-11-21 19:19:56.186196",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does new() ensure atomic cryptographic operations to avoid inconsistent states?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_48c5a5f9-223c-4d53-a478-a7a3910e79aa",
     "timestamp": "2025-11-21 19:20:20.980966",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can an attacker forge a BackupId by crafting a collision in the hash function used in BackupCiphertextV0::id() to access another user's backup?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_95adb04c-3b5a-47ca-8a4d-765c9df3ddca",
     "timestamp": "2025-11-21 19:20:48.825737",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does the BackupId::new() constructor validate that the 32-byte array contains sufficient entropy to prevent brute-force enumeration of backup IDs?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4bf4709f-d8ea-4433-a08d-0449768897c4",
     "timestamp": "2025-11-21 19:21:18.942372",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can an attacker predict future BackupId values by analyzing the deterministic hash computation in BackupCiphertextV0::id()?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7f035a35-37e1-4d1b-96a2-2173bbf1fcb7",
     "timestamp": "2025-11-21 19:21:48.266739",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Is there a risk that two different BackupCiphertextV0 objects produce the same BackupId due to hash collisions?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_791ebfac-c10f-4436-9857-7e214c0581b6",
     "timestamp": "2025-11-21 19:22:18.880299",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does the Display implementation for BackupId leak sensitive information through its hex encoding that could aid in backup enumeration attacks?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_20b320c4-0dd2-4afa-bd2e-e8e999a69122",
     "timestamp": "2025-11-21 19:22:50.186794",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "In BackupCiphertextV0::new(), can an attacker bypass the threshold check by providing threshold = 0 to create a backup that requires no guardian approval?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d7aaffe5-37a4-4924-9ed4-dc6bcffe5dbb",
     "timestamp": "2025-11-21 19:23:21.620410",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does BackupCiphertextV0::recover() properly enforce that exactly meta.threshold shares are used, or can fewer shares be provided if they pass other checks?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d6d977c9-c838-49d3-bb36-17d6f5f11c20",
     "timestamp": "2025-11-21 19:23:54.615374",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can a malicious user create a backup with threshold > guardians.len() that becomes permanently unrecoverable?",
