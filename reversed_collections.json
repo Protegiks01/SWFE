@@ -9598,5 +9598,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ceb89aaa-7d7a-4491-b905-6c3c9e48cad6",
     "timestamp": "2025-11-22 00:47:39.579441",
     "report_generated": false
+  },
+  {
+    "question": "Coefficient Vector Memory: Are polynomial coefficients zeroized after share generation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e65fa3b6-fefb-4cf2-ba93-0fd1c4a48a67",
+    "timestamp": "2025-11-22 02:57:51.766564",
+    "report_generated": false
+  },
+  {
+    "question": "High-Degree Polynomial Instability: Does large t create interpolation instability?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4f55c87e-7472-4722-bf48-03becd75f2af",
+    "timestamp": "2025-11-22 02:58:04.925670",
+    "report_generated": false
+  },
+  {
+    "question": "Constant Polynomial for t=1: Does coefficient generation correctly produce a degree-0 polynomial?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fdf64c62-882b-418e-8a08-aa66efd21521",
+    "timestamp": "2025-11-22 02:58:18.331245",
+    "report_generated": false
+  },
+  {
+    "question": "Coefficient Ordering: Does reversing coefficients alter the intended polynomial structure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_392cdd6d-5fdc-432d-b202-79187d05e55f",
+    "timestamp": "2025-11-22 02:58:32.227730",
+    "report_generated": false
+  },
+  {
+    "question": "Polynomial Degree Mismatch: Is degree t-1 correctly implemented?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e7c69787-e040-4d0b-ac68-8994d40570b6",
+    "timestamp": "2025-11-22 02:58:46.894907",
+    "report_generated": false
+  },
+  {
+    "question": "Deterministic RNG Testing: Could deterministic test RNGs leak into production?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1db0c363-1778-465b-9892-600f1ed7a4fa",
+    "timestamp": "2025-11-22 02:59:02.682705",
+    "report_generated": false
+  },
+  {
+    "question": "Zero Coefficient Probability: What is the impact if cs[0] or other coefficients are zero?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d2b3b74d-3acf-44eb-a861-916185752d25",
+    "timestamp": "2025-11-22 02:59:20.797143",
+    "report_generated": false
+  },
+  {
+    "question": "Coefficient Generation Bias: Does rng.gen() produce unbiased Fr elements?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_63ddb93a-18cd-4710-895c-335601933528",
+    "timestamp": "2025-11-22 02:59:39.735739",
+    "report_generated": false
+  },
+  {
+    "question": "RNG State Reuse: If the same RNG instance is reused, can correlations leak relationships between secrets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ec7ba193-6b23-4626-a242-80c393572e68",
+    "timestamp": "2025-11-22 03:00:00.207833",
+    "report_generated": false
+  },
+  {
+    "question": "Weak RNG Seeding: Can predictable RNG seeds allow attackers to precompute polynomial coefficients?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_18f43f15-7652-41b6-b43e-92ada81ba856",
+    "timestamp": "2025-11-22 03:00:20.860211",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Evolution: Can old shares be mixed with new thresholds in multi-update systems?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8a1fcc99-630b-46ac-9efd-5c5c397db3cc",
+    "timestamp": "2025-11-22 03:00:43.555019",
+    "report_generated": false
+  },
+  {
+    "question": "Fractional Threshold Truncation: Can rounding errors introduce off-by-one threshold vulnerabilities?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5c9070c6-2c8d-4318-965b-d5689f1768e1",
+    "timestamp": "2025-11-22 03:01:07.495801",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Serialization: Is threshold information preserved during share/secret serialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3dffdde3-2a79-4716-8385-c67c101f3afa",
+    "timestamp": "2025-11-22 03:01:34.058783",
+    "report_generated": false
+  },
+  {
+    "question": "Minimum Viable Threshold: Is t >= 2 enforced to avoid trivial single-share recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_26c774f2-8e12-4ca8-9bdb-7a158ed0df41",
+    "timestamp": "2025-11-22 03:01:59.235071",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Storage Integrity: How is t protected from tampering between storage and recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cafc98f5-9d7b-4030-a41c-62237bcd4d27",
+    "timestamp": "2025-11-22 03:02:25.645622",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Approval vs SSS Threshold: Which takes precedence if inconsistent, and can this be exploited?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_083d0a31-b4ee-46cf-b63c-13191c3a9530",
+    "timestamp": "2025-11-22 03:02:54.520635",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Verification Gap: recover() does not return which shares were used - can this hide misuse?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ef38ddb5-cab4-410f-9752-d0de9235c5e5",
+    "timestamp": "2025-11-22 03:03:23.633332",
+    "report_generated": false
+  },
+  {
+    "question": "Partial Threshold Information Leak: Does number of shares stored reveal guardian count n?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_574afea2-3b1d-4861-9102-570fe93a84c3",
+    "timestamp": "2025-11-22 03:03:53.242415",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Downgrade Attack: When changing thresholds, can old shares be used to bypass new security settings?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7586a68e-6bf9-4de0-b3de-c4618cc62524",
+    "timestamp": "2025-11-22 03:04:23.120152",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Backup Threshold Interference: Does knowing one backup's threshold leak information about others?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fa0670b8-ccff-44ac-b195-67bb8b681696",
+    "timestamp": "2025-11-22 03:04:53.815876",
+    "report_generated": false
+  },
+  {
+    "question": "Zero Coefficient Polynomial: If cs[0] becomes zero, does this create a zero secret that breaks backup encryption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_878a7afe-ddda-41dd-bd7f-e4618a75e133",
+    "timestamp": "2025-11-22 03:05:23.447888",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold One Share Distribution: With t=1, distributing n independent shares increases attack surface - is this acceptable?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2d15198c-82e8-43e6-b8bb-ccbeded9ceed",
+    "timestamp": "2025-11-22 03:05:54.242986",
+    "report_generated": false
+  },
+  {
+    "question": "Maximum Threshold Security: With t=n, is DoS possible if one guardian becomes unavailable?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c686d43d-d8dd-4950-9402-d68774030c5e",
+    "timestamp": "2025-11-22 03:06:26.557589",
+    "report_generated": false
+  },
+  {
+    "question": "Single Guardian System: With n=1, t=1, does this degenerate into a single point of failure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_49ea5663-5fcc-4d74-8718-db785d227c5b",
+    "timestamp": "2025-11-22 03:06:54.714915",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Greater Than Guardians: What happens if share() is invoked directly with t > n?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dfd15f69-8ed3-4474-9c9b-53381a8f9b2b",
+    "timestamp": "2025-11-22 03:07:22.460995",
+    "report_generated": false
   }
 ]
