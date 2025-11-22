@@ -9748,5 +9748,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4964874b-baf8-4b20-839b-9abb5f796b7c",
     "timestamp": "2025-11-22 05:15:56.810081",
     "report_generated": false
+  },
+  {
+    "question": "Signature Algorithm Weaknesses: Does the verification rely on a secure signature algorithm? upload_share.rs:53-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4db75be1-befd-4f33-a60e-3986936ee5fc",
+    "timestamp": "2025-11-22 05:17:09.464993",
+    "report_generated": false
+  },
+  {
+    "question": "Verification Error Handling: Does verification leak failure reasons useful to attackers? upload_share.rs:53-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_94421af2-a34b-46d5-ac72-a26a37df0ad2",
+    "timestamp": "2025-11-22 05:17:22.541848",
+    "report_generated": false
+  },
+  {
+    "question": "Share Version Mismatch: Can incompatible share versions pass verification? upload_share.rs:53-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0a5997b3-2031-450d-89d1-a41be397f7aa",
+    "timestamp": "2025-11-22 05:17:36.266255",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Hash Collision: Could weak hashes allow share substitution via collisions? upload_share.rs:53-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_121a850d-fcca-4ca6-9c14-385ce2825c8f",
+    "timestamp": "2025-11-22 05:17:49.987727",
+    "report_generated": false
+  },
+  {
+    "question": "Encrypted Share Content: Does verification ensure ciphertext content hasn't been swapped? upload_share.rs:53-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c6cf378e-fae9-4b64-a4ee-64172f51aa0b",
+    "timestamp": "2025-11-22 05:18:04.369067",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Key Compromise: If a guardian key is compromised, can attacker upload malicious shares undetected? upload_share.rs:53-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8507101c-d7d9-402b-8789-3556f6e95c66",
+    "timestamp": "2025-11-22 05:18:20.138260",
+    "report_generated": false
+  },
+  {
+    "question": "Verification Key Substitution: Is the verification key securely bound to the backup’s metadata? upload_share.rs:53-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ee4da4d2-578b-4a0d-99de-659debed0f1a",
+    "timestamp": "2025-11-22 05:18:38.452991",
+    "report_generated": false
+  },
+  {
+    "question": "Share Index Manipulation: Can attackers manipulate idx in the share to influence share_id output? upload_share.rs:53-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_681abfdf-a89f-4ca7-8fc9-c8bc639cbf94",
+    "timestamp": "2025-11-22 05:18:57.294285",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization Attack on Verification: Can malformed share serialization break verification logic? upload_share.rs:53-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_95f46545-4165-4848-b13c-cd3efd014999",
+    "timestamp": "2025-11-22 05:19:17.769213",
+    "report_generated": false
+  },
+  {
+    "question": "Timing Attack on Verification: Do timing differences reveal share validity? upload_share.rs:53-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a2c6a9bf-7171-4dbd-9bc1-28115549194c",
+    "timestamp": "2025-11-22 05:19:39.110257",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Ciphertext Versioning: Can mismatched versions between backup and share pass verification? upload_share.rs:48-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a90cd959-46f7-4d51-aaad-e8ae4e42e69d",
+    "timestamp": "2025-11-22 05:20:02.157223",
+    "report_generated": false
+  },
+  {
+    "question": "Cryptographic Binding Chain: Is the chain from uploaded share to backup fully cryptographically bound? upload_share.rs:53-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8bc4a84e-cf1a-4c03-811a-9ccd6f8f5098",
+    "timestamp": "2025-11-22 05:20:25.560821",
+    "report_generated": false
+  },
+  {
+    "question": "Share Overwriting Security: Can malicious actors overwrite legitimate shares? upload_share.rs:58-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_27da211c-31ff-4be2-b7ee-a31b1ec25d62",
+    "timestamp": "2025-11-22 05:20:50.944146",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Key Collision: Can collisions in (account_id, backup_id) cause cross-account share mixing? upload_share.rs:64-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5697e58e-049c-49cb-953b-efafb41a2798",
+    "timestamp": "2025-11-22 05:21:18.117498",
+    "report_generated": false
+  },
+  {
+    "question": "BTreeMap Ordering Dependency: Could ordering affect reconstruction or cause subtle errors? upload_share.rs:65-66",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e9c991c8-3969-47ef-bfcc-ad52699bb002",
+    "timestamp": "2025-11-22 05:21:44.582486",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Capacity Limits: Can attackers store excessive shares to exhaust resources? upload_share.rs:64-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3972a2a4-2e55-4022-8c43-94e8910a31c2",
+    "timestamp": "2025-11-22 05:22:12.934967",
+    "report_generated": false
+  },
+  {
+    "question": "Share Collection Initialization: Can default-empty collections cause incorrect assumptions? upload_share.rs:65",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_91216e15-02cb-4fd8-87c0-2ed78b0856c0",
+    "timestamp": "2025-11-22 05:22:42.622396",
+    "report_generated": false
+  },
+  {
+    "question": "Concurrent Modification: Are load-modify-store sequences race-condition safe? upload_share.rs:64-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ccf19caa-310f-4623-9de6-21b459d57f80",
+    "timestamp": "2025-11-22 05:23:13.134889",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Transaction Atomicity: Can a crash between load and store corrupt the collection? upload_share.rs:65-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9de838a6-a538-474b-be92-f74fb5fc58fd",
+    "timestamp": "2025-11-22 05:23:44.415930",
+    "report_generated": false
+  },
+  {
+    "question": "Share Deletion: Does lack of deletion cause stale or malicious shares to accumulate? upload_share.rs:64-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0fed03a8-a32a-4359-ba7f-0ebd6e37aafb",
+    "timestamp": "2025-11-22 05:24:15.729937",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Backend Security: Does OffChainContext guarantee secure storage access? upload_share.rs:65-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e49b967d-6640-47df-891c-d5fb95a2640b",
+    "timestamp": "2025-11-22 05:24:46.530757",
+    "report_generated": false
+  },
+  {
+    "question": "Collection Name Uniqueness: Can namespace collisions corrupt data? upload_share.rs:23-31",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7be086cf-f053-41e5-a2a7-f61d48b9c398",
+    "timestamp": "2025-11-22 05:25:17.720304",
+    "report_generated": false
+  },
+  {
+    "question": "State Persistence Guarantees: Is stored data guaranteed durable after store()? upload_share.rs:67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ffbe63a7-1b87-4ef5-84a1-abd4d2bf92ba",
+    "timestamp": "2025-11-22 05:25:48.044304",
+    "report_generated": false
+  },
+  {
+    "question": "Share Retrieval Consistency: Can get_shares.rs observe inconsistent state during uploads? upload_share.rs:64-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_644d40ad-95c2-40bd-9469-fc762bc7a744",
+    "timestamp": "2025-11-22 05:26:18.957890",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Key Serialization: Can key serialization errors cause wrong map access? upload_share.rs:26-28",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c2d3b8ce-4169-4421-a0ad-812c9db3b167",
+    "timestamp": "2025-11-22 05:26:49.752123",
+    "report_generated": false
   }
 ]
