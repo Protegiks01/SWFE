@@ -10198,5 +10198,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_906e384c-d176-402d-84e3-1c21ae57513f",
     "timestamp": "2025-11-22 03:46:15.158168",
     "report_generated": false
+  },
+  {
+    "question": "At line 31, if state.swafe_public_key contains malformed data that deserializes to an invalid public key, will this be detected before it's used in verification at line 43? get_secret_share.rs:31-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_958f8aeb-3b0f-42df-a693-94bf7114d39a",
+    "timestamp": "2025-11-22 03:47:24.261749",
+    "report_generated": false
+  },
+  {
+    "question": "Does EmailKey::new at line 46 prevent attacks where an attacker provides a VDRF evaluation from a different cryptographic group or curve to confuse the verification? get_secret_share.rs:46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dc7188cb-bb6d-40f3-b770-21835f9a589c",
+    "timestamp": "2025-11-22 03:47:37.133432",
+    "report_generated": false
+  },
+  {
+    "question": "At line 46, if multiple VDRF public keys exist in the system due to key rotation, does the handler verify it's using the correct key for the stored MSK record? get_secret_share.rs:38-46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_27fc1d39-eb1a-4a69-a055-3edbd353f11a",
+    "timestamp": "2025-11-22 03:47:50.885935",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit differences in email canonicalization between certificate issuance and VDRF evaluation to access MSK records for emails they don't control? get_secret_share.rs:43-46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e0101fd6-4514-4a88-8215-b6f98a744748",
+    "timestamp": "2025-11-22 03:48:05.224075",
+    "report_generated": false
+  },
+  {
+    "question": "Does line 46 ensure that the VDRF evaluation has been correctly combined from partial evaluations, preventing attacks where an attacker submits only their own node's partial evaluation? get_secret_share.rs:46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4bf503d0-8478-499e-938d-3d804b6e4a9e",
+    "timestamp": "2025-11-22 03:48:19.357588",
+    "report_generated": false
+  },
+  {
+    "question": "At line 45-46, if the email parsing and EmailKey generation use different string representations (UTF-8 vs ASCII), can this create inconsistencies? get_secret_share.rs:45-46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9bb8f168-99f0-4a76-88d4-e02ab258327f",
+    "timestamp": "2025-11-22 03:48:34.826368",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker who compromises the VDRF setup ceremony keys manipulate the VDRF public key at line 38 to break the email anonymization without full corruption of Swafe-io? get_secret_share.rs:38-46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d6d6fa42-9dd1-458c-8cf7-d732ce869599",
+    "timestamp": "2025-11-22 03:48:51.539513",
+    "report_generated": false
+  },
+  {
+    "question": "Does EmailKey::new at line 46 validate that the VDRF evaluation is not the identity element or other degenerate group elements? get_secret_share.rs:46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_40e3e32b-6d6e-43d9-b076-9c0f8f96e1f5",
+    "timestamp": "2025-11-22 03:49:10.288231",
+    "report_generated": false
+  },
+  {
+    "question": "At line 46, if the KDF used inside EmailKey::new has weak collision resistance, can an attacker find two different emails that map to the same EmailKey? get_secret_share.rs:46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6095831d-8d5b-40e2-b918-6deef552e2a2",
+    "timestamp": "2025-11-22 03:49:30.211746",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit the domain separation tag in VDRF evaluation at line 46 to confuse the system between different types of inputs (email vs other data)? get_secret_share.rs:46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cea1bc2b-899b-4467-8e0d-7facd4f1d5a9",
+    "timestamp": "2025-11-22 03:49:51.783927",
+    "report_generated": false
+  },
+  {
+    "question": "Does the VDRF verification at line 46 check that the evaluation point used matches the expected hash-to-curve output for the email, preventing evaluation substitution attacks? get_secret_share.rs:46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a854f383-f1b3-42ab-8003-b00cad76619c",
+    "timestamp": "2025-11-22 03:50:14.699298",
+    "report_generated": false
+  },
+  {
+    "question": "At line 46, if vdrf_eval.0 is serialized/deserialized incorrectly, can this lead to EmailKey mismatches that permanently lock users out of their MSK records? get_secret_share.rs:46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_00f47c49-7433-41d0-8e01-ba5d5185c45c",
+    "timestamp": "2025-11-22 03:50:38.135124",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker who corrupts a minority of off-chain nodes manipulate the VDRF public key at line 38 to redirect EmailKey lookups to different storage locations? get_secret_share.rs:38-46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e837beeb-4403-4912-87c0-8538cb08fa7d",
+    "timestamp": "2025-11-22 03:51:02.839034",
+    "report_generated": false
+  },
+  {
+    "question": "Does EmailKey::new at line 46 perform constant-time operations to prevent timing side-channels that could leak information about the email content? get_secret_share.rs:46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a5802735-ece8-4b5a-8f69-ef096d8c03df",
+    "timestamp": "2025-11-22 03:51:29.491587",
+    "report_generated": false
+  },
+  {
+    "question": "At line 46, if the email input contains trailing whitespace or case differences from what was used during upload, will EmailKey::new generate a different key leading to 'MSK record not found' errors? get_secret_share.rs:45-46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7f5bf204-41ac-4d3c-a0ea-7c38d06f8e12",
+    "timestamp": "2025-11-22 03:51:56.423240",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit the deterministic nature of VDRF to correlate EmailKeys across different requests if they can observe the vdrf_eval values? get_secret_share.rs:46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_29224b05-0382-42b9-b961-eb9b11b0cb70",
+    "timestamp": "2025-11-22 03:52:24.809399",
+    "report_generated": false
+  },
+  {
+    "question": "Does line 46's EmailKey::new validate that the VDRF evaluation was computed with the threshold number of shares, preventing partial evaluations from being accepted? get_secret_share.rs:46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_79ed2de0-5108-46e8-af05-bd82917f9a52",
+    "timestamp": "2025-11-22 03:52:53.805528",
+    "report_generated": false
+  },
+  {
+    "question": "At line 46, if the vdrf_eval parameter is reused across multiple requests for the same email, does this create a linkability vulnerability that compromises email anonymity? get_secret_share.rs:46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c85f943d-6cf6-42ce-8ab9-649f7f3d7c5e",
+    "timestamp": "2025-11-22 03:53:23.349506",
+    "report_generated": false
+  },
+  {
+    "question": "Can a compromised off-chain node with access to VDRF secret key shares at line 42 precompute EmailKeys for known email addresses to deanonymize users? get_secret_share.rs:42-46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d955f7a5-b643-46da-b5e0-957673bbdd76",
+    "timestamp": "2025-11-22 03:53:53.949346",
+    "report_generated": false
+  },
+  {
+    "question": "Does EmailKey::new at line 46 ensure that the VDRF output is derived from the correct VDRF public key commitment c0, preventing cross-instance attacks? get_secret_share.rs:46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8c93c9f1-4774-4459-b9f1-60cdf01a0641",
+    "timestamp": "2025-11-22 03:54:25.421297",
+    "report_generated": false
+  },
+  {
+    "question": "At line 45, if email.parse() performs Unicode normalization, can an attacker use homoglyphs or normalization differences to access MSK records for similar-looking emails? get_secret_share.rs:45",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2cb69679-7f14-40fe-938e-618b453aed4d",
+    "timestamp": "2025-11-22 03:54:56.623164",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit malleability in the VDRF evaluation representation at line 46 to generate multiple EmailKeys that map to the same storage location? get_secret_share.rs:46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0bcebf5b-d0bf-4867-88a4-aa30acb6cdd3",
+    "timestamp": "2025-11-22 03:55:29.677087",
+    "report_generated": false
+  },
+  {
+    "question": "Does the VDRF verification in EmailKey::new at line 46 check the pairing equation correctly to prevent attackers from forging valid-looking evaluations? get_secret_share.rs:46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6f6f2dca-0126-45c6-b857-bb708f58882e",
+    "timestamp": "2025-11-22 03:55:59.721937",
+    "report_generated": false
+  },
+  {
+    "question": "At line 46, if the vdrf_eval is computed with a different VDRF public key than vdrf_pk, will EmailKey::new detect this mismatch and reject the request? get_secret_share.rs:38-46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d54b16dc-df94-4912-8011-de5022af26fc",
+    "timestamp": "2025-11-22 03:56:31.430537",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker who knows the VDRF evaluation for email A reverse-engineer the VDRF secret key shares to compute evaluations for other emails, violating email privacy? get_secret_share.rs:46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1198e61c-b8d5-42b8-84d2-bf9310db5db4",
+    "timestamp": "2025-11-22 03:57:00.178892",
+    "report_generated": false
   }
 ]
