@@ -55,22 +55,55 @@ def get_pending_urls():
         return []
 
 
-try:
-    pending_urls = get_pending_urls()
-    total = len(pending_urls)
+def get_remaining_count():
+    """
+    Returns the total number of URLs that still need reports generated.
+
+    :return: Number of pending reports
+    """
+    try:
+        if not os.path.exists("collections.json"):
+            return 0
+
+        with open("collections.json", "r") as f:
+            data = json.load(f)
+
+        processed = load_processed_reports()
+
+        # Count URLs that don't have reports yet
+        remaining = sum(1 for item in data if item.get("url", "") and item.get("url", "") not in processed)
+
+        return remaining
+
+    except Exception as e:
+        print(f"Error getting remaining count: {e}")
+        return 0
 
 
-    if total == 0:
-        print("No pending reports to generate")
-    else:
-        print(f"Found {total} URLs needing reports")
+def main():
+    try:
+        pending_urls = get_pending_urls()
+        total = len(pending_urls)
 
-        report = GetReports(teardown=True)
-        for i, url in enumerate(pending_urls):
-            print(f"[{i+1}/{total}] Generating report for: {url[:50]}...")
-            report.get_report(url)
+        if total == 0:
+            print("No pending reports to generate")
+        else:
+            print(f"Found {total} URLs needing reports")
 
-        print(f"\n=== Completed {total} reports ===")
+            counter = 0
+            report = GetReports(teardown=True)
+            for i, url in enumerate(pending_urls):
+                print(f"[{i + 1}/{total}] Generating report for: {url[:50]}...")
+                report.get_report(url)
+                counter += 1
+                if counter >= 100:
+                    break
 
-except Exception as e:
-    print(f"Error: {e}")
+            print(f"\n=== Completed {total} reports ===")
+
+    except Exception as e:
+        print(f"Error: {e}")
+
+
+if __name__ == '__main__':
+    main()

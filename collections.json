@@ -576,7 +576,7 @@
     "report_generated": false
   },
   {
-    "question": "Could multiple Swafe contracts interfere with each other’s initialization?",
+    "question": "Could multiple Swafe contracts interfere with each other\u2019s initialization?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ffc95fd1-fe47-4704-a7b5-378ed134bdaf",
     "timestamp": "2025-11-21 13:47:17.797042",
     "report_generated": false
@@ -1038,7 +1038,7 @@
     "report_generated": false
   },
   {
-    "question": "Does initialization pattern leak email–account associations indirectly?",
+    "question": "Does initialization pattern leak email\u2013account associations indirectly?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7f733005-5acc-404d-903f-570a690053f0",
     "timestamp": "2025-11-21 14:22:17.985510",
     "report_generated": false
@@ -1632,7 +1632,7 @@
     "report_generated": false
   },
   {
-    "question": "Zero-Knowledge Proof Absence: No ZK proofs → attacker builds full account graph silently.",
+    "question": "Zero-Knowledge Proof Absence: No ZK proofs \u2192 attacker builds full account graph silently.",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1bb09410-e2fa-4ab3-852c-ad31f54a679e",
     "timestamp": "2025-11-21 15:05:48.525567",
     "report_generated": false
@@ -1698,7 +1698,7 @@
     "report_generated": false
   },
   {
-    "question": "JSON Parsing Ambiguity: json::from_str mod.rs:22 accepts ambiguous forms → bypass logging/caching?",
+    "question": "JSON Parsing Ambiguity: json::from_str mod.rs:22 accepts ambiguous forms \u2192 bypass logging/caching?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e57d0ec1-2890-4a2d-84ac-5acf0c6ac116",
     "timestamp": "2025-11-21 15:10:21.146363",
     "report_generated": false
@@ -1842,7 +1842,7 @@
     "report_generated": false
   },
   {
-    "question": "State Rollback Vulnerability: Failed tx → rolled-back but partially visible?",
+    "question": "State Rollback Vulnerability: Failed tx \u2192 rolled-back but partially visible?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e40103c2-000f-473f-bbc0-741ded066412",
     "timestamp": "2025-11-21 15:34:20.489377",
     "report_generated": false
@@ -1938,7 +1938,7 @@
     "report_generated": false
   },
   {
-    "question": "Content-Type Header Security: Missing/incorrect headers → XSS?",
+    "question": "Content-Type Header Security: Missing/incorrect headers \u2192 XSS?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9760f1c0-6d77-461c-82a7-a24a61cb38db",
     "timestamp": "2025-11-21 15:41:35.219606",
     "report_generated": false
@@ -1950,7 +1950,7 @@
     "report_generated": false
   },
   {
-    "question": "Request Size Validation: Missing size limit → memory issues?",
+    "question": "Request Size Validation: Missing size limit \u2192 memory issues?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_92db3e95-a9d5-4bd5-9e01-7bdd8418e37a",
     "timestamp": "2025-11-21 15:43:36.305254",
     "report_generated": false
@@ -1998,7 +1998,7 @@
     "report_generated": false
   },
   {
-    "question": "Request ID Tracking: No audit trail → stealth attacks.",
+    "question": "Request ID Tracking: No audit trail \u2192 stealth attacks.",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_06e64b0e-09ea-475d-a05d-f2ba4a94f793",
     "timestamp": "2025-11-21 15:45:48.026043",
     "report_generated": false
@@ -3090,13 +3090,13 @@
     "report_generated": false
   },
   {
-    "question": "Does the choice of BLS12-381 introduce trust assumptions that conflict with the protocol’s threat model?",
+    "question": "Does the choice of BLS12-381 introduce trust assumptions that conflict with the protocol\u2019s threat model?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_10183904-04bc-42e6-bda9-62002f1aa815",
     "timestamp": "2025-11-21 17:07:04.406467",
     "report_generated": false
   },
   {
-    "question": "Could vulnerabilities in arkworks’ BLS12-381 implementation silently affect all modules using these aliases?",
+    "question": "Could vulnerabilities in arkworks\u2019 BLS12-381 implementation silently affect all modules using these aliases?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a72c3660-b9ec-4462-8993-918e35626100",
     "timestamp": "2025-11-21 17:07:31.663329",
     "report_generated": false
@@ -3114,7 +3114,7 @@
     "report_generated": false
   },
   {
-    "question": "Does the file’s simplicity encourage developers to trust these types too much without validating upstream behavior?",
+    "question": "Does the file\u2019s simplicity encourage developers to trust these types too much without validating upstream behavior?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5b5a658a-9f02-4afc-8b07-47774ab4495e",
     "timestamp": "2025-11-21 17:09:02.108291",
     "report_generated": false
@@ -3138,7 +3138,7 @@
     "report_generated": false
   },
   {
-    "question": "Generator Independence: Are H and G cryptographically independent? If an attacker discovers the discrete log α such that G = [α]H, they could open any commitment to arbitrary values, violating the binding property and enabling unauthorized account recovery.",
+    "question": "Generator Independence: Are H and G cryptographically independent? If an attacker discovers the discrete log \u03b1 such that G = [\u03b1]H, they could open any commitment to arbitrary values, violating the binding property and enabling unauthorized account recovery.",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_17ceee7b-c969-48d6-907b-0fc1e4acbdb4",
     "timestamp": "2025-11-21 17:11:13.023412",
     "report_generated": false
@@ -3276,7 +3276,7 @@
     "report_generated": false
   },
   {
-    "question": "Commitment Malleability: Given commitment C = [v]H + [r]G, an attacker knowing discrete log α between H and G could create C' = [v']H + [r']G opening to different values. Does the protocol verify commitment integrity in ways that would detect such malleability attacks during account recovery?",
+    "question": "Commitment Malleability: Given commitment C = [v]H + [r]G, an attacker knowing discrete log \u03b1 between H and G could create C' = [v']H + [r']G opening to different values. Does the protocol verify commitment integrity in ways that would detect such malleability attacks during account recovery?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3dd3d4d3-f465-47ea-9622-506c9a9ab5aa",
     "timestamp": "2025-11-21 17:21:31.881904",
     "report_generated": false
@@ -3390,7 +3390,7 @@
     "report_generated": false
   },
   {
-    "question": "Fiat-Shamir Challenge Computation: The challenge α is computed as hash_to_fr of message, delta, and commitments commitments.rs:181-185 . Is the hash function collision-resistant enough to prevent an attacker from finding two different messages that produce the same challenge, enabling proof replay attacks?",
+    "question": "Fiat-Shamir Challenge Computation: The challenge \u03b1 is computed as hash_to_fr of message, delta, and commitments commitments.rs:181-185 . Is the hash function collision-resistant enough to prevent an attacker from finding two different messages that produce the same challenge, enabling proof replay attacks?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_313bf213-59cb-453c-8634-88ea8f7e76c9",
     "timestamp": "2025-11-21 17:29:38.926359",
     "report_generated": false
@@ -3414,7 +3414,7 @@
     "report_generated": false
   },
   {
-    "question": "Challenge Collision Attack: If two different (message, commitments) pairs hash to the same challenge α, could an attacker substitute one for the other during verification, bypassing the intended message binding and allowing account recovery without proper email verification?",
+    "question": "Challenge Collision Attack: If two different (message, commitments) pairs hash to the same challenge \u03b1, could an attacker substitute one for the other during verification, bypassing the intended message binding and allowing account recovery without proper email verification?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0b97050a-8e03-49c6-9325-7e2f29276669",
     "timestamp": "2025-11-21 17:31:39.119228",
     "report_generated": false
@@ -3426,7 +3426,7 @@
     "report_generated": false
   },
   {
-    "question": "Power Sequence Accumulation: The proof combines openings using powers of α commitments.rs:188-193 . If α is small or zero (due to hash collision), could the power sequence degenerate, making all openings equivalent and breaking the proof's soundness?",
+    "question": "Power Sequence Accumulation: The proof combines openings using powers of \u03b1 commitments.rs:188-193 . If \u03b1 is small or zero (due to hash collision), could the power sequence degenerate, making all openings equivalent and breaking the proof's soundness?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2afc2305-3d84-4f1f-9a88-91e5fa72307b",
     "timestamp": "2025-11-21 17:32:41.567241",
     "report_generated": false
@@ -3486,7 +3486,7 @@
     "report_generated": false
   },
   {
-    "question": "Commitment Subset Attack: If a proof verifies for commitments [C₀, C₁, C₂], could it also verify for a subset [C₀, C₂], allowing an attacker to selectively omit commitments and bypass checks that all required associations are present?",
+    "question": "Commitment Subset Attack: If a proof verifies for commitments [C\u2080, C\u2081, C\u2082], could it also verify for a subset [C\u2080, C\u2082], allowing an attacker to selectively omit commitments and bypass checks that all required associations are present?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_08483c05-1bc4-4ba2-8908-cb8d269907a6",
     "timestamp": "2025-11-21 17:37:06.407704",
     "report_generated": false
@@ -3624,7 +3624,7 @@
     "report_generated": false
   },
   {
-    "question": "Overflow in Power Computation: When computing α^i for large i in SoK proofs, could integer overflow occur in the exponent calculation (not the field operation), causing incorrect power sequences?",
+    "question": "Overflow in Power Computation: When computing \u03b1^i for large i in SoK proofs, could integer overflow occur in the exponent calculation (not the field operation), causing incorrect power sequences?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_764aed69-3488-4d9f-a366-cb54937fd07a",
     "timestamp": "2025-11-21 17:47:43.199646",
     "report_generated": false
@@ -3996,7 +3996,7 @@
     "report_generated": false
   },
   {
-    "question": "In BackupCiphertextV0::recover(), the filter_map at lines 299-313 silently ignores invalid shares—could a malicious guardian flood the system with invalid shares to cause legitimate shares to be skipped if the shares vector has ordering constraints?",
+    "question": "In BackupCiphertextV0::recover(), the filter_map at lines 299-313 silently ignores invalid shares\u2014could a malicious guardian flood the system with invalid shares to cause legitimate shares to be skipped if the shares vector has ordering constraints?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f60ad3e7-d4d0-460b-816b-77de130faef7",
     "timestamp": "2025-11-21 18:15:16.358358",
     "report_generated": false
@@ -5946,7 +5946,7 @@
     "report_generated": false
   },
   {
-    "question": "CombinedSecretData Tagged Separator: Same for 'v0:combined-secret' v0.rs:72-74 — are cross-context attacks possible?",
+    "question": "CombinedSecretData Tagged Separator: Same for 'v0:combined-secret' v0.rs:72-74 \u2014 are cross-context attacks possible?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fddf9933-aac8-443d-b15d-99fb3ca37824",
     "timestamp": "2025-11-21 20:40:40.692911",
     "report_generated": false
@@ -5982,7 +5982,7 @@
     "report_generated": false
   },
   {
-    "question": "Generator Collision: PedersenGenerators::new() v0.rs:203 — if G = H, commitments break. Possible?",
+    "question": "Generator Collision: PedersenGenerators::new() v0.rs:203 \u2014 if G = H, commitments break. Possible?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bcc024bd-a3f9-441a-aff3-9e6b963a8f3b",
     "timestamp": "2025-11-21 20:43:52.357941",
     "report_generated": false
@@ -6012,19 +6012,19 @@
     "report_generated": false
   },
   {
-    "question": "Commitment Verification Race: AssociationRequestEmail::verify order v0.rs:199-206 — can this leak information?",
+    "question": "Commitment Verification Race: AssociationRequestEmail::verify order v0.rs:199-206 \u2014 can this leak information?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cac112e5-21e3-4da5-a427-9665775f2ccd",
     "timestamp": "2025-11-21 20:46:36.736017",
     "report_generated": false
   },
   {
-    "question": "Commitment Truncation: commits vector truncation v0.rs:146 — can attacker reduce threshold?",
+    "question": "Commitment Truncation: commits vector truncation v0.rs:146 \u2014 can attacker reduce threshold?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3ae6391e-3caf-4e2b-89f3-8dd3966f2fb4",
     "timestamp": "2025-11-21 20:46:51.548664",
     "report_generated": false
   },
   {
-    "question": "Generator Domain Separation: H,G derived with domain tags v0.rs:268 — collisions possible?",
+    "question": "Generator Domain Separation: H,G derived with domain tags v0.rs:268 \u2014 collisions possible?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0ab94203-f423-45c0-9fdb-8ed6297a7023",
     "timestamp": "2025-11-21 20:47:06.306302",
     "report_generated": false
@@ -6054,19 +6054,19 @@
     "report_generated": false
   },
   {
-    "question": "NodeId Hash Collision: node_id.eval_point v0.rs:225 — if hash collides, two nodes get same share?",
+    "question": "NodeId Hash Collision: node_id.eval_point v0.rs:225 \u2014 if hash collides, two nodes get same share?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c3f24e8a-1ddf-4302-ac2f-44710a1ca81f",
     "timestamp": "2025-11-21 20:48:39.317759",
     "report_generated": false
   },
   {
-    "question": "NodeId Zero Collision: eval_point asserts x != 0 — can attacker trigger panic?",
+    "question": "NodeId Zero Collision: eval_point asserts x != 0 \u2014 can attacker trigger panic?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_179aa153-9864-4e9a-89e6-a3216a83f9bf",
     "timestamp": "2025-11-21 20:49:00.780808",
     "report_generated": false
   },
   {
-    "question": "Polynomial Evaluation Correctness: compute_secret_shares v0.rs:228-236 — incorrect arithmetic?",
+    "question": "Polynomial Evaluation Correctness: compute_secret_shares v0.rs:228-236 \u2014 incorrect arithmetic?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c67dc016-da5b-451f-a84e-84cc3048cc5e",
     "timestamp": "2025-11-21 20:49:22.993770",
     "report_generated": false
@@ -6084,13 +6084,13 @@
     "report_generated": false
   },
   {
-    "question": "Msk_result Field Exposure: NodeSecretShare contains EncapsulatedMsk v0.rs:83 — violates least privilege?",
+    "question": "Msk_result Field Exposure: NodeSecretShare contains EncapsulatedMsk v0.rs:83 \u2014 violates least privilege?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0a275513-ff12-4365-a2ab-958229ea0bed",
     "timestamp": "2025-11-21 20:50:37.637892",
     "report_generated": false
   },
   {
-    "question": "Token Binding to Share: token v0.rs:87 not bound to share — reuse possible?",
+    "question": "Token Binding to Share: token v0.rs:87 not bound to share \u2014 reuse possible?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2f882c3f-8173-451b-86eb-bc469285fd22",
     "timestamp": "2025-11-21 20:51:03.520225",
     "report_generated": false
@@ -6102,7 +6102,7 @@
     "report_generated": false
   },
   {
-    "question": "X-coordinate Reuse: Reused NodeId → same x v0.rs:225 — can attacker gather multiple y-values?",
+    "question": "X-coordinate Reuse: Reused NodeId \u2192 same x v0.rs:225 \u2014 can attacker gather multiple y-values?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f5ee1ca5-1a77-448a-b4ff-d02599dd4233",
     "timestamp": "2025-11-21 20:52:00.620869",
     "report_generated": false
@@ -6114,7 +6114,7 @@
     "report_generated": false
   },
   {
-    "question": "Field Element Overflow: y accumulation v0.rs:233 — overflow possible?",
+    "question": "Field Element Overflow: y accumulation v0.rs:233 \u2014 overflow possible?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_383f572d-ff85-45c5-ab1b-444556eba7cc",
     "timestamp": "2025-11-21 20:52:58.739904",
     "report_generated": false
@@ -6126,7 +6126,7 @@
     "report_generated": false
   },
   {
-    "question": "Share Request Replay: No nonce in gen_association_request v0.rs:435-451 — replay possible?",
+    "question": "Share Request Replay: No nonce in gen_association_request v0.rs:435-451 \u2014 replay possible?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3a7adf70-c207-48ef-81bd-038d8ad0315f",
     "timestamp": "2025-11-21 20:53:58.787888",
     "report_generated": false
@@ -6180,7 +6180,7 @@
     "report_generated": false
   },
   {
-    "question": "Empty Commitments Array: coms empty v0.rs:248-251 — trivial acceptance?",
+    "question": "Empty Commitments Array: coms empty v0.rs:248-251 \u2014 trivial acceptance?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cd838751-e524-4877-9be7-023a571c83c7",
     "timestamp": "2025-11-21 20:57:59.109568",
     "report_generated": false
@@ -7266,7 +7266,7 @@
     "report_generated": false
   },
   {
-    "question": "If threshold−1 nodes are corrupted, can they statistically narrow down email addresses via share analysis?",
+    "question": "If threshold\u22121 nodes are corrupted, can they statistically narrow down email addresses via share analysis?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f0c12d54-e7e5-42fc-a4ca-687a28421a66",
     "timestamp": "2025-11-21 22:17:11.884988",
     "report_generated": false
@@ -7344,7 +7344,7 @@
     "report_generated": false
   },
   {
-    "question": "Can users who lose RIK but control threshold nodes reconstruct another user’s RIK if identity isn't verified?",
+    "question": "Can users who lose RIK but control threshold nodes reconstruct another user\u2019s RIK if identity isn't verified?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a3106253-8014-435d-8d27-9f669feec370",
     "timestamp": "2025-11-21 22:23:11.796924",
     "report_generated": false
@@ -7602,7 +7602,7 @@
     "report_generated": false
   },
   {
-    "question": "Old Signature Key Usage: Using old_sig for updates—can compromised old key forge updates?",
+    "question": "Old Signature Key Usage: Using old_sig for updates\u2014can compromised old key forge updates?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b4dd9d08-c447-4f0f-90b5-8c2707e1578b",
     "timestamp": "2025-11-21 22:41:07.125580",
     "report_generated": false
@@ -7614,7 +7614,7 @@
     "report_generated": false
   },
   {
-    "question": "Social Backup Immutability: Reusing social backup—can stale data be exploited?",
+    "question": "Social Backup Immutability: Reusing social backup\u2014can stale data be exploited?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b2c9c01c-fb32-4af0-8a7f-80d5a6431605",
     "timestamp": "2025-11-21 22:42:10.740484",
     "report_generated": false
@@ -8232,7 +8232,7 @@
     "report_generated": false
   },
   {
-    "question": "Singleton Key Security: Can OffchainSecrets using Key=() allow one node to overwrite another’s secrets?",
+    "question": "Singleton Key Security: Can OffchainSecrets using Key=() allow one node to overwrite another\u2019s secrets?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_95115e7b-4283-4cdd-952f-3c74f08df27d",
     "timestamp": "2025-11-22 03:24:05.440262",
     "report_generated": false
@@ -9696,7 +9696,7 @@
     "report_generated": false
   },
   {
-    "question": "Commitment Binding: Does verification bind the share to this specific backup’s commitments? upload_share.rs:53-55",
+    "question": "Commitment Binding: Does verification bind the share to this specific backup\u2019s commitments? upload_share.rs:53-55",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_566f652a-9283-46a7-a850-64d3ad042f86",
     "timestamp": "2025-11-22 05:11:37.168987",
     "report_generated": false
@@ -9714,7 +9714,7 @@
     "report_generated": false
   },
   {
-    "question": "Encryption Context Validation: Are shares bound to the correct backup’s encryption context? upload_share.rs:53-55",
+    "question": "Encryption Context Validation: Are shares bound to the correct backup\u2019s encryption context? upload_share.rs:53-55",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7f4157f0-a1b2-47da-bcea-77f9364805c4",
     "timestamp": "2025-11-22 05:13:15.380997",
     "report_generated": false
@@ -9786,7 +9786,7 @@
     "report_generated": false
   },
   {
-    "question": "Verification Key Substitution: Is the verification key securely bound to the backup’s metadata? upload_share.rs:53-55",
+    "question": "Verification Key Substitution: Is the verification key securely bound to the backup\u2019s metadata? upload_share.rs:53-55",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ee4da4d2-578b-4a0d-99de-659debed0f1a",
     "timestamp": "2025-11-22 05:18:38.452991",
     "report_generated": false
@@ -10506,7 +10506,7 @@
     "report_generated": false
   },
   {
-    "question": "Cryptographic Binding Chain: Is the cryptographic binding between share → commit → backup incomplete? upload_share.rs:53-67",
+    "question": "Cryptographic Binding Chain: Is the cryptographic binding between share \u2192 commit \u2192 backup incomplete? upload_share.rs:53-67",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a1dacc6f-3f51-4e57-801b-1e695d93fe7b",
     "timestamp": "2025-11-22 06:33:01.344611",
     "report_generated": false
@@ -11046,7 +11046,7 @@
     "report_generated": false
   },
   {
-    "question": "Commitment Binding: Is each share bound to this backup’s commitments to prevent substitution attacks? upload_share.rs:53-55",
+    "question": "Commitment Binding: Is each share bound to this backup\u2019s commitments to prevent substitution attacks? upload_share.rs:53-55",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_316896d7-108e-4906-b46a-bf6c9bb6be2d",
     "timestamp": "2025-11-22 07:10:54.351068",
     "report_generated": false
@@ -11058,7 +11058,7 @@
     "report_generated": false
   },
   {
-    "question": "Batch Verification Vulnerability: Can a malicious guardian upload a share that interferes with others’ verification? upload_share.rs:64-67",
+    "question": "Batch Verification Vulnerability: Can a malicious guardian upload a share that interferes with others\u2019 verification? upload_share.rs:64-67",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f37bdd4b-647b-4050-8ca7-456da3660014",
     "timestamp": "2025-11-22 07:12:00.443275",
     "report_generated": false
@@ -11136,7 +11136,7 @@
     "report_generated": false
   },
   {
-    "question": "Verification Key Substitution: Is the verification key guaranteed to match the backup’s committed key? upload_share.rs:53-55",
+    "question": "Verification Key Substitution: Is the verification key guaranteed to match the backup\u2019s committed key? upload_share.rs:53-55",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d96a6bdc-fb78-423c-bd76-b4c932d0bc0f",
     "timestamp": "2025-11-22 07:17:54.956188",
     "report_generated": false
@@ -11166,7 +11166,7 @@
     "report_generated": false
   },
   {
-    "question": "Cryptographic Binding Chain: Is there a complete cryptographic binding from share → verification → backup? upload_share.rs:53-67",
+    "question": "Cryptographic Binding Chain: Is there a complete cryptographic binding from share \u2192 verification \u2192 backup? upload_share.rs:53-67",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_43e3e160-2229-4309-b693-9c9901ac3377",
     "timestamp": "2025-11-22 07:19:45.650627",
     "report_generated": false
@@ -12024,7 +12024,7 @@
     "report_generated": false
   },
   {
-    "question": "VDRF Input Validation: Are malicious inputs prevented in evaluation → KDF pipeline?",
+    "question": "VDRF Input Validation: Are malicious inputs prevented in evaluation \u2192 KDF pipeline?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a904e51a-4cbb-43c5-9dd8-a1f79de690d2",
     "timestamp": "2025-11-21 13:07:30.063873",
     "report_generated": false
@@ -12432,7 +12432,7 @@
     "report_generated": false
   },
   {
-    "question": "KDF Composition Attacks: Is using one KDF output as another’s IKM secure?",
+    "question": "KDF Composition Attacks: Is using one KDF output as another\u2019s IKM secure?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_76c63b27-6761-4c6a-89b8-ff77c7fb8dc1",
     "timestamp": "2025-11-21 13:37:50.718604",
     "report_generated": false
@@ -12666,7 +12666,7 @@
     "report_generated": false
   },
   {
-    "question": "Separator Length Extension: Does KMAC256’s customization string handling prevent length-extension attacks on separators, or can an attacker append data to a separator and derive unauthorized keys?",
+    "question": "Separator Length Extension: Does KMAC256\u2019s customization string handling prevent length-extension attacks on separators, or can an attacker append data to a separator and derive unauthorized keys?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4980be56-a8bc-47e4-a313-4f6058808108",
     "timestamp": "2025-11-21 13:54:31.909699",
     "report_generated": false
@@ -13608,7 +13608,7 @@
     "report_generated": false
   },
   {
-    "question": "Vector Fr and G1 Correspondence: Does serialization enforce coefficient ↔ commitment alignment?",
+    "question": "Vector Fr and G1 Correspondence: Does serialization enforce coefficient \u2194 commitment alignment?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_671b8db0-577a-4d0f-9898-72b07de9829c",
     "timestamp": "2025-11-21 15:06:32.837789",
     "report_generated": false
@@ -14856,7 +14856,7 @@
     "report_generated": false
   },
   {
-    "question": "Insufficient Key Length: Does the v0 implementation enforce that the scalar field Fr v0.rs:30-31 has sufficient bit security (≥256 bits) to prevent brute-force attacks on guardian share decryption keys?",
+    "question": "Insufficient Key Length: Does the v0 implementation enforce that the scalar field Fr v0.rs:30-31 has sufficient bit security (\u2265256 bits) to prevent brute-force attacks on guardian share decryption keys?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_38dda886-44ab-423e-895c-b0723ddcabce",
     "timestamp": "2025-11-21 16:41:27.099664",
     "report_generated": false
@@ -15048,7 +15048,7 @@
     "report_generated": false
   },
   {
-    "question": "Guardian Threshold Manipulation: Could invalid t values bypass t ≤ n?",
+    "question": "Guardian Threshold Manipulation: Could invalid t values bypass t \u2264 n?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_13b6e207-e913-4508-870a-80d4a0c5cc0b",
     "timestamp": "2025-11-21 16:54:19.804312",
     "report_generated": false
@@ -16176,7 +16176,7 @@
     "report_generated": false
   },
   {
-    "question": "Backward Incompatible Changes: If a variant's inner type changes incompatibly between versions (e.g., V0(OldType) → V0(NewType)), can this cause silent data corruption during deserialization? venum.rs:28-59",
+    "question": "Backward Incompatible Changes: If a variant's inner type changes incompatibly between versions (e.g., V0(OldType) \u2192 V0(NewType)), can this cause silent data corruption during deserialization? venum.rs:28-59",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7a993df6-ad9b-4184-868a-995c794501f1",
     "timestamp": "2025-11-21 18:18:41.812436",
     "report_generated": false
@@ -18420,7 +18420,7 @@
     "report_generated": false
   },
   {
-    "question": "In DecryptionKey::gen() v0.rs:54-59 , there's no validation that sk ≠ 0. If a zero secret key is generated (though statistically improbable), the corresponding public key would be the identity element. Could this enable an attacker to forge ciphertexts that decrypt under multiple keys, violating the binding between guardian and their backup share?",
+    "question": "In DecryptionKey::gen() v0.rs:54-59 , there's no validation that sk \u2260 0. If a zero secret key is generated (though statistically improbable), the corresponding public key would be the identity element. Could this enable an attacker to forge ciphertexts that decrypt under multiple keys, violating the binding between guardian and their backup share?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a057af98-e75a-4dc6-9f22-0418ab3a797e",
     "timestamp": "2025-11-21 21:07:29.712161",
     "report_generated": false
@@ -18768,7 +18768,7 @@
     "report_generated": false
   },
   {
-    "question": "Version Tag Range Validation: Can version tags ≥128 bypass validation? venum.rs:34-49",
+    "question": "Version Tag Range Validation: Can version tags \u2265128 bypass validation? venum.rs:34-49",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d1909353-7ab5-48c3-8fc4-aecfac095367",
     "timestamp": "2025-11-21 21:33:12.661495",
     "report_generated": false
@@ -20406,7 +20406,7 @@
     "report_generated": false
   },
   {
-    "question": "The interpolate_eval function creates a new roots vector for each point in the fold. poly.rs:28 Could this O(n²) complexity be exploited by a malicious guardian providing a large number of shares to cause DoS during reconstruction?",
+    "question": "The interpolate_eval function creates a new roots vector for each point in the fold. poly.rs:28 Could this O(n\u00b2) complexity be exploited by a malicious guardian providing a large number of shares to cause DoS during reconstruction?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4c6b8caf-ce15-47fa-af9e-6e56dc326eca",
     "timestamp": "2025-11-21 23:33:57.893710",
     "report_generated": false
@@ -20568,7 +20568,7 @@
     "report_generated": false
   },
   {
-    "question": "The Lagrange basis should satisfy L_i(x_i) = 1 and L_i(x_j) = 0 for i ≠ j. If lagrange is called with roots that don't represent all other interpolation points, could this violate the basis property and corrupt secret reconstruction?",
+    "question": "The Lagrange basis should satisfy L_i(x_i) = 1 and L_i(x_j) = 0 for i \u2260 j. If lagrange is called with roots that don't represent all other interpolation points, could this violate the basis property and corrupt secret reconstruction?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7cb15f14-e3cf-4fd7-af3e-8a86dfaa27ab",
     "timestamp": "2025-11-21 23:45:06.911104",
     "report_generated": false
@@ -20688,7 +20688,7 @@
     "report_generated": false
   },
   {
-    "question": "The vanish function computes the product ∏(x - root) starting from F::ONE. poly.rs:11-13 If called with an empty iterator of roots, it returns F::ONE. Could this be exploited in Lagrange interpolation to create a trivial denominator that bypasses threshold security?",
+    "question": "The vanish function computes the product \u220f(x - root) starting from F::ONE. poly.rs:11-13 If called with an empty iterator of roots, it returns F::ONE. Could this be exploited in Lagrange interpolation to create a trivial denominator that bypasses threshold security?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d95ce712-fdc7-4a93-b4a7-b455848e3278",
     "timestamp": "2025-11-21 23:53:19.295365",
     "report_generated": false
@@ -21072,7 +21072,7 @@
     "report_generated": false
   },
   {
-    "question": "Guardian Shuffle Randomness: Can predictable shuffling leak mapping guardian→share?",
+    "question": "Guardian Shuffle Randomness: Can predictable shuffling leak mapping guardian\u2192share?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1db0138d-6693-41e4-b3ba-a50bc322386d",
     "timestamp": "2025-11-22 00:20:38.173773",
     "report_generated": false
@@ -21384,7 +21384,7 @@
     "report_generated": false
   },
   {
-    "question": "Index Type Conversion: Does usize → u64 → Fr conversion risk overflow?",
+    "question": "Index Type Conversion: Does usize \u2192 u64 \u2192 Fr conversion risk overflow?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_efd8618e-3d11-494e-975c-0913f72fcdd6",
     "timestamp": "2025-11-22 00:43:15.391851",
     "report_generated": false
@@ -23046,7 +23046,7 @@
     "report_generated": false
   },
   {
-    "question": "Evaluation Point Collision: Can node_id.eval_point() collide with another node’s evaluation point?",
+    "question": "Evaluation Point Collision: Can node_id.eval_point() collide with another node\u2019s evaluation point?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0271ea3a-333a-4deb-8f2f-3219c35d4290",
     "timestamp": "2025-11-22 04:58:29.535854",
     "report_generated": false
@@ -23574,7 +23574,7 @@
     "report_generated": false
   },
   {
-    "question": "Default Values: At line 24, MskRecordCollection derives Default—could this introduce uninitialized state bugs when loading non-existent keys?",
+    "question": "Default Values: At line 24, MskRecordCollection derives Default\u2014could this introduce uninitialized state bugs when loading non-existent keys?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_39684011-8620-48b8-b22f-2568ec4f908c",
     "timestamp": "2025-11-22 05:36:42.984717",
     "report_generated": false
@@ -23670,7 +23670,7 @@
     "report_generated": false
   },
   {
-    "question": "Collection Name Conflict: The collection name 'map:associations' at line 30—could other endpoints accidentally access this collection and corrupt data?",
+    "question": "Collection Name Conflict: The collection name 'map:associations' at line 30\u2014could other endpoints accidentally access this collection and corrupt data?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_21f255d3-3515-4eb7-99a6-a0ecb21addeb",
     "timestamp": "2025-11-22 05:43:45.562550",
     "report_generated": false
@@ -24300,7 +24300,7 @@
     "report_generated": false
   },
   {
-    "question": "Timestamp Validation: No timestamps or nonces—can requests be replayed indefinitely? init.rs:48",
+    "question": "Timestamp Validation: No timestamps or nonces\u2014can requests be replayed indefinitely? init.rs:48",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_19cc5369-b64d-4540-bf85-236ee6ea9b26",
     "timestamp": "2025-11-22 06:30:24.657824",
     "report_generated": false
@@ -24330,7 +24330,7 @@
     "report_generated": false
   },
   {
-    "question": "Endpoint Authentication: No caller identity verification—can anyone initialize nodes? init.rs:38-43",
+    "question": "Endpoint Authentication: No caller identity verification\u2014can anyone initialize nodes? init.rs:38-43",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d9771976-73c8-43c3-a43b-15aab25eac00",
     "timestamp": "2025-11-22 06:31:38.426320",
     "report_generated": false
@@ -25182,7 +25182,7 @@
     "report_generated": false
   },
   {
-    "question": "Bypass of Recovery Initiation: Does endpoint allow skipping steps 1–3 of recovery?",
+    "question": "Bypass of Recovery Initiation: Does endpoint allow skipping steps 1\u20133 of recovery?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_196ca03e-d151-4d87-a870-58d887c6c890",
     "timestamp": "2025-11-22 07:47:05.730686",
     "report_generated": false
@@ -25218,7 +25218,7 @@
     "report_generated": false
   },
   {
-    "question": "Partial Share Set Retrieval: Can guardians’ upload order be inferred?",
+    "question": "Partial Share Set Retrieval: Can guardians\u2019 upload order be inferred?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_55f823e8-ad4a-4210-9e23-964ab37fe071",
     "timestamp": "2025-11-22 07:49:33.207189",
     "report_generated": false
