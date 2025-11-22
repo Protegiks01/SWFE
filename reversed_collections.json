@@ -10948,5 +10948,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2ce95c2f-ee55-4ece-bfa1-8e95baca5c23",
     "timestamp": "2025-11-22 04:39:46.931895",
     "report_generated": false
+  },
+  {
+    "question": "Off-Chain Storage Overflow: Can an attacker fill storage and block writes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f42aa338-a690-46df-b878-cd508937a8fc",
+    "timestamp": "2025-11-22 04:41:00.345146",
+    "report_generated": false
+  },
+  {
+    "question": "State Migration Attack: Are migrations secure during upgrades?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e7a864ef-5c33-43ec-a96e-b70f40183f6d",
+    "timestamp": "2025-11-22 04:41:13.423049",
+    "report_generated": false
+  },
+  {
+    "question": "Concurrent Secret Access: Can concurrent reads leak info about access patterns?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_116d0cce-ca82-4680-a015-a346d9a730b7",
+    "timestamp": "2025-11-22 04:41:27.436077",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Key Derivation Weakness: Is storage key derivation predictable or guessable?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bfb69ccc-51f3-4457-9be7-e4340b2ecd6f",
+    "timestamp": "2025-11-22 04:41:41.323436",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Share Distribution Verification: Is distribution ceremony verified?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0c1b01f0-ef1a-4a41-8329-5bdb9d098931",
+    "timestamp": "2025-11-22 04:41:55.867045",
+    "report_generated": false
+  },
+  {
+    "question": "State Version Mismatch: Can outdated serialized state coexist silently?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c6c861d3-d12c-4c5c-9bac-af20308ab1da",
+    "timestamp": "2025-11-22 04:42:11.715399",
+    "report_generated": false
+  },
+  {
+    "question": "Node Decommissioning Attack: Are secrets deleted when nodes are removed?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_adbb5fe8-acf3-4ab9-b407-eac1b65554ef",
+    "timestamp": "2025-11-22 04:42:29.368895",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Share Backup Weakness: Are backups accessible or poorly protected?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e248c4b8-9ce1-4508-9367-e0631a68c063",
+    "timestamp": "2025-11-22 04:42:48.410567",
+    "report_generated": false
+  },
+  {
+    "question": "Off-Chain Context Manipulation: Can OffChainContext be manipulated to retrieve wrong secrets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9a3ca7cc-ae8c-41ec-b6d1-68bbcae6977d",
+    "timestamp": "2025-11-22 04:43:09.142070",
+    "report_generated": false
+  },
+  {
+    "question": "State Consistency Check Missing: Are swafe_public_key and vdrf_public_key validated for consistency?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_83dcde81-7cfd-4fc1-8b73-3cd06da88b58",
+    "timestamp": "2025-11-22 04:43:30.138060",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Share Zero Value: Can secret_share be forced to zero via initialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d883582f-0013-405c-96d9-998d309fef40",
+    "timestamp": "2025-11-22 04:43:53.275303",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Collection Name Collision: Can COLLECTION_NAME collide with other namespaces init.rs:35?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d223005a-1c20-4c52-a674-cb048decbe01",
+    "timestamp": "2025-11-22 04:44:16.981998",
+    "report_generated": false
+  },
+  {
+    "question": "Off-Chain Secret Rotation: Can old secrets still be used after rotation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7b5594d0-2b44-4cbd-88c0-aeeda364b9f9",
+    "timestamp": "2025-11-22 04:44:41.660233",
+    "report_generated": false
+  },
+  {
+    "question": "Node Configuration Mismatch: Does state.nodes reflect real node configuration?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_40b7da87-15ca-4ada-8816-085086b77b2c",
+    "timestamp": "2025-11-22 04:45:07.529058",
+    "report_generated": false
+  },
+  {
+    "question": "State Serialization Malleability: Can serialized state be crafted to deserialize into unintended values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_58e41c8d-e39a-47ef-9efc-96f9cec34195",
+    "timestamp": "2025-11-22 04:45:34.922688",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Share Leakage via Errors: Do partial_eval errors leak secret_share content?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ba939699-d173-4579-841c-d73afb25f070",
+    "timestamp": "2025-11-22 04:46:04.955147",
+    "report_generated": false
+  },
+  {
+    "question": "Off-Chain Storage Tampering: Can compromised nodes modify OffchainSecrets init.rs:28-36?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c458ef69-44fc-4682-af53-423176aa21e9",
+    "timestamp": "2025-11-22 04:46:34.623401",
+    "report_generated": false
+  },
+  {
+    "question": "State Deserialization Race Condition: Can concurrent deserialization cause inconsistent swafe/vdrf public keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d5b09b80-a16b-413d-a26e-d99e0a210b6b",
+    "timestamp": "2025-11-22 04:47:05.083413",
+    "report_generated": false
+  },
+  {
+    "question": "Node ID Binding Weakness: Does stored_secret.node_id.0 eval.rs:38 match executing node?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9feab06e-f957-4629-ac2d-828bf4416ef4",
+    "timestamp": "2025-11-22 04:47:35.333094",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Share Persistence Attack: Can stored_secret.secret.secret_share eval.rs:47 leak via storage side channels?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a54f3bed-7f31-4127-8bf7-15bd7851a456",
+    "timestamp": "2025-11-22 04:48:05.611555",
+    "report_generated": false
+  },
+  {
+    "question": "Off-Chain Secret Initialization Check: Can initialization be raced to insert malicious secrets eval.rs:34-35?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1dd95c79-018f-4daa-a914-c00d09f628a7",
+    "timestamp": "2025-11-22 04:48:37.765336",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Security Degradation: Can t-1 corrupted nodes infer VDRF secrets combined with metadata?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e63017cb-5009-492a-82d0-cbbd899ede2c",
+    "timestamp": "2025-11-22 04:49:09.451647",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Output Uniqueness: Are different emails guaranteed distinct VDRF outputs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_423c93a5-0c44-43b2-9c76-cca1d9d46143",
+    "timestamp": "2025-11-22 04:49:41.060975",
+    "report_generated": false
+  },
+  {
+    "question": "Evaluation Context Binding: Are outputs bound to node + timestamp to prevent replay?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e88c5ee8-3d93-46e6-870b-44960630c972",
+    "timestamp": "2025-11-22 04:50:14.207023",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Share Refresh Missing: Are secret shares refreshed periodically?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8ae42b39-c138-4a75-bc81-c40a45bdcf2d",
+    "timestamp": "2025-11-22 04:50:46.990544",
+    "report_generated": false
   }
 ]
