@@ -2,6 +2,9 @@ name: Run Report Automation
 
 on:
   workflow_dispatch:  # allows manual trigger from Actions tab
+  push:
+    branches:
+      - master
 
 permissions:
   contents: write
