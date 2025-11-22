@@ -9448,5 +9448,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_07b3ef67-9686-4d44-bd42-c4ffabd0768c",
     "timestamp": "2025-11-22 00:36:47.498826",
     "report_generated": false
+  },
+  {
+    "question": "Share Interpolation at Non-Zero Points: Can attackers compute polynomial values at other points?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bf03c6a4-6cb3-42c6-acb8-6e61205d4b75",
+    "timestamp": "2025-11-22 00:38:05.472699",
+    "report_generated": false
+  },
+  {
+    "question": "Partial Recovery Information: Does incorrect output leak partial information?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d5690ee2-a7a0-4c66-bdc6-35ca1b012413",
+    "timestamp": "2025-11-22 00:38:18.770023",
+    "report_generated": false
+  },
+  {
+    "question": "Share Permutation Invariance: Is recovery invariant under share ordering?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3c21c69b-4337-4364-ab1b-ef778f091e21",
+    "timestamp": "2025-11-22 00:38:32.847932",
+    "report_generated": false
+  },
+  {
+    "question": "Share Substitution: Are injected fake shares detected?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3434c53f-1af9-49d2-8595-bc7a51bc7056",
+    "timestamp": "2025-11-22 00:38:46.770698",
+    "report_generated": false
+  },
+  {
+    "question": "Linear Combination Manipulation: Can t-1 shares produce partial leakage via interpolation math?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ec4c7584-cfc2-42f6-89d3-85997c5a0bcd",
+    "timestamp": "2025-11-22 00:39:01.532321",
+    "report_generated": false
+  },
+  {
+    "question": "Vanishing Polynomial Calculation: Can crafted shares break vanishing polynomial computation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c9566810-f511-453f-a483-6d1d4da4a319",
+    "timestamp": "2025-11-22 00:39:17.575784",
+    "report_generated": false
+  },
+  {
+    "question": "Share Index Validation: Are indices validated before interpolation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0e2071d2-a467-40bc-b281-d7905bb143c4",
+    "timestamp": "2025-11-22 00:39:35.401480",
+    "report_generated": false
+  },
+  {
+    "question": "Duplicate Share Handling: Do duplicates break interpolation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d6e65d52-d887-49a8-954f-78da185aca91",
+    "timestamp": "2025-11-22 00:39:55.247027",
+    "report_generated": false
+  },
+  {
+    "question": "Interpolation Point Selection: Why evaluate at zero, and can alternative points leak data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3f0759e3-c2e4-48ec-8da3-3b47d06f251e",
+    "timestamp": "2025-11-22 00:40:16.721943",
+    "report_generated": false
+  },
+  {
+    "question": "Interpolation Numerical Stability: Can division-by-zero occur in Lagrange interpolation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8ac50ede-6d2a-41bc-9fd6-fbff8fce6528",
+    "timestamp": "2025-11-22 00:40:38.630900",
+    "report_generated": false
+  },
+  {
+    "question": "Entropy Source Validation: Is cryptographic RNG enforced or can attackers inject weak RNG?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1626ace0-060a-4333-b008-610d5538394e",
+    "timestamp": "2025-11-22 00:41:01.759039",
+    "report_generated": false
+  },
+  {
+    "question": "Randomness Exhaustion: Can large n exhaust entropy sources?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b798198e-3e1a-4250-8bfb-671bd1060b11",
+    "timestamp": "2025-11-22 00:41:26.017649",
+    "report_generated": false
+  },
+  {
+    "question": "Share Entropy Measurement: Do shares preserve full field entropy?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_38f4517f-eeb8-4b35-9f75-493d33739001",
+    "timestamp": "2025-11-22 00:41:51.664100",
+    "report_generated": false
+  },
+  {
+    "question": "Coefficient Reuse Across Sharings: Can repeated share() calls leak correlations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c9d1efb1-b0b2-42c6-b292-787607edae1b",
+    "timestamp": "2025-11-22 00:42:19.389659",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Entropy vs Coefficient Entropy: Does low-entropy secrets remain hidden?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8d859f55-a161-40df-9bd1-66ebe30b9c89",
+    "timestamp": "2025-11-22 00:42:46.971503",
+    "report_generated": false
+  },
+  {
+    "question": "Index Type Conversion: Does usize → u64 → Fr conversion risk overflow?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_efd8618e-3d11-494e-975c-0913f72fcdd6",
+    "timestamp": "2025-11-22 00:43:15.391851",
+    "report_generated": false
+  },
+  {
+    "question": "Non-Sequential Index Support: share() creates sequential indices only - is this limiting or exploitable?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0f2316a6-ce3d-4126-94c6-28e493d5cc50",
+    "timestamp": "2025-11-22 00:43:42.943283",
+    "report_generated": false
+  },
+  {
+    "question": "Index Overflow: Can saturating_add cause index collisions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_de911c71-2b8d-4400-b772-1231c35bdbb8",
+    "timestamp": "2025-11-22 00:44:11.986286",
+    "report_generated": false
+  },
+  {
+    "question": "Index Zero Handling: What happens if a share is assigned index 0?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4b7c7d97-bd32-4e5e-a546-d699952db2c6",
+    "timestamp": "2025-11-22 00:44:41.917624",
+    "report_generated": false
+  },
+  {
+    "question": "Index Offset-by-One: Is there an index mismatch between generation and recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6217c64c-63e8-45fd-ad04-3e84908275ee",
+    "timestamp": "2025-11-22 00:45:13.463311",
+    "report_generated": false
+  },
+  {
+    "question": "Small Share Values: Can unusually small shares be brute-forced?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ce2ca05c-3e5f-4224-9e03-446c3dbf2d34",
+    "timestamp": "2025-11-22 00:45:43.805505",
+    "report_generated": false
+  },
+  {
+    "question": "Share Value Correlation: Are share values truly independent?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3eace620-989a-4889-be28-5a99fff06898",
+    "timestamp": "2025-11-22 00:46:12.973357",
+    "report_generated": false
+  },
+  {
+    "question": "Zero Share Detection: Does a zero share leak information about the polynomial?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4581afce-3d88-4158-98d2-bf53291ff62d",
+    "timestamp": "2025-11-22 00:46:42.136701",
+    "report_generated": false
+  },
+  {
+    "question": "Share Value Distribution: Do shares appear uniformly random or leak polynomial structure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e628ab63-2fe1-4fca-a599-32cce8edfbf2",
+    "timestamp": "2025-11-22 00:47:12.355429",
+    "report_generated": false
+  },
+  {
+    "question": "Share Value Uniqueness: Can share collisions occur and affect recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ceb89aaa-7d7a-4491-b905-6c3c9e48cad6",
+    "timestamp": "2025-11-22 00:47:39.579441",
+    "report_generated": false
   }
 ]
