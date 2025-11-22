@@ -12448,5 +12448,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a79310a1-957b-4607-a868-4959413b40b6",
     "timestamp": "2025-11-22 06:28:57.846952",
     "report_generated": false
+  },
+  {
+    "question": "TLS Client Certificate: Should endpoint require client certificates? init.rs:38-43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9bb25e32-8189-4c41-a6db-30e03d71242e",
+    "timestamp": "2025-11-22 06:30:11.593661",
+    "report_generated": false
+  },
+  {
+    "question": "Timestamp Validation: No timestamps or nonces—can requests be replayed indefinitely? init.rs:48",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_19cc5369-b64d-4540-bf85-236ee6ea9b26",
+    "timestamp": "2025-11-22 06:30:24.657824",
+    "report_generated": false
+  },
+  {
+    "question": "Replay Attack on Request: Can old requests be replayed after restarts? init.rs:48-71",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_87f7328a-3b32-48ba-ba3e-290403cb937d",
+    "timestamp": "2025-11-22 06:30:38.125672",
+    "report_generated": false
+  },
+  {
+    "question": "Signature-Based Authentication: Should request be signed? Missing currently. init.rs:48",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6b12fb88-a913-43c8-8aa7-4e06b526dfef",
+    "timestamp": "2025-11-22 06:30:51.675626",
+    "report_generated": false
+  },
+  {
+    "question": "IP Address Filtering: Should init only be allowed from specific IP? init.rs:38-43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9b7342d5-44a3-4e78-9481-f681545187a4",
+    "timestamp": "2025-11-22 06:31:05.984820",
+    "report_generated": false
+  },
+  {
+    "question": "Node Ownership Verification: No check requester owns node_id. Can attacker init others' nodes? init.rs:51-54",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d6b4c3f0-96d8-454c-95bc-51d7cd06aca6",
+    "timestamp": "2025-11-22 06:31:21.543512",
+    "report_generated": false
+  },
+  {
+    "question": "Endpoint Authentication: No caller identity verification—can anyone initialize nodes? init.rs:38-43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d9771976-73c8-43c3-a43b-15aab25eac00",
+    "timestamp": "2025-11-22 06:31:38.426320",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Read Amplification: Does load() cause excessive reads? init.rs:44-46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_006ffeb8-e32e-42a9-9a14-2dc01a60513c",
+    "timestamp": "2025-11-22 06:31:56.999501",
+    "report_generated": false
+  },
+  {
+    "question": "Collection Name Injection: Can name contain malicious characters? init.rs:35",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5475f9c4-0b8f-496a-8928-e3aae742ed7d",
+    "timestamp": "2025-11-22 06:32:17.029544",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Compression Side-Channel: Can compressed size leak entropy? init.rs:71",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ae269262-1208-4fa1-8421-e023cdc88b93",
+    "timestamp": "2025-11-22 06:32:39.250935",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Immutability After Storage: Can stored secrets be modified by any means? init.rs:71",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_691d196c-0772-4d02-bdff-5086a4d6753c",
+    "timestamp": "2025-11-22 06:33:01.982260",
+    "report_generated": false
+  },
+  {
+    "question": "StrEncoded Storage Overhead: Does encoding overhead cause storage issues? init.rs:24",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3c58cb42-bbe7-4604-a4a3-3991745676fa",
+    "timestamp": "2025-11-22 06:33:25.650981",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Rollback Scenario: If error occurs after storing, is change rolled back? init.rs:71-81",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4b01d8ae-c0d8-4a40-85fb-e34f424127bb",
+    "timestamp": "2025-11-22 06:33:50.118615",
+    "report_generated": false
+  },
+  {
+    "question": "Default Value Semantics: Can default OffchainSecrets be mistaken as real? init.rs:28-29",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_75aac8c2-be8c-4107-b3fa-f2942294cfba",
+    "timestamp": "2025-11-22 06:34:16.004662",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Key Enumeration: Can attacker enumerate stored secrets? init.rs:31-36",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f30e4027-8296-4d4b-b085-f19caa4bf27d",
+    "timestamp": "2025-11-22 06:34:42.748806",
+    "report_generated": false
+  },
+  {
+    "question": "OffChainContext Mutability: Can multiple storage calls cause unintended state changes? init.rs:39-71",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_02f225e1-871a-4d40-985d-31d0e466e176",
+    "timestamp": "2025-11-22 06:35:11.248658",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Metadata Leakage: Does backend expose metadata that leaks secret info? init.rs:71",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dfed0bc7-60c7-4fae-a8db-7f5ef855e16c",
+    "timestamp": "2025-11-22 06:35:40.575882",
+    "report_generated": false
+  },
+  {
+    "question": "Concurrent Read-Write Hazard: Can other endpoints read partial data during init? init.rs:44-71",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7a9ca2de-6f97-4d1d-976a-cb328142e828",
+    "timestamp": "2025-11-22 06:36:11.114586",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Backend Assumptions: Does logic assume incompatible backend behavior? init.rs:71",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_06a77291-ce64-47ca-8656-83fb0f28c96d",
+    "timestamp": "2025-11-22 06:36:42.940646",
+    "report_generated": false
+  },
+  {
+    "question": "Value Deserialization Failure: What happens if stored secret corrupts and load() fails? init.rs:31-36",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4a311eeb-fa57-4358-af14-412fba6d83b6",
+    "timestamp": "2025-11-22 06:37:14.058106",
+    "report_generated": false
+  },
+  {
+    "question": "Key Serialization in Mapping: Is key () serialized deterministically? init.rs:31-36",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_90d37133-af23-42f5-b941-92db50559510",
+    "timestamp": "2025-11-22 06:37:46.130348",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Quota Exhaustion: Can attacker exhaust quota by repeated init/de-init? init.rs:71",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e7477351-7727-4386-b361-821040fecca2",
+    "timestamp": "2025-11-22 06:38:19.162625",
+    "report_generated": false
+  },
+  {
+    "question": "Clone Semantics in Storage: Can shallow vs deep clone bugs corrupt stored data? init.rs:22-26",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c86ecbfe-b472-4808-b8cf-c548eb2c73db",
+    "timestamp": "2025-11-22 06:38:52.085172",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Transaction Atomicity: If crash occurs mid-way, can node get stuck? init.rs:44-71",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7062d08f-223d-40dd-b851-fa223e5dd2b3",
+    "timestamp": "2025-11-22 06:39:24.567289",
+    "report_generated": false
+  },
+  {
+    "question": "Mapping Collection Name Collision: Could other modules use same collection name 'map:node-secret'? init.rs:28-36",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8c9dd2b3-b668-4d2d-9014-71f77fe4941a",
+    "timestamp": "2025-11-22 06:39:54.774392",
+    "report_generated": false
   }
 ]
