@@ -8698,5 +8698,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2202bf45-c345-424c-a4b4-66048c92a386",
     "timestamp": "2025-11-22 03:58:43.565480",
     "report_generated": false
+  },
+  {
+    "question": "Missing Write Permission Checks: Can attacker overwrite victim data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8cbf5d16-8132-4b84-be99-d38131d2630e",
+    "timestamp": "2025-11-22 04:00:00.367980",
+    "report_generated": false
+  },
+  {
+    "question": "No Collection-Level ACLs: Can any endpoint access any collection?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c6fbf041-0379-47e4-a7ef-8b46fc68b11d",
+    "timestamp": "2025-11-22 04:00:13.688158",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Account Write: Can attacker submit shares for wrong AccountId?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ce76adae-8ba8-49a1-bc05-2720dee795ca",
+    "timestamp": "2025-11-22 04:00:27.118485",
+    "report_generated": false
+  },
+  {
+    "question": "Email Association Hijacking: Can attacker overwrite MskRecord for victim?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c14fcd85-0cd1-4fc7-87c7-5b496e4618ba",
+    "timestamp": "2025-11-22 04:00:40.753369",
+    "report_generated": false
+  },
+  {
+    "question": "Privilege Escalation: Can low-privilege code read/write OffchainSecrets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_15905226-6266-4203-9e73-8ce44e3a50e2",
+    "timestamp": "2025-11-22 04:00:55.537558",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Impersonation: Can attacker upload shares without proving guardian identity?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4e4c9d03-20b0-4c9d-95e6-a6479618627f",
+    "timestamp": "2025-11-22 04:01:10.937341",
+    "report_generated": false
+  },
+  {
+    "question": "Unauthorized Secret Modification: Can attacker overwrite node secrets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4b61bcc3-8c52-424b-89ee-cd8e5f2e7638",
+    "timestamp": "2025-11-22 04:01:28.560773",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Endpoint Access: Can endpoints read irrelevant collections?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2c49868d-5056-49a1-a5ee-8e0d7e47df55",
+    "timestamp": "2025-11-22 04:01:47.820623",
+    "report_generated": false
+  },
+  {
+    "question": "Namespace Confusion: Can requests trigger wrong collection loads?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9df3724e-c79a-4bb9-b3f2-2619eb2acfe0",
+    "timestamp": "2025-11-22 04:02:08.235913",
+    "report_generated": false
+  },
+  {
+    "question": "Arbitrary Mapping Implementations: Can malicious code access arbitrary storage?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e66a3c48-766f-40f8-b6ba-6c20d0035831",
+    "timestamp": "2025-11-22 04:02:29.830256",
+    "report_generated": false
+  },
+  {
+    "question": "Forged OffChainContext: Can manipulated context bypass all checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c14ecc88-c3c5-42c9-a6a3-b87113a22a33",
+    "timestamp": "2025-11-22 04:02:52.221007",
+    "report_generated": false
+  },
+  {
+    "question": "In HttpRouter::dispatch(), can an attacker craft a URI with path traversal sequences (e.g., ../, ./) to bypass route registration and access unintended endpoints, potentially violating access control for sensitive operations like account recovery? mod.rs:88-91",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2867417d-ed68-4f1a-8a10-b8efc11c9420",
+    "timestamp": "2025-11-22 04:03:16.254703",
+    "report_generated": false
+  },
+  {
+    "question": "Does the matchit::Router library used in HttpRouter::dispatch() properly canonicalize URIs before matching, or could an attacker use URL-encoded characters, double slashes, or Unicode normalization tricks to access routes that should be restricted? mod.rs:83-86",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3be1b8d1-543c-48e1-a637-9a0bae653737",
+    "timestamp": "2025-11-22 04:03:41.198618",
+    "report_generated": false
+  },
+  {
+    "question": "In register_routes(), what prevents an attacker from registering duplicate or overlapping routes that could shadow legitimate endpoints, potentially redirecting sensitive operations like backup reconstruction to malicious handlers? mod.rs:140-156",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e31f8eb3-06db-4cc4-9d12-df1a1f1cd211",
+    "timestamp": "2025-11-22 04:04:06.693989",
+    "report_generated": false
+  },
+  {
+    "question": "Can the router.insert() call in HttpRouter::dispatch() fail with a panic instead of returning an error, causing a denial of service when conflicting routes are detected during runtime? mod.rs:85-86",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f40f5fa2-fd17-4d33-88da-b8aa3738af0a",
+    "timestamp": "2025-11-22 04:04:33.358840",
+    "report_generated": false
+  },
+  {
+    "question": "Does HttpRouter::insert() validate that the route parameter doesn't contain null bytes or other control characters that could cause routing confusion in the underlying matchit library? mod.rs:65-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_65ce5170-4d61-43c7-8261-0538f46b196a",
+    "timestamp": "2025-11-22 04:05:01.280158",
+    "report_generated": false
+  },
+  {
+    "question": "In HttpRouter::dispatch(), if request.uri contains query parameters or fragments (e.g., /init?param=value#fragment), are these properly stripped before route matching to prevent bypassing authentication checks? mod.rs:88-91",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ef8467be-4d27-44c8-8a55-aca6e6cde07b",
+    "timestamp": "2025-11-22 04:05:30.404207",
+    "report_generated": false
+  },
+  {
+    "question": "Could an attacker exploit the Params extraction mechanism to inject malicious parameter values that are not validated by endpoint handlers, leading to unauthorized access to accounts or backups? mod.rs:103-104",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f06693de-d537-4e3a-b311-2d621c4f36e2",
+    "timestamp": "2025-11-22 04:06:02.671821",
+    "report_generated": false
+  },
+  {
+    "question": "Does the routing logic enforce HTTPS-only access for sensitive endpoints like VDRF evaluation and account recovery, preventing man-in-the-middle attacks that could leak email certificates or recovery shares? mod.rs:77-104",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e2f39fdd-aa76-4e1e-b3df-ab76870cf8a0",
+    "timestamp": "2025-11-22 04:06:34.662905",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker send requests with extremely long URIs to exhaust memory during route matching in router.at(), causing denial of service on the off-chain node? mod.rs:89-91",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bd3f5c26-bda6-4f27-9161-81fba15577fc",
+    "timestamp": "2025-11-22 04:07:06.067305",
+    "report_generated": false
+  },
+  {
+    "question": "In HttpRouter::dispatch(), if multiple HttpMethod variants are registered for the same route, does the method lookup properly distinguish between GET, POST, and PUT to prevent unintended state modifications? mod.rs:95-101",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_91dd964c-9c62-4fbf-bd08-75fdabd2bb9e",
+    "timestamp": "2025-11-22 04:07:38.155710",
+    "report_generated": false
+  },
+  {
+    "question": "In HttpMethod::method_type(), the comparison uses to_lowercase() on the request method. Could an attacker send a method with mixed case or non-standard casing to bypass method validation? mod.rs:97-100",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_382465d9-fe71-44b9-8874-22e453541453",
+    "timestamp": "2025-11-22 04:08:10.302932",
+    "report_generated": false
+  },
+  {
+    "question": "Does the HttpMethod enum properly restrict which HTTP verbs are allowed? Could an attacker use HEAD, OPTIONS, TRACE, or CONNECT methods to bypass security checks or leak information? mod.rs:107-117",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7edb27c2-3cc9-4df8-a909-24af0f6d11e0",
+    "timestamp": "2025-11-22 04:08:41.824143",
+    "report_generated": false
+  },
+  {
+    "question": "In the route registration for init endpoint, why is only POST method allowed? Could a malicious node repeatedly initialize the VDRF node by crafting GET requests if the method check is bypassed? mod.rs:149-155",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9f9f967f-bdb4-4d50-9f73-a9117da64522",
+    "timestamp": "2025-11-22 04:09:13.346808",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker chain multiple HTTP methods (e.g., POST followed by GET) to the same endpoint to bypass idempotency checks or re-execute one-time operations like account initialization? mod.rs:95-101",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d647def1-aec5-439d-9949-28d69f35e999",
+    "timestamp": "2025-11-22 04:09:44.377564",
+    "report_generated": false
   }
 ]
