@@ -9448,5 +9448,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2c8021dc-d4d6-4473-86e9-cd38e36132d1",
     "timestamp": "2025-11-22 04:53:54.839014",
     "report_generated": false
+  },
+  {
+    "question": "Does json::to_string() in the error path handle serialization failures gracefully? Could double-faults cause panics that crash the off-chain node? json.rs:27-32",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d6a4ab9d-7f55-4c33-bf45-e6df3ccc2cef",
+    "timestamp": "2025-11-22 04:55:20.883115",
+    "report_generated": false
+  },
+  {
+    "question": "In create_json_response(), when json::to_string() is called on user-provided data, could circular references or infinite recursion cause hangs? mod.rs:30-31",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5734a975-4a5b-45b9-87ca-c5aba33507e3",
+    "timestamp": "2025-11-22 04:55:33.921714",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker send JSON with extremely large numbers (e.g., 9e999999) that cause parsing to hang or produce incorrect values? json.rs:17-24",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dbd54488-5d83-41f5-a1af-684b79e40724",
+    "timestamp": "2025-11-22 04:55:47.832272",
+    "report_generated": false
+  },
+  {
+    "question": "Does the JSON deserialization enforce strict mode to reject unknown fields? Could attackers probe for undocumented features by adding extra fields? mod.rs:22-23",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_14a52ab8-b1b1-41f9-bd10-13a8a65ed9e6",
+    "timestamp": "2025-11-22 04:56:01.616826",
+    "report_generated": false
+  },
+  {
+    "question": "When JSON contains Unicode escape sequences (e.g., \\u0000), are they properly validated to prevent null byte injection into C-style string operations? json.rs:17-24",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bcc1936d-f896-4646-8f2d-131a4462d16b",
+    "timestamp": "2025-11-22 04:56:16.496855",
+    "report_generated": false
+  },
+  {
+    "question": "Can attackers use JSON comments (if supported by the parser) to hide malicious payloads from logging but have them processed by the endpoint? mod.rs:22-23",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_04987f95-c5f1-4c02-9c01-efa1abac674f",
+    "timestamp": "2025-11-22 04:56:32.173743",
+    "report_generated": false
+  },
+  {
+    "question": "In HttpRouter::dispatch(), the Params from URL path matching are passed directly to handlers. Could parameter names collide with reserved keywords? mod.rs:103-104",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6b356e0c-4de2-4557-b31c-192331098993",
+    "timestamp": "2025-11-22 04:56:49.464505",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker inject parameters with empty strings, null values, or special characters that bypass validation in endpoint handlers? mod.rs:103-104",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9a2a078f-3170-4c62-94b0-a8488e7c8c33",
+    "timestamp": "2025-11-22 04:57:08.431353",
+    "report_generated": false
+  },
+  {
+    "question": "When route parameters are extracted (e.g., /account/:id), does the router validate that parameter values don't contain path separators or escape sequences? mod.rs:88-91",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_20a63fda-ccc3-438f-970d-6c343500ed4e",
+    "timestamp": "2025-11-22 04:57:28.754763",
+    "report_generated": false
+  },
+  {
+    "question": "Could an attacker use URL encoding tricks (e.g., %2e%2e%2f for ../) in path parameters to bypass sanitization in the router? mod.rs:88-91",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ddf46d37-2557-4567-994a-d9b4536952d5",
+    "timestamp": "2025-11-22 04:57:50.622675",
+    "report_generated": false
+  },
+  {
+    "question": "When multiple parameters are present, does the routing logic enforce ordering or precedence? Could parameter confusion lead to using wrong values? mod.rs:103-104",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bba26f8d-9304-46b3-a14d-72833ca0346a",
+    "timestamp": "2025-11-22 04:58:13.710250",
+    "report_generated": false
+  },
+  {
+    "question": "Does the HTTP dispatch validate request headers to prevent header injection attacks where newlines in headers could add malicious headers? mod.rs:77-82",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_24ef86af-4de1-489a-b4aa-32ac46556cc2",
+    "timestamp": "2025-11-22 04:58:37.440687",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Guardian Authentication: The handler function in upload_share.rs does not verify that the caller is an authorized guardian for the specified backup. Can any user upload arbitrary shares for any account/backup pair, potentially allowing unauthorized parties to inject malicious shares that could compromise backup reconstruction? upload_share.rs:33-74",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_58c941fc-d49e-4eb8-bfc1-be55e3caf2f3",
+    "timestamp": "2025-11-22 04:59:02.793385",
+    "report_generated": false
+  },
+  {
+    "question": "No Account Owner Verification: Does the lack of account owner verification in the upload flow allow malicious actors to upload shares for accounts they don't own, potentially enabling them to participate in unauthorized backup reconstructions? upload_share.rs:41-50",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9e40d649-adc9-4ab5-b236-a845e8932625",
+    "timestamp": "2025-11-22 04:59:29.038317",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Index Validation: The share_id returned from backup.verify() determines which guardian slot is being filled, but is there validation that the uploader is actually the guardian corresponding to that share_id, or can any guardian upload shares for other guardian positions? upload_share.rs:52-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_526d08d0-edf4-4383-8cd2-bf39788b9462",
+    "timestamp": "2025-11-22 04:59:55.753570",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Account Share Upload: Can an attacker who is a guardian for Account A upload shares for Account B if they know the backup_id, potentially polluting the share collection or enabling unauthorized reconstruction? upload_share.rs:64-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5b34f91c-3019-4659-ba7f-bc02de69d566",
+    "timestamp": "2025-11-22 05:00:23.866686",
+    "report_generated": false
+  },
+  {
+    "question": "Off-Chain Node Impersonation: Since the endpoint appears publicly accessible, can a malicious off-chain node or network adversary impersonate legitimate guardians by uploading shares without cryptographic proof of guardian identity? upload_share.rs:33-38",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f8bf13b8-5c8f-443b-a784-eb076da565e3",
+    "timestamp": "2025-11-22 05:00:52.593732",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Bypass via Unauthorized Uploads: If multiple malicious actors can upload valid-looking shares, could they collectively meet the reconstruction threshold without being actual guardians, violating the invariant that 'recovery of a backup only occurs when more than the specified threshold of Guardians has approved'? upload_share.rs:52-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b593d197-0b8b-4e9b-ae44-0942a82bda9a",
+    "timestamp": "2025-11-22 05:01:21.964730",
+    "report_generated": false
+  },
+  {
+    "question": "Session/Context Authentication: The handler receives an OffChainContext but does not appear to extract or verify any authentication credentials. Should guardian identity be validated through digital signatures or other cryptographic proofs? upload_share.rs:33-38",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_98be79a9-65f2-40b2-9428-0ea6a1516869",
+    "timestamp": "2025-11-22 05:01:50.125542",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Approval Mechanism: The comment mentions shares can be 'equivalent' and allows overwriting, but where is the explicit guardian approval mechanism that ensures each guardian has consented to the reconstruction? upload_share.rs:58-63",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f871ed54-0d31-41dc-bcb1-81f37aa394c7",
+    "timestamp": "2025-11-22 05:02:19.046388",
+    "report_generated": false
+  },
+  {
+    "question": "Account State Check: The code retrieves the account state but only uses it to get the backup. Should there be additional checks on the account status (e.g., recovery mode, locked) before accepting shares? upload_share.rs:44-50",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5fbdb09f-f31c-45bb-8e6b-774d3f0fe7b4",
+    "timestamp": "2025-11-22 05:02:46.983768",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery Initiation Validation: Does the absence of recovery initiation checks allow shares to be uploaded before recovery has been properly initiated by the account owner through email verification? upload_share.rs:33-74",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e108df06-ca16-4d0c-a8ae-29903f6188fa",
+    "timestamp": "2025-11-22 05:03:16.799378",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Revocation: If a guardian has been removed from the backup configuration after the backup was created, can they still upload shares? Is there a mechanism to prevent revoked guardians from participating? upload_share.rs:52-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_35808063-8aff-4086-b1c8-0c64d8145915",
+    "timestamp": "2025-11-22 05:03:46.342788",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Validity Period: Should the endpoint check if the backup is still valid or if it has expired/been superseded before accepting shares? upload_share.rs:48-50",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a42bac52-0615-459a-8625-be40bff2947b",
+    "timestamp": "2025-11-22 05:04:17.677090",
+    "report_generated": false
+  },
+  {
+    "question": "Multiple Backup Disambiguation: An account can have multiple backups. Can confusion between different backups lead to shares being uploaded to the wrong backup's collection? upload_share.rs:41-50",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_469a7433-34fb-4280-b593-5f5ae8930be2",
+    "timestamp": "2025-11-22 05:04:47.338702",
+    "report_generated": false
   }
 ]
