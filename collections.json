@@ -8848,5 +8848,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d647def1-aec5-439d-9949-28d69f35e999",
     "timestamp": "2025-11-22 04:09:44.377564",
     "report_generated": false
+  },
+  {
+    "question": "Does HttpMethod::get_function() return a reference to the dispatch function without additional validation? Could function pointer manipulation lead to calling wrong handlers? mod.rs:130-136",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0d012807-cf39-4410-839f-e29ea6021c8e",
+    "timestamp": "2025-11-22 04:11:03.570894",
+    "report_generated": false
+  },
+  {
+    "question": "In HttpRouter::dispatch(), when a route is not found, the error message 'Invalid URL' is returned. Does this leak information about which endpoints exist on the contract? mod.rs:89-91",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_855997a7-f886-4396-beb7-679a1ae4a4bd",
+    "timestamp": "2025-11-22 04:11:16.663768",
+    "report_generated": false
+  },
+  {
+    "question": "When an invalid HTTP method is used, the error message 'Invalid method' is returned. Could an attacker use timing differences between 'route not found' and 'method not allowed' responses to enumerate valid routes? mod.rs:98-100",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_56247d81-f252-4e03-b147-3228a2e3000b",
+    "timestamp": "2025-11-22 04:11:30.199875",
+    "report_generated": false
+  },
+  {
+    "question": "In http_dispatch(), errors are converted using unwrap_or_else() to return the error response directly. Could sensitive information from ContractError or ServerError be leaked in HTTP responses? mod.rs:170-171",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ccf54695-8d5f-42a9-a90a-7a8dd0030ace",
+    "timestamp": "2025-11-22 04:11:45.491083",
+    "report_generated": false
+  },
+  {
+    "question": "Does the error handling distinguish between client errors (4xx) and server errors (5xx)? Could an attacker infer internal state by observing which error codes are returned for different malformed requests? error.rs:62-110",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_064acf7a-ff87-441f-a354-f5a47c898482",
+    "timestamp": "2025-11-22 04:12:00.381241",
+    "report_generated": false
+  },
+  {
+    "question": "When json::json_error() is called with a custom error message, are there any injection vulnerabilities if the error string contains untrusted data from the request? json.rs:27-32",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_45aa5b4d-ab92-49c1-bf25-464760326a63",
+    "timestamp": "2025-11-22 04:12:16.688982",
+    "report_generated": false
+  },
+  {
+    "question": "In deserialize_request_body(), the function converts the request body to UTF-8. What happens if a user sends a valid JSON request with non-UTF-8 bytes that could pass through to underlying crypto operations? mod.rs:17-19",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a7504727-a1bf-4acd-8724-47fc848dcc9c",
+    "timestamp": "2025-11-22 04:12:34.311308",
+    "report_generated": false
+  },
+  {
+    "question": "Does std::str::from_utf8() properly validate UTF-8 sequences? Could an attacker send overlong UTF-8 encodings or malformed sequences to bypass input validation in endpoint handlers? mod.rs:18-19",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_61ac229f-655c-4ec3-a229-b9384117c434",
+    "timestamp": "2025-11-22 04:12:53.755708",
+    "report_generated": false
+  },
+  {
+    "question": "In deserialize_request_body(), after UTF-8 validation, the body is deserialized using json::from_str(). Could an attacker exploit differences between JSON parsers (serde-json-wasm vs standard serde_json) to craft payloads that bypass validation? mod.rs:22-23",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_adba32b5-afab-49d4-bbb9-1bf377d5a3a7",
+    "timestamp": "2025-11-22 04:13:14.049649",
+    "report_generated": false
+  },
+  {
+    "question": "Does the JSON deserialization enforce maximum depth or recursion limits to prevent stack overflow attacks when parsing deeply nested JSON objects? json.rs:17-24",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cf2bc34a-42d4-43f2-8fcd-21d1174963da",
+    "timestamp": "2025-11-22 04:13:35.901770",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker send JSON with duplicate keys (e.g., {'account_id': 'A', 'account_id': 'B'}) to cause undefined behavior in deserialization, potentially bypassing account ownership checks? mod.rs:13-23",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_518ff10f-6ee6-4299-84b3-703fef7f8c85",
+    "timestamp": "2025-11-22 04:13:58.051009",
+    "report_generated": false
+  },
+  {
+    "question": "In deserialize_request_body(), if the generic type T implements custom deserialization logic, could an attacker craft inputs that exploit unsafe deserialization patterns in the endpoint types? mod.rs:13-23",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e599c2cd-a9d9-4198-b76c-ad5c416c76cb",
+    "timestamp": "2025-11-22 04:14:21.528691",
+    "report_generated": false
+  },
+  {
+    "question": "Does the InvalidRequestBody error reveal whether the failure was due to non-UTF-8 bytes or invalid JSON structure? Could this help an attacker fingerprint the parsing logic? mod.rs:19-22",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bc04970a-ad92-484c-8b30-477f26b231ef",
+    "timestamp": "2025-11-22 04:14:46.006146",
+    "report_generated": false
+  },
+  {
+    "question": "When request.body is very large, could the UTF-8 validation or JSON parsing consume excessive memory, causing the off-chain node to crash or become unresponsive? mod.rs:18-22",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c6902b6f-a660-4b83-bab7-f4bdca59b362",
+    "timestamp": "2025-11-22 04:15:12.410277",
+    "report_generated": false
+  },
+  {
+    "question": "In create_json_response(), does the serialization of response data properly escape special characters to prevent JSON injection attacks if the response includes user-controlled data? mod.rs:26-32",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_975130ae-382c-4fc6-8f03-c15f0a6d9446",
+    "timestamp": "2025-11-22 04:15:38.651444",
+    "report_generated": false
+  },
+  {
+    "question": "Could an attacker send a request body that deserializes successfully but contains unexpected fields that are silently ignored, bypassing validation checks that should reject the request? mod.rs:13-23",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d3b7edb9-83b7-402c-b411-f89e8eab555b",
+    "timestamp": "2025-11-22 04:16:07.129508",
+    "report_generated": false
+  },
+  {
+    "question": "In http_dispatch(), the ContractState is passed by value to the router. If an endpoint modifies the state but returns an error, are those modifications rolled back, or could partial state updates violate invariants? mod.rs:160-164",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6d98c4a7-df30-428a-85f9-7253b3b9cc09",
+    "timestamp": "2025-11-22 04:16:33.729719",
+    "report_generated": false
+  },
+  {
+    "question": "Can multiple concurrent HTTP requests access the same ContractState simultaneously? If so, could race conditions allow double-spending of guardian approval votes or duplicate account registrations? mod.rs:77-82",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f3ec6f55-d091-4dc2-915c-3f069d9bd2b8",
+    "timestamp": "2025-11-22 04:17:00.967562",
+    "report_generated": false
+  },
+  {
+    "question": "Does the routing logic enforce any transaction ordering or nonce checks to prevent replay attacks where an attacker re-submits a valid recovery request multiple times? mod.rs:170-171",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_76b73f3c-26b5-4950-8aa3-e960928883fd",
+    "timestamp": "2025-11-22 04:17:28.713808",
+    "report_generated": false
+  },
+  {
+    "question": "In register_routes(), endpoints for association, account, and reconstruction are registered. Could an attacker exploit the order of registration to shadow critical endpoints with malicious handlers? mod.rs:144-146",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_01b61c50-4d1c-49e4-b67b-b308f0183a07",
+    "timestamp": "2025-11-22 04:17:56.738113",
+    "report_generated": false
+  },
+  {
+    "question": "When DispatchFunction is called, it receives ContractState by value. Does this mean each request operates on a snapshot of state, or could stale reads lead to time-of-check to time-of-use vulnerabilities? mod.rs:37-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_98b73de7-f1b7-45cf-8802-72ffa4e79064",
+    "timestamp": "2025-11-22 04:18:26.060026",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker observe changes to ContractState across requests to infer sensitive information, such as which accounts are being recovered or which guardians have approved recovery requests? mod.rs:103-104",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_95d4ac24-2dc9-4b44-97d6-c6e02c6e3246",
+    "timestamp": "2025-11-22 04:18:55.848106",
+    "report_generated": false
+  },
+  {
+    "question": "In the init endpoint handler registration, the closure captures ctx, state, request, and params. Could closure capture lead to unintended sharing of state across requests? mod.rs:151-154",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_589a7e86-6984-4bae-b139-0cd6c4a92ef5",
+    "timestamp": "2025-11-22 04:19:25.360789",
+    "report_generated": false
+  },
+  {
+    "question": "Does the OffChainContext passed to dispatch functions contain any authentication information? If not, how do endpoint handlers verify that requests come from authorized nodes? mod.rs:77-82",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a4352d78-b183-44cb-af8b-ae0b6cbba41a",
+    "timestamp": "2025-11-22 04:19:54.295572",
+    "report_generated": false
+  },
+  {
+    "question": "Can the nodes map in ContractState be modified via HTTP endpoints? If so, could an attacker add malicious nodes or remove honest nodes to compromise threshold security? lib.rs:22-31",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b2f7a4ad-ab97-4870-84c8-e7418c3568fe",
+    "timestamp": "2025-11-22 04:20:23.767072",
+    "report_generated": false
   }
 ]
