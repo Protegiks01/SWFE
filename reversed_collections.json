@@ -10048,5 +10048,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e7707c9f-9eaf-452a-93b5-eefa7c9952c0",
     "timestamp": "2025-11-22 03:35:35.366851",
     "report_generated": false
+  },
+  {
+    "question": "At line 49, does the error message 'MSK record not found' leak information about whether an email has been associated with an account? get_secret_share.rs:48-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a88305ea-bfed-4fc8-8d7a-c45590cc79c4",
+    "timestamp": "2025-11-22 03:36:46.905312",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker who compromises off-chain storage enumerate all stored EmailKeys at line 48-49 to deanonymize email-to-account associations? get_secret_share.rs:48-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_76cc90ae-b809-436c-a28b-0588665cfc55",
+    "timestamp": "2025-11-22 03:36:59.946705",
+    "report_generated": false
+  },
+  {
+    "question": "Does the storage layer used by MskRecordCollection::load at line 48-49 enforce any access control policies beyond what's implemented in this handler? get_secret_share.rs:48-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c1847501-9b3f-4dd1-8965-bc893b357de2",
+    "timestamp": "2025-11-22 03:37:13.781488",
+    "report_generated": false
+  },
+  {
+    "question": "At line 48-49, if multiple MSK records exist under the same email_tag due to a collision or malicious upload, which one is returned and how does this affect security? get_secret_share.rs:48-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_52ea8ba8-8d25-47ea-9b7a-a3034f43c136",
+    "timestamp": "2025-11-22 03:37:27.719842",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker who knows an EmailKey value directly query the storage at line 48-49 without going through proper email certificate verification? get_secret_share.rs:48-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bcabbee6-cfd8-489a-a8a0-4a1a77832524",
+    "timestamp": "2025-11-22 03:37:42.405311",
+    "report_generated": false
+  },
+  {
+    "question": "At lines 48-49, does MskRecordCollection::load properly validate the email_tag parameter to prevent directory traversal or storage injection attacks? get_secret_share.rs:48-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_505696e1-f2ea-403f-9da1-4c027984f60c",
+    "timestamp": "2025-11-22 03:37:58.537947",
+    "report_generated": false
+  },
+  {
+    "question": "At line 42, if stored_secret.node_id is a StrEncoded<NodeId>, does the .0 access properly unwrap it without losing validation checks? get_secret_share.rs:42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b81ff7d7-cd98-4358-a933-6c18b6d46172",
+    "timestamp": "2025-11-22 03:38:15.959685",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit the error message at line 36 to determine whether specific nodes are initialized or not, leaking topology information? get_secret_share.rs:35-36",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ce31dec7-976c-4356-bead-3a447e2ce94b",
+    "timestamp": "2025-11-22 03:38:35.165598",
+    "report_generated": false
+  },
+  {
+    "question": "If the contract state is migrated or upgraded, will the deserialization at lines 31 and 38 handle legacy formats correctly? get_secret_share.rs:31-40",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b8c3f9a8-9c8f-450b-8b30-39e418d12ff1",
+    "timestamp": "2025-11-22 03:38:56.582285",
+    "report_generated": false
+  },
+  {
+    "question": "At lines 38-40, does the error handling for VDRF public key deserialization distinguish between corrupt data vs incompatible versions? get_secret_share.rs:38-40",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_46cbd4f4-9145-48a0-a3ce-51d05eb11564",
+    "timestamp": "2025-11-22 03:39:18.933403",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker who corrupts the off-chain storage layer inject a malicious StoredOffchainSecret that passes loading at line 35-36 but causes failures later? get_secret_share.rs:35-36",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7c0697f1-1707-47ed-9142-e55b8058ba60",
+    "timestamp": "2025-11-22 03:39:41.863965",
+    "report_generated": false
+  },
+  {
+    "question": "At line 35-36, if multiple threads/requests concurrently access OffchainSecrets::load, are there race conditions that could lead to inconsistent state? get_secret_share.rs:35-36",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8ba86e4c-74ab-4408-82c2-d940f559ef82",
+    "timestamp": "2025-11-22 03:40:06.893953",
+    "report_generated": false
+  },
+  {
+    "question": "Does the handler verify at line 42 that the node_id stored in OffchainSecrets hasn't been tampered with since initialization? get_secret_share.rs:42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ee7a30e3-cd96-4826-9e6c-2b88d1d32686",
+    "timestamp": "2025-11-22 03:40:32.626320",
+    "report_generated": false
+  },
+  {
+    "question": "If the bincode configuration used at lines 31 and 38 differs from that used during serialization, can this lead to silent data corruption? get_secret_share.rs:31-40",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f45bdfe1-a3c2-4e92-95b5-79e13132da2f",
+    "timestamp": "2025-11-22 03:40:58.729254",
+    "report_generated": false
+  },
+  {
+    "question": "At lines 31-32, does the error message for deserialization failure expose sensitive information about the internal structure of state.swafe_public_key? get_secret_share.rs:31-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fa69ab76-b485-4afc-89de-588af4dde130",
+    "timestamp": "2025-11-22 03:41:26.620634",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit concurrent modifications to state.vdrf_public_key at line 38 between deserialization and use at line 46 to cause inconsistencies? get_secret_share.rs:38-46",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3b887589-83e1-4ec7-9605-fa876a91abe5",
+    "timestamp": "2025-11-22 03:41:55.037975",
+    "report_generated": false
+  },
+  {
+    "question": "If state.swafe_public_key at line 31 has been rotated since the MSK record was uploaded, will verification at line 43 fail even for legitimate users? get_secret_share.rs:31-43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a15df563-9c3d-4da8-94bf-5561f12a00fd",
+    "timestamp": "2025-11-22 03:42:23.921510",
+    "report_generated": false
+  },
+  {
+    "question": "At line 42, does the handler validate that stored_secret.node_id.0 matches the expected node ID for this specific off-chain node instance? get_secret_share.rs:42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4aed089f-d64b-4f40-a9e3-e1494239635d",
+    "timestamp": "2025-11-22 03:42:54.043420",
+    "report_generated": false
+  },
+  {
+    "question": "Can a malicious actor who gains write access to off-chain storage overwrite the OffchainSecrets at line 35-36 to impersonate a different node? get_secret_share.rs:35-36",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_62ad46cf-7bbe-4844-ba4d-a311a9cd6366",
+    "timestamp": "2025-11-22 03:43:21.855961",
+    "report_generated": false
+  },
+  {
+    "question": "If OffchainSecrets::load at line 35-36 returns None, does the error message leak information about whether the node was ever initialized? get_secret_share.rs:35-36",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9cf8fd20-d935-4eaa-878b-b73d830bb0eb",
+    "timestamp": "2025-11-22 03:43:50.311644",
+    "report_generated": false
+  },
+  {
+    "question": "At line 35-36, does the handler properly handle the case where the off-chain node has been deinitialized or the stored secret has been deleted? get_secret_share.rs:35-36",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_27ae5cfe-3850-45f2-9193-a4ca54466996",
+    "timestamp": "2025-11-22 03:44:20.261398",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit version mismatches in serialization formats between upload_msk and get_secret_share to cause deserialization errors at lines 31 or 38? get_secret_share.rs:31-40",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c0c331ed-a41e-4fd3-84ed-4a48df72e56d",
+    "timestamp": "2025-11-22 03:44:49.691954",
+    "report_generated": false
+  },
+  {
+    "question": "If the bincode deserialization at lines 31 and 38 fails partway through, are there partial state updates that could corrupt the contract state? get_secret_share.rs:31-40",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9a2680b6-125f-4cae-8d54-d0c3e3d570e9",
+    "timestamp": "2025-11-22 03:45:18.155945",
+    "report_generated": false
+  },
+  {
+    "question": "At line 38, does the deserialization of state.vdrf_public_key validate that the threshold value is consistent with the system setup, preventing threshold manipulation attacks? get_secret_share.rs:38-40",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_397fe539-cdac-40f3-91a4-e686ea123a92",
+    "timestamp": "2025-11-22 03:45:46.714189",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker who compromises contract state replace state.swafe_public_key at line 31 with their own public key to issue fake email certificates? get_secret_share.rs:31-33",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_906e384c-d176-402d-84e3-1c21ae57513f",
+    "timestamp": "2025-11-22 03:46:15.158168",
+    "report_generated": false
   }
 ]
