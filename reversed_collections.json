@@ -9748,5 +9748,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dfd15f69-8ed3-4474-9c9b-53381a8f9b2b",
     "timestamp": "2025-11-22 03:07:22.460995",
     "report_generated": false
+  },
+  {
+    "question": "Guardian Threshold vs SSS Threshold Mismatch: Can inconsistent thresholds between metadata and SSS logic cause unintended bypasses?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_36a7e5ff-7be8-421b-ba51-50b150a6132a",
+    "timestamp": "2025-11-22 03:15:33.841608",
+    "report_generated": false
+  },
+  {
+    "question": "Dynamic Threshold Manipulation: Can an attacker alter stored threshold values in BackupCiphertextV0 to weaken recovery requirements?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3bdc574b-6c9b-498d-acd0-6c6e8285797d",
+    "timestamp": "2025-11-22 03:15:46.683984",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Metadata Loss: Share and Secret do not store threshold metadata - can this cause mismatched recovery logic?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5d466b68-7c5c-4105-9a3e-b92967da5c52",
+    "timestamp": "2025-11-22 03:15:59.914503",
+    "report_generated": false
+  },
+  {
+    "question": "Exact Threshold Enforcement: Does recover() ensure exactly t unique shares are required?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_540e3804-3bd0-4caa-9955-67e3e3ef73ff",
+    "timestamp": "2025-11-22 03:16:14.763676",
+    "report_generated": false
+  },
+  {
+    "question": "Insufficient Shares Silent Failure: Recovery with < t shares returns a wrong secret instead of an error - can this confuse systems relying on correct outputs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9430fe74-4b8c-4ba9-bbd6-38658fa14fdb",
+    "timestamp": "2025-11-22 03:16:29.862522",
+    "report_generated": false
+  },
+  {
+    "question": "Empty Share Vector Attack: share() with n=0 produces zero shares but a non-zero secret - does this permanently brick recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f81d4954-3eb9-4521-a067-531c9bbf32b2",
+    "timestamp": "2025-11-22 03:16:46.062793",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Exceeding Field Size: Can setting t close to the field modulus create interpolation instability?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fa5eef44-0664-4a38-851d-b207c8652162",
+    "timestamp": "2025-11-22 03:17:02.797506",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Count Validation Gap: n is not validated against actual number of guardians - can this cause orphaned or mismatched shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a2296475-4305-4aa1-b597-b81e18f7fb25",
+    "timestamp": "2025-11-22 03:17:22.033785",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Zero Recovery Inconsistency: recover(&[]) returns Secret(pp::Fr::ZERO) - can this be abused to claim recovery of any t=0 backup without authorization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f39b3477-0f27-448c-b26f-64dc1955211d",
+    "timestamp": "2025-11-22 03:17:42.895316",
+    "report_generated": false
+  },
+  {
+    "question": "Mismatch Between Share and Recover Thresholds: Can an attacker combine shares from different thresholds to violate the t-of-n guarantee?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_56735fda-5f9f-4e3a-9445-4b59247ac9e5",
+    "timestamp": "2025-11-22 03:18:04.493990",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery Threshold Bypass: recover() does not validate that the shares slice contains at least t shares - can an attacker attempt recovery with insufficient shares and leak information through interpolation side channels?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_043f2501-41f5-4396-9fb5-70232ee88405",
+    "timestamp": "2025-11-22 03:18:27.504829",
+    "report_generated": false
+  },
+  {
+    "question": "Integer Overflow in Threshold: Can an attacker pass a t value near usize::MAX to cause integer overflow in the coefficient-generation loop?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b9c7cf0f-2be9-4b44-8d9a-2b8e7ac50a31",
+    "timestamp": "2025-11-22 03:18:50.889692",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold-One Vulnerability: With t=1, each individual share can independently recover the secret - can a single compromised guardian steal all backup secrets without cooperation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4adc9b04-c946-446b-93e1-68c00ce77069",
+    "timestamp": "2025-11-22 03:19:16.069610",
+    "report_generated": false
+  },
+  {
+    "question": "Zero Threshold Security: When t=0 in share(), the function returns Secret(pp::Fr::ZERO) and empty shares - does this allow an attacker to bypass guardian approval by creating backups with zero threshold that anyone can recover to a known zero value?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8a5965d8-3a6a-4f0f-b5ce-12a57710ddef",
+    "timestamp": "2025-11-22 03:19:43.020708",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Threshold Upper Bound Validation: In the share() function, can a malicious caller set t > n to create an unrecoverable secret sharing where the number of required shares exceeds the total number of shares generated, permanently locking user funds?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_076d9cea-c871-4e7f-94bf-f9c76c85ac02",
+    "timestamp": "2025-11-22 03:20:09.890788",
+    "report_generated": false
+  },
+  {
+    "question": "At line 54, does encode::StrEncoded(msk_record) ensure canonical encoding to prevent multiple representations of the same data? get_secret_share.rs:54",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_eae1ea64-7c8d-46a5-a6d0-38b9adc5d963",
+    "timestamp": "2025-11-22 03:20:38.317940",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit type confusion by providing a StrEncoded value that deserializes to the wrong type at line 29? get_secret_share.rs:29",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3e9c000a-0ead-4edc-8e14-d470e4ac6e94",
+    "timestamp": "2025-11-22 03:21:07.291050",
+    "report_generated": false
+  },
+  {
+    "question": "If the StrEncoded<VdrfEvaluation> at line 29 contains base64-encoded data, is there proper validation against padding oracle attacks? get_secret_share.rs:29",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8de3a147-0e8a-436e-b2cc-fadd1982739c",
+    "timestamp": "2025-11-22 03:21:36.994405",
+    "report_generated": false
+  },
+  {
+    "question": "At lines 31 and 38, does the bincode deserialization properly handle endianness to prevent cross-platform inconsistencies? get_secret_share.rs:31-40",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bab6ae05-af98-4ab1-96aa-9f102fadbc1c",
+    "timestamp": "2025-11-22 03:22:07.030394",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker send a malformed JSON request at line 29 with deeply nested structures to trigger stack overflow or excessive memory consumption? get_secret_share.rs:29",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_920fbbb5-a6eb-4135-9aea-54102e5fd4e8",
+    "timestamp": "2025-11-22 03:22:36.948885",
+    "report_generated": false
+  },
+  {
+    "question": "At line 29, does deserialize_request_body properly validate that the Request structure contains no unexpected fields that could exploit parser vulnerabilities? get_secret_share.rs:29",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5f2a8b1d-6280-4ae7-a3cd-0abab34fc5fe",
+    "timestamp": "2025-11-22 03:23:07.571451",
+    "report_generated": false
+  },
+  {
+    "question": "Does the error handling properly distinguish between user errors and system errors without leaking sensitive information? get_secret_share.rs:29-57",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6c4b61fb-2a2e-47db-b9e5-3cfc6c38bd9f",
+    "timestamp": "2025-11-22 03:23:36.869762",
+    "report_generated": false
+  },
+  {
+    "question": "If deserialization errors occur at lines 31, 38, or 48-49, do stack traces or debug information leak in production error responses? get_secret_share.rs:31-49",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b625d09d-baa4-4173-aede-ffe78fa0f9d1",
+    "timestamp": "2025-11-22 03:24:06.165043",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit verbose error messages to learn about the internal architecture, node topology, or cryptographic parameters of the system? get_secret_share.rs:29-57",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c71f88ff-5778-4005-9ba9-6432b2aacb48",
+    "timestamp": "2025-11-22 03:24:36.043897",
+    "report_generated": false
+  },
+  {
+    "question": "At line 57, does converting errors with map_err(|e| e.into()) properly sanitize error messages before they're returned to clients? get_secret_share.rs:51-57",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_efdc8e9b-93a1-4b3f-97d6-024969f71be2",
+    "timestamp": "2025-11-22 03:25:05.197734",
+    "report_generated": false
   }
 ]
