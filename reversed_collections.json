@@ -12148,5 +12148,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a182e841-96b6-446d-976c-7c7986891751",
     "timestamp": "2025-11-22 06:06:52.022879",
     "report_generated": false
+  },
+  {
+    "question": "VDRF Public Key Integrity: At lines 48-50, if state.vdrf_public_key deserialization produces a corrupted public key, could EmailKey::new at line 58 create colliding email tags for different emails?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a35f67a9-8d35-4fcb-ab02-7ecce159029f",
+    "timestamp": "2025-11-22 06:08:12.204827",
+    "report_generated": false
+  },
+  {
+    "question": "Email Privacy in Errors: If certificate verification fails at line 55, do error messages leak the email address being verified, violating privacy assumptions? upload_msk.rs:41-58",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_949b8c2d-e555-494a-85da-982293763e2a",
+    "timestamp": "2025-11-22 06:08:25.125850",
+    "report_generated": false
+  },
+  {
+    "question": "Time Source Consistency: If different off-chain nodes have clock drift, could line 55's ctx.current_time() lead to inconsistent certificate acceptance across nodes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e2557b46-283b-47a1-81f4-6637e0422372",
+    "timestamp": "2025-11-22 06:08:38.494293",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Binding Scope: At line 55, does the certificate bind the email to the specific node_id, or could a malicious user reuse the same certificate across multiple nodes with different associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1524983b-0744-4b0c-979b-466807efb4b0",
+    "timestamp": "2025-11-22 06:08:52.908549",
+    "report_generated": false
+  },
+  {
+    "question": "User Key Type Validation: Does EmailCert::verify at line 55 validate that user_pk is a well-formed curve point on the correct curve before using it?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d2df205a-356c-4cff-8f55-1afd79a41c1f",
+    "timestamp": "2025-11-22 06:09:07.313888",
+    "report_generated": false
+  },
+  {
+    "question": "Email Canonicalization: Before line 57's parse operation, is the email string canonicalized to prevent 'user@example.com' and 'user+tag@example.com' from being treated as different?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_704ef545-2802-4a04-9514-4e1c863bc5a8",
+    "timestamp": "2025-11-22 06:09:23.483525",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Algorithm Changes: If the signature scheme used by EmailCert::verify at line 55 is upgraded in a future version, how are old certificates handled?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7b3b7ecc-a042-4950-870e-2db76a953eb6",
+    "timestamp": "2025-11-22 06:09:40.482790",
+    "report_generated": false
+  },
+  {
+    "question": "Node Context Time Source: At line 55, is ctx.current_time() resistant to manipulation by the executing off-chain node, ensuring accurate certificate expiration?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f9a9167b-c3b7-47ed-a8dc-e7b262f47cb4",
+    "timestamp": "2025-11-22 06:10:00.036708",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Time Window: Does the 5-minute validity period enforced at line 55 prevent race conditions where multiple users try to associate the same email simultaneously?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c20e92d7-a935-46e1-810c-00f5273d365e",
+    "timestamp": "2025-11-22 06:10:20.884495",
+    "report_generated": false
+  },
+  {
+    "question": "Swafe Key Rotation: If Swafe-io rotates their signing key, how does line 41-43's deserialization of state.swafe_public_key handle verification of certificates signed with old keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c5d0bd1a-56b5-4308-9715-54fe33ef8d6f",
+    "timestamp": "2025-11-22 06:10:42.437973",
+    "report_generated": false
+  },
+  {
+    "question": "Email Case Sensitivity: When email.parse() at line 57 creates an EmailInput, does it normalize email casing to prevent duplicate registrations with different capitalizations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_54ca5033-42f0-48f3-9925-c203b37bb8dd",
+    "timestamp": "2025-11-22 06:11:05.182712",
+    "report_generated": false
+  },
+  {
+    "question": "Timestamp Overflow: At line 55, if the certificate timestamp is near u64::MAX, could ctx.current_time() calculations overflow when checking expiration?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_29f0a0f9-e6d7-4be5-b7cb-6349cb0545e2",
+    "timestamp": "2025-11-22 06:11:29.920373",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Message Integrity: Does EmailCert::verify at line 55 check that the certificate message hasn't been modified after signing, specifically the email and user_pk fields?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8dfe34b3-fbfb-4794-9f2f-5107481155dd",
+    "timestamp": "2025-11-22 06:11:55.119562",
+    "report_generated": false
+  },
+  {
+    "question": "User Public Key Substitution: Between extracting user_pk at line 55 and using it in verify at line 63, could an attacker manipulate the value to bind a different user's public key to their email?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_52089397-021f-4169-9b06-539bcce3b827",
+    "timestamp": "2025-11-22 06:12:21.211656",
+    "report_generated": false
+  },
+  {
+    "question": "Email Parsing Failures: At line 57, if email.parse::<EmailInput>() fails due to malformed email format, does the error handling prevent leaking information about which emails are already registered?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4e7a9dcd-d4ed-40ab-b284-3d763b4b4fa5",
+    "timestamp": "2025-11-22 06:12:48.913611",
+    "report_generated": false
+  },
+  {
+    "question": "Node ID Verification: At line 52, if stored_secret.node_id.0 is extracted from off-chain storage, could a compromised minority node substitute a different node ID before passing it to EmailCert::verify at line 55?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_44883e19-9fa3-4c05-b680-368509addabc",
+    "timestamp": "2025-11-22 06:13:17.266351",
+    "report_generated": false
+  },
+  {
+    "question": "Future-Dated Certificates: At line 55, if ctx.current_time() returns a timestamp earlier than the certificate's issue time, does verification properly reject it with CertificateFromFuture error?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e5482840-37ba-4092-b302-74aed09189bc",
+    "timestamp": "2025-11-22 06:13:46.267263",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Revocation: Does the handler support any revocation mechanism for compromised email certificates, or would a leaked certificate remain valid until expiration at line 55?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0f1c982c-a0ae-48c8-ad87-b3d5311e1395",
+    "timestamp": "2025-11-22 06:14:15.626362",
+    "report_generated": false
+  },
+  {
+    "question": "Token Replay Across Nodes: Could an attacker intercept a valid EmailCertToken from line 55 and replay it to multiple off-chain nodes simultaneously, creating duplicate MskRecord entries for the same email?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_489c2e88-a2d3-4988-9b5e-ad60e0a84e28",
+    "timestamp": "2025-11-22 06:14:45.662343",
+    "report_generated": false
+  },
+  {
+    "question": "User Public Key Binding: At line 55, does verification ensure the certificate's embedded user public key matches the one used in AssociationRequestEmail.verify at line 63, preventing key substitution attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7f18a508-cfa4-48c8-bb9c-34e1a0c4ce52",
+    "timestamp": "2025-11-22 06:15:16.979453",
+    "report_generated": false
+  },
+  {
+    "question": "Email Extraction: After EmailCert::verify returns (email, user_pk) at line 55, is the extracted email string properly validated before parsing into EmailInput at line 57, preventing injection attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_68ef5760-2769-4ea5-adaf-d91073f2c9fc",
+    "timestamp": "2025-11-22 06:15:49.665311",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Validity Period: Does EmailCert::verify at line 55 enforce the 5-minute validity period correctly, and could an attacker exploit timezone differences or clock skew to extend certificate lifetime?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_970f3f3a-b5a1-446b-9f6d-72f20949b4d7",
+    "timestamp": "2025-11-22 06:16:19.103657",
+    "report_generated": false
+  },
+  {
+    "question": "Swafe Public Key Integrity: At lines 41-43, if state.swafe_public_key is corrupted in storage, could deserialization succeed with an invalid key that allows forged email certificates to pass verification?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_23e3f209-daeb-44d3-a89a-d03eb4753047",
+    "timestamp": "2025-11-22 06:16:49.578117",
+    "report_generated": false
+  },
+  {
+    "question": "User Signature on Node ID: Does the EmailCert::verify call at line 55 properly check that the user's signature covers the specific node_id extracted at line 52, preventing an attacker from reusing a token meant for a different node?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f70870d2-aa79-4664-929b-055dc10b6eff",
+    "timestamp": "2025-11-22 06:17:19.433322",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Signature Verification: At line 55, if the Swafe public key deserialization at lines 41-43 produces a corrupted but valid curve point, could EmailCert::verify accept forged certificates that violate the invariant 'only the owner of an email should be able to request recovery'?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_99107a8c-ad18-4a2e-bf3b-9b75f23d53f1",
+    "timestamp": "2025-11-22 06:17:47.434839",
+    "report_generated": false
   }
 ]
