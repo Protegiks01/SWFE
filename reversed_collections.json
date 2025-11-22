@@ -11548,5 +11548,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b97e4f46-655c-4e53-9ced-9af661bbc33b",
     "timestamp": "2025-11-22 05:23:33.290072",
     "report_generated": false
+  },
+  {
+    "question": "Swafe Key Deserialization Error: At lines 41-43, if encode::deserialize fails, does the custom error message leak information about the key structure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_38a1aab6-d1e3-479a-a839-1e91ceb19d56",
+    "timestamp": "2025-11-22 05:24:48.044340",
+    "report_generated": false
+  },
+  {
+    "question": "Context Mutation: At line 45, does load mutate the ctx parameter, and could this affect subsequent operations in the handler? upload_msk.rs:45-52",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_804e6d87-b9d1-42b4-99c3-b8d64671dbc5",
+    "timestamp": "2025-11-22 05:25:01.129925",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Deserialization: When OffchainSecrets::load returns at line 45, does it validate the deserialized structure to prevent corruption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ae780ee1-18de-4682-a09b-917643c26ddf",
+    "timestamp": "2025-11-22 05:25:14.708897",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Rotation: If an off-chain node needs to rotate its secret, how does line 45's load operation handle transitions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a0f5ae94-1c17-423c-8780-8f10ffc71ed5",
+    "timestamp": "2025-11-22 05:25:28.614161",
+    "report_generated": false
+  },
+  {
+    "question": "Node ID Mismatch: If the node_id at line 52 doesn't match the node actually executing the handler, what security properties break?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4891acc5-c8a2-42c4-bb4f-1e910c7946d2",
+    "timestamp": "2025-11-22 05:25:43.196816",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Storage Location: At line 45, is the off-chain storage for secrets isolated from the MskRecordCollection storage to prevent cross-contamination?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_04606690-251e-48e6-9057-931b0bb7a7ce",
+    "timestamp": "2025-11-22 05:25:59.855700",
+    "report_generated": false
+  },
+  {
+    "question": "Initialization Race: Could multiple handlers call OffchainSecrets::load at line 45 concurrently, and is the returned secret consistent across calls?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8118c91e-7fed-4b22-a376-084106c14586",
+    "timestamp": "2025-11-22 05:26:17.301281",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Verification: At line 45-46, does the loaded secret include any integrity checks to detect if storage was tampered with?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_29de04fc-2860-433e-b8d7-1b6d372a39c8",
+    "timestamp": "2025-11-22 05:26:36.781592",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Persistence: After OffchainSecrets::load at line 45, is the loaded secret protected from being leaked via error messages or logs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_87505f76-ba92-4001-aade-f5734c7a16ac",
+    "timestamp": "2025-11-22 05:26:57.519262",
+    "report_generated": false
+  },
+  {
+    "question": "Node ID Extraction: At line 52, when stored_secret.node_id.0 is extracted, is the NodeId validated as matching the expected node for this contract?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_056d60e8-afac-4b1e-9656-8449c2e4f754",
+    "timestamp": "2025-11-22 05:27:19.184171",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Loading Failure: At lines 45-46, if OffchainSecrets::load returns None, is the VdrfNodeNotInitialized error appropriate, or could this hide other issues?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0dcd44a6-7f7c-4b6e-8443-3ad0bac6f1c8",
+    "timestamp": "2025-11-22 05:27:41.230132",
+    "report_generated": false
+  },
+  {
+    "question": "Request Ordering: Does the handler at line 33 enforce any ordering on fields within the request, or could reordering affect behavior? upload_msk.rs:33-39",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2ba9dbd2-db19-4331-81fb-8d97fccad257",
+    "timestamp": "2025-11-22 05:28:04.847576",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Errors: If line 39's deserialization fails, does the error message leak information about the expected request structure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2065755c-30f2-4a1b-a309-138697209e0a",
+    "timestamp": "2025-11-22 05:28:30.192370",
+    "report_generated": false
+  },
+  {
+    "question": "Base64 Padding: When StrEncoded types decode base64 at line 39, does URL-safe no-padding mode match the encoding used by clients?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_56774bfb-94ec-446e-b8b8-c5c1096fbee8",
+    "timestamp": "2025-11-22 05:28:56.725105",
+    "report_generated": false
+  },
+  {
+    "question": "Bincode Version: At line 39, when StrEncoded fields are decoded from bincode, is version compatibility checked to prevent format mismatches?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f34c596f-8f01-4654-ad74-7b67b2cd3461",
+    "timestamp": "2025-11-22 05:29:24.291576",
+    "report_generated": false
+  },
+  {
+    "question": "Content-Type Validation: Is the Content-Type header validated as application/json before attempting deserialization at line 39?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1d1f056a-a4ef-4987-b2b2-d3ca1de3c27e",
+    "timestamp": "2025-11-22 05:29:51.620390",
+    "report_generated": false
+  },
+  {
+    "question": "Request Method Validation: Does the endpoint only accept POST requests, and are other HTTP methods properly rejected before reaching line 39?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5862d329-1d7f-49f2-93f0-ae193a4a6ca2",
+    "timestamp": "2025-11-22 05:30:20.918935",
+    "report_generated": false
+  },
+  {
+    "question": "UTF-8 Validation: Before line 39's JSON parsing, is the request body validated as UTF-8, or could invalid encoding cause issues?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e8e79348-a0cd-4c32-abe1-3ebcfe1fee56",
+    "timestamp": "2025-11-22 05:30:49.669366",
+    "report_generated": false
+  },
+  {
+    "question": "Association Deserialization: At line 63, when accessing request.association.0, could deserialization produce an invalid AssociationRequestEmail structure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ca14720a-ee51-46f4-92b8-b913862d5af8",
+    "timestamp": "2025-11-22 05:31:19.331103",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Eval Deserialization: At line 58, when accessing request.vdrf_eval.0, does deserialization validate the G2 point encoding to prevent invalid curve points?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9cd604bf-fd9d-4d1f-95b0-0852f83a899b",
+    "timestamp": "2025-11-22 05:31:48.881124",
+    "report_generated": false
+  },
+  {
+    "question": "Token Deserialization: In request.token.0 used at line 55, could invalid base64 or bincode data cause deserialization to panic or produce corrupted data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1c01d051-e6fc-4aa9-a4bc-be4538c8fe3c",
+    "timestamp": "2025-11-22 05:32:18.256933",
+    "report_generated": false
+  },
+  {
+    "question": "StrEncoded Deserialization: At line 39, when StrEncoded<T> types are deserialized, does the base64 decoding properly validate input length and format?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_aae05d7f-f34b-4c4b-9bed-ee84ac146b95",
+    "timestamp": "2025-11-22 05:32:48.978051",
+    "report_generated": false
+  },
+  {
+    "question": "Field Validation: After line 39 deserializes the Request, are all three fields (token, vdrf_eval, association) validated for correct structure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_eb17254c-26f2-434f-bb33-8b03bfcb98fe",
+    "timestamp": "2025-11-22 05:33:19.685062",
+    "report_generated": false
+  },
+  {
+    "question": "JSON Injection: At line 39, could specially crafted JSON in the request body cause the deserializer to execute unintended code paths?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e2cae436-f680-4b6d-840c-9f3c3a4b8992",
+    "timestamp": "2025-11-22 05:33:50.016805",
+    "report_generated": false
+  },
+  {
+    "question": "Request Size Limits: Is there a maximum size enforced on the HTTP request body before line 39's deserialization to prevent memory exhaustion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f4e1623c-8935-4157-b1ab-cceb150a4bd2",
+    "timestamp": "2025-11-22 05:34:19.386061",
+    "report_generated": false
   }
 ]
