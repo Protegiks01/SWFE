@@ -3,259 +3,259 @@
     "question": "Can an unprivileged attacker enumerate all accounts by systematically querying account IDs derived from known verification keys?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0b6617cf-1baf-495a-b01a-f422208605c3",
     "timestamp": "2025-11-21 12:40:59.989199",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can a network adversary extract email-to-account associations by correlating timing of account queries with VDRF evaluations?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6865a1fb-f717-4f1f-84bf-5912892421cd",
     "timestamp": "2025-11-21 12:41:13.178077",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can a malicious guardian query victim accounts to learn their recovery configurations before attacking?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_89898925-f69f-40fd-b6c7-563fb74833c1",
     "timestamp": "2025-11-21 12:41:26.708571",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does exposing RecoveryStateV0.assoc (encrypted associations) allow attackers to perform offline cryptanalysis to extract RIK shares?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f151bbd5-878e-408f-a6e5-08c546a4e372",
     "timestamp": "2025-11-21 12:41:41.394130",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can the social backup ciphertext in RecoveryStateV0 be used to infer the number and identity of guardians through metadata analysis?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_debb0f83-7be4-4fca-b68e-dc9edec2fb7b",
     "timestamp": "2025-11-21 12:41:57.076164",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does the backups field leak information about what secrets users are storing through ciphertext size or count analysis?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0404c106-1742-40ac-9855-4d290f7ee512",
     "timestamp": "2025-11-21 12:42:14.526365",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can the pke encryption key in AccountStateV0 be used to mount chosen-ciphertext attacks against the owner?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_469fcf5e-9601-4105-9e31-7c71ac48c766",
     "timestamp": "2025-11-21 12:42:33.227459",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can an attacker provide malformed base64url strings in account_id to cause deserialization panics that crash the endpoint?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bcc65086-a959-469e-833d-348ff7272ace",
     "timestamp": "2025-11-21 12:42:53.185605",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does the StrEncoded deserialization process validate that the decoded AccountId is exactly 32 bytes, or can oversized inputs cause buffer issues?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2e9bcc31-d4b1-477d-85e0-fa9e7d79aacf",
     "timestamp": "2025-11-21 12:43:14.628167",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can an attacker exploit differences between bincode serialization versions to cause type confusion when deserializing AccountState?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_be59a623-8182-480f-a306-aba0fb15efc5",
     "timestamp": "2025-11-21 12:43:37.746076",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "If AccountState schema evolves (e.g., from V0 to V1), can old clients deserialize new states, potentially misinterpreting encrypted fields?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_21bc040e-ab49-4211-8b93-510ad311828d",
     "timestamp": "2025-11-21 12:44:00.757210",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can an attacker exploit TOCTOU by querying an account, triggering a recovery update, then using stale state to compute invalid guardian shares?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fdb8ffe1-2867-4bef-9c12-cd4ee5044fe8",
     "timestamp": "2025-11-21 12:44:26.398894",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "If a user initiates recovery (setting RecoveryStateV0.pke), can querying the old state before the update propagates allow an attacker to submit guardian shares to the wrong encryption key?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4c3bf665-9a63-451f-9b91-78aaeabe0f56",
     "timestamp": "2025-11-21 12:44:53.874193",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can concurrent queries during account state transitions return inconsistent views (e.g., half-updated backup lists)?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8722ee3e-0e7b-4160-979c-5dfe885c3c5d",
     "timestamp": "2025-11-21 12:45:22.445244",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can an attacker use timing differences between 'account not found' vs. successful deserialization to enumerate which account IDs exist?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f2ff271d-90f4-4a7f-88e9-120db4799fd1",
     "timestamp": "2025-11-21 12:45:51.792568",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does the error response leak whether an account ID is malformed vs. simply non-existent?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_530fdc92-6ea4-462b-9028-6e2625fc13c9",
     "timestamp": "2025-11-21 12:46:22.626150",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can the HTTP status code (404) be used to confirm whether an email has been associated with an account by deriving the AccountId from potential verification keys?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_abc36ad4-4901-4857-b3fb-a3ef09097738",
     "timestamp": "2025-11-21 12:46:54.534098",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can an attacker perform mass surveillance by querying all possible account IDs to map the entire user base?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6589cfd1-d661-4063-b2a1-e08c8672fac4",
     "timestamp": "2025-11-21 12:47:28.761147",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does unlimited querying allow an attacker to monitor when accounts are created, updated, or enter recovery mode?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e2aa56f4-0b77-49f3-b1be-6c5d20e11502",
     "timestamp": "2025-11-21 12:48:01.665130",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can an attacker correlate query patterns with blockchain transactions to de-anonymize users?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6c3a2966-c3ae-494d-82aa-7518a20b5cf8",
     "timestamp": "2025-11-21 12:48:32.913929",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can a guardian query another guardian's account to learn their recovery configuration before colluding to attack a mutual user?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8cac4f9c-d30c-472a-b269-1153522015a4",
     "timestamp": "2025-11-21 12:49:05.177124",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can off-chain nodes (even honest minority) query accounts to extract encrypted MSK ciphertexts for offline attacks?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_380451ed-bc5f-435b-9f95-585a0946c6fb",
     "timestamp": "2025-11-21 12:49:37.042566",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can Swafe-io query arbitrary accounts to violate the prohibition against unilateral reconstruction?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_137fc7f0-993a-4195-9992-db8d97afc6bd",
     "timestamp": "2025-11-21 12:50:09.281097",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can an attacker use the cnt field to track user activity (number of updates) and infer usage patterns?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1b5bdcac-cecf-4b64-9c11-d8237d064c59",
     "timestamp": "2025-11-21 12:50:42.096744",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does the act (encrypted combined secrets) field's size leak information about the number of old keys being retained?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ae0fed95-04e6-4ed7-bd88-60fdc85a7046",
     "timestamp": "2025-11-21 12:51:16.631103",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can the recover field (backups marked for recovery) be compared across queries to detect when users initiate backup decryption?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_80141bc8-a314-4fe8-bf19-ff19a91a8b8e",
     "timestamp": "2025-11-21 13:16:42.790423",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can the rec.pke field's presence (indicating recovery initiation) be monitored to detect when users lose access and attempt recovery?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_498712dc-7e63-41b4-a29e-082290c8d7c4",
     "timestamp": "2025-11-21 13:16:55.982369",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "If a V1 account state is introduced, can old API clients deserialize it without errors, potentially exposing new sensitive fields?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c5c26b50-cc08-4302-b035-d8f107d1cbb0",
     "timestamp": "2025-11-21 13:17:09.205028",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can an attacker submit a crafted account update that sets an invalid version number, causing queries to fail and lock out legitimate users?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7a5df920-b708-43e9-ab1e-b13a15542f20",
     "timestamp": "2025-11-21 13:17:23.026653",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does the versioned serialization correctly reject malformed version tags, or can an attacker inject arbitrary enum variants?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f6d381ad-2d44-4793-9fe0-639be0f1aef1",
     "timestamp": "2025-11-21 13:17:37.846018",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can an attacker infer the threshold value t by analyzing the structure or size of the social backup ciphertext?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fc496aa8-01c7-45fa-9bea-7bd9f927d61f",
     "timestamp": "2025-11-21 13:17:53.826223",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can the number of guardian shares (n) be determined from the ciphertext, allowing attackers to identify high-value targets with many guardians?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0519e153-d17b-49c2-b34e-5cd7179a4b24",
     "timestamp": "2025-11-21 13:18:11.222670",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can guardian identities be partially inferred by correlating social ciphertext changes with known account updates?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1f672b94-e270-44d5-ae22-6060d77002bb",
     "timestamp": "2025-11-21 13:18:30.471934",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can the VdrfSecretKeyShare in OffchainSecret be extracted from network traffic or logs during initialization?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a773c085-7be1-4db9-a156-941a9abcf085",
     "timestamp": "2025-11-21 13:18:51.684312",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does the VdrfPublicKey properly bind to the corresponding VdrfSecretKeyShare, preventing substitution attacks?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8417d99c-19f3-4527-b67b-9f7e935047f9",
     "timestamp": "2025-11-21 13:19:13.896461",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can an attacker verify whether a VdrfSecretKeyShare corresponds to a valid t-of-n scheme by analyzing VdrfPublicKey alone?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_384b004b-90ac-4ab2-80f6-5c0cfd39a7c0",
     "timestamp": "2025-11-21 13:19:36.682122",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Is the 32-byte randomizer generated with sufficient entropy to prevent predictable VDRF outputs?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a700d368-d763-4006-806f-b710706439f5",
     "timestamp": "2025-11-21 13:20:00.249083",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Could two nodes accidentally generate identical randomizers, violating randomness assumptions?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2f861891-7588-4921-93f6-18726e38e628",
     "timestamp": "2025-11-21 13:20:25.262119",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can a compromised node submit an invalid VdrfSecretKeyShare that still passes commitment verification?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_26934315-afda-48b8-8f4d-12f894d501cb",
     "timestamp": "2025-11-21 13:20:51.684273",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "If nodes claim different VdrfPublicKeys, can the system detect the inconsistency during initialization?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bc2d9484-0bbb-4c44-b57e-bf5ab46b397e",
     "timestamp": "2025-11-21 13:21:17.270949",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can a malicious actor reuse a previously valid VdrfSecretKeyShare for a different node ID?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f237961a-0325-41d7-9fbf-3c7fc9033d67",
     "timestamp": "2025-11-21 13:21:45.646193",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does VdrfPublicKey structure leak polynomial degree information about the threshold scheme?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_10838fa3-6206-43f8-895e-46827fb1e36e",
     "timestamp": "2025-11-21 13:22:15.207246",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Could a zero-valued VdrfSecretKeyShare break threshold assumptions during initialization?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b9c1b964-7a71-46e3-9cf5-1328a25f2f38",
     "timestamp": "2025-11-21 13:22:45.845542",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can Swafe-io embed weak shares into VDRF keys during key generation to backdoor reconstruction?",
@@ -267,205 +267,205 @@
     "question": "Is the randomizer used correctly in downstream VDRF operations to avoid side-channel risks?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2de8ce72-4d7c-492e-8198-e4eafb098a7b",
     "timestamp": "2025-11-21 13:23:45.752243",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does the initialization process enforce correct share distribution according to threshold?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a51f1d9c-74e9-4f23-aa29-e572f8e21322",
     "timestamp": "2025-11-21 13:24:18.058437",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can an adversary tamper with VdrfPublicKey during transit before commitment verification?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_377b9735-c689-4c1e-a6e1-563ceacc49d1",
     "timestamp": "2025-11-21 13:24:51.283603",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does commitment verification properly check all fields: public_key, secret_share, and randomizer?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c07a5930-9cff-444c-bcdd-b67a78bb5f69",
     "timestamp": "2025-11-21 13:25:26.472289",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can an attacker trick the system into accepting a lower-threshold scheme than required?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fd0418bc-fb22-42a4-8ed5-db56e1602ee2",
     "timestamp": "2025-11-21 13:26:00.760892",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Could minority corrupted nodes infer honest nodes' shares through interpolation strategies?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_48713b9f-ab4a-4179-859b-b86b88367ef8",
     "timestamp": "2025-11-21 13:26:33.722544",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can inconsistencies between stored and expected OffchainSecret values break VDRF evaluation?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1d74abcc-c1b5-4e6a-a994-5a982b7687f6",
     "timestamp": "2025-11-21 13:27:44.767794",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does the system prevent reusing old OffchainSecret values after key rotation?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_855c2a5c-4b34-40f9-b360-f867d34bc7e2",
     "timestamp": "2025-11-21 13:27:57.827322",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Could timing or size of OffchainSecret submissions leak operational information about nodes?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2d875e40-2e98-48a5-9a27-49950cce0121",
     "timestamp": "2025-11-21 13:28:11.482249",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can an attacker force weaker cryptographic parameters during VDRF initialization?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_776e23b8-b422-4b61-bea2-c115d6eba5f9",
     "timestamp": "2025-11-21 13:28:25.127130",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Are VdrfSecretKeyShare and VdrfPublicKey serialized in canonical form to prevent malleability?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1e0f23d8-8168-4bcb-951a-ac6d6f9f92b8",
     "timestamp": "2025-11-21 13:28:39.748561",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Could Swafe-io provide biased randomizers that degrade VDRF security?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_85c509f6-2d44-4aba-a2a3-c65f8d4c0aae",
     "timestamp": "2025-11-21 13:28:55.348177",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can invalid partial evaluations poison the final VDRF output?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_85f811a7-75fd-4d58-8e16-b49b9e444f3d",
     "timestamp": "2025-11-21 13:29:12.183232",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does the system verify that VdrfPublicKey is a valid group element before storage?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d80695d2-18d9-47d6-8424-b9ba1c631b5f",
     "timestamp": "2025-11-21 13:29:30.963278",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does initialization enforce bounds checks on VdrfSecretKeyShare field elements?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_76b0458b-e95c-45d0-b3af-6ee8b9ee8904",
     "timestamp": "2025-11-21 13:29:51.511132",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "What happens if two nodes generate identical randomizers during initialization?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a2bbd119-7729-423f-91d8-70b1079f55c9",
     "timestamp": "2025-11-21 13:30:13.386203",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can the combination of public_key and randomizer link later VDRF outputs to a specific node?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_754f624a-f397-4108-8819-c5af058191b2",
     "timestamp": "2025-11-21 13:30:36.655237",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does the reconstruction process correctly enforce a minimum of t valid shares?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5a29ce27-fb3a-4ddb-a7ef-3fdfc0697464",
     "timestamp": "2025-11-21 13:31:01.369003",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Is the randomizer used with proper domain separation to prevent cross-protocol misuse?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2133a475-dc46-4bf9-a2e3-c7f5cfa2d1e8",
     "timestamp": "2025-11-21 13:31:26.423640",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can malformed base64 in StrEncoded<NodeId> cause deserialization errors that leak information?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7cb119b1-9d18-4217-8deb-d6ac37bb1954",
     "timestamp": "2025-11-21 13:31:52.810761",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Could the separator 'v0:offchain-secret' collide with other tags and cause type confusion?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_14856adc-1704-49e4-88ef-4ec457a71a7e",
     "timestamp": "2025-11-21 13:32:20.140742",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can outdated bincode formats allow incompatible OffchainSecret structures to bypass checks?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4eb3ea2a-24ee-4845-a6d4-322abb93d1f9",
     "timestamp": "2025-11-21 13:32:48.010130",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Could a malicious OffchainSecret deserialize into extremely large memory structures?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_726e87d4-3380-4615-a74b-6336f59e0c69",
     "timestamp": "2025-11-21 13:33:17.270145",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can nested VdrfPublicKey or VdrfSecretKeyShare contain malicious payloads?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3fb572df-1a7a-4bf8-9267-1d60c5927d62",
     "timestamp": "2025-11-21 13:33:48.241259",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does StrEncoded deserialization safely handle missing or extra base64 padding?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_681b3099-934d-4058-8a5e-d1739914c257",
     "timestamp": "2025-11-21 13:34:19.358275",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can malformed UTF-8 in serialized fields create inconsistencies across nodes?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_003f02d0-c610-48b0-b221-9ece26fac7ff",
     "timestamp": "2025-11-21 13:34:51.714992",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Are there maximum size limits for OffchainSecret to avoid storage exhaustion?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e3032172-1b44-425a-a91c-08bebd19efdb",
     "timestamp": "2025-11-21 13:35:24.521906",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does the system enforce canonical serialization for OffchainSecret?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8a3f6ab7-2c0c-4146-af39-d8ce1ca7b6ca",
     "timestamp": "2025-11-21 13:35:58.291607",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Should OffchainSecret contain a version prefix to support future schema upgrades?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8a57fa37-b8f8-43c4-b5b7-e882942b3372",
     "timestamp": "2025-11-21 13:36:30.615226",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can truncated OffchainSecret payloads deserialize into default/zero values?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5a3e31ba-5b43-41ff-9c25-d1f2d815882d",
     "timestamp": "2025-11-21 13:37:02.290150",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does bincode maintain identical field ordering across all client implementations?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_55dca6d8-83de-4ca2-ae87-8ebbc185dbcc",
     "timestamp": "2025-11-21 13:37:31.432065",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Could future enum tags create type confusion vulnerabilities in OffchainSecret?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1c2ceee6-d3a0-4184-ad70-7cb340878a0b",
     "timestamp": "2025-11-21 13:38:41.390090",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can compressed malicious data bypass size checks during deserialization?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9bb1d9b8-2840-4bc7-9a9a-354424cd6819",
     "timestamp": "2025-11-21 13:38:54.163185",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can special characters in node_id enable encoding injection attacks?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_75dd42fb-8ac0-4219-88d7-7d67444e00c5",
     "timestamp": "2025-11-21 13:39:07.325791",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does the deserializer reject OffchainSecret structures with duplicate fields?",
@@ -477,127 +477,127 @@
     "question": "Can large integers in serialized curve points cause overflows?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_db29495b-1741-40a7-8a94-0a71b53fec03",
     "timestamp": "2025-11-21 13:39:38.096333",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Are serialized field elements consistent across architectures with different endianness?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a8a6738a-6400-4c01-82dd-e1a6c21f2565",
     "timestamp": "2025-11-21 13:39:56.160940",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does the randomizer validate exact length (32 bytes) during deserialization?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f43d385e-3a4b-4dc0-a966-8df2e0b41260",
     "timestamp": "2025-11-21 13:40:16.318859",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Could deeply nested serialized structures cause stack overflows during decoding?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_48b01871-1bb5-460b-8893-e42dfb29a70e",
     "timestamp": "2025-11-21 13:40:36.820025",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can attackers replay a valid initialization request to overwrite existing secrets?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9570b26e-0636-404e-b1a5-6901a0c12b3f",
     "timestamp": "2025-11-21 13:40:57.869496",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can concurrent initialization requests for the same node cause inconsistent state?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5de0ae83-f497-4f0a-8e2d-a8b0dc61d3a7",
     "timestamp": "2025-11-21 13:41:21.942616",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Is the initialization endpoint idempotent, preventing repeated state changes?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_22847e42-0036-4608-b97c-bd710fc63711",
     "timestamp": "2025-11-21 13:41:45.599255",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Could partial state remain if initialization fails midway?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8dfe308d-e2ea-4350-ae98-598dbbabc77f",
     "timestamp": "2025-11-21 13:42:10.339333",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can an attacker trigger a state rollback after initialization?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_657e3c9a-323b-46b8-9daa-1379229107c3",
     "timestamp": "2025-11-21 13:42:37.040760",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Are there locks preventing concurrent writes to StoredOffchainSecret?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ad38296c-c3dc-4eb5-90c3-9ce21259e155",
     "timestamp": "2025-11-21 13:43:04.479480",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does initialization depend on node order, and could reordering break assumptions?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_72a389b0-fa66-42d0-8987-e04e881265ba",
     "timestamp": "2025-11-21 13:43:32.604363",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can attackers bypass the 'already initialized' check by manipulating storage keys?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7f45db0b-370d-421f-9e33-c7fe6a61eea6",
     "timestamp": "2025-11-21 13:44:03.022334",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does the storage key design prevent nodes overwriting each other's secrets?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1789f797-2f86-491a-90af-c5862c6f0de3",
     "timestamp": "2025-11-21 13:44:33.498375",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does the contract verify that stored OffchainSecret matches the submitted one?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5d6b9d3e-d857-4933-b763-5900a5764f09",
     "timestamp": "2025-11-21 13:45:05.756332",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Could uninitialized node storage be used by other endpoints?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d8116806-b51d-4b26-953a-f7af0d6c3244",
     "timestamp": "2025-11-21 13:45:38.496640",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Are expired initialization requests rejected properly?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b0b429ab-f43f-44cc-8976-8d5e124366e0",
     "timestamp": "2025-11-21 13:46:12.314324",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "If protocol upgrades occur, could old secrets be migrated insecurely?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_35882c04-ed0d-43f6-9b3d-933347459bef",
     "timestamp": "2025-11-21 13:46:45.432414",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Could multiple Swafe contracts interfere with each other\u2019s initialization?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ffc95fd1-fe47-4704-a7b5-378ed134bdaf",
     "timestamp": "2025-11-21 13:47:17.797042",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can attackers pre-fill storage with malicious data before legitimate initialization?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9a1b1225-82bc-482d-b25a-207b24865383",
     "timestamp": "2025-11-21 13:47:50.512554",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Is commitment verification and storage atomic, avoiding TOCTOU attacks?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3650c217-76e3-4365-978d-38136461ca8e",
     "timestamp": "2025-11-21 13:48:23.175023",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can secrets be revoked, and could revocation be abused for DoS?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3dc2f514-0a64-481a-961c-f3da4a96bfcf",
     "timestamp": "2025-11-21 13:48:57.256422",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "What happens if two nodes claim the same NodeId?",
