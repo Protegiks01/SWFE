@@ -8998,5 +8998,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_86afe5a3-3ac2-4e2d-9932-afa67747173f",
     "timestamp": "2025-11-22 00:04:08.707515",
     "report_generated": false
+  },
+  {
+    "question": "Statistical Independence: Are shares IID as required by proofs?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bf41f880-3293-42d8-95cb-580d46e724b2",
+    "timestamp": "2025-11-22 00:05:23.920229",
+    "report_generated": false
+  },
+  {
+    "question": "Entropy Leakage Through Operations: Do field operations leak through side channels?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ae1a4eca-fb3b-4d37-a066-ba80354870d8",
+    "timestamp": "2025-11-22 00:05:37.134626",
+    "report_generated": false
+  },
+  {
+    "question": "Share Independence: Are shares independent as required?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d9d527d2-bd49-49fc-94a0-57526c624eb5",
+    "timestamp": "2025-11-22 00:05:51.002722",
+    "report_generated": false
+  },
+  {
+    "question": "Computational Security Assumptions: Are any computational assumptions unsafe?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ff1bd993-137c-486d-b6b2-92581469f51d",
+    "timestamp": "2025-11-22 00:06:05.599415",
+    "report_generated": false
+  },
+  {
+    "question": "Perfect Secrecy for t-1 Shares: Is information-theoretic secrecy preserved?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0751d92a-714e-4c2a-9d19-73e4b00fa1a8",
+    "timestamp": "2025-11-22 00:06:21.256024",
+    "report_generated": false
+  },
+  {
+    "question": "Multi-Point Evaluation: Does evaluating polynomial at extra points weaken security?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7e6b0b7d-d8c7-4af6-8266-2e01cc41961b",
+    "timestamp": "2025-11-22 00:06:37.330048",
+    "report_generated": false
+  },
+  {
+    "question": "Degree-Reduction Attack: Can crafted shares reduce the effective threshold?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dc2dd6d5-66da-44cf-b9d7-7b9406a38c1b",
+    "timestamp": "2025-11-22 00:06:55.431671",
+    "report_generated": false
+  },
+  {
+    "question": "Polynomial Evaluation Security: Does evaluation leak extra information?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ddc76221-f74a-4016-b3ea-924eba6e2606",
+    "timestamp": "2025-11-22 00:07:14.968725",
+    "report_generated": false
+  },
+  {
+    "question": "Polynomial Coefficient Recovery: Can t-1 shares reveal more than allowed?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8dc7344b-1de4-4a73-a3e4-ed6d87395638",
+    "timestamp": "2025-11-22 00:07:35.877269",
+    "report_generated": false
+  },
+  {
+    "question": "Polynomial Degree Leakage: Can share patterns leak t?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_07e7dbbe-7c28-46a8-bb2c-65534aa4b363",
+    "timestamp": "2025-11-22 00:07:57.172027",
+    "report_generated": false
+  },
+  {
+    "question": "Field Inversion Security: Are inversions constant-time?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_120beb7f-66a9-4ee4-82b6-321912f8ebc8",
+    "timestamp": "2025-11-22 00:08:19.984576",
+    "report_generated": false
+  },
+  {
+    "question": "Zero Element Handling: Is zero a safe secret?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_594059fe-8eb8-48cf-8b80-088fd2da812a",
+    "timestamp": "2025-11-22 00:08:45.976109",
+    "report_generated": false
+  },
+  {
+    "question": "Field Element Reduction: Are elements always reduced modulo modulus?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8dd4f945-7c23-4352-9e5f-c0ddb763ec32",
+    "timestamp": "2025-11-22 00:09:11.569698",
+    "report_generated": false
+  },
+  {
+    "question": "Additive Group Operations: Are all field ops done in the correct group?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6973ff97-6ed6-44e1-9cf2-659127ee23ca",
+    "timestamp": "2025-11-22 00:09:36.282407",
+    "report_generated": false
+  },
+  {
+    "question": "Field Order Security: Is the field large enough to resist brute-force?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_abef7cc0-54fd-4bf9-90f2-b8c75564e9ab",
+    "timestamp": "2025-11-22 00:10:03.839606",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery State Machine: Is recovery only allowed in valid system states?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1bcc621e-6aae-4117-9f7d-a313876d9054",
+    "timestamp": "2025-11-22 00:10:32.205731",
+    "report_generated": false
+  },
+  {
+    "question": "Partial Recovery Exploitation: If key derivation fails, is secret wiped?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ba672a46-e0e0-41b8-80f4-850ec16bd72b",
+    "timestamp": "2025-11-22 00:11:01.624239",
+    "report_generated": false
+  },
+  {
+    "question": "Recovered Secret Reuse: Are recovered secrets zeroized afterwards?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_40ced0d8-a497-46df-8288-9d0a15233450",
+    "timestamp": "2025-11-22 00:11:31.946587",
+    "report_generated": false
+  },
+  {
+    "question": "KDF Domain Separation: Is domain separation enforced?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6b6fd803-e3e5-4a90-899c-71abdbbd4e39",
+    "timestamp": "2025-11-22 00:12:03.247566",
+    "report_generated": false
+  },
+  {
+    "question": "KDF Entropy Preservation: Does recovered secret produce strong keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_78d691e2-5893-4a16-a584-dbdd46f28c87",
+    "timestamp": "2025-11-22 00:12:34.981660",
+    "report_generated": false
+  },
+  {
+    "question": "Temporal Correlation: Can timing of share generation leak relationships?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8289b5c3-214f-4b60-8069-02aed22ad85a",
+    "timestamp": "2025-11-22 00:13:06.411281",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Set Intersection: Can overlapping guardian sets leak info?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3669467b-1a56-4218-8f12-2030dd553074",
+    "timestamp": "2025-11-22 00:13:38.558028",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Metadata Correlation: Can metadata reveal user patterns?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6111152e-86e4-4257-9660-9ae73101f573",
+    "timestamp": "2025-11-22 00:14:10.891440",
+    "report_generated": false
+  },
+  {
+    "question": "Multi-Backup Guardian Collusion: Do multi-backup colluding guardians gain more info?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_35d3fb39-ab50-4389-85b3-9ae7542017fc",
+    "timestamp": "2025-11-22 00:14:43.241465",
+    "report_generated": false
+  },
+  {
+    "question": "Share Reuse Across Backups: Can shares be correlated across backups?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c6fe5548-f9ec-4cd1-bf1c-5a00d5e91d0d",
+    "timestamp": "2025-11-22 00:15:15.440423",
+    "report_generated": false
   }
 ]
