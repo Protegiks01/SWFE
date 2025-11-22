@@ -12892,5 +12892,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ce9627ed-7d72-41d5-81e2-916178d82f58",
     "timestamp": "2025-11-22 07:02:19.626798",
     "report_generated": false
+  },
+  {
+    "question": "Preimage Attack on Commitment: Can an attacker who observes node_config.comm derive the original OffchainSecret through preimage attacks on the hash function? init.rs:58-64",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ad652352-6789-4d15-849f-c9e8b54db9a7",
+    "timestamp": "2025-11-22 07:03:36.334946",
+    "report_generated": false
+  },
+  {
+    "question": "Zero Secret Share Attack: Can an attacker provide a VdrfSecretKeyShare with value zero that hashes to match the commitment but breaks the threshold security of VDRF evaluation in downstream endpoints? init.rs:57-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_aaf9a3b5-e7e0-4f64-8aff-1a2098e16d1f",
+    "timestamp": "2025-11-22 07:03:49.551335",
+    "report_generated": false
+  },
+  {
+    "question": "Invalid VdrfPublicKey Group Elements: The OffchainSecret.public_key contains elliptic curve points. Can an attacker supply points not on the curve or the identity element that pass deserialization but break VDRF security assumptions? init.rs:57-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c357f767-00fb-40cd-840f-5231c5c0c889",
+    "timestamp": "2025-11-22 07:04:02.868828",
+    "report_generated": false
+  },
+  {
+    "question": "Extra Fields in Request: If the request JSON contains extra, unexpected fields beyond node_id and secret, does the deserialization silently ignore them or could they interfere with the initialization process? init.rs:48",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2afc9152-5d0a-4a84-8d6d-69fcb074804f",
+    "timestamp": "2025-11-22 07:04:16.508056",
+    "report_generated": false
+  },
+  {
+    "question": "Case Sensitivity in Node ID Lookup: The node_id is converted to string for the state.nodes.get() lookup at line 52. If node IDs are case-insensitive during setup but case-sensitive during lookup, can an attacker initialize with a different casing to bypass the existing node check? init.rs:52-54",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ecd8dac5-4fd6-4194-8671-2aa441668fe5",
+    "timestamp": "2025-11-22 07:04:31.049192",
+    "report_generated": false
+  },
+  {
+    "question": "Duplicate Field Exploitation in JSON: If the JSON request body contains duplicate fields (e.g., two node_id fields), which value does deserialize_request_body use, and can this be exploited to bypass validation? init.rs:48",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_afc6922b-a1f4-4e4c-8fef-e494ceafb87b",
+    "timestamp": "2025-11-22 07:04:46.675493",
+    "report_generated": false
+  },
+  {
+    "question": "Null Byte Injection in Node ID: Can an attacker inject null bytes or other control characters into the node_id field that pass NodeId parsing but cause mismatches during the state.nodes.get() lookup at line 52? init.rs:52-54",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0aa1815a-8925-47a0-82f4-8c0b3157de85",
+    "timestamp": "2025-11-22 07:05:04.157748",
+    "report_generated": false
+  },
+  {
+    "question": "Invalid UTF-8 in Request Body: The deserialize_request_body function requires UTF-8 body. If the body contains invalid UTF-8 sequences, does the error handling at line 48 leak information about the internal state of the node? init.rs:48",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8cfcd7cb-49d8-43fd-a528-94fbbd708eb1",
+    "timestamp": "2025-11-22 07:05:23.664397",
+    "report_generated": false
+  },
+  {
+    "question": "Oversized Secret Payload: The OffchainSecret structure contains cryptographic elements. Can an attacker submit an extremely large serialized secret that consumes excessive memory during deserialization at line 48, even if it's eventually rejected? init.rs:48",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d1b3acdc-03b1-4d3d-be83-a9e55eb9ea2b",
+    "timestamp": "2025-11-22 07:05:44.613644",
+    "report_generated": false
+  },
+  {
+    "question": "Empty Node ID Attack: Can an attacker submit an empty string as node_id that passes the parse() operation but causes the state.nodes.get() lookup to fail silently or return an unintended node configuration? init.rs:51-54",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_30e30d2d-4399-4a53-9b73-7d219e49b1df",
+    "timestamp": "2025-11-22 07:06:05.847533",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Deserialization Bounds Check: At line 57, request.secret.0 is directly used without validating the internal structure of OffchainSecret. Can an attacker supply malformed VdrfPublicKey, VdrfSecretKeyShare, or randomizer fields that pass deserialization but cause crashes or undefined behavior in VDRF operations? init.rs:57-58",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c7956bfe-b071-4576-8ae2-d92ccdc3ad00",
+    "timestamp": "2025-11-22 07:06:29.103240",
+    "report_generated": false
+  },
+  {
+    "question": "Type Confusion in StrEncoded Deserialization: The Request type uses StrEncoded<NodeId> and StrEncoded<OffchainSecret>. Can an attacker craft a base64-encoded payload that deserializes successfully as NodeId but contains extra data that corrupts subsequent operations? init.rs:19-20",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_13903989-0060-4e1d-9d16-1d1d469b5f83",
+    "timestamp": "2025-11-22 07:06:52.535174",
+    "report_generated": false
+  },
+  {
+    "question": "Malformed Node ID Attack: In the handler function at line 51, can an attacker supply a request.node_id that doesn't conform to the NodeId format (e.g., missing 'node:' prefix, invalid characters) and bypass validation to cause the endpoint to fail after partially modifying state? init.rs:51-54",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3743191c-a287-4b7c-9513-734077d28b46",
+    "timestamp": "2025-11-22 07:07:17.298506",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Secret Reconstruction Outside Module: Are incorrect parameters allowed during reconstruction?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4626251d-4733-4b79-ba9f-4cea2084aee8",
+    "timestamp": "2025-11-22 07:07:43.354489",
+    "report_generated": false
+  },
+  {
+    "question": "PKE Ciphertext Malleability: Can attackers modify ciphertext stored in storage?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_647a7223-c2c4-4714-8824-5f1573cc6f2b",
+    "timestamp": "2025-11-22 07:08:10.673609",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Signature Freshness Missing: Can old signatures be replayed?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_07c71348-c581-45d0-9be7-f17f08b8142e",
+    "timestamp": "2025-11-22 07:08:39.158478",
+    "report_generated": false
+  },
+  {
+    "question": "Share Commitment Verification Missing: Can attackers serve shares with wrong commitments?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_211cabda-47bf-494e-8c9f-87590a72a4d9",
+    "timestamp": "2025-11-22 07:09:09.437405",
+    "report_generated": false
+  },
+  {
+    "question": "Lack of Authenticated Encryption Context: Can shares be misused across contexts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_944a511d-1f90-4328-a9d2-b58831ba1c83",
+    "timestamp": "2025-11-22 07:09:39.861055",
+    "report_generated": false
+  },
+  {
+    "question": "CORS and Origin Validation Issues: Can cross-origin attackers retrieve shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6dffd0fd-6842-4e33-bae5-61097ce637e9",
+    "timestamp": "2025-11-22 07:10:08.861087",
+    "report_generated": false
+  },
+  {
+    "question": "Routing Collision: Can alternative routes trigger unintended access?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_78adb726-144d-42f2-bfc9-9dc8a80a27df",
+    "timestamp": "2025-11-22 07:10:39.451628",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Verification Bypass: Are invalid signatures ignored?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_101c9b53-7823-415a-90cb-dcd72dc64db4",
+    "timestamp": "2025-11-22 07:11:10.369078",
+    "report_generated": false
+  },
+  {
+    "question": "PKE Decryption Key Mismatch: Are shares encrypted to wrong keys returned?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_08061b53-172f-413a-b78f-449552c73ccc",
+    "timestamp": "2025-11-22 07:11:43.033967",
+    "report_generated": false
+  },
+  {
+    "question": "Shamir Secret Sharing Threshold Bypass: Does retrieval skip threshold checking?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_570794a9-9237-4cfc-9914-5c268d346985",
+    "timestamp": "2025-11-22 07:12:16.577615",
+    "report_generated": false
+  },
+  {
+    "question": "GuardianShare Cryptographic Binding Missing: Can shares be substituted?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e6e45b2a-29d5-4392-aa95-88a7147046ea",
+    "timestamp": "2025-11-22 07:12:46.354161",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Backend Semantics: Does eventual consistency break assumptions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b2bac896-2af2-40e7-9437-f6015daf3fdc",
+    "timestamp": "2025-11-22 07:13:16.718765",
+    "report_generated": false
   }
 ]
