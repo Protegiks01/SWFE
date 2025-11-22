@@ -10642,5 +10642,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4c8a3617-f99b-4ea4-adcf-826f56fdb8f0",
     "timestamp": "2025-11-22 06:41:52.513983",
     "report_generated": false
+  },
+  {
+    "question": "Backup Ciphertext Versioning: Can version mismatches between backup and share bypass verification? upload_share.rs:48-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b89908dd-cce8-40e8-ba0e-fa6e8d1aecf6",
+    "timestamp": "2025-11-22 06:43:03.379795",
+    "report_generated": false
+  },
+  {
+    "question": "Idempotency Guarantees: Does share overwrite behavior cause unexpected inconsistencies? upload_share.rs:58-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1f11ee00-e346-4ec0-aa28-6a805b933dda",
+    "timestamp": "2025-11-22 06:43:16.696081",
+    "report_generated": false
+  },
+  {
+    "question": "Share Index Gaps: Can non-consecutive indices cause reconstruction failures? upload_share.rs:65-66",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_45913439-e544-4658-a63b-3ed623d59afd",
+    "timestamp": "2025-11-22 06:43:30.084149",
+    "report_generated": false
+  },
+  {
+    "question": "Request Body Validation: Are oversized request bodies properly rejected? upload_share.rs:39",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a0e33a82-ac4d-4e42-98bd-053f6f062a80",
+    "timestamp": "2025-11-22 06:43:43.837773",
+    "report_generated": false
+  },
+  {
+    "question": "StrEncoded Security: Can malformed StrEncoded values bypass decoding validation? upload_share.rs:39-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_be1b720e-477f-4522-bdbb-b6e8d4661630",
+    "timestamp": "2025-11-22 06:43:58.082104",
+    "report_generated": false
+  },
+  {
+    "question": "Unwrapping Inner Values: Can decoded inner values be malformed despite valid outer encoding? upload_share.rs:41-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1f251280-32a3-4bac-b765-6593e5fb1d7e",
+    "timestamp": "2025-11-22 06:44:13.710074",
+    "report_generated": false
+  },
+  {
+    "question": "AccountId Validation: Does the system verify that account_id refers to a valid account? upload_share.rs:42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c10a58e4-6b4b-43fc-94b3-5e6f25658746",
+    "timestamp": "2025-11-22 06:44:31.030522",
+    "report_generated": false
+  },
+  {
+    "question": "BackupId Validation: Does backup_id get validated as belonging to the account? upload_share.rs:41",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_677f377b-6a0f-43ec-a930-4dfdac38404d",
+    "timestamp": "2025-11-22 06:44:50.054213",
+    "report_generated": false
+  },
+  {
+    "question": "GuardianShare Deserialization: Can malicious share data exploit deserialization behavior? upload_share.rs:39-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_600243f2-99eb-4d91-b5e1-bc764a204f1e",
+    "timestamp": "2025-11-22 06:45:10.626938",
+    "report_generated": false
+  },
+  {
+    "question": "Type Confusion: Can versioned GuardianShare variants be confused to bypass logic? upload_share.rs:39-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4ee3ac59-8d33-4aa8-b912-662fa3219671",
+    "timestamp": "2025-11-22 06:45:33.008360",
+    "report_generated": false
+  },
+  {
+    "question": "Field Bounds Checking: Are numeric fields like share indices bounds-checked? upload_share.rs:52-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cad98bb7-a40d-4066-a608-7931288ca6fd",
+    "timestamp": "2025-11-22 06:45:55.199058",
+    "report_generated": false
+  },
+  {
+    "question": "Null/Empty Input Handling: Does the system reject empty critical fields? upload_share.rs:39-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_70d40415-6f24-453a-9b22-adcea3d0b39b",
+    "timestamp": "2025-11-22 06:46:17.579307",
+    "report_generated": false
+  },
+  {
+    "question": "Character Encoding Issues: Can unexpected encoding bypass validation? upload_share.rs:39-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e7356a53-bc08-4eae-958f-9415c10b5b8d",
+    "timestamp": "2025-11-22 06:46:42.901156",
+    "report_generated": false
+  },
+  {
+    "question": "Request Content-Type: Does the endpoint validate Content-Type headers? upload_share.rs:36-39",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7c2a8bbf-8983-4e16-827a-2411515cf372",
+    "timestamp": "2025-11-22 06:47:08.443799",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Error Handling: Do deserialization errors leak sensitive details? upload_share.rs:39",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f6dc617e-987d-4f91-bcc7-12eafca35494",
+    "timestamp": "2025-11-22 06:47:35.814589",
+    "report_generated": false
+  },
+  {
+    "question": "Canonical Encoding: Can non-canonical encodings bypass dedup logic? upload_share.rs:39-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_aa22ff34-2691-4739-af69-2ae773b1d5e0",
+    "timestamp": "2025-11-22 06:48:03.853989",
+    "report_generated": false
+  },
+  {
+    "question": "JSON Injection: Can JSON injection manipulate parsed values? upload_share.rs:39",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c7a37ae2-2bd2-4e90-8bf0-ceca827919af",
+    "timestamp": "2025-11-22 06:48:33.331064",
+    "report_generated": false
+  },
+  {
+    "question": "Buffer Overflow: Can large or deeply nested inputs cause overflow or stack exhaustion? upload_share.rs:39",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7f9b6d02-e7ee-48e9-b7af-328d62527e1a",
+    "timestamp": "2025-11-22 06:49:02.767790",
+    "report_generated": false
+  },
+  {
+    "question": "Share Size Validation: Is maximum share size enforced? upload_share.rs:39-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_be4c6ea3-5266-438d-a7d5-f6a7af68ac09",
+    "timestamp": "2025-11-22 06:49:32.803242",
+    "report_generated": false
+  },
+  {
+    "question": "Request Field Injection: Are unexpected fields silently accepted or harmful? upload_share.rs:39",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0372d6ff-11ab-4af5-b711-e7eda7e4bb76",
+    "timestamp": "2025-11-22 06:50:04.275361",
+    "report_generated": false
+  },
+  {
+    "question": "Encoding Version Compatibility: Can old encodings be misinterpreted as valid? upload_share.rs:39-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4801b6bc-0bad-47da-9cb9-ea6ac275bc38",
+    "timestamp": "2025-11-22 06:50:36.564097",
+    "report_generated": false
+  },
+  {
+    "question": "Malformed Hex Encoding: Can invalid hex cause parsing issues? upload_share.rs:41-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_703c5815-2a6b-42ac-a091-4fcbdd556222",
+    "timestamp": "2025-11-22 06:51:08.629673",
+    "report_generated": false
+  },
+  {
+    "question": "Request Tampering: Can MITM tamper with request values if TLS assumptions break? upload_share.rs:36-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4744ecdc-fa73-4f23-8326-0b21458c2ec0",
+    "timestamp": "2025-11-22 06:51:40.068009",
+    "report_generated": false
+  },
+  {
+    "question": "Type Safety: Can runtime type confusion occur during deserialization? upload_share.rs:39-42",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_425f96e8-2193-420c-97da-3e0e892ae9b6",
+    "timestamp": "2025-11-22 06:52:12.597719",
+    "report_generated": false
+  },
+  {
+    "question": "Share Metadata Validation: Does metadata like version/timestamp get validated? upload_share.rs:39-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2abd277e-d8f3-4bf4-8390-b7aa520e081f",
+    "timestamp": "2025-11-22 06:52:43.554931",
+    "report_generated": false
   }
 ]
