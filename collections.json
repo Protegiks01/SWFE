@@ -7948,5 +7948,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_043f80b2-b67b-4037-a36d-debb4c4f1b9d",
     "timestamp": "2025-11-21 23:06:55.341820",
     "report_generated": false
+  },
+  {
+    "question": "Removing Backups in Recovery: Can attacker remove active recovery backups?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8f5a7605-fbc4-4e34-ab75-4784c2d9a90d",
+    "timestamp": "2025-11-22 02:57:47.731161",
+    "report_generated": false
+  },
+  {
+    "question": "Silent Removal: Can attacker spoof success?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f1450cad-5046-4873-b93b-1c170ef090e3",
+    "timestamp": "2025-11-22 02:58:00.637470",
+    "report_generated": false
+  },
+  {
+    "question": "Dirty Flag on Removal: Can attacker force version increments?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7de2d601-ffb0-48bd-b440-9b4dc0feb32e",
+    "timestamp": "2025-11-22 02:58:13.804066",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery List Modification: Could removing from recover disrupt ongoing recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_22e9f00e-7b60-414a-a609-880a4b2098d9",
+    "timestamp": "2025-11-22 02:58:27.410416",
+    "report_generated": false
+  },
+  {
+    "question": "Concurrent Modifications: Could race conditions cause inconsistent lists?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d1cfa14e-6085-44de-9fbc-7a8707e4ba5c",
+    "timestamp": "2025-11-22 02:58:41.929685",
+    "report_generated": false
+  },
+  {
+    "question": "Marking All Backups for Recovery: Can attacker exhaust guardians?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5bbc0f5f-d65c-4443-8a38-a6f258adea99",
+    "timestamp": "2025-11-22 02:58:58.362235",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery List Uniqueness: Could duplicates cause confusion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e5ea4f51-8bf6-4288-9fa8-1c1c290959c0",
+    "timestamp": "2025-11-22 02:59:15.261290",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Not Found Error Timing Leak: Can presence be inferred?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_759d15d0-eed9-41dd-9e41-dd364a7ccc1c",
+    "timestamp": "2025-11-22 02:59:34.763470",
+    "report_generated": false
+  },
+  {
+    "question": "State Consistency Risk: Crash between removal/addition?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e080a9ab-dbc7-4af4-9be7-ac201573552f",
+    "timestamp": "2025-11-22 02:59:54.430454",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Notification Missing: Could guardians miss recovery requests?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_952f3be8-efbf-4b18-868f-5691e491624c",
+    "timestamp": "2025-11-22 03:00:14.532103",
+    "report_generated": false
+  },
+  {
+    "question": "PKE Decryption DoS: Could attacker force many expensive decrypt attempts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_39b752f5-38ae-4004-9de9-7f89f20965a8",
+    "timestamp": "2025-11-22 03:00:35.713430",
+    "report_generated": false
+  },
+  {
+    "question": "Batch Decryption Index Manipulation: Can attacker access unintended shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cd18883c-85d5-4408-a5ea-7dd9d03a16c9",
+    "timestamp": "2025-11-22 03:00:58.424275",
+    "report_generated": false
+  },
+  {
+    "question": "Generic AAD Parameter: Could AAD confusion lead to cross-context decryption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0b1ccd37-1d31-488a-badb-e385f8f9e007",
+    "timestamp": "2025-11-22 03:01:22.453155",
+    "report_generated": false
+  },
+  {
+    "question": "Old Key Fallback: Why only last old key? Could earlier keys be needed?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5330326b-4954-40b6-bb6f-234aef90f053",
+    "timestamp": "2025-11-22 03:01:46.945419",
+    "report_generated": false
+  },
+  {
+    "question": "Share Index Conversion: Could overflow create incorrect indexing?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_701e359c-afdf-4979-9b46-d301ef839b1e",
+    "timestamp": "2025-11-22 03:02:12.140446",
+    "report_generated": false
+  },
+  {
+    "question": "Encryption Context Binding: Are all components properly bound?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_53b79dc1-25f6-4de7-b61b-c0c442c6300a",
+    "timestamp": "2025-11-22 03:02:38.115042",
+    "report_generated": false
+  },
+  {
+    "question": "Decrypted Share Return Type: Can wrapping cause type confusion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4095f72a-f827-4820-b889-893ae7e6a972",
+    "timestamp": "2025-11-22 03:03:06.439100",
+    "report_generated": false
+  },
+  {
+    "question": "Panic on Deserialization in Mapping::load: Can a malicious actor craft a Key type that fails serialization at storage.rs:14-19, causing encode::serialize(&key).unwrap() to panic and DoS the node?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0da5ab31-51b1-4677-b7f1-5b8c5dd96231",
+    "timestamp": "2025-11-22 03:03:34.371699",
+    "report_generated": false
+  },
+  {
+    "question": "Unhandled Deserialization Failure: At storage.rs:18, does malformed data cause encode::deserialize::<Value>().ok() to silently return None, blocking legitimate recovery operations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9204d209-1335-454e-8b3d-77e40c940ace",
+    "timestamp": "2025-11-22 03:04:02.731049",
+    "report_generated": false
+  },
+  {
+    "question": "Panic on Serialization in store: Can attackers craft GuardianShare or MskRecord values that cause encode::serialize(&value).unwrap() to panic at storage.rs:21-27?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8547c7da-7290-4b3c-ab67-0b582a980c84",
+    "timestamp": "2025-11-22 03:04:34.831979",
+    "report_generated": false
+  },
+  {
+    "question": "Type Confusion via bincode: Can GuardianShareCollection data be deserialized as MskRecordCollection due to lack of type tagging at storage.rs:10?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_98a7b8b3-3086-4a03-b6ff-83c95db0110a",
+    "timestamp": "2025-11-22 03:05:04.797372",
+    "report_generated": false
+  },
+  {
+    "question": "Version Mismatch in Deserialization: Can old serialized structs be deserialized into new incompatible types at storage.rs:14-19, causing undefined behavior?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_99b540ce-741d-49f3-8594-dcd6ec31dbf7",
+    "timestamp": "2025-11-22 03:05:37.072477",
+    "report_generated": false
+  },
+  {
+    "question": "Bincode Integer Overflow: Can attacker-controlled tuple keys (AccountId, BackupId) overflow during serialization at storage.rs:17, creating key collisions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_be7c7e04-4134-4790-b844-648eeacf266f",
+    "timestamp": "2025-11-22 03:06:09.205479",
+    "report_generated": false
+  },
+  {
+    "question": "Non-Canonical Serialization: Can two crafted EmailKey objects serialize to identical bytes at storage.rs:17, causing multi-account collisions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_68ea8e4d-2c19-4969-ac1a-1f138f0551d9",
+    "timestamp": "2025-11-22 03:06:43.607485",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Bomb: Can a huge BTreeMap<u32, GuardianShare> cause memory exhaustion during deserialization at storage.rs:18?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9d038dcf-e67a-4fa6-9c9e-f6a08bf66eba",
+    "timestamp": "2025-11-22 03:07:12.774878",
+    "report_generated": false
   }
 ]
