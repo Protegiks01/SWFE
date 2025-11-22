@@ -8098,5 +8098,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9d038dcf-e67a-4fa6-9c9e-f6a08bf66eba",
     "timestamp": "2025-11-22 03:07:12.774878",
     "report_generated": false
+  },
+  {
+    "question": "Malformed UTF-8 in COLLECTION_NAME: Can invalid bytes in COLLECTION_NAME at storage.rs:12 cause cross-collection contamination?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_aa1e8c09-fb66-4426-8ccb-a54cbbad98b1",
+    "timestamp": "2025-11-22 03:15:21.921189",
+    "report_generated": false
+  },
+  {
+    "question": "Replay Attack via Old Deserialized State: Can attackers replay old MskRecord or GuardianShare data due to missing timestamp/nonce checks at storage.rs:14-19?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_96c7ccec-499c-4cdf-966d-99dd9ecc8e89",
+    "timestamp": "2025-11-22 03:15:35.190253",
+    "report_generated": false
+  },
+  {
+    "question": "Bincode Length Prefix Manipulation: Can attackers manipulate Vec<u8> length prefixes at storage.rs:17 for collisions or OOB reads?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f7052c1b-d513-4f3e-b8b1-0f2d06a207aa",
+    "timestamp": "2025-11-22 03:15:49.516002",
+    "report_generated": false
+  },
+  {
+    "question": "Bincode Endianness Issues: Can different architectures serialize values differently at storage.rs:24-25, causing cross-node inconsistencies?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0df81ce1-b805-4d24-837f-146dd953f153",
+    "timestamp": "2025-11-22 03:16:04.067812",
+    "report_generated": false
+  },
+  {
+    "question": "Unbounded BTreeMap Deserialization: Can attacker store massive GuardianShareCollection causing DoS at storage.rs:18?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_aba83cf3-1edc-453f-9e75-beefddf7e647",
+    "timestamp": "2025-11-22 03:16:19.533626",
+    "report_generated": false
+  },
+  {
+    "question": "Recursive Structure Overflow: Can nested Value types cause stack overflow during bincode deserialization at storage.rs:18?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_eb146d6c-c328-4c99-b798-28f8c5aedede",
+    "timestamp": "2025-11-22 03:16:36.315386",
+    "report_generated": false
+  },
+  {
+    "question": "Enum Type Confusion: Can bincode enum discriminant reuse allow one variant to deserialize as another at storage.rs:18?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c4f34932-9e4e-4721-ba4b-1d351991a889",
+    "timestamp": "2025-11-22 03:16:54.966333",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Serialization Version Tag: Can old formats be misinterpreted by new code at storage.rs:8-28?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_377d689a-05c0-4e9a-9dca-4e8ae4c495cc",
+    "timestamp": "2025-11-22 03:17:14.338507",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization Timing Side Channel: Can attackers measure timing differences in encode::serialize at storage.rs:24-25 to infer data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b006d2de-02fe-4282-b726-59542aa6c5d3",
+    "timestamp": "2025-11-22 03:17:34.277183",
+    "report_generated": false
+  },
+  {
+    "question": "Padding Oracle in Serialized Data: Can repeated storing/loading leak information about MskRecord padding behavior?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_67a9f355-4e40-434b-80bd-0f5897e40775",
+    "timestamp": "2025-11-22 03:17:55.233590",
+    "report_generated": false
+  },
+  {
+    "question": "Canonical Encoding Violations: Can multiple EmailKey canonical forms be used to violate 1-email-1-account invariants?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_efbbd3b4-0c50-4cce-89be-9dcc4162f179",
+    "timestamp": "2025-11-22 03:18:17.769013",
+    "report_generated": false
+  },
+  {
+    "question": "Signed/Unsigned Integer Confusion: Can AccountId or BackupId type confusion cause key access mixups?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3db58953-3d01-4b5b-b767-f7b1278aaade",
+    "timestamp": "2025-11-22 03:18:40.956847",
+    "report_generated": false
+  },
+  {
+    "question": "Silent Backend Failure: Can storage.insert at storage.rs:26 silently fail, misleading endpoints?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3ab2de9a-a81c-4c10-8afe-8c1678e0af21",
+    "timestamp": "2025-11-22 03:19:05.565303",
+    "report_generated": false
+  },
+  {
+    "question": "Inconsistent Error Handling: Can load return None while store pretends success at storage.rs:21-27?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ef2d0307-5a29-4912-9c0c-d1b7a7b8759c",
+    "timestamp": "2025-11-22 03:19:31.981529",
+    "report_generated": false
+  },
+  {
+    "question": "Unwrap Panic Propagation: Can repeated serialization panics at storage.rs:24-25 destabilize the node?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_221ee247-ee95-4c1c-887f-be5502a985a8",
+    "timestamp": "2025-11-22 03:19:59.195273",
+    "report_generated": false
+  },
+  {
+    "question": "Error Message Leakage: Do serialization errors reveal sensitive internal structure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_08b96093-1a9b-4dda-b717-1b54081fbd29",
+    "timestamp": "2025-11-22 03:20:27.157201",
+    "report_generated": false
+  },
+  {
+    "question": "Partial Write on Panic: Can storage be left inconsistent if panic occurs after insert at storage.rs:26?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d4db906a-6508-4b04-a9dc-481d2bbbb3bb",
+    "timestamp": "2025-11-22 03:20:56.433315",
+    "report_generated": false
+  },
+  {
+    "question": "Collection Name Collision: Can two Mapping implementations use the same COLLECTION_NAME at storage.rs:12 and overwrite each other?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c1f7616b-c076-4ab8-b38a-c92d0f5b6a17",
+    "timestamp": "2025-11-22 03:21:26.163384",
+    "report_generated": false
+  },
+  {
+    "question": "Collection Namespace Injection: Can malicious collection names with null bytes break storage namespace integrity?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7756352b-8c54-4e2f-8f3c-01de8e4f1b4d",
+    "timestamp": "2025-11-22 03:21:58.260803",
+    "report_generated": false
+  },
+  {
+    "question": "Type Safety Across Collections: Can identical collection names cause cross-type deserialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d4a20e67-d92c-4bfd-9513-90b86ba5d1df",
+    "timestamp": "2025-11-22 03:22:29.129906",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Type Downgrade: Can attacker use permissive Mapping<Value> to store invalid guardian shares or email associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0ff33c06-4c57-4fd9-b7bc-5ea09691ec8e",
+    "timestamp": "2025-11-22 03:23:00.624012",
+    "report_generated": false
+  },
+  {
+    "question": "Prefix Collision: Can crafted COLLECTION_NAME prefixes collide with others in ctx.storage()?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_404129cb-ff9f-455d-a7f4-e819355b7050",
+    "timestamp": "2025-11-22 03:23:33.041275",
+    "report_generated": false
+  },
+  {
+    "question": "Singleton Key Security: Can OffchainSecrets using Key=() allow one node to overwrite another’s secrets?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_95115e7b-4283-4cdd-952f-3c74f08df27d",
+    "timestamp": "2025-11-22 03:24:05.440262",
+    "report_generated": false
+  },
+  {
+    "question": "Predictable Unit Key Serialization: Does () serialize to a fixed value attackers can spoof?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9a7fa6c1-ffe0-41e2-a8ac-9c61b80496a3",
+    "timestamp": "2025-11-22 03:24:37.585920",
+    "report_generated": false
+  },
+  {
+    "question": "Unit Key Replay Across Nodes: Can attackers replay OffchainSecret store ops across nodes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_915c3612-b07d-4fcd-964e-c869a9a78bd6",
+    "timestamp": "2025-11-22 03:25:07.657522",
+    "report_generated": false
   }
 ]
