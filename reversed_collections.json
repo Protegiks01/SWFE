@@ -10648,5 +10648,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_71389027-7fe6-49dd-94b4-39f66aeb4499",
     "timestamp": "2025-11-22 04:18:30.994352",
     "report_generated": false
+  },
+  {
+    "question": "Error Type Enumeration: Do EmailCert::verify errors eval.rs:40-45 reveal detailed failure reasons?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3650796f-a1bd-4521-8f68-fccaea991246",
+    "timestamp": "2025-11-22 04:19:41.414731",
+    "report_generated": false
+  },
+  {
+    "question": "Anonymity Revocation Attack: Can compromised nodes deanonymize users?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b61cdfec-27b3-4c8e-a554-bebd5c6eb3da",
+    "timestamp": "2025-11-22 04:19:54.376799",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Protocol Email Linkage: Can Swafe email be linked to other protocols?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4041dd15-e08a-4f3e-9a56-fd5be26cec67",
+    "timestamp": "2025-11-22 04:20:08.253265",
+    "report_generated": false
+  },
+  {
+    "question": "Email Privacy During Recovery: Does recovery flow leak emails?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_651b0a8f-ee51-421a-8a20-7962c44d2558",
+    "timestamp": "2025-11-22 04:20:22.075164",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Evaluation Frequency: Does frequency reveal active email accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_559f7a97-231f-4ada-bbf0-8fd35b2f5f0d",
+    "timestamp": "2025-11-22 04:20:37.169130",
+    "report_generated": false
+  },
+  {
+    "question": "Node Selection Bias: Does selecting specific nodes leak identity info?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0e543082-912b-44d6-bf39-97e52b1a94e1",
+    "timestamp": "2025-11-22 04:20:53.695651",
+    "report_generated": false
+  },
+  {
+    "question": "Email Certificate Timing Attack: Does issuance time leak user activity?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_51cfce72-e146-4ce4-864b-7d3c4020cf64",
+    "timestamp": "2025-11-22 04:21:11.673526",
+    "report_generated": false
+  },
+  {
+    "question": "Traffic Correlation with On-Chain: Can requests be correlated with on-chain actions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d140b926-7e6d-4a52-a833-29209a8492b5",
+    "timestamp": "2025-11-22 04:21:30.456313",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Output Distinguishability: Can attackers distinguish outputs without knowing emails?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f8804b86-5042-4584-86bf-7ea0a417642a",
+    "timestamp": "2025-11-22 04:21:50.598349",
+    "report_generated": false
+  },
+  {
+    "question": "Email Normalization Inconsistency: Do inconsistent normalization rules deanonymize users?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8ea7de34-f4da-4182-ab1f-f318f7fe16dd",
+    "timestamp": "2025-11-22 04:22:10.825454",
+    "report_generated": false
+  },
+  {
+    "question": "On-Chain State Leakage: Does storing vdrf_public_key leak email usage?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8f8b6111-0101-4e4e-b039-4b19e4683c0a",
+    "timestamp": "2025-11-22 04:22:32.695139",
+    "report_generated": false
+  },
+  {
+    "question": "Email Anonymity Set Size: Is the anonymity set sufficiently large?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_712b6f7d-348f-4752-873a-8296b2e2a1ed",
+    "timestamp": "2025-11-22 04:22:55.505427",
+    "report_generated": false
+  },
+  {
+    "question": "Evaluation Share Aggregation: Can aggregated shares over time reveal usage patterns?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8f99b607-0210-4add-a150-e90fabe3c0e2",
+    "timestamp": "2025-11-22 04:23:18.573533",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Public Key Observation: Does public key leak email usage patterns?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f114ee49-063e-4331-984e-1992449c3e79",
+    "timestamp": "2025-11-22 04:23:43.264509",
+    "report_generated": false
+  },
+  {
+    "question": "Email Certificate Metadata: Does certificate embed identifying metadata?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5266b680-f354-4921-bd67-c39ce60658b6",
+    "timestamp": "2025-11-22 04:24:09.192966",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Node Email Enumeration: Does querying nodes confirm account associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5fa5be34-bcf9-4914-842b-3f168b6c851c",
+    "timestamp": "2025-11-22 04:24:35.842471",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Determinism Exploitation: Can attackers build email-output rainbow tables?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8d4f021c-a733-4aec-bd3c-51ced1f24dc3",
+    "timestamp": "2025-11-22 04:25:03.242968",
+    "report_generated": false
+  },
+  {
+    "question": "Error Message Email Leakage: Do errors distinguish valid vs invalid emails?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_441fafdf-4783-40dc-b892-2e078069d6bd",
+    "timestamp": "2025-11-22 04:25:32.273203",
+    "report_generated": false
+  },
+  {
+    "question": "Network Traffic Analysis: Do packet sizes leak email metadata?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_546fbc54-4fee-4b99-a151-d78f101cebb8",
+    "timestamp": "2025-11-22 04:26:02.380965",
+    "report_generated": false
+  },
+  {
+    "question": "Statistical Analysis Attack: Can collected shares reveal email structure?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0509d1f7-c7f6-4a90-adb1-3918b6013645",
+    "timestamp": "2025-11-22 04:26:34.017634",
+    "report_generated": false
+  },
+  {
+    "question": "Email Domain Leakage: Does computation leak domain (@gmail.com vs others)?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_34c4952c-ddb7-4e61-97a7-4d23243e214d",
+    "timestamp": "2025-11-22 04:27:05.988596",
+    "report_generated": false
+  },
+  {
+    "question": "Request Pattern Analysis: Do request patterns reveal email usage?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3959e1b7-9494-48cf-bc11-e8cacf62c8da",
+    "timestamp": "2025-11-22 04:27:37.082714",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Output Linkability: Can shares be linked across nodes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6ece9553-7ce1-4950-9435-6217984a09b9",
+    "timestamp": "2025-11-22 04:28:08.931668",
+    "report_generated": false
+  },
+  {
+    "question": "Email Hash Collision: If two emails hash identically, does binding break?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7a63f967-e064-452d-a03c-b81b8be25391",
+    "timestamp": "2025-11-22 04:28:39.811436",
+    "report_generated": false
+  },
+  {
+    "question": "Node Correlation Attack: Can queries across nodes deanonymize users?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9646bad5-32af-4c2c-ba34-fc9f077922b6",
+    "timestamp": "2025-11-22 04:29:11.277558",
+    "report_generated": false
   }
 ]
