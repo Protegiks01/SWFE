@@ -11542,5 +11542,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ab5b70d3-54f2-4367-8c4d-e3b4bed8989d",
     "timestamp": "2025-11-22 07:47:41.828108",
     "report_generated": false
+  },
+  {
+    "question": "Privacy of Guardian Actions: Does endpoint reveal which guardians have uploaded? upload_share.rs:69-72",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_84f112b2-71f1-46f5-8805-24d7e08c60cb",
+    "timestamp": "2025-11-22 07:49:00.611336",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Structure Leakage: Can probing backup IDs leak structure? upload_share.rs:48-50",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d9f00a57-6c92-46f1-ad56-8a632899908f",
+    "timestamp": "2025-11-22 07:49:13.628874",
+    "report_generated": false
+  },
+  {
+    "question": "Share Count Leakage: Does response leak number of uploaded shares or threshold?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_30587073-7855-4d83-8601-95b22f59c6fd",
+    "timestamp": "2025-11-22 07:49:26.870658",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Authentication Check: The handler function at line 19-35 does not verify the identity of the HTTP request sender. Can an unprivileged attacker query guardian shares for any (account_id, backup_id) pair without proving they own the account, violating the invariant that 'only the owner of an account should be able to request the reconstruction of a backup'?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5ed0d8e5-3f49-4986-9449-dcfc30f71739",
+    "timestamp": "2025-11-22 07:49:41.132519",
+    "report_generated": false
+  },
+  {
+    "question": "No Cryptographic Proof of Ownership: Line 25-26 extracts account_id and backup_id from the request without requiring a signature from the account owner's signing key. Can an attacker who learns valid (account_id, backup_id) pairs retrieve shares they should not have access to?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b73fea36-ffcb-43cb-939e-3163384d01bf",
+    "timestamp": "2025-11-22 07:49:55.791021",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Email Certificate Verification: The handler does not verify that the caller possesses a valid email certificate corresponding to the account's associated email(s). Does this allow recovery without proving email ownership?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c47bb792-ecd5-4e87-8f2b-a4d00d65de48",
+    "timestamp": "2025-11-22 07:50:11.776512",
+    "report_generated": false
+  },
+  {
+    "question": "Bypass of Recovery Initiation Key (RIK) Check: Unlike the full recovery flow which verifies RIK signatures, this endpoint retrieves shares without RIK validation. Can an attacker obtain shares without proving they initiated recovery?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_831551cd-c022-4fd3-95f1-b58015191952",
+    "timestamp": "2025-11-22 07:50:28.650562",
+    "report_generated": false
+  },
+  {
+    "question": "No Session or Token Validation: The handler includes no session or bearer token validation. Can an attacker replay old requests or reuse stolen credentials?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e9c14121-c5f2-4931-9caf-29f4246e6cdb",
+    "timestamp": "2025-11-22 07:50:48.299031",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Account Ownership Verification: Lines 28-29 load shares without checking if the requester is the account owner. Can an attacker enumerate accounts and retrieve shares for accounts they do not own?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_033c2900-608f-4fce-86da-e3fea0c44f27",
+    "timestamp": "2025-11-22 07:51:08.905339",
+    "report_generated": false
+  },
+  {
+    "question": "No Cross-Reference with Account State: The handler does not call state.get_account(account_id). Can an attacker query shares for deleted or invalid accounts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7dcd21e5-3faf-4cca-8902-86b8fb0fb01d",
+    "timestamp": "2025-11-22 07:51:31.337595",
+    "report_generated": false
+  },
+  {
+    "question": "Lack of Guardian Authorization Check: The endpoint does not verify whether the caller is an authorized guardian. Can a malicious guardian retrieve shares for backups they are not part of?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_313f4196-edf7-468f-8c8a-d70591736dea",
+    "timestamp": "2025-11-22 07:51:53.794691",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Recovery State Validation: The code does not check if the account is in an active recovery state. Can attackers retrieve shares before recovery is initiated?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cffe651d-8bfd-4940-8f8c-bdbe8f5b952f",
+    "timestamp": "2025-11-22 07:52:18.207299",
+    "report_generated": false
+  },
+  {
+    "question": "No Backup ID Validation Against Account: backup_id is used directly without checking if it belongs to the account. Can attackers probe the storage for valid backup structures?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0220b849-cff4-4037-9b49-12f486dd05da",
+    "timestamp": "2025-11-22 07:52:43.345763",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Privilege Escalation: If a minority guardian can retrieve all shares, can they collaborate to reconstruct a backup without threshold approval?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f542fa18-2c26-4558-a84d-b00e7b2d23b1",
+    "timestamp": "2025-11-22 07:53:09.982098",
+    "report_generated": false
+  },
+  {
+    "question": "Off-Chain Node Operator Access: Without identity binding, can a compromised off-chain node operator retrieve shares for any account?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4fde7392-cf18-486b-b521-15dedcff2d88",
+    "timestamp": "2025-11-22 07:53:37.361485",
+    "report_generated": false
+  },
+  {
+    "question": "No Proof of Guardian Approval: Shares are returned without any check that guardians approved recovery. Can shares be retrieved before approval?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8673b6ac-8489-4fea-92a7-43648e414923",
+    "timestamp": "2025-11-22 07:54:05.765431",
+    "report_generated": false
+  },
+  {
+    "question": "Bypassing Threshold Enforcement: shares.values().cloned() returns all stored shares without enforcing threshold. Can an attacker reconstruct a backup with fewer than t shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_893f0934-1b01-481d-97f8-d48af13c3f69",
+    "timestamp": "2025-11-22 07:54:35.453573",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Account Share Leakage: If (account_id, backup_id) is guessable, can an attacker enumerate active recovery attempts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_eb9af028-3b31-4ced-b6c5-75abfd4504ca",
+    "timestamp": "2025-11-22 07:55:05.668763",
+    "report_generated": false
+  },
+  {
+    "question": "Trust Model Weakening: Retrieving shares without authorization may reduce required corruption from t guardians to only storage compromise.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9d2f901a-eded-41cf-ac5e-0b13dc0c28c8",
+    "timestamp": "2025-11-22 07:55:37.265111",
+    "report_generated": false
+  },
+  {
+    "question": "Off-Chain Node Minority Corruption Impact: Does this endpoint leak account-to-recovery linkage when a minority node is corrupted?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_36391ca4-5c38-4422-b38b-62db960db98c",
+    "timestamp": "2025-11-22 07:56:09.546194",
+    "report_generated": false
+  },
+  {
+    "question": "Swafe-io Trust Dependency Bypass: Skipping certificate checks bypasses Swafe-io's role as CA.",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_af967b9d-009b-48f8-8109-ce89a06c6139",
+    "timestamp": "2025-11-22 07:56:42.181298",
+    "report_generated": false
+  },
+  {
+    "question": "No Multi-Party Authorization: Does returning shares to any caller break the required multi-party recovery model?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1fc23f7c-5161-4a63-90e5-e821460d4bcc",
+    "timestamp": "2025-11-22 07:57:15.639504",
+    "report_generated": false
+  },
+  {
+    "question": "Lack of Time-Based Restrictions: If time locks exist elsewhere, does this endpoint bypass them?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bc2fcbe3-93a4-4b66-b393-dd822a1668e1",
+    "timestamp": "2025-11-22 07:57:49.412529",
+    "report_generated": false
+  },
+  {
+    "question": "Missing IP or Geographic Restrictions: If enforced elsewhere, does this endpoint ignore them?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b7e1e688-3989-4a60-b56f-9c94b4256471",
+    "timestamp": "2025-11-22 07:58:24.127044",
+    "report_generated": false
+  },
+  {
+    "question": "No Two-Factor Authentication Check: Does share retrieval bypass 2FA settings?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d6563dcc-ea20-4280-be38-46fe6f45e4fd",
+    "timestamp": "2025-11-22 07:58:57.753791",
+    "report_generated": false
   }
 ]
