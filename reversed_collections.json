@@ -12298,5 +12298,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_99107a8c-ad18-4a2e-bf3b-9b75f23d53f1",
     "timestamp": "2025-11-22 06:17:47.434839",
     "report_generated": false
+  },
+  {
+    "question": "Certificate Time Validation: In the handler function, does EmailCert::verify at line 55 properly validate certificate timestamps using ctx.current_time(), and could a malicious user replay an expired certificate if off-chain node clocks are manipulated?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_35a66ea4-c634-4ce5-ba7f-79f58a83b276",
+    "timestamp": "2025-11-22 06:19:00.491133",
+    "report_generated": false
+  },
+  {
+    "question": "Panic Handling: If panic occurs in hash/storage, is sensitive data exposed? init.rs:38-81",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3899a1c1-6a37-4822-b28f-cb8c5a6fd9d8",
+    "timestamp": "2025-11-22 06:19:14.034251",
+    "report_generated": false
+  },
+  {
+    "question": "Debug Logging: Do debug logs leak sensitive info? init.rs:38-81",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dadf08e4-3fe9-4324-ba29-4f6aae5fbe24",
+    "timestamp": "2025-11-22 06:19:27.536087",
+    "report_generated": false
+  },
+  {
+    "question": "Error Recovery State: Does error reveal partial state after failure? init.rs:44-81",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d24256f0-0edc-4484-9039-de04a388cbee",
+    "timestamp": "2025-11-22 06:19:41.820638",
+    "report_generated": false
+  },
+  {
+    "question": "Timing Side-Channel in Error Paths: Do different errors take different time? init.rs:44-81",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_15c75df4-7d9d-4764-95ec-62a7ced63062",
+    "timestamp": "2025-11-22 06:19:57.475726",
+    "report_generated": false
+  },
+  {
+    "question": "Stack Trace Exposure: Are stack traces exposed on panic? init.rs:38-81",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_97f3557a-b341-4607-b656-fc406fbd2d09",
+    "timestamp": "2025-11-22 06:20:13.749879",
+    "report_generated": false
+  },
+  {
+    "question": "Error Code Mapping: Do varied HTTP codes allow fingerprinting? init.rs:44-81",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dd6589b8-c0b9-4aad-9f40-5483c2a6e028",
+    "timestamp": "2025-11-22 06:20:31.244786",
+    "report_generated": false
+  },
+  {
+    "question": "Success Message Leakage: Does fixed success message leak state? init.rs:75-78",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_89fb3e05-40af-4c2d-b75d-36bb63144125",
+    "timestamp": "2025-11-22 06:20:51.088280",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization Error Details: Does deserialization error expose field names or structure? init.rs:48",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c43f1e0f-679e-4dc3-afdf-75dba72a687b",
+    "timestamp": "2025-11-22 06:21:12.763513",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Mismatch Error: Can timing analysis leak info about commitment? init.rs:59-63",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1cb3842f-5017-4ce8-99fe-d9f1d962f389",
+    "timestamp": "2025-11-22 06:21:35.317402",
+    "report_generated": false
+  },
+  {
+    "question": "Node ID Enumeration: Error reveals which node IDs exist. init.rs:52-54",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c193d770-1137-405e-b4ed-736dcf56ce99",
+    "timestamp": "2025-11-22 06:21:59.490693",
+    "report_generated": false
+  },
+  {
+    "question": "Error Message Distinguishability: Are errors unique enough to be used for probing? init.rs:44-64",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3ab0eebf-5ed5-45e9-a802-6d6a220c1f68",
+    "timestamp": "2025-11-22 06:22:23.851402",
+    "report_generated": false
+  },
+  {
+    "question": "Trust on First Use (TOFU): Is TOFU acceptable? init.rs:44-71",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3b722b57-998d-4f1d-bd8a-cd13af7710f2",
+    "timestamp": "2025-11-22 06:22:49.204700",
+    "report_generated": false
+  },
+  {
+    "question": "Authorization Bypass via State: Can modified ContractState bypass checks? init.rs:40-43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fe005bd4-b6a0-4a99-b533-00bfc11f344f",
+    "timestamp": "2025-11-22 06:23:16.394173",
+    "report_generated": false
+  },
+  {
+    "question": "Rate Limiting Per Node: Can attacker brute-force initialization attempts? init.rs:38-43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_65bfd0b0-68aa-4118-8589-8aa4d0b84dfb",
+    "timestamp": "2025-11-22 06:23:45.650720",
+    "report_generated": false
+  },
+  {
+    "question": "Network Segmentation: Should endpoint only be internal to private network? init.rs:38-43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_17fa4a19-e741-429a-9dd3-78f829f8182c",
+    "timestamp": "2025-11-22 06:24:17.158387",
+    "report_generated": false
+  },
+  {
+    "question": "Challenge-Response Protocol: Should node prove possession of private key? init.rs:38-71",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e1f6ea76-6795-465e-8978-92fc079924ff",
+    "timestamp": "2025-11-22 06:24:49.053984",
+    "report_generated": false
+  },
+  {
+    "question": "Origin Header Validation: Can Origin/Referer be used to prevent unauthorized access? init.rs:38-43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c21c69e5-da81-44c7-898f-a817679029ea",
+    "timestamp": "2025-11-22 06:25:21.008166",
+    "report_generated": false
+  },
+  {
+    "question": "Multi-Factor Authentication: Should MFA be required? init.rs:38-43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ca54995b-d10f-441b-b37e-9279bc2b26a8",
+    "timestamp": "2025-11-22 06:25:53.377788",
+    "report_generated": false
+  },
+  {
+    "question": "API Key Validation: Should initialization require API key or bearer token? init.rs:38-43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_188ba97f-4249-4b2f-8eff-9093935d9f4e",
+    "timestamp": "2025-11-22 06:26:24.082381",
+    "report_generated": false
+  },
+  {
+    "question": "Session Management: Is CSRF possible if operator is logged in somewhere? init.rs:38-43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1fc90fb2-f03b-41f0-9172-b06f6ee5e54d",
+    "timestamp": "2025-11-22 06:26:54.809130",
+    "report_generated": false
+  },
+  {
+    "question": "Public Key-Based Authentication: Should submitter sign request using node's private key? init.rs:52-54",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_870e5610-9380-4be4-837e-d3881e80edde",
+    "timestamp": "2025-11-22 06:27:24.196549",
+    "report_generated": false
+  },
+  {
+    "question": "Admin Privilege Escalation: Can admin override and initialize arbitrary nodes? init.rs:38-43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_99167c9f-4340-457c-99b3-c43ec468b547",
+    "timestamp": "2025-11-22 06:27:54.566468",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Node Initialization: Can attacker use node A's secret to init node B? init.rs:51-71",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8f51e111-ca14-4e26-8d19-d3902d0f71b4",
+    "timestamp": "2025-11-22 06:28:25.360608",
+    "report_generated": false
+  },
+  {
+    "question": "Partisia Address Verification: Should requester be validated against stored address? init.rs:52-54",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a79310a1-957b-4607-a868-4959413b40b6",
+    "timestamp": "2025-11-22 06:28:57.846952",
+    "report_generated": false
   }
 ]
