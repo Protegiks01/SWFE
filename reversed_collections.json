@@ -9298,5 +9298,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ad35305e-461c-4187-a6c2-e51f2d5c89bb",
     "timestamp": "2025-11-22 00:26:04.179716",
     "report_generated": false
+  },
+  {
+    "question": "Endianness Consistency: Is encoding cross-platform consistent?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3867a601-6c47-497c-a5e0-7613c177d13e",
+    "timestamp": "2025-11-22 00:27:11.130452",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Malleability: Can multiple encodings map to same share?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_22b53e0c-7b8c-4d3e-b006-70d5ecf41e80",
+    "timestamp": "2025-11-22 00:27:24.113543",
+    "report_generated": false
+  },
+  {
+    "question": "Out-of-Field Deserialization: Are >modulus values rejected?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b77b4d8d-793d-4b39-ae13-7a91d185099a",
+    "timestamp": "2025-11-22 00:27:37.409785",
+    "report_generated": false
+  },
+  {
+    "question": "Field Element Padding: Does padding leak magnitude information?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_602c6e55-854e-405f-9db4-8d372976d995",
+    "timestamp": "2025-11-22 00:27:51.012920",
+    "report_generated": false
+  },
+  {
+    "question": "Field Element Canonical Representation: Are Fr elements stored in reduced form?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4815b98a-b24a-4d91-885a-ce2926f5b571",
+    "timestamp": "2025-11-22 00:28:05.427034",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization Side Channels: Can encode/decode timing leak secret info?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_774ab12e-e9d1-45ee-ac13-e875f10ff9a3",
+    "timestamp": "2025-11-22 00:28:20.911892",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization Version Compatibility: Will old shares still decode after format changes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_06b3aff0-edd2-473b-b563-e814f133c1c6",
+    "timestamp": "2025-11-22 00:28:38.384663",
+    "report_generated": false
+  },
+  {
+    "question": "Deserialization Validation: Are deserialized field elements checked for validity?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2baae54b-5406-42ad-af0e-45d44ac854bb",
+    "timestamp": "2025-11-22 00:28:57.446597",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Serialization Security: Does serializing Secret leak metadata?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_349ddffc-3079-4ad0-bd9c-34bf2a0a9110",
+    "timestamp": "2025-11-22 00:29:18.117327",
+    "report_generated": false
+  },
+  {
+    "question": "Share Serialization Format: Is the custom fr serializer canonical and non-malleable?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1b6dc73b-4f83-4e64-a26f-e6ff2022246b",
+    "timestamp": "2025-11-22 00:29:39.255913",
+    "report_generated": false
+  },
+  {
+    "question": "Negative Index Attack: Can wrapped-around indices manipulate interpolation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6d6f944d-24bb-4499-a452-643fa80a476a",
+    "timestamp": "2025-11-22 00:30:00.994227",
+    "report_generated": false
+  },
+  {
+    "question": "Index Overflow in Field Conversion: Can large indices misbehave?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d34691a3-52c2-436c-ba55-e2f590ecfd07",
+    "timestamp": "2025-11-22 00:30:24.964050",
+    "report_generated": false
+  },
+  {
+    "question": "Index Gap Handling: Do gaps (1,3,7) break interpolation?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b530d86e-05ee-41c9-9370-2db40b3146c2",
+    "timestamp": "2025-11-22 00:30:49.736207",
+    "report_generated": false
+  },
+  {
+    "question": "Zero Index Exploitation: What happens if index zero is accepted?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9fac403c-da48-409b-b14c-772faeafaa9a",
+    "timestamp": "2025-11-22 00:31:16.266982",
+    "report_generated": false
+  },
+  {
+    "question": "Index Consistency Between Generation and Recovery: Is there an off-by-one?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9a5d0f75-8643-45ab-ac94-cfe8de93c0dd",
+    "timestamp": "2025-11-22 00:31:43.364115",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery Timing Variation: Does timing depend on share properties?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4b533c6d-c8dc-41ce-8ffa-f7cf07de8d9b",
+    "timestamp": "2025-11-22 00:32:11.670394",
+    "report_generated": false
+  },
+  {
+    "question": "Repeated Recovery Attempts: Can attackers learn by differential attempts?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_03fc4d4d-a705-44ae-821d-e8b03431fa18",
+    "timestamp": "2025-11-22 00:32:40.970671",
+    "report_generated": false
+  },
+  {
+    "question": "Recovery Error Information Leak: Do errors leak threshold or secret info?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8f7945ae-ec30-406e-8322-d06396d6b165",
+    "timestamp": "2025-11-22 00:33:11.042322",
+    "report_generated": false
+  },
+  {
+    "question": "Insufficient Share Silent Failure: Can wrong results bypass upstream checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f29c46ea-695a-4bca-801d-7bb8ed39b1d8",
+    "timestamp": "2025-11-22 00:33:42.306695",
+    "report_generated": false
+  },
+  {
+    "question": "Empty Share List Handling: Should empty recovery be an error?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_af0c0c80-ab1f-453d-a446-ebcb90b15594",
+    "timestamp": "2025-11-22 00:34:13.713365",
+    "report_generated": false
+  },
+  {
+    "question": "Share Index Tampering: Can attackers alter index values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_021a6352-72d2-4053-8ee1-9f7e9d990030",
+    "timestamp": "2025-11-22 00:34:44.916982",
+    "report_generated": false
+  },
+  {
+    "question": "Share Version Compatibility: Can future versions mix incompatible shares?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dba09cd5-3f53-4fd1-8710-58b2f3effa8f",
+    "timestamp": "2025-11-22 00:35:15.496017",
+    "report_generated": false
+  },
+  {
+    "question": "Share Completeness: Can shares from different origins be mixed?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_060e66e3-f59a-4a22-a9f1-fbe606f0497e",
+    "timestamp": "2025-11-22 00:35:46.696324",
+    "report_generated": false
+  },
+  {
+    "question": "Share Integrity: Can shares be tampered with undetected?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3352f979-6090-42ac-9ff7-cefdc4c9aff8",
+    "timestamp": "2025-11-22 00:36:17.143034",
+    "report_generated": false
+  },
+  {
+    "question": "Share Authenticity: Does recover() verify share authenticity?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_07b3ef67-9686-4d44-bd42-c4ffabd0768c",
+    "timestamp": "2025-11-22 00:36:47.498826",
+    "report_generated": false
   }
 ]
