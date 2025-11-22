@@ -11698,5 +11698,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f4e1623c-8935-4157-b1ab-cceb150a4bd2",
     "timestamp": "2025-11-22 05:34:19.386061",
     "report_generated": false
+  },
+  {
+    "question": "Request Body Parsing: At line 39, does deserialize_request_body validate the JSON structure before attempting deserialization, preventing malformed input?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_08ea7bdd-8022-46da-ade7-0125ae01d456",
+    "timestamp": "2025-11-22 05:35:30.779237",
+    "report_generated": false
+  },
+  {
+    "question": "Collection Trait Safety: Does the Mapping trait implementation at lines 26-31 properly handle generic type parameters without type confusion? upload_msk.rs:23-31",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e52b8bf1-eb08-4da7-9625-a38b3ba08606",
+    "timestamp": "2025-11-22 05:35:44.042918",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Concurrent Access: If two nodes store different MskRecord values for the same EmailKey at line 60-64, how is the conflict resolved?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9cc06d30-3b87-4661-b08c-d8cac8467880",
+    "timestamp": "2025-11-22 05:35:57.791832",
+    "report_generated": false
+  },
+  {
+    "question": "EmailKey Uniqueness Guarantee: Across all off-chain nodes, does storing at line 60-64 with the same EmailKey guarantee the same MskRecord is stored?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_69cd74d3-3b65-4317-a946-634920ef74b9",
+    "timestamp": "2025-11-22 05:36:11.958788",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Error Propagation: If storage fails at line 60-64, how is the error communicated back, and could failures be silently ignored?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0bdc9c09-ad36-4c17-bb1d-b5b98bb1b7e3",
+    "timestamp": "2025-11-22 05:36:26.661966",
+    "report_generated": false
+  },
+  {
+    "question": "Default Values: At line 24, MskRecordCollection derives Default—could this introduce uninitialized state bugs when loading non-existent keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_39684011-8620-48b8-b22f-2568ec4f908c",
+    "timestamp": "2025-11-22 05:36:42.984717",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Key Parsing: When loading an EmailKey from storage, does deserialization properly validate the 32-byte format to prevent corruption?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6a752726-74f5-495f-85a9-0fbb7e1b08d5",
+    "timestamp": "2025-11-22 05:37:00.414978",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Transaction Semantics: If multiple storage operations occur in the handler, does line 60-64's store participate in any transaction that could roll back?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_77a5248c-de4f-4fab-afc6-0f680de5b557",
+    "timestamp": "2025-11-22 05:37:19.805199",
+    "report_generated": false
+  },
+  {
+    "question": "Collection Initialization: Is the MskRecordCollection at line 24 properly initialized before first use, or could uninitialized state cause issues?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e20cbdb9-e31a-41f0-bba3-cf6ca7b882b7",
+    "timestamp": "2025-11-22 05:37:39.984589",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Context Safety: Does MskRecordCollection::store at line 60-64 properly use the OffChainContext without introducing side effects?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b3f9c446-ff03-48f0-9c27-80278054d191",
+    "timestamp": "2025-11-22 05:38:02.411803",
+    "report_generated": false
+  },
+  {
+    "question": "MskRecord Cloning: At line 60-64, is the MskRecord value copied or moved into storage, and could this affect the original data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8b7246d9-b0d1-4d29-ad77-0c9d063bc9cb",
+    "timestamp": "2025-11-22 05:38:24.917566",
+    "report_generated": false
+  },
+  {
+    "question": "EmailKey Serialization: When the EmailKey from line 58 is serialized as a storage key at line 60-64, is the serialization canonical and collision-free?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_caae9dba-43d9-412b-98fc-efab6bf6a9a2",
+    "timestamp": "2025-11-22 05:38:48.039882",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Capacity Limits: Could an attacker fill storage by creating many associations at line 60-64, causing storage exhaustion for legitimate users?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fb51dbe6-2945-449a-a1cb-e0323e38c840",
+    "timestamp": "2025-11-22 05:39:13.178644",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Namespace Isolation: At line 30, does COLLECTION_NAME = 'map:associations' ensure isolation from other storage collections used by different endpoints?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c1ffdf43-982d-40ec-a4da-3e342d5545a9",
+    "timestamp": "2025-11-22 05:39:39.212739",
+    "report_generated": false
+  },
+  {
+    "question": "Off-Chain Storage Durability: After line 60-64 stores the record, is it immediately durable or could a node crash lose the data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_50a361f4-f322-4f16-a83f-60eb90ca3c46",
+    "timestamp": "2025-11-22 05:40:06.784880",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Encoding: Does the Mapping trait use consistent serialization for both key (EmailKey) and value (MskRecord) at line 60-64?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a6716b18-3a3b-418d-af06-890374757ada",
+    "timestamp": "2025-11-22 05:40:35.497021",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Read-After-Write: Can the same handler read back the value immediately after line 60-64's store operation, and is the value guaranteed to be visible?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_38a496ae-1caa-4835-ba53-302160a3a098",
+    "timestamp": "2025-11-22 05:41:04.787711",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Deletion: Is there any mechanism to delete a MskRecord from storage after it's stored at line 60-64, and could this be abused?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1a977de4-0ccd-4ac7-af24-a85dcd284f37",
+    "timestamp": "2025-11-22 05:41:35.904970",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Version Migration: If the MskRecord structure changes in a future version, how does line 60-64's storage handle deserialization of old records?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_17a60c62-3591-44a8-9cd5-2e5c86b2c852",
+    "timestamp": "2025-11-22 05:42:08.122118",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Key Uniqueness: At line 60-64, does the email tag serve as a unique identifier across all users, or could different users with different VDRFs collide?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e38f180f-f113-45f3-a7b9-03401f3b13e4",
+    "timestamp": "2025-11-22 05:42:41.578172",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Retrieval: If MskRecordCollection::load is called elsewhere for the EmailKey created at line 58, will it successfully deserialize the stored MskRecord?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_99ef1d4f-8874-46d5-8afc-0caa22174db7",
+    "timestamp": "2025-11-22 05:43:14.802843",
+    "report_generated": false
+  },
+  {
+    "question": "Collection Name Conflict: The collection name 'map:associations' at line 30—could other endpoints accidentally access this collection and corrupt data?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_21f255d3-3515-4eb7-99a6-a0ecb21addeb",
+    "timestamp": "2025-11-22 05:43:45.562550",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Atomicity: Is the store operation at line 60-64 atomic, or could partial writes leave storage in an inconsistent state if the node crashes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7d024743-bb2b-459f-a93a-13437a63d92e",
+    "timestamp": "2025-11-22 05:44:15.029692",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Key Collision: At line 60-64, does the Mapping trait's key serialization ensure EmailKey values produce unique storage keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9bfcec95-1c3e-488b-a72e-68989aebf35b",
+    "timestamp": "2025-11-22 05:44:44.715301",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Serialization: When MskRecordCollection::store is called at line 60-64, are there any size limits on the serialized MskRecord to prevent storage exhaustion?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d5c7ca66-d378-415d-a1af-b86b21a5a938",
+    "timestamp": "2025-11-22 05:45:15.766419",
+    "report_generated": false
   }
 ]
