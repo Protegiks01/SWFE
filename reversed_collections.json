@@ -12598,5 +12598,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8c9dd2b3-b668-4d2d-9014-71f77fe4941a",
     "timestamp": "2025-11-22 06:39:54.774392",
     "report_generated": false
+  },
+  {
+    "question": "Node ID Mismatch in Storage: StoredOffchainSecret stores node_id redundantly. Can mismatch cause failures? init.rs:66-69",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_03282377-3e34-4c02-9324-805418f85ba7",
+    "timestamp": "2025-11-22 06:41:04.784927",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Serialization Mismatch: If serialization format changes, can old stored values break logic? init.rs:22-26",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bc5463de-0937-4060-ac3c-04bbc8cff885",
+    "timestamp": "2025-11-22 06:41:18.017903",
+    "report_generated": false
+  },
+  {
+    "question": "Off-Chain Storage Corruption: Can attacker modify stored secret directly in storage backend? init.rs:71",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e985f54e-6f37-4e46-8bfb-06484878295c",
+    "timestamp": "2025-11-22 06:41:31.391917",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Persistence Failure: If storage fails but state is updated, does node remain inconsistent? init.rs:71",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_478bdcf1-f450-4ce6-b17d-3d079b8eb4c7",
+    "timestamp": "2025-11-22 06:41:45.101659",
+    "report_generated": false
+  },
+  {
+    "question": "Singleton Storage Key Collision: OffchainSecrets uses () as key. Can nodes collide? init.rs:31-36",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_df57fca0-2010-4548-b3a4-b2df5274e0fc",
+    "timestamp": "2025-11-22 06:41:59.467576",
+    "report_generated": false
+  },
+  {
+    "question": "Storage Overwrite Attack: Can OffchainSecrets::store() overwrite legitimate data after initialization? init.rs:71",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_383501b7-2a1f-4eb5-97d9-77f0531e491e",
+    "timestamp": "2025-11-22 06:42:15.561560",
+    "report_generated": false
+  },
+  {
+    "question": "Race Condition in Initialization Check: Between checking OffchainSecrets::load() at line 44 and storing at line 71, can concurrent requests initialize the same node twice? init.rs:44-71",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a5057cf5-fa01-46a2-99b4-9a07d7570356",
+    "timestamp": "2025-11-22 06:42:32.880381",
+    "report_generated": false
+  },
+  {
+    "question": "Field Element Serialization Attack: Can multiple representations of field elements be exploited? init.rs:57-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f2f71e78-3714-4499-8bca-ada844618f73",
+    "timestamp": "2025-11-22 06:42:52.248191",
+    "report_generated": false
+  },
+  {
+    "question": "Polynomial Commitment Consistency: Are ci verified to match the secret at the evaluation point? init.rs:57-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a68490d7-d38a-4449-96ba-3cbe13021d81",
+    "timestamp": "2025-11-22 06:43:12.918772",
+    "report_generated": false
+  },
+  {
+    "question": "Randomizer Purpose Validation: The randomizer is stored but never validated. Can this weaken security? init.rs:57-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2730bb56-2a48-493a-b34d-db6cf5cb3d91",
+    "timestamp": "2025-11-22 06:43:34.576910",
+    "report_generated": false
+  },
+  {
+    "question": "Public Key Blinding Attack: Can attacker blind the public key in a way that passes commitment but breaks evaluation? init.rs:57-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7b985e6c-f0d9-4ec9-9567-dff16a1aa594",
+    "timestamp": "2025-11-22 06:43:58.158426",
+    "report_generated": false
+  },
+  {
+    "question": "Side-Channel Leakage in Hash: Does hashing leak timing/cache info? init.rs:58-64",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d822ebf4-6efa-4e29-a396-a4faaa2eb9fc",
+    "timestamp": "2025-11-22 06:44:22.676906",
+    "report_generated": false
+  },
+  {
+    "question": "Cryptographic Agility Downgrade: If multiple hash functions are added later, can weaker hashes be used? init.rs:58-64",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d321ca9a-b7fb-4375-9c40-e7fee4e7772b",
+    "timestamp": "2025-11-22 06:44:48.085431",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Input Ambiguity: Can field ordering or padding create distinct secrets with the same hash? init.rs:58-64",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_40975f43-6568-4138-bccf-47c0d75c7294",
+    "timestamp": "2025-11-22 06:45:13.900696",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Verification Order: Can attacker exploit the ordering of operations to corrupt state? init.rs:52-64",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_42e4eb7f-ca47-476a-b553-030e9385b655",
+    "timestamp": "2025-11-22 06:45:40.468834",
+    "report_generated": false
+  },
+  {
+    "question": "Zero Knowledge Property Violation: Does storing raw VdrfSecretKeyShare violate ZK properties? init.rs:66-71",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_feab6a73-53ce-4d21-b391-c37555f6525f",
+    "timestamp": "2025-11-22 06:46:08.305173",
+    "report_generated": false
+  },
+  {
+    "question": "Public Key Generator Verification: Is c0 verified to be derived from the correct generator? init.rs:57-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d24981a4-09d1-4e99-8967-3c7c9ef5411d",
+    "timestamp": "2025-11-22 06:46:37.798409",
+    "report_generated": false
+  },
+  {
+    "question": "Serialization Canonicalization: Does the hash computation use canonical serialization? init.rs:58-64",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ed1dc5cd-d3d5-4b80-98d6-d4c881e2e1e5",
+    "timestamp": "2025-11-22 06:47:07.284974",
+    "report_generated": false
+  },
+  {
+    "question": "Evaluation Point Collision: Can two different node IDs map to the same evaluation point, letting one node impersonate another? init.rs:51-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_45357835-9894-4d18-85cf-d6efa0f8f4b0",
+    "timestamp": "2025-11-22 06:47:37.758889",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Share Additive Homomorphism: Can an attacker initialize with a share that's a linear combination of multiple honest shares? init.rs:57-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a2c932ed-e145-4ed5-859a-478b3a40632e",
+    "timestamp": "2025-11-22 06:48:09.334517",
+    "report_generated": false
+  },
+  {
+    "question": "Cofactor Attack on Public Key: Can an attacker exploit cofactor multiplication to create valid commitments with invalid secrets? init.rs:57-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a6ceb055-62ba-4104-ac16-42b280186e9f",
+    "timestamp": "2025-11-22 06:48:41.377771",
+    "report_generated": false
+  },
+  {
+    "question": "G1/G2 Subgroup Membership: Are public key elements verified to be in the correct subgroups? init.rs:57-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_79452b7a-415e-4ba1-84e4-a3c33bca8fde",
+    "timestamp": "2025-11-22 06:49:14.566140",
+    "report_generated": false
+  },
+  {
+    "question": "Pairing-Friendly Curve Attack: If the submitted secret share exploits pairing properties incorrectly, can it break the VDRF security proof? init.rs:57-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_46892d88-4db9-4742-815f-9e6c0f2c3d63",
+    "timestamp": "2025-11-22 06:49:47.544866",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Binding to Node ID: The commitment only binds to the secret, not the node_id. Can an attacker initialize node A with node B's secret? init.rs:58-64",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_594500fe-140d-498c-952b-8889af148d7c",
+    "timestamp": "2025-11-22 06:50:22.464884",
+    "report_generated": false
+  },
+  {
+    "question": "Cross-Protocol Hash Collision: Can the hash of an OffchainSecret collide with hashes used elsewhere, creating ambiguity? init.rs:58-64",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_895deae5-07b6-47fa-a5d8-d4275e3a3ae0",
+    "timestamp": "2025-11-22 06:50:54.612642",
+    "report_generated": false
   }
 ]
