@@ -8248,5 +8248,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_915c3612-b07d-4fcd-964e-c869a9a78bd6",
     "timestamp": "2025-11-22 03:25:07.657522",
     "report_generated": false
+  },
+  {
+    "question": "Missing Node Identity in Key: Does Key=() allow cross-node secret contamination?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c459f41a-9986-4453-8942-b12817e17edf",
+    "timestamp": "2025-11-22 03:26:17.811047",
+    "report_generated": false
+  },
+  {
+    "question": "Unit Key Collision: Can () collide with other zero/default keys in backend?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cb8763c3-c22b-4665-abf3-9f63c1e16d42",
+    "timestamp": "2025-11-22 03:26:30.821583",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Output Collision: Can two different emails produce identical EmailKey values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8e0d4f2d-161b-4b52-b024-16b2dba5fc33",
+    "timestamp": "2025-11-22 03:26:44.658217",
+    "report_generated": false
+  },
+  {
+    "question": "EmailKey Malleability: Can multiple serializations of EmailKey leak associations?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0583ad72-61ab-4610-80a6-dcf21ff4ebe3",
+    "timestamp": "2025-11-22 03:26:58.226630",
+    "report_generated": false
+  },
+  {
+    "question": "Weak Hash in EmailKey: Can attackers create colliding (pk, email, eval) tuples?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_92c61f09-7c4e-498b-8022-b95c0bae238f",
+    "timestamp": "2025-11-22 03:27:12.640812",
+    "report_generated": false
+  },
+  {
+    "question": "Field Ordering Attacks: Can EmailKey field order be exploited to force collisions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_68393d61-dac3-410d-a551-509682bd5eca",
+    "timestamp": "2025-11-22 03:27:28.143044",
+    "report_generated": false
+  },
+  {
+    "question": "VDRF Eval Replay: Can vdrf_eval be reused with different email addresses?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c87f436c-70d5-4a6e-807e-a796bff5ab2e",
+    "timestamp": "2025-11-22 03:27:44.905632",
+    "report_generated": false
+  },
+  {
+    "question": "Tuple Component Swap: Can (AccountId, BackupId) be swapped in serialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c42e11a0-81af-44c1-83a1-24f963a57496",
+    "timestamp": "2025-11-22 03:28:03.864165",
+    "report_generated": false
+  },
+  {
+    "question": "AccountId Hash Collision: Can attacker create colliding AccountId values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_79c74952-0e09-4ad1-b15d-fc1c0ac85be6",
+    "timestamp": "2025-11-22 03:28:24.617128",
+    "report_generated": false
+  },
+  {
+    "question": "BackupId Overflow: Can large BackupId values overflow and collide during serialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9c6fd6fb-b8ea-4ed6-8b6d-0cc6bfe4a06f",
+    "timestamp": "2025-11-22 03:28:46.341392",
+    "report_generated": false
+  },
+  {
+    "question": "Tuple Padding Manipulation: Does tuple padding allow crafted collisions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_37924c39-7434-497e-a64a-6f9443a54ccd",
+    "timestamp": "2025-11-22 03:29:09.211295",
+    "report_generated": false
+  },
+  {
+    "question": "Zero-Value Components: Can zero AccountId / BackupId trigger special-case serialization?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7e094ed0-d102-434e-a241-529194eaed16",
+    "timestamp": "2025-11-22 03:29:32.955353",
+    "report_generated": false
+  },
+  {
+    "question": "Prefix Injection: Can serialized keys include collection prefixes?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0536aa2d-d082-4470-97bb-a3d45ab83a45",
+    "timestamp": "2025-11-22 03:29:57.952919",
+    "report_generated": false
+  },
+  {
+    "question": "Control Character Injection: Can AccountId contain null/newlines to break key parsing?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_61f2f728-b2cb-4e8e-8899-ce761d4a68e0",
+    "timestamp": "2025-11-22 03:30:25.318885",
+    "report_generated": false
+  },
+  {
+    "question": "Variable-Length Key Prefix Attack: Can attacker craft keys that prefix-match others?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ee54592f-cfc6-424e-8428-387a89d9ea8e",
+    "timestamp": "2025-11-22 03:30:52.165731",
+    "report_generated": false
+  },
+  {
+    "question": "Canonicalization Bypass: Can non-canonical representations collide with valid keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fce4b55c-d602-442a-973b-6d99a5998103",
+    "timestamp": "2025-11-22 03:31:20.445392",
+    "report_generated": false
+  },
+  {
+    "question": "Unicode Homograph Key Attack: Can homoglyphs create near-identical serialized keys?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a61f683b-6173-4fad-a5ef-9e2499e1b687",
+    "timestamp": "2025-11-22 03:31:50.481805",
+    "report_generated": false
+  },
+  {
+    "question": "Key Space Enumeration: Can attackers iterate all EmailKeys via load calls?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3821b790-87ba-4559-844d-62d8efef29c8",
+    "timestamp": "2025-11-22 03:32:20.014443",
+    "report_generated": false
+  },
+  {
+    "question": "Timing Attack on Key Existence: Does load reveal timing differences between hit/miss?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a8bf8bc1-1b60-4386-a74c-f27dfe76009e",
+    "timestamp": "2025-11-22 03:32:50.549488",
+    "report_generated": false
+  },
+  {
+    "question": "Range Query Leakage: Can storage ordering reveal account/backup relationships?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7876c6fc-a135-4e80-ac80-4d0e21cf7eee",
+    "timestamp": "2025-11-22 03:33:22.393849",
+    "report_generated": false
+  },
+  {
+    "question": "Predictable BackupId Patterns: Can predictable values leak account patterns?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_575fb118-3b9a-4fc8-bd2c-feecf79dae85",
+    "timestamp": "2025-11-22 03:33:53.927638",
+    "report_generated": false
+  },
+  {
+    "question": "Key Metadata Leakage: Does backend expose metadata on keys (size, timestamps)?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6c3762f3-cf10-4314-8f66-2c0c3e8d30af",
+    "timestamp": "2025-11-22 03:34:25.540694",
+    "report_generated": false
+  },
+  {
+    "question": "No MAC on Stored Values: Can attacker tamper with GuardianShare values?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d73247d9-88be-4f53-8195-21a0b2283286",
+    "timestamp": "2025-11-22 03:34:57.724697",
+    "report_generated": false
+  },
+  {
+    "question": "Missing MskRecord Signature Verification: Can old MskRecords be replayed?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1d1430b2-427c-4149-9f48-e43770fc8f93",
+    "timestamp": "2025-11-22 03:35:28.990283",
+    "report_generated": false
+  },
+  {
+    "question": "Missing Commitment Verification: Can storage return shares inconsistent with on-chain commitments?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c95faaa2-7417-4d48-a9a2-243d0cc6e77a",
+    "timestamp": "2025-11-22 03:35:59.662410",
+    "report_generated": false
   }
 ]
