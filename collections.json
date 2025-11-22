@@ -9598,5 +9598,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_469a7433-34fb-4280-b593-5f5ae8930be2",
     "timestamp": "2025-11-22 05:04:47.338702",
     "report_generated": false
+  },
+  {
+    "question": "Guardian-to-Account Binding: Could the lack of verifying a guardian's relationship to the account allow arbitrary parties to upload shares as long as they pass cryptographic verification? upload_share.rs:44-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cb836610-4664-401e-bb43-944a8e4872f9",
+    "timestamp": "2025-11-22 05:06:04.539242",
+    "report_generated": false
+  },
+  {
+    "question": "Concurrent Upload Authorization: If multiple upload requests arrive for the same slot, are there authorization race conditions enabling unauthorized uploads? upload_share.rs:64-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cae02b45-60d7-464e-85a8-9f92fd37f4bd",
+    "timestamp": "2025-11-22 05:06:17.679926",
+    "report_generated": false
+  },
+  {
+    "question": "Request Origin Validation: Should the endpoint validate that requests come from known nodes or authenticated guardians rather than arbitrary HTTP sources? upload_share.rs:33-38",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cd906bc9-35e2-401f-bd0f-fd09c1b1a9bb",
+    "timestamp": "2025-11-22 05:06:30.970773",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Ownership Transfer: If account ownership transfers, could old guardians still upload shares after transfer, violating access control? upload_share.rs:44-50",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5438c333-45fd-422a-9c8b-0cfb909364d6",
+    "timestamp": "2025-11-22 05:06:44.875167",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Threshold Manipulation: Can uploading more shares than the guardian count allow threshold manipulation or invalid reconstruction states? upload_share.rs:52-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_10db0c92-cc64-4a33-bdcb-578161fe6a39",
+    "timestamp": "2025-11-22 05:06:59.503616",
+    "report_generated": false
+  },
+  {
+    "question": "Account State Transition Authorization: Should share uploads only be permitted during specific state transitions? upload_share.rs:44-50",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_96e5538a-8779-443d-9479-46c2fe088201",
+    "timestamp": "2025-11-22 05:07:15.353317",
+    "report_generated": false
+  },
+  {
+    "question": "Email Verification Bypass: Can shares be uploaded without proving email ownership, enabling recovery without verification? upload_share.rs:33-74",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ea32d0af-5a32-4311-9046-d7aef2723c30",
+    "timestamp": "2025-11-22 05:07:32.139903",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian Signature Verification: Is there an additional guardian signature required on the upload request itself? upload_share.rs:52-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cdeae1ea-3c5f-4daa-99f4-7122869d7b8e",
+    "timestamp": "2025-11-22 05:07:51.302775",
+    "report_generated": false
+  },
+  {
+    "question": "Off-Chain Context Exploitation: Can the mutable OffChainContext be abused to manipulate authorization checks? upload_share.rs:34-38",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ed0de819-d2a4-457c-9e4a-afa59ab8bc49",
+    "timestamp": "2025-11-22 05:08:12.179054",
+    "report_generated": false
+  },
+  {
+    "question": "Backup Type Differentiation: Does the endpoint distinguish between normal vs recovery backups when storing shares? upload_share.rs:48-50",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_07e3b309-80ec-4396-8293-7f3efdb6667b",
+    "timestamp": "2025-11-22 05:08:33.483331",
+    "report_generated": false
+  },
+  {
+    "question": "Guardian List Consistency: If guardian lists differ between backup and current config, which takes precedence, and can attackers exploit discrepancies? upload_share.rs:44-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6efcd8fd-013e-4657-a1f6-5c25003550f6",
+    "timestamp": "2025-11-22 05:08:55.977869",
+    "report_generated": false
+  },
+  {
+    "question": "Time-Based Authorization: Should uploads only be allowed during defined recovery windows? upload_share.rs:33-74",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_74b154b3-094b-413f-8bd4-910bc2555697",
+    "timestamp": "2025-11-22 05:09:19.567843",
+    "report_generated": false
+  },
+  {
+    "question": "Share Verification Depth: Does backup.verify(&request.share.0) fully validate the share, or can a malicious but invalid share pass? upload_share.rs:53-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b4a18928-064b-4729-9302-51d7e836465f",
+    "timestamp": "2025-11-22 05:09:44.097859",
+    "report_generated": false
+  },
+  {
+    "question": "Signature Verification Completeness: Does verification ensure the signature matches the correct guardian key, or can signatures from the wrong guardian be accepted? upload_share.rs:53-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6068d9f4-2986-449b-a317-0f0ea9852aed",
+    "timestamp": "2025-11-22 05:10:11.970232",
+    "report_generated": false
+  },
+  {
+    "question": "Share Index Bounds: Does the returned share_id fall within valid bounds before indexing the commitments vector? upload_share.rs:52-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9b6689a7-f52f-4749-880d-49094cae374a",
+    "timestamp": "2025-11-22 05:10:38.985303",
+    "report_generated": false
+  },
+  {
+    "question": "Ciphertext Integrity: Does verification detect ciphertext tampering or only validate signatures? upload_share.rs:53-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f44a95f1-415a-4bc0-8878-942d4b71fcb2",
+    "timestamp": "2025-11-22 05:11:07.480383",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Binding: Does verification bind the share to this specific backup’s commitments? upload_share.rs:53-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_566f652a-9283-46a7-a850-64d3ad042f86",
+    "timestamp": "2025-11-22 05:11:37.168987",
+    "report_generated": false
+  },
+  {
+    "question": "Key Rotation Impact: If guardian keys are rotated, can outdated shares still pass verification? upload_share.rs:53-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7769b161-379c-49d0-a27a-9585ee706b77",
+    "timestamp": "2025-11-22 05:12:10.292630",
+    "report_generated": false
+  },
+  {
+    "question": "Batch Verification Vulnerability: Can a malicious guardian upload a share that interferes with verification of other shares? upload_share.rs:64-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7188502b-d816-4e9a-a5bc-2a5c0c6443aa",
+    "timestamp": "2025-11-22 05:12:42.160388",
+    "report_generated": false
+  },
+  {
+    "question": "Encryption Context Validation: Are shares bound to the correct backup’s encryption context? upload_share.rs:53-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7f4157f0-a1b2-47da-bcea-77f9364805c4",
+    "timestamp": "2025-11-22 05:13:15.380997",
+    "report_generated": false
+  },
+  {
+    "question": "Share Freshness: Can shares from previous epochs be replayed due to 'no replay protection' assumption? upload_share.rs:58-63",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ade4b7de-b78f-4cd6-a2c4-9526ef9a67ab",
+    "timestamp": "2025-11-22 05:13:49.666998",
+    "report_generated": false
+  },
+  {
+    "question": "AAD Verification: Does verification check Additional Authenticated Data matches expected context? upload_share.rs:53-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7a45f207-e029-4a0d-ad56-7eac3396be27",
+    "timestamp": "2025-11-22 05:14:23.176374",
+    "report_generated": false
+  },
+  {
+    "question": "Share Malleability: Can ciphertext be modified in transit and still decrypt to malicious content? upload_share.rs:53-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_76c22c78-83af-46c4-bb05-fb4097c59ccf",
+    "timestamp": "2025-11-22 05:14:53.986431",
+    "report_generated": false
+  },
+  {
+    "question": "Public Key Substitution: Can shares encrypted to the wrong key pass verification? upload_share.rs:53-55",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3b71a0da-03df-490a-8a0f-d7bb0668967f",
+    "timestamp": "2025-11-22 05:15:25.122479",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Secret Integrity: Can individually valid malicious shares combine into an incorrect reconstruction? upload_share.rs:53-67",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4964874b-baf8-4b20-839b-9abb5f796b7c",
+    "timestamp": "2025-11-22 05:15:56.810081",
+    "report_generated": false
   }
 ]
