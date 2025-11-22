@@ -11248,5 +11248,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d03dbd16-e799-4ec3-9317-722144d9dfa1",
     "timestamp": "2025-11-22 05:02:10.313008",
     "report_generated": false
+  },
+  {
+    "question": "Partial Evaluation Verification Missing: Does Vdrf::partial_eval eval.rs:50 verify secret_share is valid for this node?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dfaa8d92-38f3-4727-be49-1c59c1cb98a0",
+    "timestamp": "2025-11-22 05:03:23.147393",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Signature Algorithm Confusion: Can attackers exploit signature algorithm confusion or downgrade attacks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8e72efcf-180f-4ef5-a251-204dc56cda1a",
+    "timestamp": "2025-11-22 05:03:36.431239",
+    "report_generated": false
+  },
+  {
+    "question": "Email Validation Bypass: Does certificate verification enforce RFC-compliant email formatting?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8611d62f-b47e-48a0-867a-93d82975f51c",
+    "timestamp": "2025-11-22 05:03:49.700292",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Timestamp Rollback: Can old but still-valid certificates be reused to replay evaluation requests?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_daca2d45-e3c0-4ce2-ad08-36ce451e7cb0",
+    "timestamp": "2025-11-22 05:04:03.599710",
+    "report_generated": false
+  },
+  {
+    "question": "Multi-Email Certificate Attack: Can certificates bind multiple emails simultaneously?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ddba94ff-9cb0-4f38-8911-c4e14d7c7653",
+    "timestamp": "2025-11-22 05:04:18.042178",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Nonce Replay: Does the certificate include a nonce to prevent replay of identical tokens?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cbbd2d50-14af-46de-a983-1678bc5bfb0f",
+    "timestamp": "2025-11-22 05:04:34.014550",
+    "report_generated": false
+  },
+  {
+    "question": "Email Case Sensitivity Bypass: Are email case variants treated consistently to avoid binding collisions?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f2bf4799-78b5-47cc-9f49-43c4a9e43b39",
+    "timestamp": "2025-11-22 05:04:51.764857",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Time Source Manipulation: Can attackers manipulate ctx.current_time() through consensus influence?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c92f7b28-60d5-4e6f-adf7-8621eb490d4c",
+    "timestamp": "2025-11-22 05:05:10.756935",
+    "report_generated": false
+  },
+  {
+    "question": "User PK Verification Skip: Is token.cert.msg.user_pk validated against expected user identity for this request?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_239c44c3-7806-4b8a-b3fa-2b4786aa2984",
+    "timestamp": "2025-11-22 05:05:31.481146",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Deserialization DoS: Can malformed request.token.0 eval.rs:29 cause high CPU usage during parsing?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_76da2d1a-5ac7-4fae-af18-547bf25c80af",
+    "timestamp": "2025-11-22 05:05:53.442219",
+    "report_generated": false
+  },
+  {
+    "question": "Email Certificate Clone Attack: Can multiple legitimate users of a shared mailbox both authenticate and misuse shared email certificates?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cbc40de7-7df2-498e-8289-b12f285519e0",
+    "timestamp": "2025-11-22 05:06:15.813170",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Timestamp Precision Attack: Can attackers generate multiple certificates in the same second using timestamp precision gaps?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_21fbe21c-b702-47a5-9278-e721578c4e2a",
+    "timestamp": "2025-11-22 05:06:39.550410",
+    "report_generated": false
+  },
+  {
+    "question": "Token Binding to Request Missing: Is EmailCertToken cryptographically bound to request parameters to prevent cross-context reuse?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7c1f4725-f681-494c-b25a-42d2105652bc",
+    "timestamp": "2025-11-22 05:07:04.259992",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Revocation Check Missing: Is certificate revocation checked before VDRF processing?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a7c6399c-5d3c-430b-b30c-c9a95761c7d9",
+    "timestamp": "2025-11-22 05:07:30.194187",
+    "report_generated": false
+  },
+  {
+    "question": "Email Normalization Bypass: Is email normalized eval.rs:49 (lowercasing, trimming) to prevent equivalent emails producing distinct results?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9db7d4a7-e0b3-4ec9-a5a2-b3765f797cac",
+    "timestamp": "2025-11-22 05:07:57.352668",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Chain Validation Missing: Is a certificate chain enforced, or can attackers inject intermediate CA certificates?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ecb9a009-fc58-4813-aba7-e69bf509fe17",
+    "timestamp": "2025-11-22 05:08:24.795889",
+    "report_generated": false
+  },
+  {
+    "question": "Expired Certificate Grace Period Exploit: Does a grace window exist email_cert.rs:107-113 that lets expired tokens pass?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_59672918-8335-4f3e-a617-dbbe899e4959",
+    "timestamp": "2025-11-22 05:08:53.533108",
+    "report_generated": false
+  },
+  {
+    "question": "User Public Key Verification Bypass: Does verification ensure token.cert.msg.user_pk truly belongs to the email owner?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e0624068-f2af-4be0-a346-1972564bedd8",
+    "timestamp": "2025-11-22 05:09:23.234176",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Verification Key Confusion: Can an attacker swap swafe_public_key eval.rs:30-32 with a different key to validate forged certificates?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a0e4d378-c448-4483-a553-c8040b10234f",
+    "timestamp": "2025-11-22 05:09:53.355737",
+    "report_generated": false
+  },
+  {
+    "question": "Email Extraction Information Leakage: After verification eval.rs:40-45, can timing or side channels leak email content despite being discarded?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7b3e1b5f-7875-43a4-891b-cb620a823bb4",
+    "timestamp": "2025-11-22 05:10:23.412764",
+    "report_generated": false
+  },
+  {
+    "question": "Future-Dated Certificate Attack: Can timestamp skew between contract time and real-world time bypass future-certificate checks email_cert.rs:101-104?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_35c2d6c2-00e4-4795-a316-fed2c86bfa0a",
+    "timestamp": "2025-11-22 05:10:52.172006",
+    "report_generated": false
+  },
+  {
+    "question": "Email Certificate Signature Malleability: Does verification eval.rs:40-45 reject malleable signatures that could appear valid?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_441ffcdf-2fb4-484c-84c1-a9bb15fa9676",
+    "timestamp": "2025-11-22 05:11:20.618117",
+    "report_generated": false
+  },
+  {
+    "question": "Swafe Public Key Deserialization Attack: Can malformed state.swafe_public_key eval.rs:30-32 deserialize successfully but bypass cryptographic validity checks?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c21bc8b8-b907-42bd-8019-5ac89daca5f2",
+    "timestamp": "2025-11-22 05:11:50.570519",
+    "report_generated": false
+  },
+  {
+    "question": "Node ID Mismatch Exploitation: Is node_id extracted from stored_secret eval.rs:38 verified to match the node_id signed in the certificate?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5e8c079d-eaa8-40d3-96b0-ee72e32d4f25",
+    "timestamp": "2025-11-22 05:12:21.280051",
+    "report_generated": false
+  },
+  {
+    "question": "Certificate Reuse Across Nodes: Does the endpoint prevent reuse of the same EmailCertToken across multiple nodes eval.rs:29, enabling email enumeration?",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a7c63e6e-02a2-4c78-9f44-fbd45fcd2bcc",
+    "timestamp": "2025-11-22 05:12:51.982827",
+    "report_generated": false
   }
 ]
