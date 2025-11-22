@@ -12748,5 +12748,149 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_895deae5-07b6-47fa-a5d8-d4275e3a3ae0",
     "timestamp": "2025-11-22 06:50:54.612642",
     "report_generated": false
+  },
+  {
+    "question": "Hash Length Extension Attack: Does the hash implementation prevent length extension attacks? init.rs:58-64",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9e1768b5-8a15-4740-9b89-3ee7a1801d13",
+    "timestamp": "2025-11-22 06:52:27.044949",
+    "report_generated": false
+  },
+  {
+    "question": "Randomizer Reuse Across Nodes: If multiple nodes use the same randomizer, does this weaken any cryptographic properties or enable correlation attacks? init.rs:57-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_eef8b85b-e45e-49e0-8d19-f4ad3ca09d1f",
+    "timestamp": "2025-11-22 06:52:40.252561",
+    "report_generated": false
+  },
+  {
+    "question": "Polynomial Degree Mismatch: Can an attacker submit a VdrfPublicKey with degree different from the global state.vdrf_public_key, passing commitment but causing reconstruction to fail? init.rs:57-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cd159f13-7035-42eb-89fe-d2db9393f997",
+    "timestamp": "2025-11-22 06:52:54.376074",
+    "report_generated": false
+  },
+  {
+    "question": "Threshold Parameter Tampering: The VdrfPublicKey.ci vector length determines the threshold. If the submitted public key has incorrect length, does this break threshold security assumptions? init.rs:57-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_310a57b2-750f-4995-bc90-fbf02f7ef9a1",
+    "timestamp": "2025-11-22 06:53:08.511224",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Share Validity: Is the VdrfSecretKeyShare validated to be a proper share of the VDRF secret polynomial? init.rs:57-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2f14c6b2-806a-4f0b-9ac2-1786659aaceb",
+    "timestamp": "2025-11-22 06:53:23.725682",
+    "report_generated": false
+  },
+  {
+    "question": "VdrfPublicKey Consistency: The submitted secret.public_key is not verified against state.vdrf_public_key. Can an attacker submit a secret with a different public key that still satisfies the hash commitment but breaks VDRF correctness? init.rs:57-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_36d7d2ea-86cc-449a-bd48-9421644db735",
+    "timestamp": "2025-11-22 06:53:40.071183",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Malleability: Can the commitment node_config.comm be malleated such that two different representations verify against the same hash? init.rs:58-64",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a5977411-c561-4b46-857e-44de10136a09",
+    "timestamp": "2025-11-22 06:53:57.458948",
+    "report_generated": false
+  },
+  {
+    "question": "Second Preimage Attack: Given node_config.comm, can an attacker find a second OffchainSecret that hashes to the same value, allowing them to initialize with incorrect VDRF parameters? init.rs:58-64",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0c608353-cef5-4dd4-87d7-e6ca1822d02f",
+    "timestamp": "2025-11-22 06:54:18.744962",
+    "report_generated": false
+  },
+  {
+    "question": "Tagged Hash Domain Separation: The hash() function should use domain separation via the Tagged trait. If OffchainSecret doesn't properly implement Tagged, can hashes collide with other data types? init.rs:58-64",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_324cdc69-8fdb-4b46-943e-a7cd5732839c",
+    "timestamp": "2025-11-22 06:54:41.789988",
+    "report_generated": false
+  },
+  {
+    "question": "Hash Function Collision Resistance: The hash(&secret) uses SHA3-256. If a collision is found, can an attacker initialize with a different secret that has the same hash? init.rs:57-64",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a3208e7f-cae3-4344-b105-7ec37b43f3ed",
+    "timestamp": "2025-11-22 06:55:13.227866",
+    "report_generated": false
+  },
+  {
+    "question": "Commitment Timing Attack: At lines 58-64, the hash comparison uses != operator. Is this constant-time, or can an attacker use timing differences to learn information about the committed secret? init.rs:58-64",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b6853fec-3473-40f3-bf7a-5e967b10035a",
+    "timestamp": "2025-11-22 06:55:38.125750",
+    "report_generated": false
+  },
+  {
+    "question": "JSON Number Precision Loss: If numeric fields in OffchainSecret exceed JSON number precision, can deserialization silently truncate values leading to commitment mismatch? init.rs:48",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d80d7977-90a3-4800-9345-a8d63ba8c675",
+    "timestamp": "2025-11-22 06:56:04.575691",
+    "report_generated": false
+  },
+  {
+    "question": "Params Injection via URL: The handler receives _params: Params but doesn't use them. Can URL path parameters be injected to affect routing or cause unexpected behavior? init.rs:38-43",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_70bf50f8-8af8-4232-874a-56fdd6557b68",
+    "timestamp": "2025-11-22 06:56:32.101928",
+    "report_generated": false
+  },
+  {
+    "question": "Infinite/NaN in Field Elements: Can an attacker supply floating-point special values (Inf, NaN) in any numeric fields that pass deserialization but cause arithmetic errors? init.rs:57-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d988202d-d2d5-499f-a911-70a442a372f8",
+    "timestamp": "2025-11-22 06:57:00.907809",
+    "report_generated": false
+  },
+  {
+    "question": "Invalid G1/G2 Point Encoding: The VdrfPublicKey contains elliptic curve points. Are compressed vs uncompressed point encodings both accepted, and can this lead to non-canonical representations passing verification? init.rs:57-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2f901808-33b3-4d71-99ab-4980698c4ad2",
+    "timestamp": "2025-11-22 06:57:29.344627",
+    "report_generated": false
+  },
+  {
+    "question": "Secret Field Order Dependency: Does the bincode deserialization depend on field order in OffchainSecret? Can reordering fields in the serialized form bypass validation? init.rs:57-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_22ed0ed5-6620-4591-b3c5-de1c7ba8e99d",
+    "timestamp": "2025-11-22 06:57:59.202586",
+    "report_generated": false
+  },
+  {
+    "question": "Node ID Homoglyph Attack: Can an attacker use Unicode homoglyphs (e.g., Cyrillic 'a' vs Latin 'a') in the node ID to create visually identical but distinct IDs that bypass duplicate checks? init.rs:51-54",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_0f864c84-7568-42c2-b670-63c005872227",
+    "timestamp": "2025-11-22 06:58:29.517201",
+    "report_generated": false
+  },
+  {
+    "question": "Partial Deserialization Attack: If deserialization of Request partially succeeds but leaves some fields uninitialized, can this lead to use of uninitialized memory in subsequent operations? init.rs:48",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a51d8770-7223-4ea9-900d-79d8721e805a",
+    "timestamp": "2025-11-22 06:58:59.988445",
+    "report_generated": false
+  },
+  {
+    "question": "Tagged Separator Collision: The OffchainSecret implements Tagged with a specific separator. Can an attacker craft a payload that collides with this separator to confuse the hash verification at line 58? init.rs:58-64",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_19903477-d4d2-4e83-82fd-59abfe6d1ee1",
+    "timestamp": "2025-11-22 06:59:32.486478",
+    "report_generated": false
+  },
+  {
+    "question": "Recursive Structure in OffchainSecret: Can the serialization format support recursive or deeply nested structures that cause stack overflow during deserialization at line 48? init.rs:48",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c10eef66-699e-443d-807d-af5d58e80efe",
+    "timestamp": "2025-11-22 07:00:06.851541",
+    "report_generated": false
+  },
+  {
+    "question": "Request Body Size Limits: Is there a maximum size enforced on the HTTP request body before deserialization begins at line 48, or can an attacker submit arbitrarily large requests? init.rs:48",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cd5f6354-740c-449c-bcb3-024678a99755",
+    "timestamp": "2025-11-22 07:00:40.279756",
+    "report_generated": false
+  },
+  {
+    "question": "Node ID String Encoding Mismatch: The NodeId is stored as StrEncoded<NodeId> but also compared as a string at line 52. Can encoding differences (e.g., Unicode normalization) cause the same logical node ID to be treated as different? init.rs:51-54",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_106e46db-7b4f-412f-a91c-bb0e88426ccb",
+    "timestamp": "2025-11-22 07:01:12.397247",
+    "report_generated": false
+  },
+  {
+    "question": "Bincode Version Incompatibility: The deserialization uses bincode with BINCODE_CONFIG. If the config changes between versions, can old serialized secrets be replayed to initialize nodes with deprecated formats? init.rs:48",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2c359d54-2d0a-4eb5-9cb9-55ec1803b517",
+    "timestamp": "2025-11-22 07:01:46.481453",
+    "report_generated": false
+  },
+  {
+    "question": "Randomizer Field Validation: The OffchainSecret contains a 32-byte randomizer. Is this randomizer validated for uniqueness or randomness quality, or can an attacker supply all zeros/predictable values that weaken cryptographic operations? init.rs:57-68",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ce9627ed-7d72-41d5-81e2-916178d82f58",
+    "timestamp": "2025-11-22 07:02:19.626798",
+    "report_generated": false
   }
 ]
