@@ -9298,5 +9298,155 @@
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_20c143c6-a1d8-4a42-bebf-d30f321b6857",
     "timestamp": "2025-11-22 04:43:03.300141",
     "report_generated": false
+  },
+  {
+    "question": "Can guardian approvals expire? If so, does the HTTP layer enforce expiration checks to prevent stale approvals from being used in future attacks? mod.rs:103-104",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9071c786-4e1b-4f42-818d-f569fd7e90d7",
+    "timestamp": "2025-11-22 04:44:20.860187",
+    "report_generated": false
+  },
+  {
+    "question": "When association endpoints are called via the router, could timing analysis of HTTP responses reveal which email addresses are associated with which accounts? mod.rs:144-145",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ee0178ab-4585-49d9-a074-af2fed3b61f0",
+    "timestamp": "2025-11-22 04:44:34.103307",
+    "report_generated": false
+  },
+  {
+    "question": "Does the HTTP dispatch layer add random delays or constant-time processing to prevent timing side-channels from leaking association information? mod.rs:170-171",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_225088a3-ddac-42dc-b873-20953751886e",
+    "timestamp": "2025-11-22 04:44:47.480981",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker observe the size of HTTP responses from association endpoints to infer information about account configurations or guardian counts? mod.rs:26-32",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_756438a3-1f76-43f4-8ce9-75a9e730c2ae",
+    "timestamp": "2025-11-22 04:45:01.171380",
+    "report_generated": false
+  },
+  {
+    "question": "When errors occur during association operations, does the error handling distinguish between 'email not found' and 'account not found'? Could this leak associations? error.rs:62-110",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f902e4aa-f5de-4ea6-ba8f-1ea57223494d",
+    "timestamp": "2025-11-22 04:45:15.897266",
+    "report_generated": false
+  },
+  {
+    "question": "Does the routing logic prevent HTTP access logs from containing sensitive information like email addresses or account IDs in URL paths or query parameters? mod.rs:88-91",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a0e6b1f7-f054-4049-9e04-983fba86e552",
+    "timestamp": "2025-11-22 04:45:31.503140",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker who compromises a minority of off-chain nodes use HTTP request metadata (timestamps, IP addresses, request ordering) to link emails to accounts? mod.rs:77-82",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5b861bda-6a65-42c3-8f90-86854e2e39c7",
+    "timestamp": "2025-11-22 04:45:49.111465",
+    "report_generated": false
+  },
+  {
+    "question": "When VDRF evaluations are performed, does the HTTP layer ensure that inputs are committed before outputs are returned to prevent retroactive linkage? mod.rs:103-104",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fdf8b0f3-1560-4f74-9227-d9d7cd2669d0",
+    "timestamp": "2025-11-22 04:46:08.349176",
+    "report_generated": false
+  },
+  {
+    "question": "Can the routing logic be exploited to bypass VDRF-based anonymity by directly querying account states via predictable account IDs? mod.rs:144-146",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_24358396-f128-4953-a302-449ad2ddb5a9",
+    "timestamp": "2025-11-22 04:46:29.446120",
+    "report_generated": false
+  },
+  {
+    "question": "Does the HTTP dispatch add dummy traffic or padding to prevent traffic analysis attacks that could correlate HTTP requests with on-chain transactions? mod.rs:170-171",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fa5943a8-3681-4fa2-b8ad-730d00adfe7c",
+    "timestamp": "2025-11-22 04:46:50.616077",
+    "report_generated": false
+  },
+  {
+    "question": "When an account recovery is initiated, can network observers correlate HTTP requests to off-chain nodes with on-chain account updates to de-anonymize users? mod.rs:160-172",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_aac314cc-e179-4da5-bf32-2ceea4cba1ec",
+    "timestamp": "2025-11-22 04:47:13.161951",
+    "report_generated": false
+  },
+  {
+    "question": "When guardian approval endpoints are accessed, could HTTP request patterns leak which guardians are approving which recovery requests? mod.rs:146",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_66f830ab-c9b9-4f35-98c2-fa823b58d084",
+    "timestamp": "2025-11-22 04:47:36.957234",
+    "report_generated": false
+  },
+  {
+    "question": "Does the routing logic prevent enumeration of guardian public keys or addresses through error messages or timing differences? mod.rs:103-104",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_060beff0-1f4d-4173-b4bd-aebcc74bbff2",
+    "timestamp": "2025-11-22 04:48:01.685626",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker observe HTTP traffic to off-chain nodes to determine which guardians are online or offline, affecting recovery availability? mod.rs:170-171",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c9957879-885c-4b71-8bb7-c309bc7069b8",
+    "timestamp": "2025-11-22 04:48:27.090736",
+    "report_generated": false
+  },
+  {
+    "question": "When recovery shares are distributed to guardians, does the HTTP layer ensure that shares are encrypted in transit to prevent network eavesdropping? mod.rs:146",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_49254f92-93c5-4802-af40-a2498d6e16cf",
+    "timestamp": "2025-11-22 04:48:54.442478",
+    "report_generated": false
+  },
+  {
+    "question": "Could guardian participation in recoveries be tracked across multiple accounts by analyzing HTTP request patterns to off-chain nodes? mod.rs:160-172",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9256d624-cdba-4d1d-8ded-ce6d3b4b8395",
+    "timestamp": "2025-11-22 04:49:22.256145",
+    "report_generated": false
+  },
+  {
+    "question": "Does the HTTP dispatch leak information about which off-chain nodes are storing secrets for which accounts through error messages or response times? mod.rs:170-171",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f4298870-e05a-44f8-a8de-e310da380cd0",
+    "timestamp": "2025-11-22 04:49:51.086872",
+    "report_generated": false
+  },
+  {
+    "question": "When reconstruction endpoints are called, can an attacker determine which nodes have shares for a particular backup by observing successful vs. failed responses? mod.rs:146",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_97480402-040b-4289-9923-7693eb702861",
+    "timestamp": "2025-11-22 04:50:21.389295",
+    "report_generated": false
+  },
+  {
+    "question": "Does the routing logic prevent nodes from fingerprinting each other based on HTTP response headers or error message formats? mod.rs:26-32",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d8d66bda-454f-4b9a-91a8-5107a2dbcd1b",
+    "timestamp": "2025-11-22 04:50:51.882973",
+    "report_generated": false
+  },
+  {
+    "question": "Can HTTP metadata like User-Agent strings or custom headers be exploited to track individual nodes or users across multiple requests? mod.rs:77-82",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3629503d-339a-4b68-9cb4-c8e2523ad58f",
+    "timestamp": "2025-11-22 04:51:22.838460",
+    "report_generated": false
+  },
+  {
+    "question": "When nodes relay shares to each other, does the HTTP layer anonymize the source node to prevent tracking of share distribution patterns? mod.rs:103-104",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9e8e4d36-e977-4fd3-aa1e-5271991d011d",
+    "timestamp": "2025-11-22 04:51:52.019086",
+    "report_generated": false
+  },
+  {
+    "question": "In json::to_string(), does the serialization properly handle strings with embedded newlines, quotes, or control characters that could break JSON structure? json.rs:7-14",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_823e5465-6586-4364-8cbc-1eaa7abbe791",
+    "timestamp": "2025-11-22 04:52:21.966600",
+    "report_generated": false
+  },
+  {
+    "question": "Can an attacker exploit differences between serde_json_wasm and standard serde_json to craft payloads that serialize differently, bypassing validation? json.rs:8-13",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7dd5b512-fc36-4403-975e-bc4ae02c94fd",
+    "timestamp": "2025-11-22 04:52:52.235376",
+    "report_generated": false
+  },
+  {
+    "question": "In json::from_str(), does the deserializer reject JSON with trailing data after the main object? Could extra data be used to smuggle commands? json.rs:17-24",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_259e08eb-b582-4e55-af3e-a747fabbd899",
+    "timestamp": "2025-11-22 04:53:23.482267",
+    "report_generated": false
+  },
+  {
+    "question": "When error messages are formatted with format!() and included in JSON responses, could format string injection allow command execution or information leakage? json.rs:9-12",
+    "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2c8021dc-d4d6-4473-86e9-cd38e36132d1",
+    "timestamp": "2025-11-22 04:53:54.839014",
+    "report_generated": false
   }
 ]
