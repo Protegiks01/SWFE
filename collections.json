@@ -2871,97 +2871,97 @@
     "question": "Future Certificate Rejection: Could clock adjustments break legitimate certs?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4bdb0b64-f88e-4ef7-a902-c5305fcd580a",
     "timestamp": "2025-11-21 16:51:29.127691",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Expiration Boundary Precision: Could rounding cause inconsistent decisions?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_02461863-bf2b-4d87-9e83-ddcc08648973",
     "timestamp": "2025-11-21 16:51:43.746101",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Time Monotonicity Assumptions: Could NTP or DST cause backward time jumps?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fa51b0c1-a4ea-423a-96c6-9d4b0dae5c39",
     "timestamp": "2025-11-21 16:51:59.393813",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Certificate Age Tracking: Could old certs create fresh-looking tokens?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4286a163-fc17-4d54-9ded-9d68d89a6113",
     "timestamp": "2025-11-21 16:52:16.687881",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Replay Window: Could attackers replay tokens multiple times?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9f804df8-60f9-4e60-b81e-0372255bfadf",
     "timestamp": "2025-11-21 16:52:36.055332",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Timestamp Overflow at Boundaries: Could u64 overflow extend validity?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8c5ae801-2650-495a-a764-f6e1f10957b9",
     "timestamp": "2025-11-21 16:52:56.944783",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Time Source Trustworthiness: Could fake now parameters accept expired certs?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_55323bd9-a53f-48ad-9149-c787d9e93660",
     "timestamp": "2025-11-21 16:53:18.540061",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Concurrent Time Checks: Could race conditions cause inconsistent verification?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_98b358d6-a8a3-4dbd-b2fa-1dd270fe3c99",
     "timestamp": "2025-11-21 16:53:41.230997",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Timezone Handling: Could timezone misconfigs break expiration checks?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9824154e-e15f-4752-91a6-6949001b945e",
     "timestamp": "2025-11-21 16:54:05.086268",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does choosing BLS12-381 instead of another curve (e.g., secp256r1) introduce any security tradeoffs for the protocol components depending on these aliases?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_db30af4d-6c6f-444f-9416-4f6da0083fd2",
     "timestamp": "2025-11-21 16:54:31.478273",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can downstream code mistakenly assume these aliases wrap custom logic rather than direct arkworks types?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cefd51b9-1bf9-46f8-8cd4-2ed95d694dc4",
     "timestamp": "2025-11-21 16:54:57.964934",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Could the aliasing mask decisions about curve parameter security that should be explicit in the main cryptography logic?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_526bb3e3-67f8-4605-a1ea-f16af07852d4",
     "timestamp": "2025-11-21 16:55:26.003806",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Do the aliases introduce ambiguity on whether G1 or G2 should be used for specific operations in VDRF or commitments?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_25c3b755-659e-4813-9511-cb74db8988c6",
     "timestamp": "2025-11-21 16:55:54.934980",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Could the type aliasing hide the fact that certain operations require G2 elements but receive G1 elements due to unclear naming at call sites?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_8d82eb25-69a0-4ded-932d-5b81e61be313",
     "timestamp": "2025-11-21 16:56:24.661491",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can GAffine/GProjective type confusion occur because the file exposes both without enforcing usage rules?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a361aa59-1893-4d5d-9a73-ac04938ed9f2",
     "timestamp": "2025-11-21 16:56:55.472653",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Could implicit affine-to-projective conversions create timing-side channels in downstream cryptographic operations?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_423d76bb-b300-45fb-a10d-b13dd077f49f",
     "timestamp": "2025-11-21 16:57:26.637043",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does the abstraction layer hide the need for subgroup membership checks after deserialization?",
@@ -2973,217 +2973,217 @@
     "question": "Can code unintentionally mix Fr with scalar fields from other crypto modules due to identical type aliasing?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c210fdb1-b346-46c5-9135-82273d76e5db",
     "timestamp": "2025-11-21 16:58:32.209537",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does the re-export pattern reduce explicitness about whether points are guaranteed to be in the prime subgroup?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3cf6a249-c8c6-4e1d-8d06-58fea609d7c1",
     "timestamp": "2025-11-21 16:59:07.994639",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does the file allow downstream code to bypass identity-point checks because the aliasing gives the illusion of safe defaults?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_08abe2e2-3826-48fa-9b73-56a5139cd3cb",
     "timestamp": "2025-11-21 16:59:42.795807",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Could Fr aliasing mask distinctions between different scalar fields used by other cryptographic modules?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_02d8fa36-9e29-40a8-b07d-78c80bee79d7",
     "timestamp": "2025-11-21 17:00:20.198065",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Do the re-exported serialization modules enforce canonical group element encoding?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7247809f-de22-437c-8c4a-0956b63f3646",
     "timestamp": "2025-11-21 17:00:58.584090",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can deserialization accept non-canonical points that introduce signature or commitment malleability risks?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2dd98756-f4af-487d-95b4-832ef8d638e9",
     "timestamp": "2025-11-21 17:02:11.178362",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does the underlying serialization logic perform subgroup checks for G1 and G2 elements?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_1b871980-ea27-4aad-829f-a9efd52de2ac",
     "timestamp": "2025-11-21 17:02:24.246952",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Could the abstraction layer make it harder to ensure compressed/uncompressed point formats are validated?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_4f75b5b9-e3ae-4951-9437-e2e3f453300c",
     "timestamp": "2025-11-21 17:02:38.038354",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Is the deserialization layer guaranteed to reject identity points unless explicitly allowed?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c57f349d-a9c1-4209-8f2d-e4ff158c5818",
     "timestamp": "2025-11-21 17:02:51.877175",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does any downstream consumer assume stronger guarantees from these serialization modules than what pairing.rs actually provides?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ac380817-a372-40d7-ad35-aed6511ffca5",
     "timestamp": "2025-11-21 17:03:07.023761",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can serialization/deserialization inconsistencies between modules create cross-module verification bypasses?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_912d330c-a1d3-46dc-9f86-308a845a5e68",
     "timestamp": "2025-11-21 17:03:23.620295",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Are malformed Fr encodings correctly rejected, or could they be coerced into zero silently?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_82596867-f967-4574-a130-46fc52c429e7",
     "timestamp": "2025-11-21 17:03:40.811085",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Do VDRF operations rely on subgroup-validated points, and does curve.rs clearly guarantee such validation?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_30e0c948-4590-4622-9931-e606e290ebfa",
     "timestamp": "2025-11-21 17:03:58.815316",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can Pedersen commitments mistakenly use the wrong group due to ambiguous aliasing?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fb2c9f10-b7f1-446e-9ebc-f379ed7705f5",
     "timestamp": "2025-11-21 17:04:18.912711",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Could Shamir secret sharing logic incorrectly assume field properties of Fr that differ from other fields used in the protocol?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_006044e1-6c98-4041-90fc-167444a986a4",
     "timestamp": "2025-11-21 17:04:39.663549",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does the abstraction layer obscure the need for identity-element checks in commitment or encryption operations?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2874d33f-2ef4-4fcb-92ff-8a2c142752ec",
     "timestamp": "2025-11-21 17:05:01.607675",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Could consumers assume that these types enforce invariants that actually live in pairing.rs?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5d400879-de2e-4808-bd2c-99986930ef29",
     "timestamp": "2025-11-21 17:05:24.904281",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does the file allow downstream cryptographic code to compile even when mixing incompatible field elements?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_712992cd-af59-4395-856a-cf9659cf3ed4",
     "timestamp": "2025-11-21 17:05:48.433590",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Can misuse of the aliasing lead to verifying proofs or commitments in the wrong subgroup?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_dab94fac-0fb2-4261-b90f-ba9405c22e72",
     "timestamp": "2025-11-21 17:06:13.169252",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Could aliasing allow mixing of group types across modules in a way that produces valid but insecure computations?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fb229ba2-90cb-4013-9795-7b2f39af17b9",
     "timestamp": "2025-11-21 17:06:38.283551",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does the choice of BLS12-381 introduce trust assumptions that conflict with the protocol\u2019s threat model?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_10183904-04bc-42e6-bda9-62002f1aa815",
     "timestamp": "2025-11-21 17:07:04.406467",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Could vulnerabilities in arkworks\u2019 BLS12-381 implementation silently affect all modules using these aliases?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_a72c3660-b9ec-4462-8993-918e35626100",
     "timestamp": "2025-11-21 17:07:31.663329",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does the design assume that pairing operations remain secure even under partial node compromise?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_83c77c82-00dd-475c-ac64-f81701309ded",
     "timestamp": "2025-11-21 17:08:00.875120",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Could abstraction prevent auditors from noticing insecure defaults inherited from arkworks?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_ab90cad7-829d-4cde-b5be-6adf41b6e049",
     "timestamp": "2025-11-21 17:08:30.734328",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Does the file\u2019s simplicity encourage developers to trust these types too much without validating upstream behavior?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_5b5a658a-9f02-4afc-8b07-47774ab4495e",
     "timestamp": "2025-11-21 17:09:02.108291",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Generator Determinism: In PedersenGenerators::new() commitments.rs:46-60 , the generators H and G are derived using hash_to_g1 with fixed separators. Can an attacker who knows the discrete log relationship between H and G break the binding property of commitments, allowing them to forge opening values that would violate the invariant that only account owners can reconstruct backups?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_46a21967-ea71-4caa-b8aa-d558c7057e65",
     "timestamp": "2025-11-21 17:09:33.723975",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Generator Domain Separation: The PedersenGenSep struct uses \"v0:pedersen\" as separator commitments.rs:48-54 . If a different module uses the same separator with different names, could generator collisions enable cross-module attacks where commitments from email associations are confused with backup commitments?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c5812e38-0abd-478d-97af-ec59e5c49ae9",
     "timestamp": "2025-11-21 17:10:06.351914",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Generator Identity Check: The code doesn't verify that generated points H and G are non-identity commitments.rs:56-59 . Could a hash-to-curve implementation flaw produce identity elements, making all commitments equal and breaking the privacy guarantees required for email-to-account association hiding?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9ff9bd03-e035-41d5-8482-c7b378e4f9d9",
     "timestamp": "2025-11-21 17:10:40.089317",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Generator Independence: Are H and G cryptographically independent? If an attacker discovers the discrete log \u03b1 such that G = [\u03b1]H, they could open any commitment to arbitrary values, violating the binding property and enabling unauthorized account recovery.",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_17ceee7b-c969-48d6-907b-0fc1e4acbdb4",
     "timestamp": "2025-11-21 17:11:13.023412",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Generator Caching: PedersenGenerators::new() recomputes generators on every call without caching. If different parts of the system use differently-computed generators (due to implementation changes), could commitments become incompatible, causing permanent account lockout?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b5ba6fe6-f7e7-4072-99ce-e00415a4dc8a",
     "timestamp": "2025-11-21 17:11:45.032329",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Generator Serialization: The generators are not serialized or versioned. If the hash-to-curve algorithm changes in a future version, will old commitments remain verifiable, or could users lose access to their accounts?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3a6c5837-098d-4048-91b8-086ff6b63e35",
     "timestamp": "2025-11-21 17:12:56.375171",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Subgroup Membership: Does hash_to_g1 guarantee the resulting points lie in the prime-order subgroup? If generators land in a small subgroup, commitment security degrades, potentially exposing email addresses during off-chain node interactions?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b2cbd2e8-5a08-4031-81ec-cf8b11c59356",
     "timestamp": "2025-11-21 17:13:09.529794",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Generator Ordering: The commit function computes [v]H + [r]G commitments.rs:63-67 . If H and G are accidentally swapped in any usage, does this break zero-knowledge properties in SoK proofs, leaking information about backup encryption keys?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_509d446c-3516-45c6-8ccf-9640029fce9c",
     "timestamp": "2025-11-21 17:13:23.394764",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Domain Separation in Multi-Use: Pedersen commitments are used in association records v0.rs:146 . Without commitment-type domain separation, could an attacker replay commitments from one context (e.g., email association) to another (e.g., backup verification), bypassing guardian approval requirements?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_de57887c-63d3-497b-a4dc-270f650b9cb2",
     "timestamp": "2025-11-21 17:13:37.001671",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Generator Fixed Points: Could there exist edge cases where specific email inputs combined with VDRF outputs produce commitments equal to the generator G or H, creating degenerate cases that break privacy during account recovery?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9197af82-ccab-4e6e-9c7f-843a1866a983",
     "timestamp": "2025-11-21 17:13:51.600433",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Generator Consistency Across Modules: The generators are recreated in each module that imports them. If one module accidentally uses a different curve or hash function, could mixed commitments enable a malicious guardian to correlate on-chain commitments with off-chain email data?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f3349d63-242f-4fec-857f-bd605d83d443",
     "timestamp": "2025-11-21 17:14:08.962277",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Generator Replacement Attack: If an attacker can inject custom generators through a malformed API call or contract interaction, could they create \"fake\" commitments that verify under SoK proofs but don't correspond to valid email certificates, enabling unauthorized account recovery?",
@@ -3195,73 +3195,73 @@
     "question": "Generator Parameter Validation: The hash_to_g1 function takes a Tagged input. If the tag doesn't properly domain-separate generator creation from other hash-to-curve uses (like VDRF), could tag collisions create unexpected relationships between commitments and VDRF outputs?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3309ceac-fa5b-43d8-a46d-bd9c9c3977c5",
     "timestamp": "2025-11-21 17:14:47.150030",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Generator Pre-computation Attack: Could an attacker pre-compute large tables of generator multiples to accelerate discrete log attacks on commitment openings, particularly for low-entropy values like predictable email addresses, violating privacy guarantees?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_bd22d153-e5d0-4fd0-83a6-a9269e2d4fd8",
     "timestamp": "2025-11-21 17:15:09.097439",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Cross-Protocol Generator Reuse: If the same BLS12-381 curve and hash-to-curve parameters are used in other protocols, could commitments from Swafe be malleated or replayed in external systems, indirectly leaking information about email-account associations?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_450674bc-cf54-4f2b-b152-ed0350515864",
     "timestamp": "2025-11-21 17:15:32.851361",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Value Validation: PedersenOpen contains value and randomness fields with no validation commitments.rs:78-83 . Could zero values for both fields create trivial commitments that break binding, allowing attackers to claim ownership of any account?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_7aad8825-7513-4bac-8967-af480b419dd3",
     "timestamp": "2025-11-21 17:15:56.580341",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Randomness Source Quality: PedersenOpen::gen uses generic Rng + CryptoRng commitments.rs:86-91 . If a caller provides a weak RNG, could predictable randomness enable commitment pre-image attacks, exposing master secret keys during backup reconstruction?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_d1229836-929f-46dd-a23c-94b621144b60",
     "timestamp": "2025-11-21 17:16:22.378562",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Commitment Collision Resistance: The commit function produces a single G1 point. Given the ~2^128 collision resistance of BLS12-381, could birthday attacks on commitments enable an attacker to find two different openings for the same commitment, breaking the binding between encrypted backups and account owners?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_76814722-1dbe-4cde-a870-2dc61cf1f1fa",
     "timestamp": "2025-11-21 17:16:48.690463",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Zero Commitment Handling: PedersenCommitment::zero() creates an identity commitment commitments.rs:17-20 . If this is accidentally used in association records, does it reveal that no email is associated, violating the privacy invariant that email-account links remain hidden on-chain?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_b1fee245-43d2-4851-b2d4-caf16eafc980",
     "timestamp": "2025-11-21 17:17:16.632479",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Opening Validation in Commit: The commit function doesn't check if the opening is the zero opening commitments.rs:63-67 . Could a malicious off-chain node submit zero commitments that appear valid but don't actually bind to any email, allowing account takeover without proper email verification?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c3d268c5-f717-466f-a184-532250a36c7d",
     "timestamp": "2025-11-21 17:17:45.312974",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Field Element Range: The value field is a pp::Fr element. Are there edge cases near the field modulus where arithmetic operations could wrap, producing unexpected commitments that don't correspond to the intended values, breaking backup integrity?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_04a7c9e2-bc13-4568-afdd-9331ab8e2a07",
     "timestamp": "2025-11-21 17:18:15.787366",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Commitment Uniqueness: For a given value, multiple randomness choices produce different commitments. Could a malicious guardian create multiple commitments to the same email and correlate them across different accounts, de-anonymizing users despite the off-chain node privacy guarantees?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_772118d0-978e-442e-ace5-af2356416af1",
     "timestamp": "2025-11-21 17:18:47.097252",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Commitment Canonical Encoding: Pedersen commitments serialize as G1 affine points. If non-canonical encodings are accepted during deserialization, could an attacker create multiple representations of the same commitment, bypassing uniqueness checks for the invariant \"email associates with at most one account\"?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f5cc59ed-5dbe-4d39-a979-d23657585dbc",
     "timestamp": "2025-11-21 17:19:18.951675",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Homomorphic Property Exploitation: Commitments support addition commitments.rs:30-36 . Could an attacker exploit this to derive valid commitments without knowing openings, creating fake association records that bypass email certificate verification?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9f1c3879-694b-4f94-9634-e621b0d1e7f3",
     "timestamp": "2025-11-21 17:19:51.437019",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Scalar Multiplication by Zero: Multiplying a commitment by Fr::ZERO commitments.rs:22-28 produces zero commitment. Could this be used in SoK proof manipulation to \"cancel out\" commitments, making proofs verify for unintended commitment sets?",
@@ -3273,139 +3273,139 @@
     "question": "Value Extraction: PedersenOpen::value() exposes the raw value commitments.rs:105-107 . If this is logged or leaked through error messages, does it reveal master secret key components or email-derived values that should remain confidential?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_73729dcc-b797-4e14-969c-d5c8d11dcc07",
     "timestamp": "2025-11-21 17:20:58.785434",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Commitment Malleability: Given commitment C = [v]H + [r]G, an attacker knowing discrete log \u03b1 between H and G could create C' = [v']H + [r']G opening to different values. Does the protocol verify commitment integrity in ways that would detect such malleability attacks during account recovery?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_3dd3d4d3-f465-47ea-9622-506c9a9ab5aa",
     "timestamp": "2025-11-21 17:21:31.881904",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Infinity Point Handling: What happens if commitment arithmetic produces the point at infinity? Could this degenerate case be exploited during SoK verification to make proofs pass for invalid commitments, violating guardian approval requirements?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_9a9c0cc5-568e-45cf-b871-77e26b5f3649",
     "timestamp": "2025-11-21 17:22:07.231574",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Commitment Aggregation: Multiple commitments can be combined via addition. If an attacker aggregates commitments from different users, could the aggregate be submitted as a \"valid\" commitment for a new account, bypassing Swafe-io's email certificate requirement?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_fc883ea1-19c3-4d20-a2e5-d04c17ce4219",
     "timestamp": "2025-11-21 17:22:43.237802",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Endomorphism Acceleration: BLS12-381 curves have efficiently computable endomorphisms. Could an attacker use endomorphism-based attacks to compute commitment openings faster than expected, threatening the security of master secret key encryption within the threshold window?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2839aa1d-f533-489e-9c5c-3fac7fb810b2",
     "timestamp": "2025-11-21 17:23:20.760412",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Zeroization on Drop: PedersenOpen derives ZeroizeOnDrop commitments.rs:77-83 . Are the underlying pp::Fr fields also zeroized? If not, could opening secrets persist in memory after drop, enabling memory disclosure attacks that reveal master secret keys?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e4404640-1381-4508-bf57-b3b08fa0e953",
     "timestamp": "2025-11-21 17:24:34.466147",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Opening Serialization: Openings are serializable commitments.rs:78-83 . Could serialized openings be logged, cached, or stored insecurely by callers, violating the confidentiality required to prevent unauthorized backup reconstruction?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f4efcbf7-87c8-4c8f-b84f-ce60b7d3aa2f",
     "timestamp": "2025-11-21 17:24:48.114102",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Opening Clone Safety: PedersenOpen derives Clone. Each clone must be independently zeroized. If clones are created during proof generation and some escape zeroization, could leaked copies enable attackers to reconstruct backups without guardian approval?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f2ca17ae-8d63-4be4-9766-da5ef0959308",
     "timestamp": "2025-11-21 17:25:01.498743",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Opening Arithmetic Side Channels: Addition and multiplication on openings commitments.rs:110-130 could have timing side channels. Could an attacker observing SoK proof generation timing distinguish between different email values, correlating them with on-chain accounts?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_55d8e18f-1497-486b-97ff-03aef3d89829",
     "timestamp": "2025-11-21 17:25:15.849022",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Zero Opening Exposure: PedersenOpen::zero() is public commitments.rs:98-103 . If used incorrectly in association records, does it create a \"null\" email binding that an attacker could exploit to register accounts without valid email certificates?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_20aaf99d-1c51-4a52-96a4-f6d6c7cd3069",
     "timestamp": "2025-11-21 17:25:30.397530",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Opening Partial Disclosure: If only the value field is exposed but not randomness, does this weaken privacy? Could multiple observations of values from the same opening allow correlation attacks on email-account associations?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_c47fe995-355d-48cb-865f-c5a0056216e7",
     "timestamp": "2025-11-21 17:25:46.186617",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Opening Equality: PedersenOpen derives PartialEq and Hash commitments.rs:77 . Could putting openings in hash maps or comparing them in timing-sensitive contexts create side channels that leak secret information to compromised off-chain nodes?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_2c06ffda-931f-47da-b3a6-2a9e291896bc",
     "timestamp": "2025-11-21 17:26:04.299779",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Opening Field Element Validity: Are the value and randomness fields validated to be within the field order? Invalid field elements could cause panics or undefined behavior during commitment computation, leading to denial-of-service against account recovery.",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_6d7af39d-6ff4-4f92-8e57-16141b942a7d",
     "timestamp": "2025-11-21 17:26:23.653379",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Opening Deterministic Generation: For testing, PedersenOpen::new creates openings from specific values commitments.rs:93-96 . If production code accidentally uses this with predictable inputs, could it generate weak openings that enable brute-force attacks on backup encryption?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_00e23ca6-68d8-40ef-b8c6-563105e09894",
     "timestamp": "2025-11-21 17:26:43.323684",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Multi-Opening Proof Gaps: SoK proofs prove knowledge of multiple openings commitments.rs:155-200 . If openings are reused across different proofs, could an attacker correlate proofs to de-anonymize email-account associations?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_af236e17-99ec-4fad-a79e-8e6719658dff",
     "timestamp": "2025-11-21 17:27:04.878365",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Opening Storage Duration: How long do openings remain in memory during proof generation? If they persist beyond necessary, could transient memory disclosure attacks (e.g., Spectre) leak openings to other processes on the same off-chain node?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_cb6b35b2-a69e-4d54-aa3f-66d667ee9ecd",
     "timestamp": "2025-11-21 17:27:27.179451",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Opening Batch Handling: When proving knowledge of multiple openings, are intermediate results properly zeroized? Could partial computation states leak information if proof generation is interrupted?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_e1b0be20-7edf-4ac6-9d93-fab99bb4aa0a",
     "timestamp": "2025-11-21 17:27:50.996686",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Opening Derivation: Are openings ever derived deterministically from user secrets (like email hashes)? If so, could an attacker with a leaked opening work backwards to determine the user's email, violating privacy guarantees?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_331941b3-7751-42cf-a5bb-4fe733c7d8f3",
     "timestamp": "2025-11-21 17:28:16.659920",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Opening Export Functions: The value() method exposes the value field. Are there code paths where this is called unnecessarily, creating additional attack surface for information leakage?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_88907c8a-17b6-4cd8-8d04-f86a176a9c28",
     "timestamp": "2025-11-21 17:28:43.398800",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Opening Lifetime Management: In concurrent proof generation scenarios (if applicable), could race conditions cause openings to be used after free or double-freed, leading to undefined behavior or memory corruption?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_f674f98b-451a-427e-b6ba-a3157db62f0c",
     "timestamp": "2025-11-21 17:29:10.486099",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Fiat-Shamir Challenge Computation: The challenge \u03b1 is computed as hash_to_fr of message, delta, and commitments commitments.rs:181-185 . Is the hash function collision-resistant enough to prevent an attacker from finding two different messages that produce the same challenge, enabling proof replay attacks?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_313bf213-59cb-453c-8634-88ea8f7e76c9",
     "timestamp": "2025-11-21 17:29:38.926359",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Empty Commitment Set Handling: The prove function rejects empty commitment sets commitments.rs:168-172 . Could an attacker bypass this check by providing a commitment set that becomes empty after some processing, creating an invalid proof that verifies due to degenerate arithmetic?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_18672479-a979-4da1-9b6e-82be8ee23c18",
     "timestamp": "2025-11-21 17:30:08.445327",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Length Mismatch Validation: The function checks open.len() != coms.len() commitments.rs:162-166 . Is this check sufficient? Could an attacker provide equal-length but semantically mismatched arrays (e.g., openings for different commitments) that produce valid-looking but meaningless proofs?",
     "url": "https://deepwiki.com/search/-you-are-a-web3-security-resea_18082d12-84a0-4339-9ba5-fc7ef7088b0c",
     "timestamp": "2025-11-21 17:30:37.579872",
-    "report_generated": false
+    "report_generated": true
   },
   {
     "question": "Random Mask Generation: The mask is generated as PedersenOpen::gen(rng) commitments.rs:175 . If the RNG is weak or unseeded, could an attacker predict mask values and extract opening secrets from observed proofs, enabling unauthorized backup reconstruction?",
